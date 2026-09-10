@@ -1,0 +1,23 @@
+{
+  "original_request": "使用modelviz-skill做图；不要中文标注，全部英文。",
+  "goal": "展示问题3四个指定日购电调整、储能容量功率时间序列与紧急量",
+  "functional_keywords": [
+    "趋势",
+    "比较",
+    "时间序列",
+    "容量功率",
+    "多面板"
+  ],
+  "chart_types": [],
+  "style_keywords": [
+    "English labels",
+    "serif typography"
+  ],
+  "use_case": "论文正文",
+  "negative_requirements": [
+    "No Chinese text in figures"
+  ],
+  "explicit_template": false,
+  "is_ambiguous": false,
+  "clarification_question": ""
+}

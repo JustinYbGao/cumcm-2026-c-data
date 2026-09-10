@@ -1,0 +1,221 @@
+{
+  "file_name": "data.csv",
+  "file_type": "csv",
+  "sheet_name": null,
+  "row_count": 11,
+  "column_count": 7,
+  "column_names": [
+    "month",
+    "planned_cost_yuan",
+    "emergency_cost_yuan",
+    "total_cost_yuan",
+    "emergency_kwh",
+    "seasonal_total_cost_yuan",
+    "excess_cost_yuan"
+  ],
+  "sample_records": [
+    {
+      "month": "2025-02",
+      "planned_cost_yuan": 1136377.8843320017,
+      "emergency_cost_yuan": 151803.18653910546,
+      "total_cost_yuan": 1288181.070871107,
+      "emergency_kwh": 25534.962200228536,
+      "seasonal_total_cost_yuan": 1232335.3965844128,
+      "excess_cost_yuan": 55845.674286694266
+    },
+    {
+      "month": "2025-03",
+      "planned_cost_yuan": 1018651.9644208234,
+      "emergency_cost_yuan": 276487.8603177722,
+      "total_cost_yuan": 1295139.8247385956,
+      "emergency_kwh": 49613.188915135346,
+      "seasonal_total_cost_yuan": 1243923.1428996895,
+      "excess_cost_yuan": 51216.681838905904
+    },
+    {
+      "month": "2025-04",
+      "planned_cost_yuan": 836500.6244502033,
+      "emergency_cost_yuan": 287843.42749974673,
+      "total_cost_yuan": 1124344.05194995,
+      "emergency_kwh": 51017.162702706635,
+      "seasonal_total_cost_yuan": 1066757.7570405572,
+      "excess_cost_yuan": 57586.29490939272
+    },
+    {
+      "month": "2025-05",
+      "planned_cost_yuan": 835007.7820375098,
+      "emergency_cost_yuan": 325577.6479711109,
+      "total_cost_yuan": 1160585.4300086207,
+      "emergency_kwh": 57657.64220054797,
+      "seasonal_total_cost_yuan": 1159264.2783873102,
+      "excess_cost_yuan": 1321.151621310506
+    },
+    {
+      "month": "2025-06",
+      "planned_cost_yuan": 1117385.3011013556,
+      "emergency_cost_yuan": 596172.3416217691,
+      "total_cost_yuan": 1713557.6427231247,
+      "emergency_kwh": 104055.36236436912,
+      "seasonal_total_cost_yuan": 1686778.3702477552,
+      "excess_cost_yuan": 26779.272475369507
+    },
+    {
+      "month": "2025-07",
+      "planned_cost_yuan": 1304761.6499380448,
+      "emergency_cost_yuan": 424558.0086756724,
+      "total_cost_yuan": 1729319.6586137174,
+      "emergency_kwh": 75680.10391850659,
+      "seasonal_total_cost_yuan": 1856533.0358747677,
+      "excess_cost_yuan": -127213.37726105028
+    },
+    {
+      "month": "2025-08",
+      "planned_cost_yuan": 1140962.2467783124,
+      "emergency_cost_yuan": 380198.15211073146,
+      "total_cost_yuan": 1521160.398889044,
+      "emergency_kwh": 62687.417099486105,
+      "seasonal_total_cost_yuan": 1381904.1896577105,
+      "excess_cost_yuan": 139256.2092313338
+    },
+    {
+      "month": "2025-09",
+      "planned_cost_yuan": 955684.1956288968,
+      "emergency_cost_yuan": 615190.2133341855,
+      "total_cost_yuan": 1570874.4089630826,
+      "emergency_kwh": 103395.0243697314,
+      "seasonal_total_cost_yuan": 1267726.0737223292,
+      "excess_cost_yuan": 303148.33524075337
+    },
+    {
+      "month": "2025-10",
+      "planned_cost_yuan": 975610.9092029216,
+      "emergency_cost_yuan": 474695.58185780543,
+      "total_cost_yuan": 1450306.491060727,
+      "emergency_kwh": 82836.1854070756,
+      "seasonal_total_cost_yuan": 1224263.3633050036,
+      "excess_cost_yuan": 226043.12775572343
+    },
+    {
+      "month": "2025-11",
+      "planned_cost_yuan": 1139812.1083983812,
+      "emergency_cost_yuan": 396821.4751720529,
+      "total_cost_yuan": 1536633.5835704342,
+      "emergency_kwh": 67151.7133505631,
+      "seasonal_total_cost_yuan": 1357722.8582229882,
+      "excess_cost_yuan": 178910.72534744604
+    },
+    {
+      "month": "2025-12",
+      "planned_cost_yuan": 1527076.901092915,
+      "emergency_cost_yuan": 416503.93036933127,
+      "total_cost_yuan": 1943580.8314622464,
+      "emergency_kwh": 72255.35916654726,
+      "seasonal_total_cost_yuan": 1900998.8848506855,
+      "excess_cost_yuan": 42581.946611561114
+    }
+  ],
+  "head_records": [
+    {
+      "month": "2025-02",
+      "planned_cost_yuan": 1136377.8843320017,
+      "emergency_cost_yuan": 151803.18653910546,
+      "total_cost_yuan": 1288181.070871107,
+      "emergency_kwh": 25534.962200228536,
+      "seasonal_total_cost_yuan": 1232335.3965844128,
+      "excess_cost_yuan": 55845.674286694266
+    },
+    {
+      "month": "2025-03",
+      "planned_cost_yuan": 1018651.9644208234,
+      "emergency_cost_yuan": 276487.8603177722,
+      "total_cost_yuan": 1295139.8247385956,
+      "emergency_kwh": 49613.188915135346,
+      "seasonal_total_cost_yuan": 1243923.1428996895,
+      "excess_cost_yuan": 51216.681838905904
+    },
+    {
+      "month": "2025-04",
+      "planned_cost_yuan": 836500.6244502033,
+      "emergency_cost_yuan": 287843.42749974673,
+      "total_cost_yuan": 1124344.05194995,
+      "emergency_kwh": 51017.162702706635,
+      "seasonal_total_cost_yuan": 1066757.7570405572,
+      "excess_cost_yuan": 57586.29490939272
+    },
+    {
+      "month": "2025-05",
+      "planned_cost_yuan": 835007.7820375098,
+      "emergency_cost_yuan": 325577.6479711109,
+      "total_cost_yuan": 1160585.4300086207,
+      "emergency_kwh": 57657.64220054797,
+      "seasonal_total_cost_yuan": 1159264.2783873102,
+      "excess_cost_yuan": 1321.151621310506
+    },
+    {
+      "month": "2025-06",
+      "planned_cost_yuan": 1117385.3011013556,
+      "emergency_cost_yuan": 596172.3416217691,
+      "total_cost_yuan": 1713557.6427231247,
+      "emergency_kwh": 104055.36236436912,
+      "seasonal_total_cost_yuan": 1686778.3702477552,
+      "excess_cost_yuan": 26779.272475369507
+    },
+    {
+      "month": "2025-07",
+      "planned_cost_yuan": 1304761.6499380448,
+      "emergency_cost_yuan": 424558.0086756724,
+      "total_cost_yuan": 1729319.6586137174,
+      "emergency_kwh": 75680.10391850659,
+      "seasonal_total_cost_yuan": 1856533.0358747677,
+      "excess_cost_yuan": -127213.37726105028
+    },
+    {
+      "month": "2025-08",
+      "planned_cost_yuan": 1140962.2467783124,
+      "emergency_cost_yuan": 380198.15211073146,
+      "total_cost_yuan": 1521160.398889044,
+      "emergency_kwh": 62687.417099486105,
+      "seasonal_total_cost_yuan": 1381904.1896577105,
+      "excess_cost_yuan": 139256.2092313338
+    },
+    {
+      "month": "2025-09",
+      "planned_cost_yuan": 955684.1956288968,
+      "emergency_cost_yuan": 615190.2133341855,
+      "total_cost_yuan": 1570874.4089630826,
+      "emergency_kwh": 103395.0243697314,
+      "seasonal_total_cost_yuan": 1267726.0737223292,
+      "excess_cost_yuan": 303148.33524075337
+    },
+    {
+      "month": "2025-10",
+      "planned_cost_yuan": 975610.9092029216,
+      "emergency_cost_yuan": 474695.58185780543,
+      "total_cost_yuan": 1450306.491060727,
+      "emergency_kwh": 82836.1854070756,
+      "seasonal_total_cost_yuan": 1224263.3633050036,
+      "excess_cost_yuan": 226043.12775572343
+    },
+    {
+      "month": "2025-11",
+      "planned_cost_yuan": 1139812.1083983812,
+      "emergency_cost_yuan": 396821.4751720529,
+      "total_cost_yuan": 1536633.5835704342,
+      "emergency_kwh": 67151.7133505631,
+      "seasonal_total_cost_yuan": 1357722.8582229882,
+      "excess_cost_yuan": 178910.72534744604
+    },
+    {
+      "month": "2025-12",
+      "planned_cost_yuan": 1527076.901092915,
+      "emergency_cost_yuan": 416503.93036933127,
+      "total_cost_yuan": 1943580.8314622464,
+      "emergency_kwh": 72255.35916654726,
+      "seasonal_total_cost_yuan": 1900998.8848506855,
+      "excess_cost_yuan": 42581.946611561114
+    }
+  ],
+  "sampled": false,
+  "sample_strategy": "数据行数 11 未超过阈值，提供前 11 行作为样例。",
+  "warnings": []
+}

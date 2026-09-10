@@ -1,0 +1,15 @@
+{
+  "completed": true,
+  "inputs_unchanged": true,
+  "policies": [
+    "no_update",
+    "all_A",
+    "all_B",
+    "only06_A",
+    "only12_A",
+    "only18_A"
+  ],
+  "evaluation_days": 334,
+  "formal_excel_exported": false,
+  "q4_executed": false
+}

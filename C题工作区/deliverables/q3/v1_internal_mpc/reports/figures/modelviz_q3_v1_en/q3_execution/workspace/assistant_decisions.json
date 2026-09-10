@@ -1,0 +1,217 @@
+{
+  "selection": {
+    "dataset_summary": "576 ten-minute rows over the four prescribed dates; refund-A all-update actual execution",
+    "relevant_columns": [
+      "date",
+      "slot_id",
+      "grid_original_kwh",
+      "grid_effective_kwh",
+      "energy_start_actual_kwh",
+      "energy_end_actual_kwh",
+      "emergency_kwh",
+      "total_cost_yuan"
+    ],
+    "candidate_comparisons": [
+      {
+        "template_id": "trd_dual_axis_bar_line",
+        "suitable": true,
+        "advantages": [
+          "Preserve TRD_001 serif style, dual-axis physical time series, muted cyan fill, clear line and bar layers. Replicate panels for four dates and separate grid commitments from battery states for readable units; retain boundary trajectories without smoothing."
+        ],
+        "limitations": [],
+        "data_compatibility": "Exact real-column mapping"
+      },
+      {
+        "template_id": "mpn_scatter_matrix_timeseries_regression",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Less direct for these physical time-series fields; extra dimensions, smoothing, correlation or regression would not answer the request."
+        ],
+        "data_compatibility": "Not selected"
+      },
+      {
+        "template_id": "cmp_3d_ribbon_chart",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Less direct for these physical time-series fields; extra dimensions, smoothing, correlation or regression would not answer the request."
+        ],
+        "data_compatibility": "Not selected"
+      },
+      {
+        "template_id": "trd_lag_correlation_analysis",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Less direct for these physical time-series fields; extra dimensions, smoothing, correlation or regression would not answer the request."
+        ],
+        "data_compatibility": "Not selected"
+      },
+      {
+        "template_id": "cmp_stack_pie_box_report",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Less direct for these physical time-series fields; extra dimensions, smoothing, correlation or regression would not answer the request."
+        ],
+        "data_compatibility": "Not selected"
+      },
+      {
+        "template_id": "mpn_3d_surface_scatter_report",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Less direct for these physical time-series fields; extra dimensions, smoothing, correlation or regression would not answer the request."
+        ],
+        "data_compatibility": "Not selected"
+      },
+      {
+        "template_id": "opt_hants_parameter_selection",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Less direct for these physical time-series fields; extra dimensions, smoothing, correlation or regression would not answer the request."
+        ],
+        "data_compatibility": "Not selected"
+      },
+      {
+        "template_id": "cmp_flowing_percentage_stack",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Less direct for these physical time-series fields; extra dimensions, smoothing, correlation or regression would not answer the request."
+        ],
+        "data_compatibility": "Not selected"
+      }
+    ],
+    "selected_template_id": "trd_dual_axis_bar_line",
+    "selected_template_name": "双Y轴柱状折线时间序列图",
+    "selection_reason": "Preserve TRD_001 serif style, dual-axis physical time series, muted cyan fill, clear line and bar layers. Replicate panels for four dates and separate grid commitments from battery states for readable units; retain boundary trajectories without smoothing.",
+    "data_support_reason": "Source units and keys are known; only aggregation and display-unit conversion. No synthetic data.",
+    "confidence": 0.97
+  },
+  "plan": {
+    "template_id": "trd_dual_axis_bar_line",
+    "template_name": "双Y轴柱状折线时间序列图",
+    "plot_goal": "576 ten-minute rows over the four prescribed dates; refund-A all-update actual execution",
+    "selected_columns": [
+      "date",
+      "slot_id",
+      "grid_original_kwh",
+      "grid_effective_kwh",
+      "energy_start_actual_kwh",
+      "energy_end_actual_kwh",
+      "emergency_kwh",
+      "total_cost_yuan"
+    ],
+    "column_mappings": [
+      {
+        "data_column": "date",
+        "template_role": "One row of panels per prescribed date"
+      },
+      {
+        "data_column": "slot_id",
+        "template_role": "Unshifted interval edges at (slot-1)/6 hours"
+      },
+      {
+        "data_column": "grid_original_kwh",
+        "template_role": "Dashed midnight commitment steps"
+      },
+      {
+        "data_column": "grid_effective_kwh",
+        "template_role": "Solid final commitment steps"
+      },
+      {
+        "data_column": "energy_start_actual_kwh",
+        "template_role": "Day initial battery state"
+      },
+      {
+        "data_column": "energy_end_actual_kwh",
+        "template_role": "144 subsequent state boundaries"
+      },
+      {
+        "data_column": "emergency_kwh",
+        "template_role": "Unsmooth ten-minute emergency bars on right axis"
+      },
+      {
+        "data_column": "total_cost_yuan",
+        "template_role": "Auditable daily cost fact"
+      }
+    ],
+    "required_preprocessing": [
+      "Read the fixed plotting copy; CNY / 1e6 for millions, CNY / 1000 for thousands, kWh / 1000 for MWh. Preserve all time keys."
+    ],
+    "required_dependencies": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "layout_elements_to_preserve": [
+      "Matplotlib",
+      "Shared physical time axis",
+      "Line and bar composition",
+      "Serif labels and panel letters"
+    ],
+    "style_elements_to_preserve": [
+      "Muted fills and clear lines",
+      "Times New Roman with DejaVu Serif fallback"
+    ],
+    "elements_allowed_to_change": [
+      "Replace demo series with measured result series",
+      "Separate panels to keep units legible",
+      "English-only labels",
+      "Omit unsupported fits and significance"
+    ],
+    "title_plan": "English titles identifying Problem 3 and scenario",
+    "axis_plan": "Calendar months or actual hour boundaries; explicit currency and energy units",
+    "legend_plan": "Distinct color and line styles, above data",
+    "annotation_plan": "Internal settlement and interval-end assumption; update hours",
+    "output_formats": [
+      "png",
+      "svg"
+    ],
+    "warnings": [
+      "Internal working assumptions; not a formal submission."
+    ]
+  },
+  "adaptation": {
+    "changes_summary": [
+      "Preserve TRD_001 serif style, dual-axis physical time series, muted cyan fill, clear line and bar layers. Replicate panels for four dates and separate grid commitments from battery states for readable units; retain boundary trajectories without smoothing.",
+      "All visible strings are English"
+    ],
+    "preserved_style_elements": [
+      "Matplotlib",
+      "Shared physical time axis",
+      "Line and bar composition",
+      "Serif labels and panel letters",
+      "Muted fills and clear lines",
+      "Times New Roman with DejaVu Serif fallback"
+    ],
+    "changed_elements": [
+      "Replace demo series with measured result series",
+      "Separate panels to keep units legible",
+      "English-only labels",
+      "Omit unsupported fits and significance"
+    ],
+    "data_columns_used": [
+      "date",
+      "slot_id",
+      "grid_original_kwh",
+      "grid_effective_kwh",
+      "energy_start_actual_kwh",
+      "energy_end_actual_kwh",
+      "emergency_kwh",
+      "total_cost_yuan"
+    ],
+    "dependencies_used": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "additional_dependencies_requested": [],
+    "assumptions": [
+      "Exact source keys; no time shifts; final volume billed once versus midnight original."
+    ]
+  }
+}

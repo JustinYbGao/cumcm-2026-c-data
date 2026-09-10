@@ -1,0 +1,29 @@
+{
+  "repaired_code": "\"\"\"ModelViz TRD_001: serif dual-axis time series with muted fill and interval bars.\nReplicate the grammar over four prescribed days; no smoothing of commitments.\n\"\"\"\nimport json\nfrom pathlib import Path\nimport sys\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.lines import Line2D\nfrom matplotlib.patches import Patch\nimport numpy as np\nimport pandas as pd\n\nplt.rcParams.update({'font.family':['Times New Roman','DejaVu Serif'],'font.size':10,\n    'axes.unicode_minus':False,'axes.spines.top':False,'axes.spines.right':False,\n    'axes.linewidth':.8,'legend.frameon':False,'svg.hashsalt':'cumcm-q3-v1-en','savefig.facecolor':'white'})\nd=pd.read_csv(sys.argv[1],float_precision='round_trip');out=Path(sys.argv[2]);out.mkdir(parents=True,exist_ok=True)\ndates=['2025-03-20','2025-06-21','2025-09-23','2025-12-21'];assert len(d)==576\nfig,axes=plt.subplots(4,2,figsize=(12,10),layout='constrained',sharex=True)\nfig.suptitle('Problem 3 | Revised commitments and actual battery operation',x=.065,y=.987,ha='left',fontsize=17)\nqmax=float(d[['grid_original_kwh','grid_effective_kwh']].to_numpy().max()/1000)\nemax=max(.05,float(d.emergency_kwh.max()/1000)*1.25)\nfacts=[]\nfor row,date in enumerate(dates):\n    f=d.loc[d.date==date];assert f.slot_id.tolist()==list(range(1,145))\n    edge=np.arange(145)/6;x=edge[:-1]\n    ax,st=axes[row]\n    ax.stairs(f.grid_original_kwh.to_numpy()/1000,edge,color='#777777',lw=1,linestyle='--')\n    ax.stairs(f.grid_effective_kwh.to_numpy()/1000,edge,color='#1f78b4',lw=1.15)\n    ax.set(ylabel='Grid energy (MWh / 10 min)',ylim=(0,qmax*1.14))\n    ax.set_title(f'({chr(97+row*2)}) {date} | Commitment',loc='left',fontsize=11,pad=7)\n    state=np.r_[f.energy_start_actual_kwh.iloc[0],f.energy_end_actual_kwh.to_numpy()]/1000\n    st.fill_between(edge,1.2,state,color='#a8edea',alpha=.45)\n    st.plot(edge,state,color='#307f80',lw=1.4)\n    st.axhline(1.2,color='#777777',ls=':',lw=.7);st.axhline(10.8,color='#777777',ls=':',lw=.7)\n    st.set(ylabel='Stored energy (MWh)',ylim=(0,12),yticks=[1.2,6,10.8])\n    twin=st.twinx();twin.spines['right'].set_visible(True)\n    twin.bar(x,f.emergency_kwh/1000,width=1/6,align='edge',color='#cf7957',alpha=.75)\n    twin.set(ylabel='Emergency (MWh / 10 min)',ylim=(0,emax));twin.tick_params(axis='y',labelsize=9,colors='#986247')\n    st.set_title(f'({chr(98+row*2)}) {date} | Actual state and shortage',loc='left',fontsize=11,pad=7)\n    for a in [ax,st]:\n        for hour in [6,12,18]:a.axvline(hour,color='#b9c2cb',ls=':',lw=.8)\n        a.set(xlim=(0,24),xticks=[0,6,12,18,24]);a.set_axisbelow(True)\n        a.grid(axis='y',color='#d5dbe0',lw=.5,alpha=.7);a.tick_params(direction='in')\n    facts.append({'date':date,'emergency_kwh':float(f.emergency_kwh.sum()),'total_cost_yuan':float(f.total_cost_yuan.sum())})\nfor a in axes[-1]:a.set_xlabel('Hour of day')\nhandles=[Line2D([],[],color='#777777',ls='--',label='Midnight commitment'),Line2D([],[],color='#1f78b4',label='Final effective commitment'),\n    Line2D([],[],color='#307f80',label='Actual stored energy'),Patch(color='#cf7957',alpha=.75,label='Emergency purchase')]\nfig.legend(handles=handles,loc='upper left',bbox_to_anchor=(.065,.955),ncol=4,fontsize=10)\nfig.get_layout_engine().set(rect=(0,.065,1,.825))\nfig.text(.065,.025,'Refund A; all updates. Dotted vertical lines mark 06:00, 12:00 and 18:00. Internal interval-end assumption.',fontsize=10,color='#59636f')\nfor ext in ['png','svg']:fig.savefig(out/f'chart.{ext}',dpi=300,metadata={'Date':None} if ext=='svg' else None)\nplt.close(fig)\n(out.parent/'workspace/plot_facts.json').write_text(json.dumps({'rows':576,'dates':facts},indent=2)+'\\n')\n",
+  "fixed_issues": [
+    "Global legend overlaps first-row panel titles."
+  ],
+  "remaining_risks": [
+    "Repaired PNG requires actual visual inspection before approval."
+  ],
+  "changes_summary": [
+    "Reduce the panel layout top edge to leave a dedicated legend band."
+  ],
+  "data_columns_used": [
+    "date",
+    "slot_id",
+    "grid_original_kwh",
+    "grid_effective_kwh",
+    "energy_start_actual_kwh",
+    "energy_end_actual_kwh",
+    "emergency_kwh",
+    "total_cost_yuan"
+  ],
+  "dependencies_used": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "additional_dependencies_requested": [],
+  "can_retry": true
+}

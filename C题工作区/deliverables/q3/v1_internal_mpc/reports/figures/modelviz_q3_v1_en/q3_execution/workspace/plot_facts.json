@@ -1,0 +1,25 @@
+{
+  "rows": 576,
+  "dates": [
+    {
+      "date": "2025-03-20",
+      "emergency_kwh": 327.41857266948693,
+      "total_cost_yuan": 45093.9585735274
+    },
+    {
+      "date": "2025-06-21",
+      "emergency_kwh": 0.0,
+      "total_cost_yuan": 19718.62509942893
+    },
+    {
+      "date": "2025-09-23",
+      "emergency_kwh": 667.8629716113492,
+      "total_cost_yuan": 47443.439279294274
+    },
+    {
+      "date": "2025-12-21",
+      "emergency_kwh": 55.10941387151706,
+      "total_cost_yuan": 62345.31885981483
+    }
+  ]
+}

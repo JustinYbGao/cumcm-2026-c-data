@@ -1,0 +1,82 @@
+FFFFFFF
+======================================================================
+FAIL: test_billing_examples (test_q3.Q3Tests.test_billing_examples)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q3.py", line 22, in test_billing_examples
+    m=self.module()
+      ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q3.py", line 16, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q3'),'Q3 implementation missing')
+AssertionError: unexpectedly None : Q3 implementation missing
+
+======================================================================
+FAIL: test_final_settlement_ignores_superseded_versions (test_q3.Q3Tests.test_final_settlement_ignores_superseded_versions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q3.py", line 27, in test_final_settlement_ignores_superseded_versions
+    m=self.module()
+      ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q3.py", line 16, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q3'),'Q3 implementation missing')
+AssertionError: unexpectedly None : Q3 implementation missing
+
+======================================================================
+FAIL: test_frozen_original_excess_can_be_disposed (test_q3.Q3Tests.test_frozen_original_excess_can_be_disposed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q3.py", line 48, in test_frozen_original_excess_can_be_disposed
+    plan,_=self.module().solve_horizon(np.zeros(1),np.array([50.]),np.ones(1),10800.,10800.,
+           ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q3.py", line 16, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q3'),'Q3 implementation missing')
+AssertionError: unexpectedly None : Q3 implementation missing
+
+======================================================================
+FAIL: test_increase_cost_and_no_emergency_charging_channel (test_q3.Q3Tests.test_increase_cost_and_no_emergency_charging_channel)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q3.py", line 41, in test_increase_cost_and_no_emergency_charging_channel
+    plan,status=self.module().solve_horizon(np.array([120.]),np.zeros(1),np.ones(1),6000.,6000.,
+                ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q3.py", line 16, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q3'),'Q3 implementation missing')
+AssertionError: unexpectedly None : Q3 implementation missing
+
+======================================================================
+FAIL: test_one_interval_decrease_A_and_no_decrease_B (test_q3.Q3Tests.test_one_interval_decrease_A_and_no_decrease_B)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q3.py", line 33, in test_one_interval_decrease_A_and_no_decrease_B
+    m=self.module()
+      ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q3.py", line 16, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q3'),'Q3 implementation missing')
+AssertionError: unexpectedly None : Q3 implementation missing
+
+======================================================================
+FAIL: test_pv_selector_never_uses_future_issue (test_q3.Q3Tests.test_pv_selector_never_uses_future_issue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q3.py", line 54, in test_pv_selector_never_uses_future_issue
+    m=self.module();now=pd.Timestamp('2025-02-01T06:00');end=now+pd.Timedelta(minutes=20)
+      ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q3.py", line 16, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q3'),'Q3 implementation missing')
+AssertionError: unexpectedly None : Q3 implementation missing
+
+======================================================================
+FAIL: test_q1_objective_reproduced_by_horizon_solver (test_q3.Q3Tests.test_q1_objective_reproduced_by_horizon_solver)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q3.py", line 64, in test_q1_objective_reproduced_by_horizon_solver
+    m=self.module();f=pd.read_csv(WORK/'results/q1/baseline/schedule.csv')
+      ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q3.py", line 16, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q3'),'Q3 implementation missing')
+AssertionError: unexpectedly None : Q3 implementation missing
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+FAILED (failures=7)

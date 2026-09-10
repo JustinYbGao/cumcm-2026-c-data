@@ -1,0 +1,103 @@
+{
+  "dataset_summary": "11 calendar months of independently billed policy costs and paired savings",
+  "observed_data_features": [],
+  "relevant_columns": [
+    "month",
+    "no_update_total_cost_yuan",
+    "all_A_total_cost_yuan",
+    "all_B_total_cost_yuan",
+    "all_A_saving_yuan",
+    "all_B_saving_yuan"
+  ],
+  "candidate_comparisons": [
+    {
+      "template_id": "cmp_3d_ribbon_chart",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Less direct for these physical time-series fields; extra dimensions, smoothing, correlation or regression would not answer the request."
+      ],
+      "data_compatibility": "Not selected",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_dual_axis_bar_line",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Less direct for these physical time-series fields; extra dimensions, smoothing, correlation or regression would not answer the request."
+      ],
+      "data_compatibility": "Not selected",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_lag_correlation_analysis",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Less direct for these physical time-series fields; extra dimensions, smoothing, correlation or regression would not answer the request."
+      ],
+      "data_compatibility": "Not selected",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "mpn_scatter_matrix_timeseries_regression",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Less direct for these physical time-series fields; extra dimensions, smoothing, correlation or regression would not answer the request."
+      ],
+      "data_compatibility": "Not selected",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_flowing_percentage_stack",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Less direct for these physical time-series fields; extra dimensions, smoothing, correlation or regression would not answer the request."
+      ],
+      "data_compatibility": "Not selected",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_3d_waterfall_distribution",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Less direct for these physical time-series fields; extra dimensions, smoothing, correlation or regression would not answer the request."
+      ],
+      "data_compatibility": "Not selected",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_smoothed_trend_curves",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Less direct for these physical time-series fields; extra dimensions, smoothing, correlation or regression would not answer the request."
+      ],
+      "data_compatibility": "Not selected",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_composite_line_bar_dual_axis",
+      "suitable": true,
+      "advantages": [
+        "Preserve TRD_004 serif typography, blue/orange/gray palette, line-bar composition and labeled panels. Separate the auxiliary difference axis into a shared-x lower panel; no regression or significance claims."
+      ],
+      "limitations": [],
+      "data_compatibility": "Exact real-column mapping",
+      "requirement_compatibility": ""
+    }
+  ],
+  "selected_template_id": "trd_composite_line_bar_dual_axis",
+  "selected_template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "alternative_template_ids": [],
+  "selection_reason": "Preserve TRD_004 serif typography, blue/orange/gray palette, line-bar composition and labeled panels. Separate the auxiliary difference axis into a shared-x lower panel; no regression or significance claims.",
+  "data_support_reason": "Source units and keys are known; only aggregation and display-unit conversion. No synthetic data.",
+  "data_warnings": [],
+  "confidence": 0.97,
+  "needs_clarification": false,
+  "clarification_question": ""
+}

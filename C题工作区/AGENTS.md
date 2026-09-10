@@ -7,4 +7,5 @@
 - 同时提供 300 dpi PNG 与 SVG；图内全部使用英文（标题、坐标轴、图例、注释、脚注、月份），不得出现中文；保留明确单位及一致配色，实际查看图片后再确认版式合格。
 - 保留其他成员工作及已冻结交付包。新图用独立版本目录，并同步当前论文/报告引用和来源哈希。
 
-当前版本：`reports/figures/modelviz_v3_en/`；可复现命令见 `reports/modelviz_v3_en_revision.md`。
+当前Q1/Q2图：`reports/figures/modelviz_v3_en/`；可复现命令见 `reports/modelviz_v3_en_revision.md`。
+当前Q3图：`reports/figures/modelviz_q3_v1_en/`；命令和实际视觉检查证据见 `reports/q3_model_and_results.md` 及各图 `workspace/`。

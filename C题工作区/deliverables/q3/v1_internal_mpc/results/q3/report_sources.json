@@ -1,0 +1,8 @@
+{
+  "results/q3/comparison.csv": "e773bd27c8b9f5f3defe88f9d16fd1c02ae15564a38d200f01f2feab39e8a8a6",
+  "results/q3_feedback_control/comparison.csv": "233b119b1104e764b451ebca03a4cb0eef672b07912c98f1aaf68ca26878be9c",
+  "results/q3/validation.json": "b916ad2daa1f49198e649f581cb07d49464b11576b02d7ccb1cf6b210f4d7b0f",
+  "results/q3_feedback_control/validation.json": "4495fff351c8c3983f38d053543e6e0eeaeed18d1f27733fc943e370f042a229",
+  "results/q3/independent_lp_audit.json": "9f571b5bbc10c9eb984a21200f437ff933e32c40f5002911dce9c4916a0adcac",
+  "scripts/report_q3.py": "4aca3efba8a4ce7dce0bd729585feae0055bc0a04327349582ee22164f19eb66"
+}

@@ -1,0 +1,10 @@
+{
+  "completed": true,
+  "inputs_unchanged": true,
+  "policies": [
+    "state_feedback_only_A"
+  ],
+  "evaluation_days": 334,
+  "formal_excel_exported": false,
+  "q4_executed": false
+}

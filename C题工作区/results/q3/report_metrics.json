@@ -1,0 +1,13 @@
+{
+  "primary_checks": 110401,
+  "feedback_control_checks": 30048,
+  "primary_solves": 5010,
+  "all_solves": 6346,
+  "primary_executed_intervals": 288576,
+  "all_executed_intervals": 336672,
+  "forecast_refresh_incremental_saving_yuan": 161477.9102757387,
+  "forecast_refresh_incremental_saving_percent": 1.158847150374808,
+  "max_actual_balance_kwh": 0.0,
+  "max_plan_balance_kwh": 1.7354295778204687e-10,
+  "inventory_ranking_unchanged": true
+}

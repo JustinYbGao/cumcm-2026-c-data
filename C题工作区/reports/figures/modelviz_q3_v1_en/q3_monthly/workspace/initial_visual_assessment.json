@@ -1,0 +1,21 @@
+{
+  "inspected_png_sha256": "891eacf580065bc30299d64f3f52da82105b7562065f67bd31460f3209ec4714",
+  "inspected_script_sha256": "3440f0a7b98ce1196594974b609301c7f5ce663f7830d6aebb854c108eb29003",
+  "report": {
+    "passed": false,
+    "requirement_alignment": "English-only labels and correct units.",
+    "data_expression_quality": "Source values preserved.",
+    "style_preservation": "Selected template grammar preserved.",
+    "readability": "Annual totals need explicit policy names; title must not attribute feedback gains only to forecast information.",
+    "layout_quality": "Annual totals need explicit policy names; title must not attribute feedback gains only to forecast information.",
+    "color_quality": "Clear line and fill contrast.",
+    "issues": [
+      "Annual totals need explicit policy names; title must not attribute feedback gains only to forecast information."
+    ],
+    "suggested_fixes": [
+      "Explicitly label the annual totals and broaden the title."
+    ],
+    "needs_repair": true,
+    "confidence": 0.99
+  }
+}

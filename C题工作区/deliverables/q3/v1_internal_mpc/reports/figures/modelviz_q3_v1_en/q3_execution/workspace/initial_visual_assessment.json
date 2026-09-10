@@ -1,0 +1,21 @@
+{
+  "inspected_png_sha256": "4835b4405d38b003fe864a229002d8a0017635f568926f0a960a0a88ded23c58",
+  "inspected_script_sha256": "2b3055c249e4a9c7998187064581faf4cf558fbf0644d21261c55deda5dd645b",
+  "report": {
+    "passed": false,
+    "requirement_alignment": "English-only labels and correct units.",
+    "data_expression_quality": "Source values preserved.",
+    "style_preservation": "Selected template grammar preserved.",
+    "readability": "Global legend overlaps first-row panel titles.",
+    "layout_quality": "Global legend overlaps first-row panel titles.",
+    "color_quality": "Clear line and fill contrast.",
+    "issues": [
+      "Global legend overlaps first-row panel titles."
+    ],
+    "suggested_fixes": [
+      "Reduce the panel layout top edge to leave a dedicated legend band."
+    ],
+    "needs_repair": true,
+    "confidence": 0.99
+  }
+}

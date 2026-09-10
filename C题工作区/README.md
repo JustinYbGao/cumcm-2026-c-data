@@ -1,6 +1,26 @@
 # C题数据工作区
 
-本目录独立于朋友的 `111`，数据脚本直接读取 `../CUMCM2026Problems/C题/附件/`，不覆盖原附件或其他成员代码。数据阶段保持原用途；问题1已完成内部求解、验证并冻结结果包和论文初稿；问题2已完成因果预测、334天基础回放及独立核验。尚未填写正式附件5，问题3—4未执行。当前进度见 `reports/workflow_progress.md`，较早Q1报告中的Q2状态属于当时快照。
+本目录独立于朋友的 `111`，数据脚本直接读取 `../CUMCM2026Problems/C题/附件/`，不覆盖原附件或其他成员代码。问题1—3已有内部模型、实际求解、独立核验及论文初稿；问题2负结果继续保留。尚未填写正式附件5，问题4未执行。当前进度见 `reports/workflow_progress.md`，较早报告中的后续状态属于当时快照。
+
+## 最新交付：问题2冻结、问题3内部验收
+
+- 问题2补齐[论文初稿](papers/q2_draft.md)与[138文件冻结包](deliverables/q2/v1_internal_baseline.zip)，已在复制包内重新独立验证。
+- 问题3[论文初稿](papers/q3_draft.md)、[模型与数值说明](reports/q3_model_and_results.md)、[A/B四日完整表](reports/q3_representative_tables.md)、[BZD局部检查](reports/q3_bzd_solution_check.md)。
+- 问题3主六组策略：只用0点预报15,842,067.99元；全更新A 13,772,880.06元、B 13,765,041.25元。补充仅状态反馈13,934,357.97元，新PV相对该控制再省161,477.91元；不能把总更新节省全归于新PV信息。
+- 新图位于[modelviz_q3_v1_en](reports/figures/modelviz_q3_v1_en/)，全部英文、300 dpi PNG和SVG，保留模板决策、输入、修复与最终质检记录。
+- 主实验110,401检查、补充30,048检查、36个独立LP时域、20项Q1—Q3单测通过；来源/图文201项检查通过，118份原数据及旧结果保持原哈希。
+- 问题3冻结包入口：[deliverables/q3/v1_internal_mpc.zip](deliverables/q3/v1_internal_mpc.zip)。内部工作假设；正式模板时间映射、A/B结算及效率等仍待确认。
+
+Q3数值在 `results/q3/`，补充控制在 `results/q3_feedback_control/`。复核命令（在本工作区运行）：
+
+```bash
+.venv/bin/python -B scripts/validate_q3.py
+.venv/bin/python -B scripts/validate_q3.py --results results/q3_feedback_control
+.venv/bin/python -B scripts/audit_q3_lp.py
+.venv/bin/python -B scripts/verify_q3_artifacts.py
+```
+
+首次新环境安装扩展依赖：`.venv/bin/python -m pip install -r requirements-q3.txt`。求解、报告及绘图命令见问题3结果说明；完成标记禁止覆盖既有求解，另开版本才能重算。本轮先使用了BZD workflow、dictionary、solution-checker以及ModelViz，另以边界单测和完成前验证流程核验代码。
 
 ## 最新交付与问题2基础版
 
@@ -101,6 +121,6 @@ C题工作区/.venv/bin/python C题工作区/scripts/validate_data.py --stage q1
 
 ## 本轮范围与后续
 
-Q1已冻结内部结果与论文初稿；Q2基础闭环已跑通并保存候选退化证据，后续研究因果滚动适配或风险校准；Q3具备版本预报输入、Q4具备实际价格归档，但两问尚未计算。所有正式模板填写仍待时间映射确认。当前状态以workflow_progress.md为准。
+Q1—Q3内部结果与论文初稿已完成；Q2候选退化证据保留，Q3费用/时刻及信息反馈对照已完成。Q4具备实际价格归档，尚未计算。所有正式模板填写仍待时间映射确认。当前状态以workflow_progress.md为准。
 
 `data/interim`保存题面抽取、源文件清单、日期变换日志、预报覆盖、111运行副本。`reports/figures`存放三张描述性图；绘图源代码为 `scripts/report_data.py`。本轮没有单独创建空模块。

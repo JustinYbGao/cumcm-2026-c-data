@@ -1,0 +1,10 @@
+{
+  "source_files": {
+    "results/q3/all_A/ledger.csv": "ddcc9c658e95778efd697f32d52b3fb43fa0029ad7110676380a3f3dea95d22c"
+  },
+  "plot_data_sha256": "98512bd328eb77ae3cf1e7beac43bb4cc27c2d62eb8884dd1149eb768c0b02bb",
+  "rows": 576,
+  "transformation": "Select the four prescribed dates, keep interval boundaries and values unchanged",
+  "units": "CNY to million CNY; kWh to MWh only for display",
+  "time_assumption": "Internal interval-end labels, no shift"
+}

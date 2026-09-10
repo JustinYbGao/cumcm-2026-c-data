@@ -1,0 +1,94 @@
+{
+  "template_id": "trd_dual_axis_bar_line",
+  "template_name": "双Y轴柱状折线时间序列图",
+  "plot_goal": "576 ten-minute rows over the four prescribed dates; refund-A all-update actual execution",
+  "selected_columns": [
+    "date",
+    "slot_id",
+    "grid_original_kwh",
+    "grid_effective_kwh",
+    "energy_start_actual_kwh",
+    "energy_end_actual_kwh",
+    "emergency_kwh",
+    "total_cost_yuan"
+  ],
+  "column_mappings": [
+    {
+      "data_column": "date",
+      "template_role": "One row of panels per prescribed date",
+      "reason": ""
+    },
+    {
+      "data_column": "slot_id",
+      "template_role": "Unshifted interval edges at (slot-1)/6 hours",
+      "reason": ""
+    },
+    {
+      "data_column": "grid_original_kwh",
+      "template_role": "Dashed midnight commitment steps",
+      "reason": ""
+    },
+    {
+      "data_column": "grid_effective_kwh",
+      "template_role": "Solid final commitment steps",
+      "reason": ""
+    },
+    {
+      "data_column": "energy_start_actual_kwh",
+      "template_role": "Day initial battery state",
+      "reason": ""
+    },
+    {
+      "data_column": "energy_end_actual_kwh",
+      "template_role": "144 subsequent state boundaries",
+      "reason": ""
+    },
+    {
+      "data_column": "emergency_kwh",
+      "template_role": "Unsmooth ten-minute emergency bars on right axis",
+      "reason": ""
+    },
+    {
+      "data_column": "total_cost_yuan",
+      "template_role": "Auditable daily cost fact",
+      "reason": ""
+    }
+  ],
+  "required_preprocessing": [
+    "Read the fixed plotting copy; CNY / 1e6 for millions, CNY / 1000 for thousands, kWh / 1000 for MWh. Preserve all time keys."
+  ],
+  "required_dependencies": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "layout_elements_to_preserve": [
+    "Matplotlib",
+    "Shared physical time axis",
+    "Line and bar composition",
+    "Serif labels and panel letters"
+  ],
+  "style_elements_to_preserve": [
+    "Muted fills and clear lines",
+    "Times New Roman with DejaVu Serif fallback"
+  ],
+  "elements_allowed_to_change": [
+    "Replace demo series with measured result series",
+    "Separate panels to keep units legible",
+    "English-only labels",
+    "Omit unsupported fits and significance"
+  ],
+  "title_plan": "English titles identifying Problem 3 and scenario",
+  "axis_plan": "Calendar months or actual hour boundaries; explicit currency and energy units",
+  "legend_plan": "Distinct color and line styles, above data",
+  "annotation_plan": "Internal settlement and interval-end assumption; update hours",
+  "output_formats": [
+    "png",
+    "svg"
+  ],
+  "warnings": [
+    "Internal working assumptions; not a formal submission."
+  ],
+  "can_proceed": true,
+  "clarification_question": ""
+}

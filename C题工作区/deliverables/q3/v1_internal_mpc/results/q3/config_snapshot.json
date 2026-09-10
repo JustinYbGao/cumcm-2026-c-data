@@ -1,0 +1,57 @@
+{
+  "status": "internal_assumptions_not_submission",
+  "evaluation_start": "2025-02-01",
+  "evaluation_end": "2025-12-31",
+  "load_forecast": "inherit_Q2_January_frozen_selected_load_forecast_at_00; hold_it_fixed_intraday",
+  "pv_forecast": "raw_reviewed_piecewise_linear_forecast_energy_for_exact_issue; truncate_to_same_day_24h",
+  "initial_state": "common_Q2_Feb1_state_from_January_warmup",
+  "planned_terminal": "each_day_midnight_actual_state_as_fixed_24h_target; actual_state_continues_across_days",
+  "settlement": "relative_to_00_original_commitment_once_per_executed_interval; do_not_sum_version_objectives",
+  "rule_A": "base_price + 1.5_price_for_increase - 0.5_price_for_decrease",
+  "rule_B": "base_price + 1.5_price_for_increase + 0.5_price_for_decrease",
+  "rule_B_reduction": "grid_at_least_original; reducing_below_original_is_weakly_dominated_with_free_surplus_disposal",
+  "emergency_price_multiplier": 5.0,
+  "execution": "same_quasi_static_greedy_feedback_as_Q2; emergency_only_for_actual_unserved_gap",
+  "policies": {
+    "no_update": {
+      "rule": "A",
+      "update_hours": []
+    },
+    "all_A": {
+      "rule": "A",
+      "update_hours": [
+        6,
+        12,
+        18
+      ]
+    },
+    "all_B": {
+      "rule": "B",
+      "update_hours": [
+        6,
+        12,
+        18
+      ]
+    },
+    "only06_A": {
+      "rule": "A",
+      "update_hours": [
+        6
+      ]
+    },
+    "only12_A": {
+      "rule": "A",
+      "update_hours": [
+        12
+      ]
+    },
+    "only18_A": {
+      "rule": "A",
+      "update_hours": [
+        18
+      ]
+    }
+  },
+  "design_disclosure": "Policies specified before this Q3 run; Q2 annual outcomes already inspected. Timing comparisons are retrospective ablations, not an untouched test for policy selection.",
+  "q4_executed": false
+}

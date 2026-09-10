@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "sample_count": 36,
+  "max_milp_minus_lp_yuan": 2.1827872842550278e-11,
+  "max_lp_primal_violation": 9.094947017729282e-13,
+  "method": "Independent scipy.linprog sparse matrix LP relaxation; same HiGHS algorithm family, independently assembled constraints. Not an independent solver vendor.",
+  "scope": "Four prescribed dates; no_update midnight and all_A/all_B 00/06/12/18. Bounds apply only to these forecast horizons."
+}

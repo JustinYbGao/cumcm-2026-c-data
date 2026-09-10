@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "scripts/validate_q3.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "scripts/validate_q3.py",
+        "--results",
+        "results/q3_feedback_control"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "scripts/audit_q3_lp.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_q3.py"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

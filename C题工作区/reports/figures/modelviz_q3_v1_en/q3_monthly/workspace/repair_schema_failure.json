@@ -1,0 +1,13 @@
+{
+  "success": false,
+  "failed_step": "visual_quality_check",
+  "error": {
+    "success": false,
+    "error_type": "model_structured_output_error",
+    "message": "模型结构化输出失败。",
+    "details": {
+      "error": "1 validation error for VisualQualityReport\nissues.0\n  Input should be a valid string [type=string_type, input_value={'severity': 'medium', 'i... forecast information.'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_type"
+    },
+    "suggestion": ""
+  }
+}

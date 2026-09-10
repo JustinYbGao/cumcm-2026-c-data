@@ -1,0 +1,29 @@
+{
+  "success": false,
+  "error": {
+    "success": false,
+    "error_type": "max_repair_attempts_reached",
+    "message": "达到最大修复次数。",
+    "details": {},
+    "suggestion": ""
+  },
+  "final_quality_report": {
+    "passed": false,
+    "repair_attempts": 1,
+    "dependency_install_rounds": 0,
+    "final_dependencies": [],
+    "final_script": "/Users/justingao/Documents/CUMCM/C题工作区/reports/figures/modelviz_q3_v1_en/q3_execution/workspace/adapted_plot.py",
+    "final_outputs": [
+      "/Users/justingao/Documents/CUMCM/C题工作区/reports/figures/modelviz_q3_v1_en/q3_execution/outputs/chart.svg",
+      "/Users/justingao/Documents/CUMCM/C题工作区/reports/figures/modelviz_q3_v1_en/q3_execution/outputs/chart.png"
+    ],
+    "technical_summary": "技术检查仍有问题。",
+    "visual_summary": "视觉检查仍有问题。",
+    "remaining_issues": [
+      "Global legend overlaps first-row panel titles."
+    ],
+    "warnings": [
+      "达到最大修复次数。"
+    ]
+  }
+}

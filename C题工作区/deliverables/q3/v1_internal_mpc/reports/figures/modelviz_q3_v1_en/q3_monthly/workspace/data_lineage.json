@@ -1,0 +1,12 @@
+{
+  "source_files": {
+    "results/q3/no_update/daily.csv": "3cb871cb165a8fd9f5b4b47793f68bd3a95115267537330d164799aacbb500a9",
+    "results/q3/all_A/daily.csv": "0999dd0e1b591b1d63ffcbd6b8a09c387393498573ef3dc244abe1bfa47ab274",
+    "results/q3/all_B/daily.csv": "a81576cb18dd631c52141e1b7c828f108ee6a3cb1c455f3aba4e40bea964d517"
+  },
+  "plot_data_sha256": "c4ba7ba6a6290904c860af084aea50b9fc7d9544f0cebfdc8c40baace0a1f3fe",
+  "rows": 11,
+  "transformation": "Sum actual daily bills by original calendar month; derive no-update minus update cost",
+  "units": "CNY to million CNY; kWh to MWh only for display",
+  "time_assumption": "Internal interval-end labels, no shift"
+}

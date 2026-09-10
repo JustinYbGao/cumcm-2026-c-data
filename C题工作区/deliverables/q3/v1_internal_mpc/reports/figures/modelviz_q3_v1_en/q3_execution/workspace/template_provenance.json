@@ -1,0 +1,17 @@
+{
+  "source_catalog_sha256": "4c09d0ab2aece35a9fec50a202525995e6864985cb7fb3eca2254759bcb52f12",
+  "source_script": "/Users/justingao/.codex/skills/modelviz-skill/templates/12_TRD_trend_time_series/12_TRD_001/双Y轴柱状折线时间序列图.py",
+  "source_script_sha256": "30b1eb37a5bb70968eed09075d8e9c71fffca4c1b4b69b0e35be47b359a4ab29",
+  "source_preview": "/Users/justingao/.codex/skills/modelviz-skill/templates/12_TRD_trend_time_series/12_TRD_001/assets/preview.png",
+  "source_preview_sha256": "78f1e0825cfde726c766e9272a6026857fb16cacbd9a0fef3fdfdd3eed28028d",
+  "original_dependencies": [
+    "pillow",
+    "matplotlib",
+    "numpy"
+  ],
+  "local_catalog_additions": [
+    "numpy",
+    "pandas"
+  ],
+  "reason": "Adapter dependency preflight; bundled service validates before extra-dependency pass. Original catalog/template are unchanged."
+}
