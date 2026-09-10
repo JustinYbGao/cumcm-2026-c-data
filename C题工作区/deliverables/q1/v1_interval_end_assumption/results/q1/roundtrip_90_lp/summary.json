@@ -1,0 +1,11 @@
+{
+  "cost_yuan": 33801.495542222016,
+  "grid_kwh": 57526.24348088351,
+  "charge_kwh": 19842.710475501775,
+  "discharge_kwh": 17858.4394279516,
+  "curtailment_kwh": 0.0,
+  "initial_energy_kwh": 6000.0,
+  "terminal_energy_kwh": 6000.0,
+  "status": "internal_working_assumptions_not_submission",
+  "scenario": "roundtrip_90_lp"
+}

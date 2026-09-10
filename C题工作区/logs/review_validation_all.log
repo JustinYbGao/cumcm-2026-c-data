@@ -1,0 +1,71 @@
+PASS Q1: 144 slots unique and ordered 
+PASS Q1: complete relative day intervals 
+PASS Q1: required values nonmissing 
+PASS fixed_price: 144 slots unique and ordered 
+PASS fixed_price: complete relative day intervals 
+PASS fixed_price: required values nonmissing 
+PASS Q1: all original numeric cells preserved 
+PASS Q1: energy and signed net load 
+PASS Q1: fixed price identical 
+PASS Q1: negative net and zeros preserved negative net=30, PV zero=55
+PASS actual_10min: interval_start timezone-naive 
+PASS actual_10min: interval_end timezone-naive 
+PASS actual_10min: available_time timezone-naive 
+PASS pv_forecast_hourly: issue_time timezone-naive 
+PASS pv_forecast_hourly: target_time timezone-naive 
+PASS pv_forecast_10min: interval_start timezone-naive 
+PASS pv_forecast_10min: interval_end timezone-naive 
+PASS pv_forecast_10min: issue_time timezone-naive 
+PASS pv_forecast_10min: endpoint_issue_time timezone-naive 
+PASS Actual: 52560 unique contiguous intervals 
+PASS Actual: every day 144 slots 
+PASS Actual: end/start and year-end business date 
+PASS Actual: no missing data or unexpected join loss 
+PASS Actual: all load_actual_kw raw cells reconcile 
+PASS Actual: load source rows reconcile 
+PASS Actual: load_actual_kw zeros preserved 
+PASS Actual: all pv_actual_kw raw cells reconcile 
+PASS Actual: pv source rows reconcile 
+PASS Actual: pv_actual_kw zeros preserved 
+PASS Actual: all actual_price_yuan_per_kwh raw cells reconcile 
+PASS Actual: price source rows reconcile 
+PASS Actual: actual_price_yuan_per_kwh zeros preserved 
+PASS Actual: energy and signed net conversion 
+PASS Actual: negative net preserved negative net=10130
+PASS Actual: fixed price mapping 
+PASS Actual: availability is interval end 
+PASS Hourly: 35040 unique version-target keys 
+PASS Hourly: 1460 issue times / 24 horizons 
+PASS Hourly: target equals issue plus horizon 
+PASS Hourly: every original power preserved 
+PASS Hourly: date fills recorded 
+PASS Hourly: date-fill flags map to exact source rows 
+PASS Hourly: all 1095 date-fill source cells logged 
+PASS Hourly: overlapping versions and cross-year retained targets after actual end=36
+PASS 10min: 210234 rows and unique version-interval keys 
+PASS 10min: initial issue 138 intervals, remaining 1459 issues 144 
+PASS 10min: all intervals 10min and within 24h 
+PASS 10min: no internal gaps per version 
+PASS 10min: missing initial hour not invented 
+PASS 10min: business date and slot 
+PASS 10min: endpoint source older by 6h 
+PASS 10min: every interval independently integrates raw forecast powers 
+PASS 10min: finite nonnegative derived values 
+PASS Causal access: 23 decision timestamps, future rows excluded 
+PASS Causal access: February 1 uses all January and none of February 
+test_causal_slicing_boundaries (test_boundaries.Boundaries.test_causal_slicing_boundaries) ... ok
+test_linear_energy_and_missing_initial_endpoint (test_boundaries.Boundaries.test_linear_energy_and_missing_initial_endpoint) ... ok
+test_source_blank_dates_expand_without_index_alignment (test_boundaries.Boundaries.test_source_blank_dates_expand_without_index_alignment) ... ok
+test_time_and_year_end (test_boundaries.Boundaries.test_time_and_year_end) ... ok
+test_common_sample_requires_four_distinct_versions_and_groups (test_forecast_diagnostics.ForecastDiagnostics.test_common_sample_requires_four_distinct_versions_and_groups) ... ok
+test_energy_units_year_end_missing_actual (test_forecast_diagnostics.ForecastDiagnostics.test_energy_units_year_end_missing_actual) ... ok
+test_error_unavailable_until_entire_hour_complete (test_forecast_diagnostics.ForecastDiagnostics.test_error_unavailable_until_entire_hour_complete) ... ok
+test_partial_forecast_not_summed_as_full_hour (test_forecast_diagnostics.ForecastDiagnostics.test_partial_forecast_not_summed_as_full_hour) ... ok
+test_real_zero_is_comparable_and_duplicates_are_rejected (test_forecast_diagnostics.ForecastDiagnostics.test_real_zero_is_comparable_and_duplicates_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.105s
+
+OK
+PASS Synthetic boundary/units/version/isolation tests 9 tests
+PASS All original workbooks including templates unchanged 

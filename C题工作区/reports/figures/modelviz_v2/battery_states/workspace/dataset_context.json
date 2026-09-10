@@ -1,0 +1,219 @@
+{
+  "file_name": "data.csv",
+  "file_type": "csv",
+  "sheet_name": null,
+  "row_count": 145,
+  "column_count": 3,
+  "column_names": [
+    "minute",
+    "baseline_energy_kwh",
+    "roundtrip_energy_kwh"
+  ],
+  "sample_records": [
+    {
+      "minute": 0,
+      "baseline_energy_kwh": 6000.0,
+      "roundtrip_energy_kwh": 6000.0
+    },
+    {
+      "minute": 10,
+      "baseline_energy_kwh": 6750.0,
+      "roundtrip_energy_kwh": 6790.569415042095
+    },
+    {
+      "minute": 20,
+      "baseline_energy_kwh": 7500.0,
+      "roundtrip_energy_kwh": 7581.138830084188
+    },
+    {
+      "minute": 30,
+      "baseline_energy_kwh": 8250.0,
+      "roundtrip_energy_kwh": 8371.708245126283
+    },
+    {
+      "minute": 40,
+      "baseline_energy_kwh": 9000.0,
+      "roundtrip_energy_kwh": 9162.277660168378
+    },
+    {
+      "minute": 50,
+      "baseline_energy_kwh": 9750.0,
+      "roundtrip_energy_kwh": 9952.847075210471
+    },
+    {
+      "minute": 60,
+      "baseline_energy_kwh": 9750.0,
+      "roundtrip_energy_kwh": 9952.847075210471
+    },
+    {
+      "minute": 70,
+      "baseline_energy_kwh": 9750.0,
+      "roundtrip_energy_kwh": 9952.847075210471
+    },
+    {
+      "minute": 80,
+      "baseline_energy_kwh": 9750.0,
+      "roundtrip_energy_kwh": 9952.847075210471
+    },
+    {
+      "minute": 90,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 100,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 110,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 120,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 130,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 140,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 150,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 160,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 170,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 180,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 190,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    }
+  ],
+  "head_records": [
+    {
+      "minute": 0,
+      "baseline_energy_kwh": 6000.0,
+      "roundtrip_energy_kwh": 6000.0
+    },
+    {
+      "minute": 10,
+      "baseline_energy_kwh": 6750.0,
+      "roundtrip_energy_kwh": 6790.569415042095
+    },
+    {
+      "minute": 20,
+      "baseline_energy_kwh": 7500.0,
+      "roundtrip_energy_kwh": 7581.138830084188
+    },
+    {
+      "minute": 30,
+      "baseline_energy_kwh": 8250.0,
+      "roundtrip_energy_kwh": 8371.708245126283
+    },
+    {
+      "minute": 40,
+      "baseline_energy_kwh": 9000.0,
+      "roundtrip_energy_kwh": 9162.277660168378
+    },
+    {
+      "minute": 50,
+      "baseline_energy_kwh": 9750.0,
+      "roundtrip_energy_kwh": 9952.847075210471
+    },
+    {
+      "minute": 60,
+      "baseline_energy_kwh": 9750.0,
+      "roundtrip_energy_kwh": 9952.847075210471
+    },
+    {
+      "minute": 70,
+      "baseline_energy_kwh": 9750.0,
+      "roundtrip_energy_kwh": 9952.847075210471
+    },
+    {
+      "minute": 80,
+      "baseline_energy_kwh": 9750.0,
+      "roundtrip_energy_kwh": 9952.847075210471
+    },
+    {
+      "minute": 90,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 100,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 110,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 120,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 130,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 140,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 150,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 160,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 170,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 180,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    },
+    {
+      "minute": 190,
+      "baseline_energy_kwh": 10050.0,
+      "roundtrip_energy_kwh": 10009.430584957903
+    }
+  ],
+  "sampled": false,
+  "sample_strategy": "数据行数 145 未超过阈值，提供前 20 行作为样例。",
+  "warnings": []
+}

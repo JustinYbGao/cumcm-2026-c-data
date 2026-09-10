@@ -1,0 +1,22 @@
+{
+  "2025-03-20": {
+    "intervals": 144,
+    "emergency_kwh": 882.1302623864531,
+    "state_points": 145
+  },
+  "2025-06-21": {
+    "intervals": 144,
+    "emergency_kwh": 545.7339070937687,
+    "state_points": 145
+  },
+  "2025-09-23": {
+    "intervals": 144,
+    "emergency_kwh": 4299.636546644506,
+    "state_points": 145
+  },
+  "2025-12-21": {
+    "intervals": 144,
+    "emergency_kwh": 1051.7182848241166,
+    "state_points": 145
+  }
+}

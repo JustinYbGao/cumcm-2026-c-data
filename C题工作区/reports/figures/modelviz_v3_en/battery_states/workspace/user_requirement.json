@@ -1,0 +1,22 @@
+{
+  "original_request": "不要中文标注！！全部要英文的",
+  "goal": "比较两种效率口径下储能容量的日内时间序列与差值，说明敏感性",
+  "functional_keywords": [
+    "趋势",
+    "比较",
+    "复合时间序列",
+    "多指标时间序列"
+  ],
+  "chart_types": [],
+  "style_keywords": [
+    "English labels",
+    "serif typography"
+  ],
+  "use_case": "论文正文",
+  "negative_requirements": [
+    "No Chinese text in figures"
+  ],
+  "explicit_template": false,
+  "is_ambiguous": false,
+  "clarification_question": ""
+}

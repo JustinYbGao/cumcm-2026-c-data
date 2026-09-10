@@ -1,0 +1,16 @@
+{
+  "status": "Optimal",
+  "objective_yuan": 35126.94858938963,
+  "solver_objective": 1502073.5636593278,
+  "relaxed": false,
+  "lower_bound_yuan": 1502073.5636593278,
+  "mip_gap": 0.0,
+  "nodes": 1,
+  "runtime_seconds": 0.02472124999621883,
+  "variables": 865,
+  "constraints": 579,
+  "max_primal_infeasibility": 5.4569682106375694e-12,
+  "max_integrality_violation": 1.1102230246251565e-16,
+  "lower_bound_unit": "secondary_weighted_charge_objective",
+  "primary_cost_cap_yuan": 35126.948589389634
+}

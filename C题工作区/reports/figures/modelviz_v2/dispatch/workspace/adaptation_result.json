@@ -1,0 +1,48 @@
+{
+  "adapted_code": "\"\"\"Adapt ModelViz 12_TRD_001 storage power bars and capacity line; add flow/price panels.\nRetains dual-axis storage panel, signed bars, circular state markers and inward ticks.\n\"\"\"\nimport json\nfrom pathlib import Path\nimport sys\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib import font_manager\nimport numpy as np\nimport pandas as pd\n\nfont_manager.fontManager.addfont('/System/Library/Fonts/Supplemental/Songti.ttc')\nplt.rcParams.update({'font.family':['Times New Roman','Songti SC'], 'font.size':11,\n    'axes.unicode_minus':False, 'axes.spines.top':False, 'axes.spines.right':False,\n    'axes.linewidth':.8,'axes.labelpad':8,'legend.frameon':False,\n    'svg.hashsalt':'cumcm-modelviz-v2','savefig.facecolor':'white'})\nd=pd.read_csv(sys.argv[1],float_precision='round_trip')\nout=Path(sys.argv[2]); out.mkdir(parents=True,exist_ok=True)\nassert len(d)==144 and np.array_equal(d.start_minute,np.arange(144)*10)\nedges=np.r_[d.start_minute.to_numpy(),d.end_minute.iloc[-1]]/60\nx=edges[:-1]\nfig,axes=plt.subplots(3,1,figsize=(10.7,9),sharex=True,layout='constrained',\n    gridspec_kw={'height_ratios':[1.35,1.3,.7]})\nfig.suptitle('问题1  |  购电、储能与分时电价',fontsize=17,y=.985,x=.075,ha='left')\nfor column,label,color in [('load_kw','负荷','#3d4854'),('pv_forecast_kw','给定光伏预测','#cda340'),('grid_kwh','计划购电','#1f78b4')]:\n    values=d[column]/1000*(6 if column=='grid_kwh' else 1)\n    axes[0].stairs(values,edges,color=color,label=label,baseline=None,lw=1.5)\naxes[0].set(ylabel='交流侧功率 / MW',ylim=(0,10.6))\naxes[0].set_title('(a) 负荷、光伏与计划购电',loc='left',fontsize=12,pad=10)\naxes[0].legend(ncol=3,loc='upper left',fontsize=10)\naxes[1].bar(x,d.charge_kwh*6/1000,width=1/6,align='edge',color='#a6cee3',label='充电（正）',zorder=2)\naxes[1].bar(x,-d.discharge_kwh*6/1000,width=1/6,align='edge',color='#cab2d6',label='放电（负）',zorder=2)\naxes[1].axhline(0,color='#59636f',lw=.7)\nfor value in [-5,5]: axes[1].axhline(value,color='#9ba4ad',lw=.7,ls=(0,(4,3)))\naxes[1].set(ylabel='储能交流侧功率 / MW',ylim=(-6.5,7.5),yticks=[-5,0,5])\naxes[1].set_title('(b) 充放电功率与储能状态（功率上限 ±5 MW）',loc='left',fontsize=12,pad=10)\ntwin=axes[1].twinx()\ntwin.spines['right'].set_visible(True)\nstate=np.r_[d.energy_start_kwh.iloc[0],d.energy_end_kwh]/1000\ntwin.plot(edges,state,color='#b5544a',lw=1.6,marker='o',markevery=12,ms=3.5,mfc='white',label='储能状态（右轴）')\ntwin.set(ylabel='储能电量 / MWh',ylim=(0,15),yticks=[0,3,6,9,12])\ntwin.tick_params(axis='y',colors='#9a4a43',direction='in')\ntwin.yaxis.label.set_color('#9a4a43')\nh,l=axes[1].get_legend_handles_labels(); h2,l2=twin.get_legend_handles_labels()\naxes[1].legend(h+h2,l+l2,ncol=3,loc='upper left',fontsize=10)\naxes[2].stairs(d.price_yuan_per_kwh,edges,color='#6a3d9a',baseline=None,lw=1.8)\naxes[2].set(ylabel='电价 / (元/kWh)',ylim=(0,1.55),yticks=[0,.5,1,1.5],xlabel='时刻 / h')\naxes[2].set_title('(c) 已知分时电价',loc='left',fontsize=12,pad=10)\nfor ax in axes:\n    ax.set(xlim=(0,24),xticks=range(0,25,2))\n    ax.grid(axis='y',color='#d5dbe0',lw=.5,alpha=.7)\n    ax.tick_params(direction='in')\nfig.get_layout_engine().set(rect=(0,.055,1,.86))\nfig.text(.075,.018,'主口径：充、放电效率均为90%。内部区间终点假设；144个十分钟区间，无平滑或时移。',fontsize=10,color='#59636f')\nfor ext in ['png','svg']:\n    fig.savefig(out/f'chart.{ext}',dpi=300,metadata={'Date':None} if ext=='svg' else None)\nplt.close(fig)\n(out.parent/'workspace/plot_facts.json').write_text(json.dumps({'intervals':len(d),'state_points':len(state),\n    'grid_kwh':float(d.grid_kwh.sum()),'cost_yuan':float(d.cost_yuan.sum()),\n    'maximum_power_mw':float(max(d.load_kw.max(),d.pv_forecast_kw.max(),d.grid_kwh.max()*6)/1000)},indent=2)+'\\n')\n",
+  "changes_summary": [
+    "全部演示数据替换为审计过的真实CSV",
+    "中文标签与内部工作假设标记",
+    "保留全部时间点，不平滑、不重采样",
+    "PNG 300 dpi与可缩放SVG",
+    "按本题单位与数据范围调整坐标，移除不适用的回归/显著性"
+  ],
+  "preserved_style_elements": [
+    "Matplotlib绘制",
+    "时间横轴与明确量纲",
+    "柱线复合语法",
+    "低饱和填色与清晰深色折线",
+    "衬线字体，宋体中文回退",
+    "轻量水平网格，面板字母"
+  ],
+  "changed_elements": [
+    "全部演示数据替换为审计过的真实CSV",
+    "中文标签与内部工作假设标记",
+    "保留全部时间点，不平滑、不重采样",
+    "PNG 300 dpi与可缩放SVG",
+    "按本题单位与数据范围调整坐标，移除不适用的回归/显著性"
+  ],
+  "data_columns_used": [
+    "start_minute",
+    "end_minute",
+    "load_kw",
+    "pv_forecast_kw",
+    "grid_kwh",
+    "charge_kwh",
+    "discharge_kwh",
+    "energy_start_kwh",
+    "energy_end_kwh",
+    "price_yuan_per_kwh",
+    "cost_yuan"
+  ],
+  "dependencies_used": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "additional_dependencies_requested": [],
+  "assumptions": [
+    "继承内部区间终点假设；不移动数据或修改结果"
+  ],
+  "warnings": []
+}

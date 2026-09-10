@@ -1,6 +1,45 @@
 # C题数据工作区
 
-本目录独立于朋友的 `111`，所有脚本直接读取 `../CUMCM2026Problems/C题/附件/`，不复制、不覆盖原附件或其他成员代码。只做数据与验证，不训练预测模型、不求解优化、不填写附件5。
+本目录独立于朋友的 `111`，数据脚本直接读取 `../CUMCM2026Problems/C题/附件/`，不覆盖原附件或其他成员代码。数据阶段保持原用途；问题1已完成内部求解、验证并冻结结果包和论文初稿；问题2已完成因果预测、334天基础回放及独立核验。尚未填写正式附件5，问题3—4未执行。当前进度见 `reports/workflow_progress.md`，较早Q1报告中的Q2状态属于当时快照。
+
+## 最新交付与问题2基础版
+
+- 图表已按 **modelviz-skill** 重做：[新图总览与复现说明](reports/modelviz_v3_en_revision.md)。四张图的标题、坐标、图例、注释及脚注全部使用英文，均提供300 dpi PNG和SVG，当前论文/报告已引用新图；旧图及Q1冻结包保留。以后绘图的约定见 [AGENTS.md](AGENTS.md)。
+- 问题1论文初稿：[papers/q1_draft.md](papers/q1_draft.md)。
+- 问题1冻结结果包：[deliverables/q1/v1_interval_end_assumption.zip](deliverables/q1/v1_interval_end_assumption.zip)，附SHA-256清单、来源快照和包内数值复现入口；保留原始结果，不在此包内改版。
+- 问题2模型与结果：[reports/q2_model_and_results.md](reports/q2_model_and_results.md)；四日结果表：[reports/q2_representative_tables.md](reports/q2_representative_tables.md)。
+
+问题2结果保存于 `results/q2/`。selected是只依据1月校准选中的模型，全年实际费用反而高于seasonal，不代表最终优选；失败对照完整保留。原计划与实际轨迹、紧急量及账单分列；各策略共享2月1日真实初态，之后各自连续运行。正式result2.xlsx仍待模板时间映射确认。
+
+```bash
+cd /Users/justingao/Documents/CUMCM/C题工作区
+export PYTHONDONTWRITEBYTECODE=1
+export TMPDIR="$PWD/data/interim/q2"
+.venv/bin/python scripts/run_q2.py > logs/q2/run.log 2>&1 &&
+.venv/bin/python scripts/validate_q2.py > logs/q2/validate.log 2>&1 &&
+.venv/bin/python -m unittest discover -s tests -p test_q2.py > logs/q2/tests.log 2>&1 &&
+.venv/bin/python scripts/report_q2.py > logs/q2/report.log 2>&1
+```
+
+Q1冻结包校验：`.venv/bin/python -B deliverables/q1/v1_interval_end_assumption/scripts/verify_q1_package.py`。新版本打包前使用不同版本目录，不能覆盖v1。包内原始输入仅复制Q1所需三份文件作为来源证据，不改动它们。
+
+## 问题1内部求解与验收
+
+结果说明见 [reports/q1_model_and_results.md](reports/q1_model_and_results.md)，BZD模型适配和局部检查分别见 `reports/q1_model_fit.md`、`reports/q1_bzd_solution_check.md`。基准参数在 `configs/model_baseline.json`，逐区间结果、状态、指定表格、配置快照、模型和验证证据在 `results/q1/`，新图在 `reports/figures/modelviz_v3_en/`，旧图在 `reports/figures/q1/`，运行日志在 `logs/q1/`。
+
+本轮仍采用原始时间为区间终点、十分钟平均功率、交流侧功率限额、固定初末6000 kWh、充放效率各0.9的工作假设；另求解往返0.9情景。原模板时间偏移未确认，未导出正式result1.xlsx。完整内部策略在 `results/q1/baseline/schedule.csv`。
+
+```bash
+cd /Users/justingao/Documents/CUMCM
+export PYTHONDONTWRITEBYTECODE=1
+export TMPDIR="$PWD/C题工作区/data/interim/q1"
+C题工作区/.venv/bin/python C题工作区/scripts/solve_q1.py > C题工作区/logs/q1/solve.log 2>&1
+C题工作区/.venv/bin/python C题工作区/scripts/validate_q1_solution.py > C题工作区/logs/q1/validate.log 2>&1
+C题工作区/.venv/bin/python -m unittest discover -s C题工作区/tests -p test_q1_solution.py > C题工作区/logs/q1/tests.log 2>&1
+C题工作区/.venv/bin/python C题工作区/scripts/report_q1.py > C题工作区/logs/q1/report.log 2>&1
+```
+
+每条命令退出码须为0。新增依赖仅为 `highspy==1.14.0`，使用下文原有安装命令即可。Q1运行不重建数据，缓存和临时文件定向项目内 `data/interim/q1/`。数据清洗重建命令和用途如下，保持独立。
 
 ## 一键重建
 
@@ -62,6 +101,6 @@ C题工作区/.venv/bin/python C题工作区/scripts/validate_data.py --stage q1
 
 ## 本轮范围与后续
 
-Q1可以进入优化输入环节；Q2可开始因果预测与实际回放；Q3具备版本预报与2—12月完整十分钟输入；Q4具备实际价格结算与历史价格输入。最终优化、负载/PV/价格预测、SOC衔接和正式结果填写由后续阶段完成。先确认时间、功率、端点和价格可知条件等假设。
+Q1已冻结内部结果与论文初稿；Q2基础闭环已跑通并保存候选退化证据，后续研究因果滚动适配或风险校准；Q3具备版本预报输入、Q4具备实际价格归档，但两问尚未计算。所有正式模板填写仍待时间映射确认。当前状态以workflow_progress.md为准。
 
 `data/interim`保存题面抽取、源文件清单、日期变换日志、预报覆盖、111运行副本。`reports/figures`存放三张描述性图；绘图源代码为 `scripts/report_data.py`。本轮没有单独创建空模块。

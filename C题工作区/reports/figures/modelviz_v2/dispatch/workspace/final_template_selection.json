@@ -1,0 +1,108 @@
+{
+  "dataset_summary": "144个十分钟区间，真实负荷/光伏/购电/充放电/电价和状态",
+  "observed_data_features": [],
+  "relevant_columns": [
+    "start_minute",
+    "end_minute",
+    "load_kw",
+    "pv_forecast_kw",
+    "grid_kwh",
+    "charge_kwh",
+    "discharge_kwh",
+    "energy_start_kwh",
+    "energy_end_kwh",
+    "price_yuan_per_kwh",
+    "cost_yuan"
+  ],
+  "candidate_comparisons": [
+    {
+      "template_id": "trd_dual_axis_bar_line",
+      "suitable": true,
+      "advantages": [
+        "模板直接展示储能容量与功率随时间变化，物理语义契合。保留柱线双轴、正负功率及线条样式；按任务增加负荷电价面板或四日分面。"
+      ],
+      "limitations": [],
+      "data_compatibility": "字段与时序坐标直接映射",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "mpn_scatter_matrix_timeseries_regression",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+      ],
+      "data_compatibility": "未选用",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_3d_ribbon_chart",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+      ],
+      "data_compatibility": "未选用",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_lag_correlation_analysis",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+      ],
+      "data_compatibility": "未选用",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_stack_pie_box_report",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+      ],
+      "data_compatibility": "未选用",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "mpn_3d_surface_scatter_report",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+      ],
+      "data_compatibility": "未选用",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "opt_hants_parameter_selection",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+      ],
+      "data_compatibility": "未选用",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_flowing_percentage_stack",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+      ],
+      "data_compatibility": "未选用",
+      "requirement_compatibility": ""
+    }
+  ],
+  "selected_template_id": "trd_dual_axis_bar_line",
+  "selected_template_name": "双Y轴柱状折线时间序列图",
+  "alternative_template_ids": [],
+  "selection_reason": "模板直接展示储能容量与功率随时间变化，物理语义契合。保留柱线双轴、正负功率及线条样式；按任务增加负荷电价面板或四日分面。",
+  "data_support_reason": "字段单位已由求解结果与配置确定；仅换算展示单位与派生差值",
+  "data_warnings": [],
+  "confidence": 0.97,
+  "needs_clarification": false,
+  "clarification_question": ""
+}

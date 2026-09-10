@@ -1,0 +1,4 @@
+cost_yuan,grid_kwh,charge_kwh,discharge_kwh,curtailment_kwh,initial_energy_kwh,terminal_energy_kwh,status,scenario,saving_yuan_vs_no_storage,saving_percent_vs_no_storage
+35126.948589289634,59482.69899835391,20740.66613168724,16799.939566666668,0.0,6000.0,6000.0,internal_working_assumptions_not_submission,baseline,12925.098001557031,26.898121762870154
+33801.495542222016,57526.24348088351,19842.710475501775,17858.4394279516,0.0,6000.0,6000.0,internal_working_assumptions_not_submission,roundtrip_90,14250.55104862465,29.656491366465975
+48052.046590846665,61789.9354,0.0,0.0,6247.962966666667,6000.0,6000.0,internal_working_assumptions_not_submission,no_storage,0.0,0.0

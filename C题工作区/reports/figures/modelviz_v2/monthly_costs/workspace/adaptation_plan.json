@@ -1,0 +1,89 @@
+{
+  "template_id": "trd_composite_line_bar_dual_axis",
+  "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "plot_goal": "2—12月11个月，实际费用汇总及基线差值",
+  "selected_columns": [
+    "month",
+    "planned_cost_yuan",
+    "emergency_cost_yuan",
+    "total_cost_yuan",
+    "seasonal_total_cost_yuan",
+    "excess_cost_yuan"
+  ],
+  "column_mappings": [
+    {
+      "data_column": "month",
+      "template_role": "月度时间顺序",
+      "reason": ""
+    },
+    {
+      "data_column": "planned_cost_yuan",
+      "template_role": "选中策略计划费堆叠柱",
+      "reason": ""
+    },
+    {
+      "data_column": "emergency_cost_yuan",
+      "template_role": "选中策略紧急费堆叠柱",
+      "reason": ""
+    },
+    {
+      "data_column": "total_cost_yuan",
+      "template_role": "累计费用校验与标注",
+      "reason": ""
+    },
+    {
+      "data_column": "seasonal_total_cost_yuan",
+      "template_role": "季节基线折线",
+      "reason": ""
+    },
+    {
+      "data_column": "excess_cost_yuan",
+      "template_role": "差值柱",
+      "reason": ""
+    }
+  ],
+  "required_preprocessing": [
+    "仅读取绘图副本；kWh/1000为MWh，元/10000为万元，十分钟kWh乘6为kW"
+  ],
+  "required_dependencies": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "layout_elements_to_preserve": [
+    "Matplotlib绘制",
+    "时间横轴与明确量纲",
+    "柱线复合语法",
+    "低饱和填色与清晰深色折线",
+    "衬线字体，宋体中文回退",
+    "轻量水平网格，面板字母"
+  ],
+  "style_elements_to_preserve": [
+    "Matplotlib绘制",
+    "时间横轴与明确量纲",
+    "柱线复合语法",
+    "低饱和填色与清晰深色折线",
+    "衬线字体，宋体中文回退",
+    "轻量水平网格，面板字母"
+  ],
+  "elements_allowed_to_change": [
+    "全部演示数据替换为审计过的真实CSV",
+    "中文标签与内部工作假设标记",
+    "保留全部时间点，不平滑、不重采样",
+    "PNG 300 dpi与可缩放SVG",
+    "按本题单位与数据范围调整坐标，移除不适用的回归/显著性"
+  ],
+  "title_plan": "中文问题编号和主题",
+  "axis_plan": "真实时间边界和物理单位；代表日统一纵轴尺度",
+  "legend_plan": "线型/颜色区分策略；图例避开数据",
+  "annotation_plan": "真实汇总费用与内部区间终点假设",
+  "output_formats": [
+    "png",
+    "svg"
+  ],
+  "warnings": [
+    "时间映射仍为内部假设，非正式提交版"
+  ],
+  "can_proceed": true,
+  "clarification_question": ""
+}

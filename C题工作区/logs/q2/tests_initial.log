@@ -1,0 +1,60 @@
+FFFFF
+======================================================================
+FAIL: test_future_history_is_rejected (test_q2.Q2Tests.test_future_history_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q2.py", line 41, in test_future_history_is_rejected
+    self.module().forecast_day(h,pd.Timestamp('2025-02-01'),'seasonal',{})
+    ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q2.py", line 15, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q2'),'Q2 implementation missing')
+AssertionError: unexpectedly None : Q2 implementation missing
+
+======================================================================
+FAIL: test_power_limit_and_emergency_do_not_charge (test_q2.Q2Tests.test_power_limit_and_emergency_do_not_charge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q2.py", line 19, in test_power_limit_and_emergency_do_not_charge
+    r=self.module().execute_interval(0.,1000.,0.,6000.,.9,.9,True)
+      ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q2.py", line 15, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q2'),'Q2 implementation missing')
+AssertionError: unexpectedly None : Q2 implementation missing
+
+======================================================================
+FAIL: test_seasonal_only_uses_past_days (test_q2.Q2Tests.test_seasonal_only_uses_past_days)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q2.py", line 44, in test_seasonal_only_uses_past_days
+    m=self.module()
+      ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q2.py", line 15, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q2'),'Q2 implementation missing')
+AssertionError: unexpectedly None : Q2 implementation missing
+
+======================================================================
+FAIL: test_state_floor_and_no_storage (test_q2.Q2Tests.test_state_floor_and_no_storage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q2.py", line 31, in test_state_floor_and_no_storage
+    r=self.module().execute_interval(0.,100.,0.,1200.,.9,.9,True)
+      ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q2.py", line 15, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q2'),'Q2 implementation missing')
+AssertionError: unexpectedly None : Q2 implementation missing
+
+======================================================================
+FAIL: test_unused_grid_is_paid_and_not_all_called_pv (test_q2.Q2Tests.test_unused_grid_is_paid_and_not_all_called_pv)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q2.py", line 25, in test_unused_grid_is_paid_and_not_all_called_pv
+    r=self.module().execute_interval(1000.,100.,50.,10800.,.9,.9,True)
+      ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q2.py", line 15, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q2'),'Q2 implementation missing')
+AssertionError: unexpectedly None : Q2 implementation missing
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=5)

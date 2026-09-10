@@ -1,0 +1,8 @@
+{
+  "data/processed/actual_10min.csv": "d64cb551ef7e644aa046e38ee7984607ab7bc57bf28d30ba6803db8696d1a513",
+  "data/processed/fixed_price.csv": "6a2d48f1d678ce0399a10719dcf34e81403a2c133dfb871c35cd3cc0eb76d4f2",
+  "configs/q2_baseline.json": "b555611572b3c780b6d9caa1e3fd6f449b4787ae260031a0dc11a04514d6c56b",
+  "configs/model_baseline.json": "23603c8c223d40006607ea5c3dd31dec8ab2435776ff3a363f2eaca0aaf09019",
+  "scripts/solve_q1.py": "fe351fb7fd979897b9958b2b01ceb75bdf8fcf7a633e04ba71c0c4ee9c2bef6e",
+  "scripts/run_q2.py": "2fbe74adb5a3a39efe01ed1429016561360c6c58716a095c6ebb18870ca0ce0a"
+}

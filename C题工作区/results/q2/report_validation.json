@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "merged_events": 951,
+  "covered_original_intervals": 4446,
+  "checks": "Every merged event expands exactly to the original ordered emergency interval rows"
+}

@@ -1,0 +1,794 @@
+{
+  "passed": true,
+  "checks_count": 192,
+  "checks": [
+    {
+      "name": "unchanged: results/q1/baseline_milp.lp",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/alternate_milp.sol",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90_lp.sol",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90_milp.lp",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/nonuniqueness.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90_lp.lp",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/alternate_milp.lp",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline_lp.sol",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline_lp.lp",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/efficiency_sensitivity.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90_milp.sol",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/validation.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/comparison.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/time_mapping_evidence.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline_milp.sol",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/template_literal_time_audit.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90_lp/summary.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90_lp/solver_status.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90_lp/table1_intervals.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90_lp/schedule.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90_lp/config_snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90_lp/table2_blocks.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90_lp/states.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/alternate/summary.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/alternate/solver_status.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/alternate/table1_intervals.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/alternate/schedule.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/alternate/config_snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/alternate/table2_blocks.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/alternate/states.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline/summary.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline/solver_status.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline/table1_intervals.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline/schedule.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline/config_snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline/table2_blocks.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline/states.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/no_storage/summary.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/no_storage/solver_status.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/no_storage/table1_intervals.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/no_storage/schedule.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/no_storage/config_snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/no_storage/table2_blocks.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/no_storage/states.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline_lp/summary.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline_lp/solver_status.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline_lp/table1_intervals.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline_lp/schedule.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline_lp/config_snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline_lp/table2_blocks.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/baseline_lp/states.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90/summary.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90/solver_status.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90/table1_intervals.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90/schedule.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90/config_snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90/table2_blocks.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q1/roundtrip_90/states.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/monthly_comparison.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/report_validation.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/config_snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/validation.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/selection.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/comparison.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/run_status.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/input_code_hashes.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/physical_snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/calibration/comparison.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/selected/emergency_intervals.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/selected/summary.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/selected/ledger.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/selected/table3_representative.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/selected/daily.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/selected/table2_representative.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/selected/emergency_events_merged.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/selected/models_and_solvers.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/selected/table1_representative.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/selected/table3_merged_representative.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/no_storage/emergency_intervals.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/no_storage/summary.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/no_storage/ledger.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/no_storage/table3_representative.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/no_storage/daily.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/no_storage/table2_representative.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/no_storage/models_and_solvers.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/no_storage/table1_representative.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/warmup/summary.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/warmup/ledger.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/warmup/daily.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/warmup/models_and_solvers.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/seasonal/emergency_intervals.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/seasonal/summary.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/seasonal/ledger.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/seasonal/table3_representative.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/seasonal/daily.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/seasonal/table2_representative.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/seasonal/models_and_solvers.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/seasonal/table1_representative.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/calibration/linear_persistence/summary.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/calibration/linear_persistence/ledger.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/calibration/linear_persistence/daily.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/calibration/linear_persistence/models_and_solvers.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/calibration/linear_harmonic/summary.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/calibration/linear_harmonic/ledger.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/calibration/linear_harmonic/daily.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/calibration/linear_harmonic/models_and_solvers.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/calibration/seasonal/summary.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/calibration/seasonal/ledger.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/calibration/seasonal/daily.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: results/q2/calibration/seasonal/models_and_solvers.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged: data/processed/pv_forecast_hourly.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: data/processed/fixed_price.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: data/processed/pv_forecast_10min.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: data/processed/q1_day.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: data/processed/actual_10min.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: data/processed/pv_forecast_hourly_evaluation.csv",
+      "passed": true
+    },
+    {
+      "name": "unchanged: deliverables/q1/v1_interval_end_assumption.zip.sha256",
+      "passed": true
+    },
+    {
+      "name": "unchanged: deliverables/q1/v1_interval_end_assumption.zip",
+      "passed": true
+    },
+    {
+      "name": "battery_states: plotting data hash",
+      "passed": true
+    },
+    {
+      "name": "battery_states: reviewed image hash",
+      "passed": true
+    },
+    {
+      "name": "battery_states: reviewed script hash",
+      "passed": true
+    },
+    {
+      "name": "battery_states: source code equals executed adapter",
+      "passed": true
+    },
+    {
+      "name": "battery_states: technical and visual pass",
+      "passed": true
+    },
+    {
+      "name": "battery_states: at least 300dpi",
+      "passed": true
+    },
+    {
+      "name": "battery_states: nonblank PNG",
+      "passed": true
+    },
+    {
+      "name": "battery_states: readable SVG",
+      "passed": true
+    },
+    {
+      "name": "battery_states: no Chinese in SVG",
+      "passed": true
+    },
+    {
+      "name": "battery_states: no Chinese in plotting code",
+      "passed": true
+    },
+    {
+      "name": "battery_states: chosen from actual candidates",
+      "passed": true
+    },
+    {
+      "name": "battery_states: original template unchanged",
+      "passed": true
+    },
+    {
+      "name": "battery_states: original preview unchanged",
+      "passed": true
+    },
+    {
+      "name": "dispatch: plotting data hash",
+      "passed": true
+    },
+    {
+      "name": "dispatch: reviewed image hash",
+      "passed": true
+    },
+    {
+      "name": "dispatch: reviewed script hash",
+      "passed": true
+    },
+    {
+      "name": "dispatch: source code equals executed adapter",
+      "passed": true
+    },
+    {
+      "name": "dispatch: technical and visual pass",
+      "passed": true
+    },
+    {
+      "name": "dispatch: at least 300dpi",
+      "passed": true
+    },
+    {
+      "name": "dispatch: nonblank PNG",
+      "passed": true
+    },
+    {
+      "name": "dispatch: readable SVG",
+      "passed": true
+    },
+    {
+      "name": "dispatch: no Chinese in SVG",
+      "passed": true
+    },
+    {
+      "name": "dispatch: no Chinese in plotting code",
+      "passed": true
+    },
+    {
+      "name": "dispatch: chosen from actual candidates",
+      "passed": true
+    },
+    {
+      "name": "dispatch: original template unchanged",
+      "passed": true
+    },
+    {
+      "name": "dispatch: original preview unchanged",
+      "passed": true
+    },
+    {
+      "name": "monthly_costs: plotting data hash",
+      "passed": true
+    },
+    {
+      "name": "monthly_costs: reviewed image hash",
+      "passed": true
+    },
+    {
+      "name": "monthly_costs: reviewed script hash",
+      "passed": true
+    },
+    {
+      "name": "monthly_costs: source code equals executed adapter",
+      "passed": true
+    },
+    {
+      "name": "monthly_costs: technical and visual pass",
+      "passed": true
+    },
+    {
+      "name": "monthly_costs: at least 300dpi",
+      "passed": true
+    },
+    {
+      "name": "monthly_costs: nonblank PNG",
+      "passed": true
+    },
+    {
+      "name": "monthly_costs: readable SVG",
+      "passed": true
+    },
+    {
+      "name": "monthly_costs: no Chinese in SVG",
+      "passed": true
+    },
+    {
+      "name": "monthly_costs: no Chinese in plotting code",
+      "passed": true
+    },
+    {
+      "name": "monthly_costs: chosen from actual candidates",
+      "passed": true
+    },
+    {
+      "name": "monthly_costs: original template unchanged",
+      "passed": true
+    },
+    {
+      "name": "monthly_costs: original preview unchanged",
+      "passed": true
+    },
+    {
+      "name": "representative_execution: plotting data hash",
+      "passed": true
+    },
+    {
+      "name": "representative_execution: reviewed image hash",
+      "passed": true
+    },
+    {
+      "name": "representative_execution: reviewed script hash",
+      "passed": true
+    },
+    {
+      "name": "representative_execution: source code equals executed adapter",
+      "passed": true
+    },
+    {
+      "name": "representative_execution: technical and visual pass",
+      "passed": true
+    },
+    {
+      "name": "representative_execution: at least 300dpi",
+      "passed": true
+    },
+    {
+      "name": "representative_execution: nonblank PNG",
+      "passed": true
+    },
+    {
+      "name": "representative_execution: readable SVG",
+      "passed": true
+    },
+    {
+      "name": "representative_execution: no Chinese in SVG",
+      "passed": true
+    },
+    {
+      "name": "representative_execution: no Chinese in plotting code",
+      "passed": true
+    },
+    {
+      "name": "representative_execution: chosen from actual candidates",
+      "passed": true
+    },
+    {
+      "name": "representative_execution: original template unchanged",
+      "passed": true
+    },
+    {
+      "name": "representative_execution: original preview unchanged",
+      "passed": true
+    },
+    {
+      "name": "baseline: all 145 time keys preserved",
+      "passed": true
+    },
+    {
+      "name": "baseline: all state values preserved",
+      "passed": true
+    },
+    {
+      "name": "roundtrip_90: all 145 time keys preserved",
+      "passed": true
+    },
+    {
+      "name": "roundtrip_90: all state values preserved",
+      "passed": true
+    },
+    {
+      "name": "dispatch: every plotting input column preserved",
+      "passed": true
+    },
+    {
+      "name": "monthly_costs: every plotting input column preserved",
+      "passed": true
+    },
+    {
+      "name": "Q1 cost unchanged",
+      "passed": true
+    },
+    {
+      "name": "Q1 plot limits do not clip power",
+      "passed": true
+    },
+    {
+      "name": "Q2 monthly selected total equals ledger total",
+      "passed": true
+    },
+    {
+      "name": "Q2 monthly seasonal total equals ledger total",
+      "passed": true
+    },
+    {
+      "name": "Q2 cost gap unchanged",
+      "passed": true
+    },
+    {
+      "name": "Q2 representative subset and row order preserved",
+      "passed": true
+    },
+    {
+      "name": "Q2 emergency scale does not clip bars",
+      "passed": true
+    },
+    {
+      "name": "papers/q1_draft.md: images use new version",
+      "passed": true
+    },
+    {
+      "name": "papers/q1_draft.md: all image targets exist",
+      "passed": true
+    },
+    {
+      "name": "reports/q1_model_and_results.md: images use new version",
+      "passed": true
+    },
+    {
+      "name": "reports/q1_model_and_results.md: all image targets exist",
+      "passed": true
+    },
+    {
+      "name": "reports/q2_model_and_results.md: images use new version",
+      "passed": true
+    },
+    {
+      "name": "reports/q2_model_and_results.md: all image targets exist",
+      "passed": true
+    },
+    {
+      "name": "reports/modelviz_v3_en_revision.md: images use new version",
+      "passed": true
+    },
+    {
+      "name": "reports/modelviz_v3_en_revision.md: all image targets exist",
+      "passed": true
+    },
+    {
+      "name": "Q1 original ZIP CRC",
+      "passed": true
+    }
+  ],
+  "unchanged_source_files": 118,
+  "dimensions_pixels": {
+    "battery_states": [
+      3060,
+      2010
+    ],
+    "dispatch": [
+      3210,
+      2700
+    ],
+    "monthly_costs": [
+      3150,
+      2310
+    ],
+    "representative_execution": [
+      3150,
+      3150
+    ]
+  },
+  "note": "No optimization rerun; checks apply to plots and existing results"
+}

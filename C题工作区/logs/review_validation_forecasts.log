@@ -1,0 +1,17 @@
+PASS 35040 keys exactly match original hourly versions
+PASS Hourly targets and business dates
+PASS Release hour and lead-block labels match time keys
+PASS Expected 35003 comparable, 1 missing forecast, 36 missing actual
+PASS All actual hourly energies independently sum six original intervals
+PASS All forecast hourly energies independently sum six derived intervals
+PASS Error equals forecast minus actual, missing remains missing
+PASS Unmatched rows never have errors or error availability
+PASS Availability at hour end and timestamp timezone-naive
+PASS True zero-PV hours retained and evaluated
+PASS Common targets have exactly four distinct release hours and lead blocks
+PASS Common-key file contains only comparable records
+PASS Common-file grouping labels match evaluation records
+PASS Common target set is complete, not a selected subset
+PASS All 84 required summary groups present exactly once
+PASS Every summary sample count and MAE/RMSE/bias independently recomputed
+PASS 369 decision times exclude future and permanently unmatched errors

@@ -1,0 +1,29 @@
+Running HiGHS 1.14.0 (git hash: 7df0786): Copyright (c) 2026 under MIT licence terms
+Writing the model to /Users/justingao/Documents/CUMCM/C题工作区/results/q1/roundtrip_90_lp.lp
+LP has 578 rows; 865 cols; 1730 nonzeros
+Coefficient ranges:
+  Matrix  [9e-01, 8e+02]
+  Cost    [4e-01, 1e+00]
+  Bound   [4e-02, 1e+04]
+  RHS     [2e+01, 6e+03]
+Presolving model
+576 rows, 808 cols, 1671 nonzeros 0s
+Dependent equations search running on 278 equations with time limit of 1.20s
+Dependent equations search removed 0 rows and 0 nonzeros in 0.00s (limit = 1.20s)
+566 rows, 798 cols, 1651 nonzeros 0s
+Presolve reductions: rows 566(-12); columns 798(-67); nonzeros 1651(-79) 
+Solving the presolved LP
+Using dual simplex solver
+  Iteration        Objective     Infeasibilities num(sum)
+          0     1.6375675444e-01 Pr: 146(77637.9) 0.0s
+        414     3.3801495542e+04 Pr: 0(0) 0.0s
+
+Performed postsolve
+Solving the original LP from the solution after postsolve
+
+Model status        : Optimal
+Simplex   iterations: 414
+Objective value     :  3.3801495542e+04
+P-D objective error :  1.0762615487e-16
+HiGHS run time      :          0.00
+Writing the solution to /Users/justingao/Documents/CUMCM/C题工作区/results/q1/roundtrip_90_lp.sol

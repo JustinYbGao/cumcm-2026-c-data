@@ -28,3 +28,5 @@
 **/.env
 **/.env.*
 /C题工作区/data/interim/matplotlib/
+/C题工作区/data/interim/**/matplotlib/
+/C题工作区/data/interim/**/cache/

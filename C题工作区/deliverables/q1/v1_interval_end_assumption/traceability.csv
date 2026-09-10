@@ -1,0 +1,10 @@
+claim_id,claim,source,verification,assumption
+Q1-COST,基准购电费,results/q1/baseline/summary.json:cost_yuan,原价格乘schedule.grid_kwh;MILP与LP界,单向各0.9及区间终点
+Q1-GRID,全天购电量,results/q1/baseline/summary.json:grid_kwh,schedule.grid_kwh求和,无售电
+Q1-T1,表1六区间,results/q1/baseline/table1_intervals.csv,按start_minute/end_minute选取,非模板行号映射
+Q1-T2,表2六区段,results/q1/baseline/table2_blocks.csv,逐区间交流侧充放电累计,AC侧5000kW
+Q1-STATE,首末及全部储能,results/q1/baseline/states.csv,145状态点递推及边界,固定6000初值
+Q1-SAVING,无储能节费,results/q1/comparison.csv,无储能费用减基准费用,相同输入初末状态
+Q1-EFF,效率比较,results/q1/efficiency_sensitivity.json,roundtrip_90与baseline独立求解,两种90%解释
+Q1-VALID,可行性验收,results/q1/validation.json,scripts/validate_q1_solution.py,数值容差见配置
+Q1-MAP,时间映射未决,results/q1/time_mapping_evidence.json,source/附件/附件5/result1.xlsx,不生成正式提交版

@@ -1,0 +1,10 @@
+Collecting highspy==1.14.0
+  Downloading highspy-1.14.0-cp312-cp312-macosx_11_0_arm64.whl.metadata (11 kB)
+Requirement already satisfied: numpy in /Users/justingao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from highspy==1.14.0) (2.3.5)
+Downloading highspy-1.14.0-cp312-cp312-macosx_11_0_arm64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 28.0 MB/s eta 0:00:00
+Installing collected packages: highspy
+Successfully installed highspy-1.14.0
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /Users/justingao/Documents/CUMCM/C题工作区/.venv/bin/python -m pip install --upgrade pip

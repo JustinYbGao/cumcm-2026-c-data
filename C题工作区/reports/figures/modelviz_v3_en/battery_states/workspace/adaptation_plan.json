@@ -1,0 +1,63 @@
+{
+  "template_id": "trd_composite_line_bar_dual_axis",
+  "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "plot_goal": "145个原始状态时刻，两种效率口径",
+  "selected_columns": [
+    "minute",
+    "baseline_energy_kwh",
+    "roundtrip_energy_kwh"
+  ],
+  "column_mappings": [
+    {
+      "data_column": "minute",
+      "template_role": "原始状态时刻；除以60显示小时",
+      "reason": ""
+    },
+    {
+      "data_column": "baseline_energy_kwh",
+      "template_role": "主口径储能曲线；除以1000显示MWh",
+      "reason": ""
+    },
+    {
+      "data_column": "roundtrip_energy_kwh",
+      "template_role": "往返90%储能曲线；与主口径相减显示差异",
+      "reason": ""
+    }
+  ],
+  "required_preprocessing": [
+    "仅读取绘图副本；kWh/1000为MWh，元/10000为万元，十分钟kWh乘6为kW"
+  ],
+  "required_dependencies": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "layout_elements_to_preserve": [
+    "Matplotlib绘制",
+    "时间横轴与明确量纲",
+    "柱线复合语法",
+    "低饱和填色与清晰深色折线",
+    "衬线字体，宋体中文回退",
+    "轻量水平网格，面板字母"
+  ],
+  "style_elements_to_preserve": [
+    "Existing layout and colors",
+    "Times New Roman with DejaVu Serif fallback"
+  ],
+  "elements_allowed_to_change": [
+    "Translate every visible label to English; preserve data and time alignment"
+  ],
+  "title_plan": "English-only titles, axes, legends, annotations and footnotes",
+  "axis_plan": "真实时间边界和物理单位；代表日统一纵轴尺度",
+  "legend_plan": "线型/颜色区分策略；图例避开数据",
+  "annotation_plan": "真实汇总费用与内部区间终点假设",
+  "output_formats": [
+    "png",
+    "svg"
+  ],
+  "warnings": [
+    "时间映射仍为内部假设，非正式提交版"
+  ],
+  "can_proceed": true,
+  "clarification_question": ""
+}

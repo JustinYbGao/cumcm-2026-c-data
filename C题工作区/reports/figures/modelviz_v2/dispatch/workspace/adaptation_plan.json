@@ -1,0 +1,119 @@
+{
+  "template_id": "trd_dual_axis_bar_line",
+  "template_name": "双Y轴柱状折线时间序列图",
+  "plot_goal": "144个十分钟区间，真实负荷/光伏/购电/充放电/电价和状态",
+  "selected_columns": [
+    "start_minute",
+    "end_minute",
+    "load_kw",
+    "pv_forecast_kw",
+    "grid_kwh",
+    "charge_kwh",
+    "discharge_kwh",
+    "energy_start_kwh",
+    "energy_end_kwh",
+    "price_yuan_per_kwh",
+    "cost_yuan"
+  ],
+  "column_mappings": [
+    {
+      "data_column": "start_minute",
+      "template_role": "区间起点",
+      "reason": ""
+    },
+    {
+      "data_column": "end_minute",
+      "template_role": "区间终点",
+      "reason": ""
+    },
+    {
+      "data_column": "load_kw",
+      "template_role": "负荷功率",
+      "reason": ""
+    },
+    {
+      "data_column": "pv_forecast_kw",
+      "template_role": "光伏功率",
+      "reason": ""
+    },
+    {
+      "data_column": "grid_kwh",
+      "template_role": "乘6得到交流功率",
+      "reason": ""
+    },
+    {
+      "data_column": "charge_kwh",
+      "template_role": "正充电柱；乘6得到kW",
+      "reason": ""
+    },
+    {
+      "data_column": "discharge_kwh",
+      "template_role": "负放电柱；乘6得到kW",
+      "reason": ""
+    },
+    {
+      "data_column": "energy_start_kwh",
+      "template_role": "首状态",
+      "reason": ""
+    },
+    {
+      "data_column": "energy_end_kwh",
+      "template_role": "144个区间末状态",
+      "reason": ""
+    },
+    {
+      "data_column": "price_yuan_per_kwh",
+      "template_role": "电价阶梯",
+      "reason": ""
+    },
+    {
+      "data_column": "cost_yuan",
+      "template_role": "绘图数值核验",
+      "reason": ""
+    }
+  ],
+  "required_preprocessing": [
+    "仅读取绘图副本；kWh/1000为MWh，元/10000为万元，十分钟kWh乘6为kW"
+  ],
+  "required_dependencies": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "layout_elements_to_preserve": [
+    "Matplotlib绘制",
+    "时间横轴与明确量纲",
+    "柱线复合语法",
+    "低饱和填色与清晰深色折线",
+    "衬线字体，宋体中文回退",
+    "轻量水平网格，面板字母"
+  ],
+  "style_elements_to_preserve": [
+    "Matplotlib绘制",
+    "时间横轴与明确量纲",
+    "柱线复合语法",
+    "低饱和填色与清晰深色折线",
+    "衬线字体，宋体中文回退",
+    "轻量水平网格，面板字母"
+  ],
+  "elements_allowed_to_change": [
+    "全部演示数据替换为审计过的真实CSV",
+    "中文标签与内部工作假设标记",
+    "保留全部时间点，不平滑、不重采样",
+    "PNG 300 dpi与可缩放SVG",
+    "按本题单位与数据范围调整坐标，移除不适用的回归/显著性"
+  ],
+  "title_plan": "中文问题编号和主题",
+  "axis_plan": "真实时间边界和物理单位；代表日统一纵轴尺度",
+  "legend_plan": "线型/颜色区分策略；图例避开数据",
+  "annotation_plan": "真实汇总费用与内部区间终点假设",
+  "output_formats": [
+    "png",
+    "svg"
+  ],
+  "warnings": [
+    "时间映射仍为内部假设，非正式提交版"
+  ],
+  "can_proceed": true,
+  "clarification_question": ""
+}

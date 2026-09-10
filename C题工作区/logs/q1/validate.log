@@ -1,0 +1,7 @@
+baseline PASS 39 checks balance 1.1368683772161603e-13 state 8.810729923425242e-13
+roundtrip_90 PASS 39 checks balance 1.1368683772161603e-13 state 1.5916157281026244e-12
+baseline_lp PASS 36 checks balance 1.1368683772161603e-13 state 8.810729923425242e-13
+roundtrip_90_lp PASS 36 checks balance 1.1368683772161603e-13 state 8.526512829121202e-13
+no_storage PASS 37 checks balance 1.1368683772161603e-13 state 0.0
+alternate PASS 38 checks balance 5.4569682106375694e-12 state 5.4569682106375694e-12
+Cross checks: {'baseline_comparison': True, 'baseline_saving': np.True_, 'roundtrip_90_comparison': True, 'roundtrip_90_saving': np.True_, 'no_storage_comparison': True, 'no_storage_saving': np.True_, 'sensitivity_cost': True, 'sensitivity_grid_kwh': np.True_, 'sensitivity_charge_kwh': np.True_, 'sensitivity_discharge_kwh': np.True_, 'sensitivity_energy_end_kwh': np.True_, 'baseline_saved_lp_bound': True, 'roundtrip_90_saved_lp_bound': True, 'alternative_witness': True, 'inputs_unchanged': True}

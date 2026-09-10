@@ -1,0 +1,44 @@
+{
+  "adapted_code": "\"\"\"Adapt ModelViz 12_TRD_001 dual-axis state/energy combination to four date facets.\nUse fixed scales across all days and original interval widths, without smoothing.\n\"\"\"\nimport json\nfrom pathlib import Path\nimport sys\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib import font_manager\nfrom matplotlib.lines import Line2D\nfrom matplotlib.patches import Patch\nimport numpy as np\nimport pandas as pd\n\nfont_manager.fontManager.addfont('/System/Library/Fonts/Supplemental/Songti.ttc')\nplt.rcParams.update({'font.family':['Times New Roman','Songti SC'],'font.size':11,\n    'axes.unicode_minus':False,'axes.spines.top':False,'axes.spines.right':False,\n    'axes.linewidth':.8,'axes.labelpad':8,'legend.frameon':False,\n    'svg.hashsalt':'cumcm-modelviz-v2','savefig.facecolor':'white'})\nd=pd.read_csv(sys.argv[1],float_precision='round_trip')\nout=Path(sys.argv[2]);out.mkdir(parents=True,exist_ok=True)\ndates=['2025-03-20','2025-06-21','2025-09-23','2025-12-21']\nfig,axes=plt.subplots(4,1,figsize=(10.5,10.5),sharex=True,layout='constrained')\nfig.suptitle('问题2  |  指定日的储能执行与紧急购电',fontsize=17,y=.985,x=.075,ha='left')\nfacts={}\nfor i,(ax,date) in enumerate(zip(axes,dates)):\n    f=d.loc[d.date==date]\n    assert len(f)==144 and np.array_equal(f.slot_id,np.arange(1,145))\n    edges=np.arange(145)/6\n    actual=np.r_[f.energy_start_actual_kwh.iloc[0],f.energy_end_actual_kwh]/1000\n    plan=np.r_[f.energy_start_plan_kwh.iloc[0],f.energy_end_plan_kwh]/1000\n    # Bars on the base axes remain behind the transparent state axes.\n    ax.bar(edges[:-1],f.emergency_kwh,width=1/6,align='edge',color='#fdbf6f',alpha=.75)\n    ax.yaxis.tick_right();ax.yaxis.set_label_position('right')\n    ax.spines['right'].set_visible(True);ax.spines['left'].set_visible(False)\n    ax.set(ylabel='紧急购电 / kWh',ylim=(0,1000),yticks=[0,500,1000])\n    ax.tick_params(axis='y',colors='#a46420');ax.yaxis.label.set_color('#a46420')\n    state=ax.twinx()\n    ax.yaxis.tick_right()\n    ax.yaxis.set_label_position('right')\n    state.yaxis.tick_left();state.yaxis.set_label_position('left')\n    state.spines['right'].set_visible(False);state.spines['left'].set_visible(True)\n    state.plot(edges,plan,color='#7a828d',lw=1.35,ls=(0,(4,2)))\n    state.plot(edges,actual,color='#1f78b4',lw=1.8)\n    for value in [1.2,10.8]:state.axhline(value,color='#aeb8c2',ls=(0,(2,3)),lw=.7)\n    state.set(ylabel='储能电量 / MWh',ylim=(0,12),yticks=[0,3,6,9,12])\n    state.grid(axis='y',color='#d5dbe0',lw=.5,alpha=.6)\n    state.tick_params(direction='in')\n    ax.set_title(f'({chr(97+i)}) {date}    紧急购电合计 {f.emergency_kwh.sum():,.2f} kWh',loc='left',fontsize=12,pad=8)\n    ax.set(xlim=(0,24),xticks=range(0,25,2));ax.tick_params(direction='in')\n    facts[date]={'intervals':len(f),'emergency_kwh':float(f.emergency_kwh.sum()),'state_points':145}\naxes[-1].set_xlabel('时刻 / h')\nhandles=[Line2D([0],[0],color='#1f78b4',lw=1.8,label='实际储能（左轴）'),\n    Line2D([0],[0],color='#7a828d',ls='--',label='日前计划（左轴）'),\n    Patch(facecolor='#fdbf6f',label='每十分钟紧急购电（右轴）')]\nfig.legend(handles=handles,loc='upper center',bbox_to_anchor=(.52,.948),ncol=3,fontsize=10)\nfig.get_layout_engine().set(rect=(0,.07,1,.81))\nfig.text(.075,.026,'四日使用相同纵轴尺度；灰色水平虚线为1.2与10.8 MWh边界。沿用内部时间假设，实际状态不按日重置。',fontsize=9.8,color='#59636f')\nfor ext in ['png','svg']:\n    fig.savefig(out/f'chart.{ext}',dpi=300,metadata={'Date':None} if ext=='svg' else None)\nplt.close(fig)\n(out.parent/'workspace/plot_facts.json').write_text(json.dumps(facts,indent=2)+'\\n')\n",
+  "changes_summary": [
+    "全部演示数据替换为审计过的真实CSV",
+    "中文标签与内部工作假设标记",
+    "保留全部时间点，不平滑、不重采样",
+    "PNG 300 dpi与可缩放SVG",
+    "按本题单位与数据范围调整坐标，移除不适用的回归/显著性"
+  ],
+  "preserved_style_elements": [
+    "Matplotlib绘制",
+    "时间横轴与明确量纲",
+    "柱线复合语法",
+    "低饱和填色与清晰深色折线",
+    "衬线字体，宋体中文回退",
+    "轻量水平网格，面板字母"
+  ],
+  "changed_elements": [
+    "全部演示数据替换为审计过的真实CSV",
+    "中文标签与内部工作假设标记",
+    "保留全部时间点，不平滑、不重采样",
+    "PNG 300 dpi与可缩放SVG",
+    "按本题单位与数据范围调整坐标，移除不适用的回归/显著性"
+  ],
+  "data_columns_used": [
+    "date",
+    "slot_id",
+    "energy_start_actual_kwh",
+    "energy_end_actual_kwh",
+    "energy_start_plan_kwh",
+    "energy_end_plan_kwh",
+    "emergency_kwh"
+  ],
+  "dependencies_used": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "additional_dependencies_requested": [],
+  "assumptions": [
+    "继承内部区间终点假设；不移动数据或修改结果"
+  ],
+  "warnings": []
+}

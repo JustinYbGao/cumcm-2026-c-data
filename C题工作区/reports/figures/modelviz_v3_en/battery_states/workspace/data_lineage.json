@@ -1,0 +1,11 @@
+{
+  "source_files": {
+    "results/q1/baseline/states.csv": "14be84770e536dc441eda61177869ce2d0e72dc480e2b1530c255592757d1682",
+    "results/q1/roundtrip_90/states.csv": "1abc8364cbce63e556c940cb915b69ec9a5af68704e1668bb2cd66998589be2e"
+  },
+  "plot_data_sha256": "659d036f5779552ca3f34e37cf72f7291b314f5148ebd6c4d8496565da3c1087",
+  "rows": 145,
+  "transformation": "Align 145 states on existing minute keys",
+  "display_units": "kWh / 1000 = MWh; kW / 1000 = MW; yuan / 10000 = 万元",
+  "time_assumption": "Internal interval-end assumption; no data shifting; not formal submission"
+}

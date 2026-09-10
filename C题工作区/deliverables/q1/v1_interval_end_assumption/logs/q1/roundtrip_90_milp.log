@@ -1,0 +1,51 @@
+Running HiGHS 1.14.0 (git hash: 7df0786): Copyright (c) 2026 under MIT licence terms
+Writing the model to /Users/justingao/Documents/CUMCM/C题工作区/results/q1/roundtrip_90_milp.lp
+MIP has 578 rows; 865 cols; 1730 nonzeros; 144 integer variables (144 binary)
+Coefficient ranges:
+  Matrix  [9e-01, 8e+02]
+  Cost    [4e-01, 1e+00]
+  Bound   [4e-02, 1e+04]
+  RHS     [2e+01, 6e+03]
+Presolving model
+576 rows, 808 cols, 1671 nonzeros 0s
+566 rows, 798 cols, 1651 nonzeros 0s
+Presolve reductions: rows 566(-12); columns 798(-67); nonzeros 1651(-79) 
+
+Solving MIP model with:
+   566 rows
+   798 cols (144 binary, 0 integer, 0 implied int., 654 continuous, 0 domain fixed)
+   1651 nonzeros
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   0               inf                  inf        0      0      0         0     0.0s
+ R       0       0         0   0.00%   33801.495542    35070.604901       3.62%        0      0      0       400     0.0s
+ H       0       0         0   0.00%   33801.495542    33801.495542       0.00%       80     35      0       439     0.0s
+         1       0         1 100.00%   33801.495542    33801.495542       0.00%       80     35      0       439     0.0s
+
+Solving report
+  Status            Optimal
+  Primal bound      33801.4955422
+  Dual bound        33801.4955422
+  Gap               0% (tolerance: 0%)
+  P-D integral      0.000768922148741
+  Solution status   feasible
+                    33801.4955422 (objective)
+                    0 (bound viol.)
+                    2.22044604925e-16 (int. viol.)
+                    0 (row viol.)
+  Timing            0.03
+  Max sub-MIP depth 0
+  Nodes             1
+  Repair LPs        0
+  LP iterations     439
+                    0 (strong br.)
+                    39 (separation)
+                    0 (heuristics)
+Writing the solution to /Users/justingao/Documents/CUMCM/C题工作区/results/q1/roundtrip_90_milp.sol

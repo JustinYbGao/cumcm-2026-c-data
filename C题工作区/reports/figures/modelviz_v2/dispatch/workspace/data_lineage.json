@@ -1,0 +1,10 @@
+{
+  "source_files": {
+    "results/q1/baseline/schedule.csv": "c18da8eab518b96ce1a26620e7456a818a3ff4e81155ccbe93de9ddd5d0dbd15"
+  },
+  "plot_data_sha256": "c18da8eab518b96ce1a26620e7456a818a3ff4e81155ccbe93de9ddd5d0dbd15",
+  "rows": 144,
+  "transformation": "Read and write plotting copy with round-trip float parsing; no reordering",
+  "display_units": "kWh / 1000 = MWh; kW / 1000 = MW; yuan / 10000 = 万元",
+  "time_assumption": "Internal interval-end assumption; no data shifting; not formal submission"
+}

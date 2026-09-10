@@ -1,0 +1,16 @@
+{
+  "status": "Optimal",
+  "objective_yuan": 35126.948589289634,
+  "solver_objective": 35126.94858928963,
+  "relaxed": true,
+  "lower_bound_yuan": 35126.94858928963,
+  "mip_gap": null,
+  "nodes": null,
+  "runtime_seconds": 0.0020728329982375726,
+  "variables": 865,
+  "constraints": 578,
+  "max_primal_infeasibility": 0.0,
+  "max_integrality_violation": null,
+  "lower_bound_unit": "yuan",
+  "primary_cost_cap_yuan": null
+}

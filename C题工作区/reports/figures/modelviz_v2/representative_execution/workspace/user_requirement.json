@@ -1,0 +1,21 @@
+{
+  "original_request": "你重新做图，记得以后做图的时候modelviz-skill",
+  "goal": "比较四个指定日计划与实际储能容量时间序列，并显示紧急购电发生时间",
+  "functional_keywords": [
+    "趋势",
+    "比较",
+    "时间序列",
+    "容量功率",
+    "多面板"
+  ],
+  "chart_types": [],
+  "style_keywords": [
+    "科研风",
+    "简洁"
+  ],
+  "use_case": "论文正文",
+  "negative_requirements": [],
+  "explicit_template": false,
+  "is_ambiguous": false,
+  "clarification_question": ""
+}

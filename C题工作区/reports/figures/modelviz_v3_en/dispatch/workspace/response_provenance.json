@@ -1,0 +1,6 @@
+{
+  "author": "Codex current assistant",
+  "method": "Structured decisions supplied via RunnableLambda; no external model API",
+  "scope": "English-only language revision of existing selected ModelViz template; original candidate recall retained",
+  "visual_check": "Actual PNG viewed before this assessment; hashes recorded"
+}

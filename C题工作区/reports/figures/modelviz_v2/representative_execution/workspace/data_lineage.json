@@ -1,0 +1,10 @@
+{
+  "source_files": {
+    "results/q2/selected/ledger.csv": "7d35f62b7403281a0f24016cf602e065bdb141f0d459db5172e98455be83d00d"
+  },
+  "plot_data_sha256": "47db3303e0a17c81e5993b3029eb243359bebdd884cb92930d3b5e760969b48a",
+  "rows": 576,
+  "transformation": "Select four explicitly requested dates; preserve original row order",
+  "display_units": "kWh / 1000 = MWh; kW / 1000 = MW; yuan / 10000 = 万元",
+  "time_assumption": "Internal interval-end assumption; no data shifting; not formal submission"
+}

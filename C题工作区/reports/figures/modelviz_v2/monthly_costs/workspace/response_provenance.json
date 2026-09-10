@@ -1,0 +1,5 @@
+{
+  "author": "Codex current assistant",
+  "method": "Assistant-authored structured outputs passed through RunnableLambda; no external model API",
+  "visual_check": "Actual PNG inspection completed; see hash-bound assistant_visual_assessment.json and first_visual_review.json"
+}

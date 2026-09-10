@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "return_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "generated_files": [
+    "/Users/justingao/Documents/CUMCM/C题工作区/reports/figures/modelviz_v2/dispatch/outputs/chart.svg",
+    "/Users/justingao/Documents/CUMCM/C题工作区/reports/figures/modelviz_v2/dispatch/outputs/chart.png"
+  ],
+  "execution_time": 0.7166,
+  "error_type": ""
+}

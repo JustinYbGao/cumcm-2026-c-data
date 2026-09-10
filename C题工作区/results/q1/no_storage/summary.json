@@ -1,0 +1,11 @@
+{
+  "cost_yuan": 48052.046590846665,
+  "grid_kwh": 61789.9354,
+  "charge_kwh": 0.0,
+  "discharge_kwh": 0.0,
+  "curtailment_kwh": 6247.962966666667,
+  "initial_energy_kwh": 6000.0,
+  "terminal_energy_kwh": 6000.0,
+  "status": "internal_working_assumptions_not_submission",
+  "scenario": "no_storage"
+}

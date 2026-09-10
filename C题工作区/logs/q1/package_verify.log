@@ -1,0 +1,7 @@
+baseline PASS 35126.948589289634
+roundtrip_90 PASS 33801.495542222016
+baseline_lp PASS 35126.948589289634
+roundtrip_90_lp PASS 33801.495542222016
+no_storage PASS 48052.046590846665
+alternate PASS 35126.94858938963
+Package hashes and numerical reproduction PASS: 102 files

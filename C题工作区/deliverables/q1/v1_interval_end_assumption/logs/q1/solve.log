@@ -1,0 +1,215 @@
+Running HiGHS 1.14.0 (git hash: 7df0786): Copyright (c) 2026 under MIT licence terms
+Writing the model to /Users/justingao/Documents/CUMCM/C题工作区/results/q1/baseline_milp.lp
+MIP has 578 rows; 865 cols; 1730 nonzeros; 144 integer variables (144 binary)
+Coefficient ranges:
+  Matrix  [9e-01, 8e+02]
+  Cost    [4e-01, 1e+00]
+  Bound   [4e-02, 1e+04]
+  RHS     [2e+01, 6e+03]
+Presolving model
+576 rows, 808 cols, 1671 nonzeros 0s
+566 rows, 798 cols, 1651 nonzeros 0s
+Presolve reductions: rows 566(-12); columns 798(-67); nonzeros 1651(-79) 
+
+Solving MIP model with:
+   566 rows
+   798 cols (144 binary, 0 integer, 0 implied int., 654 continuous, 0 domain fixed)
+   1651 nonzeros
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   0               inf                  inf        0      0      0         0     0.0s
+ R       0       0         0   0.00%   35126.948589    36465.844236       3.67%        0      0      0       408     0.0s
+ H       0       0         0   0.00%   35126.948589    35126.948589       0.00%       69     30      0       440     0.0s
+         1       0         1 100.00%   35126.948589    35126.948589       0.00%       69     30      0       440     0.0s
+
+Solving report
+  Status            Optimal
+  Primal bound      35126.9485893
+  Dual bound        35126.9485893
+  Gap               0% (tolerance: 0%)
+  P-D integral      0.000546640353635
+  Solution status   feasible
+                    35126.9485893 (objective)
+                    0 (bound viol.)
+                    9.10382880193e-15 (int. viol.)
+                    0 (row viol.)
+  Timing            0.03
+  Max sub-MIP depth 0
+  Nodes             1
+  Repair LPs        0
+  LP iterations     440
+                    0 (strong br.)
+                    32 (separation)
+                    0 (heuristics)
+Writing the solution to /Users/justingao/Documents/CUMCM/C题工作区/results/q1/baseline_milp.sol
+Running HiGHS 1.14.0 (git hash: 7df0786): Copyright (c) 2026 under MIT licence terms
+Writing the model to /Users/justingao/Documents/CUMCM/C题工作区/results/q1/baseline_lp.lp
+LP has 578 rows; 865 cols; 1730 nonzeros
+Coefficient ranges:
+  Matrix  [9e-01, 8e+02]
+  Cost    [4e-01, 1e+00]
+  Bound   [4e-02, 1e+04]
+  RHS     [2e+01, 6e+03]
+Presolving model
+576 rows, 808 cols, 1671 nonzeros 0s
+Dependent equations search running on 278 equations with time limit of 1.20s
+Dependent equations search removed 0 rows and 0 nonzeros in 0.00s (limit = 1.20s)
+566 rows, 798 cols, 1651 nonzeros 0s
+Presolve reductions: rows 566(-12); columns 798(-67); nonzeros 1651(-79) 
+Solving the presolved LP
+Using dual simplex solver
+  Iteration        Objective     Infeasibilities num(sum)
+          0     1.6375675444e-01 Pr: 146(77637.9) 0.0s
+        416     3.5126948589e+04 Pr: 0(0) 0.0s
+
+Performed postsolve
+Solving the original LP from the solution after postsolve
+
+Model status        : Optimal
+Simplex   iterations: 416
+Objective value     :  3.5126948589e+04
+P-D objective error :  1.0356513078e-16
+HiGHS run time      :          0.00
+Writing the solution to /Users/justingao/Documents/CUMCM/C题工作区/results/q1/baseline_lp.sol
+Running HiGHS 1.14.0 (git hash: 7df0786): Copyright (c) 2026 under MIT licence terms
+Writing the model to /Users/justingao/Documents/CUMCM/C题工作区/results/q1/roundtrip_90_milp.lp
+MIP has 578 rows; 865 cols; 1730 nonzeros; 144 integer variables (144 binary)
+Coefficient ranges:
+  Matrix  [9e-01, 8e+02]
+  Cost    [4e-01, 1e+00]
+  Bound   [4e-02, 1e+04]
+  RHS     [2e+01, 6e+03]
+Presolving model
+576 rows, 808 cols, 1671 nonzeros 0s
+566 rows, 798 cols, 1651 nonzeros 0s
+Presolve reductions: rows 566(-12); columns 798(-67); nonzeros 1651(-79) 
+
+Solving MIP model with:
+   566 rows
+   798 cols (144 binary, 0 integer, 0 implied int., 654 continuous, 0 domain fixed)
+   1651 nonzeros
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   0               inf                  inf        0      0      0         0     0.0s
+ R       0       0         0   0.00%   33801.495542    35070.604901       3.62%        0      0      0       400     0.0s
+ H       0       0         0   0.00%   33801.495542    33801.495542       0.00%       80     35      0       439     0.0s
+         1       0         1 100.00%   33801.495542    33801.495542       0.00%       80     35      0       439     0.0s
+
+Solving report
+  Status            Optimal
+  Primal bound      33801.4955422
+  Dual bound        33801.4955422
+  Gap               0% (tolerance: 0%)
+  P-D integral      0.000768922148741
+  Solution status   feasible
+                    33801.4955422 (objective)
+                    0 (bound viol.)
+                    2.22044604925e-16 (int. viol.)
+                    0 (row viol.)
+  Timing            0.03
+  Max sub-MIP depth 0
+  Nodes             1
+  Repair LPs        0
+  LP iterations     439
+                    0 (strong br.)
+                    39 (separation)
+                    0 (heuristics)
+Writing the solution to /Users/justingao/Documents/CUMCM/C题工作区/results/q1/roundtrip_90_milp.sol
+Running HiGHS 1.14.0 (git hash: 7df0786): Copyright (c) 2026 under MIT licence terms
+Writing the model to /Users/justingao/Documents/CUMCM/C题工作区/results/q1/roundtrip_90_lp.lp
+LP has 578 rows; 865 cols; 1730 nonzeros
+Coefficient ranges:
+  Matrix  [9e-01, 8e+02]
+  Cost    [4e-01, 1e+00]
+  Bound   [4e-02, 1e+04]
+  RHS     [2e+01, 6e+03]
+Presolving model
+576 rows, 808 cols, 1671 nonzeros 0s
+Dependent equations search running on 278 equations with time limit of 1.20s
+Dependent equations search removed 0 rows and 0 nonzeros in 0.00s (limit = 1.20s)
+566 rows, 798 cols, 1651 nonzeros 0s
+Presolve reductions: rows 566(-12); columns 798(-67); nonzeros 1651(-79) 
+Solving the presolved LP
+Using dual simplex solver
+  Iteration        Objective     Infeasibilities num(sum)
+          0     1.6375675444e-01 Pr: 146(77637.9) 0.0s
+        414     3.3801495542e+04 Pr: 0(0) 0.0s
+
+Performed postsolve
+Solving the original LP from the solution after postsolve
+
+Model status        : Optimal
+Simplex   iterations: 414
+Objective value     :  3.3801495542e+04
+P-D objective error :  1.0762615487e-16
+HiGHS run time      :          0.00
+Writing the solution to /Users/justingao/Documents/CUMCM/C题工作区/results/q1/roundtrip_90_lp.sol
+Running HiGHS 1.14.0 (git hash: 7df0786): Copyright (c) 2026 under MIT licence terms
+Writing the model to /Users/justingao/Documents/CUMCM/C题工作区/results/q1/alternate_milp.lp
+MIP has 579 rows; 865 cols; 1874 nonzeros; 144 integer variables (144 binary)
+Coefficient ranges:
+  Matrix  [4e-01, 8e+02]
+  Cost    [1e+00, 1e+02]
+  Bound   [4e-02, 1e+04]
+  RHS     [2e+01, 4e+04]
+Presolving model
+577 rows, 808 cols, 1815 nonzeros 0s
+567 rows, 798 cols, 1795 nonzeros 0s
+Presolve reductions: rows 567(-12); columns 798(-67); nonzeros 1795(-79) 
+
+Solving MIP model with:
+   567 rows
+   798 cols (144 binary, 0 integer, 0 implied int., 654 continuous, 0 domain fixed)
+   1795 nonzeros
+
+Src: B => Branching; C => Central rounding; F => Feasibility pump; H => Heuristic;
+     I => Shifting; J => Feasibility jump; L => Sub-MIP; P => Empty MIP; R => Randomized rounding;
+     S => Solve LP; T => Evaluate node; U => Unbounded; X => User solution; Y => HiGHS solution;
+     Z => ZI Round; l => Trivial lower; p => Trivial point; u => Trivial upper; z => Trivial zero
+
+        Nodes      |    B&B Tree     |            Objective Bounds              |  Dynamic Constraints |       Work      
+Src  Proc. InQueue |  Leaves   Expl. | BestBound       BestSol              Gap |   Cuts   InLp Confl. | LpIters     Time
+
+         0       0         0   0.00%   0               inf                  inf        0      0      0         0     0.0s
+         0       0         0   0.00%   1502073.560751  inf                  inf        0      0      0       425     0.0s
+ R       0       0         0   0.00%   1502073.560751  1502073.563659     0.00%       65     28      0       467     0.0s
+         1       0         1 100.00%   1502073.563659  1502073.563659     0.00%       65     28      0       468     0.0s
+
+Solving report
+  Status            Optimal
+  Primal bound      1502073.56366
+  Dual bound        1502073.56366
+  Gap               0% (tolerance: 0%)
+  P-D integral      1.85745646885e-11
+  Solution status   feasible
+                    1502073.56366 (objective)
+                    0 (bound viol.)
+                    1.11022302463e-16 (int. viol.)
+                    0 (row viol.)
+  Timing            0.02
+  Max sub-MIP depth 0
+  Nodes             1
+  Repair LPs        0
+  LP iterations     468
+                    0 (strong br.)
+                    42 (separation)
+                    0 (heuristics)
+Writing the solution to /Users/justingao/Documents/CUMCM/C题工作区/results/q1/alternate_milp.sol
+    scenario    cost_yuan     grid_kwh  saving_percent_vs_no_storage
+    baseline 35126.948589 59482.698998                     26.898122
+roundtrip_90 33801.495542 57526.243481                     29.656491
+  no_storage 48052.046591 61789.935400                      0.000000

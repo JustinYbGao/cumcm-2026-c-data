@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "issues": [
+    "双轴刻度因twinx创建时重置主轴而重叠到左侧；须恢复紧急购电右轴"
+  ],
+  "inspected_png_sha256": "76cc07b21d65fa80cc32f68a42819f3063f3277c9fffe7e0267e2136defa450f",
+  "reviewer": "Codex actual image inspection"
+}

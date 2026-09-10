@@ -1,0 +1,103 @@
+{
+  "dataset_summary": "2—12月11个月，实际费用汇总及基线差值",
+  "observed_data_features": [],
+  "relevant_columns": [
+    "month",
+    "planned_cost_yuan",
+    "emergency_cost_yuan",
+    "total_cost_yuan",
+    "seasonal_total_cost_yuan",
+    "excess_cost_yuan"
+  ],
+  "candidate_comparisons": [
+    {
+      "template_id": "cmp_3d_ribbon_chart",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+      ],
+      "data_compatibility": "未选用",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_dual_axis_bar_line",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+      ],
+      "data_compatibility": "未选用",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_lag_correlation_analysis",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+      ],
+      "data_compatibility": "未选用",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "mpn_scatter_matrix_timeseries_regression",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+      ],
+      "data_compatibility": "未选用",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_flowing_percentage_stack",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+      ],
+      "data_compatibility": "未选用",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_3d_waterfall_distribution",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+      ],
+      "data_compatibility": "未选用",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_smoothed_trend_curves",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+      ],
+      "data_compatibility": "未选用",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_composite_line_bar_dual_axis",
+      "suitable": true,
+      "advantages": [
+        "保留两组折线与辅助量组合、配色方案2的蓝橙灰体系；将辅助量拆为共享时间轴下方面板，便于准确读差值。去除与本题无关的回归线和显著性标注。"
+      ],
+      "limitations": [],
+      "data_compatibility": "字段与时序坐标直接映射",
+      "requirement_compatibility": ""
+    }
+  ],
+  "selected_template_id": "trd_composite_line_bar_dual_axis",
+  "selected_template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "alternative_template_ids": [],
+  "selection_reason": "保留两组折线与辅助量组合、配色方案2的蓝橙灰体系；将辅助量拆为共享时间轴下方面板，便于准确读差值。去除与本题无关的回归线和显著性标注。",
+  "data_support_reason": "字段单位已由求解结果与配置确定；仅换算展示单位与派生差值",
+  "data_warnings": [],
+  "confidence": 0.97,
+  "needs_clarification": false,
+  "clarification_question": ""
+}

@@ -1,0 +1,181 @@
+{
+  "selection": {
+    "dataset_summary": "145个原始状态时刻，两种效率口径",
+    "relevant_columns": [
+      "minute",
+      "baseline_energy_kwh",
+      "roundtrip_energy_kwh"
+    ],
+    "candidate_comparisons": [
+      {
+        "template_id": "cmp_3d_ribbon_chart",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+        ],
+        "data_compatibility": "未选用"
+      },
+      {
+        "template_id": "trd_dual_axis_bar_line",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+        ],
+        "data_compatibility": "未选用"
+      },
+      {
+        "template_id": "trd_lag_correlation_analysis",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+        ],
+        "data_compatibility": "未选用"
+      },
+      {
+        "template_id": "mpn_scatter_matrix_timeseries_regression",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+        ],
+        "data_compatibility": "未选用"
+      },
+      {
+        "template_id": "cmp_flowing_percentage_stack",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+        ],
+        "data_compatibility": "未选用"
+      },
+      {
+        "template_id": "cmp_3d_waterfall_distribution",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+        ],
+        "data_compatibility": "未选用"
+      },
+      {
+        "template_id": "trd_smoothed_trend_curves",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "与该图真实字段的直接时序比较不如所选模板贴合；不引入三维、相关系数、平滑或额外模型"
+        ],
+        "data_compatibility": "未选用"
+      },
+      {
+        "template_id": "trd_composite_line_bar_dual_axis",
+        "suitable": true,
+        "advantages": [
+          "保留两组折线与辅助量组合、配色方案2的蓝橙灰体系；将辅助量拆为共享时间轴下方面板，便于准确读差值。去除与本题无关的回归线和显著性标注。"
+        ],
+        "limitations": [],
+        "data_compatibility": "字段与时序坐标直接映射"
+      }
+    ],
+    "selected_template_id": "trd_composite_line_bar_dual_axis",
+    "selected_template_name": "折线图、条形图和双Y轴的复合时间序列图",
+    "selection_reason": "保留两组折线与辅助量组合、配色方案2的蓝橙灰体系；将辅助量拆为共享时间轴下方面板，便于准确读差值。去除与本题无关的回归线和显著性标注。",
+    "data_support_reason": "字段单位已由求解结果与配置确定；仅换算展示单位与派生差值",
+    "confidence": 0.97
+  },
+  "plan": {
+    "template_id": "trd_composite_line_bar_dual_axis",
+    "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+    "plot_goal": "145个原始状态时刻，两种效率口径",
+    "selected_columns": [
+      "minute",
+      "baseline_energy_kwh",
+      "roundtrip_energy_kwh"
+    ],
+    "column_mappings": [
+      {
+        "data_column": "minute",
+        "template_role": "原始状态时刻；除以60显示小时"
+      },
+      {
+        "data_column": "baseline_energy_kwh",
+        "template_role": "主口径储能曲线；除以1000显示MWh"
+      },
+      {
+        "data_column": "roundtrip_energy_kwh",
+        "template_role": "往返90%储能曲线；与主口径相减显示差异"
+      }
+    ],
+    "required_preprocessing": [
+      "仅读取绘图副本；kWh/1000为MWh，元/10000为万元，十分钟kWh乘6为kW"
+    ],
+    "required_dependencies": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "layout_elements_to_preserve": [
+      "Matplotlib绘制",
+      "时间横轴与明确量纲",
+      "柱线复合语法",
+      "低饱和填色与清晰深色折线",
+      "衬线字体，宋体中文回退",
+      "轻量水平网格，面板字母"
+    ],
+    "style_elements_to_preserve": [
+      "Existing layout and colors",
+      "Times New Roman with DejaVu Serif fallback"
+    ],
+    "elements_allowed_to_change": [
+      "Translate every visible label to English; preserve data and time alignment"
+    ],
+    "title_plan": "English-only titles, axes, legends, annotations and footnotes",
+    "axis_plan": "真实时间边界和物理单位；代表日统一纵轴尺度",
+    "legend_plan": "线型/颜色区分策略；图例避开数据",
+    "annotation_plan": "真实汇总费用与内部区间终点假设",
+    "output_formats": [
+      "png",
+      "svg"
+    ],
+    "warnings": [
+      "时间映射仍为内部假设，非正式提交版"
+    ]
+  },
+  "adaptation": {
+    "changes_summary": [
+      "Translate every visible label to English",
+      "Remove Chinese font dependency",
+      "Preserve data, layout, colors and units"
+    ],
+    "preserved_style_elements": [
+      "Matplotlib绘制",
+      "时间横轴与明确量纲",
+      "柱线复合语法",
+      "低饱和填色与清晰深色折线",
+      "衬线字体，宋体中文回退",
+      "轻量水平网格，面板字母"
+    ],
+    "changed_elements": [
+      "Translate every visible label to English",
+      "Remove Chinese font dependency",
+      "Preserve data, layout, colors and units"
+    ],
+    "data_columns_used": [
+      "minute",
+      "baseline_energy_kwh",
+      "roundtrip_energy_kwh"
+    ],
+    "dependencies_used": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "additional_dependencies_requested": [],
+    "assumptions": [
+      "继承内部区间终点假设；不移动数据或修改结果"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "adapted_code": "\"\"\"Adapted from ModelViz 12_TRD_004: paired time series and auxiliary difference.\nRetains scheme 2 blue/orange/gray, serif type, light y-grid and panel letters.\nNo regression, smoothing, resampling or data shift is applied.\n\"\"\"\nimport json\nfrom pathlib import Path\nimport sys\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib import font_manager\nimport numpy as np\nimport pandas as pd\n\nfont_manager.fontManager.addfont('/System/Library/Fonts/Supplemental/Songti.ttc')\nplt.rcParams.update({'font.family':['Times New Roman','Songti SC'], 'font.size':11,\n    'axes.unicode_minus':False, 'axes.spines.top':False, 'axes.spines.right':False,\n    'axes.linewidth':.8, 'axes.labelpad':8, 'legend.frameon':False,\n    'svg.hashsalt':'cumcm-modelviz-v2', 'savefig.facecolor':'white'})\ndata = pd.read_csv(sys.argv[1], float_precision='round_trip')\nout = Path(sys.argv[2]); out.mkdir(parents=True, exist_ok=True)\nassert len(data)==145 and np.array_equal(data.minute, np.arange(145)*10)\nx=data.minute/60\na=data.baseline_energy_kwh/1000\nb=data.roundtrip_energy_kwh/1000\nfig, axes=plt.subplots(2,1,figsize=(10.2,6.7),sharex=True,\n    gridspec_kw={'height_ratios':[3,1]},layout='constrained')\nfig.suptitle('问题1  |  效率口径与日内储能轨迹',fontsize=17,y=.985,x=.08,ha='left')\nax=axes[0]\nax.axhspan(1.2,10.8,color='#f4f6f8',zorder=0)\nax.plot(x,a,color='#1f78b4',lw=2,label='充、放电效率均为90%（主口径）')\nax.plot(x,b,color='#ff7f00',lw=1.8,ls='--',label='往返效率90%（敏感性）')\nfor level,label in [(1.2,'下界 1.2 MWh'),(10.8,'上界 10.8 MWh')]:\n    ax.axhline(level,color='#8a939d',lw=.8,ls=(0,(4,3)))\n    ax.text(23.8 if level>6 else .25,level+.15,label,ha='right' if level>6 else 'left',va='bottom',color='#606872',fontsize=10)\nax.scatter([0,24],[a.iloc[0],a.iloc[-1]],s=26,facecolor='white',edgecolor='#1f78b4',zorder=5)\nax.set(ylabel='储能电量 / MWh',ylim=(0,12.7),yticks=[0,1.2,3,6,9,10.8,12])\nax.set_title('(a) 两种口径的最优解',loc='left',fontsize=12,pad=9)\nax.legend(loc='upper center',ncol=2,fontsize=10,bbox_to_anchor=(.5,1.02))\ndelta=b-a\naxes[1].fill_between(x,delta,0,color='#a6cee3',alpha=.7)\naxes[1].plot(x,delta,color='#555555',lw=1.1)\naxes[1].axhline(0,color='#68717c',lw=.7)\naxes[1].set(ylabel='储能差 / MWh',xlabel='时刻 / h',xlim=(0,24),xticks=range(0,25,2))\naxes[1].set_title('(b) 往返效率90% − 主口径',loc='left',fontsize=12,pad=9)\nfor ax in axes:\n    ax.grid(axis='y',color='#d5dbe0',lw=.5,alpha=.7)\n    ax.tick_params(direction='in',length=4)\nfig.get_layout_engine().set(rect=(0,.07,1,.84))\nfig.text(.08,.022,'内部区间终点假设；145个状态点，均按原时间键绘制。轨迹连线仅连接相邻状态。',fontsize=10,color='#59636f')\nfor ext in ['png','svg']:\n    fig.savefig(out/f'chart.{ext}',dpi=300,metadata={'Date':None} if ext=='svg' else None)\nplt.close(fig)\n(out.parent/'workspace/plot_facts.json').write_text(json.dumps({'rows':len(data),'state_points':145,\n    'max_abs_difference_kwh':float(abs(delta).max()*1000),'start_hour':float(x.iloc[0]),'end_hour':float(x.iloc[-1])},indent=2)+'\\n')\n",
+  "changes_summary": [
+    "全部演示数据替换为审计过的真实CSV",
+    "中文标签与内部工作假设标记",
+    "保留全部时间点，不平滑、不重采样",
+    "PNG 300 dpi与可缩放SVG",
+    "按本题单位与数据范围调整坐标，移除不适用的回归/显著性"
+  ],
+  "preserved_style_elements": [
+    "Matplotlib绘制",
+    "时间横轴与明确量纲",
+    "柱线复合语法",
+    "低饱和填色与清晰深色折线",
+    "衬线字体，宋体中文回退",
+    "轻量水平网格，面板字母"
+  ],
+  "changed_elements": [
+    "全部演示数据替换为审计过的真实CSV",
+    "中文标签与内部工作假设标记",
+    "保留全部时间点，不平滑、不重采样",
+    "PNG 300 dpi与可缩放SVG",
+    "按本题单位与数据范围调整坐标，移除不适用的回归/显著性"
+  ],
+  "data_columns_used": [
+    "minute",
+    "baseline_energy_kwh",
+    "roundtrip_energy_kwh"
+  ],
+  "dependencies_used": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "additional_dependencies_requested": [],
+  "assumptions": [
+    "继承内部区间终点假设；不移动数据或修改结果"
+  ],
+  "warnings": []
+}

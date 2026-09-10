@@ -1,0 +1,10 @@
+{
+  "source_files": {
+    "results/q2/monthly_comparison.csv": "d52c640a2e5721cf248dc1aced4130d6cc7e510b8d204e51ebbe566b5d596943"
+  },
+  "plot_data_sha256": "d52c640a2e5721cf248dc1aced4130d6cc7e510b8d204e51ebbe566b5d596943",
+  "rows": 11,
+  "transformation": "Read and write plotting copy with round-trip float parsing; no reordering",
+  "display_units": "kWh / 1000 = MWh; kW / 1000 = MW; yuan / 10000 = 万元",
+  "time_assumption": "Internal interval-end assumption; no data shifting; not formal submission"
+}

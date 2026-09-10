@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "issues": [
+    "总标题与首子图标题重叠"
+  ],
+  "inspected_png_sha256": "c443e5622a8fdc0bc1f1229f5a8f7f704ea5acc0d03821b62c3e0165c631cae6",
+  "reviewer": "Codex actual image inspection"
+}

@@ -1,0 +1,21 @@
+{
+  "original_request": "你重新做图，记得以后做图的时候modelviz-skill",
+  "goal": "展示储能调度的容量功率时间序列，并联读负荷、光伏、计划购电与电价",
+  "functional_keywords": [
+    "趋势",
+    "比较",
+    "时间序列",
+    "容量功率",
+    "多面板"
+  ],
+  "chart_types": [],
+  "style_keywords": [
+    "科研风",
+    "简洁"
+  ],
+  "use_case": "论文正文",
+  "negative_requirements": [],
+  "explicit_template": false,
+  "is_ambiguous": false,
+  "clarification_question": ""
+}

@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks_count": 184,
+  "unchanged_source_files": 118,
+  "dimensions_pixels": {
+    "battery_states": [
+      3060,
+      2010
+    ],
+    "dispatch": [
+      3210,
+      2700
+    ],
+    "monthly_costs": [
+      3150,
+      2310
+    ],
+    "representative_execution": [
+      3150,
+      3150
+    ]
+  },
+  "note": "No optimization rerun; checks apply to plots and existing results"
+}
+Packaged and checked 155 files: /Users/justingao/Documents/CUMCM/C题工作区/deliverables/figures/modelviz_v2.zip

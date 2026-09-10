@@ -1,0 +1,20 @@
+{
+  "raw_attachment1_A2": "00:10:00",
+  "raw_attachment1_A145": "0:00+1",
+  "template_A2": "0:10-0:20",
+  "template_A145": "0:00+1-0:10+1",
+  "template_table2_blocks": [
+    "0:00-4:00",
+    "4:00-8:00",
+    "8:00-12:00",
+    "12:00-16:00",
+    "16:00-20:00",
+    "20:00-24:00"
+  ],
+  "literal_matches": 143,
+  "internal_missing_from_template": "00:00–00:10",
+  "template_outside_internal_day": "24:00–24:10",
+  "decision": "No workbook exported; internal CSV uses explicit start/end keys; no data movement",
+  "english_evidence": "Existing English extraction Appendix 2 explicitly says 0:00 to 24:00; does not resolve supplied template labels",
+  "initial_state": "Chinese Appendix 1: Jan 1 6000; English: start of operation 6000; Q1 adopts 6000 without inventing a date"
+}

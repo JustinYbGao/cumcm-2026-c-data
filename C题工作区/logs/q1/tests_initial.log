@@ -1,0 +1,82 @@
+FFFFFFF
+======================================================================
+FAIL: test_analytic_two_interval_arbitrage (test_q1_solution.Q1Tests.test_analytic_two_interval_arbitrage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q1_solution.py", line 71, in test_analytic_two_interval_arbitrage
+    x, status = self.module('solve_q1').solve_model(data, cfg)
+                ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q1_solution.py", line 18, in module
+    self.assertIsNotNone(importlib.util.find_spec(name), f'{name} is not implemented')
+AssertionError: unexpectedly None : solve_q1 is not implemented
+
+======================================================================
+FAIL: test_nonfinite_value_is_rejected (test_q1_solution.Q1Tests.test_nonfinite_value_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q1_solution.py", line 65, in test_nonfinite_value_is_rejected
+    self.assertFalse(self.module('validate_q1_solution').validate_frames(source, plan, summary, cfg)['passed'])
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q1_solution.py", line 18, in module
+    self.assertIsNotNone(importlib.util.find_spec(name), f'{name} is not implemented')
+AssertionError: unexpectedly None : validate_q1_solution is not implemented
+
+======================================================================
+FAIL: test_power_limit_is_energy_per_interval (test_q1_solution.Q1Tests.test_power_limit_is_energy_per_interval)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q1_solution.py", line 41, in test_power_limit_is_energy_per_interval
+    r = self.module('validate_q1_solution').validate_frames(source, plan, summary, cfg)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q1_solution.py", line 18, in module
+    self.assertIsNotNone(importlib.util.find_spec(name), f'{name} is not implemented')
+AssertionError: unexpectedly None : validate_q1_solution is not implemented
+
+======================================================================
+FAIL: test_shifted_time_keys_are_rejected (test_q1_solution.Q1Tests.test_shifted_time_keys_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q1_solution.py", line 59, in test_shifted_time_keys_are_rejected
+    r = self.module('validate_q1_solution').validate_frames(source, plan, summary, cfg)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q1_solution.py", line 18, in module
+    self.assertIsNotNone(importlib.util.find_spec(name), f'{name} is not implemented')
+AssertionError: unexpectedly None : validate_q1_solution is not implemented
+
+======================================================================
+FAIL: test_state_recursion_corruption (test_q1_solution.Q1Tests.test_state_recursion_corruption)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q1_solution.py", line 47, in test_state_recursion_corruption
+    r = self.module('validate_q1_solution').validate_frames(source, plan, summary, cfg)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q1_solution.py", line 18, in module
+    self.assertIsNotNone(importlib.util.find_spec(name), f'{name} is not implemented')
+AssertionError: unexpectedly None : validate_q1_solution is not implemented
+
+======================================================================
+FAIL: test_valid_plan (test_q1_solution.Q1Tests.test_valid_plan)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q1_solution.py", line 36, in test_valid_plan
+    self.assertTrue(self.module('validate_q1_solution').validate_frames(*self.fixture())['passed'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q1_solution.py", line 18, in module
+    self.assertIsNotNone(importlib.util.find_spec(name), f'{name} is not implemented')
+AssertionError: unexpectedly None : validate_q1_solution is not implemented
+
+======================================================================
+FAIL: test_wrong_summary_is_rejected (test_q1_solution.Q1Tests.test_wrong_summary_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q1_solution.py", line 53, in test_wrong_summary_is_rejected
+    r = self.module('validate_q1_solution').validate_frames(source, plan, summary, cfg)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q1_solution.py", line 18, in module
+    self.assertIsNotNone(importlib.util.find_spec(name), f'{name} is not implemented')
+AssertionError: unexpectedly None : validate_q1_solution is not implemented
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.004s
+
+FAILED (failures=7)

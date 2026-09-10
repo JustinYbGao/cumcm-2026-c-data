@@ -1,0 +1,23 @@
+{
+  "original_request": "不要中文标注！！全部要英文的",
+  "goal": "展示储能调度的容量功率时间序列，并联读负荷、光伏、计划购电与电价",
+  "functional_keywords": [
+    "趋势",
+    "比较",
+    "时间序列",
+    "容量功率",
+    "多面板"
+  ],
+  "chart_types": [],
+  "style_keywords": [
+    "English labels",
+    "serif typography"
+  ],
+  "use_case": "论文正文",
+  "negative_requirements": [
+    "No Chinese text in figures"
+  ],
+  "explicit_template": false,
+  "is_ambiguous": false,
+  "clarification_question": ""
+}
