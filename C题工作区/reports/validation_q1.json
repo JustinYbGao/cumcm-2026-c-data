@@ -1,0 +1,57 @@
+[
+  {
+    "check": "Q1: 144 slots unique and ordered",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Q1: complete relative day intervals",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Q1: required values nonmissing",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "fixed_price: 144 slots unique and ordered",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "fixed_price: complete relative day intervals",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "fixed_price: required values nonmissing",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Q1: all original numeric cells preserved",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Q1: energy and signed net load",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Q1: fixed price identical",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Q1: negative net and zeros preserved",
+    "passed": true,
+    "detail": "negative net=30, PV zero=55"
+  },
+  {
+    "check": "All original workbooks including templates unchanged",
+    "passed": true,
+    "detail": ""
+  }
+]

@@ -1,0 +1,199 @@
+1 
+ 
+CUMCM-2026 Problem C 
+ 
+Power Regulation Strategies for Microgrid and External Grid 
+Microgrids are small-scale generation and consumption systems that have developed rapidly 
+to support the local consumption of distributed energy sources, such as photovoltaic (PV) power 
+generation, and to mitigate grid-connection challenges. For economic considerations, non-isolated 
+microgrids can charge their energy storage devices when the electricity price on the external grid 
+is lower or when distributed energy sources generate surplus electricity and discharge the stored 
+electricity when the external grid electricity price is higher. 
+The objective of regulating microgrid and external grid is to use data, such as the residential 
+load, PV power generation output, and current stored energy of the energy storage device, to 
+provide as precise as possible est imates of the  quantity of electricity purchased by the microgrid 
+and the charging -discharging capacity of the energy storage device, thereby ensuring that the 
+electricity supplied by the microgrid can meet the residential load while minimizing the electricity 
+purchase cost. 
+Problem 1   If the daily electricity price and residential load remain unchanged, the 
+predictions of daily PV power generation are provided. The load of electricity provided by the  
+microgrid cannot be less than  the residential load, and the energy storage capacity of the storage 
+device should be  the same at 00:00 and 24:0 0. Please provide the daily planned electricity 
+purchasing strategy at 0:00 every day. 
+Using the data in Attachment 1 and Appendix 1 , please give the detail  planned electricity 
+purchasing strategy for  the current day at 0:00. In the paper, p lease provide  the electricity 
+purchased quantities  (unit: kWh)  at specified start  time periods, all-day electricity purchase 
+quantity (unit: kWh),  and cost (unit: RMB) in the format of Table 1, the charging-discharging 
+capacities (unit: kWh)  of the energy storage device during the specified t ime periods,  and the 
+stored energy at 0:00 and 24:00  in the format of Table 2. Save the complete strategy to the file 
+result1.xlsx (the template file is provided in Attachment 5). 
+Table 1  Quantities of electricity purchased by microgrid at specified time periods and the 
+total quantity and cost of electricity purchased 
+Time period 
+Electricity 
+purchase 
+quantity 
+Time period 
+Electricity 
+purchase 
+quantity 
+Time period 
+Electricity 
+purchase 
+quantity 
+10:00-10:10  12:00-12:10  14:00-14:10  
+16:00-16:10  18:00-18:10  20:00-20:10  
+All-day electricity purchase 
+quantity  All-day electricity purchase 
+cost  
+ 
+ 
+ 
+2 
+ 
+Table 2  Charging-discharging capacity of energy storage device during the specified time 
+period, as well as the stored energy at 0:00 and 24:00 
+Time period Charging 
+capacity 
+Discharging 
+capacity Time period Charging 
+capacity 
+Discharging 
+capacity 
+0:00-4:00   4:00-8:00   
+8:00-12:00   12:00-16:00   
+16:00-20:00   20:00-24:00   
+Stored energy at 0:00  Stored energy at 24:00  
+ 
+Problem 2   If the daily electricity price is fixed, while the residential load and PV 
+generation vary over time. The load of electricity provided by the  microgrid cannot be less than  
+the residential load. If it falls below the load, emergency electricity can be purchased from the 
+external grid, with the electricity price being 5 times the price at the trading time. Except for the 
+cost of emergency electricity purchase, the electricity purchase costs during other periods are 
+calculated based on the planned electricity purchase quantities. Please provide the daily planned 
+electricity purchasing strategy at 0:00 every day. 
+Using the electricity price in Attachment 1 and the data in Attachment 2, please formulate the 
+daily electricity purchasing strategy at 0:00 e very day. In the paper, please provide the results for 
+the specified dates in Table 3 in the format of Tables 1 and 2 and provide the emergency electricity 
+purchase periods and corresponding purchase quantities  in the format of Table 3. Save the 
+complete strategy to the file result2.xlsx (the template file is provided in Attachment 5). 
+Table 3  Emergency electricity purchase periods and corresponding purchase quantities on 
+specified dates 
+2025.3.20 2025.6.21 2025.9.23 2025.12.21 
+Purchase 
+period 
+Electricity 
+purchase 
+quantity 
+Purchase 
+period 
+Electricity 
+purchase 
+quantity 
+Purchase 
+period 
+Electricity 
+purchase 
+quantity 
+Purchase 
+period 
+Electricity 
+purchase 
+quantity 
+        
+        
+       
+  
+Problem 3  Hourly predictions of PV power generation for the next 24 hours are available  
+at 0:00, 6:00, 12:00, and 18:00 every day. Based on the prediction at 0:00, a planned electricity 
+purchasing strategy for the current day can be formulated, and an adjusted electricity purchasing 
+strategy can be developed based on the predictions at other prediction times. If the adjusted 
+electricity purchasing quantity is less than the planned quantity, the shortfall should be paid at 50% 
+of the electricity price at the trading time. If the adjusted electricity purchase quantity exceeds the 
+planned quantity, the price for the excess quantity should be 1.5 times the electricity price at the 
+trading time. The total electricity purchase cost comprises the planned electricity purchase cost, 
+emergency electricity purchase cost, and cost associated with the adjusted electricity purchase 
+quantity. Under the above conditions, please establish a mathematical model for the daily 
+electricity purchasing strategy. 
+Using the data of electricity price in Attachment 1, residential load and actual PV p ower 
+3 
+ 
+generation in Attachment 2, and PV power generation prediction in Attachment 3, please 
+formulate the daily planned electricity purchasing strategy at 0:00  every day  and the adjusted 
+electricity purchasing strategies at other forecast times. In the paper, please provide the results for 
+the specified dates in Table 3 in the format of Tables 1–3. Save the complete strategies to the file 
+result3.xlsx (the template file is provided in Attachment 5). Please analyze whether it is necessary 
+to introduce forecasts for other time points to formulate adjusted electricity purchasing strategies. 
+Problem 4  In practice, the electricity price in the external grid varies in real time. Based on 
+the fluctuating electricity price , please establish a mathematical model for the daily electricity 
+purchasing strategy. 
+Using the data of residential load and actual PV power generation in Attachment 2, PV power 
+generation prediction in Attachment 3, and electricity price in Attachment 4, please recalculate 
+Problem 2 and Problem 3 under the fluctuating electricity price. Please provide the corresponding 
+results in the paper, and save the complete power regulation strategies in the file result4-2.xlsx 
+(corresponding to Problem 2) and result4-3.xlsx (corresponding to Problem 3) (the template files 
+are provided in Attachment 5). 
+ 
+ 
+Appendix 1  Parameters of Energy Storage Device 
+The energy storage device has a maximum capacity of 12000 kWh and a maximum 
+charging-discharging power of 5000 kW. At the start of operation, the stored energy was 6000 
+kWh. To prevent overcharging or over-discharging, the stored energy must remain between 1200 
+and 10800 kWh during subsequent charging and discharging processes. The charging-discharging 
+efficiency of the energy storage device is 90%. 
+ 
+Appendix 2  Description of Attachments 
+Attachment 1 provides the electricity price (unit: RMB/kWh), residential load (unit: kW), and 
+forecasted PV power generation (unit: kW) at different times for a given day . In  the table, 
+"0:00+1" denotes 0:00 on the following day, which corresponds to 24:00 on the current day (the 
+same applies below). 
+ 
+Attachment 2 provides the residential load power (unit: kW) and actual PV power generation 
+(unit: kW) at different times from 2025.1.1 to 2025.12.31. 
+ 
+Attachment 3 provides hourly predictions of PV power generation (unit: kW) for the next 24 
+hours at 0:00, 6:00, 12:00, and 18:00 every day from 2025.1.1 to 2025.12.31. 
+ 
+Attachment 4 provides fluctuating electricity prices (unit: RMB/kWh) at different times from 
+2025.1.1 to 2025.12.31. 
+ 
+  
+4 
+ 
+Attachment 5 is a folder containing the template files for the result files, where 
+“result1.xlsx” is the template file for the result file of Problem 1. 
+The sheet “Planned electricity purchase” saves the electricity purchase quantities (unit: kWh) 
+at 10-min intervals from 0:00 to 24:00. 
+The sheet “Charging-discharging capacity” saves the charging and discharging capacities of 
+the energy storage device (unit: kWh) for the specified time period and the stored energy  (unit: 
+kWh) at 0:00 and 24:00. 
+ 
+“result2.xlsx” is the template file for the result file for Problem 2. 
+The sheet “Planned electricity purchase ” saves the planned electricity purchase quantities 
+(unit: kWh) at 10-min intervals from 0:00 to 24:00 each day from 2025.2.1 to 2025.12.31. 
+The sheet “Charging-discharging capacity” saves the charging and discharging capacity (unit: 
+kWh) of the energy storage device for the corresponding dates and time periods, as well as the 
+stored energy (unit: kWh) at 0:00 and 24:00. 
+The sheet “Emergency electricity purchase” saves the emergency electricity purchase time 
+periods and quantities (unit: kWh) from 2025.2.1 to 2025.12.31. The filling method is presented in 
+Table 4. 
+Table 4  Example of filling in emergency electricity purchase 
+Date Purchase Period Electricity purchase quantity 
+2025/3/1 13:00-13:30 100 
+ 14:40-15:50 400 
+ 16:10-16:30 50 
+ 
+“result3. xlsx” is the template file for the results of Problem 3. 
+The sheet “Planned electricity purchase ” saves the planned electricity purchase quantities 
+(unit: kWh) for each day from 2025.2.1 to 2025.12.31, based on the forecasts at 0:00.  
+The sheet “Adjusted electricity purchase” saves the adjusted electricity purchase quantities 
+(unit: kWh) based on other predictions. 
+The sheet “Charging-discharging capacity” saves the charging and discharging capacities 
+(unit: kWh) of the energy storage device for the corresponding dates and time periods, as well as 
+the stored energy (unit: kWh) at 0:00 and 24:00. 
+The “Emergency electricity purchase” sheet saves the emergency electricity purchase time 
+periods and corresponding purchase quantities (unit: kWh) for the corresponding dates. 
+ 
+“result4-2.xlsx” and “result4-3.xlsx” are the template files of the result files for Problem 4. 
+All results for Problem 2 under fluctuating electricity prices are saved in “result4-2.xlsx, “and 
+all results for Problem 3 under fluctuating electricity prices are saved in “result4-3.xlsx”. 

@@ -1,0 +1,115 @@
+[
+  {
+    "type": "source_hash",
+    "file": "附件/附件1.xlsx",
+    "equal": true
+  },
+  {
+    "type": "source_hash",
+    "file": "附件/附件2.xlsx",
+    "equal": true
+  },
+  {
+    "type": "source_hash",
+    "file": "附件/附件3.xlsx",
+    "equal": true
+  },
+  {
+    "type": "source_hash",
+    "file": "附件/附件4.xlsx",
+    "equal": true
+  },
+  {
+    "type": "source_hash",
+    "file": "附件/附件5/result1.xlsx",
+    "equal": true
+  },
+  {
+    "type": "source_hash",
+    "file": "附件/附件5/result2.xlsx",
+    "equal": true
+  },
+  {
+    "type": "source_hash",
+    "file": "附件/附件5/result3.xlsx",
+    "equal": true
+  },
+  {
+    "type": "source_hash",
+    "file": "附件/附件5/result4-2.xlsx",
+    "equal": true
+  },
+  {
+    "type": "source_hash",
+    "file": "附件/附件5/result4-3.xlsx",
+    "equal": true
+  },
+  {
+    "type": "table",
+    "file": "111/处理结果/20260910_105607_986804/q1_day.csv",
+    "rows": 144,
+    "columns": {
+      "slot_id": true,
+      "start_time": true,
+      "end_time": true,
+      "price_yuan_per_kwh": true,
+      "load_kw": true,
+      "pv_forecast_kw": true,
+      "load_kwh": true,
+      "pv_forecast_kwh": true,
+      "net_load_forecast_kwh": true
+    },
+    "rerun_equal": true,
+    "equal": true
+  },
+  {
+    "type": "table",
+    "file": "111/处理结果/20260910_105607_986804/fixed_price.csv",
+    "rows": 144,
+    "columns": {
+      "slot_id": true,
+      "start_time": true,
+      "end_time": true,
+      "price_yuan_per_kwh": true
+    },
+    "rerun_equal": true,
+    "equal": true
+  },
+  {
+    "type": "table",
+    "file": "111/处理结果/20260910_105607_986804/actual_10min.csv",
+    "rows": 52560,
+    "columns": {
+      "date": true,
+      "slot_id": true,
+      "load_actual_kw": true,
+      "interval_end": true,
+      "interval_start": true,
+      "pv_actual_kw": true,
+      "actual_price_yuan_per_kwh": true,
+      "fixed_price_yuan_per_kwh": true,
+      "load_actual_kwh": true,
+      "pv_actual_kwh": true,
+      "net_load_actual_kwh": true
+    },
+    "rerun_equal": true,
+    "equal": true
+  },
+  {
+    "type": "table",
+    "file": "111/处理结果/20260910_105607_986804/pv_forecast_hourly.csv",
+    "rows": 35040,
+    "columns": {
+      "issue_time": true,
+      "horizon_h": true,
+      "pv_forecast_kw": true,
+      "target_time": true
+    },
+    "rerun_equal": true,
+    "equal": true
+  },
+  {
+    "type": "friend_files_unchanged",
+    "equal": true
+  }
+]

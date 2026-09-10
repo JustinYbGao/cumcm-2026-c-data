@@ -1,0 +1,70 @@
+[
+  {
+    "check": "35040 keys exactly match original hourly versions",
+    "passed": true
+  },
+  {
+    "check": "Hourly targets and business dates",
+    "passed": true
+  },
+  {
+    "check": "Release hour and lead-block labels match time keys",
+    "passed": true
+  },
+  {
+    "check": "Expected 35003 comparable, 1 missing forecast, 36 missing actual",
+    "passed": true
+  },
+  {
+    "check": "All actual hourly energies independently sum six original intervals",
+    "passed": true
+  },
+  {
+    "check": "All forecast hourly energies independently sum six derived intervals",
+    "passed": true
+  },
+  {
+    "check": "Error equals forecast minus actual, missing remains missing",
+    "passed": true
+  },
+  {
+    "check": "Unmatched rows never have errors or error availability",
+    "passed": true
+  },
+  {
+    "check": "Availability at hour end and timestamp timezone-naive",
+    "passed": true
+  },
+  {
+    "check": "True zero-PV hours retained and evaluated",
+    "passed": true
+  },
+  {
+    "check": "Common targets have exactly four distinct release hours and lead blocks",
+    "passed": true
+  },
+  {
+    "check": "Common-key file contains only comparable records",
+    "passed": true
+  },
+  {
+    "check": "Common-file grouping labels match evaluation records",
+    "passed": true
+  },
+  {
+    "check": "Common target set is complete, not a selected subset",
+    "passed": true
+  },
+  {
+    "check": "All 84 required summary groups present exactly once",
+    "passed": true
+  },
+  {
+    "check": "Every summary sample count and MAE/RMSE/bias independently recomputed",
+    "passed": true
+  },
+  {
+    "check": "369 decision times exclude future and permanently unmatched errors",
+    "passed": true
+  }
+]

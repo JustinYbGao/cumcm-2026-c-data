@@ -1,0 +1,3256 @@
+file,sheet,cell,value,python_type
+result1.xlsx,计划购电量,A1,时间段,str
+result1.xlsx,计划购电量,B1,购电量,str
+result1.xlsx,计划购电量,A2,0:10-0:20,str
+result1.xlsx,计划购电量,A3,0:20-0:30,str
+result1.xlsx,计划购电量,A4,0:30-0:40,str
+result1.xlsx,计划购电量,A5,0:40-0:50,str
+result1.xlsx,计划购电量,A6,0:50-1:00,str
+result1.xlsx,计划购电量,A7,1:00-1:10,str
+result1.xlsx,计划购电量,A8,1:10-1:20,str
+result1.xlsx,计划购电量,A9,1:20-1:30,str
+result1.xlsx,计划购电量,A10,1:30-1:40,str
+result1.xlsx,计划购电量,A11,1:40-1:50,str
+result1.xlsx,计划购电量,A12,1:50-2:00,str
+result1.xlsx,计划购电量,A13,2:00-2:10,str
+result1.xlsx,计划购电量,A14,2:10-2:20,str
+result1.xlsx,计划购电量,A15,2:20-2:30,str
+result1.xlsx,计划购电量,A16,2:30-2:40,str
+result1.xlsx,计划购电量,A17,2:40-2:50,str
+result1.xlsx,计划购电量,A18,2:50-3:00,str
+result1.xlsx,计划购电量,A19,3:00-3:10,str
+result1.xlsx,计划购电量,A20,3:10-3:20,str
+result1.xlsx,计划购电量,A21,3:20-3:30,str
+result1.xlsx,计划购电量,A22,3:30-3:40,str
+result1.xlsx,计划购电量,A23,3:40-3:50,str
+result1.xlsx,计划购电量,A24,3:50-4:00,str
+result1.xlsx,计划购电量,A25,4:00-4:10,str
+result1.xlsx,计划购电量,A26,4:10-4:20,str
+result1.xlsx,计划购电量,A27,4:20-4:30,str
+result1.xlsx,计划购电量,A28,4:30-4:40,str
+result1.xlsx,计划购电量,A29,4:40-4:50,str
+result1.xlsx,计划购电量,A30,4:50-5:00,str
+result1.xlsx,计划购电量,A31,5:00-5:10,str
+result1.xlsx,计划购电量,A32,5:10-5:20,str
+result1.xlsx,计划购电量,A33,5:20-5:30,str
+result1.xlsx,计划购电量,A34,5:30-5:40,str
+result1.xlsx,计划购电量,A35,5:40-5:50,str
+result1.xlsx,计划购电量,A36,5:50-6:00,str
+result1.xlsx,计划购电量,A37,6:00-6:10,str
+result1.xlsx,计划购电量,A38,6:10-6:20,str
+result1.xlsx,计划购电量,A39,6:20-6:30,str
+result1.xlsx,计划购电量,A40,6:30-6:40,str
+result1.xlsx,计划购电量,A41,6:40-6:50,str
+result1.xlsx,计划购电量,A42,6:50-7:00,str
+result1.xlsx,计划购电量,A43,7:00-7:10,str
+result1.xlsx,计划购电量,A44,7:10-7:20,str
+result1.xlsx,计划购电量,A45,7:20-7:30,str
+result1.xlsx,计划购电量,A46,7:30-7:40,str
+result1.xlsx,计划购电量,A47,7:40-7:50,str
+result1.xlsx,计划购电量,A48,7:50-8:00,str
+result1.xlsx,计划购电量,A49,8:00-8:10,str
+result1.xlsx,计划购电量,A50,8:10-8:20,str
+result1.xlsx,计划购电量,A51,8:20-8:30,str
+result1.xlsx,计划购电量,A52,8:30-8:40,str
+result1.xlsx,计划购电量,A53,8:40-8:50,str
+result1.xlsx,计划购电量,A54,8:50-9:00,str
+result1.xlsx,计划购电量,A55,9:00-9:10,str
+result1.xlsx,计划购电量,A56,9:10-9:20,str
+result1.xlsx,计划购电量,A57,9:20-9:30,str
+result1.xlsx,计划购电量,A58,9:30-9:40,str
+result1.xlsx,计划购电量,A59,9:40-9:50,str
+result1.xlsx,计划购电量,A60,9:50-10:00,str
+result1.xlsx,计划购电量,A61,10:00-10:10,str
+result1.xlsx,计划购电量,A62,10:10-10:20,str
+result1.xlsx,计划购电量,A63,10:20-10:30,str
+result1.xlsx,计划购电量,A64,10:30-10:40,str
+result1.xlsx,计划购电量,A65,10:40-10:50,str
+result1.xlsx,计划购电量,A66,10:50-11:00,str
+result1.xlsx,计划购电量,A67,11:00-11:10,str
+result1.xlsx,计划购电量,A68,11:10-11:20,str
+result1.xlsx,计划购电量,A69,11:20-11:30,str
+result1.xlsx,计划购电量,A70,11:30-11:40,str
+result1.xlsx,计划购电量,A71,11:40-11:50,str
+result1.xlsx,计划购电量,A72,11:50-12:00,str
+result1.xlsx,计划购电量,A73,12:00-12:10,str
+result1.xlsx,计划购电量,A74,12:10-12:20,str
+result1.xlsx,计划购电量,A75,12:20-12:30,str
+result1.xlsx,计划购电量,A76,12:30-12:40,str
+result1.xlsx,计划购电量,A77,12:40-12:50,str
+result1.xlsx,计划购电量,A78,12:50-13:00,str
+result1.xlsx,计划购电量,A79,13:00-13:10,str
+result1.xlsx,计划购电量,A80,13:10-13:20,str
+result1.xlsx,计划购电量,A81,13:20-13:30,str
+result1.xlsx,计划购电量,A82,13:30-13:40,str
+result1.xlsx,计划购电量,A83,13:40-13:50,str
+result1.xlsx,计划购电量,A84,13:50-14:00,str
+result1.xlsx,计划购电量,A85,14:00-14:10,str
+result1.xlsx,计划购电量,A86,14:10-14:20,str
+result1.xlsx,计划购电量,A87,14:20-14:30,str
+result1.xlsx,计划购电量,A88,14:30-14:40,str
+result1.xlsx,计划购电量,A89,14:40-14:50,str
+result1.xlsx,计划购电量,A90,14:50-15:00,str
+result1.xlsx,计划购电量,A91,15:00-15:10,str
+result1.xlsx,计划购电量,A92,15:10-15:20,str
+result1.xlsx,计划购电量,A93,15:20-15:30,str
+result1.xlsx,计划购电量,A94,15:30-15:40,str
+result1.xlsx,计划购电量,A95,15:40-15:50,str
+result1.xlsx,计划购电量,A96,15:50-16:00,str
+result1.xlsx,计划购电量,A97,16:00-16:10,str
+result1.xlsx,计划购电量,A98,16:10-16:20,str
+result1.xlsx,计划购电量,A99,16:20-16:30,str
+result1.xlsx,计划购电量,A100,16:30-16:40,str
+result1.xlsx,计划购电量,A101,16:40-16:50,str
+result1.xlsx,计划购电量,A102,16:50-17:00,str
+result1.xlsx,计划购电量,A103,17:00-17:10,str
+result1.xlsx,计划购电量,A104,17:10-17:20,str
+result1.xlsx,计划购电量,A105,17:20-17:30,str
+result1.xlsx,计划购电量,A106,17:30-17:40,str
+result1.xlsx,计划购电量,A107,17:40-17:50,str
+result1.xlsx,计划购电量,A108,17:50-18:00,str
+result1.xlsx,计划购电量,A109,18:00-18:10,str
+result1.xlsx,计划购电量,A110,18:10-18:20,str
+result1.xlsx,计划购电量,A111,18:20-18:30,str
+result1.xlsx,计划购电量,A112,18:30-18:40,str
+result1.xlsx,计划购电量,A113,18:40-18:50,str
+result1.xlsx,计划购电量,A114,18:50-19:00,str
+result1.xlsx,计划购电量,A115,19:00-19:10,str
+result1.xlsx,计划购电量,A116,19:10-19:20,str
+result1.xlsx,计划购电量,A117,19:20-19:30,str
+result1.xlsx,计划购电量,A118,19:30-19:40,str
+result1.xlsx,计划购电量,A119,19:40-19:50,str
+result1.xlsx,计划购电量,A120,19:50-20:00,str
+result1.xlsx,计划购电量,A121,20:00-20:10,str
+result1.xlsx,计划购电量,A122,20:10-20:20,str
+result1.xlsx,计划购电量,A123,20:20-20:30,str
+result1.xlsx,计划购电量,A124,20:30-20:40,str
+result1.xlsx,计划购电量,A125,20:40-20:50,str
+result1.xlsx,计划购电量,A126,20:50-21:00,str
+result1.xlsx,计划购电量,A127,21:00-21:10,str
+result1.xlsx,计划购电量,A128,21:10-21:20,str
+result1.xlsx,计划购电量,A129,21:20-21:30,str
+result1.xlsx,计划购电量,A130,21:30-21:40,str
+result1.xlsx,计划购电量,A131,21:40-21:50,str
+result1.xlsx,计划购电量,A132,21:50-22:00,str
+result1.xlsx,计划购电量,A133,22:00-22:10,str
+result1.xlsx,计划购电量,A134,22:10-22:20,str
+result1.xlsx,计划购电量,A135,22:20-22:30,str
+result1.xlsx,计划购电量,A136,22:30-22:40,str
+result1.xlsx,计划购电量,A137,22:40-22:50,str
+result1.xlsx,计划购电量,A138,22:50-23:00,str
+result1.xlsx,计划购电量,A139,23:00-23:10,str
+result1.xlsx,计划购电量,A140,23:10-23:20,str
+result1.xlsx,计划购电量,A141,23:20-23:30,str
+result1.xlsx,计划购电量,A142,23:30-23:40,str
+result1.xlsx,计划购电量,A143,23:40-23:50,str
+result1.xlsx,计划购电量,A144,23:50-0:00+1,str
+result1.xlsx,计划购电量,A145,0:00+1-0:10+1,str
+result1.xlsx,充放电量,A1,时间段,str
+result1.xlsx,充放电量,B1,充电量,str
+result1.xlsx,充放电量,C1,放电量,str
+result1.xlsx,充放电量,D1,时刻,str
+result1.xlsx,充放电量,E1,储电量,str
+result1.xlsx,充放电量,A2,0:00-4:00,str
+result1.xlsx,充放电量,D2,0:00,str
+result1.xlsx,充放电量,A3,4:00-8:00,str
+result1.xlsx,充放电量,D3,24:00,str
+result1.xlsx,充放电量,A4,8:00-12:00,str
+result1.xlsx,充放电量,A5,12:00-16:00,str
+result1.xlsx,充放电量,A6,16:00-20:00,str
+result1.xlsx,充放电量,A7,20:00-24:00,str
+result2.xlsx,计划购电量,A1,日期\时间,str
+result2.xlsx,计划购电量,B1,0:10-0:20,str
+result2.xlsx,计划购电量,C1,0:20-0:30,str
+result2.xlsx,计划购电量,D1,0:30-0:40,str
+result2.xlsx,计划购电量,E1,0:40-0:50,str
+result2.xlsx,计划购电量,F1,0:50-1:00,str
+result2.xlsx,计划购电量,G1,1:00-1:10,str
+result2.xlsx,计划购电量,H1,1:10-1:20,str
+result2.xlsx,计划购电量,I1,1:20-1:30,str
+result2.xlsx,计划购电量,J1,1:30-1:40,str
+result2.xlsx,计划购电量,K1,1:40-1:50,str
+result2.xlsx,计划购电量,L1,1:50-2:00,str
+result2.xlsx,计划购电量,M1,2:00-2:10,str
+result2.xlsx,计划购电量,N1,2:10-2:20,str
+result2.xlsx,计划购电量,O1,2:20-2:30,str
+result2.xlsx,计划购电量,P1,2:30-2:40,str
+result2.xlsx,计划购电量,Q1,2:40-2:50,str
+result2.xlsx,计划购电量,R1,2:50-3:00,str
+result2.xlsx,计划购电量,S1,3:00-3:10,str
+result2.xlsx,计划购电量,T1,3:10-3:20,str
+result2.xlsx,计划购电量,U1,3:20-3:30,str
+result2.xlsx,计划购电量,V1,3:30-3:40,str
+result2.xlsx,计划购电量,W1,3:40-3:50,str
+result2.xlsx,计划购电量,X1,3:50-4:00,str
+result2.xlsx,计划购电量,Y1,4:00-4:10,str
+result2.xlsx,计划购电量,Z1,4:10-4:20,str
+result2.xlsx,计划购电量,AA1,4:20-4:30,str
+result2.xlsx,计划购电量,AB1,4:30-4:40,str
+result2.xlsx,计划购电量,AC1,4:40-4:50,str
+result2.xlsx,计划购电量,AD1,4:50-5:00,str
+result2.xlsx,计划购电量,AE1,5:00-5:10,str
+result2.xlsx,计划购电量,AF1,5:10-5:20,str
+result2.xlsx,计划购电量,AG1,5:20-5:30,str
+result2.xlsx,计划购电量,AH1,5:30-5:40,str
+result2.xlsx,计划购电量,AI1,5:40-5:50,str
+result2.xlsx,计划购电量,AJ1,5:50-6:00,str
+result2.xlsx,计划购电量,AK1,6:00-6:10,str
+result2.xlsx,计划购电量,AL1,6:10-6:20,str
+result2.xlsx,计划购电量,AM1,6:20-6:30,str
+result2.xlsx,计划购电量,AN1,6:30-6:40,str
+result2.xlsx,计划购电量,AO1,6:40-6:50,str
+result2.xlsx,计划购电量,AP1,6:50-7:00,str
+result2.xlsx,计划购电量,AQ1,7:0-7:10,str
+result2.xlsx,计划购电量,AR1,7:10-7:20,str
+result2.xlsx,计划购电量,AS1,7:20-7:30,str
+result2.xlsx,计划购电量,AT1,7:30-7:40,str
+result2.xlsx,计划购电量,AU1,7:40-7:50,str
+result2.xlsx,计划购电量,AV1,7:50-8:00,str
+result2.xlsx,计划购电量,AW1,8:00-8:10,str
+result2.xlsx,计划购电量,AX1,8:10-8:20,str
+result2.xlsx,计划购电量,AY1,8:20-8:30,str
+result2.xlsx,计划购电量,AZ1,8:30-8:40,str
+result2.xlsx,计划购电量,BA1,8:40-8:50,str
+result2.xlsx,计划购电量,BB1,8:50-9:00,str
+result2.xlsx,计划购电量,BC1,9:00-9:10,str
+result2.xlsx,计划购电量,BD1,9:10-9:20,str
+result2.xlsx,计划购电量,BE1,9:20-9:30,str
+result2.xlsx,计划购电量,BF1,9:30-9:40,str
+result2.xlsx,计划购电量,BG1,9:40-9:50,str
+result2.xlsx,计划购电量,BH1,9:50-10:00,str
+result2.xlsx,计划购电量,BI1,10:00-10:10,str
+result2.xlsx,计划购电量,BJ1,10:10-10:20,str
+result2.xlsx,计划购电量,BK1,10:20-10:30,str
+result2.xlsx,计划购电量,BL1,10:30-10:40,str
+result2.xlsx,计划购电量,BM1,10:40-10:50,str
+result2.xlsx,计划购电量,BN1,10:50-11:00,str
+result2.xlsx,计划购电量,BO1,11:00-11:10,str
+result2.xlsx,计划购电量,BP1,11:10-11:20,str
+result2.xlsx,计划购电量,BQ1,11:20-11:30,str
+result2.xlsx,计划购电量,BR1,11:30-11:40,str
+result2.xlsx,计划购电量,BS1,11:40-11:50,str
+result2.xlsx,计划购电量,BT1,11:50-12:00,str
+result2.xlsx,计划购电量,BU1,12:00-12:10,str
+result2.xlsx,计划购电量,BV1,12:10-12:20,str
+result2.xlsx,计划购电量,BW1,12:20-12:30,str
+result2.xlsx,计划购电量,BX1,12:30-12:40,str
+result2.xlsx,计划购电量,BY1,12:40-12:50,str
+result2.xlsx,计划购电量,BZ1,12:50-13:00,str
+result2.xlsx,计划购电量,CA1,13:00-13:10,str
+result2.xlsx,计划购电量,CB1,13:10-13:20,str
+result2.xlsx,计划购电量,CC1,13:20-13:30,str
+result2.xlsx,计划购电量,CD1,13:30-13:40,str
+result2.xlsx,计划购电量,CE1,13:40-13:50,str
+result2.xlsx,计划购电量,CF1,13:50-14:00,str
+result2.xlsx,计划购电量,CG1,14:00-14:10,str
+result2.xlsx,计划购电量,CH1,14:10-14:20,str
+result2.xlsx,计划购电量,CI1,14:20-14:30,str
+result2.xlsx,计划购电量,CJ1,14:30-14:40,str
+result2.xlsx,计划购电量,CK1,14:40-14:50,str
+result2.xlsx,计划购电量,CL1,14:50-15:00,str
+result2.xlsx,计划购电量,CM1,15:00-15:10,str
+result2.xlsx,计划购电量,CN1,15:10-15:20,str
+result2.xlsx,计划购电量,CO1,15:20-15:30,str
+result2.xlsx,计划购电量,CP1,15:30-15:40,str
+result2.xlsx,计划购电量,CQ1,15:40-15:50,str
+result2.xlsx,计划购电量,CR1,15:50-16:00,str
+result2.xlsx,计划购电量,CS1,16:00-16:10,str
+result2.xlsx,计划购电量,CT1,16:10-16:20,str
+result2.xlsx,计划购电量,CU1,16:20-16:30,str
+result2.xlsx,计划购电量,CV1,16:30-16:40,str
+result2.xlsx,计划购电量,CW1,16:40-16:50,str
+result2.xlsx,计划购电量,CX1,16:50-17:00,str
+result2.xlsx,计划购电量,CY1,17:00-17:10,str
+result2.xlsx,计划购电量,CZ1,17:10-17:20,str
+result2.xlsx,计划购电量,DA1,17:20-17:30,str
+result2.xlsx,计划购电量,DB1,17:30-17:40,str
+result2.xlsx,计划购电量,DC1,17:40-17:50,str
+result2.xlsx,计划购电量,DD1,17:50-18:00,str
+result2.xlsx,计划购电量,DE1,18:00-18:10,str
+result2.xlsx,计划购电量,DF1,18:10-18:20,str
+result2.xlsx,计划购电量,DG1,18:20-18:30,str
+result2.xlsx,计划购电量,DH1,18:30-18:40,str
+result2.xlsx,计划购电量,DI1,18:40-18:50,str
+result2.xlsx,计划购电量,DJ1,18:50-19:00,str
+result2.xlsx,计划购电量,DK1,19:00-19:10,str
+result2.xlsx,计划购电量,DL1,19:10-19:20,str
+result2.xlsx,计划购电量,DM1,19:20-19:30,str
+result2.xlsx,计划购电量,DN1,19:30-19:40,str
+result2.xlsx,计划购电量,DO1,19:40-19:50,str
+result2.xlsx,计划购电量,DP1,19:50-20:00,str
+result2.xlsx,计划购电量,DQ1,20:00-20:10,str
+result2.xlsx,计划购电量,DR1,20:10-20:20,str
+result2.xlsx,计划购电量,DS1,20:20-20:30,str
+result2.xlsx,计划购电量,DT1,20:30-20:40,str
+result2.xlsx,计划购电量,DU1,20:40-20:50,str
+result2.xlsx,计划购电量,DV1,20:50-21:00,str
+result2.xlsx,计划购电量,DW1,21:00-21:10,str
+result2.xlsx,计划购电量,DX1,21:10-21:20,str
+result2.xlsx,计划购电量,DY1,21:20-21:30,str
+result2.xlsx,计划购电量,DZ1,21:30-21:40,str
+result2.xlsx,计划购电量,EA1,21:40-21:50,str
+result2.xlsx,计划购电量,EB1,21:50-22:00,str
+result2.xlsx,计划购电量,EC1,22:00-22:10,str
+result2.xlsx,计划购电量,ED1,22:10-22:20,str
+result2.xlsx,计划购电量,EE1,22:20-22:30,str
+result2.xlsx,计划购电量,EF1,22:30-22:40,str
+result2.xlsx,计划购电量,EG1,22:40-22:50,str
+result2.xlsx,计划购电量,EH1,22:50-23:00,str
+result2.xlsx,计划购电量,EI1,23:00-23:10,str
+result2.xlsx,计划购电量,EJ1,23:10-23:20,str
+result2.xlsx,计划购电量,EK1,23:20-23:30,str
+result2.xlsx,计划购电量,EL1,23:30-23:40,str
+result2.xlsx,计划购电量,EM1,23:40-23:50,str
+result2.xlsx,计划购电量,EN1,23:50-0:00+1,str
+result2.xlsx,计划购电量,EO1,0:00-0:10+1,str
+result2.xlsx,计划购电量,EP1,全天购电量,str
+result2.xlsx,计划购电量,EQ1,全天购电费,str
+result2.xlsx,计划购电量,A2,2025-02-01 00:00:00,datetime
+result2.xlsx,计划购电量,A3,2025-02-02 00:00:00,datetime
+result2.xlsx,计划购电量,A4,2025-02-03 00:00:00,datetime
+result2.xlsx,计划购电量,A5,2025-02-04 00:00:00,datetime
+result2.xlsx,计划购电量,A6,2025-02-05 00:00:00,datetime
+result2.xlsx,计划购电量,A7,2025-02-06 00:00:00,datetime
+result2.xlsx,计划购电量,A8,2025-02-07 00:00:00,datetime
+result2.xlsx,计划购电量,A9,2025-02-08 00:00:00,datetime
+result2.xlsx,计划购电量,A10,2025-02-09 00:00:00,datetime
+result2.xlsx,计划购电量,A11,2025-02-10 00:00:00,datetime
+result2.xlsx,计划购电量,A12,2025-02-11 00:00:00,datetime
+result2.xlsx,计划购电量,A13,2025-02-12 00:00:00,datetime
+result2.xlsx,计划购电量,A14,2025-02-13 00:00:00,datetime
+result2.xlsx,计划购电量,A15,2025-02-14 00:00:00,datetime
+result2.xlsx,计划购电量,A16,2025-02-15 00:00:00,datetime
+result2.xlsx,计划购电量,A17,2025-02-16 00:00:00,datetime
+result2.xlsx,计划购电量,A18,2025-02-17 00:00:00,datetime
+result2.xlsx,计划购电量,A19,2025-02-18 00:00:00,datetime
+result2.xlsx,计划购电量,A20,2025-02-19 00:00:00,datetime
+result2.xlsx,计划购电量,A21,2025-02-20 00:00:00,datetime
+result2.xlsx,计划购电量,A22,2025-02-21 00:00:00,datetime
+result2.xlsx,计划购电量,A23,2025-02-22 00:00:00,datetime
+result2.xlsx,计划购电量,A24,2025-02-23 00:00:00,datetime
+result2.xlsx,计划购电量,A25,2025-02-24 00:00:00,datetime
+result2.xlsx,计划购电量,A26,2025-02-25 00:00:00,datetime
+result2.xlsx,计划购电量,A27,2025-02-26 00:00:00,datetime
+result2.xlsx,计划购电量,A28,2025-02-27 00:00:00,datetime
+result2.xlsx,计划购电量,A29,2025-02-28 00:00:00,datetime
+result2.xlsx,计划购电量,A30,2025-03-01 00:00:00,datetime
+result2.xlsx,计划购电量,A31,2025-03-02 00:00:00,datetime
+result2.xlsx,计划购电量,A32,2025-03-03 00:00:00,datetime
+result2.xlsx,计划购电量,A33,2025-03-04 00:00:00,datetime
+result2.xlsx,计划购电量,A34,2025-03-05 00:00:00,datetime
+result2.xlsx,计划购电量,A35,2025-03-06 00:00:00,datetime
+result2.xlsx,计划购电量,A36,2025-03-07 00:00:00,datetime
+result2.xlsx,计划购电量,A37,2025-03-08 00:00:00,datetime
+result2.xlsx,计划购电量,A38,2025-03-09 00:00:00,datetime
+result2.xlsx,计划购电量,A39,2025-03-10 00:00:00,datetime
+result2.xlsx,计划购电量,A40,2025-03-11 00:00:00,datetime
+result2.xlsx,计划购电量,A41,2025-03-12 00:00:00,datetime
+result2.xlsx,计划购电量,A42,2025-03-13 00:00:00,datetime
+result2.xlsx,计划购电量,A43,2025-03-14 00:00:00,datetime
+result2.xlsx,计划购电量,A44,2025-03-15 00:00:00,datetime
+result2.xlsx,计划购电量,A45,2025-03-16 00:00:00,datetime
+result2.xlsx,计划购电量,A46,2025-03-17 00:00:00,datetime
+result2.xlsx,计划购电量,A47,2025-03-18 00:00:00,datetime
+result2.xlsx,计划购电量,A48,2025-03-19 00:00:00,datetime
+result2.xlsx,计划购电量,A49,2025-03-20 00:00:00,datetime
+result2.xlsx,计划购电量,A50,2025-03-21 00:00:00,datetime
+result2.xlsx,计划购电量,A51,2025-03-22 00:00:00,datetime
+result2.xlsx,计划购电量,A52,2025-03-23 00:00:00,datetime
+result2.xlsx,计划购电量,A53,2025-03-24 00:00:00,datetime
+result2.xlsx,计划购电量,A54,2025-03-25 00:00:00,datetime
+result2.xlsx,计划购电量,A55,2025-03-26 00:00:00,datetime
+result2.xlsx,计划购电量,A56,2025-03-27 00:00:00,datetime
+result2.xlsx,计划购电量,A57,2025-03-28 00:00:00,datetime
+result2.xlsx,计划购电量,A58,2025-03-29 00:00:00,datetime
+result2.xlsx,计划购电量,A59,2025-03-30 00:00:00,datetime
+result2.xlsx,计划购电量,A60,2025-03-31 00:00:00,datetime
+result2.xlsx,计划购电量,A61,2025-04-01 00:00:00,datetime
+result2.xlsx,计划购电量,A62,2025-04-02 00:00:00,datetime
+result2.xlsx,计划购电量,A63,2025-04-03 00:00:00,datetime
+result2.xlsx,计划购电量,A64,2025-04-04 00:00:00,datetime
+result2.xlsx,计划购电量,A65,2025-04-05 00:00:00,datetime
+result2.xlsx,计划购电量,A66,2025-04-06 00:00:00,datetime
+result2.xlsx,计划购电量,A67,2025-04-07 00:00:00,datetime
+result2.xlsx,计划购电量,A68,2025-04-08 00:00:00,datetime
+result2.xlsx,计划购电量,A69,2025-04-09 00:00:00,datetime
+result2.xlsx,计划购电量,A70,2025-04-10 00:00:00,datetime
+result2.xlsx,计划购电量,A71,2025-04-11 00:00:00,datetime
+result2.xlsx,计划购电量,A72,2025-04-12 00:00:00,datetime
+result2.xlsx,计划购电量,A73,2025-04-13 00:00:00,datetime
+result2.xlsx,计划购电量,A74,2025-04-14 00:00:00,datetime
+result2.xlsx,计划购电量,A75,2025-04-15 00:00:00,datetime
+result2.xlsx,计划购电量,A76,2025-04-16 00:00:00,datetime
+result2.xlsx,计划购电量,A77,2025-04-17 00:00:00,datetime
+result2.xlsx,计划购电量,A78,2025-04-18 00:00:00,datetime
+result2.xlsx,计划购电量,A79,2025-04-19 00:00:00,datetime
+result2.xlsx,计划购电量,A80,2025-04-20 00:00:00,datetime
+result2.xlsx,计划购电量,A81,2025-04-21 00:00:00,datetime
+result2.xlsx,计划购电量,A82,2025-04-22 00:00:00,datetime
+result2.xlsx,计划购电量,A83,2025-04-23 00:00:00,datetime
+result2.xlsx,计划购电量,A84,2025-04-24 00:00:00,datetime
+result2.xlsx,计划购电量,A85,2025-04-25 00:00:00,datetime
+result2.xlsx,计划购电量,A86,2025-04-26 00:00:00,datetime
+result2.xlsx,计划购电量,A87,2025-04-27 00:00:00,datetime
+result2.xlsx,计划购电量,A88,2025-04-28 00:00:00,datetime
+result2.xlsx,计划购电量,A89,2025-04-29 00:00:00,datetime
+result2.xlsx,计划购电量,A90,2025-04-30 00:00:00,datetime
+result2.xlsx,计划购电量,A91,2025-05-01 00:00:00,datetime
+result2.xlsx,计划购电量,A92,2025-05-02 00:00:00,datetime
+result2.xlsx,计划购电量,A93,2025-05-03 00:00:00,datetime
+result2.xlsx,计划购电量,A94,2025-05-04 00:00:00,datetime
+result2.xlsx,计划购电量,A95,2025-05-05 00:00:00,datetime
+result2.xlsx,计划购电量,A96,2025-05-06 00:00:00,datetime
+result2.xlsx,计划购电量,A97,2025-05-07 00:00:00,datetime
+result2.xlsx,计划购电量,A98,2025-05-08 00:00:00,datetime
+result2.xlsx,计划购电量,A99,2025-05-09 00:00:00,datetime
+result2.xlsx,计划购电量,A100,2025-05-10 00:00:00,datetime
+result2.xlsx,计划购电量,A101,2025-05-11 00:00:00,datetime
+result2.xlsx,计划购电量,A102,2025-05-12 00:00:00,datetime
+result2.xlsx,计划购电量,A103,2025-05-13 00:00:00,datetime
+result2.xlsx,计划购电量,A104,2025-05-14 00:00:00,datetime
+result2.xlsx,计划购电量,A105,2025-05-15 00:00:00,datetime
+result2.xlsx,计划购电量,A106,2025-05-16 00:00:00,datetime
+result2.xlsx,计划购电量,A107,2025-05-17 00:00:00,datetime
+result2.xlsx,计划购电量,A108,2025-05-18 00:00:00,datetime
+result2.xlsx,计划购电量,A109,2025-05-19 00:00:00,datetime
+result2.xlsx,计划购电量,A110,2025-05-20 00:00:00,datetime
+result2.xlsx,计划购电量,A111,2025-05-21 00:00:00,datetime
+result2.xlsx,计划购电量,A112,2025-05-22 00:00:00,datetime
+result2.xlsx,计划购电量,A113,2025-05-23 00:00:00,datetime
+result2.xlsx,计划购电量,A114,2025-05-24 00:00:00,datetime
+result2.xlsx,计划购电量,A115,2025-05-25 00:00:00,datetime
+result2.xlsx,计划购电量,A116,2025-05-26 00:00:00,datetime
+result2.xlsx,计划购电量,A117,2025-05-27 00:00:00,datetime
+result2.xlsx,计划购电量,A118,2025-05-28 00:00:00,datetime
+result2.xlsx,计划购电量,A119,2025-05-29 00:00:00,datetime
+result2.xlsx,计划购电量,A120,2025-05-30 00:00:00,datetime
+result2.xlsx,计划购电量,A121,2025-05-31 00:00:00,datetime
+result2.xlsx,计划购电量,A122,2025-06-01 00:00:00,datetime
+result2.xlsx,计划购电量,A123,2025-06-02 00:00:00,datetime
+result2.xlsx,计划购电量,A124,2025-06-03 00:00:00,datetime
+result2.xlsx,计划购电量,A125,2025-06-04 00:00:00,datetime
+result2.xlsx,计划购电量,A126,2025-06-05 00:00:00,datetime
+result2.xlsx,计划购电量,A127,2025-06-06 00:00:00,datetime
+result2.xlsx,计划购电量,A128,2025-06-07 00:00:00,datetime
+result2.xlsx,计划购电量,A129,2025-06-08 00:00:00,datetime
+result2.xlsx,计划购电量,A130,2025-06-09 00:00:00,datetime
+result2.xlsx,计划购电量,A131,2025-06-10 00:00:00,datetime
+result2.xlsx,计划购电量,A132,2025-06-11 00:00:00,datetime
+result2.xlsx,计划购电量,A133,2025-06-12 00:00:00,datetime
+result2.xlsx,计划购电量,A134,2025-06-13 00:00:00,datetime
+result2.xlsx,计划购电量,A135,2025-06-14 00:00:00,datetime
+result2.xlsx,计划购电量,A136,2025-06-15 00:00:00,datetime
+result2.xlsx,计划购电量,A137,2025-06-16 00:00:00,datetime
+result2.xlsx,计划购电量,A138,2025-06-17 00:00:00,datetime
+result2.xlsx,计划购电量,A139,2025-06-18 00:00:00,datetime
+result2.xlsx,计划购电量,A140,2025-06-19 00:00:00,datetime
+result2.xlsx,计划购电量,A141,2025-06-20 00:00:00,datetime
+result2.xlsx,计划购电量,A142,2025-06-21 00:00:00,datetime
+result2.xlsx,计划购电量,A143,2025-06-22 00:00:00,datetime
+result2.xlsx,计划购电量,A144,2025-06-23 00:00:00,datetime
+result2.xlsx,计划购电量,A145,2025-06-24 00:00:00,datetime
+result2.xlsx,计划购电量,A146,2025-06-25 00:00:00,datetime
+result2.xlsx,计划购电量,A147,2025-06-26 00:00:00,datetime
+result2.xlsx,计划购电量,A148,2025-06-27 00:00:00,datetime
+result2.xlsx,计划购电量,A149,2025-06-28 00:00:00,datetime
+result2.xlsx,计划购电量,A150,2025-06-29 00:00:00,datetime
+result2.xlsx,计划购电量,A151,2025-06-30 00:00:00,datetime
+result2.xlsx,计划购电量,A152,2025-07-01 00:00:00,datetime
+result2.xlsx,计划购电量,A153,2025-07-02 00:00:00,datetime
+result2.xlsx,计划购电量,A154,2025-07-03 00:00:00,datetime
+result2.xlsx,计划购电量,A155,2025-07-04 00:00:00,datetime
+result2.xlsx,计划购电量,A156,2025-07-05 00:00:00,datetime
+result2.xlsx,计划购电量,A157,2025-07-06 00:00:00,datetime
+result2.xlsx,计划购电量,A158,2025-07-07 00:00:00,datetime
+result2.xlsx,计划购电量,A159,2025-07-08 00:00:00,datetime
+result2.xlsx,计划购电量,A160,2025-07-09 00:00:00,datetime
+result2.xlsx,计划购电量,A161,2025-07-10 00:00:00,datetime
+result2.xlsx,计划购电量,A162,2025-07-11 00:00:00,datetime
+result2.xlsx,计划购电量,A163,2025-07-12 00:00:00,datetime
+result2.xlsx,计划购电量,A164,2025-07-13 00:00:00,datetime
+result2.xlsx,计划购电量,A165,2025-07-14 00:00:00,datetime
+result2.xlsx,计划购电量,A166,2025-07-15 00:00:00,datetime
+result2.xlsx,计划购电量,A167,2025-07-16 00:00:00,datetime
+result2.xlsx,计划购电量,A168,2025-07-17 00:00:00,datetime
+result2.xlsx,计划购电量,A169,2025-07-18 00:00:00,datetime
+result2.xlsx,计划购电量,A170,2025-07-19 00:00:00,datetime
+result2.xlsx,计划购电量,A171,2025-07-20 00:00:00,datetime
+result2.xlsx,计划购电量,A172,2025-07-21 00:00:00,datetime
+result2.xlsx,计划购电量,A173,2025-07-22 00:00:00,datetime
+result2.xlsx,计划购电量,A174,2025-07-23 00:00:00,datetime
+result2.xlsx,计划购电量,A175,2025-07-24 00:00:00,datetime
+result2.xlsx,计划购电量,A176,2025-07-25 00:00:00,datetime
+result2.xlsx,计划购电量,A177,2025-07-26 00:00:00,datetime
+result2.xlsx,计划购电量,A178,2025-07-27 00:00:00,datetime
+result2.xlsx,计划购电量,A179,2025-07-28 00:00:00,datetime
+result2.xlsx,计划购电量,A180,2025-07-29 00:00:00,datetime
+result2.xlsx,计划购电量,A181,2025-07-30 00:00:00,datetime
+result2.xlsx,计划购电量,A182,2025-07-31 00:00:00,datetime
+result2.xlsx,计划购电量,A183,2025-08-01 00:00:00,datetime
+result2.xlsx,计划购电量,A184,2025-08-02 00:00:00,datetime
+result2.xlsx,计划购电量,A185,2025-08-03 00:00:00,datetime
+result2.xlsx,计划购电量,A186,2025-08-04 00:00:00,datetime
+result2.xlsx,计划购电量,A187,2025-08-05 00:00:00,datetime
+result2.xlsx,计划购电量,A188,2025-08-06 00:00:00,datetime
+result2.xlsx,计划购电量,A189,2025-08-07 00:00:00,datetime
+result2.xlsx,计划购电量,A190,2025-08-08 00:00:00,datetime
+result2.xlsx,计划购电量,A191,2025-08-09 00:00:00,datetime
+result2.xlsx,计划购电量,A192,2025-08-10 00:00:00,datetime
+result2.xlsx,计划购电量,A193,2025-08-11 00:00:00,datetime
+result2.xlsx,计划购电量,A194,2025-08-12 00:00:00,datetime
+result2.xlsx,计划购电量,A195,2025-08-13 00:00:00,datetime
+result2.xlsx,计划购电量,A196,2025-08-14 00:00:00,datetime
+result2.xlsx,计划购电量,A197,2025-08-15 00:00:00,datetime
+result2.xlsx,计划购电量,A198,2025-08-16 00:00:00,datetime
+result2.xlsx,计划购电量,A199,2025-08-17 00:00:00,datetime
+result2.xlsx,计划购电量,A200,2025-08-18 00:00:00,datetime
+result2.xlsx,计划购电量,A201,2025-08-19 00:00:00,datetime
+result2.xlsx,计划购电量,A202,2025-08-20 00:00:00,datetime
+result2.xlsx,计划购电量,A203,2025-08-21 00:00:00,datetime
+result2.xlsx,计划购电量,A204,2025-08-22 00:00:00,datetime
+result2.xlsx,计划购电量,A205,2025-08-23 00:00:00,datetime
+result2.xlsx,计划购电量,A206,2025-08-24 00:00:00,datetime
+result2.xlsx,计划购电量,A207,2025-08-25 00:00:00,datetime
+result2.xlsx,计划购电量,A208,2025-08-26 00:00:00,datetime
+result2.xlsx,计划购电量,A209,2025-08-27 00:00:00,datetime
+result2.xlsx,计划购电量,A210,2025-08-28 00:00:00,datetime
+result2.xlsx,计划购电量,A211,2025-08-29 00:00:00,datetime
+result2.xlsx,计划购电量,A212,2025-08-30 00:00:00,datetime
+result2.xlsx,计划购电量,A213,2025-08-31 00:00:00,datetime
+result2.xlsx,计划购电量,A214,2025-09-01 00:00:00,datetime
+result2.xlsx,计划购电量,A215,2025-09-02 00:00:00,datetime
+result2.xlsx,计划购电量,A216,2025-09-03 00:00:00,datetime
+result2.xlsx,计划购电量,A217,2025-09-04 00:00:00,datetime
+result2.xlsx,计划购电量,A218,2025-09-05 00:00:00,datetime
+result2.xlsx,计划购电量,A219,2025-09-06 00:00:00,datetime
+result2.xlsx,计划购电量,A220,2025-09-07 00:00:00,datetime
+result2.xlsx,计划购电量,A221,2025-09-08 00:00:00,datetime
+result2.xlsx,计划购电量,A222,2025-09-09 00:00:00,datetime
+result2.xlsx,计划购电量,A223,2025-09-10 00:00:00,datetime
+result2.xlsx,计划购电量,A224,2025-09-11 00:00:00,datetime
+result2.xlsx,计划购电量,A225,2025-09-12 00:00:00,datetime
+result2.xlsx,计划购电量,A226,2025-09-13 00:00:00,datetime
+result2.xlsx,计划购电量,A227,2025-09-14 00:00:00,datetime
+result2.xlsx,计划购电量,A228,2025-09-15 00:00:00,datetime
+result2.xlsx,计划购电量,A229,2025-09-16 00:00:00,datetime
+result2.xlsx,计划购电量,A230,2025-09-17 00:00:00,datetime
+result2.xlsx,计划购电量,A231,2025-09-18 00:00:00,datetime
+result2.xlsx,计划购电量,A232,2025-09-19 00:00:00,datetime
+result2.xlsx,计划购电量,A233,2025-09-20 00:00:00,datetime
+result2.xlsx,计划购电量,A234,2025-09-21 00:00:00,datetime
+result2.xlsx,计划购电量,A235,2025-09-22 00:00:00,datetime
+result2.xlsx,计划购电量,A236,2025-09-23 00:00:00,datetime
+result2.xlsx,计划购电量,A237,2025-09-24 00:00:00,datetime
+result2.xlsx,计划购电量,A238,2025-09-25 00:00:00,datetime
+result2.xlsx,计划购电量,A239,2025-09-26 00:00:00,datetime
+result2.xlsx,计划购电量,A240,2025-09-27 00:00:00,datetime
+result2.xlsx,计划购电量,A241,2025-09-28 00:00:00,datetime
+result2.xlsx,计划购电量,A242,2025-09-29 00:00:00,datetime
+result2.xlsx,计划购电量,A243,2025-09-30 00:00:00,datetime
+result2.xlsx,计划购电量,A244,2025-10-01 00:00:00,datetime
+result2.xlsx,计划购电量,A245,2025-10-02 00:00:00,datetime
+result2.xlsx,计划购电量,A246,2025-10-03 00:00:00,datetime
+result2.xlsx,计划购电量,A247,2025-10-04 00:00:00,datetime
+result2.xlsx,计划购电量,A248,2025-10-05 00:00:00,datetime
+result2.xlsx,计划购电量,A249,2025-10-06 00:00:00,datetime
+result2.xlsx,计划购电量,A250,2025-10-07 00:00:00,datetime
+result2.xlsx,计划购电量,A251,2025-10-08 00:00:00,datetime
+result2.xlsx,计划购电量,A252,2025-10-09 00:00:00,datetime
+result2.xlsx,计划购电量,A253,2025-10-10 00:00:00,datetime
+result2.xlsx,计划购电量,A254,2025-10-11 00:00:00,datetime
+result2.xlsx,计划购电量,A255,2025-10-12 00:00:00,datetime
+result2.xlsx,计划购电量,A256,2025-10-13 00:00:00,datetime
+result2.xlsx,计划购电量,A257,2025-10-14 00:00:00,datetime
+result2.xlsx,计划购电量,A258,2025-10-15 00:00:00,datetime
+result2.xlsx,计划购电量,A259,2025-10-16 00:00:00,datetime
+result2.xlsx,计划购电量,A260,2025-10-17 00:00:00,datetime
+result2.xlsx,计划购电量,A261,2025-10-18 00:00:00,datetime
+result2.xlsx,计划购电量,A262,2025-10-19 00:00:00,datetime
+result2.xlsx,计划购电量,A263,2025-10-20 00:00:00,datetime
+result2.xlsx,计划购电量,A264,2025-10-21 00:00:00,datetime
+result2.xlsx,计划购电量,A265,2025-10-22 00:00:00,datetime
+result2.xlsx,计划购电量,A266,2025-10-23 00:00:00,datetime
+result2.xlsx,计划购电量,A267,2025-10-24 00:00:00,datetime
+result2.xlsx,计划购电量,A268,2025-10-25 00:00:00,datetime
+result2.xlsx,计划购电量,A269,2025-10-26 00:00:00,datetime
+result2.xlsx,计划购电量,A270,2025-10-27 00:00:00,datetime
+result2.xlsx,计划购电量,A271,2025-10-28 00:00:00,datetime
+result2.xlsx,计划购电量,A272,2025-10-29 00:00:00,datetime
+result2.xlsx,计划购电量,A273,2025-10-30 00:00:00,datetime
+result2.xlsx,计划购电量,A274,2025-10-31 00:00:00,datetime
+result2.xlsx,计划购电量,A275,2025-11-01 00:00:00,datetime
+result2.xlsx,计划购电量,A276,2025-11-02 00:00:00,datetime
+result2.xlsx,计划购电量,A277,2025-11-03 00:00:00,datetime
+result2.xlsx,计划购电量,A278,2025-11-04 00:00:00,datetime
+result2.xlsx,计划购电量,A279,2025-11-05 00:00:00,datetime
+result2.xlsx,计划购电量,A280,2025-11-06 00:00:00,datetime
+result2.xlsx,计划购电量,A281,2025-11-07 00:00:00,datetime
+result2.xlsx,计划购电量,A282,2025-11-08 00:00:00,datetime
+result2.xlsx,计划购电量,A283,2025-11-09 00:00:00,datetime
+result2.xlsx,计划购电量,A284,2025-11-10 00:00:00,datetime
+result2.xlsx,计划购电量,A285,2025-11-11 00:00:00,datetime
+result2.xlsx,计划购电量,A286,2025-11-12 00:00:00,datetime
+result2.xlsx,计划购电量,A287,2025-11-13 00:00:00,datetime
+result2.xlsx,计划购电量,A288,2025-11-14 00:00:00,datetime
+result2.xlsx,计划购电量,A289,2025-11-15 00:00:00,datetime
+result2.xlsx,计划购电量,A290,2025-11-16 00:00:00,datetime
+result2.xlsx,计划购电量,A291,2025-11-17 00:00:00,datetime
+result2.xlsx,计划购电量,A292,2025-11-18 00:00:00,datetime
+result2.xlsx,计划购电量,A293,2025-11-19 00:00:00,datetime
+result2.xlsx,计划购电量,A294,2025-11-20 00:00:00,datetime
+result2.xlsx,计划购电量,A295,2025-11-21 00:00:00,datetime
+result2.xlsx,计划购电量,A296,2025-11-22 00:00:00,datetime
+result2.xlsx,计划购电量,A297,2025-11-23 00:00:00,datetime
+result2.xlsx,计划购电量,A298,2025-11-24 00:00:00,datetime
+result2.xlsx,计划购电量,A299,2025-11-25 00:00:00,datetime
+result2.xlsx,计划购电量,A300,2025-11-26 00:00:00,datetime
+result2.xlsx,计划购电量,A301,2025-11-27 00:00:00,datetime
+result2.xlsx,计划购电量,A302,2025-11-28 00:00:00,datetime
+result2.xlsx,计划购电量,A303,2025-11-29 00:00:00,datetime
+result2.xlsx,计划购电量,A304,2025-11-30 00:00:00,datetime
+result2.xlsx,计划购电量,A305,2025-12-01 00:00:00,datetime
+result2.xlsx,计划购电量,A306,2025-12-02 00:00:00,datetime
+result2.xlsx,计划购电量,A307,2025-12-03 00:00:00,datetime
+result2.xlsx,计划购电量,A308,2025-12-04 00:00:00,datetime
+result2.xlsx,计划购电量,A309,2025-12-05 00:00:00,datetime
+result2.xlsx,计划购电量,A310,2025-12-06 00:00:00,datetime
+result2.xlsx,计划购电量,A311,2025-12-07 00:00:00,datetime
+result2.xlsx,计划购电量,A312,2025-12-08 00:00:00,datetime
+result2.xlsx,计划购电量,A313,2025-12-09 00:00:00,datetime
+result2.xlsx,计划购电量,A314,2025-12-10 00:00:00,datetime
+result2.xlsx,计划购电量,A315,2025-12-11 00:00:00,datetime
+result2.xlsx,计划购电量,A316,2025-12-12 00:00:00,datetime
+result2.xlsx,计划购电量,A317,2025-12-13 00:00:00,datetime
+result2.xlsx,计划购电量,A318,2025-12-14 00:00:00,datetime
+result2.xlsx,计划购电量,A319,2025-12-15 00:00:00,datetime
+result2.xlsx,计划购电量,A320,2025-12-16 00:00:00,datetime
+result2.xlsx,计划购电量,A321,2025-12-17 00:00:00,datetime
+result2.xlsx,计划购电量,A322,2025-12-18 00:00:00,datetime
+result2.xlsx,计划购电量,A323,2025-12-19 00:00:00,datetime
+result2.xlsx,计划购电量,A324,2025-12-20 00:00:00,datetime
+result2.xlsx,计划购电量,A325,2025-12-21 00:00:00,datetime
+result2.xlsx,计划购电量,A326,2025-12-22 00:00:00,datetime
+result2.xlsx,计划购电量,A327,2025-12-23 00:00:00,datetime
+result2.xlsx,计划购电量,A328,2025-12-24 00:00:00,datetime
+result2.xlsx,计划购电量,A329,2025-12-25 00:00:00,datetime
+result2.xlsx,计划购电量,A330,2025-12-26 00:00:00,datetime
+result2.xlsx,计划购电量,A331,2025-12-27 00:00:00,datetime
+result2.xlsx,计划购电量,A332,2025-12-28 00:00:00,datetime
+result2.xlsx,计划购电量,A333,2025-12-29 00:00:00,datetime
+result2.xlsx,计划购电量,A334,2025-12-30 00:00:00,datetime
+result2.xlsx,计划购电量,A335,2025-12-31 00:00:00,datetime
+result2.xlsx,充放电量,A1,日期,str
+result2.xlsx,充放电量,B1,时间段,str
+result2.xlsx,充放电量,C1,充电量,str
+result2.xlsx,充放电量,D1,放电量,str
+result2.xlsx,充放电量,E1,时刻,str
+result2.xlsx,充放电量,F1,储电量,str
+result2.xlsx,充放电量,A2,2025-02-01 00:00:00,datetime
+result2.xlsx,充放电量,B2,0:00-4:00,str
+result2.xlsx,充放电量,E2,00:00:00,time
+result2.xlsx,充放电量,B3,4:00-8:00,str
+result2.xlsx,充放电量,E3,24:00,str
+result2.xlsx,充放电量,B4,8:00-12:00,str
+result2.xlsx,充放电量,B5,12:00-16:00,str
+result2.xlsx,充放电量,B6,16:00-20:00,str
+result2.xlsx,充放电量,B7,20:00-24:00,str
+result2.xlsx,充放电量,A8,2025-02-02 00:00:00,datetime
+result2.xlsx,充放电量,B8,0:00-4:00,str
+result2.xlsx,充放电量,E8,00:00:00,time
+result2.xlsx,充放电量,B9,4:00-8:00,str
+result2.xlsx,充放电量,E9,24:00,str
+result2.xlsx,充放电量,B10,8:00-12:00,str
+result2.xlsx,充放电量,B11,12:00-16:00,str
+result2.xlsx,充放电量,B12,16:00-20:00,str
+result2.xlsx,充放电量,B13,20:00-24:00,str
+result2.xlsx,充放电量,A14,⁝,str
+result2.xlsx,充放电量,B14,⁝,str
+result2.xlsx,充放电量,C14,⁝,str
+result2.xlsx,充放电量,D14,⁝,str
+result2.xlsx,充放电量,E14,⁝,str
+result2.xlsx,充放电量,F14,⁝,str
+result2.xlsx,充放电量,A15,2025-12-31 00:00:00,datetime
+result2.xlsx,充放电量,B15,0:00-4:00,str
+result2.xlsx,充放电量,E15,00:00:00,time
+result2.xlsx,充放电量,B16,4:00-8:00,str
+result2.xlsx,充放电量,E16,24:00,str
+result2.xlsx,充放电量,B17,8:00-12:00,str
+result2.xlsx,充放电量,B18,12:00-16:00,str
+result2.xlsx,充放电量,B19,16:00-20:00,str
+result2.xlsx,充放电量,B20,20:00-24:00,str
+result2.xlsx,紧急购电量,A1,日期,str
+result2.xlsx,紧急购电量,B1,购电时间段,str
+result2.xlsx,紧急购电量,C1,购电量,str
+result2.xlsx,紧急购电量,A2,2025-02-01 00:00:00,datetime
+result2.xlsx,紧急购电量,A5,2025-02-02 00:00:00,datetime
+result2.xlsx,紧急购电量,A8,⁝,str
+result2.xlsx,紧急购电量,B8,⁝,str
+result2.xlsx,紧急购电量,C8,⁝,str
+result2.xlsx,紧急购电量,A9,2025-12-31 00:00:00,datetime
+result3.xlsx,计划购电量,A1,日期\时间,str
+result3.xlsx,计划购电量,B1,0:10-0:20,str
+result3.xlsx,计划购电量,C1,0:20-0:30,str
+result3.xlsx,计划购电量,D1,0:30-0:40,str
+result3.xlsx,计划购电量,E1,0:40-0:50,str
+result3.xlsx,计划购电量,F1,0:50-1:00,str
+result3.xlsx,计划购电量,G1,1:00-1:10,str
+result3.xlsx,计划购电量,H1,1:10-1:20,str
+result3.xlsx,计划购电量,I1,1:20-1:30,str
+result3.xlsx,计划购电量,J1,1:30-1:40,str
+result3.xlsx,计划购电量,K1,1:40-1:50,str
+result3.xlsx,计划购电量,L1,1:50-2:00,str
+result3.xlsx,计划购电量,M1,2:00-2:10,str
+result3.xlsx,计划购电量,N1,2:10-2:20,str
+result3.xlsx,计划购电量,O1,2:20-2:30,str
+result3.xlsx,计划购电量,P1,2:30-2:40,str
+result3.xlsx,计划购电量,Q1,2:40-2:50,str
+result3.xlsx,计划购电量,R1,2:50-3:00,str
+result3.xlsx,计划购电量,S1,3:00-3:10,str
+result3.xlsx,计划购电量,T1,3:10-3:20,str
+result3.xlsx,计划购电量,U1,3:20-3:30,str
+result3.xlsx,计划购电量,V1,3:30-3:40,str
+result3.xlsx,计划购电量,W1,3:40-3:50,str
+result3.xlsx,计划购电量,X1,3:50-4:00,str
+result3.xlsx,计划购电量,Y1,4:00-4:10,str
+result3.xlsx,计划购电量,Z1,4:10-4:20,str
+result3.xlsx,计划购电量,AA1,4:20-4:30,str
+result3.xlsx,计划购电量,AB1,4:30-4:40,str
+result3.xlsx,计划购电量,AC1,4:40-4:50,str
+result3.xlsx,计划购电量,AD1,4:50-5:00,str
+result3.xlsx,计划购电量,AE1,5:00-5:10,str
+result3.xlsx,计划购电量,AF1,5:10-5:20,str
+result3.xlsx,计划购电量,AG1,5:20-5:30,str
+result3.xlsx,计划购电量,AH1,5:30-5:40,str
+result3.xlsx,计划购电量,AI1,5:40-5:50,str
+result3.xlsx,计划购电量,AJ1,5:50-6:00,str
+result3.xlsx,计划购电量,AK1,6:00-6:10,str
+result3.xlsx,计划购电量,AL1,6:10-6:20,str
+result3.xlsx,计划购电量,AM1,6:20-6:30,str
+result3.xlsx,计划购电量,AN1,6:30-6:40,str
+result3.xlsx,计划购电量,AO1,6:40-6:50,str
+result3.xlsx,计划购电量,AP1,6:50-7:00,str
+result3.xlsx,计划购电量,AQ1,7:0-7:10,str
+result3.xlsx,计划购电量,AR1,7:10-7:20,str
+result3.xlsx,计划购电量,AS1,7:20-7:30,str
+result3.xlsx,计划购电量,AT1,7:30-7:40,str
+result3.xlsx,计划购电量,AU1,7:40-7:50,str
+result3.xlsx,计划购电量,AV1,7:50-8:00,str
+result3.xlsx,计划购电量,AW1,8:00-8:10,str
+result3.xlsx,计划购电量,AX1,8:10-8:20,str
+result3.xlsx,计划购电量,AY1,8:20-8:30,str
+result3.xlsx,计划购电量,AZ1,8:30-8:40,str
+result3.xlsx,计划购电量,BA1,8:40-8:50,str
+result3.xlsx,计划购电量,BB1,8:50-9:00,str
+result3.xlsx,计划购电量,BC1,9:00-9:10,str
+result3.xlsx,计划购电量,BD1,9:10-9:20,str
+result3.xlsx,计划购电量,BE1,9:20-9:30,str
+result3.xlsx,计划购电量,BF1,9:30-9:40,str
+result3.xlsx,计划购电量,BG1,9:40-9:50,str
+result3.xlsx,计划购电量,BH1,9:50-10:00,str
+result3.xlsx,计划购电量,BI1,10:00-10:10,str
+result3.xlsx,计划购电量,BJ1,10:10-10:20,str
+result3.xlsx,计划购电量,BK1,10:20-10:30,str
+result3.xlsx,计划购电量,BL1,10:30-10:40,str
+result3.xlsx,计划购电量,BM1,10:40-10:50,str
+result3.xlsx,计划购电量,BN1,10:50-11:00,str
+result3.xlsx,计划购电量,BO1,11:00-11:10,str
+result3.xlsx,计划购电量,BP1,11:10-11:20,str
+result3.xlsx,计划购电量,BQ1,11:20-11:30,str
+result3.xlsx,计划购电量,BR1,11:30-11:40,str
+result3.xlsx,计划购电量,BS1,11:40-11:50,str
+result3.xlsx,计划购电量,BT1,11:50-12:00,str
+result3.xlsx,计划购电量,BU1,12:00-12:10,str
+result3.xlsx,计划购电量,BV1,12:10-12:20,str
+result3.xlsx,计划购电量,BW1,12:20-12:30,str
+result3.xlsx,计划购电量,BX1,12:30-12:40,str
+result3.xlsx,计划购电量,BY1,12:40-12:50,str
+result3.xlsx,计划购电量,BZ1,12:50-13:00,str
+result3.xlsx,计划购电量,CA1,13:00-13:10,str
+result3.xlsx,计划购电量,CB1,13:10-13:20,str
+result3.xlsx,计划购电量,CC1,13:20-13:30,str
+result3.xlsx,计划购电量,CD1,13:30-13:40,str
+result3.xlsx,计划购电量,CE1,13:40-13:50,str
+result3.xlsx,计划购电量,CF1,13:50-14:00,str
+result3.xlsx,计划购电量,CG1,14:00-14:10,str
+result3.xlsx,计划购电量,CH1,14:10-14:20,str
+result3.xlsx,计划购电量,CI1,14:20-14:30,str
+result3.xlsx,计划购电量,CJ1,14:30-14:40,str
+result3.xlsx,计划购电量,CK1,14:40-14:50,str
+result3.xlsx,计划购电量,CL1,14:50-15:00,str
+result3.xlsx,计划购电量,CM1,15:00-15:10,str
+result3.xlsx,计划购电量,CN1,15:10-15:20,str
+result3.xlsx,计划购电量,CO1,15:20-15:30,str
+result3.xlsx,计划购电量,CP1,15:30-15:40,str
+result3.xlsx,计划购电量,CQ1,15:40-15:50,str
+result3.xlsx,计划购电量,CR1,15:50-16:00,str
+result3.xlsx,计划购电量,CS1,16:00-16:10,str
+result3.xlsx,计划购电量,CT1,16:10-16:20,str
+result3.xlsx,计划购电量,CU1,16:20-16:30,str
+result3.xlsx,计划购电量,CV1,16:30-16:40,str
+result3.xlsx,计划购电量,CW1,16:40-16:50,str
+result3.xlsx,计划购电量,CX1,16:50-17:00,str
+result3.xlsx,计划购电量,CY1,17:00-17:10,str
+result3.xlsx,计划购电量,CZ1,17:10-17:20,str
+result3.xlsx,计划购电量,DA1,17:20-17:30,str
+result3.xlsx,计划购电量,DB1,17:30-17:40,str
+result3.xlsx,计划购电量,DC1,17:40-17:50,str
+result3.xlsx,计划购电量,DD1,17:50-18:00,str
+result3.xlsx,计划购电量,DE1,18:00-18:10,str
+result3.xlsx,计划购电量,DF1,18:10-18:20,str
+result3.xlsx,计划购电量,DG1,18:20-18:30,str
+result3.xlsx,计划购电量,DH1,18:30-18:40,str
+result3.xlsx,计划购电量,DI1,18:40-18:50,str
+result3.xlsx,计划购电量,DJ1,18:50-19:00,str
+result3.xlsx,计划购电量,DK1,19:00-19:10,str
+result3.xlsx,计划购电量,DL1,19:10-19:20,str
+result3.xlsx,计划购电量,DM1,19:20-19:30,str
+result3.xlsx,计划购电量,DN1,19:30-19:40,str
+result3.xlsx,计划购电量,DO1,19:40-19:50,str
+result3.xlsx,计划购电量,DP1,19:50-20:00,str
+result3.xlsx,计划购电量,DQ1,20:00-20:10,str
+result3.xlsx,计划购电量,DR1,20:10-20:20,str
+result3.xlsx,计划购电量,DS1,20:20-20:30,str
+result3.xlsx,计划购电量,DT1,20:30-20:40,str
+result3.xlsx,计划购电量,DU1,20:40-20:50,str
+result3.xlsx,计划购电量,DV1,20:50-21:00,str
+result3.xlsx,计划购电量,DW1,21:00-21:10,str
+result3.xlsx,计划购电量,DX1,21:10-21:20,str
+result3.xlsx,计划购电量,DY1,21:20-21:30,str
+result3.xlsx,计划购电量,DZ1,21:30-21:40,str
+result3.xlsx,计划购电量,EA1,21:40-21:50,str
+result3.xlsx,计划购电量,EB1,21:50-22:00,str
+result3.xlsx,计划购电量,EC1,22:00-22:10,str
+result3.xlsx,计划购电量,ED1,22:10-22:20,str
+result3.xlsx,计划购电量,EE1,22:20-22:30,str
+result3.xlsx,计划购电量,EF1,22:30-22:40,str
+result3.xlsx,计划购电量,EG1,22:40-22:50,str
+result3.xlsx,计划购电量,EH1,22:50-23:00,str
+result3.xlsx,计划购电量,EI1,23:00-23:10,str
+result3.xlsx,计划购电量,EJ1,23:10-23:20,str
+result3.xlsx,计划购电量,EK1,23:20-23:30,str
+result3.xlsx,计划购电量,EL1,23:30-23:40,str
+result3.xlsx,计划购电量,EM1,23:40-23:50,str
+result3.xlsx,计划购电量,EN1,23:50-0:00+1,str
+result3.xlsx,计划购电量,EO1,0:00-0:10+1,str
+result3.xlsx,计划购电量,EP1,全天购电量,str
+result3.xlsx,计划购电量,EQ1,全天购电费,str
+result3.xlsx,计划购电量,A2,2025-02-01 00:00:00,datetime
+result3.xlsx,计划购电量,A3,2025-02-02 00:00:00,datetime
+result3.xlsx,计划购电量,A4,2025-02-03 00:00:00,datetime
+result3.xlsx,计划购电量,A5,2025-02-04 00:00:00,datetime
+result3.xlsx,计划购电量,A6,2025-02-05 00:00:00,datetime
+result3.xlsx,计划购电量,A7,2025-02-06 00:00:00,datetime
+result3.xlsx,计划购电量,A8,2025-02-07 00:00:00,datetime
+result3.xlsx,计划购电量,A9,2025-02-08 00:00:00,datetime
+result3.xlsx,计划购电量,A10,2025-02-09 00:00:00,datetime
+result3.xlsx,计划购电量,A11,2025-02-10 00:00:00,datetime
+result3.xlsx,计划购电量,A12,2025-02-11 00:00:00,datetime
+result3.xlsx,计划购电量,A13,2025-02-12 00:00:00,datetime
+result3.xlsx,计划购电量,A14,2025-02-13 00:00:00,datetime
+result3.xlsx,计划购电量,A15,2025-02-14 00:00:00,datetime
+result3.xlsx,计划购电量,A16,2025-02-15 00:00:00,datetime
+result3.xlsx,计划购电量,A17,2025-02-16 00:00:00,datetime
+result3.xlsx,计划购电量,A18,2025-02-17 00:00:00,datetime
+result3.xlsx,计划购电量,A19,2025-02-18 00:00:00,datetime
+result3.xlsx,计划购电量,A20,2025-02-19 00:00:00,datetime
+result3.xlsx,计划购电量,A21,2025-02-20 00:00:00,datetime
+result3.xlsx,计划购电量,A22,2025-02-21 00:00:00,datetime
+result3.xlsx,计划购电量,A23,2025-02-22 00:00:00,datetime
+result3.xlsx,计划购电量,A24,2025-02-23 00:00:00,datetime
+result3.xlsx,计划购电量,A25,2025-02-24 00:00:00,datetime
+result3.xlsx,计划购电量,A26,2025-02-25 00:00:00,datetime
+result3.xlsx,计划购电量,A27,2025-02-26 00:00:00,datetime
+result3.xlsx,计划购电量,A28,2025-02-27 00:00:00,datetime
+result3.xlsx,计划购电量,A29,2025-02-28 00:00:00,datetime
+result3.xlsx,计划购电量,A30,2025-03-01 00:00:00,datetime
+result3.xlsx,计划购电量,A31,2025-03-02 00:00:00,datetime
+result3.xlsx,计划购电量,A32,2025-03-03 00:00:00,datetime
+result3.xlsx,计划购电量,A33,2025-03-04 00:00:00,datetime
+result3.xlsx,计划购电量,A34,2025-03-05 00:00:00,datetime
+result3.xlsx,计划购电量,A35,2025-03-06 00:00:00,datetime
+result3.xlsx,计划购电量,A36,2025-03-07 00:00:00,datetime
+result3.xlsx,计划购电量,A37,2025-03-08 00:00:00,datetime
+result3.xlsx,计划购电量,A38,2025-03-09 00:00:00,datetime
+result3.xlsx,计划购电量,A39,2025-03-10 00:00:00,datetime
+result3.xlsx,计划购电量,A40,2025-03-11 00:00:00,datetime
+result3.xlsx,计划购电量,A41,2025-03-12 00:00:00,datetime
+result3.xlsx,计划购电量,A42,2025-03-13 00:00:00,datetime
+result3.xlsx,计划购电量,A43,2025-03-14 00:00:00,datetime
+result3.xlsx,计划购电量,A44,2025-03-15 00:00:00,datetime
+result3.xlsx,计划购电量,A45,2025-03-16 00:00:00,datetime
+result3.xlsx,计划购电量,A46,2025-03-17 00:00:00,datetime
+result3.xlsx,计划购电量,A47,2025-03-18 00:00:00,datetime
+result3.xlsx,计划购电量,A48,2025-03-19 00:00:00,datetime
+result3.xlsx,计划购电量,A49,2025-03-20 00:00:00,datetime
+result3.xlsx,计划购电量,A50,2025-03-21 00:00:00,datetime
+result3.xlsx,计划购电量,A51,2025-03-22 00:00:00,datetime
+result3.xlsx,计划购电量,A52,2025-03-23 00:00:00,datetime
+result3.xlsx,计划购电量,A53,2025-03-24 00:00:00,datetime
+result3.xlsx,计划购电量,A54,2025-03-25 00:00:00,datetime
+result3.xlsx,计划购电量,A55,2025-03-26 00:00:00,datetime
+result3.xlsx,计划购电量,A56,2025-03-27 00:00:00,datetime
+result3.xlsx,计划购电量,A57,2025-03-28 00:00:00,datetime
+result3.xlsx,计划购电量,A58,2025-03-29 00:00:00,datetime
+result3.xlsx,计划购电量,A59,2025-03-30 00:00:00,datetime
+result3.xlsx,计划购电量,A60,2025-03-31 00:00:00,datetime
+result3.xlsx,计划购电量,A61,2025-04-01 00:00:00,datetime
+result3.xlsx,计划购电量,A62,2025-04-02 00:00:00,datetime
+result3.xlsx,计划购电量,A63,2025-04-03 00:00:00,datetime
+result3.xlsx,计划购电量,A64,2025-04-04 00:00:00,datetime
+result3.xlsx,计划购电量,A65,2025-04-05 00:00:00,datetime
+result3.xlsx,计划购电量,A66,2025-04-06 00:00:00,datetime
+result3.xlsx,计划购电量,A67,2025-04-07 00:00:00,datetime
+result3.xlsx,计划购电量,A68,2025-04-08 00:00:00,datetime
+result3.xlsx,计划购电量,A69,2025-04-09 00:00:00,datetime
+result3.xlsx,计划购电量,A70,2025-04-10 00:00:00,datetime
+result3.xlsx,计划购电量,A71,2025-04-11 00:00:00,datetime
+result3.xlsx,计划购电量,A72,2025-04-12 00:00:00,datetime
+result3.xlsx,计划购电量,A73,2025-04-13 00:00:00,datetime
+result3.xlsx,计划购电量,A74,2025-04-14 00:00:00,datetime
+result3.xlsx,计划购电量,A75,2025-04-15 00:00:00,datetime
+result3.xlsx,计划购电量,A76,2025-04-16 00:00:00,datetime
+result3.xlsx,计划购电量,A77,2025-04-17 00:00:00,datetime
+result3.xlsx,计划购电量,A78,2025-04-18 00:00:00,datetime
+result3.xlsx,计划购电量,A79,2025-04-19 00:00:00,datetime
+result3.xlsx,计划购电量,A80,2025-04-20 00:00:00,datetime
+result3.xlsx,计划购电量,A81,2025-04-21 00:00:00,datetime
+result3.xlsx,计划购电量,A82,2025-04-22 00:00:00,datetime
+result3.xlsx,计划购电量,A83,2025-04-23 00:00:00,datetime
+result3.xlsx,计划购电量,A84,2025-04-24 00:00:00,datetime
+result3.xlsx,计划购电量,A85,2025-04-25 00:00:00,datetime
+result3.xlsx,计划购电量,A86,2025-04-26 00:00:00,datetime
+result3.xlsx,计划购电量,A87,2025-04-27 00:00:00,datetime
+result3.xlsx,计划购电量,A88,2025-04-28 00:00:00,datetime
+result3.xlsx,计划购电量,A89,2025-04-29 00:00:00,datetime
+result3.xlsx,计划购电量,A90,2025-04-30 00:00:00,datetime
+result3.xlsx,计划购电量,A91,2025-05-01 00:00:00,datetime
+result3.xlsx,计划购电量,A92,2025-05-02 00:00:00,datetime
+result3.xlsx,计划购电量,A93,2025-05-03 00:00:00,datetime
+result3.xlsx,计划购电量,A94,2025-05-04 00:00:00,datetime
+result3.xlsx,计划购电量,A95,2025-05-05 00:00:00,datetime
+result3.xlsx,计划购电量,A96,2025-05-06 00:00:00,datetime
+result3.xlsx,计划购电量,A97,2025-05-07 00:00:00,datetime
+result3.xlsx,计划购电量,A98,2025-05-08 00:00:00,datetime
+result3.xlsx,计划购电量,A99,2025-05-09 00:00:00,datetime
+result3.xlsx,计划购电量,A100,2025-05-10 00:00:00,datetime
+result3.xlsx,计划购电量,A101,2025-05-11 00:00:00,datetime
+result3.xlsx,计划购电量,A102,2025-05-12 00:00:00,datetime
+result3.xlsx,计划购电量,A103,2025-05-13 00:00:00,datetime
+result3.xlsx,计划购电量,A104,2025-05-14 00:00:00,datetime
+result3.xlsx,计划购电量,A105,2025-05-15 00:00:00,datetime
+result3.xlsx,计划购电量,A106,2025-05-16 00:00:00,datetime
+result3.xlsx,计划购电量,A107,2025-05-17 00:00:00,datetime
+result3.xlsx,计划购电量,A108,2025-05-18 00:00:00,datetime
+result3.xlsx,计划购电量,A109,2025-05-19 00:00:00,datetime
+result3.xlsx,计划购电量,A110,2025-05-20 00:00:00,datetime
+result3.xlsx,计划购电量,A111,2025-05-21 00:00:00,datetime
+result3.xlsx,计划购电量,A112,2025-05-22 00:00:00,datetime
+result3.xlsx,计划购电量,A113,2025-05-23 00:00:00,datetime
+result3.xlsx,计划购电量,A114,2025-05-24 00:00:00,datetime
+result3.xlsx,计划购电量,A115,2025-05-25 00:00:00,datetime
+result3.xlsx,计划购电量,A116,2025-05-26 00:00:00,datetime
+result3.xlsx,计划购电量,A117,2025-05-27 00:00:00,datetime
+result3.xlsx,计划购电量,A118,2025-05-28 00:00:00,datetime
+result3.xlsx,计划购电量,A119,2025-05-29 00:00:00,datetime
+result3.xlsx,计划购电量,A120,2025-05-30 00:00:00,datetime
+result3.xlsx,计划购电量,A121,2025-05-31 00:00:00,datetime
+result3.xlsx,计划购电量,A122,2025-06-01 00:00:00,datetime
+result3.xlsx,计划购电量,A123,2025-06-02 00:00:00,datetime
+result3.xlsx,计划购电量,A124,2025-06-03 00:00:00,datetime
+result3.xlsx,计划购电量,A125,2025-06-04 00:00:00,datetime
+result3.xlsx,计划购电量,A126,2025-06-05 00:00:00,datetime
+result3.xlsx,计划购电量,A127,2025-06-06 00:00:00,datetime
+result3.xlsx,计划购电量,A128,2025-06-07 00:00:00,datetime
+result3.xlsx,计划购电量,A129,2025-06-08 00:00:00,datetime
+result3.xlsx,计划购电量,A130,2025-06-09 00:00:00,datetime
+result3.xlsx,计划购电量,A131,2025-06-10 00:00:00,datetime
+result3.xlsx,计划购电量,A132,2025-06-11 00:00:00,datetime
+result3.xlsx,计划购电量,A133,2025-06-12 00:00:00,datetime
+result3.xlsx,计划购电量,A134,2025-06-13 00:00:00,datetime
+result3.xlsx,计划购电量,A135,2025-06-14 00:00:00,datetime
+result3.xlsx,计划购电量,A136,2025-06-15 00:00:00,datetime
+result3.xlsx,计划购电量,A137,2025-06-16 00:00:00,datetime
+result3.xlsx,计划购电量,A138,2025-06-17 00:00:00,datetime
+result3.xlsx,计划购电量,A139,2025-06-18 00:00:00,datetime
+result3.xlsx,计划购电量,A140,2025-06-19 00:00:00,datetime
+result3.xlsx,计划购电量,A141,2025-06-20 00:00:00,datetime
+result3.xlsx,计划购电量,A142,2025-06-21 00:00:00,datetime
+result3.xlsx,计划购电量,A143,2025-06-22 00:00:00,datetime
+result3.xlsx,计划购电量,A144,2025-06-23 00:00:00,datetime
+result3.xlsx,计划购电量,A145,2025-06-24 00:00:00,datetime
+result3.xlsx,计划购电量,A146,2025-06-25 00:00:00,datetime
+result3.xlsx,计划购电量,A147,2025-06-26 00:00:00,datetime
+result3.xlsx,计划购电量,A148,2025-06-27 00:00:00,datetime
+result3.xlsx,计划购电量,A149,2025-06-28 00:00:00,datetime
+result3.xlsx,计划购电量,A150,2025-06-29 00:00:00,datetime
+result3.xlsx,计划购电量,A151,2025-06-30 00:00:00,datetime
+result3.xlsx,计划购电量,A152,2025-07-01 00:00:00,datetime
+result3.xlsx,计划购电量,A153,2025-07-02 00:00:00,datetime
+result3.xlsx,计划购电量,A154,2025-07-03 00:00:00,datetime
+result3.xlsx,计划购电量,A155,2025-07-04 00:00:00,datetime
+result3.xlsx,计划购电量,A156,2025-07-05 00:00:00,datetime
+result3.xlsx,计划购电量,A157,2025-07-06 00:00:00,datetime
+result3.xlsx,计划购电量,A158,2025-07-07 00:00:00,datetime
+result3.xlsx,计划购电量,A159,2025-07-08 00:00:00,datetime
+result3.xlsx,计划购电量,A160,2025-07-09 00:00:00,datetime
+result3.xlsx,计划购电量,A161,2025-07-10 00:00:00,datetime
+result3.xlsx,计划购电量,A162,2025-07-11 00:00:00,datetime
+result3.xlsx,计划购电量,A163,2025-07-12 00:00:00,datetime
+result3.xlsx,计划购电量,A164,2025-07-13 00:00:00,datetime
+result3.xlsx,计划购电量,A165,2025-07-14 00:00:00,datetime
+result3.xlsx,计划购电量,A166,2025-07-15 00:00:00,datetime
+result3.xlsx,计划购电量,A167,2025-07-16 00:00:00,datetime
+result3.xlsx,计划购电量,A168,2025-07-17 00:00:00,datetime
+result3.xlsx,计划购电量,A169,2025-07-18 00:00:00,datetime
+result3.xlsx,计划购电量,A170,2025-07-19 00:00:00,datetime
+result3.xlsx,计划购电量,A171,2025-07-20 00:00:00,datetime
+result3.xlsx,计划购电量,A172,2025-07-21 00:00:00,datetime
+result3.xlsx,计划购电量,A173,2025-07-22 00:00:00,datetime
+result3.xlsx,计划购电量,A174,2025-07-23 00:00:00,datetime
+result3.xlsx,计划购电量,A175,2025-07-24 00:00:00,datetime
+result3.xlsx,计划购电量,A176,2025-07-25 00:00:00,datetime
+result3.xlsx,计划购电量,A177,2025-07-26 00:00:00,datetime
+result3.xlsx,计划购电量,A178,2025-07-27 00:00:00,datetime
+result3.xlsx,计划购电量,A179,2025-07-28 00:00:00,datetime
+result3.xlsx,计划购电量,A180,2025-07-29 00:00:00,datetime
+result3.xlsx,计划购电量,A181,2025-07-30 00:00:00,datetime
+result3.xlsx,计划购电量,A182,2025-07-31 00:00:00,datetime
+result3.xlsx,计划购电量,A183,2025-08-01 00:00:00,datetime
+result3.xlsx,计划购电量,A184,2025-08-02 00:00:00,datetime
+result3.xlsx,计划购电量,A185,2025-08-03 00:00:00,datetime
+result3.xlsx,计划购电量,A186,2025-08-04 00:00:00,datetime
+result3.xlsx,计划购电量,A187,2025-08-05 00:00:00,datetime
+result3.xlsx,计划购电量,A188,2025-08-06 00:00:00,datetime
+result3.xlsx,计划购电量,A189,2025-08-07 00:00:00,datetime
+result3.xlsx,计划购电量,A190,2025-08-08 00:00:00,datetime
+result3.xlsx,计划购电量,A191,2025-08-09 00:00:00,datetime
+result3.xlsx,计划购电量,A192,2025-08-10 00:00:00,datetime
+result3.xlsx,计划购电量,A193,2025-08-11 00:00:00,datetime
+result3.xlsx,计划购电量,A194,2025-08-12 00:00:00,datetime
+result3.xlsx,计划购电量,A195,2025-08-13 00:00:00,datetime
+result3.xlsx,计划购电量,A196,2025-08-14 00:00:00,datetime
+result3.xlsx,计划购电量,A197,2025-08-15 00:00:00,datetime
+result3.xlsx,计划购电量,A198,2025-08-16 00:00:00,datetime
+result3.xlsx,计划购电量,A199,2025-08-17 00:00:00,datetime
+result3.xlsx,计划购电量,A200,2025-08-18 00:00:00,datetime
+result3.xlsx,计划购电量,A201,2025-08-19 00:00:00,datetime
+result3.xlsx,计划购电量,A202,2025-08-20 00:00:00,datetime
+result3.xlsx,计划购电量,A203,2025-08-21 00:00:00,datetime
+result3.xlsx,计划购电量,A204,2025-08-22 00:00:00,datetime
+result3.xlsx,计划购电量,A205,2025-08-23 00:00:00,datetime
+result3.xlsx,计划购电量,A206,2025-08-24 00:00:00,datetime
+result3.xlsx,计划购电量,A207,2025-08-25 00:00:00,datetime
+result3.xlsx,计划购电量,A208,2025-08-26 00:00:00,datetime
+result3.xlsx,计划购电量,A209,2025-08-27 00:00:00,datetime
+result3.xlsx,计划购电量,A210,2025-08-28 00:00:00,datetime
+result3.xlsx,计划购电量,A211,2025-08-29 00:00:00,datetime
+result3.xlsx,计划购电量,A212,2025-08-30 00:00:00,datetime
+result3.xlsx,计划购电量,A213,2025-08-31 00:00:00,datetime
+result3.xlsx,计划购电量,A214,2025-09-01 00:00:00,datetime
+result3.xlsx,计划购电量,A215,2025-09-02 00:00:00,datetime
+result3.xlsx,计划购电量,A216,2025-09-03 00:00:00,datetime
+result3.xlsx,计划购电量,A217,2025-09-04 00:00:00,datetime
+result3.xlsx,计划购电量,A218,2025-09-05 00:00:00,datetime
+result3.xlsx,计划购电量,A219,2025-09-06 00:00:00,datetime
+result3.xlsx,计划购电量,A220,2025-09-07 00:00:00,datetime
+result3.xlsx,计划购电量,A221,2025-09-08 00:00:00,datetime
+result3.xlsx,计划购电量,A222,2025-09-09 00:00:00,datetime
+result3.xlsx,计划购电量,A223,2025-09-10 00:00:00,datetime
+result3.xlsx,计划购电量,A224,2025-09-11 00:00:00,datetime
+result3.xlsx,计划购电量,A225,2025-09-12 00:00:00,datetime
+result3.xlsx,计划购电量,A226,2025-09-13 00:00:00,datetime
+result3.xlsx,计划购电量,A227,2025-09-14 00:00:00,datetime
+result3.xlsx,计划购电量,A228,2025-09-15 00:00:00,datetime
+result3.xlsx,计划购电量,A229,2025-09-16 00:00:00,datetime
+result3.xlsx,计划购电量,A230,2025-09-17 00:00:00,datetime
+result3.xlsx,计划购电量,A231,2025-09-18 00:00:00,datetime
+result3.xlsx,计划购电量,A232,2025-09-19 00:00:00,datetime
+result3.xlsx,计划购电量,A233,2025-09-20 00:00:00,datetime
+result3.xlsx,计划购电量,A234,2025-09-21 00:00:00,datetime
+result3.xlsx,计划购电量,A235,2025-09-22 00:00:00,datetime
+result3.xlsx,计划购电量,A236,2025-09-23 00:00:00,datetime
+result3.xlsx,计划购电量,A237,2025-09-24 00:00:00,datetime
+result3.xlsx,计划购电量,A238,2025-09-25 00:00:00,datetime
+result3.xlsx,计划购电量,A239,2025-09-26 00:00:00,datetime
+result3.xlsx,计划购电量,A240,2025-09-27 00:00:00,datetime
+result3.xlsx,计划购电量,A241,2025-09-28 00:00:00,datetime
+result3.xlsx,计划购电量,A242,2025-09-29 00:00:00,datetime
+result3.xlsx,计划购电量,A243,2025-09-30 00:00:00,datetime
+result3.xlsx,计划购电量,A244,2025-10-01 00:00:00,datetime
+result3.xlsx,计划购电量,A245,2025-10-02 00:00:00,datetime
+result3.xlsx,计划购电量,A246,2025-10-03 00:00:00,datetime
+result3.xlsx,计划购电量,A247,2025-10-04 00:00:00,datetime
+result3.xlsx,计划购电量,A248,2025-10-05 00:00:00,datetime
+result3.xlsx,计划购电量,A249,2025-10-06 00:00:00,datetime
+result3.xlsx,计划购电量,A250,2025-10-07 00:00:00,datetime
+result3.xlsx,计划购电量,A251,2025-10-08 00:00:00,datetime
+result3.xlsx,计划购电量,A252,2025-10-09 00:00:00,datetime
+result3.xlsx,计划购电量,A253,2025-10-10 00:00:00,datetime
+result3.xlsx,计划购电量,A254,2025-10-11 00:00:00,datetime
+result3.xlsx,计划购电量,A255,2025-10-12 00:00:00,datetime
+result3.xlsx,计划购电量,A256,2025-10-13 00:00:00,datetime
+result3.xlsx,计划购电量,A257,2025-10-14 00:00:00,datetime
+result3.xlsx,计划购电量,A258,2025-10-15 00:00:00,datetime
+result3.xlsx,计划购电量,A259,2025-10-16 00:00:00,datetime
+result3.xlsx,计划购电量,A260,2025-10-17 00:00:00,datetime
+result3.xlsx,计划购电量,A261,2025-10-18 00:00:00,datetime
+result3.xlsx,计划购电量,A262,2025-10-19 00:00:00,datetime
+result3.xlsx,计划购电量,A263,2025-10-20 00:00:00,datetime
+result3.xlsx,计划购电量,A264,2025-10-21 00:00:00,datetime
+result3.xlsx,计划购电量,A265,2025-10-22 00:00:00,datetime
+result3.xlsx,计划购电量,A266,2025-10-23 00:00:00,datetime
+result3.xlsx,计划购电量,A267,2025-10-24 00:00:00,datetime
+result3.xlsx,计划购电量,A268,2025-10-25 00:00:00,datetime
+result3.xlsx,计划购电量,A269,2025-10-26 00:00:00,datetime
+result3.xlsx,计划购电量,A270,2025-10-27 00:00:00,datetime
+result3.xlsx,计划购电量,A271,2025-10-28 00:00:00,datetime
+result3.xlsx,计划购电量,A272,2025-10-29 00:00:00,datetime
+result3.xlsx,计划购电量,A273,2025-10-30 00:00:00,datetime
+result3.xlsx,计划购电量,A274,2025-10-31 00:00:00,datetime
+result3.xlsx,计划购电量,A275,2025-11-01 00:00:00,datetime
+result3.xlsx,计划购电量,A276,2025-11-02 00:00:00,datetime
+result3.xlsx,计划购电量,A277,2025-11-03 00:00:00,datetime
+result3.xlsx,计划购电量,A278,2025-11-04 00:00:00,datetime
+result3.xlsx,计划购电量,A279,2025-11-05 00:00:00,datetime
+result3.xlsx,计划购电量,A280,2025-11-06 00:00:00,datetime
+result3.xlsx,计划购电量,A281,2025-11-07 00:00:00,datetime
+result3.xlsx,计划购电量,A282,2025-11-08 00:00:00,datetime
+result3.xlsx,计划购电量,A283,2025-11-09 00:00:00,datetime
+result3.xlsx,计划购电量,A284,2025-11-10 00:00:00,datetime
+result3.xlsx,计划购电量,A285,2025-11-11 00:00:00,datetime
+result3.xlsx,计划购电量,A286,2025-11-12 00:00:00,datetime
+result3.xlsx,计划购电量,A287,2025-11-13 00:00:00,datetime
+result3.xlsx,计划购电量,A288,2025-11-14 00:00:00,datetime
+result3.xlsx,计划购电量,A289,2025-11-15 00:00:00,datetime
+result3.xlsx,计划购电量,A290,2025-11-16 00:00:00,datetime
+result3.xlsx,计划购电量,A291,2025-11-17 00:00:00,datetime
+result3.xlsx,计划购电量,A292,2025-11-18 00:00:00,datetime
+result3.xlsx,计划购电量,A293,2025-11-19 00:00:00,datetime
+result3.xlsx,计划购电量,A294,2025-11-20 00:00:00,datetime
+result3.xlsx,计划购电量,A295,2025-11-21 00:00:00,datetime
+result3.xlsx,计划购电量,A296,2025-11-22 00:00:00,datetime
+result3.xlsx,计划购电量,A297,2025-11-23 00:00:00,datetime
+result3.xlsx,计划购电量,A298,2025-11-24 00:00:00,datetime
+result3.xlsx,计划购电量,A299,2025-11-25 00:00:00,datetime
+result3.xlsx,计划购电量,A300,2025-11-26 00:00:00,datetime
+result3.xlsx,计划购电量,A301,2025-11-27 00:00:00,datetime
+result3.xlsx,计划购电量,A302,2025-11-28 00:00:00,datetime
+result3.xlsx,计划购电量,A303,2025-11-29 00:00:00,datetime
+result3.xlsx,计划购电量,A304,2025-11-30 00:00:00,datetime
+result3.xlsx,计划购电量,A305,2025-12-01 00:00:00,datetime
+result3.xlsx,计划购电量,A306,2025-12-02 00:00:00,datetime
+result3.xlsx,计划购电量,A307,2025-12-03 00:00:00,datetime
+result3.xlsx,计划购电量,A308,2025-12-04 00:00:00,datetime
+result3.xlsx,计划购电量,A309,2025-12-05 00:00:00,datetime
+result3.xlsx,计划购电量,A310,2025-12-06 00:00:00,datetime
+result3.xlsx,计划购电量,A311,2025-12-07 00:00:00,datetime
+result3.xlsx,计划购电量,A312,2025-12-08 00:00:00,datetime
+result3.xlsx,计划购电量,A313,2025-12-09 00:00:00,datetime
+result3.xlsx,计划购电量,A314,2025-12-10 00:00:00,datetime
+result3.xlsx,计划购电量,A315,2025-12-11 00:00:00,datetime
+result3.xlsx,计划购电量,A316,2025-12-12 00:00:00,datetime
+result3.xlsx,计划购电量,A317,2025-12-13 00:00:00,datetime
+result3.xlsx,计划购电量,A318,2025-12-14 00:00:00,datetime
+result3.xlsx,计划购电量,A319,2025-12-15 00:00:00,datetime
+result3.xlsx,计划购电量,A320,2025-12-16 00:00:00,datetime
+result3.xlsx,计划购电量,A321,2025-12-17 00:00:00,datetime
+result3.xlsx,计划购电量,A322,2025-12-18 00:00:00,datetime
+result3.xlsx,计划购电量,A323,2025-12-19 00:00:00,datetime
+result3.xlsx,计划购电量,A324,2025-12-20 00:00:00,datetime
+result3.xlsx,计划购电量,A325,2025-12-21 00:00:00,datetime
+result3.xlsx,计划购电量,A326,2025-12-22 00:00:00,datetime
+result3.xlsx,计划购电量,A327,2025-12-23 00:00:00,datetime
+result3.xlsx,计划购电量,A328,2025-12-24 00:00:00,datetime
+result3.xlsx,计划购电量,A329,2025-12-25 00:00:00,datetime
+result3.xlsx,计划购电量,A330,2025-12-26 00:00:00,datetime
+result3.xlsx,计划购电量,A331,2025-12-27 00:00:00,datetime
+result3.xlsx,计划购电量,A332,2025-12-28 00:00:00,datetime
+result3.xlsx,计划购电量,A333,2025-12-29 00:00:00,datetime
+result3.xlsx,计划购电量,A334,2025-12-30 00:00:00,datetime
+result3.xlsx,计划购电量,A335,2025-12-31 00:00:00,datetime
+result3.xlsx,调整购电量,A1,日期\时间,str
+result3.xlsx,调整购电量,B1,0:10-0:20,str
+result3.xlsx,调整购电量,C1,0:20-0:30,str
+result3.xlsx,调整购电量,D1,0:30-0:40,str
+result3.xlsx,调整购电量,E1,0:40-0:50,str
+result3.xlsx,调整购电量,F1,0:50-1:00,str
+result3.xlsx,调整购电量,G1,1:00-1:10,str
+result3.xlsx,调整购电量,H1,1:10-1:20,str
+result3.xlsx,调整购电量,I1,1:20-1:30,str
+result3.xlsx,调整购电量,J1,1:30-1:40,str
+result3.xlsx,调整购电量,K1,1:40-1:50,str
+result3.xlsx,调整购电量,L1,1:50-2:00,str
+result3.xlsx,调整购电量,M1,2:00-2:10,str
+result3.xlsx,调整购电量,N1,2:10-2:20,str
+result3.xlsx,调整购电量,O1,2:20-2:30,str
+result3.xlsx,调整购电量,P1,2:30-2:40,str
+result3.xlsx,调整购电量,Q1,2:40-2:50,str
+result3.xlsx,调整购电量,R1,2:50-3:00,str
+result3.xlsx,调整购电量,S1,3:00-3:10,str
+result3.xlsx,调整购电量,T1,3:10-3:20,str
+result3.xlsx,调整购电量,U1,3:20-3:30,str
+result3.xlsx,调整购电量,V1,3:30-3:40,str
+result3.xlsx,调整购电量,W1,3:40-3:50,str
+result3.xlsx,调整购电量,X1,3:50-4:00,str
+result3.xlsx,调整购电量,Y1,4:00-4:10,str
+result3.xlsx,调整购电量,Z1,4:10-4:20,str
+result3.xlsx,调整购电量,AA1,4:20-4:30,str
+result3.xlsx,调整购电量,AB1,4:30-4:40,str
+result3.xlsx,调整购电量,AC1,4:40-4:50,str
+result3.xlsx,调整购电量,AD1,4:50-5:00,str
+result3.xlsx,调整购电量,AE1,5:00-5:10,str
+result3.xlsx,调整购电量,AF1,5:10-5:20,str
+result3.xlsx,调整购电量,AG1,5:20-5:30,str
+result3.xlsx,调整购电量,AH1,5:30-5:40,str
+result3.xlsx,调整购电量,AI1,5:40-5:50,str
+result3.xlsx,调整购电量,AJ1,5:50-6:00,str
+result3.xlsx,调整购电量,AK1,6:00-6:10,str
+result3.xlsx,调整购电量,AL1,6:10-6:20,str
+result3.xlsx,调整购电量,AM1,6:20-6:30,str
+result3.xlsx,调整购电量,AN1,6:30-6:40,str
+result3.xlsx,调整购电量,AO1,6:40-6:50,str
+result3.xlsx,调整购电量,AP1,6:50-7:00,str
+result3.xlsx,调整购电量,AQ1,7:0-7:10,str
+result3.xlsx,调整购电量,AR1,7:10-7:20,str
+result3.xlsx,调整购电量,AS1,7:20-7:30,str
+result3.xlsx,调整购电量,AT1,7:30-7:40,str
+result3.xlsx,调整购电量,AU1,7:40-7:50,str
+result3.xlsx,调整购电量,AV1,7:50-8:00,str
+result3.xlsx,调整购电量,AW1,8:00-8:10,str
+result3.xlsx,调整购电量,AX1,8:10-8:20,str
+result3.xlsx,调整购电量,AY1,8:20-8:30,str
+result3.xlsx,调整购电量,AZ1,8:30-8:40,str
+result3.xlsx,调整购电量,BA1,8:40-8:50,str
+result3.xlsx,调整购电量,BB1,8:50-9:00,str
+result3.xlsx,调整购电量,BC1,9:00-9:10,str
+result3.xlsx,调整购电量,BD1,9:10-9:20,str
+result3.xlsx,调整购电量,BE1,9:20-9:30,str
+result3.xlsx,调整购电量,BF1,9:30-9:40,str
+result3.xlsx,调整购电量,BG1,9:40-9:50,str
+result3.xlsx,调整购电量,BH1,9:50-10:00,str
+result3.xlsx,调整购电量,BI1,10:00-10:10,str
+result3.xlsx,调整购电量,BJ1,10:10-10:20,str
+result3.xlsx,调整购电量,BK1,10:20-10:30,str
+result3.xlsx,调整购电量,BL1,10:30-10:40,str
+result3.xlsx,调整购电量,BM1,10:40-10:50,str
+result3.xlsx,调整购电量,BN1,10:50-11:00,str
+result3.xlsx,调整购电量,BO1,11:00-11:10,str
+result3.xlsx,调整购电量,BP1,11:10-11:20,str
+result3.xlsx,调整购电量,BQ1,11:20-11:30,str
+result3.xlsx,调整购电量,BR1,11:30-11:40,str
+result3.xlsx,调整购电量,BS1,11:40-11:50,str
+result3.xlsx,调整购电量,BT1,11:50-12:00,str
+result3.xlsx,调整购电量,BU1,12:00-12:10,str
+result3.xlsx,调整购电量,BV1,12:10-12:20,str
+result3.xlsx,调整购电量,BW1,12:20-12:30,str
+result3.xlsx,调整购电量,BX1,12:30-12:40,str
+result3.xlsx,调整购电量,BY1,12:40-12:50,str
+result3.xlsx,调整购电量,BZ1,12:50-13:00,str
+result3.xlsx,调整购电量,CA1,13:00-13:10,str
+result3.xlsx,调整购电量,CB1,13:10-13:20,str
+result3.xlsx,调整购电量,CC1,13:20-13:30,str
+result3.xlsx,调整购电量,CD1,13:30-13:40,str
+result3.xlsx,调整购电量,CE1,13:40-13:50,str
+result3.xlsx,调整购电量,CF1,13:50-14:00,str
+result3.xlsx,调整购电量,CG1,14:00-14:10,str
+result3.xlsx,调整购电量,CH1,14:10-14:20,str
+result3.xlsx,调整购电量,CI1,14:20-14:30,str
+result3.xlsx,调整购电量,CJ1,14:30-14:40,str
+result3.xlsx,调整购电量,CK1,14:40-14:50,str
+result3.xlsx,调整购电量,CL1,14:50-15:00,str
+result3.xlsx,调整购电量,CM1,15:00-15:10,str
+result3.xlsx,调整购电量,CN1,15:10-15:20,str
+result3.xlsx,调整购电量,CO1,15:20-15:30,str
+result3.xlsx,调整购电量,CP1,15:30-15:40,str
+result3.xlsx,调整购电量,CQ1,15:40-15:50,str
+result3.xlsx,调整购电量,CR1,15:50-16:00,str
+result3.xlsx,调整购电量,CS1,16:00-16:10,str
+result3.xlsx,调整购电量,CT1,16:10-16:20,str
+result3.xlsx,调整购电量,CU1,16:20-16:30,str
+result3.xlsx,调整购电量,CV1,16:30-16:40,str
+result3.xlsx,调整购电量,CW1,16:40-16:50,str
+result3.xlsx,调整购电量,CX1,16:50-17:00,str
+result3.xlsx,调整购电量,CY1,17:00-17:10,str
+result3.xlsx,调整购电量,CZ1,17:10-17:20,str
+result3.xlsx,调整购电量,DA1,17:20-17:30,str
+result3.xlsx,调整购电量,DB1,17:30-17:40,str
+result3.xlsx,调整购电量,DC1,17:40-17:50,str
+result3.xlsx,调整购电量,DD1,17:50-18:00,str
+result3.xlsx,调整购电量,DE1,18:00-18:10,str
+result3.xlsx,调整购电量,DF1,18:10-18:20,str
+result3.xlsx,调整购电量,DG1,18:20-18:30,str
+result3.xlsx,调整购电量,DH1,18:30-18:40,str
+result3.xlsx,调整购电量,DI1,18:40-18:50,str
+result3.xlsx,调整购电量,DJ1,18:50-19:00,str
+result3.xlsx,调整购电量,DK1,19:00-19:10,str
+result3.xlsx,调整购电量,DL1,19:10-19:20,str
+result3.xlsx,调整购电量,DM1,19:20-19:30,str
+result3.xlsx,调整购电量,DN1,19:30-19:40,str
+result3.xlsx,调整购电量,DO1,19:40-19:50,str
+result3.xlsx,调整购电量,DP1,19:50-20:00,str
+result3.xlsx,调整购电量,DQ1,20:00-20:10,str
+result3.xlsx,调整购电量,DR1,20:10-20:20,str
+result3.xlsx,调整购电量,DS1,20:20-20:30,str
+result3.xlsx,调整购电量,DT1,20:30-20:40,str
+result3.xlsx,调整购电量,DU1,20:40-20:50,str
+result3.xlsx,调整购电量,DV1,20:50-21:00,str
+result3.xlsx,调整购电量,DW1,21:00-21:10,str
+result3.xlsx,调整购电量,DX1,21:10-21:20,str
+result3.xlsx,调整购电量,DY1,21:20-21:30,str
+result3.xlsx,调整购电量,DZ1,21:30-21:40,str
+result3.xlsx,调整购电量,EA1,21:40-21:50,str
+result3.xlsx,调整购电量,EB1,21:50-22:00,str
+result3.xlsx,调整购电量,EC1,22:00-22:10,str
+result3.xlsx,调整购电量,ED1,22:10-22:20,str
+result3.xlsx,调整购电量,EE1,22:20-22:30,str
+result3.xlsx,调整购电量,EF1,22:30-22:40,str
+result3.xlsx,调整购电量,EG1,22:40-22:50,str
+result3.xlsx,调整购电量,EH1,22:50-23:00,str
+result3.xlsx,调整购电量,EI1,23:00-23:10,str
+result3.xlsx,调整购电量,EJ1,23:10-23:20,str
+result3.xlsx,调整购电量,EK1,23:20-23:30,str
+result3.xlsx,调整购电量,EL1,23:30-23:40,str
+result3.xlsx,调整购电量,EM1,23:40-23:50,str
+result3.xlsx,调整购电量,EN1,23:50-0:00+1,str
+result3.xlsx,调整购电量,EO1,0:00-0:10+1,str
+result3.xlsx,调整购电量,EP1,全天购电量,str
+result3.xlsx,调整购电量,EQ1,全天购电费,str
+result3.xlsx,调整购电量,A2,2025-02-01 00:00:00,datetime
+result3.xlsx,调整购电量,A3,2025-02-02 00:00:00,datetime
+result3.xlsx,调整购电量,A4,2025-02-03 00:00:00,datetime
+result3.xlsx,调整购电量,A5,2025-02-04 00:00:00,datetime
+result3.xlsx,调整购电量,A6,2025-02-05 00:00:00,datetime
+result3.xlsx,调整购电量,A7,2025-02-06 00:00:00,datetime
+result3.xlsx,调整购电量,A8,2025-02-07 00:00:00,datetime
+result3.xlsx,调整购电量,A9,2025-02-08 00:00:00,datetime
+result3.xlsx,调整购电量,A10,2025-02-09 00:00:00,datetime
+result3.xlsx,调整购电量,A11,2025-02-10 00:00:00,datetime
+result3.xlsx,调整购电量,A12,2025-02-11 00:00:00,datetime
+result3.xlsx,调整购电量,A13,2025-02-12 00:00:00,datetime
+result3.xlsx,调整购电量,A14,2025-02-13 00:00:00,datetime
+result3.xlsx,调整购电量,A15,2025-02-14 00:00:00,datetime
+result3.xlsx,调整购电量,A16,2025-02-15 00:00:00,datetime
+result3.xlsx,调整购电量,A17,2025-02-16 00:00:00,datetime
+result3.xlsx,调整购电量,A18,2025-02-17 00:00:00,datetime
+result3.xlsx,调整购电量,A19,2025-02-18 00:00:00,datetime
+result3.xlsx,调整购电量,A20,2025-02-19 00:00:00,datetime
+result3.xlsx,调整购电量,A21,2025-02-20 00:00:00,datetime
+result3.xlsx,调整购电量,A22,2025-02-21 00:00:00,datetime
+result3.xlsx,调整购电量,A23,2025-02-22 00:00:00,datetime
+result3.xlsx,调整购电量,A24,2025-02-23 00:00:00,datetime
+result3.xlsx,调整购电量,A25,2025-02-24 00:00:00,datetime
+result3.xlsx,调整购电量,A26,2025-02-25 00:00:00,datetime
+result3.xlsx,调整购电量,A27,2025-02-26 00:00:00,datetime
+result3.xlsx,调整购电量,A28,2025-02-27 00:00:00,datetime
+result3.xlsx,调整购电量,A29,2025-02-28 00:00:00,datetime
+result3.xlsx,调整购电量,A30,2025-03-01 00:00:00,datetime
+result3.xlsx,调整购电量,A31,2025-03-02 00:00:00,datetime
+result3.xlsx,调整购电量,A32,2025-03-03 00:00:00,datetime
+result3.xlsx,调整购电量,A33,2025-03-04 00:00:00,datetime
+result3.xlsx,调整购电量,A34,2025-03-05 00:00:00,datetime
+result3.xlsx,调整购电量,A35,2025-03-06 00:00:00,datetime
+result3.xlsx,调整购电量,A36,2025-03-07 00:00:00,datetime
+result3.xlsx,调整购电量,A37,2025-03-08 00:00:00,datetime
+result3.xlsx,调整购电量,A38,2025-03-09 00:00:00,datetime
+result3.xlsx,调整购电量,A39,2025-03-10 00:00:00,datetime
+result3.xlsx,调整购电量,A40,2025-03-11 00:00:00,datetime
+result3.xlsx,调整购电量,A41,2025-03-12 00:00:00,datetime
+result3.xlsx,调整购电量,A42,2025-03-13 00:00:00,datetime
+result3.xlsx,调整购电量,A43,2025-03-14 00:00:00,datetime
+result3.xlsx,调整购电量,A44,2025-03-15 00:00:00,datetime
+result3.xlsx,调整购电量,A45,2025-03-16 00:00:00,datetime
+result3.xlsx,调整购电量,A46,2025-03-17 00:00:00,datetime
+result3.xlsx,调整购电量,A47,2025-03-18 00:00:00,datetime
+result3.xlsx,调整购电量,A48,2025-03-19 00:00:00,datetime
+result3.xlsx,调整购电量,A49,2025-03-20 00:00:00,datetime
+result3.xlsx,调整购电量,A50,2025-03-21 00:00:00,datetime
+result3.xlsx,调整购电量,A51,2025-03-22 00:00:00,datetime
+result3.xlsx,调整购电量,A52,2025-03-23 00:00:00,datetime
+result3.xlsx,调整购电量,A53,2025-03-24 00:00:00,datetime
+result3.xlsx,调整购电量,A54,2025-03-25 00:00:00,datetime
+result3.xlsx,调整购电量,A55,2025-03-26 00:00:00,datetime
+result3.xlsx,调整购电量,A56,2025-03-27 00:00:00,datetime
+result3.xlsx,调整购电量,A57,2025-03-28 00:00:00,datetime
+result3.xlsx,调整购电量,A58,2025-03-29 00:00:00,datetime
+result3.xlsx,调整购电量,A59,2025-03-30 00:00:00,datetime
+result3.xlsx,调整购电量,A60,2025-03-31 00:00:00,datetime
+result3.xlsx,调整购电量,A61,2025-04-01 00:00:00,datetime
+result3.xlsx,调整购电量,A62,2025-04-02 00:00:00,datetime
+result3.xlsx,调整购电量,A63,2025-04-03 00:00:00,datetime
+result3.xlsx,调整购电量,A64,2025-04-04 00:00:00,datetime
+result3.xlsx,调整购电量,A65,2025-04-05 00:00:00,datetime
+result3.xlsx,调整购电量,A66,2025-04-06 00:00:00,datetime
+result3.xlsx,调整购电量,A67,2025-04-07 00:00:00,datetime
+result3.xlsx,调整购电量,A68,2025-04-08 00:00:00,datetime
+result3.xlsx,调整购电量,A69,2025-04-09 00:00:00,datetime
+result3.xlsx,调整购电量,A70,2025-04-10 00:00:00,datetime
+result3.xlsx,调整购电量,A71,2025-04-11 00:00:00,datetime
+result3.xlsx,调整购电量,A72,2025-04-12 00:00:00,datetime
+result3.xlsx,调整购电量,A73,2025-04-13 00:00:00,datetime
+result3.xlsx,调整购电量,A74,2025-04-14 00:00:00,datetime
+result3.xlsx,调整购电量,A75,2025-04-15 00:00:00,datetime
+result3.xlsx,调整购电量,A76,2025-04-16 00:00:00,datetime
+result3.xlsx,调整购电量,A77,2025-04-17 00:00:00,datetime
+result3.xlsx,调整购电量,A78,2025-04-18 00:00:00,datetime
+result3.xlsx,调整购电量,A79,2025-04-19 00:00:00,datetime
+result3.xlsx,调整购电量,A80,2025-04-20 00:00:00,datetime
+result3.xlsx,调整购电量,A81,2025-04-21 00:00:00,datetime
+result3.xlsx,调整购电量,A82,2025-04-22 00:00:00,datetime
+result3.xlsx,调整购电量,A83,2025-04-23 00:00:00,datetime
+result3.xlsx,调整购电量,A84,2025-04-24 00:00:00,datetime
+result3.xlsx,调整购电量,A85,2025-04-25 00:00:00,datetime
+result3.xlsx,调整购电量,A86,2025-04-26 00:00:00,datetime
+result3.xlsx,调整购电量,A87,2025-04-27 00:00:00,datetime
+result3.xlsx,调整购电量,A88,2025-04-28 00:00:00,datetime
+result3.xlsx,调整购电量,A89,2025-04-29 00:00:00,datetime
+result3.xlsx,调整购电量,A90,2025-04-30 00:00:00,datetime
+result3.xlsx,调整购电量,A91,2025-05-01 00:00:00,datetime
+result3.xlsx,调整购电量,A92,2025-05-02 00:00:00,datetime
+result3.xlsx,调整购电量,A93,2025-05-03 00:00:00,datetime
+result3.xlsx,调整购电量,A94,2025-05-04 00:00:00,datetime
+result3.xlsx,调整购电量,A95,2025-05-05 00:00:00,datetime
+result3.xlsx,调整购电量,A96,2025-05-06 00:00:00,datetime
+result3.xlsx,调整购电量,A97,2025-05-07 00:00:00,datetime
+result3.xlsx,调整购电量,A98,2025-05-08 00:00:00,datetime
+result3.xlsx,调整购电量,A99,2025-05-09 00:00:00,datetime
+result3.xlsx,调整购电量,A100,2025-05-10 00:00:00,datetime
+result3.xlsx,调整购电量,A101,2025-05-11 00:00:00,datetime
+result3.xlsx,调整购电量,A102,2025-05-12 00:00:00,datetime
+result3.xlsx,调整购电量,A103,2025-05-13 00:00:00,datetime
+result3.xlsx,调整购电量,A104,2025-05-14 00:00:00,datetime
+result3.xlsx,调整购电量,A105,2025-05-15 00:00:00,datetime
+result3.xlsx,调整购电量,A106,2025-05-16 00:00:00,datetime
+result3.xlsx,调整购电量,A107,2025-05-17 00:00:00,datetime
+result3.xlsx,调整购电量,A108,2025-05-18 00:00:00,datetime
+result3.xlsx,调整购电量,A109,2025-05-19 00:00:00,datetime
+result3.xlsx,调整购电量,A110,2025-05-20 00:00:00,datetime
+result3.xlsx,调整购电量,A111,2025-05-21 00:00:00,datetime
+result3.xlsx,调整购电量,A112,2025-05-22 00:00:00,datetime
+result3.xlsx,调整购电量,A113,2025-05-23 00:00:00,datetime
+result3.xlsx,调整购电量,A114,2025-05-24 00:00:00,datetime
+result3.xlsx,调整购电量,A115,2025-05-25 00:00:00,datetime
+result3.xlsx,调整购电量,A116,2025-05-26 00:00:00,datetime
+result3.xlsx,调整购电量,A117,2025-05-27 00:00:00,datetime
+result3.xlsx,调整购电量,A118,2025-05-28 00:00:00,datetime
+result3.xlsx,调整购电量,A119,2025-05-29 00:00:00,datetime
+result3.xlsx,调整购电量,A120,2025-05-30 00:00:00,datetime
+result3.xlsx,调整购电量,A121,2025-05-31 00:00:00,datetime
+result3.xlsx,调整购电量,A122,2025-06-01 00:00:00,datetime
+result3.xlsx,调整购电量,A123,2025-06-02 00:00:00,datetime
+result3.xlsx,调整购电量,A124,2025-06-03 00:00:00,datetime
+result3.xlsx,调整购电量,A125,2025-06-04 00:00:00,datetime
+result3.xlsx,调整购电量,A126,2025-06-05 00:00:00,datetime
+result3.xlsx,调整购电量,A127,2025-06-06 00:00:00,datetime
+result3.xlsx,调整购电量,A128,2025-06-07 00:00:00,datetime
+result3.xlsx,调整购电量,A129,2025-06-08 00:00:00,datetime
+result3.xlsx,调整购电量,A130,2025-06-09 00:00:00,datetime
+result3.xlsx,调整购电量,A131,2025-06-10 00:00:00,datetime
+result3.xlsx,调整购电量,A132,2025-06-11 00:00:00,datetime
+result3.xlsx,调整购电量,A133,2025-06-12 00:00:00,datetime
+result3.xlsx,调整购电量,A134,2025-06-13 00:00:00,datetime
+result3.xlsx,调整购电量,A135,2025-06-14 00:00:00,datetime
+result3.xlsx,调整购电量,A136,2025-06-15 00:00:00,datetime
+result3.xlsx,调整购电量,A137,2025-06-16 00:00:00,datetime
+result3.xlsx,调整购电量,A138,2025-06-17 00:00:00,datetime
+result3.xlsx,调整购电量,A139,2025-06-18 00:00:00,datetime
+result3.xlsx,调整购电量,A140,2025-06-19 00:00:00,datetime
+result3.xlsx,调整购电量,A141,2025-06-20 00:00:00,datetime
+result3.xlsx,调整购电量,A142,2025-06-21 00:00:00,datetime
+result3.xlsx,调整购电量,A143,2025-06-22 00:00:00,datetime
+result3.xlsx,调整购电量,A144,2025-06-23 00:00:00,datetime
+result3.xlsx,调整购电量,A145,2025-06-24 00:00:00,datetime
+result3.xlsx,调整购电量,A146,2025-06-25 00:00:00,datetime
+result3.xlsx,调整购电量,A147,2025-06-26 00:00:00,datetime
+result3.xlsx,调整购电量,A148,2025-06-27 00:00:00,datetime
+result3.xlsx,调整购电量,A149,2025-06-28 00:00:00,datetime
+result3.xlsx,调整购电量,A150,2025-06-29 00:00:00,datetime
+result3.xlsx,调整购电量,A151,2025-06-30 00:00:00,datetime
+result3.xlsx,调整购电量,A152,2025-07-01 00:00:00,datetime
+result3.xlsx,调整购电量,A153,2025-07-02 00:00:00,datetime
+result3.xlsx,调整购电量,A154,2025-07-03 00:00:00,datetime
+result3.xlsx,调整购电量,A155,2025-07-04 00:00:00,datetime
+result3.xlsx,调整购电量,A156,2025-07-05 00:00:00,datetime
+result3.xlsx,调整购电量,A157,2025-07-06 00:00:00,datetime
+result3.xlsx,调整购电量,A158,2025-07-07 00:00:00,datetime
+result3.xlsx,调整购电量,A159,2025-07-08 00:00:00,datetime
+result3.xlsx,调整购电量,A160,2025-07-09 00:00:00,datetime
+result3.xlsx,调整购电量,A161,2025-07-10 00:00:00,datetime
+result3.xlsx,调整购电量,A162,2025-07-11 00:00:00,datetime
+result3.xlsx,调整购电量,A163,2025-07-12 00:00:00,datetime
+result3.xlsx,调整购电量,A164,2025-07-13 00:00:00,datetime
+result3.xlsx,调整购电量,A165,2025-07-14 00:00:00,datetime
+result3.xlsx,调整购电量,A166,2025-07-15 00:00:00,datetime
+result3.xlsx,调整购电量,A167,2025-07-16 00:00:00,datetime
+result3.xlsx,调整购电量,A168,2025-07-17 00:00:00,datetime
+result3.xlsx,调整购电量,A169,2025-07-18 00:00:00,datetime
+result3.xlsx,调整购电量,A170,2025-07-19 00:00:00,datetime
+result3.xlsx,调整购电量,A171,2025-07-20 00:00:00,datetime
+result3.xlsx,调整购电量,A172,2025-07-21 00:00:00,datetime
+result3.xlsx,调整购电量,A173,2025-07-22 00:00:00,datetime
+result3.xlsx,调整购电量,A174,2025-07-23 00:00:00,datetime
+result3.xlsx,调整购电量,A175,2025-07-24 00:00:00,datetime
+result3.xlsx,调整购电量,A176,2025-07-25 00:00:00,datetime
+result3.xlsx,调整购电量,A177,2025-07-26 00:00:00,datetime
+result3.xlsx,调整购电量,A178,2025-07-27 00:00:00,datetime
+result3.xlsx,调整购电量,A179,2025-07-28 00:00:00,datetime
+result3.xlsx,调整购电量,A180,2025-07-29 00:00:00,datetime
+result3.xlsx,调整购电量,A181,2025-07-30 00:00:00,datetime
+result3.xlsx,调整购电量,A182,2025-07-31 00:00:00,datetime
+result3.xlsx,调整购电量,A183,2025-08-01 00:00:00,datetime
+result3.xlsx,调整购电量,A184,2025-08-02 00:00:00,datetime
+result3.xlsx,调整购电量,A185,2025-08-03 00:00:00,datetime
+result3.xlsx,调整购电量,A186,2025-08-04 00:00:00,datetime
+result3.xlsx,调整购电量,A187,2025-08-05 00:00:00,datetime
+result3.xlsx,调整购电量,A188,2025-08-06 00:00:00,datetime
+result3.xlsx,调整购电量,A189,2025-08-07 00:00:00,datetime
+result3.xlsx,调整购电量,A190,2025-08-08 00:00:00,datetime
+result3.xlsx,调整购电量,A191,2025-08-09 00:00:00,datetime
+result3.xlsx,调整购电量,A192,2025-08-10 00:00:00,datetime
+result3.xlsx,调整购电量,A193,2025-08-11 00:00:00,datetime
+result3.xlsx,调整购电量,A194,2025-08-12 00:00:00,datetime
+result3.xlsx,调整购电量,A195,2025-08-13 00:00:00,datetime
+result3.xlsx,调整购电量,A196,2025-08-14 00:00:00,datetime
+result3.xlsx,调整购电量,A197,2025-08-15 00:00:00,datetime
+result3.xlsx,调整购电量,A198,2025-08-16 00:00:00,datetime
+result3.xlsx,调整购电量,A199,2025-08-17 00:00:00,datetime
+result3.xlsx,调整购电量,A200,2025-08-18 00:00:00,datetime
+result3.xlsx,调整购电量,A201,2025-08-19 00:00:00,datetime
+result3.xlsx,调整购电量,A202,2025-08-20 00:00:00,datetime
+result3.xlsx,调整购电量,A203,2025-08-21 00:00:00,datetime
+result3.xlsx,调整购电量,A204,2025-08-22 00:00:00,datetime
+result3.xlsx,调整购电量,A205,2025-08-23 00:00:00,datetime
+result3.xlsx,调整购电量,A206,2025-08-24 00:00:00,datetime
+result3.xlsx,调整购电量,A207,2025-08-25 00:00:00,datetime
+result3.xlsx,调整购电量,A208,2025-08-26 00:00:00,datetime
+result3.xlsx,调整购电量,A209,2025-08-27 00:00:00,datetime
+result3.xlsx,调整购电量,A210,2025-08-28 00:00:00,datetime
+result3.xlsx,调整购电量,A211,2025-08-29 00:00:00,datetime
+result3.xlsx,调整购电量,A212,2025-08-30 00:00:00,datetime
+result3.xlsx,调整购电量,A213,2025-08-31 00:00:00,datetime
+result3.xlsx,调整购电量,A214,2025-09-01 00:00:00,datetime
+result3.xlsx,调整购电量,A215,2025-09-02 00:00:00,datetime
+result3.xlsx,调整购电量,A216,2025-09-03 00:00:00,datetime
+result3.xlsx,调整购电量,A217,2025-09-04 00:00:00,datetime
+result3.xlsx,调整购电量,A218,2025-09-05 00:00:00,datetime
+result3.xlsx,调整购电量,A219,2025-09-06 00:00:00,datetime
+result3.xlsx,调整购电量,A220,2025-09-07 00:00:00,datetime
+result3.xlsx,调整购电量,A221,2025-09-08 00:00:00,datetime
+result3.xlsx,调整购电量,A222,2025-09-09 00:00:00,datetime
+result3.xlsx,调整购电量,A223,2025-09-10 00:00:00,datetime
+result3.xlsx,调整购电量,A224,2025-09-11 00:00:00,datetime
+result3.xlsx,调整购电量,A225,2025-09-12 00:00:00,datetime
+result3.xlsx,调整购电量,A226,2025-09-13 00:00:00,datetime
+result3.xlsx,调整购电量,A227,2025-09-14 00:00:00,datetime
+result3.xlsx,调整购电量,A228,2025-09-15 00:00:00,datetime
+result3.xlsx,调整购电量,A229,2025-09-16 00:00:00,datetime
+result3.xlsx,调整购电量,A230,2025-09-17 00:00:00,datetime
+result3.xlsx,调整购电量,A231,2025-09-18 00:00:00,datetime
+result3.xlsx,调整购电量,A232,2025-09-19 00:00:00,datetime
+result3.xlsx,调整购电量,A233,2025-09-20 00:00:00,datetime
+result3.xlsx,调整购电量,A234,2025-09-21 00:00:00,datetime
+result3.xlsx,调整购电量,A235,2025-09-22 00:00:00,datetime
+result3.xlsx,调整购电量,A236,2025-09-23 00:00:00,datetime
+result3.xlsx,调整购电量,A237,2025-09-24 00:00:00,datetime
+result3.xlsx,调整购电量,A238,2025-09-25 00:00:00,datetime
+result3.xlsx,调整购电量,A239,2025-09-26 00:00:00,datetime
+result3.xlsx,调整购电量,A240,2025-09-27 00:00:00,datetime
+result3.xlsx,调整购电量,A241,2025-09-28 00:00:00,datetime
+result3.xlsx,调整购电量,A242,2025-09-29 00:00:00,datetime
+result3.xlsx,调整购电量,A243,2025-09-30 00:00:00,datetime
+result3.xlsx,调整购电量,A244,2025-10-01 00:00:00,datetime
+result3.xlsx,调整购电量,A245,2025-10-02 00:00:00,datetime
+result3.xlsx,调整购电量,A246,2025-10-03 00:00:00,datetime
+result3.xlsx,调整购电量,A247,2025-10-04 00:00:00,datetime
+result3.xlsx,调整购电量,A248,2025-10-05 00:00:00,datetime
+result3.xlsx,调整购电量,A249,2025-10-06 00:00:00,datetime
+result3.xlsx,调整购电量,A250,2025-10-07 00:00:00,datetime
+result3.xlsx,调整购电量,A251,2025-10-08 00:00:00,datetime
+result3.xlsx,调整购电量,A252,2025-10-09 00:00:00,datetime
+result3.xlsx,调整购电量,A253,2025-10-10 00:00:00,datetime
+result3.xlsx,调整购电量,A254,2025-10-11 00:00:00,datetime
+result3.xlsx,调整购电量,A255,2025-10-12 00:00:00,datetime
+result3.xlsx,调整购电量,A256,2025-10-13 00:00:00,datetime
+result3.xlsx,调整购电量,A257,2025-10-14 00:00:00,datetime
+result3.xlsx,调整购电量,A258,2025-10-15 00:00:00,datetime
+result3.xlsx,调整购电量,A259,2025-10-16 00:00:00,datetime
+result3.xlsx,调整购电量,A260,2025-10-17 00:00:00,datetime
+result3.xlsx,调整购电量,A261,2025-10-18 00:00:00,datetime
+result3.xlsx,调整购电量,A262,2025-10-19 00:00:00,datetime
+result3.xlsx,调整购电量,A263,2025-10-20 00:00:00,datetime
+result3.xlsx,调整购电量,A264,2025-10-21 00:00:00,datetime
+result3.xlsx,调整购电量,A265,2025-10-22 00:00:00,datetime
+result3.xlsx,调整购电量,A266,2025-10-23 00:00:00,datetime
+result3.xlsx,调整购电量,A267,2025-10-24 00:00:00,datetime
+result3.xlsx,调整购电量,A268,2025-10-25 00:00:00,datetime
+result3.xlsx,调整购电量,A269,2025-10-26 00:00:00,datetime
+result3.xlsx,调整购电量,A270,2025-10-27 00:00:00,datetime
+result3.xlsx,调整购电量,A271,2025-10-28 00:00:00,datetime
+result3.xlsx,调整购电量,A272,2025-10-29 00:00:00,datetime
+result3.xlsx,调整购电量,A273,2025-10-30 00:00:00,datetime
+result3.xlsx,调整购电量,A274,2025-10-31 00:00:00,datetime
+result3.xlsx,调整购电量,A275,2025-11-01 00:00:00,datetime
+result3.xlsx,调整购电量,A276,2025-11-02 00:00:00,datetime
+result3.xlsx,调整购电量,A277,2025-11-03 00:00:00,datetime
+result3.xlsx,调整购电量,A278,2025-11-04 00:00:00,datetime
+result3.xlsx,调整购电量,A279,2025-11-05 00:00:00,datetime
+result3.xlsx,调整购电量,A280,2025-11-06 00:00:00,datetime
+result3.xlsx,调整购电量,A281,2025-11-07 00:00:00,datetime
+result3.xlsx,调整购电量,A282,2025-11-08 00:00:00,datetime
+result3.xlsx,调整购电量,A283,2025-11-09 00:00:00,datetime
+result3.xlsx,调整购电量,A284,2025-11-10 00:00:00,datetime
+result3.xlsx,调整购电量,A285,2025-11-11 00:00:00,datetime
+result3.xlsx,调整购电量,A286,2025-11-12 00:00:00,datetime
+result3.xlsx,调整购电量,A287,2025-11-13 00:00:00,datetime
+result3.xlsx,调整购电量,A288,2025-11-14 00:00:00,datetime
+result3.xlsx,调整购电量,A289,2025-11-15 00:00:00,datetime
+result3.xlsx,调整购电量,A290,2025-11-16 00:00:00,datetime
+result3.xlsx,调整购电量,A291,2025-11-17 00:00:00,datetime
+result3.xlsx,调整购电量,A292,2025-11-18 00:00:00,datetime
+result3.xlsx,调整购电量,A293,2025-11-19 00:00:00,datetime
+result3.xlsx,调整购电量,A294,2025-11-20 00:00:00,datetime
+result3.xlsx,调整购电量,A295,2025-11-21 00:00:00,datetime
+result3.xlsx,调整购电量,A296,2025-11-22 00:00:00,datetime
+result3.xlsx,调整购电量,A297,2025-11-23 00:00:00,datetime
+result3.xlsx,调整购电量,A298,2025-11-24 00:00:00,datetime
+result3.xlsx,调整购电量,A299,2025-11-25 00:00:00,datetime
+result3.xlsx,调整购电量,A300,2025-11-26 00:00:00,datetime
+result3.xlsx,调整购电量,A301,2025-11-27 00:00:00,datetime
+result3.xlsx,调整购电量,A302,2025-11-28 00:00:00,datetime
+result3.xlsx,调整购电量,A303,2025-11-29 00:00:00,datetime
+result3.xlsx,调整购电量,A304,2025-11-30 00:00:00,datetime
+result3.xlsx,调整购电量,A305,2025-12-01 00:00:00,datetime
+result3.xlsx,调整购电量,A306,2025-12-02 00:00:00,datetime
+result3.xlsx,调整购电量,A307,2025-12-03 00:00:00,datetime
+result3.xlsx,调整购电量,A308,2025-12-04 00:00:00,datetime
+result3.xlsx,调整购电量,A309,2025-12-05 00:00:00,datetime
+result3.xlsx,调整购电量,A310,2025-12-06 00:00:00,datetime
+result3.xlsx,调整购电量,A311,2025-12-07 00:00:00,datetime
+result3.xlsx,调整购电量,A312,2025-12-08 00:00:00,datetime
+result3.xlsx,调整购电量,A313,2025-12-09 00:00:00,datetime
+result3.xlsx,调整购电量,A314,2025-12-10 00:00:00,datetime
+result3.xlsx,调整购电量,A315,2025-12-11 00:00:00,datetime
+result3.xlsx,调整购电量,A316,2025-12-12 00:00:00,datetime
+result3.xlsx,调整购电量,A317,2025-12-13 00:00:00,datetime
+result3.xlsx,调整购电量,A318,2025-12-14 00:00:00,datetime
+result3.xlsx,调整购电量,A319,2025-12-15 00:00:00,datetime
+result3.xlsx,调整购电量,A320,2025-12-16 00:00:00,datetime
+result3.xlsx,调整购电量,A321,2025-12-17 00:00:00,datetime
+result3.xlsx,调整购电量,A322,2025-12-18 00:00:00,datetime
+result3.xlsx,调整购电量,A323,2025-12-19 00:00:00,datetime
+result3.xlsx,调整购电量,A324,2025-12-20 00:00:00,datetime
+result3.xlsx,调整购电量,A325,2025-12-21 00:00:00,datetime
+result3.xlsx,调整购电量,A326,2025-12-22 00:00:00,datetime
+result3.xlsx,调整购电量,A327,2025-12-23 00:00:00,datetime
+result3.xlsx,调整购电量,A328,2025-12-24 00:00:00,datetime
+result3.xlsx,调整购电量,A329,2025-12-25 00:00:00,datetime
+result3.xlsx,调整购电量,A330,2025-12-26 00:00:00,datetime
+result3.xlsx,调整购电量,A331,2025-12-27 00:00:00,datetime
+result3.xlsx,调整购电量,A332,2025-12-28 00:00:00,datetime
+result3.xlsx,调整购电量,A333,2025-12-29 00:00:00,datetime
+result3.xlsx,调整购电量,A334,2025-12-30 00:00:00,datetime
+result3.xlsx,调整购电量,A335,2025-12-31 00:00:00,datetime
+result3.xlsx,充放电量,A1,日期,str
+result3.xlsx,充放电量,B1,时间段,str
+result3.xlsx,充放电量,C1,充电量,str
+result3.xlsx,充放电量,D1,放电量,str
+result3.xlsx,充放电量,E1,时刻,str
+result3.xlsx,充放电量,F1,储电量,str
+result3.xlsx,充放电量,A2,2025-02-01 00:00:00,datetime
+result3.xlsx,充放电量,B2,0:00-4:00,str
+result3.xlsx,充放电量,E2,00:00:00,time
+result3.xlsx,充放电量,B3,4:00-8:00,str
+result3.xlsx,充放电量,E3,24:00,str
+result3.xlsx,充放电量,B4,8:00-12:00,str
+result3.xlsx,充放电量,B5,12:00-16:00,str
+result3.xlsx,充放电量,B6,16:00-20:00,str
+result3.xlsx,充放电量,B7,20:00-24:00,str
+result3.xlsx,充放电量,A8,2025-02-02 00:00:00,datetime
+result3.xlsx,充放电量,B8,0:00-4:00,str
+result3.xlsx,充放电量,E8,00:00:00,time
+result3.xlsx,充放电量,B9,4:00-8:00,str
+result3.xlsx,充放电量,E9,24:00,str
+result3.xlsx,充放电量,B10,8:00-12:00,str
+result3.xlsx,充放电量,B11,12:00-16:00,str
+result3.xlsx,充放电量,B12,16:00-20:00,str
+result3.xlsx,充放电量,B13,20:00-24:00,str
+result3.xlsx,充放电量,A14,2025-03-20 00:00:00,datetime
+result3.xlsx,充放电量,B14,0:00-4:00,str
+result3.xlsx,充放电量,E14,00:00:00,time
+result3.xlsx,充放电量,B15,4:00-8:00,str
+result3.xlsx,充放电量,E15,24:00,str
+result3.xlsx,充放电量,B16,8:00-12:00,str
+result3.xlsx,充放电量,B17,12:00-16:00,str
+result3.xlsx,充放电量,B18,16:00-20:00,str
+result3.xlsx,充放电量,B19,20:00-24:00,str
+result3.xlsx,充放电量,A20,⁝,str
+result3.xlsx,充放电量,B20,⁝,str
+result3.xlsx,充放电量,C20,⁝,str
+result3.xlsx,充放电量,D20,⁝,str
+result3.xlsx,充放电量,E20,⁝,str
+result3.xlsx,充放电量,F20,⁝,str
+result3.xlsx,充放电量,A21,2025-12-31 00:00:00,datetime
+result3.xlsx,充放电量,B21,0:00-4:00,str
+result3.xlsx,充放电量,E21,00:00:00,time
+result3.xlsx,充放电量,B22,4:00-8:00,str
+result3.xlsx,充放电量,E22,24:00,str
+result3.xlsx,充放电量,B23,8:00-12:00,str
+result3.xlsx,充放电量,B24,12:00-16:00,str
+result3.xlsx,充放电量,B25,16:00-20:00,str
+result3.xlsx,充放电量,B26,20:00-24:00,str
+result3.xlsx,紧急购电量,A1,日期,str
+result3.xlsx,紧急购电量,B1,购电时间段,str
+result3.xlsx,紧急购电量,C1,购电量,str
+result3.xlsx,紧急购电量,A2,2025-02-01 00:00:00,datetime
+result3.xlsx,紧急购电量,A5,2025-02-02 00:00:00,datetime
+result3.xlsx,紧急购电量,A8,⁝,str
+result3.xlsx,紧急购电量,B8,⁝,str
+result3.xlsx,紧急购电量,C8,⁝,str
+result3.xlsx,紧急购电量,A9,2025-12-31 00:00:00,datetime
+result4-2.xlsx,计划购电量,A1,日期\时间,str
+result4-2.xlsx,计划购电量,B1,0:10-0:20,str
+result4-2.xlsx,计划购电量,C1,0:20-0:30,str
+result4-2.xlsx,计划购电量,D1,0:30-0:40,str
+result4-2.xlsx,计划购电量,E1,0:40-0:50,str
+result4-2.xlsx,计划购电量,F1,0:50-1:00,str
+result4-2.xlsx,计划购电量,G1,1:00-1:10,str
+result4-2.xlsx,计划购电量,H1,1:10-1:20,str
+result4-2.xlsx,计划购电量,I1,1:20-1:30,str
+result4-2.xlsx,计划购电量,J1,1:30-1:40,str
+result4-2.xlsx,计划购电量,K1,1:40-1:50,str
+result4-2.xlsx,计划购电量,L1,1:50-2:00,str
+result4-2.xlsx,计划购电量,M1,2:00-2:10,str
+result4-2.xlsx,计划购电量,N1,2:10-2:20,str
+result4-2.xlsx,计划购电量,O1,2:20-2:30,str
+result4-2.xlsx,计划购电量,P1,2:30-2:40,str
+result4-2.xlsx,计划购电量,Q1,2:40-2:50,str
+result4-2.xlsx,计划购电量,R1,2:50-3:00,str
+result4-2.xlsx,计划购电量,S1,3:00-3:10,str
+result4-2.xlsx,计划购电量,T1,3:10-3:20,str
+result4-2.xlsx,计划购电量,U1,3:20-3:30,str
+result4-2.xlsx,计划购电量,V1,3:30-3:40,str
+result4-2.xlsx,计划购电量,W1,3:40-3:50,str
+result4-2.xlsx,计划购电量,X1,3:50-4:00,str
+result4-2.xlsx,计划购电量,Y1,4:00-4:10,str
+result4-2.xlsx,计划购电量,Z1,4:10-4:20,str
+result4-2.xlsx,计划购电量,AA1,4:20-4:30,str
+result4-2.xlsx,计划购电量,AB1,4:30-4:40,str
+result4-2.xlsx,计划购电量,AC1,4:40-4:50,str
+result4-2.xlsx,计划购电量,AD1,4:50-5:00,str
+result4-2.xlsx,计划购电量,AE1,5:00-5:10,str
+result4-2.xlsx,计划购电量,AF1,5:10-5:20,str
+result4-2.xlsx,计划购电量,AG1,5:20-5:30,str
+result4-2.xlsx,计划购电量,AH1,5:30-5:40,str
+result4-2.xlsx,计划购电量,AI1,5:40-5:50,str
+result4-2.xlsx,计划购电量,AJ1,5:50-6:00,str
+result4-2.xlsx,计划购电量,AK1,6:00-6:10,str
+result4-2.xlsx,计划购电量,AL1,6:10-6:20,str
+result4-2.xlsx,计划购电量,AM1,6:20-6:30,str
+result4-2.xlsx,计划购电量,AN1,6:30-6:40,str
+result4-2.xlsx,计划购电量,AO1,6:40-6:50,str
+result4-2.xlsx,计划购电量,AP1,6:50-7:00,str
+result4-2.xlsx,计划购电量,AQ1,7:0-7:10,str
+result4-2.xlsx,计划购电量,AR1,7:10-7:20,str
+result4-2.xlsx,计划购电量,AS1,7:20-7:30,str
+result4-2.xlsx,计划购电量,AT1,7:30-7:40,str
+result4-2.xlsx,计划购电量,AU1,7:40-7:50,str
+result4-2.xlsx,计划购电量,AV1,7:50-8:00,str
+result4-2.xlsx,计划购电量,AW1,8:00-8:10,str
+result4-2.xlsx,计划购电量,AX1,8:10-8:20,str
+result4-2.xlsx,计划购电量,AY1,8:20-8:30,str
+result4-2.xlsx,计划购电量,AZ1,8:30-8:40,str
+result4-2.xlsx,计划购电量,BA1,8:40-8:50,str
+result4-2.xlsx,计划购电量,BB1,8:50-9:00,str
+result4-2.xlsx,计划购电量,BC1,9:00-9:10,str
+result4-2.xlsx,计划购电量,BD1,9:10-9:20,str
+result4-2.xlsx,计划购电量,BE1,9:20-9:30,str
+result4-2.xlsx,计划购电量,BF1,9:30-9:40,str
+result4-2.xlsx,计划购电量,BG1,9:40-9:50,str
+result4-2.xlsx,计划购电量,BH1,9:50-10:00,str
+result4-2.xlsx,计划购电量,BI1,10:00-10:10,str
+result4-2.xlsx,计划购电量,BJ1,10:10-10:20,str
+result4-2.xlsx,计划购电量,BK1,10:20-10:30,str
+result4-2.xlsx,计划购电量,BL1,10:30-10:40,str
+result4-2.xlsx,计划购电量,BM1,10:40-10:50,str
+result4-2.xlsx,计划购电量,BN1,10:50-11:00,str
+result4-2.xlsx,计划购电量,BO1,11:00-11:10,str
+result4-2.xlsx,计划购电量,BP1,11:10-11:20,str
+result4-2.xlsx,计划购电量,BQ1,11:20-11:30,str
+result4-2.xlsx,计划购电量,BR1,11:30-11:40,str
+result4-2.xlsx,计划购电量,BS1,11:40-11:50,str
+result4-2.xlsx,计划购电量,BT1,11:50-12:00,str
+result4-2.xlsx,计划购电量,BU1,12:00-12:10,str
+result4-2.xlsx,计划购电量,BV1,12:10-12:20,str
+result4-2.xlsx,计划购电量,BW1,12:20-12:30,str
+result4-2.xlsx,计划购电量,BX1,12:30-12:40,str
+result4-2.xlsx,计划购电量,BY1,12:40-12:50,str
+result4-2.xlsx,计划购电量,BZ1,12:50-13:00,str
+result4-2.xlsx,计划购电量,CA1,13:00-13:10,str
+result4-2.xlsx,计划购电量,CB1,13:10-13:20,str
+result4-2.xlsx,计划购电量,CC1,13:20-13:30,str
+result4-2.xlsx,计划购电量,CD1,13:30-13:40,str
+result4-2.xlsx,计划购电量,CE1,13:40-13:50,str
+result4-2.xlsx,计划购电量,CF1,13:50-14:00,str
+result4-2.xlsx,计划购电量,CG1,14:00-14:10,str
+result4-2.xlsx,计划购电量,CH1,14:10-14:20,str
+result4-2.xlsx,计划购电量,CI1,14:20-14:30,str
+result4-2.xlsx,计划购电量,CJ1,14:30-14:40,str
+result4-2.xlsx,计划购电量,CK1,14:40-14:50,str
+result4-2.xlsx,计划购电量,CL1,14:50-15:00,str
+result4-2.xlsx,计划购电量,CM1,15:00-15:10,str
+result4-2.xlsx,计划购电量,CN1,15:10-15:20,str
+result4-2.xlsx,计划购电量,CO1,15:20-15:30,str
+result4-2.xlsx,计划购电量,CP1,15:30-15:40,str
+result4-2.xlsx,计划购电量,CQ1,15:40-15:50,str
+result4-2.xlsx,计划购电量,CR1,15:50-16:00,str
+result4-2.xlsx,计划购电量,CS1,16:00-16:10,str
+result4-2.xlsx,计划购电量,CT1,16:10-16:20,str
+result4-2.xlsx,计划购电量,CU1,16:20-16:30,str
+result4-2.xlsx,计划购电量,CV1,16:30-16:40,str
+result4-2.xlsx,计划购电量,CW1,16:40-16:50,str
+result4-2.xlsx,计划购电量,CX1,16:50-17:00,str
+result4-2.xlsx,计划购电量,CY1,17:00-17:10,str
+result4-2.xlsx,计划购电量,CZ1,17:10-17:20,str
+result4-2.xlsx,计划购电量,DA1,17:20-17:30,str
+result4-2.xlsx,计划购电量,DB1,17:30-17:40,str
+result4-2.xlsx,计划购电量,DC1,17:40-17:50,str
+result4-2.xlsx,计划购电量,DD1,17:50-18:00,str
+result4-2.xlsx,计划购电量,DE1,18:00-18:10,str
+result4-2.xlsx,计划购电量,DF1,18:10-18:20,str
+result4-2.xlsx,计划购电量,DG1,18:20-18:30,str
+result4-2.xlsx,计划购电量,DH1,18:30-18:40,str
+result4-2.xlsx,计划购电量,DI1,18:40-18:50,str
+result4-2.xlsx,计划购电量,DJ1,18:50-19:00,str
+result4-2.xlsx,计划购电量,DK1,19:00-19:10,str
+result4-2.xlsx,计划购电量,DL1,19:10-19:20,str
+result4-2.xlsx,计划购电量,DM1,19:20-19:30,str
+result4-2.xlsx,计划购电量,DN1,19:30-19:40,str
+result4-2.xlsx,计划购电量,DO1,19:40-19:50,str
+result4-2.xlsx,计划购电量,DP1,19:50-20:00,str
+result4-2.xlsx,计划购电量,DQ1,20:00-20:10,str
+result4-2.xlsx,计划购电量,DR1,20:10-20:20,str
+result4-2.xlsx,计划购电量,DS1,20:20-20:30,str
+result4-2.xlsx,计划购电量,DT1,20:30-20:40,str
+result4-2.xlsx,计划购电量,DU1,20:40-20:50,str
+result4-2.xlsx,计划购电量,DV1,20:50-21:00,str
+result4-2.xlsx,计划购电量,DW1,21:00-21:10,str
+result4-2.xlsx,计划购电量,DX1,21:10-21:20,str
+result4-2.xlsx,计划购电量,DY1,21:20-21:30,str
+result4-2.xlsx,计划购电量,DZ1,21:30-21:40,str
+result4-2.xlsx,计划购电量,EA1,21:40-21:50,str
+result4-2.xlsx,计划购电量,EB1,21:50-22:00,str
+result4-2.xlsx,计划购电量,EC1,22:00-22:10,str
+result4-2.xlsx,计划购电量,ED1,22:10-22:20,str
+result4-2.xlsx,计划购电量,EE1,22:20-22:30,str
+result4-2.xlsx,计划购电量,EF1,22:30-22:40,str
+result4-2.xlsx,计划购电量,EG1,22:40-22:50,str
+result4-2.xlsx,计划购电量,EH1,22:50-23:00,str
+result4-2.xlsx,计划购电量,EI1,23:00-23:10,str
+result4-2.xlsx,计划购电量,EJ1,23:10-23:20,str
+result4-2.xlsx,计划购电量,EK1,23:20-23:30,str
+result4-2.xlsx,计划购电量,EL1,23:30-23:40,str
+result4-2.xlsx,计划购电量,EM1,23:40-23:50,str
+result4-2.xlsx,计划购电量,EN1,23:50-0:00+1,str
+result4-2.xlsx,计划购电量,EO1,0:00-0:10+1,str
+result4-2.xlsx,计划购电量,EP1,全天购电量,str
+result4-2.xlsx,计划购电量,EQ1,全天购电费,str
+result4-2.xlsx,计划购电量,A2,2025-02-01 00:00:00,datetime
+result4-2.xlsx,计划购电量,A3,2025-02-02 00:00:00,datetime
+result4-2.xlsx,计划购电量,A4,2025-02-03 00:00:00,datetime
+result4-2.xlsx,计划购电量,A5,2025-02-04 00:00:00,datetime
+result4-2.xlsx,计划购电量,A6,2025-02-05 00:00:00,datetime
+result4-2.xlsx,计划购电量,A7,2025-02-06 00:00:00,datetime
+result4-2.xlsx,计划购电量,A8,2025-02-07 00:00:00,datetime
+result4-2.xlsx,计划购电量,A9,2025-02-08 00:00:00,datetime
+result4-2.xlsx,计划购电量,A10,2025-02-09 00:00:00,datetime
+result4-2.xlsx,计划购电量,A11,2025-02-10 00:00:00,datetime
+result4-2.xlsx,计划购电量,A12,2025-02-11 00:00:00,datetime
+result4-2.xlsx,计划购电量,A13,2025-02-12 00:00:00,datetime
+result4-2.xlsx,计划购电量,A14,2025-02-13 00:00:00,datetime
+result4-2.xlsx,计划购电量,A15,2025-02-14 00:00:00,datetime
+result4-2.xlsx,计划购电量,A16,2025-02-15 00:00:00,datetime
+result4-2.xlsx,计划购电量,A17,2025-02-16 00:00:00,datetime
+result4-2.xlsx,计划购电量,A18,2025-02-17 00:00:00,datetime
+result4-2.xlsx,计划购电量,A19,2025-02-18 00:00:00,datetime
+result4-2.xlsx,计划购电量,A20,2025-02-19 00:00:00,datetime
+result4-2.xlsx,计划购电量,A21,2025-02-20 00:00:00,datetime
+result4-2.xlsx,计划购电量,A22,2025-02-21 00:00:00,datetime
+result4-2.xlsx,计划购电量,A23,2025-02-22 00:00:00,datetime
+result4-2.xlsx,计划购电量,A24,2025-02-23 00:00:00,datetime
+result4-2.xlsx,计划购电量,A25,2025-02-24 00:00:00,datetime
+result4-2.xlsx,计划购电量,A26,2025-02-25 00:00:00,datetime
+result4-2.xlsx,计划购电量,A27,2025-02-26 00:00:00,datetime
+result4-2.xlsx,计划购电量,A28,2025-02-27 00:00:00,datetime
+result4-2.xlsx,计划购电量,A29,2025-02-28 00:00:00,datetime
+result4-2.xlsx,计划购电量,A30,2025-03-01 00:00:00,datetime
+result4-2.xlsx,计划购电量,A31,2025-03-02 00:00:00,datetime
+result4-2.xlsx,计划购电量,A32,2025-03-03 00:00:00,datetime
+result4-2.xlsx,计划购电量,A33,2025-03-04 00:00:00,datetime
+result4-2.xlsx,计划购电量,A34,2025-03-05 00:00:00,datetime
+result4-2.xlsx,计划购电量,A35,2025-03-06 00:00:00,datetime
+result4-2.xlsx,计划购电量,A36,2025-03-07 00:00:00,datetime
+result4-2.xlsx,计划购电量,A37,2025-03-08 00:00:00,datetime
+result4-2.xlsx,计划购电量,A38,2025-03-09 00:00:00,datetime
+result4-2.xlsx,计划购电量,A39,2025-03-10 00:00:00,datetime
+result4-2.xlsx,计划购电量,A40,2025-03-11 00:00:00,datetime
+result4-2.xlsx,计划购电量,A41,2025-03-12 00:00:00,datetime
+result4-2.xlsx,计划购电量,A42,2025-03-13 00:00:00,datetime
+result4-2.xlsx,计划购电量,A43,2025-03-14 00:00:00,datetime
+result4-2.xlsx,计划购电量,A44,2025-03-15 00:00:00,datetime
+result4-2.xlsx,计划购电量,A45,2025-03-16 00:00:00,datetime
+result4-2.xlsx,计划购电量,A46,2025-03-17 00:00:00,datetime
+result4-2.xlsx,计划购电量,A47,2025-03-18 00:00:00,datetime
+result4-2.xlsx,计划购电量,A48,2025-03-19 00:00:00,datetime
+result4-2.xlsx,计划购电量,A49,2025-03-20 00:00:00,datetime
+result4-2.xlsx,计划购电量,A50,2025-03-21 00:00:00,datetime
+result4-2.xlsx,计划购电量,A51,2025-03-22 00:00:00,datetime
+result4-2.xlsx,计划购电量,A52,2025-03-23 00:00:00,datetime
+result4-2.xlsx,计划购电量,A53,2025-03-24 00:00:00,datetime
+result4-2.xlsx,计划购电量,A54,2025-03-25 00:00:00,datetime
+result4-2.xlsx,计划购电量,A55,2025-03-26 00:00:00,datetime
+result4-2.xlsx,计划购电量,A56,2025-03-27 00:00:00,datetime
+result4-2.xlsx,计划购电量,A57,2025-03-28 00:00:00,datetime
+result4-2.xlsx,计划购电量,A58,2025-03-29 00:00:00,datetime
+result4-2.xlsx,计划购电量,A59,2025-03-30 00:00:00,datetime
+result4-2.xlsx,计划购电量,A60,2025-03-31 00:00:00,datetime
+result4-2.xlsx,计划购电量,A61,2025-04-01 00:00:00,datetime
+result4-2.xlsx,计划购电量,A62,2025-04-02 00:00:00,datetime
+result4-2.xlsx,计划购电量,A63,2025-04-03 00:00:00,datetime
+result4-2.xlsx,计划购电量,A64,2025-04-04 00:00:00,datetime
+result4-2.xlsx,计划购电量,A65,2025-04-05 00:00:00,datetime
+result4-2.xlsx,计划购电量,A66,2025-04-06 00:00:00,datetime
+result4-2.xlsx,计划购电量,A67,2025-04-07 00:00:00,datetime
+result4-2.xlsx,计划购电量,A68,2025-04-08 00:00:00,datetime
+result4-2.xlsx,计划购电量,A69,2025-04-09 00:00:00,datetime
+result4-2.xlsx,计划购电量,A70,2025-04-10 00:00:00,datetime
+result4-2.xlsx,计划购电量,A71,2025-04-11 00:00:00,datetime
+result4-2.xlsx,计划购电量,A72,2025-04-12 00:00:00,datetime
+result4-2.xlsx,计划购电量,A73,2025-04-13 00:00:00,datetime
+result4-2.xlsx,计划购电量,A74,2025-04-14 00:00:00,datetime
+result4-2.xlsx,计划购电量,A75,2025-04-15 00:00:00,datetime
+result4-2.xlsx,计划购电量,A76,2025-04-16 00:00:00,datetime
+result4-2.xlsx,计划购电量,A77,2025-04-17 00:00:00,datetime
+result4-2.xlsx,计划购电量,A78,2025-04-18 00:00:00,datetime
+result4-2.xlsx,计划购电量,A79,2025-04-19 00:00:00,datetime
+result4-2.xlsx,计划购电量,A80,2025-04-20 00:00:00,datetime
+result4-2.xlsx,计划购电量,A81,2025-04-21 00:00:00,datetime
+result4-2.xlsx,计划购电量,A82,2025-04-22 00:00:00,datetime
+result4-2.xlsx,计划购电量,A83,2025-04-23 00:00:00,datetime
+result4-2.xlsx,计划购电量,A84,2025-04-24 00:00:00,datetime
+result4-2.xlsx,计划购电量,A85,2025-04-25 00:00:00,datetime
+result4-2.xlsx,计划购电量,A86,2025-04-26 00:00:00,datetime
+result4-2.xlsx,计划购电量,A87,2025-04-27 00:00:00,datetime
+result4-2.xlsx,计划购电量,A88,2025-04-28 00:00:00,datetime
+result4-2.xlsx,计划购电量,A89,2025-04-29 00:00:00,datetime
+result4-2.xlsx,计划购电量,A90,2025-04-30 00:00:00,datetime
+result4-2.xlsx,计划购电量,A91,2025-05-01 00:00:00,datetime
+result4-2.xlsx,计划购电量,A92,2025-05-02 00:00:00,datetime
+result4-2.xlsx,计划购电量,A93,2025-05-03 00:00:00,datetime
+result4-2.xlsx,计划购电量,A94,2025-05-04 00:00:00,datetime
+result4-2.xlsx,计划购电量,A95,2025-05-05 00:00:00,datetime
+result4-2.xlsx,计划购电量,A96,2025-05-06 00:00:00,datetime
+result4-2.xlsx,计划购电量,A97,2025-05-07 00:00:00,datetime
+result4-2.xlsx,计划购电量,A98,2025-05-08 00:00:00,datetime
+result4-2.xlsx,计划购电量,A99,2025-05-09 00:00:00,datetime
+result4-2.xlsx,计划购电量,A100,2025-05-10 00:00:00,datetime
+result4-2.xlsx,计划购电量,A101,2025-05-11 00:00:00,datetime
+result4-2.xlsx,计划购电量,A102,2025-05-12 00:00:00,datetime
+result4-2.xlsx,计划购电量,A103,2025-05-13 00:00:00,datetime
+result4-2.xlsx,计划购电量,A104,2025-05-14 00:00:00,datetime
+result4-2.xlsx,计划购电量,A105,2025-05-15 00:00:00,datetime
+result4-2.xlsx,计划购电量,A106,2025-05-16 00:00:00,datetime
+result4-2.xlsx,计划购电量,A107,2025-05-17 00:00:00,datetime
+result4-2.xlsx,计划购电量,A108,2025-05-18 00:00:00,datetime
+result4-2.xlsx,计划购电量,A109,2025-05-19 00:00:00,datetime
+result4-2.xlsx,计划购电量,A110,2025-05-20 00:00:00,datetime
+result4-2.xlsx,计划购电量,A111,2025-05-21 00:00:00,datetime
+result4-2.xlsx,计划购电量,A112,2025-05-22 00:00:00,datetime
+result4-2.xlsx,计划购电量,A113,2025-05-23 00:00:00,datetime
+result4-2.xlsx,计划购电量,A114,2025-05-24 00:00:00,datetime
+result4-2.xlsx,计划购电量,A115,2025-05-25 00:00:00,datetime
+result4-2.xlsx,计划购电量,A116,2025-05-26 00:00:00,datetime
+result4-2.xlsx,计划购电量,A117,2025-05-27 00:00:00,datetime
+result4-2.xlsx,计划购电量,A118,2025-05-28 00:00:00,datetime
+result4-2.xlsx,计划购电量,A119,2025-05-29 00:00:00,datetime
+result4-2.xlsx,计划购电量,A120,2025-05-30 00:00:00,datetime
+result4-2.xlsx,计划购电量,A121,2025-05-31 00:00:00,datetime
+result4-2.xlsx,计划购电量,A122,2025-06-01 00:00:00,datetime
+result4-2.xlsx,计划购电量,A123,2025-06-02 00:00:00,datetime
+result4-2.xlsx,计划购电量,A124,2025-06-03 00:00:00,datetime
+result4-2.xlsx,计划购电量,A125,2025-06-04 00:00:00,datetime
+result4-2.xlsx,计划购电量,A126,2025-06-05 00:00:00,datetime
+result4-2.xlsx,计划购电量,A127,2025-06-06 00:00:00,datetime
+result4-2.xlsx,计划购电量,A128,2025-06-07 00:00:00,datetime
+result4-2.xlsx,计划购电量,A129,2025-06-08 00:00:00,datetime
+result4-2.xlsx,计划购电量,A130,2025-06-09 00:00:00,datetime
+result4-2.xlsx,计划购电量,A131,2025-06-10 00:00:00,datetime
+result4-2.xlsx,计划购电量,A132,2025-06-11 00:00:00,datetime
+result4-2.xlsx,计划购电量,A133,2025-06-12 00:00:00,datetime
+result4-2.xlsx,计划购电量,A134,2025-06-13 00:00:00,datetime
+result4-2.xlsx,计划购电量,A135,2025-06-14 00:00:00,datetime
+result4-2.xlsx,计划购电量,A136,2025-06-15 00:00:00,datetime
+result4-2.xlsx,计划购电量,A137,2025-06-16 00:00:00,datetime
+result4-2.xlsx,计划购电量,A138,2025-06-17 00:00:00,datetime
+result4-2.xlsx,计划购电量,A139,2025-06-18 00:00:00,datetime
+result4-2.xlsx,计划购电量,A140,2025-06-19 00:00:00,datetime
+result4-2.xlsx,计划购电量,A141,2025-06-20 00:00:00,datetime
+result4-2.xlsx,计划购电量,A142,2025-06-21 00:00:00,datetime
+result4-2.xlsx,计划购电量,A143,2025-06-22 00:00:00,datetime
+result4-2.xlsx,计划购电量,A144,2025-06-23 00:00:00,datetime
+result4-2.xlsx,计划购电量,A145,2025-06-24 00:00:00,datetime
+result4-2.xlsx,计划购电量,A146,2025-06-25 00:00:00,datetime
+result4-2.xlsx,计划购电量,A147,2025-06-26 00:00:00,datetime
+result4-2.xlsx,计划购电量,A148,2025-06-27 00:00:00,datetime
+result4-2.xlsx,计划购电量,A149,2025-06-28 00:00:00,datetime
+result4-2.xlsx,计划购电量,A150,2025-06-29 00:00:00,datetime
+result4-2.xlsx,计划购电量,A151,2025-06-30 00:00:00,datetime
+result4-2.xlsx,计划购电量,A152,2025-07-01 00:00:00,datetime
+result4-2.xlsx,计划购电量,A153,2025-07-02 00:00:00,datetime
+result4-2.xlsx,计划购电量,A154,2025-07-03 00:00:00,datetime
+result4-2.xlsx,计划购电量,A155,2025-07-04 00:00:00,datetime
+result4-2.xlsx,计划购电量,A156,2025-07-05 00:00:00,datetime
+result4-2.xlsx,计划购电量,A157,2025-07-06 00:00:00,datetime
+result4-2.xlsx,计划购电量,A158,2025-07-07 00:00:00,datetime
+result4-2.xlsx,计划购电量,A159,2025-07-08 00:00:00,datetime
+result4-2.xlsx,计划购电量,A160,2025-07-09 00:00:00,datetime
+result4-2.xlsx,计划购电量,A161,2025-07-10 00:00:00,datetime
+result4-2.xlsx,计划购电量,A162,2025-07-11 00:00:00,datetime
+result4-2.xlsx,计划购电量,A163,2025-07-12 00:00:00,datetime
+result4-2.xlsx,计划购电量,A164,2025-07-13 00:00:00,datetime
+result4-2.xlsx,计划购电量,A165,2025-07-14 00:00:00,datetime
+result4-2.xlsx,计划购电量,A166,2025-07-15 00:00:00,datetime
+result4-2.xlsx,计划购电量,A167,2025-07-16 00:00:00,datetime
+result4-2.xlsx,计划购电量,A168,2025-07-17 00:00:00,datetime
+result4-2.xlsx,计划购电量,A169,2025-07-18 00:00:00,datetime
+result4-2.xlsx,计划购电量,A170,2025-07-19 00:00:00,datetime
+result4-2.xlsx,计划购电量,A171,2025-07-20 00:00:00,datetime
+result4-2.xlsx,计划购电量,A172,2025-07-21 00:00:00,datetime
+result4-2.xlsx,计划购电量,A173,2025-07-22 00:00:00,datetime
+result4-2.xlsx,计划购电量,A174,2025-07-23 00:00:00,datetime
+result4-2.xlsx,计划购电量,A175,2025-07-24 00:00:00,datetime
+result4-2.xlsx,计划购电量,A176,2025-07-25 00:00:00,datetime
+result4-2.xlsx,计划购电量,A177,2025-07-26 00:00:00,datetime
+result4-2.xlsx,计划购电量,A178,2025-07-27 00:00:00,datetime
+result4-2.xlsx,计划购电量,A179,2025-07-28 00:00:00,datetime
+result4-2.xlsx,计划购电量,A180,2025-07-29 00:00:00,datetime
+result4-2.xlsx,计划购电量,A181,2025-07-30 00:00:00,datetime
+result4-2.xlsx,计划购电量,A182,2025-07-31 00:00:00,datetime
+result4-2.xlsx,计划购电量,A183,2025-08-01 00:00:00,datetime
+result4-2.xlsx,计划购电量,A184,2025-08-02 00:00:00,datetime
+result4-2.xlsx,计划购电量,A185,2025-08-03 00:00:00,datetime
+result4-2.xlsx,计划购电量,A186,2025-08-04 00:00:00,datetime
+result4-2.xlsx,计划购电量,A187,2025-08-05 00:00:00,datetime
+result4-2.xlsx,计划购电量,A188,2025-08-06 00:00:00,datetime
+result4-2.xlsx,计划购电量,A189,2025-08-07 00:00:00,datetime
+result4-2.xlsx,计划购电量,A190,2025-08-08 00:00:00,datetime
+result4-2.xlsx,计划购电量,A191,2025-08-09 00:00:00,datetime
+result4-2.xlsx,计划购电量,A192,2025-08-10 00:00:00,datetime
+result4-2.xlsx,计划购电量,A193,2025-08-11 00:00:00,datetime
+result4-2.xlsx,计划购电量,A194,2025-08-12 00:00:00,datetime
+result4-2.xlsx,计划购电量,A195,2025-08-13 00:00:00,datetime
+result4-2.xlsx,计划购电量,A196,2025-08-14 00:00:00,datetime
+result4-2.xlsx,计划购电量,A197,2025-08-15 00:00:00,datetime
+result4-2.xlsx,计划购电量,A198,2025-08-16 00:00:00,datetime
+result4-2.xlsx,计划购电量,A199,2025-08-17 00:00:00,datetime
+result4-2.xlsx,计划购电量,A200,2025-08-18 00:00:00,datetime
+result4-2.xlsx,计划购电量,A201,2025-08-19 00:00:00,datetime
+result4-2.xlsx,计划购电量,A202,2025-08-20 00:00:00,datetime
+result4-2.xlsx,计划购电量,A203,2025-08-21 00:00:00,datetime
+result4-2.xlsx,计划购电量,A204,2025-08-22 00:00:00,datetime
+result4-2.xlsx,计划购电量,A205,2025-08-23 00:00:00,datetime
+result4-2.xlsx,计划购电量,A206,2025-08-24 00:00:00,datetime
+result4-2.xlsx,计划购电量,A207,2025-08-25 00:00:00,datetime
+result4-2.xlsx,计划购电量,A208,2025-08-26 00:00:00,datetime
+result4-2.xlsx,计划购电量,A209,2025-08-27 00:00:00,datetime
+result4-2.xlsx,计划购电量,A210,2025-08-28 00:00:00,datetime
+result4-2.xlsx,计划购电量,A211,2025-08-29 00:00:00,datetime
+result4-2.xlsx,计划购电量,A212,2025-08-30 00:00:00,datetime
+result4-2.xlsx,计划购电量,A213,2025-08-31 00:00:00,datetime
+result4-2.xlsx,计划购电量,A214,2025-09-01 00:00:00,datetime
+result4-2.xlsx,计划购电量,A215,2025-09-02 00:00:00,datetime
+result4-2.xlsx,计划购电量,A216,2025-09-03 00:00:00,datetime
+result4-2.xlsx,计划购电量,A217,2025-09-04 00:00:00,datetime
+result4-2.xlsx,计划购电量,A218,2025-09-05 00:00:00,datetime
+result4-2.xlsx,计划购电量,A219,2025-09-06 00:00:00,datetime
+result4-2.xlsx,计划购电量,A220,2025-09-07 00:00:00,datetime
+result4-2.xlsx,计划购电量,A221,2025-09-08 00:00:00,datetime
+result4-2.xlsx,计划购电量,A222,2025-09-09 00:00:00,datetime
+result4-2.xlsx,计划购电量,A223,2025-09-10 00:00:00,datetime
+result4-2.xlsx,计划购电量,A224,2025-09-11 00:00:00,datetime
+result4-2.xlsx,计划购电量,A225,2025-09-12 00:00:00,datetime
+result4-2.xlsx,计划购电量,A226,2025-09-13 00:00:00,datetime
+result4-2.xlsx,计划购电量,A227,2025-09-14 00:00:00,datetime
+result4-2.xlsx,计划购电量,A228,2025-09-15 00:00:00,datetime
+result4-2.xlsx,计划购电量,A229,2025-09-16 00:00:00,datetime
+result4-2.xlsx,计划购电量,A230,2025-09-17 00:00:00,datetime
+result4-2.xlsx,计划购电量,A231,2025-09-18 00:00:00,datetime
+result4-2.xlsx,计划购电量,A232,2025-09-19 00:00:00,datetime
+result4-2.xlsx,计划购电量,A233,2025-09-20 00:00:00,datetime
+result4-2.xlsx,计划购电量,A234,2025-09-21 00:00:00,datetime
+result4-2.xlsx,计划购电量,A235,2025-09-22 00:00:00,datetime
+result4-2.xlsx,计划购电量,A236,2025-09-23 00:00:00,datetime
+result4-2.xlsx,计划购电量,A237,2025-09-24 00:00:00,datetime
+result4-2.xlsx,计划购电量,A238,2025-09-25 00:00:00,datetime
+result4-2.xlsx,计划购电量,A239,2025-09-26 00:00:00,datetime
+result4-2.xlsx,计划购电量,A240,2025-09-27 00:00:00,datetime
+result4-2.xlsx,计划购电量,A241,2025-09-28 00:00:00,datetime
+result4-2.xlsx,计划购电量,A242,2025-09-29 00:00:00,datetime
+result4-2.xlsx,计划购电量,A243,2025-09-30 00:00:00,datetime
+result4-2.xlsx,计划购电量,A244,2025-10-01 00:00:00,datetime
+result4-2.xlsx,计划购电量,A245,2025-10-02 00:00:00,datetime
+result4-2.xlsx,计划购电量,A246,2025-10-03 00:00:00,datetime
+result4-2.xlsx,计划购电量,A247,2025-10-04 00:00:00,datetime
+result4-2.xlsx,计划购电量,A248,2025-10-05 00:00:00,datetime
+result4-2.xlsx,计划购电量,A249,2025-10-06 00:00:00,datetime
+result4-2.xlsx,计划购电量,A250,2025-10-07 00:00:00,datetime
+result4-2.xlsx,计划购电量,A251,2025-10-08 00:00:00,datetime
+result4-2.xlsx,计划购电量,A252,2025-10-09 00:00:00,datetime
+result4-2.xlsx,计划购电量,A253,2025-10-10 00:00:00,datetime
+result4-2.xlsx,计划购电量,A254,2025-10-11 00:00:00,datetime
+result4-2.xlsx,计划购电量,A255,2025-10-12 00:00:00,datetime
+result4-2.xlsx,计划购电量,A256,2025-10-13 00:00:00,datetime
+result4-2.xlsx,计划购电量,A257,2025-10-14 00:00:00,datetime
+result4-2.xlsx,计划购电量,A258,2025-10-15 00:00:00,datetime
+result4-2.xlsx,计划购电量,A259,2025-10-16 00:00:00,datetime
+result4-2.xlsx,计划购电量,A260,2025-10-17 00:00:00,datetime
+result4-2.xlsx,计划购电量,A261,2025-10-18 00:00:00,datetime
+result4-2.xlsx,计划购电量,A262,2025-10-19 00:00:00,datetime
+result4-2.xlsx,计划购电量,A263,2025-10-20 00:00:00,datetime
+result4-2.xlsx,计划购电量,A264,2025-10-21 00:00:00,datetime
+result4-2.xlsx,计划购电量,A265,2025-10-22 00:00:00,datetime
+result4-2.xlsx,计划购电量,A266,2025-10-23 00:00:00,datetime
+result4-2.xlsx,计划购电量,A267,2025-10-24 00:00:00,datetime
+result4-2.xlsx,计划购电量,A268,2025-10-25 00:00:00,datetime
+result4-2.xlsx,计划购电量,A269,2025-10-26 00:00:00,datetime
+result4-2.xlsx,计划购电量,A270,2025-10-27 00:00:00,datetime
+result4-2.xlsx,计划购电量,A271,2025-10-28 00:00:00,datetime
+result4-2.xlsx,计划购电量,A272,2025-10-29 00:00:00,datetime
+result4-2.xlsx,计划购电量,A273,2025-10-30 00:00:00,datetime
+result4-2.xlsx,计划购电量,A274,2025-10-31 00:00:00,datetime
+result4-2.xlsx,计划购电量,A275,2025-11-01 00:00:00,datetime
+result4-2.xlsx,计划购电量,A276,2025-11-02 00:00:00,datetime
+result4-2.xlsx,计划购电量,A277,2025-11-03 00:00:00,datetime
+result4-2.xlsx,计划购电量,A278,2025-11-04 00:00:00,datetime
+result4-2.xlsx,计划购电量,A279,2025-11-05 00:00:00,datetime
+result4-2.xlsx,计划购电量,A280,2025-11-06 00:00:00,datetime
+result4-2.xlsx,计划购电量,A281,2025-11-07 00:00:00,datetime
+result4-2.xlsx,计划购电量,A282,2025-11-08 00:00:00,datetime
+result4-2.xlsx,计划购电量,A283,2025-11-09 00:00:00,datetime
+result4-2.xlsx,计划购电量,A284,2025-11-10 00:00:00,datetime
+result4-2.xlsx,计划购电量,A285,2025-11-11 00:00:00,datetime
+result4-2.xlsx,计划购电量,A286,2025-11-12 00:00:00,datetime
+result4-2.xlsx,计划购电量,A287,2025-11-13 00:00:00,datetime
+result4-2.xlsx,计划购电量,A288,2025-11-14 00:00:00,datetime
+result4-2.xlsx,计划购电量,A289,2025-11-15 00:00:00,datetime
+result4-2.xlsx,计划购电量,A290,2025-11-16 00:00:00,datetime
+result4-2.xlsx,计划购电量,A291,2025-11-17 00:00:00,datetime
+result4-2.xlsx,计划购电量,A292,2025-11-18 00:00:00,datetime
+result4-2.xlsx,计划购电量,A293,2025-11-19 00:00:00,datetime
+result4-2.xlsx,计划购电量,A294,2025-11-20 00:00:00,datetime
+result4-2.xlsx,计划购电量,A295,2025-11-21 00:00:00,datetime
+result4-2.xlsx,计划购电量,A296,2025-11-22 00:00:00,datetime
+result4-2.xlsx,计划购电量,A297,2025-11-23 00:00:00,datetime
+result4-2.xlsx,计划购电量,A298,2025-11-24 00:00:00,datetime
+result4-2.xlsx,计划购电量,A299,2025-11-25 00:00:00,datetime
+result4-2.xlsx,计划购电量,A300,2025-11-26 00:00:00,datetime
+result4-2.xlsx,计划购电量,A301,2025-11-27 00:00:00,datetime
+result4-2.xlsx,计划购电量,A302,2025-11-28 00:00:00,datetime
+result4-2.xlsx,计划购电量,A303,2025-11-29 00:00:00,datetime
+result4-2.xlsx,计划购电量,A304,2025-11-30 00:00:00,datetime
+result4-2.xlsx,计划购电量,A305,2025-12-01 00:00:00,datetime
+result4-2.xlsx,计划购电量,A306,2025-12-02 00:00:00,datetime
+result4-2.xlsx,计划购电量,A307,2025-12-03 00:00:00,datetime
+result4-2.xlsx,计划购电量,A308,2025-12-04 00:00:00,datetime
+result4-2.xlsx,计划购电量,A309,2025-12-05 00:00:00,datetime
+result4-2.xlsx,计划购电量,A310,2025-12-06 00:00:00,datetime
+result4-2.xlsx,计划购电量,A311,2025-12-07 00:00:00,datetime
+result4-2.xlsx,计划购电量,A312,2025-12-08 00:00:00,datetime
+result4-2.xlsx,计划购电量,A313,2025-12-09 00:00:00,datetime
+result4-2.xlsx,计划购电量,A314,2025-12-10 00:00:00,datetime
+result4-2.xlsx,计划购电量,A315,2025-12-11 00:00:00,datetime
+result4-2.xlsx,计划购电量,A316,2025-12-12 00:00:00,datetime
+result4-2.xlsx,计划购电量,A317,2025-12-13 00:00:00,datetime
+result4-2.xlsx,计划购电量,A318,2025-12-14 00:00:00,datetime
+result4-2.xlsx,计划购电量,A319,2025-12-15 00:00:00,datetime
+result4-2.xlsx,计划购电量,A320,2025-12-16 00:00:00,datetime
+result4-2.xlsx,计划购电量,A321,2025-12-17 00:00:00,datetime
+result4-2.xlsx,计划购电量,A322,2025-12-18 00:00:00,datetime
+result4-2.xlsx,计划购电量,A323,2025-12-19 00:00:00,datetime
+result4-2.xlsx,计划购电量,A324,2025-12-20 00:00:00,datetime
+result4-2.xlsx,计划购电量,A325,2025-12-21 00:00:00,datetime
+result4-2.xlsx,计划购电量,A326,2025-12-22 00:00:00,datetime
+result4-2.xlsx,计划购电量,A327,2025-12-23 00:00:00,datetime
+result4-2.xlsx,计划购电量,A328,2025-12-24 00:00:00,datetime
+result4-2.xlsx,计划购电量,A329,2025-12-25 00:00:00,datetime
+result4-2.xlsx,计划购电量,A330,2025-12-26 00:00:00,datetime
+result4-2.xlsx,计划购电量,A331,2025-12-27 00:00:00,datetime
+result4-2.xlsx,计划购电量,A332,2025-12-28 00:00:00,datetime
+result4-2.xlsx,计划购电量,A333,2025-12-29 00:00:00,datetime
+result4-2.xlsx,计划购电量,A334,2025-12-30 00:00:00,datetime
+result4-2.xlsx,计划购电量,A335,2025-12-31 00:00:00,datetime
+result4-2.xlsx,充放电量,A1,日期,str
+result4-2.xlsx,充放电量,B1,时间段,str
+result4-2.xlsx,充放电量,C1,充电量,str
+result4-2.xlsx,充放电量,D1,放电量,str
+result4-2.xlsx,充放电量,E1,时刻,str
+result4-2.xlsx,充放电量,F1,储电量,str
+result4-2.xlsx,充放电量,A2,2025-02-01 00:00:00,datetime
+result4-2.xlsx,充放电量,B2,0:00-4:00,str
+result4-2.xlsx,充放电量,E2,00:00:00,time
+result4-2.xlsx,充放电量,B3,4:00-8:00,str
+result4-2.xlsx,充放电量,E3,24:00,str
+result4-2.xlsx,充放电量,B4,8:00-12:00,str
+result4-2.xlsx,充放电量,B5,12:00-16:00,str
+result4-2.xlsx,充放电量,B6,16:00-20:00,str
+result4-2.xlsx,充放电量,B7,20:00-24:00,str
+result4-2.xlsx,充放电量,A8,2025-02-02 00:00:00,datetime
+result4-2.xlsx,充放电量,B8,0:00-4:00,str
+result4-2.xlsx,充放电量,E8,00:00:00,time
+result4-2.xlsx,充放电量,B9,4:00-8:00,str
+result4-2.xlsx,充放电量,E9,24:00,str
+result4-2.xlsx,充放电量,B10,8:00-12:00,str
+result4-2.xlsx,充放电量,B11,12:00-16:00,str
+result4-2.xlsx,充放电量,B12,16:00-20:00,str
+result4-2.xlsx,充放电量,B13,20:00-24:00,str
+result4-2.xlsx,充放电量,A14,⁝,str
+result4-2.xlsx,充放电量,B14,⁝,str
+result4-2.xlsx,充放电量,C14,⁝,str
+result4-2.xlsx,充放电量,D14,⁝,str
+result4-2.xlsx,充放电量,E14,⁝,str
+result4-2.xlsx,充放电量,F14,⁝,str
+result4-2.xlsx,充放电量,A15,2025-12-31 00:00:00,datetime
+result4-2.xlsx,充放电量,B15,0:00-4:00,str
+result4-2.xlsx,充放电量,E15,00:00:00,time
+result4-2.xlsx,充放电量,B16,4:00-8:00,str
+result4-2.xlsx,充放电量,E16,24:00,str
+result4-2.xlsx,充放电量,B17,8:00-12:00,str
+result4-2.xlsx,充放电量,B18,12:00-16:00,str
+result4-2.xlsx,充放电量,B19,16:00-20:00,str
+result4-2.xlsx,充放电量,B20,20:00-24:00,str
+result4-2.xlsx,紧急购电量,A1,日期,str
+result4-2.xlsx,紧急购电量,B1,购电时间段,str
+result4-2.xlsx,紧急购电量,C1,购电量,str
+result4-2.xlsx,紧急购电量,A2,2025-02-01 00:00:00,datetime
+result4-2.xlsx,紧急购电量,A5,2025-02-02 00:00:00,datetime
+result4-2.xlsx,紧急购电量,A8,⁝,str
+result4-2.xlsx,紧急购电量,B8,⁝,str
+result4-2.xlsx,紧急购电量,C8,⁝,str
+result4-2.xlsx,紧急购电量,A9,2025-12-31 00:00:00,datetime
+result4-3.xlsx,计划购电量,A1,日期\时间,str
+result4-3.xlsx,计划购电量,B1,0:10-0:20,str
+result4-3.xlsx,计划购电量,C1,0:20-0:30,str
+result4-3.xlsx,计划购电量,D1,0:30-0:40,str
+result4-3.xlsx,计划购电量,E1,0:40-0:50,str
+result4-3.xlsx,计划购电量,F1,0:50-1:00,str
+result4-3.xlsx,计划购电量,G1,1:00-1:10,str
+result4-3.xlsx,计划购电量,H1,1:10-1:20,str
+result4-3.xlsx,计划购电量,I1,1:20-1:30,str
+result4-3.xlsx,计划购电量,J1,1:30-1:40,str
+result4-3.xlsx,计划购电量,K1,1:40-1:50,str
+result4-3.xlsx,计划购电量,L1,1:50-2:00,str
+result4-3.xlsx,计划购电量,M1,2:00-2:10,str
+result4-3.xlsx,计划购电量,N1,2:10-2:20,str
+result4-3.xlsx,计划购电量,O1,2:20-2:30,str
+result4-3.xlsx,计划购电量,P1,2:30-2:40,str
+result4-3.xlsx,计划购电量,Q1,2:40-2:50,str
+result4-3.xlsx,计划购电量,R1,2:50-3:00,str
+result4-3.xlsx,计划购电量,S1,3:00-3:10,str
+result4-3.xlsx,计划购电量,T1,3:10-3:20,str
+result4-3.xlsx,计划购电量,U1,3:20-3:30,str
+result4-3.xlsx,计划购电量,V1,3:30-3:40,str
+result4-3.xlsx,计划购电量,W1,3:40-3:50,str
+result4-3.xlsx,计划购电量,X1,3:50-4:00,str
+result4-3.xlsx,计划购电量,Y1,4:00-4:10,str
+result4-3.xlsx,计划购电量,Z1,4:10-4:20,str
+result4-3.xlsx,计划购电量,AA1,4:20-4:30,str
+result4-3.xlsx,计划购电量,AB1,4:30-4:40,str
+result4-3.xlsx,计划购电量,AC1,4:40-4:50,str
+result4-3.xlsx,计划购电量,AD1,4:50-5:00,str
+result4-3.xlsx,计划购电量,AE1,5:00-5:10,str
+result4-3.xlsx,计划购电量,AF1,5:10-5:20,str
+result4-3.xlsx,计划购电量,AG1,5:20-5:30,str
+result4-3.xlsx,计划购电量,AH1,5:30-5:40,str
+result4-3.xlsx,计划购电量,AI1,5:40-5:50,str
+result4-3.xlsx,计划购电量,AJ1,5:50-6:00,str
+result4-3.xlsx,计划购电量,AK1,6:00-6:10,str
+result4-3.xlsx,计划购电量,AL1,6:10-6:20,str
+result4-3.xlsx,计划购电量,AM1,6:20-6:30,str
+result4-3.xlsx,计划购电量,AN1,6:30-6:40,str
+result4-3.xlsx,计划购电量,AO1,6:40-6:50,str
+result4-3.xlsx,计划购电量,AP1,6:50-7:00,str
+result4-3.xlsx,计划购电量,AQ1,7:0-7:10,str
+result4-3.xlsx,计划购电量,AR1,7:10-7:20,str
+result4-3.xlsx,计划购电量,AS1,7:20-7:30,str
+result4-3.xlsx,计划购电量,AT1,7:30-7:40,str
+result4-3.xlsx,计划购电量,AU1,7:40-7:50,str
+result4-3.xlsx,计划购电量,AV1,7:50-8:00,str
+result4-3.xlsx,计划购电量,AW1,8:00-8:10,str
+result4-3.xlsx,计划购电量,AX1,8:10-8:20,str
+result4-3.xlsx,计划购电量,AY1,8:20-8:30,str
+result4-3.xlsx,计划购电量,AZ1,8:30-8:40,str
+result4-3.xlsx,计划购电量,BA1,8:40-8:50,str
+result4-3.xlsx,计划购电量,BB1,8:50-9:00,str
+result4-3.xlsx,计划购电量,BC1,9:00-9:10,str
+result4-3.xlsx,计划购电量,BD1,9:10-9:20,str
+result4-3.xlsx,计划购电量,BE1,9:20-9:30,str
+result4-3.xlsx,计划购电量,BF1,9:30-9:40,str
+result4-3.xlsx,计划购电量,BG1,9:40-9:50,str
+result4-3.xlsx,计划购电量,BH1,9:50-10:00,str
+result4-3.xlsx,计划购电量,BI1,10:00-10:10,str
+result4-3.xlsx,计划购电量,BJ1,10:10-10:20,str
+result4-3.xlsx,计划购电量,BK1,10:20-10:30,str
+result4-3.xlsx,计划购电量,BL1,10:30-10:40,str
+result4-3.xlsx,计划购电量,BM1,10:40-10:50,str
+result4-3.xlsx,计划购电量,BN1,10:50-11:00,str
+result4-3.xlsx,计划购电量,BO1,11:00-11:10,str
+result4-3.xlsx,计划购电量,BP1,11:10-11:20,str
+result4-3.xlsx,计划购电量,BQ1,11:20-11:30,str
+result4-3.xlsx,计划购电量,BR1,11:30-11:40,str
+result4-3.xlsx,计划购电量,BS1,11:40-11:50,str
+result4-3.xlsx,计划购电量,BT1,11:50-12:00,str
+result4-3.xlsx,计划购电量,BU1,12:00-12:10,str
+result4-3.xlsx,计划购电量,BV1,12:10-12:20,str
+result4-3.xlsx,计划购电量,BW1,12:20-12:30,str
+result4-3.xlsx,计划购电量,BX1,12:30-12:40,str
+result4-3.xlsx,计划购电量,BY1,12:40-12:50,str
+result4-3.xlsx,计划购电量,BZ1,12:50-13:00,str
+result4-3.xlsx,计划购电量,CA1,13:00-13:10,str
+result4-3.xlsx,计划购电量,CB1,13:10-13:20,str
+result4-3.xlsx,计划购电量,CC1,13:20-13:30,str
+result4-3.xlsx,计划购电量,CD1,13:30-13:40,str
+result4-3.xlsx,计划购电量,CE1,13:40-13:50,str
+result4-3.xlsx,计划购电量,CF1,13:50-14:00,str
+result4-3.xlsx,计划购电量,CG1,14:00-14:10,str
+result4-3.xlsx,计划购电量,CH1,14:10-14:20,str
+result4-3.xlsx,计划购电量,CI1,14:20-14:30,str
+result4-3.xlsx,计划购电量,CJ1,14:30-14:40,str
+result4-3.xlsx,计划购电量,CK1,14:40-14:50,str
+result4-3.xlsx,计划购电量,CL1,14:50-15:00,str
+result4-3.xlsx,计划购电量,CM1,15:00-15:10,str
+result4-3.xlsx,计划购电量,CN1,15:10-15:20,str
+result4-3.xlsx,计划购电量,CO1,15:20-15:30,str
+result4-3.xlsx,计划购电量,CP1,15:30-15:40,str
+result4-3.xlsx,计划购电量,CQ1,15:40-15:50,str
+result4-3.xlsx,计划购电量,CR1,15:50-16:00,str
+result4-3.xlsx,计划购电量,CS1,16:00-16:10,str
+result4-3.xlsx,计划购电量,CT1,16:10-16:20,str
+result4-3.xlsx,计划购电量,CU1,16:20-16:30,str
+result4-3.xlsx,计划购电量,CV1,16:30-16:40,str
+result4-3.xlsx,计划购电量,CW1,16:40-16:50,str
+result4-3.xlsx,计划购电量,CX1,16:50-17:00,str
+result4-3.xlsx,计划购电量,CY1,17:00-17:10,str
+result4-3.xlsx,计划购电量,CZ1,17:10-17:20,str
+result4-3.xlsx,计划购电量,DA1,17:20-17:30,str
+result4-3.xlsx,计划购电量,DB1,17:30-17:40,str
+result4-3.xlsx,计划购电量,DC1,17:40-17:50,str
+result4-3.xlsx,计划购电量,DD1,17:50-18:00,str
+result4-3.xlsx,计划购电量,DE1,18:00-18:10,str
+result4-3.xlsx,计划购电量,DF1,18:10-18:20,str
+result4-3.xlsx,计划购电量,DG1,18:20-18:30,str
+result4-3.xlsx,计划购电量,DH1,18:30-18:40,str
+result4-3.xlsx,计划购电量,DI1,18:40-18:50,str
+result4-3.xlsx,计划购电量,DJ1,18:50-19:00,str
+result4-3.xlsx,计划购电量,DK1,19:00-19:10,str
+result4-3.xlsx,计划购电量,DL1,19:10-19:20,str
+result4-3.xlsx,计划购电量,DM1,19:20-19:30,str
+result4-3.xlsx,计划购电量,DN1,19:30-19:40,str
+result4-3.xlsx,计划购电量,DO1,19:40-19:50,str
+result4-3.xlsx,计划购电量,DP1,19:50-20:00,str
+result4-3.xlsx,计划购电量,DQ1,20:00-20:10,str
+result4-3.xlsx,计划购电量,DR1,20:10-20:20,str
+result4-3.xlsx,计划购电量,DS1,20:20-20:30,str
+result4-3.xlsx,计划购电量,DT1,20:30-20:40,str
+result4-3.xlsx,计划购电量,DU1,20:40-20:50,str
+result4-3.xlsx,计划购电量,DV1,20:50-21:00,str
+result4-3.xlsx,计划购电量,DW1,21:00-21:10,str
+result4-3.xlsx,计划购电量,DX1,21:10-21:20,str
+result4-3.xlsx,计划购电量,DY1,21:20-21:30,str
+result4-3.xlsx,计划购电量,DZ1,21:30-21:40,str
+result4-3.xlsx,计划购电量,EA1,21:40-21:50,str
+result4-3.xlsx,计划购电量,EB1,21:50-22:00,str
+result4-3.xlsx,计划购电量,EC1,22:00-22:10,str
+result4-3.xlsx,计划购电量,ED1,22:10-22:20,str
+result4-3.xlsx,计划购电量,EE1,22:20-22:30,str
+result4-3.xlsx,计划购电量,EF1,22:30-22:40,str
+result4-3.xlsx,计划购电量,EG1,22:40-22:50,str
+result4-3.xlsx,计划购电量,EH1,22:50-23:00,str
+result4-3.xlsx,计划购电量,EI1,23:00-23:10,str
+result4-3.xlsx,计划购电量,EJ1,23:10-23:20,str
+result4-3.xlsx,计划购电量,EK1,23:20-23:30,str
+result4-3.xlsx,计划购电量,EL1,23:30-23:40,str
+result4-3.xlsx,计划购电量,EM1,23:40-23:50,str
+result4-3.xlsx,计划购电量,EN1,23:50-0:00+1,str
+result4-3.xlsx,计划购电量,EO1,0:00-0:10+1,str
+result4-3.xlsx,计划购电量,EP1,全天购电量,str
+result4-3.xlsx,计划购电量,EQ1,全天购电费,str
+result4-3.xlsx,计划购电量,A2,2025-02-01 00:00:00,datetime
+result4-3.xlsx,计划购电量,A3,2025-02-02 00:00:00,datetime
+result4-3.xlsx,计划购电量,A4,2025-02-03 00:00:00,datetime
+result4-3.xlsx,计划购电量,A5,2025-02-04 00:00:00,datetime
+result4-3.xlsx,计划购电量,A6,2025-02-05 00:00:00,datetime
+result4-3.xlsx,计划购电量,A7,2025-02-06 00:00:00,datetime
+result4-3.xlsx,计划购电量,A8,2025-02-07 00:00:00,datetime
+result4-3.xlsx,计划购电量,A9,2025-02-08 00:00:00,datetime
+result4-3.xlsx,计划购电量,A10,2025-02-09 00:00:00,datetime
+result4-3.xlsx,计划购电量,A11,2025-02-10 00:00:00,datetime
+result4-3.xlsx,计划购电量,A12,2025-02-11 00:00:00,datetime
+result4-3.xlsx,计划购电量,A13,2025-02-12 00:00:00,datetime
+result4-3.xlsx,计划购电量,A14,2025-02-13 00:00:00,datetime
+result4-3.xlsx,计划购电量,A15,2025-02-14 00:00:00,datetime
+result4-3.xlsx,计划购电量,A16,2025-02-15 00:00:00,datetime
+result4-3.xlsx,计划购电量,A17,2025-02-16 00:00:00,datetime
+result4-3.xlsx,计划购电量,A18,2025-02-17 00:00:00,datetime
+result4-3.xlsx,计划购电量,A19,2025-02-18 00:00:00,datetime
+result4-3.xlsx,计划购电量,A20,2025-02-19 00:00:00,datetime
+result4-3.xlsx,计划购电量,A21,2025-02-20 00:00:00,datetime
+result4-3.xlsx,计划购电量,A22,2025-02-21 00:00:00,datetime
+result4-3.xlsx,计划购电量,A23,2025-02-22 00:00:00,datetime
+result4-3.xlsx,计划购电量,A24,2025-02-23 00:00:00,datetime
+result4-3.xlsx,计划购电量,A25,2025-02-24 00:00:00,datetime
+result4-3.xlsx,计划购电量,A26,2025-02-25 00:00:00,datetime
+result4-3.xlsx,计划购电量,A27,2025-02-26 00:00:00,datetime
+result4-3.xlsx,计划购电量,A28,2025-02-27 00:00:00,datetime
+result4-3.xlsx,计划购电量,A29,2025-02-28 00:00:00,datetime
+result4-3.xlsx,计划购电量,A30,2025-03-01 00:00:00,datetime
+result4-3.xlsx,计划购电量,A31,2025-03-02 00:00:00,datetime
+result4-3.xlsx,计划购电量,A32,2025-03-03 00:00:00,datetime
+result4-3.xlsx,计划购电量,A33,2025-03-04 00:00:00,datetime
+result4-3.xlsx,计划购电量,A34,2025-03-05 00:00:00,datetime
+result4-3.xlsx,计划购电量,A35,2025-03-06 00:00:00,datetime
+result4-3.xlsx,计划购电量,A36,2025-03-07 00:00:00,datetime
+result4-3.xlsx,计划购电量,A37,2025-03-08 00:00:00,datetime
+result4-3.xlsx,计划购电量,A38,2025-03-09 00:00:00,datetime
+result4-3.xlsx,计划购电量,A39,2025-03-10 00:00:00,datetime
+result4-3.xlsx,计划购电量,A40,2025-03-11 00:00:00,datetime
+result4-3.xlsx,计划购电量,A41,2025-03-12 00:00:00,datetime
+result4-3.xlsx,计划购电量,A42,2025-03-13 00:00:00,datetime
+result4-3.xlsx,计划购电量,A43,2025-03-14 00:00:00,datetime
+result4-3.xlsx,计划购电量,A44,2025-03-15 00:00:00,datetime
+result4-3.xlsx,计划购电量,A45,2025-03-16 00:00:00,datetime
+result4-3.xlsx,计划购电量,A46,2025-03-17 00:00:00,datetime
+result4-3.xlsx,计划购电量,A47,2025-03-18 00:00:00,datetime
+result4-3.xlsx,计划购电量,A48,2025-03-19 00:00:00,datetime
+result4-3.xlsx,计划购电量,A49,2025-03-20 00:00:00,datetime
+result4-3.xlsx,计划购电量,A50,2025-03-21 00:00:00,datetime
+result4-3.xlsx,计划购电量,A51,2025-03-22 00:00:00,datetime
+result4-3.xlsx,计划购电量,A52,2025-03-23 00:00:00,datetime
+result4-3.xlsx,计划购电量,A53,2025-03-24 00:00:00,datetime
+result4-3.xlsx,计划购电量,A54,2025-03-25 00:00:00,datetime
+result4-3.xlsx,计划购电量,A55,2025-03-26 00:00:00,datetime
+result4-3.xlsx,计划购电量,A56,2025-03-27 00:00:00,datetime
+result4-3.xlsx,计划购电量,A57,2025-03-28 00:00:00,datetime
+result4-3.xlsx,计划购电量,A58,2025-03-29 00:00:00,datetime
+result4-3.xlsx,计划购电量,A59,2025-03-30 00:00:00,datetime
+result4-3.xlsx,计划购电量,A60,2025-03-31 00:00:00,datetime
+result4-3.xlsx,计划购电量,A61,2025-04-01 00:00:00,datetime
+result4-3.xlsx,计划购电量,A62,2025-04-02 00:00:00,datetime
+result4-3.xlsx,计划购电量,A63,2025-04-03 00:00:00,datetime
+result4-3.xlsx,计划购电量,A64,2025-04-04 00:00:00,datetime
+result4-3.xlsx,计划购电量,A65,2025-04-05 00:00:00,datetime
+result4-3.xlsx,计划购电量,A66,2025-04-06 00:00:00,datetime
+result4-3.xlsx,计划购电量,A67,2025-04-07 00:00:00,datetime
+result4-3.xlsx,计划购电量,A68,2025-04-08 00:00:00,datetime
+result4-3.xlsx,计划购电量,A69,2025-04-09 00:00:00,datetime
+result4-3.xlsx,计划购电量,A70,2025-04-10 00:00:00,datetime
+result4-3.xlsx,计划购电量,A71,2025-04-11 00:00:00,datetime
+result4-3.xlsx,计划购电量,A72,2025-04-12 00:00:00,datetime
+result4-3.xlsx,计划购电量,A73,2025-04-13 00:00:00,datetime
+result4-3.xlsx,计划购电量,A74,2025-04-14 00:00:00,datetime
+result4-3.xlsx,计划购电量,A75,2025-04-15 00:00:00,datetime
+result4-3.xlsx,计划购电量,A76,2025-04-16 00:00:00,datetime
+result4-3.xlsx,计划购电量,A77,2025-04-17 00:00:00,datetime
+result4-3.xlsx,计划购电量,A78,2025-04-18 00:00:00,datetime
+result4-3.xlsx,计划购电量,A79,2025-04-19 00:00:00,datetime
+result4-3.xlsx,计划购电量,A80,2025-04-20 00:00:00,datetime
+result4-3.xlsx,计划购电量,A81,2025-04-21 00:00:00,datetime
+result4-3.xlsx,计划购电量,A82,2025-04-22 00:00:00,datetime
+result4-3.xlsx,计划购电量,A83,2025-04-23 00:00:00,datetime
+result4-3.xlsx,计划购电量,A84,2025-04-24 00:00:00,datetime
+result4-3.xlsx,计划购电量,A85,2025-04-25 00:00:00,datetime
+result4-3.xlsx,计划购电量,A86,2025-04-26 00:00:00,datetime
+result4-3.xlsx,计划购电量,A87,2025-04-27 00:00:00,datetime
+result4-3.xlsx,计划购电量,A88,2025-04-28 00:00:00,datetime
+result4-3.xlsx,计划购电量,A89,2025-04-29 00:00:00,datetime
+result4-3.xlsx,计划购电量,A90,2025-04-30 00:00:00,datetime
+result4-3.xlsx,计划购电量,A91,2025-05-01 00:00:00,datetime
+result4-3.xlsx,计划购电量,A92,2025-05-02 00:00:00,datetime
+result4-3.xlsx,计划购电量,A93,2025-05-03 00:00:00,datetime
+result4-3.xlsx,计划购电量,A94,2025-05-04 00:00:00,datetime
+result4-3.xlsx,计划购电量,A95,2025-05-05 00:00:00,datetime
+result4-3.xlsx,计划购电量,A96,2025-05-06 00:00:00,datetime
+result4-3.xlsx,计划购电量,A97,2025-05-07 00:00:00,datetime
+result4-3.xlsx,计划购电量,A98,2025-05-08 00:00:00,datetime
+result4-3.xlsx,计划购电量,A99,2025-05-09 00:00:00,datetime
+result4-3.xlsx,计划购电量,A100,2025-05-10 00:00:00,datetime
+result4-3.xlsx,计划购电量,A101,2025-05-11 00:00:00,datetime
+result4-3.xlsx,计划购电量,A102,2025-05-12 00:00:00,datetime
+result4-3.xlsx,计划购电量,A103,2025-05-13 00:00:00,datetime
+result4-3.xlsx,计划购电量,A104,2025-05-14 00:00:00,datetime
+result4-3.xlsx,计划购电量,A105,2025-05-15 00:00:00,datetime
+result4-3.xlsx,计划购电量,A106,2025-05-16 00:00:00,datetime
+result4-3.xlsx,计划购电量,A107,2025-05-17 00:00:00,datetime
+result4-3.xlsx,计划购电量,A108,2025-05-18 00:00:00,datetime
+result4-3.xlsx,计划购电量,A109,2025-05-19 00:00:00,datetime
+result4-3.xlsx,计划购电量,A110,2025-05-20 00:00:00,datetime
+result4-3.xlsx,计划购电量,A111,2025-05-21 00:00:00,datetime
+result4-3.xlsx,计划购电量,A112,2025-05-22 00:00:00,datetime
+result4-3.xlsx,计划购电量,A113,2025-05-23 00:00:00,datetime
+result4-3.xlsx,计划购电量,A114,2025-05-24 00:00:00,datetime
+result4-3.xlsx,计划购电量,A115,2025-05-25 00:00:00,datetime
+result4-3.xlsx,计划购电量,A116,2025-05-26 00:00:00,datetime
+result4-3.xlsx,计划购电量,A117,2025-05-27 00:00:00,datetime
+result4-3.xlsx,计划购电量,A118,2025-05-28 00:00:00,datetime
+result4-3.xlsx,计划购电量,A119,2025-05-29 00:00:00,datetime
+result4-3.xlsx,计划购电量,A120,2025-05-30 00:00:00,datetime
+result4-3.xlsx,计划购电量,A121,2025-05-31 00:00:00,datetime
+result4-3.xlsx,计划购电量,A122,2025-06-01 00:00:00,datetime
+result4-3.xlsx,计划购电量,A123,2025-06-02 00:00:00,datetime
+result4-3.xlsx,计划购电量,A124,2025-06-03 00:00:00,datetime
+result4-3.xlsx,计划购电量,A125,2025-06-04 00:00:00,datetime
+result4-3.xlsx,计划购电量,A126,2025-06-05 00:00:00,datetime
+result4-3.xlsx,计划购电量,A127,2025-06-06 00:00:00,datetime
+result4-3.xlsx,计划购电量,A128,2025-06-07 00:00:00,datetime
+result4-3.xlsx,计划购电量,A129,2025-06-08 00:00:00,datetime
+result4-3.xlsx,计划购电量,A130,2025-06-09 00:00:00,datetime
+result4-3.xlsx,计划购电量,A131,2025-06-10 00:00:00,datetime
+result4-3.xlsx,计划购电量,A132,2025-06-11 00:00:00,datetime
+result4-3.xlsx,计划购电量,A133,2025-06-12 00:00:00,datetime
+result4-3.xlsx,计划购电量,A134,2025-06-13 00:00:00,datetime
+result4-3.xlsx,计划购电量,A135,2025-06-14 00:00:00,datetime
+result4-3.xlsx,计划购电量,A136,2025-06-15 00:00:00,datetime
+result4-3.xlsx,计划购电量,A137,2025-06-16 00:00:00,datetime
+result4-3.xlsx,计划购电量,A138,2025-06-17 00:00:00,datetime
+result4-3.xlsx,计划购电量,A139,2025-06-18 00:00:00,datetime
+result4-3.xlsx,计划购电量,A140,2025-06-19 00:00:00,datetime
+result4-3.xlsx,计划购电量,A141,2025-06-20 00:00:00,datetime
+result4-3.xlsx,计划购电量,A142,2025-06-21 00:00:00,datetime
+result4-3.xlsx,计划购电量,A143,2025-06-22 00:00:00,datetime
+result4-3.xlsx,计划购电量,A144,2025-06-23 00:00:00,datetime
+result4-3.xlsx,计划购电量,A145,2025-06-24 00:00:00,datetime
+result4-3.xlsx,计划购电量,A146,2025-06-25 00:00:00,datetime
+result4-3.xlsx,计划购电量,A147,2025-06-26 00:00:00,datetime
+result4-3.xlsx,计划购电量,A148,2025-06-27 00:00:00,datetime
+result4-3.xlsx,计划购电量,A149,2025-06-28 00:00:00,datetime
+result4-3.xlsx,计划购电量,A150,2025-06-29 00:00:00,datetime
+result4-3.xlsx,计划购电量,A151,2025-06-30 00:00:00,datetime
+result4-3.xlsx,计划购电量,A152,2025-07-01 00:00:00,datetime
+result4-3.xlsx,计划购电量,A153,2025-07-02 00:00:00,datetime
+result4-3.xlsx,计划购电量,A154,2025-07-03 00:00:00,datetime
+result4-3.xlsx,计划购电量,A155,2025-07-04 00:00:00,datetime
+result4-3.xlsx,计划购电量,A156,2025-07-05 00:00:00,datetime
+result4-3.xlsx,计划购电量,A157,2025-07-06 00:00:00,datetime
+result4-3.xlsx,计划购电量,A158,2025-07-07 00:00:00,datetime
+result4-3.xlsx,计划购电量,A159,2025-07-08 00:00:00,datetime
+result4-3.xlsx,计划购电量,A160,2025-07-09 00:00:00,datetime
+result4-3.xlsx,计划购电量,A161,2025-07-10 00:00:00,datetime
+result4-3.xlsx,计划购电量,A162,2025-07-11 00:00:00,datetime
+result4-3.xlsx,计划购电量,A163,2025-07-12 00:00:00,datetime
+result4-3.xlsx,计划购电量,A164,2025-07-13 00:00:00,datetime
+result4-3.xlsx,计划购电量,A165,2025-07-14 00:00:00,datetime
+result4-3.xlsx,计划购电量,A166,2025-07-15 00:00:00,datetime
+result4-3.xlsx,计划购电量,A167,2025-07-16 00:00:00,datetime
+result4-3.xlsx,计划购电量,A168,2025-07-17 00:00:00,datetime
+result4-3.xlsx,计划购电量,A169,2025-07-18 00:00:00,datetime
+result4-3.xlsx,计划购电量,A170,2025-07-19 00:00:00,datetime
+result4-3.xlsx,计划购电量,A171,2025-07-20 00:00:00,datetime
+result4-3.xlsx,计划购电量,A172,2025-07-21 00:00:00,datetime
+result4-3.xlsx,计划购电量,A173,2025-07-22 00:00:00,datetime
+result4-3.xlsx,计划购电量,A174,2025-07-23 00:00:00,datetime
+result4-3.xlsx,计划购电量,A175,2025-07-24 00:00:00,datetime
+result4-3.xlsx,计划购电量,A176,2025-07-25 00:00:00,datetime
+result4-3.xlsx,计划购电量,A177,2025-07-26 00:00:00,datetime
+result4-3.xlsx,计划购电量,A178,2025-07-27 00:00:00,datetime
+result4-3.xlsx,计划购电量,A179,2025-07-28 00:00:00,datetime
+result4-3.xlsx,计划购电量,A180,2025-07-29 00:00:00,datetime
+result4-3.xlsx,计划购电量,A181,2025-07-30 00:00:00,datetime
+result4-3.xlsx,计划购电量,A182,2025-07-31 00:00:00,datetime
+result4-3.xlsx,计划购电量,A183,2025-08-01 00:00:00,datetime
+result4-3.xlsx,计划购电量,A184,2025-08-02 00:00:00,datetime
+result4-3.xlsx,计划购电量,A185,2025-08-03 00:00:00,datetime
+result4-3.xlsx,计划购电量,A186,2025-08-04 00:00:00,datetime
+result4-3.xlsx,计划购电量,A187,2025-08-05 00:00:00,datetime
+result4-3.xlsx,计划购电量,A188,2025-08-06 00:00:00,datetime
+result4-3.xlsx,计划购电量,A189,2025-08-07 00:00:00,datetime
+result4-3.xlsx,计划购电量,A190,2025-08-08 00:00:00,datetime
+result4-3.xlsx,计划购电量,A191,2025-08-09 00:00:00,datetime
+result4-3.xlsx,计划购电量,A192,2025-08-10 00:00:00,datetime
+result4-3.xlsx,计划购电量,A193,2025-08-11 00:00:00,datetime
+result4-3.xlsx,计划购电量,A194,2025-08-12 00:00:00,datetime
+result4-3.xlsx,计划购电量,A195,2025-08-13 00:00:00,datetime
+result4-3.xlsx,计划购电量,A196,2025-08-14 00:00:00,datetime
+result4-3.xlsx,计划购电量,A197,2025-08-15 00:00:00,datetime
+result4-3.xlsx,计划购电量,A198,2025-08-16 00:00:00,datetime
+result4-3.xlsx,计划购电量,A199,2025-08-17 00:00:00,datetime
+result4-3.xlsx,计划购电量,A200,2025-08-18 00:00:00,datetime
+result4-3.xlsx,计划购电量,A201,2025-08-19 00:00:00,datetime
+result4-3.xlsx,计划购电量,A202,2025-08-20 00:00:00,datetime
+result4-3.xlsx,计划购电量,A203,2025-08-21 00:00:00,datetime
+result4-3.xlsx,计划购电量,A204,2025-08-22 00:00:00,datetime
+result4-3.xlsx,计划购电量,A205,2025-08-23 00:00:00,datetime
+result4-3.xlsx,计划购电量,A206,2025-08-24 00:00:00,datetime
+result4-3.xlsx,计划购电量,A207,2025-08-25 00:00:00,datetime
+result4-3.xlsx,计划购电量,A208,2025-08-26 00:00:00,datetime
+result4-3.xlsx,计划购电量,A209,2025-08-27 00:00:00,datetime
+result4-3.xlsx,计划购电量,A210,2025-08-28 00:00:00,datetime
+result4-3.xlsx,计划购电量,A211,2025-08-29 00:00:00,datetime
+result4-3.xlsx,计划购电量,A212,2025-08-30 00:00:00,datetime
+result4-3.xlsx,计划购电量,A213,2025-08-31 00:00:00,datetime
+result4-3.xlsx,计划购电量,A214,2025-09-01 00:00:00,datetime
+result4-3.xlsx,计划购电量,A215,2025-09-02 00:00:00,datetime
+result4-3.xlsx,计划购电量,A216,2025-09-03 00:00:00,datetime
+result4-3.xlsx,计划购电量,A217,2025-09-04 00:00:00,datetime
+result4-3.xlsx,计划购电量,A218,2025-09-05 00:00:00,datetime
+result4-3.xlsx,计划购电量,A219,2025-09-06 00:00:00,datetime
+result4-3.xlsx,计划购电量,A220,2025-09-07 00:00:00,datetime
+result4-3.xlsx,计划购电量,A221,2025-09-08 00:00:00,datetime
+result4-3.xlsx,计划购电量,A222,2025-09-09 00:00:00,datetime
+result4-3.xlsx,计划购电量,A223,2025-09-10 00:00:00,datetime
+result4-3.xlsx,计划购电量,A224,2025-09-11 00:00:00,datetime
+result4-3.xlsx,计划购电量,A225,2025-09-12 00:00:00,datetime
+result4-3.xlsx,计划购电量,A226,2025-09-13 00:00:00,datetime
+result4-3.xlsx,计划购电量,A227,2025-09-14 00:00:00,datetime
+result4-3.xlsx,计划购电量,A228,2025-09-15 00:00:00,datetime
+result4-3.xlsx,计划购电量,A229,2025-09-16 00:00:00,datetime
+result4-3.xlsx,计划购电量,A230,2025-09-17 00:00:00,datetime
+result4-3.xlsx,计划购电量,A231,2025-09-18 00:00:00,datetime
+result4-3.xlsx,计划购电量,A232,2025-09-19 00:00:00,datetime
+result4-3.xlsx,计划购电量,A233,2025-09-20 00:00:00,datetime
+result4-3.xlsx,计划购电量,A234,2025-09-21 00:00:00,datetime
+result4-3.xlsx,计划购电量,A235,2025-09-22 00:00:00,datetime
+result4-3.xlsx,计划购电量,A236,2025-09-23 00:00:00,datetime
+result4-3.xlsx,计划购电量,A237,2025-09-24 00:00:00,datetime
+result4-3.xlsx,计划购电量,A238,2025-09-25 00:00:00,datetime
+result4-3.xlsx,计划购电量,A239,2025-09-26 00:00:00,datetime
+result4-3.xlsx,计划购电量,A240,2025-09-27 00:00:00,datetime
+result4-3.xlsx,计划购电量,A241,2025-09-28 00:00:00,datetime
+result4-3.xlsx,计划购电量,A242,2025-09-29 00:00:00,datetime
+result4-3.xlsx,计划购电量,A243,2025-09-30 00:00:00,datetime
+result4-3.xlsx,计划购电量,A244,2025-10-01 00:00:00,datetime
+result4-3.xlsx,计划购电量,A245,2025-10-02 00:00:00,datetime
+result4-3.xlsx,计划购电量,A246,2025-10-03 00:00:00,datetime
+result4-3.xlsx,计划购电量,A247,2025-10-04 00:00:00,datetime
+result4-3.xlsx,计划购电量,A248,2025-10-05 00:00:00,datetime
+result4-3.xlsx,计划购电量,A249,2025-10-06 00:00:00,datetime
+result4-3.xlsx,计划购电量,A250,2025-10-07 00:00:00,datetime
+result4-3.xlsx,计划购电量,A251,2025-10-08 00:00:00,datetime
+result4-3.xlsx,计划购电量,A252,2025-10-09 00:00:00,datetime
+result4-3.xlsx,计划购电量,A253,2025-10-10 00:00:00,datetime
+result4-3.xlsx,计划购电量,A254,2025-10-11 00:00:00,datetime
+result4-3.xlsx,计划购电量,A255,2025-10-12 00:00:00,datetime
+result4-3.xlsx,计划购电量,A256,2025-10-13 00:00:00,datetime
+result4-3.xlsx,计划购电量,A257,2025-10-14 00:00:00,datetime
+result4-3.xlsx,计划购电量,A258,2025-10-15 00:00:00,datetime
+result4-3.xlsx,计划购电量,A259,2025-10-16 00:00:00,datetime
+result4-3.xlsx,计划购电量,A260,2025-10-17 00:00:00,datetime
+result4-3.xlsx,计划购电量,A261,2025-10-18 00:00:00,datetime
+result4-3.xlsx,计划购电量,A262,2025-10-19 00:00:00,datetime
+result4-3.xlsx,计划购电量,A263,2025-10-20 00:00:00,datetime
+result4-3.xlsx,计划购电量,A264,2025-10-21 00:00:00,datetime
+result4-3.xlsx,计划购电量,A265,2025-10-22 00:00:00,datetime
+result4-3.xlsx,计划购电量,A266,2025-10-23 00:00:00,datetime
+result4-3.xlsx,计划购电量,A267,2025-10-24 00:00:00,datetime
+result4-3.xlsx,计划购电量,A268,2025-10-25 00:00:00,datetime
+result4-3.xlsx,计划购电量,A269,2025-10-26 00:00:00,datetime
+result4-3.xlsx,计划购电量,A270,2025-10-27 00:00:00,datetime
+result4-3.xlsx,计划购电量,A271,2025-10-28 00:00:00,datetime
+result4-3.xlsx,计划购电量,A272,2025-10-29 00:00:00,datetime
+result4-3.xlsx,计划购电量,A273,2025-10-30 00:00:00,datetime
+result4-3.xlsx,计划购电量,A274,2025-10-31 00:00:00,datetime
+result4-3.xlsx,计划购电量,A275,2025-11-01 00:00:00,datetime
+result4-3.xlsx,计划购电量,A276,2025-11-02 00:00:00,datetime
+result4-3.xlsx,计划购电量,A277,2025-11-03 00:00:00,datetime
+result4-3.xlsx,计划购电量,A278,2025-11-04 00:00:00,datetime
+result4-3.xlsx,计划购电量,A279,2025-11-05 00:00:00,datetime
+result4-3.xlsx,计划购电量,A280,2025-11-06 00:00:00,datetime
+result4-3.xlsx,计划购电量,A281,2025-11-07 00:00:00,datetime
+result4-3.xlsx,计划购电量,A282,2025-11-08 00:00:00,datetime
+result4-3.xlsx,计划购电量,A283,2025-11-09 00:00:00,datetime
+result4-3.xlsx,计划购电量,A284,2025-11-10 00:00:00,datetime
+result4-3.xlsx,计划购电量,A285,2025-11-11 00:00:00,datetime
+result4-3.xlsx,计划购电量,A286,2025-11-12 00:00:00,datetime
+result4-3.xlsx,计划购电量,A287,2025-11-13 00:00:00,datetime
+result4-3.xlsx,计划购电量,A288,2025-11-14 00:00:00,datetime
+result4-3.xlsx,计划购电量,A289,2025-11-15 00:00:00,datetime
+result4-3.xlsx,计划购电量,A290,2025-11-16 00:00:00,datetime
+result4-3.xlsx,计划购电量,A291,2025-11-17 00:00:00,datetime
+result4-3.xlsx,计划购电量,A292,2025-11-18 00:00:00,datetime
+result4-3.xlsx,计划购电量,A293,2025-11-19 00:00:00,datetime
+result4-3.xlsx,计划购电量,A294,2025-11-20 00:00:00,datetime
+result4-3.xlsx,计划购电量,A295,2025-11-21 00:00:00,datetime
+result4-3.xlsx,计划购电量,A296,2025-11-22 00:00:00,datetime
+result4-3.xlsx,计划购电量,A297,2025-11-23 00:00:00,datetime
+result4-3.xlsx,计划购电量,A298,2025-11-24 00:00:00,datetime
+result4-3.xlsx,计划购电量,A299,2025-11-25 00:00:00,datetime
+result4-3.xlsx,计划购电量,A300,2025-11-26 00:00:00,datetime
+result4-3.xlsx,计划购电量,A301,2025-11-27 00:00:00,datetime
+result4-3.xlsx,计划购电量,A302,2025-11-28 00:00:00,datetime
+result4-3.xlsx,计划购电量,A303,2025-11-29 00:00:00,datetime
+result4-3.xlsx,计划购电量,A304,2025-11-30 00:00:00,datetime
+result4-3.xlsx,计划购电量,A305,2025-12-01 00:00:00,datetime
+result4-3.xlsx,计划购电量,A306,2025-12-02 00:00:00,datetime
+result4-3.xlsx,计划购电量,A307,2025-12-03 00:00:00,datetime
+result4-3.xlsx,计划购电量,A308,2025-12-04 00:00:00,datetime
+result4-3.xlsx,计划购电量,A309,2025-12-05 00:00:00,datetime
+result4-3.xlsx,计划购电量,A310,2025-12-06 00:00:00,datetime
+result4-3.xlsx,计划购电量,A311,2025-12-07 00:00:00,datetime
+result4-3.xlsx,计划购电量,A312,2025-12-08 00:00:00,datetime
+result4-3.xlsx,计划购电量,A313,2025-12-09 00:00:00,datetime
+result4-3.xlsx,计划购电量,A314,2025-12-10 00:00:00,datetime
+result4-3.xlsx,计划购电量,A315,2025-12-11 00:00:00,datetime
+result4-3.xlsx,计划购电量,A316,2025-12-12 00:00:00,datetime
+result4-3.xlsx,计划购电量,A317,2025-12-13 00:00:00,datetime
+result4-3.xlsx,计划购电量,A318,2025-12-14 00:00:00,datetime
+result4-3.xlsx,计划购电量,A319,2025-12-15 00:00:00,datetime
+result4-3.xlsx,计划购电量,A320,2025-12-16 00:00:00,datetime
+result4-3.xlsx,计划购电量,A321,2025-12-17 00:00:00,datetime
+result4-3.xlsx,计划购电量,A322,2025-12-18 00:00:00,datetime
+result4-3.xlsx,计划购电量,A323,2025-12-19 00:00:00,datetime
+result4-3.xlsx,计划购电量,A324,2025-12-20 00:00:00,datetime
+result4-3.xlsx,计划购电量,A325,2025-12-21 00:00:00,datetime
+result4-3.xlsx,计划购电量,A326,2025-12-22 00:00:00,datetime
+result4-3.xlsx,计划购电量,A327,2025-12-23 00:00:00,datetime
+result4-3.xlsx,计划购电量,A328,2025-12-24 00:00:00,datetime
+result4-3.xlsx,计划购电量,A329,2025-12-25 00:00:00,datetime
+result4-3.xlsx,计划购电量,A330,2025-12-26 00:00:00,datetime
+result4-3.xlsx,计划购电量,A331,2025-12-27 00:00:00,datetime
+result4-3.xlsx,计划购电量,A332,2025-12-28 00:00:00,datetime
+result4-3.xlsx,计划购电量,A333,2025-12-29 00:00:00,datetime
+result4-3.xlsx,计划购电量,A334,2025-12-30 00:00:00,datetime
+result4-3.xlsx,计划购电量,A335,2025-12-31 00:00:00,datetime
+result4-3.xlsx,调整购电量,A1,日期\时间,str
+result4-3.xlsx,调整购电量,B1,0:10-0:20,str
+result4-3.xlsx,调整购电量,C1,0:20-0:30,str
+result4-3.xlsx,调整购电量,D1,0:30-0:40,str
+result4-3.xlsx,调整购电量,E1,0:40-0:50,str
+result4-3.xlsx,调整购电量,F1,0:50-1:00,str
+result4-3.xlsx,调整购电量,G1,1:00-1:10,str
+result4-3.xlsx,调整购电量,H1,1:10-1:20,str
+result4-3.xlsx,调整购电量,I1,1:20-1:30,str
+result4-3.xlsx,调整购电量,J1,1:30-1:40,str
+result4-3.xlsx,调整购电量,K1,1:40-1:50,str
+result4-3.xlsx,调整购电量,L1,1:50-2:00,str
+result4-3.xlsx,调整购电量,M1,2:00-2:10,str
+result4-3.xlsx,调整购电量,N1,2:10-2:20,str
+result4-3.xlsx,调整购电量,O1,2:20-2:30,str
+result4-3.xlsx,调整购电量,P1,2:30-2:40,str
+result4-3.xlsx,调整购电量,Q1,2:40-2:50,str
+result4-3.xlsx,调整购电量,R1,2:50-3:00,str
+result4-3.xlsx,调整购电量,S1,3:00-3:10,str
+result4-3.xlsx,调整购电量,T1,3:10-3:20,str
+result4-3.xlsx,调整购电量,U1,3:20-3:30,str
+result4-3.xlsx,调整购电量,V1,3:30-3:40,str
+result4-3.xlsx,调整购电量,W1,3:40-3:50,str
+result4-3.xlsx,调整购电量,X1,3:50-4:00,str
+result4-3.xlsx,调整购电量,Y1,4:00-4:10,str
+result4-3.xlsx,调整购电量,Z1,4:10-4:20,str
+result4-3.xlsx,调整购电量,AA1,4:20-4:30,str
+result4-3.xlsx,调整购电量,AB1,4:30-4:40,str
+result4-3.xlsx,调整购电量,AC1,4:40-4:50,str
+result4-3.xlsx,调整购电量,AD1,4:50-5:00,str
+result4-3.xlsx,调整购电量,AE1,5:00-5:10,str
+result4-3.xlsx,调整购电量,AF1,5:10-5:20,str
+result4-3.xlsx,调整购电量,AG1,5:20-5:30,str
+result4-3.xlsx,调整购电量,AH1,5:30-5:40,str
+result4-3.xlsx,调整购电量,AI1,5:40-5:50,str
+result4-3.xlsx,调整购电量,AJ1,5:50-6:00,str
+result4-3.xlsx,调整购电量,AK1,6:00-6:10,str
+result4-3.xlsx,调整购电量,AL1,6:10-6:20,str
+result4-3.xlsx,调整购电量,AM1,6:20-6:30,str
+result4-3.xlsx,调整购电量,AN1,6:30-6:40,str
+result4-3.xlsx,调整购电量,AO1,6:40-6:50,str
+result4-3.xlsx,调整购电量,AP1,6:50-7:00,str
+result4-3.xlsx,调整购电量,AQ1,7:0-7:10,str
+result4-3.xlsx,调整购电量,AR1,7:10-7:20,str
+result4-3.xlsx,调整购电量,AS1,7:20-7:30,str
+result4-3.xlsx,调整购电量,AT1,7:30-7:40,str
+result4-3.xlsx,调整购电量,AU1,7:40-7:50,str
+result4-3.xlsx,调整购电量,AV1,7:50-8:00,str
+result4-3.xlsx,调整购电量,AW1,8:00-8:10,str
+result4-3.xlsx,调整购电量,AX1,8:10-8:20,str
+result4-3.xlsx,调整购电量,AY1,8:20-8:30,str
+result4-3.xlsx,调整购电量,AZ1,8:30-8:40,str
+result4-3.xlsx,调整购电量,BA1,8:40-8:50,str
+result4-3.xlsx,调整购电量,BB1,8:50-9:00,str
+result4-3.xlsx,调整购电量,BC1,9:00-9:10,str
+result4-3.xlsx,调整购电量,BD1,9:10-9:20,str
+result4-3.xlsx,调整购电量,BE1,9:20-9:30,str
+result4-3.xlsx,调整购电量,BF1,9:30-9:40,str
+result4-3.xlsx,调整购电量,BG1,9:40-9:50,str
+result4-3.xlsx,调整购电量,BH1,9:50-10:00,str
+result4-3.xlsx,调整购电量,BI1,10:00-10:10,str
+result4-3.xlsx,调整购电量,BJ1,10:10-10:20,str
+result4-3.xlsx,调整购电量,BK1,10:20-10:30,str
+result4-3.xlsx,调整购电量,BL1,10:30-10:40,str
+result4-3.xlsx,调整购电量,BM1,10:40-10:50,str
+result4-3.xlsx,调整购电量,BN1,10:50-11:00,str
+result4-3.xlsx,调整购电量,BO1,11:00-11:10,str
+result4-3.xlsx,调整购电量,BP1,11:10-11:20,str
+result4-3.xlsx,调整购电量,BQ1,11:20-11:30,str
+result4-3.xlsx,调整购电量,BR1,11:30-11:40,str
+result4-3.xlsx,调整购电量,BS1,11:40-11:50,str
+result4-3.xlsx,调整购电量,BT1,11:50-12:00,str
+result4-3.xlsx,调整购电量,BU1,12:00-12:10,str
+result4-3.xlsx,调整购电量,BV1,12:10-12:20,str
+result4-3.xlsx,调整购电量,BW1,12:20-12:30,str
+result4-3.xlsx,调整购电量,BX1,12:30-12:40,str
+result4-3.xlsx,调整购电量,BY1,12:40-12:50,str
+result4-3.xlsx,调整购电量,BZ1,12:50-13:00,str
+result4-3.xlsx,调整购电量,CA1,13:00-13:10,str
+result4-3.xlsx,调整购电量,CB1,13:10-13:20,str
+result4-3.xlsx,调整购电量,CC1,13:20-13:30,str
+result4-3.xlsx,调整购电量,CD1,13:30-13:40,str
+result4-3.xlsx,调整购电量,CE1,13:40-13:50,str
+result4-3.xlsx,调整购电量,CF1,13:50-14:00,str
+result4-3.xlsx,调整购电量,CG1,14:00-14:10,str
+result4-3.xlsx,调整购电量,CH1,14:10-14:20,str
+result4-3.xlsx,调整购电量,CI1,14:20-14:30,str
+result4-3.xlsx,调整购电量,CJ1,14:30-14:40,str
+result4-3.xlsx,调整购电量,CK1,14:40-14:50,str
+result4-3.xlsx,调整购电量,CL1,14:50-15:00,str
+result4-3.xlsx,调整购电量,CM1,15:00-15:10,str
+result4-3.xlsx,调整购电量,CN1,15:10-15:20,str
+result4-3.xlsx,调整购电量,CO1,15:20-15:30,str
+result4-3.xlsx,调整购电量,CP1,15:30-15:40,str
+result4-3.xlsx,调整购电量,CQ1,15:40-15:50,str
+result4-3.xlsx,调整购电量,CR1,15:50-16:00,str
+result4-3.xlsx,调整购电量,CS1,16:00-16:10,str
+result4-3.xlsx,调整购电量,CT1,16:10-16:20,str
+result4-3.xlsx,调整购电量,CU1,16:20-16:30,str
+result4-3.xlsx,调整购电量,CV1,16:30-16:40,str
+result4-3.xlsx,调整购电量,CW1,16:40-16:50,str
+result4-3.xlsx,调整购电量,CX1,16:50-17:00,str
+result4-3.xlsx,调整购电量,CY1,17:00-17:10,str
+result4-3.xlsx,调整购电量,CZ1,17:10-17:20,str
+result4-3.xlsx,调整购电量,DA1,17:20-17:30,str
+result4-3.xlsx,调整购电量,DB1,17:30-17:40,str
+result4-3.xlsx,调整购电量,DC1,17:40-17:50,str
+result4-3.xlsx,调整购电量,DD1,17:50-18:00,str
+result4-3.xlsx,调整购电量,DE1,18:00-18:10,str
+result4-3.xlsx,调整购电量,DF1,18:10-18:20,str
+result4-3.xlsx,调整购电量,DG1,18:20-18:30,str
+result4-3.xlsx,调整购电量,DH1,18:30-18:40,str
+result4-3.xlsx,调整购电量,DI1,18:40-18:50,str
+result4-3.xlsx,调整购电量,DJ1,18:50-19:00,str
+result4-3.xlsx,调整购电量,DK1,19:00-19:10,str
+result4-3.xlsx,调整购电量,DL1,19:10-19:20,str
+result4-3.xlsx,调整购电量,DM1,19:20-19:30,str
+result4-3.xlsx,调整购电量,DN1,19:30-19:40,str
+result4-3.xlsx,调整购电量,DO1,19:40-19:50,str
+result4-3.xlsx,调整购电量,DP1,19:50-20:00,str
+result4-3.xlsx,调整购电量,DQ1,20:00-20:10,str
+result4-3.xlsx,调整购电量,DR1,20:10-20:20,str
+result4-3.xlsx,调整购电量,DS1,20:20-20:30,str
+result4-3.xlsx,调整购电量,DT1,20:30-20:40,str
+result4-3.xlsx,调整购电量,DU1,20:40-20:50,str
+result4-3.xlsx,调整购电量,DV1,20:50-21:00,str
+result4-3.xlsx,调整购电量,DW1,21:00-21:10,str
+result4-3.xlsx,调整购电量,DX1,21:10-21:20,str
+result4-3.xlsx,调整购电量,DY1,21:20-21:30,str
+result4-3.xlsx,调整购电量,DZ1,21:30-21:40,str
+result4-3.xlsx,调整购电量,EA1,21:40-21:50,str
+result4-3.xlsx,调整购电量,EB1,21:50-22:00,str
+result4-3.xlsx,调整购电量,EC1,22:00-22:10,str
+result4-3.xlsx,调整购电量,ED1,22:10-22:20,str
+result4-3.xlsx,调整购电量,EE1,22:20-22:30,str
+result4-3.xlsx,调整购电量,EF1,22:30-22:40,str
+result4-3.xlsx,调整购电量,EG1,22:40-22:50,str
+result4-3.xlsx,调整购电量,EH1,22:50-23:00,str
+result4-3.xlsx,调整购电量,EI1,23:00-23:10,str
+result4-3.xlsx,调整购电量,EJ1,23:10-23:20,str
+result4-3.xlsx,调整购电量,EK1,23:20-23:30,str
+result4-3.xlsx,调整购电量,EL1,23:30-23:40,str
+result4-3.xlsx,调整购电量,EM1,23:40-23:50,str
+result4-3.xlsx,调整购电量,EN1,23:50-0:00+1,str
+result4-3.xlsx,调整购电量,EO1,0:00-0:10+1,str
+result4-3.xlsx,调整购电量,EP1,全天购电量,str
+result4-3.xlsx,调整购电量,EQ1,全天购电费,str
+result4-3.xlsx,调整购电量,A2,2025-02-01 00:00:00,datetime
+result4-3.xlsx,调整购电量,A3,2025-02-02 00:00:00,datetime
+result4-3.xlsx,调整购电量,A4,2025-02-03 00:00:00,datetime
+result4-3.xlsx,调整购电量,A5,2025-02-04 00:00:00,datetime
+result4-3.xlsx,调整购电量,A6,2025-02-05 00:00:00,datetime
+result4-3.xlsx,调整购电量,A7,2025-02-06 00:00:00,datetime
+result4-3.xlsx,调整购电量,A8,2025-02-07 00:00:00,datetime
+result4-3.xlsx,调整购电量,A9,2025-02-08 00:00:00,datetime
+result4-3.xlsx,调整购电量,A10,2025-02-09 00:00:00,datetime
+result4-3.xlsx,调整购电量,A11,2025-02-10 00:00:00,datetime
+result4-3.xlsx,调整购电量,A12,2025-02-11 00:00:00,datetime
+result4-3.xlsx,调整购电量,A13,2025-02-12 00:00:00,datetime
+result4-3.xlsx,调整购电量,A14,2025-02-13 00:00:00,datetime
+result4-3.xlsx,调整购电量,A15,2025-02-14 00:00:00,datetime
+result4-3.xlsx,调整购电量,A16,2025-02-15 00:00:00,datetime
+result4-3.xlsx,调整购电量,A17,2025-02-16 00:00:00,datetime
+result4-3.xlsx,调整购电量,A18,2025-02-17 00:00:00,datetime
+result4-3.xlsx,调整购电量,A19,2025-02-18 00:00:00,datetime
+result4-3.xlsx,调整购电量,A20,2025-02-19 00:00:00,datetime
+result4-3.xlsx,调整购电量,A21,2025-02-20 00:00:00,datetime
+result4-3.xlsx,调整购电量,A22,2025-02-21 00:00:00,datetime
+result4-3.xlsx,调整购电量,A23,2025-02-22 00:00:00,datetime
+result4-3.xlsx,调整购电量,A24,2025-02-23 00:00:00,datetime
+result4-3.xlsx,调整购电量,A25,2025-02-24 00:00:00,datetime
+result4-3.xlsx,调整购电量,A26,2025-02-25 00:00:00,datetime
+result4-3.xlsx,调整购电量,A27,2025-02-26 00:00:00,datetime
+result4-3.xlsx,调整购电量,A28,2025-02-27 00:00:00,datetime
+result4-3.xlsx,调整购电量,A29,2025-02-28 00:00:00,datetime
+result4-3.xlsx,调整购电量,A30,2025-03-01 00:00:00,datetime
+result4-3.xlsx,调整购电量,A31,2025-03-02 00:00:00,datetime
+result4-3.xlsx,调整购电量,A32,2025-03-03 00:00:00,datetime
+result4-3.xlsx,调整购电量,A33,2025-03-04 00:00:00,datetime
+result4-3.xlsx,调整购电量,A34,2025-03-05 00:00:00,datetime
+result4-3.xlsx,调整购电量,A35,2025-03-06 00:00:00,datetime
+result4-3.xlsx,调整购电量,A36,2025-03-07 00:00:00,datetime
+result4-3.xlsx,调整购电量,A37,2025-03-08 00:00:00,datetime
+result4-3.xlsx,调整购电量,A38,2025-03-09 00:00:00,datetime
+result4-3.xlsx,调整购电量,A39,2025-03-10 00:00:00,datetime
+result4-3.xlsx,调整购电量,A40,2025-03-11 00:00:00,datetime
+result4-3.xlsx,调整购电量,A41,2025-03-12 00:00:00,datetime
+result4-3.xlsx,调整购电量,A42,2025-03-13 00:00:00,datetime
+result4-3.xlsx,调整购电量,A43,2025-03-14 00:00:00,datetime
+result4-3.xlsx,调整购电量,A44,2025-03-15 00:00:00,datetime
+result4-3.xlsx,调整购电量,A45,2025-03-16 00:00:00,datetime
+result4-3.xlsx,调整购电量,A46,2025-03-17 00:00:00,datetime
+result4-3.xlsx,调整购电量,A47,2025-03-18 00:00:00,datetime
+result4-3.xlsx,调整购电量,A48,2025-03-19 00:00:00,datetime
+result4-3.xlsx,调整购电量,A49,2025-03-20 00:00:00,datetime
+result4-3.xlsx,调整购电量,A50,2025-03-21 00:00:00,datetime
+result4-3.xlsx,调整购电量,A51,2025-03-22 00:00:00,datetime
+result4-3.xlsx,调整购电量,A52,2025-03-23 00:00:00,datetime
+result4-3.xlsx,调整购电量,A53,2025-03-24 00:00:00,datetime
+result4-3.xlsx,调整购电量,A54,2025-03-25 00:00:00,datetime
+result4-3.xlsx,调整购电量,A55,2025-03-26 00:00:00,datetime
+result4-3.xlsx,调整购电量,A56,2025-03-27 00:00:00,datetime
+result4-3.xlsx,调整购电量,A57,2025-03-28 00:00:00,datetime
+result4-3.xlsx,调整购电量,A58,2025-03-29 00:00:00,datetime
+result4-3.xlsx,调整购电量,A59,2025-03-30 00:00:00,datetime
+result4-3.xlsx,调整购电量,A60,2025-03-31 00:00:00,datetime
+result4-3.xlsx,调整购电量,A61,2025-04-01 00:00:00,datetime
+result4-3.xlsx,调整购电量,A62,2025-04-02 00:00:00,datetime
+result4-3.xlsx,调整购电量,A63,2025-04-03 00:00:00,datetime
+result4-3.xlsx,调整购电量,A64,2025-04-04 00:00:00,datetime
+result4-3.xlsx,调整购电量,A65,2025-04-05 00:00:00,datetime
+result4-3.xlsx,调整购电量,A66,2025-04-06 00:00:00,datetime
+result4-3.xlsx,调整购电量,A67,2025-04-07 00:00:00,datetime
+result4-3.xlsx,调整购电量,A68,2025-04-08 00:00:00,datetime
+result4-3.xlsx,调整购电量,A69,2025-04-09 00:00:00,datetime
+result4-3.xlsx,调整购电量,A70,2025-04-10 00:00:00,datetime
+result4-3.xlsx,调整购电量,A71,2025-04-11 00:00:00,datetime
+result4-3.xlsx,调整购电量,A72,2025-04-12 00:00:00,datetime
+result4-3.xlsx,调整购电量,A73,2025-04-13 00:00:00,datetime
+result4-3.xlsx,调整购电量,A74,2025-04-14 00:00:00,datetime
+result4-3.xlsx,调整购电量,A75,2025-04-15 00:00:00,datetime
+result4-3.xlsx,调整购电量,A76,2025-04-16 00:00:00,datetime
+result4-3.xlsx,调整购电量,A77,2025-04-17 00:00:00,datetime
+result4-3.xlsx,调整购电量,A78,2025-04-18 00:00:00,datetime
+result4-3.xlsx,调整购电量,A79,2025-04-19 00:00:00,datetime
+result4-3.xlsx,调整购电量,A80,2025-04-20 00:00:00,datetime
+result4-3.xlsx,调整购电量,A81,2025-04-21 00:00:00,datetime
+result4-3.xlsx,调整购电量,A82,2025-04-22 00:00:00,datetime
+result4-3.xlsx,调整购电量,A83,2025-04-23 00:00:00,datetime
+result4-3.xlsx,调整购电量,A84,2025-04-24 00:00:00,datetime
+result4-3.xlsx,调整购电量,A85,2025-04-25 00:00:00,datetime
+result4-3.xlsx,调整购电量,A86,2025-04-26 00:00:00,datetime
+result4-3.xlsx,调整购电量,A87,2025-04-27 00:00:00,datetime
+result4-3.xlsx,调整购电量,A88,2025-04-28 00:00:00,datetime
+result4-3.xlsx,调整购电量,A89,2025-04-29 00:00:00,datetime
+result4-3.xlsx,调整购电量,A90,2025-04-30 00:00:00,datetime
+result4-3.xlsx,调整购电量,A91,2025-05-01 00:00:00,datetime
+result4-3.xlsx,调整购电量,A92,2025-05-02 00:00:00,datetime
+result4-3.xlsx,调整购电量,A93,2025-05-03 00:00:00,datetime
+result4-3.xlsx,调整购电量,A94,2025-05-04 00:00:00,datetime
+result4-3.xlsx,调整购电量,A95,2025-05-05 00:00:00,datetime
+result4-3.xlsx,调整购电量,A96,2025-05-06 00:00:00,datetime
+result4-3.xlsx,调整购电量,A97,2025-05-07 00:00:00,datetime
+result4-3.xlsx,调整购电量,A98,2025-05-08 00:00:00,datetime
+result4-3.xlsx,调整购电量,A99,2025-05-09 00:00:00,datetime
+result4-3.xlsx,调整购电量,A100,2025-05-10 00:00:00,datetime
+result4-3.xlsx,调整购电量,A101,2025-05-11 00:00:00,datetime
+result4-3.xlsx,调整购电量,A102,2025-05-12 00:00:00,datetime
+result4-3.xlsx,调整购电量,A103,2025-05-13 00:00:00,datetime
+result4-3.xlsx,调整购电量,A104,2025-05-14 00:00:00,datetime
+result4-3.xlsx,调整购电量,A105,2025-05-15 00:00:00,datetime
+result4-3.xlsx,调整购电量,A106,2025-05-16 00:00:00,datetime
+result4-3.xlsx,调整购电量,A107,2025-05-17 00:00:00,datetime
+result4-3.xlsx,调整购电量,A108,2025-05-18 00:00:00,datetime
+result4-3.xlsx,调整购电量,A109,2025-05-19 00:00:00,datetime
+result4-3.xlsx,调整购电量,A110,2025-05-20 00:00:00,datetime
+result4-3.xlsx,调整购电量,A111,2025-05-21 00:00:00,datetime
+result4-3.xlsx,调整购电量,A112,2025-05-22 00:00:00,datetime
+result4-3.xlsx,调整购电量,A113,2025-05-23 00:00:00,datetime
+result4-3.xlsx,调整购电量,A114,2025-05-24 00:00:00,datetime
+result4-3.xlsx,调整购电量,A115,2025-05-25 00:00:00,datetime
+result4-3.xlsx,调整购电量,A116,2025-05-26 00:00:00,datetime
+result4-3.xlsx,调整购电量,A117,2025-05-27 00:00:00,datetime
+result4-3.xlsx,调整购电量,A118,2025-05-28 00:00:00,datetime
+result4-3.xlsx,调整购电量,A119,2025-05-29 00:00:00,datetime
+result4-3.xlsx,调整购电量,A120,2025-05-30 00:00:00,datetime
+result4-3.xlsx,调整购电量,A121,2025-05-31 00:00:00,datetime
+result4-3.xlsx,调整购电量,A122,2025-06-01 00:00:00,datetime
+result4-3.xlsx,调整购电量,A123,2025-06-02 00:00:00,datetime
+result4-3.xlsx,调整购电量,A124,2025-06-03 00:00:00,datetime
+result4-3.xlsx,调整购电量,A125,2025-06-04 00:00:00,datetime
+result4-3.xlsx,调整购电量,A126,2025-06-05 00:00:00,datetime
+result4-3.xlsx,调整购电量,A127,2025-06-06 00:00:00,datetime
+result4-3.xlsx,调整购电量,A128,2025-06-07 00:00:00,datetime
+result4-3.xlsx,调整购电量,A129,2025-06-08 00:00:00,datetime
+result4-3.xlsx,调整购电量,A130,2025-06-09 00:00:00,datetime
+result4-3.xlsx,调整购电量,A131,2025-06-10 00:00:00,datetime
+result4-3.xlsx,调整购电量,A132,2025-06-11 00:00:00,datetime
+result4-3.xlsx,调整购电量,A133,2025-06-12 00:00:00,datetime
+result4-3.xlsx,调整购电量,A134,2025-06-13 00:00:00,datetime
+result4-3.xlsx,调整购电量,A135,2025-06-14 00:00:00,datetime
+result4-3.xlsx,调整购电量,A136,2025-06-15 00:00:00,datetime
+result4-3.xlsx,调整购电量,A137,2025-06-16 00:00:00,datetime
+result4-3.xlsx,调整购电量,A138,2025-06-17 00:00:00,datetime
+result4-3.xlsx,调整购电量,A139,2025-06-18 00:00:00,datetime
+result4-3.xlsx,调整购电量,A140,2025-06-19 00:00:00,datetime
+result4-3.xlsx,调整购电量,A141,2025-06-20 00:00:00,datetime
+result4-3.xlsx,调整购电量,A142,2025-06-21 00:00:00,datetime
+result4-3.xlsx,调整购电量,A143,2025-06-22 00:00:00,datetime
+result4-3.xlsx,调整购电量,A144,2025-06-23 00:00:00,datetime
+result4-3.xlsx,调整购电量,A145,2025-06-24 00:00:00,datetime
+result4-3.xlsx,调整购电量,A146,2025-06-25 00:00:00,datetime
+result4-3.xlsx,调整购电量,A147,2025-06-26 00:00:00,datetime
+result4-3.xlsx,调整购电量,A148,2025-06-27 00:00:00,datetime
+result4-3.xlsx,调整购电量,A149,2025-06-28 00:00:00,datetime
+result4-3.xlsx,调整购电量,A150,2025-06-29 00:00:00,datetime
+result4-3.xlsx,调整购电量,A151,2025-06-30 00:00:00,datetime
+result4-3.xlsx,调整购电量,A152,2025-07-01 00:00:00,datetime
+result4-3.xlsx,调整购电量,A153,2025-07-02 00:00:00,datetime
+result4-3.xlsx,调整购电量,A154,2025-07-03 00:00:00,datetime
+result4-3.xlsx,调整购电量,A155,2025-07-04 00:00:00,datetime
+result4-3.xlsx,调整购电量,A156,2025-07-05 00:00:00,datetime
+result4-3.xlsx,调整购电量,A157,2025-07-06 00:00:00,datetime
+result4-3.xlsx,调整购电量,A158,2025-07-07 00:00:00,datetime
+result4-3.xlsx,调整购电量,A159,2025-07-08 00:00:00,datetime
+result4-3.xlsx,调整购电量,A160,2025-07-09 00:00:00,datetime
+result4-3.xlsx,调整购电量,A161,2025-07-10 00:00:00,datetime
+result4-3.xlsx,调整购电量,A162,2025-07-11 00:00:00,datetime
+result4-3.xlsx,调整购电量,A163,2025-07-12 00:00:00,datetime
+result4-3.xlsx,调整购电量,A164,2025-07-13 00:00:00,datetime
+result4-3.xlsx,调整购电量,A165,2025-07-14 00:00:00,datetime
+result4-3.xlsx,调整购电量,A166,2025-07-15 00:00:00,datetime
+result4-3.xlsx,调整购电量,A167,2025-07-16 00:00:00,datetime
+result4-3.xlsx,调整购电量,A168,2025-07-17 00:00:00,datetime
+result4-3.xlsx,调整购电量,A169,2025-07-18 00:00:00,datetime
+result4-3.xlsx,调整购电量,A170,2025-07-19 00:00:00,datetime
+result4-3.xlsx,调整购电量,A171,2025-07-20 00:00:00,datetime
+result4-3.xlsx,调整购电量,A172,2025-07-21 00:00:00,datetime
+result4-3.xlsx,调整购电量,A173,2025-07-22 00:00:00,datetime
+result4-3.xlsx,调整购电量,A174,2025-07-23 00:00:00,datetime
+result4-3.xlsx,调整购电量,A175,2025-07-24 00:00:00,datetime
+result4-3.xlsx,调整购电量,A176,2025-07-25 00:00:00,datetime
+result4-3.xlsx,调整购电量,A177,2025-07-26 00:00:00,datetime
+result4-3.xlsx,调整购电量,A178,2025-07-27 00:00:00,datetime
+result4-3.xlsx,调整购电量,A179,2025-07-28 00:00:00,datetime
+result4-3.xlsx,调整购电量,A180,2025-07-29 00:00:00,datetime
+result4-3.xlsx,调整购电量,A181,2025-07-30 00:00:00,datetime
+result4-3.xlsx,调整购电量,A182,2025-07-31 00:00:00,datetime
+result4-3.xlsx,调整购电量,A183,2025-08-01 00:00:00,datetime
+result4-3.xlsx,调整购电量,A184,2025-08-02 00:00:00,datetime
+result4-3.xlsx,调整购电量,A185,2025-08-03 00:00:00,datetime
+result4-3.xlsx,调整购电量,A186,2025-08-04 00:00:00,datetime
+result4-3.xlsx,调整购电量,A187,2025-08-05 00:00:00,datetime
+result4-3.xlsx,调整购电量,A188,2025-08-06 00:00:00,datetime
+result4-3.xlsx,调整购电量,A189,2025-08-07 00:00:00,datetime
+result4-3.xlsx,调整购电量,A190,2025-08-08 00:00:00,datetime
+result4-3.xlsx,调整购电量,A191,2025-08-09 00:00:00,datetime
+result4-3.xlsx,调整购电量,A192,2025-08-10 00:00:00,datetime
+result4-3.xlsx,调整购电量,A193,2025-08-11 00:00:00,datetime
+result4-3.xlsx,调整购电量,A194,2025-08-12 00:00:00,datetime
+result4-3.xlsx,调整购电量,A195,2025-08-13 00:00:00,datetime
+result4-3.xlsx,调整购电量,A196,2025-08-14 00:00:00,datetime
+result4-3.xlsx,调整购电量,A197,2025-08-15 00:00:00,datetime
+result4-3.xlsx,调整购电量,A198,2025-08-16 00:00:00,datetime
+result4-3.xlsx,调整购电量,A199,2025-08-17 00:00:00,datetime
+result4-3.xlsx,调整购电量,A200,2025-08-18 00:00:00,datetime
+result4-3.xlsx,调整购电量,A201,2025-08-19 00:00:00,datetime
+result4-3.xlsx,调整购电量,A202,2025-08-20 00:00:00,datetime
+result4-3.xlsx,调整购电量,A203,2025-08-21 00:00:00,datetime
+result4-3.xlsx,调整购电量,A204,2025-08-22 00:00:00,datetime
+result4-3.xlsx,调整购电量,A205,2025-08-23 00:00:00,datetime
+result4-3.xlsx,调整购电量,A206,2025-08-24 00:00:00,datetime
+result4-3.xlsx,调整购电量,A207,2025-08-25 00:00:00,datetime
+result4-3.xlsx,调整购电量,A208,2025-08-26 00:00:00,datetime
+result4-3.xlsx,调整购电量,A209,2025-08-27 00:00:00,datetime
+result4-3.xlsx,调整购电量,A210,2025-08-28 00:00:00,datetime
+result4-3.xlsx,调整购电量,A211,2025-08-29 00:00:00,datetime
+result4-3.xlsx,调整购电量,A212,2025-08-30 00:00:00,datetime
+result4-3.xlsx,调整购电量,A213,2025-08-31 00:00:00,datetime
+result4-3.xlsx,调整购电量,A214,2025-09-01 00:00:00,datetime
+result4-3.xlsx,调整购电量,A215,2025-09-02 00:00:00,datetime
+result4-3.xlsx,调整购电量,A216,2025-09-03 00:00:00,datetime
+result4-3.xlsx,调整购电量,A217,2025-09-04 00:00:00,datetime
+result4-3.xlsx,调整购电量,A218,2025-09-05 00:00:00,datetime
+result4-3.xlsx,调整购电量,A219,2025-09-06 00:00:00,datetime
+result4-3.xlsx,调整购电量,A220,2025-09-07 00:00:00,datetime
+result4-3.xlsx,调整购电量,A221,2025-09-08 00:00:00,datetime
+result4-3.xlsx,调整购电量,A222,2025-09-09 00:00:00,datetime
+result4-3.xlsx,调整购电量,A223,2025-09-10 00:00:00,datetime
+result4-3.xlsx,调整购电量,A224,2025-09-11 00:00:00,datetime
+result4-3.xlsx,调整购电量,A225,2025-09-12 00:00:00,datetime
+result4-3.xlsx,调整购电量,A226,2025-09-13 00:00:00,datetime
+result4-3.xlsx,调整购电量,A227,2025-09-14 00:00:00,datetime
+result4-3.xlsx,调整购电量,A228,2025-09-15 00:00:00,datetime
+result4-3.xlsx,调整购电量,A229,2025-09-16 00:00:00,datetime
+result4-3.xlsx,调整购电量,A230,2025-09-17 00:00:00,datetime
+result4-3.xlsx,调整购电量,A231,2025-09-18 00:00:00,datetime
+result4-3.xlsx,调整购电量,A232,2025-09-19 00:00:00,datetime
+result4-3.xlsx,调整购电量,A233,2025-09-20 00:00:00,datetime
+result4-3.xlsx,调整购电量,A234,2025-09-21 00:00:00,datetime
+result4-3.xlsx,调整购电量,A235,2025-09-22 00:00:00,datetime
+result4-3.xlsx,调整购电量,A236,2025-09-23 00:00:00,datetime
+result4-3.xlsx,调整购电量,A237,2025-09-24 00:00:00,datetime
+result4-3.xlsx,调整购电量,A238,2025-09-25 00:00:00,datetime
+result4-3.xlsx,调整购电量,A239,2025-09-26 00:00:00,datetime
+result4-3.xlsx,调整购电量,A240,2025-09-27 00:00:00,datetime
+result4-3.xlsx,调整购电量,A241,2025-09-28 00:00:00,datetime
+result4-3.xlsx,调整购电量,A242,2025-09-29 00:00:00,datetime
+result4-3.xlsx,调整购电量,A243,2025-09-30 00:00:00,datetime
+result4-3.xlsx,调整购电量,A244,2025-10-01 00:00:00,datetime
+result4-3.xlsx,调整购电量,A245,2025-10-02 00:00:00,datetime
+result4-3.xlsx,调整购电量,A246,2025-10-03 00:00:00,datetime
+result4-3.xlsx,调整购电量,A247,2025-10-04 00:00:00,datetime
+result4-3.xlsx,调整购电量,A248,2025-10-05 00:00:00,datetime
+result4-3.xlsx,调整购电量,A249,2025-10-06 00:00:00,datetime
+result4-3.xlsx,调整购电量,A250,2025-10-07 00:00:00,datetime
+result4-3.xlsx,调整购电量,A251,2025-10-08 00:00:00,datetime
+result4-3.xlsx,调整购电量,A252,2025-10-09 00:00:00,datetime
+result4-3.xlsx,调整购电量,A253,2025-10-10 00:00:00,datetime
+result4-3.xlsx,调整购电量,A254,2025-10-11 00:00:00,datetime
+result4-3.xlsx,调整购电量,A255,2025-10-12 00:00:00,datetime
+result4-3.xlsx,调整购电量,A256,2025-10-13 00:00:00,datetime
+result4-3.xlsx,调整购电量,A257,2025-10-14 00:00:00,datetime
+result4-3.xlsx,调整购电量,A258,2025-10-15 00:00:00,datetime
+result4-3.xlsx,调整购电量,A259,2025-10-16 00:00:00,datetime
+result4-3.xlsx,调整购电量,A260,2025-10-17 00:00:00,datetime
+result4-3.xlsx,调整购电量,A261,2025-10-18 00:00:00,datetime
+result4-3.xlsx,调整购电量,A262,2025-10-19 00:00:00,datetime
+result4-3.xlsx,调整购电量,A263,2025-10-20 00:00:00,datetime
+result4-3.xlsx,调整购电量,A264,2025-10-21 00:00:00,datetime
+result4-3.xlsx,调整购电量,A265,2025-10-22 00:00:00,datetime
+result4-3.xlsx,调整购电量,A266,2025-10-23 00:00:00,datetime
+result4-3.xlsx,调整购电量,A267,2025-10-24 00:00:00,datetime
+result4-3.xlsx,调整购电量,A268,2025-10-25 00:00:00,datetime
+result4-3.xlsx,调整购电量,A269,2025-10-26 00:00:00,datetime
+result4-3.xlsx,调整购电量,A270,2025-10-27 00:00:00,datetime
+result4-3.xlsx,调整购电量,A271,2025-10-28 00:00:00,datetime
+result4-3.xlsx,调整购电量,A272,2025-10-29 00:00:00,datetime
+result4-3.xlsx,调整购电量,A273,2025-10-30 00:00:00,datetime
+result4-3.xlsx,调整购电量,A274,2025-10-31 00:00:00,datetime
+result4-3.xlsx,调整购电量,A275,2025-11-01 00:00:00,datetime
+result4-3.xlsx,调整购电量,A276,2025-11-02 00:00:00,datetime
+result4-3.xlsx,调整购电量,A277,2025-11-03 00:00:00,datetime
+result4-3.xlsx,调整购电量,A278,2025-11-04 00:00:00,datetime
+result4-3.xlsx,调整购电量,A279,2025-11-05 00:00:00,datetime
+result4-3.xlsx,调整购电量,A280,2025-11-06 00:00:00,datetime
+result4-3.xlsx,调整购电量,A281,2025-11-07 00:00:00,datetime
+result4-3.xlsx,调整购电量,A282,2025-11-08 00:00:00,datetime
+result4-3.xlsx,调整购电量,A283,2025-11-09 00:00:00,datetime
+result4-3.xlsx,调整购电量,A284,2025-11-10 00:00:00,datetime
+result4-3.xlsx,调整购电量,A285,2025-11-11 00:00:00,datetime
+result4-3.xlsx,调整购电量,A286,2025-11-12 00:00:00,datetime
+result4-3.xlsx,调整购电量,A287,2025-11-13 00:00:00,datetime
+result4-3.xlsx,调整购电量,A288,2025-11-14 00:00:00,datetime
+result4-3.xlsx,调整购电量,A289,2025-11-15 00:00:00,datetime
+result4-3.xlsx,调整购电量,A290,2025-11-16 00:00:00,datetime
+result4-3.xlsx,调整购电量,A291,2025-11-17 00:00:00,datetime
+result4-3.xlsx,调整购电量,A292,2025-11-18 00:00:00,datetime
+result4-3.xlsx,调整购电量,A293,2025-11-19 00:00:00,datetime
+result4-3.xlsx,调整购电量,A294,2025-11-20 00:00:00,datetime
+result4-3.xlsx,调整购电量,A295,2025-11-21 00:00:00,datetime
+result4-3.xlsx,调整购电量,A296,2025-11-22 00:00:00,datetime
+result4-3.xlsx,调整购电量,A297,2025-11-23 00:00:00,datetime
+result4-3.xlsx,调整购电量,A298,2025-11-24 00:00:00,datetime
+result4-3.xlsx,调整购电量,A299,2025-11-25 00:00:00,datetime
+result4-3.xlsx,调整购电量,A300,2025-11-26 00:00:00,datetime
+result4-3.xlsx,调整购电量,A301,2025-11-27 00:00:00,datetime
+result4-3.xlsx,调整购电量,A302,2025-11-28 00:00:00,datetime
+result4-3.xlsx,调整购电量,A303,2025-11-29 00:00:00,datetime
+result4-3.xlsx,调整购电量,A304,2025-11-30 00:00:00,datetime
+result4-3.xlsx,调整购电量,A305,2025-12-01 00:00:00,datetime
+result4-3.xlsx,调整购电量,A306,2025-12-02 00:00:00,datetime
+result4-3.xlsx,调整购电量,A307,2025-12-03 00:00:00,datetime
+result4-3.xlsx,调整购电量,A308,2025-12-04 00:00:00,datetime
+result4-3.xlsx,调整购电量,A309,2025-12-05 00:00:00,datetime
+result4-3.xlsx,调整购电量,A310,2025-12-06 00:00:00,datetime
+result4-3.xlsx,调整购电量,A311,2025-12-07 00:00:00,datetime
+result4-3.xlsx,调整购电量,A312,2025-12-08 00:00:00,datetime
+result4-3.xlsx,调整购电量,A313,2025-12-09 00:00:00,datetime
+result4-3.xlsx,调整购电量,A314,2025-12-10 00:00:00,datetime
+result4-3.xlsx,调整购电量,A315,2025-12-11 00:00:00,datetime
+result4-3.xlsx,调整购电量,A316,2025-12-12 00:00:00,datetime
+result4-3.xlsx,调整购电量,A317,2025-12-13 00:00:00,datetime
+result4-3.xlsx,调整购电量,A318,2025-12-14 00:00:00,datetime
+result4-3.xlsx,调整购电量,A319,2025-12-15 00:00:00,datetime
+result4-3.xlsx,调整购电量,A320,2025-12-16 00:00:00,datetime
+result4-3.xlsx,调整购电量,A321,2025-12-17 00:00:00,datetime
+result4-3.xlsx,调整购电量,A322,2025-12-18 00:00:00,datetime
+result4-3.xlsx,调整购电量,A323,2025-12-19 00:00:00,datetime
+result4-3.xlsx,调整购电量,A324,2025-12-20 00:00:00,datetime
+result4-3.xlsx,调整购电量,A325,2025-12-21 00:00:00,datetime
+result4-3.xlsx,调整购电量,A326,2025-12-22 00:00:00,datetime
+result4-3.xlsx,调整购电量,A327,2025-12-23 00:00:00,datetime
+result4-3.xlsx,调整购电量,A328,2025-12-24 00:00:00,datetime
+result4-3.xlsx,调整购电量,A329,2025-12-25 00:00:00,datetime
+result4-3.xlsx,调整购电量,A330,2025-12-26 00:00:00,datetime
+result4-3.xlsx,调整购电量,A331,2025-12-27 00:00:00,datetime
+result4-3.xlsx,调整购电量,A332,2025-12-28 00:00:00,datetime
+result4-3.xlsx,调整购电量,A333,2025-12-29 00:00:00,datetime
+result4-3.xlsx,调整购电量,A334,2025-12-30 00:00:00,datetime
+result4-3.xlsx,调整购电量,A335,2025-12-31 00:00:00,datetime
+result4-3.xlsx,充放电量,A1,日期,str
+result4-3.xlsx,充放电量,B1,时间段,str
+result4-3.xlsx,充放电量,C1,充电量,str
+result4-3.xlsx,充放电量,D1,放电量,str
+result4-3.xlsx,充放电量,E1,时刻,str
+result4-3.xlsx,充放电量,F1,储电量,str
+result4-3.xlsx,充放电量,A2,2025-02-01 00:00:00,datetime
+result4-3.xlsx,充放电量,B2,0:00-4:00,str
+result4-3.xlsx,充放电量,E2,00:00:00,time
+result4-3.xlsx,充放电量,B3,4:00-8:00,str
+result4-3.xlsx,充放电量,E3,24:00,str
+result4-3.xlsx,充放电量,B4,8:00-12:00,str
+result4-3.xlsx,充放电量,B5,12:00-16:00,str
+result4-3.xlsx,充放电量,B6,16:00-20:00,str
+result4-3.xlsx,充放电量,B7,20:00-24:00,str
+result4-3.xlsx,充放电量,A8,2025-02-02 00:00:00,datetime
+result4-3.xlsx,充放电量,B8,0:00-4:00,str
+result4-3.xlsx,充放电量,E8,00:00:00,time
+result4-3.xlsx,充放电量,B9,4:00-8:00,str
+result4-3.xlsx,充放电量,E9,24:00,str
+result4-3.xlsx,充放电量,B10,8:00-12:00,str
+result4-3.xlsx,充放电量,B11,12:00-16:00,str
+result4-3.xlsx,充放电量,B12,16:00-20:00,str
+result4-3.xlsx,充放电量,B13,20:00-24:00,str
+result4-3.xlsx,充放电量,A14,2025-03-20 00:00:00,datetime
+result4-3.xlsx,充放电量,B14,0:00-4:00,str
+result4-3.xlsx,充放电量,E14,00:00:00,time
+result4-3.xlsx,充放电量,B15,4:00-8:00,str
+result4-3.xlsx,充放电量,E15,24:00,str
+result4-3.xlsx,充放电量,B16,8:00-12:00,str
+result4-3.xlsx,充放电量,B17,12:00-16:00,str
+result4-3.xlsx,充放电量,B18,16:00-20:00,str
+result4-3.xlsx,充放电量,B19,20:00-24:00,str
+result4-3.xlsx,充放电量,A20,⁝,str
+result4-3.xlsx,充放电量,B20,⁝,str
+result4-3.xlsx,充放电量,C20,⁝,str
+result4-3.xlsx,充放电量,D20,⁝,str
+result4-3.xlsx,充放电量,E20,⁝,str
+result4-3.xlsx,充放电量,F20,⁝,str
+result4-3.xlsx,充放电量,A21,2025-12-31 00:00:00,datetime
+result4-3.xlsx,充放电量,B21,0:00-4:00,str
+result4-3.xlsx,充放电量,E21,00:00:00,time
+result4-3.xlsx,充放电量,B22,4:00-8:00,str
+result4-3.xlsx,充放电量,E22,24:00,str
+result4-3.xlsx,充放电量,B23,8:00-12:00,str
+result4-3.xlsx,充放电量,B24,12:00-16:00,str
+result4-3.xlsx,充放电量,B25,16:00-20:00,str
+result4-3.xlsx,充放电量,B26,20:00-24:00,str
+result4-3.xlsx,紧急购电量,A1,日期,str
+result4-3.xlsx,紧急购电量,B1,购电时间段,str
+result4-3.xlsx,紧急购电量,C1,购电量,str
+result4-3.xlsx,紧急购电量,A2,2025-02-01 00:00:00,datetime
+result4-3.xlsx,紧急购电量,A5,2025-02-02 00:00:00,datetime
+result4-3.xlsx,紧急购电量,A8,⁝,str
+result4-3.xlsx,紧急购电量,B8,⁝,str
+result4-3.xlsx,紧急购电量,C8,⁝,str
+result4-3.xlsx,紧急购电量,A9,2025-12-31 00:00:00,datetime

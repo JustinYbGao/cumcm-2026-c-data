@@ -1,0 +1,30 @@
+# Only this C-problem delivery is included in the repository.
+/*
+!/.gitignore
+!/README.md
+!/C题工作区/
+!/111/
+!/选题分析/
+!/CUMCM2026Problems/
+
+/CUMCM2026Problems/*
+!/CUMCM2026Problems/C题/
+/选题分析/*
+!/选题分析/C*
+/111/*
+!/111/*.ipynb
+!/111/*.md
+!/111/C题.pdf
+!/111/附件/
+!/111/处理结果/
+
+# Local environments, machine caches, and Excel lock files.
+**/.venv/
+**/.runtime/
+**/__pycache__/
+**/*.pyc
+**/.DS_Store
+**/~$*
+**/.env
+**/.env.*
+/C题工作区/data/interim/matplotlib/

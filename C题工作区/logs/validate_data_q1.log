@@ -1,0 +1,11 @@
+PASS Q1: 144 slots unique and ordered 
+PASS Q1: complete relative day intervals 
+PASS Q1: required values nonmissing 
+PASS fixed_price: 144 slots unique and ordered 
+PASS fixed_price: complete relative day intervals 
+PASS fixed_price: required values nonmissing 
+PASS Q1: all original numeric cells preserved 
+PASS Q1: energy and signed net load 
+PASS Q1: fixed price identical 
+PASS Q1: negative net and zeros preserved negative net=30, PV zero=55
+PASS All original workbooks including templates unchanged 

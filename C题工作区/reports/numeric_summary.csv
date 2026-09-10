@@ -1,0 +1,11 @@
+table,field,count,missing,nonfinite,zero,negative,min,max
+q1_day,load_kw,144,0,0,0,0,3309.3934,5958.9696
+q1_day,pv_forecast_kw,144,0,0,55,0,0.0,7612.316
+q1_day,price_yuan_per_kwh,144,0,0,0,0,0.3713,1.3952
+q1_day,net_load_forecast_kwh,144,0,0,0,30,-352.92088333333334,826.08325
+actual_10min,load_actual_kw,52560,0,0,0,0,1995.7176,7978.8849
+actual_10min,pv_actual_kw,52560,0,0,23540,0,0.0,10216.2
+actual_10min,fixed_price_yuan_per_kwh,52560,0,0,0,0,0.3713,1.3952
+actual_10min,actual_price_yuan_per_kwh,52560,0,0,0,0,0.0076,1.7936
+actual_10min,net_load_actual_kwh,52560,0,0,0,10130,-1100.33185,1114.6246833333335
+pv_forecast_hourly,pv_forecast_kw,35040,0,0,17525,0,0.0,9995.8875

@@ -1,0 +1,16 @@
+# 数据质量报告
+
+基础数据重新读回后执行 57 项检查，通过 57 项。新增预报诊断执行 17 项独立检查，通过 17 项。明细见 validation_all.md与validation_forecast_diagnostics.json；失败项不能解释为通过。
+
+| 表 | 实际行数 | 唯一键 |
+|---|---:|---|
+| q1_day | 144 | slot_id |
+| fixed_price | 144 | slot_id |
+| actual_10min | 52560 | interval_start（也可date+slot_id） |
+| pv_forecast_hourly | 35040 | issue_time+target_time |
+| pv_forecast_10min | 210234 | issue_time+interval_start |
+
+## 实际发现
+
+- 实际PV零值 23540 个，有符号净负载为负 10130 个；全部保留。
+Saved three descriptive figures, template audit, numeric/jump summaries and quality report.

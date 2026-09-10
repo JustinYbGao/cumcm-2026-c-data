@@ -1,0 +1,29 @@
+FFF
+======================================================================
+FAIL: test_causal_slicing_boundaries (test_boundaries.Boundaries.test_causal_slicing_boundaries)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_boundaries.py", line 15, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('prepare_data'), 'processing module not implemented')
+AssertionError: unexpectedly None : processing module not implemented
+
+======================================================================
+FAIL: test_linear_energy_and_missing_initial_endpoint (test_boundaries.Boundaries.test_linear_energy_and_missing_initial_endpoint)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_boundaries.py", line 15, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('prepare_data'), 'processing module not implemented')
+AssertionError: unexpectedly None : processing module not implemented
+
+======================================================================
+FAIL: test_time_and_year_end (test_boundaries.Boundaries.test_time_and_year_end)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_boundaries.py", line 15, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('prepare_data'), 'processing module not implemented')
+AssertionError: unexpectedly None : processing module not implemented
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=3)

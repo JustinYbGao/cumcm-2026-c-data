@@ -1,0 +1,48 @@
+{
+  "scope": "January only for structural diagnostics; no prediction training or optimization. Time-of-day fit is in-sample description, not predictive accuracy.",
+  "load": {
+    "january_count": 4464,
+    "january_day_lag_corr": 0.6827292115085517,
+    "january_week_lag_corr": 0.9924591969764646,
+    "january_time_of_day_in_sample_variance_fraction": 0.5694235551665563,
+    "january_min": 2211.69,
+    "january_max": 7546.7527,
+    "january_zero_fraction": 0.0
+  },
+  "pv": {
+    "january_count": 4464,
+    "january_day_lag_corr": 0.9944294984040949,
+    "january_week_lag_corr": 0.9939861946390116,
+    "january_time_of_day_in_sample_variance_fraction": 0.9915520677661721,
+    "january_min": 0.0,
+    "january_max": 7159.125,
+    "january_zero_fraction": 0.5206093189964157
+  },
+  "price": {
+    "january_count": 4464,
+    "january_day_lag_corr": 0.9424248772631791,
+    "january_week_lag_corr": 0.9916318694735023,
+    "january_time_of_day_in_sample_variance_fraction": 0.9253763714099164,
+    "january_min": 0.2432,
+    "january_max": 1.6401,
+    "january_zero_fraction": 0.0
+  },
+  "pv_paired_forecast_january_13_to_18_hour_labels": {
+    "0": {
+      "n": 186,
+      "mae_kw": 277.81336344086026,
+      "bias_forecast_minus_actual_kw": 59.74768494623656
+    },
+    "6": {
+      "n": 186,
+      "mae_kw": 157.23830322580645,
+      "bias_forecast_minus_actual_kw": -7.285332258064522
+    },
+    "12": {
+      "n": 186,
+      "mae_kw": 46.35377741935484,
+      "bias_forecast_minus_actual_kw": 4.908530107526877
+    }
+  },
+  "forecast_diagnostic_caveat": "Matches nominal whole-hour labels only; does not resolve whether actual cells are point values or interval averages. Same target hours/dates for three releases. Descriptive, not proof of economic benefit."
+}

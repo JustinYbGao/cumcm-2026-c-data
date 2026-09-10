@@ -1,0 +1,59 @@
+{
+  "steps": [
+    {
+      "step": "inspect_data",
+      "started_utc": "2026-09-10T19:05:34.949153+00:00",
+      "exit_code": 0
+    },
+    {
+      "step": "prepare_data_q1",
+      "started_utc": "2026-09-10T19:05:35.576637+00:00",
+      "exit_code": 0
+    },
+    {
+      "step": "validate_data_q1",
+      "started_utc": "2026-09-10T19:05:35.802840+00:00",
+      "exit_code": 0
+    },
+    {
+      "step": "prepare_data",
+      "started_utc": "2026-09-10T19:05:36.071539+00:00",
+      "exit_code": 0
+    },
+    {
+      "step": "validate_data",
+      "started_utc": "2026-09-10T19:06:18.051642+00:00",
+      "exit_code": 0
+    },
+    {
+      "step": "diagnose_forecasts",
+      "started_utc": "2026-09-10T19:06:22.085244+00:00",
+      "exit_code": 0
+    },
+    {
+      "step": "validate_forecast_diagnostics",
+      "started_utc": "2026-09-10T19:06:32.653438+00:00",
+      "exit_code": 0
+    },
+    {
+      "step": "audit_111",
+      "started_utc": "2026-09-10T19:06:35.597241+00:00",
+      "exit_code": 0
+    },
+    {
+      "step": "report_data",
+      "started_utc": "2026-09-10T19:06:36.675094+00:00",
+      "exit_code": 0
+    }
+  ],
+  "processed_sha256": {
+    "actual_10min.csv": "d64cb551ef7e644aa046e38ee7984607ab7bc57bf28d30ba6803db8696d1a513",
+    "fixed_price.csv": "6a2d48f1d678ce0399a10719dcf34e81403a2c133dfb871c35cd3cc0eb76d4f2",
+    "pv_forecast_10min.csv": "5d79c8dfb20686da0f8b766bfd7013a934a6af140ff5b5842cd585413ffea426",
+    "pv_forecast_hourly.csv": "d635475b6017538c94974f22dea07452c5e7e18c9fc3937555e890f46a3c7098",
+    "pv_forecast_hourly_evaluation.csv": "e30233477c1db22b61306f8af59972f1a9b1b1132ffc6dd2bc130c2cc3c713b0",
+    "q1_day.csv": "cf306e67d092cfe335dafda003a3a7c8dca8ab58468a412e47854f72a6ecb73e"
+  },
+  "same_as_preexisting_outputs": true,
+  "validation_did_not_modify_outputs": true
+}

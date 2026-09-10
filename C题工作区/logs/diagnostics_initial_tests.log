@@ -1,0 +1,29 @@
+FFF
+======================================================================
+FAIL: test_energy_units_year_end_missing_actual (test_forecast_diagnostics.ForecastDiagnostics.test_energy_units_year_end_missing_actual)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_forecast_diagnostics.py", line 13, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('diagnose_forecasts'), 'diagnostics not implemented')
+AssertionError: unexpectedly None : diagnostics not implemented
+
+======================================================================
+FAIL: test_error_unavailable_until_entire_hour_complete (test_forecast_diagnostics.ForecastDiagnostics.test_error_unavailable_until_entire_hour_complete)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_forecast_diagnostics.py", line 13, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('diagnose_forecasts'), 'diagnostics not implemented')
+AssertionError: unexpectedly None : diagnostics not implemented
+
+======================================================================
+FAIL: test_partial_forecast_not_summed_as_full_hour (test_forecast_diagnostics.ForecastDiagnostics.test_partial_forecast_not_summed_as_full_hour)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_forecast_diagnostics.py", line 13, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('diagnose_forecasts'), 'diagnostics not implemented')
+AssertionError: unexpectedly None : diagnostics not implemented
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (failures=3)

@@ -1,0 +1,42 @@
+[
+  {
+    "file": 2,
+    "sheet": "小区负载",
+    "cells": 52560,
+    "numeric": 52560,
+    "missing": 0,
+    "minimum": 1995.7176,
+    "maximum": 7978.8849,
+    "negative": 0
+  },
+  {
+    "file": 2,
+    "sheet": "光伏发电实际功率",
+    "cells": 52560,
+    "numeric": 52560,
+    "missing": 0,
+    "minimum": 0,
+    "maximum": 10216.2,
+    "negative": 0
+  },
+  {
+    "file": 3,
+    "sheet": "Sheet1",
+    "cells": 35040,
+    "numeric": 35040,
+    "missing": 0,
+    "minimum": 0,
+    "maximum": 9995.8875,
+    "negative": 0
+  },
+  {
+    "file": 4,
+    "sheet": "Sheet1",
+    "cells": 52560,
+    "numeric": 52560,
+    "missing": 0,
+    "minimum": 0.0076,
+    "maximum": 1.7936,
+    "negative": 0
+  }
+]

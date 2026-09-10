@@ -1,0 +1,41 @@
+..E.
+======================================================================
+ERROR: test_source_blank_dates_expand_without_index_alignment (test_boundaries.Boundaries.test_source_blank_dates_expand_without_index_alignment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_boundaries.py", line 60, in test_source_blank_dates_expand_without_index_alignment
+    result = self.m.prepare_hourly()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/prepare_data.py", line 169, in prepare_hourly
+    records['date_was_filled'] = np.repeat(raw_dates.isna() | raw_dates.astype(str).str.strip().eq(''),24)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/core/frame.py", line 4311, in __setitem__
+    self._set_item(key, value)
+  File "/Users/justingao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/core/frame.py", line 4524, in _set_item
+    value, refs = self._sanitize_column(value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/core/frame.py", line 5263, in _sanitize_column
+    return _reindex_for_setitem(value, self.index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/core/frame.py", line 12692, in _reindex_for_setitem
+    raise err
+  File "/Users/justingao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/core/frame.py", line 12687, in _reindex_for_setitem
+    reindexed_value = value.reindex(index)._values
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/core/series.py", line 5153, in reindex
+    return super().reindex(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/justingao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/core/generic.py", line 5610, in reindex
+    return self._reindex_axes(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/core/generic.py", line 5633, in _reindex_axes
+    new_index, indexer = ax.reindex(
+                         ^^^^^^^^^^^
+  File "/Users/justingao/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 4429, in reindex
+    raise ValueError("cannot reindex on an axis with duplicate labels")
+ValueError: cannot reindex on an axis with duplicate labels
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.101s
+
+FAILED (errors=1)
