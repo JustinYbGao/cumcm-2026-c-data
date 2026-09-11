@@ -1,0 +1,119 @@
+{
+  "passed": true,
+  "target": "/Users/justingao/Documents/CUMCM/C题工作区/results/unified_direct_v5/reproduction_workspace",
+  "source_hashes": {
+    "scripts/unified_direct_v5/bootstrap.py": "918bb3ef897113225001d2aa188b46493e7533ec3c91ddd70b98df252a758bf4",
+    "scripts/unified_direct_v5/independent_verify.py": "7ab128dbd6625d32aa66f2bb580d37a04356b57d43848bb4309ab976ec5a439d",
+    "scripts/unified_direct_v5/verify_workbooks.py": "fae9d92e385beee96cca873f4d8ac9318a79cafdf173611a55eea5644e7204aa",
+    "scripts/unified_direct_v5/run.py": "8b37652458065d0f5d34b8e1f931e3f28488677c904ec1eb0465742eb5aeadba",
+    "scripts/unified_direct_v5/compat.py": "0e35e934929a4b992fc2059015bb24bbf559d2c36fda2036ca9992f52549792c",
+    "scripts/unified_direct_v5/kernel.c": "064f9aaed5272c7caf2e3b18baf6de660cb182ae357ac97b873e1970995802cd",
+    "scripts/unified_direct_v5/kernel.py": "8567a0e69df8b334034b28a153bd6869d60af2fecf80398391f353f816396789",
+    "scripts/unified_direct_v5/reproduce.py": "d8761dbf5446cbafaeeb815686be86e5ba989557d9664d35f8fc01cdd047c3c3",
+    "scripts/unified_direct_v5/policy.py": "fec20bd12d823e28b5e5bee8abb72064b1dd22abf12853fb2418b972ee914303",
+    "scripts/unified_direct_v5/test_adapter.py": "510589a5659a86646ee2a5e183822b968536dbd68e65523ff2d3df3abc4f2de8",
+    "scripts/unified_direct_v5/build_report.py": "3496e09824dd3a7d8a13e09815d9371eb7fbe560a62af6b9ddf1756cab3cd967",
+    "scripts/unified_direct_v5/inputs.py": "cd385a8ab7a17e90f19f69d054baa98baca70798497d61f7754b4fd10863edf1",
+    "scripts/unified_direct_v5/validate_analysis.py": "4a586d59bbd455959e8350a24e3b8074d6a1988408ce28b86d28a39402e3af41",
+    "scripts/unified_direct_v5/extra_checks.py": "4d92c545570d158a033f6babba486e06157c3d8e1444498f5cc0a9b82417f95d",
+    "scripts/unified_direct_v5/prepare_workbooks.py": "8b8109e7c64fba2260033eccf652df04158a3a1151787553185f3583ea19a531",
+    "scripts/unified_direct_v5/analyze.py": "b780e1f4ed37c4491a85e4dc00a8b2a8542aa518bf0f5dfaec95cac96c61f544",
+    "data/processed/actual_10min.csv": "d64cb551ef7e644aa046e38ee7984607ab7bc57bf28d30ba6803db8696d1a513",
+    "data/processed/fixed_price.csv": "6a2d48f1d678ce0399a10719dcf34e81403a2c133dfb871c35cd3cc0eb76d4f2",
+    "data/processed/pv_forecast_10min.csv": "5d79c8dfb20686da0f8b766bfd7013a934a6af140ff5b5842cd585413ffea426",
+    "configs/model_baseline.json": "23603c8c223d40006607ea5c3dd31dec8ab2435776ff3a363f2eaca0aaf09019",
+    "configs/q4_baseline.json": "1a4a5b1e03f96b2cd7d33471fbc1b080daf6740bd7e9058b49a6bc7f8fb74282",
+    "configs/q2_baseline.json": "b555611572b3c780b6d9caa1e3fd6f449b4787ae260031a0dc11a04514d6c56b",
+    "configs/unified_direct_v5/experiments.json": "e72b2b91e0f22ec2b77ade7bd512f2a8fe10f8ca0b3fba13467e464987c69144",
+    "results/q2_direct_v4/forecasts/linear_harmonic.csv": "d0361e510cc5a513babacac43d46f4717b27cb51d396cc4c45195a8788fc9743",
+    "reports/unified_direct_v5/protocol.md": "014aa8f8568fa7909dd3e22f076837e3b6a208ba963a49c567dbd2dd8cf9b99b",
+    "reports/unified_direct_v5/protocol_freeze.json": "e97a3181f991db8ce71b66dac191272225764bd33a8b021fab94b6c4499586e7"
+  },
+  "policies": [
+    {
+      "policy": "q3_raw",
+      "files": {
+        "ledger.csv": {
+          "max_numeric_error": 0.0,
+          "text_identical": true,
+          "numerically_identical": true
+        },
+        "plan_versions.csv": {
+          "max_numeric_error": 0.0,
+          "text_identical": true,
+          "numerically_identical": true
+        },
+        "daily.csv": {
+          "max_numeric_error": 0.0,
+          "text_identical": true,
+          "numerically_identical": true
+        }
+      },
+      "candidate_arrays_checked": 28056,
+      "all_candidate_arrays_identical": true,
+      "max_candidate_error": 0.0,
+      "fee_differences_yuan": {
+        "contract_cost_yuan": 0.0,
+        "emergency_cost_yuan": 0.0,
+        "total_cost_yuan": 0.0
+      }
+    },
+    {
+      "policy": "q42_fixed",
+      "files": {
+        "ledger.csv": {
+          "max_numeric_error": 0.0,
+          "text_identical": true,
+          "numerically_identical": true
+        },
+        "plan_versions.csv": {
+          "max_numeric_error": 0.0,
+          "text_identical": true,
+          "numerically_identical": true
+        },
+        "daily.csv": {
+          "max_numeric_error": 0.0,
+          "text_identical": true,
+          "numerically_identical": true
+        }
+      },
+      "candidate_arrays_checked": 7014,
+      "all_candidate_arrays_identical": true,
+      "max_candidate_error": 0.0,
+      "fee_differences_yuan": {
+        "contract_cost_yuan": 0.0,
+        "emergency_cost_yuan": 0.0,
+        "total_cost_yuan": 0.0
+      }
+    },
+    {
+      "policy": "q43_raw_ols",
+      "files": {
+        "ledger.csv": {
+          "max_numeric_error": 0.0,
+          "text_identical": true,
+          "numerically_identical": true
+        },
+        "plan_versions.csv": {
+          "max_numeric_error": 0.0,
+          "text_identical": true,
+          "numerically_identical": true
+        },
+        "daily.csv": {
+          "max_numeric_error": 0.0,
+          "text_identical": true,
+          "numerically_identical": true
+        }
+      },
+      "candidate_arrays_checked": 28056,
+      "all_candidate_arrays_identical": true,
+      "max_candidate_error": 0.0,
+      "fee_differences_yuan": {
+        "contract_cost_yuan": 0.0,
+        "emergency_cost_yuan": 0.0,
+        "total_cost_yuan": 0.0
+      }
+    }
+  ],
+  "scope": "same host and dependencies, isolated source/data workspace and freshly compiled C kernel; no legacy writes"
+}

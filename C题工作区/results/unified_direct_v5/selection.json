@@ -1,0 +1,11 @@
+{
+  "rule": "minimum unrounded historical total, emergency fee, then frozen matrix order",
+  "selected": {
+    "q3": "q3_raw",
+    "q42": "q42_fixed",
+    "q43": "q43_raw_ols",
+    "q2": "Q2_D112",
+    "q1": "baseline"
+  },
+  "historical_exploration": true
+}

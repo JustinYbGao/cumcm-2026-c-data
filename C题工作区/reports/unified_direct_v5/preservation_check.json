@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "all_prior_files_byte_identical": false,
+  "protected_files": 4219,
+  "unchanged_protected_files": 4218,
+  "changed_legacy_files": [
+    "results/.DS_Store"
+  ],
+  "changed_research_files": [],
+  "metadata_exceptions": [
+    {
+      "path": "results/.DS_Store",
+      "before_sha256": "09e13e6a4253831bd2f40b12f9ce9945c18fd080344dd7da98755ae5b6ca291f",
+      "after_sha256": "9540661dce25d2fb48efdb8d2a336cd25afe3a2a8ac0ca00ec17c78d32d9562c",
+      "kind": "macOS directory metadata",
+      "cause": "not attributed; no task script intentionally writes this file; original bytes unavailable for restoration"
+    }
+  ],
+  "frozen_production_files": 10,
+  "changed_frozen_files": [],
+  "original_source_workbooks": 4,
+  "changed_source_workbooks": [],
+  "git_status": "?? configs/unified_direct_v5/\n?? outputs/unified_direct_v5/\n?? papers/outline_20260911/\n?? reports/unified_direct_v5/\n?? results/unified_direct_v5/\n?? scripts/unified_direct_v5/\n",
+  "tracked_diff": "",
+  "source_before": "protected_before.json",
+  "source_after": "protected_after.json",
+  "scope": "Prior research artifacts must remain byte-identical; any .DS_Store metadata change explicitly disclosed and excluded from research-artifact verdict. Original Appendix1-4 also checked; templates checked by workbook readback."
+}

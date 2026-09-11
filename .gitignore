@@ -27,6 +27,7 @@
 **/~$*
 **/.env
 **/.env.*
+/C题工作区/scripts/unified_direct_v5/node_modules
 /C题工作区/data/interim/matplotlib/
 /C题工作区/data/interim/**/matplotlib/
 /C题工作区/data/interim/**/cache/

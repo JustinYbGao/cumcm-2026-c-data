@@ -1,0 +1,8 @@
+record_type,strategy_id,interval,grid_kwh,daily_grid_kwh,daily_cost_yuan
+interval,baseline,10:00-10:10,0.0,,
+interval,baseline,12:00-12:10,480.4124499999999,,
+interval,baseline,14:00-14:10,0.0,,
+interval,baseline,16:00-16:10,445.43165000000005,,
+interval,baseline,18:00-18:10,531.8940499999999,,
+interval,baseline,20:00-20:10,0.0,,
+daily_total,baseline,全天,,59482.69899835391,35126.94858928963

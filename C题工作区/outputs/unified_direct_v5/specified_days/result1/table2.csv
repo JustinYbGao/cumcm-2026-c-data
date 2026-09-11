@@ -1,0 +1,9 @@
+record_type,strategy_id,time,charge_kwh,discharge_kwh,energy_kwh
+four_hour_block,baseline,00:00-04:00,4500.0,0.0,
+four_hour_block,baseline,04:00-08:00,833.3333333333333,6365.8412,
+four_hour_block,baseline,08:00-12:00,4787.964288065847,1702.9969833333334,
+four_hour_block,baseline,12:00-16:00,5286.035176954732,91.10138333333339,
+four_hour_block,baseline,16:00-20:00,0.0,5780.1318833333335,
+four_hour_block,baseline,20:00-24:00,5333.333333333333,2859.8681166666665,
+storage,baseline,00:00,,,6000.0
+storage,baseline,24:00,,,6000.0

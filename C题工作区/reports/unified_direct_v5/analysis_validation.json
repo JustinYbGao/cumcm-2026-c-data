@@ -1,0 +1,208 @@
+{
+  "passed": true,
+  "comparison_policies": 24,
+  "source_fee_max_error_yuan": 0.0,
+  "paired_statistics_max_error_yuan": 9.313225746154785e-10,
+  "paired_comparisons": 14,
+  "physics": [
+    {
+      "policy": "q3_no_update",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "q3_soc",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "q3_raw",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "q3_w28",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "q42_ols",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "q42_fixed",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "q43_raw_ols",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "q43_w28_ols",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "q43_raw_fixed",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "q43_w28_fixed",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "Q2_D112",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "Q2_B0",
+      "balance_max_kwh": 2.8421709430404007e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "Q2_B1",
+      "balance_max_kwh": 1.000444171950221e-11,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "Q2_v3_best",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "Q2_D56_risk625",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "old_q3_no_update",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "old_q3_soc",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "old_q3_raw",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "old_q3_w28",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "old_q42_ols",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "old_q42_fixed",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "old_q43_raw_ols",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "old_q43_w28_ols",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    },
+    {
+      "policy": "old_q43_raw_fixed",
+      "balance_max_kwh": 2.2737367544323206e-13,
+      "recurrence_max_kwh": 9.094947017729282e-13,
+      "cross_interval_max_kwh": 0.0
+    }
+  ],
+  "historical_optional_diagnostics": [
+    {
+      "policy": "Q2_B0",
+      "column": "risk_history_start",
+      "missing_rows": 48096,
+      "reason": "inapplicable historical diagnostic; all physical/fee columns remain required"
+    },
+    {
+      "policy": "Q2_B0",
+      "column": "risk_history_end",
+      "missing_rows": 48096,
+      "reason": "inapplicable historical diagnostic; all physical/fee columns remain required"
+    },
+    {
+      "policy": "Q2_B1",
+      "column": "risk_history_start",
+      "missing_rows": 48096,
+      "reason": "inapplicable historical diagnostic; all physical/fee columns remain required"
+    },
+    {
+      "policy": "Q2_B1",
+      "column": "risk_history_end",
+      "missing_rows": 48096,
+      "reason": "inapplicable historical diagnostic; all physical/fee columns remain required"
+    },
+    {
+      "policy": "old_q3_raw",
+      "column": "pv_window_days",
+      "missing_rows": 48096,
+      "reason": "inapplicable historical diagnostic; all physical/fee columns remain required"
+    },
+    {
+      "policy": "old_q43_raw_ols",
+      "column": "pv_window_days",
+      "missing_rows": 48096,
+      "reason": "inapplicable historical diagnostic; all physical/fee columns remain required"
+    }
+  ],
+  "fixed_planning_cross_price_consistency": [
+    {
+      "pair": [
+        "q3_raw",
+        "q43_raw_fixed"
+      ],
+      "max_plan_state_difference_kwh": 0.0
+    },
+    {
+      "pair": [
+        "q3_w28",
+        "q43_w28_fixed"
+      ],
+      "max_plan_state_difference_kwh": 0.0
+    }
+  ],
+  "bootstrap": "Independent loop reconstruction, seed20260915/2000 circular blocks7,14, same frozen pair order"
+}

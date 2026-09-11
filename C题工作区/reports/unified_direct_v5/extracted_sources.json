@@ -1,0 +1,8 @@
+{
+  "scripts/run_q2.py": "2fbe74adb5a3a39efe01ed1429016561360c6c58716a095c6ebb18870ca0ce0a",
+  "scripts/run_q3.py": "15b41692bea0b24ed19cfdb559e9d6bb85dbd32c45803a5a0456b57056a1ba44",
+  "scripts/run_q4.py": "7c2d18e99e03126f195ab26de7aa673538a05a843a94c6cb4e664db4ace81f33",
+  "scripts/solve_q1.py": "fe351fb7fd979897b9958b2b01ceb75bdf8fcf7a633e04ba71c0c4ee9c2bef6e",
+  "scripts/q2_direct_v4/kernel.c": "064f9aaed5272c7caf2e3b18baf6de660cb182ae357ac97b873e1970995802cd",
+  "scripts/q2_direct_v4/kernel.py": "aeff871771993d1bf7a45120c9c31d0968debba6c4084a13dc8924e7f911bde1"
+}

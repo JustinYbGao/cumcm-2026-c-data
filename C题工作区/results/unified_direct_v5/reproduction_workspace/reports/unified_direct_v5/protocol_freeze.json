@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-09-11T20:43:32.635329+00:00",
+  "sha256": {
+    "scripts/unified_direct_v5/bootstrap.py": "918bb3ef897113225001d2aa188b46493e7533ec3c91ddd70b98df252a758bf4",
+    "scripts/unified_direct_v5/run.py": "8b37652458065d0f5d34b8e1f931e3f28488677c904ec1eb0465742eb5aeadba",
+    "scripts/unified_direct_v5/compat.py": "0e35e934929a4b992fc2059015bb24bbf559d2c36fda2036ca9992f52549792c",
+    "scripts/unified_direct_v5/kernel.py": "8567a0e69df8b334034b28a153bd6869d60af2fecf80398391f353f816396789",
+    "scripts/unified_direct_v5/policy.py": "fec20bd12d823e28b5e5bee8abb72064b1dd22abf12853fb2418b972ee914303",
+    "scripts/unified_direct_v5/test_adapter.py": "510589a5659a86646ee2a5e183822b968536dbd68e65523ff2d3df3abc4f2de8",
+    "scripts/unified_direct_v5/inputs.py": "cd385a8ab7a17e90f19f69d054baa98baca70798497d61f7754b4fd10863edf1",
+    "scripts/unified_direct_v5/kernel.c": "064f9aaed5272c7caf2e3b18baf6de660cb182ae357ac97b873e1970995802cd",
+    "configs/unified_direct_v5/experiments.json": "e72b2b91e0f22ec2b77ade7bd512f2a8fe10f8ca0b3fba13467e464987c69144",
+    "reports/unified_direct_v5/protocol.md": "014aa8f8568fa7909dd3e22f076837e3b6a208ba963a49c567dbd2dd8cf9b99b"
+  }
+}

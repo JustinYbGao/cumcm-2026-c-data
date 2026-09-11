@@ -1,0 +1,86 @@
+[
+  {
+    "policy": "q3_raw",
+    "files": {
+      "ledger.csv": {
+        "max_numeric_error": 0.0,
+        "text_identical": true,
+        "numerically_identical": true
+      },
+      "plan_versions.csv": {
+        "max_numeric_error": 0.0,
+        "text_identical": true,
+        "numerically_identical": true
+      },
+      "daily.csv": {
+        "max_numeric_error": 0.0,
+        "text_identical": true,
+        "numerically_identical": true
+      }
+    },
+    "candidate_arrays_checked": 28056,
+    "all_candidate_arrays_identical": true,
+    "max_candidate_error": 0.0,
+    "fee_differences_yuan": {
+      "contract_cost_yuan": 0.0,
+      "emergency_cost_yuan": 0.0,
+      "total_cost_yuan": 0.0
+    }
+  },
+  {
+    "policy": "q42_fixed",
+    "files": {
+      "ledger.csv": {
+        "max_numeric_error": 0.0,
+        "text_identical": true,
+        "numerically_identical": true
+      },
+      "plan_versions.csv": {
+        "max_numeric_error": 0.0,
+        "text_identical": true,
+        "numerically_identical": true
+      },
+      "daily.csv": {
+        "max_numeric_error": 0.0,
+        "text_identical": true,
+        "numerically_identical": true
+      }
+    },
+    "candidate_arrays_checked": 7014,
+    "all_candidate_arrays_identical": true,
+    "max_candidate_error": 0.0,
+    "fee_differences_yuan": {
+      "contract_cost_yuan": 0.0,
+      "emergency_cost_yuan": 0.0,
+      "total_cost_yuan": 0.0
+    }
+  },
+  {
+    "policy": "q43_raw_ols",
+    "files": {
+      "ledger.csv": {
+        "max_numeric_error": 0.0,
+        "text_identical": true,
+        "numerically_identical": true
+      },
+      "plan_versions.csv": {
+        "max_numeric_error": 0.0,
+        "text_identical": true,
+        "numerically_identical": true
+      },
+      "daily.csv": {
+        "max_numeric_error": 0.0,
+        "text_identical": true,
+        "numerically_identical": true
+      }
+    },
+    "candidate_arrays_checked": 28056,
+    "all_candidate_arrays_identical": true,
+    "max_candidate_error": 0.0,
+    "fee_differences_yuan": {
+      "contract_cost_yuan": 0.0,
+      "emergency_cost_yuan": 0.0,
+      "total_cost_yuan": 0.0
+    }
+  }
+]

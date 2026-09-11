@@ -1,0 +1,179 @@
+{
+  "result1.xlsx": {
+    "strategy_id": "baseline",
+    "source_ledger": "results/q1/baseline/schedule.csv",
+    "date_range": "single undated representative day",
+    "initial_energy_kwh": 6000.0,
+    "final_energy_kwh": 6000.0,
+    "fee_components_yuan": {
+      "original_cost_yuan": 35126.94858928963,
+      "increase_cost_yuan": 0.0,
+      "decrease_adjustment_yuan": 0.0,
+      "contract_cost_yuan": 35126.94858928963,
+      "emergency_cost_yuan": 0.0,
+      "total_cost_yuan": 35126.94858928963
+    },
+    "event_export_threshold_kwh": 1e-07,
+    "omitted_tiny_emergency_kwh": 0.0,
+    "omitted_tiny_emergency_cost_yuan": 0.0,
+    "sha256": {
+      "results/q1/baseline/schedule.csv": "c18da8eab518b96ce1a26620e7456a818a3ff4e81155ccbe93de9ddd5d0dbd15",
+      "CUMCM2026Problems/C题/附件/附件5/result1.xlsx": "28360e0974e7d6065394a8aba4e14a86773ae0036cc7d3ea1b211b515b03d688",
+      "scripts/solve_q1.py": "fe351fb7fd979897b9958b2b01ceb75bdf8fcf7a633e04ba71c0c4ee9c2bef6e",
+      "results/q1/baseline/config_snapshot.json": "2d98df9b067545759fa5f9b9f1bc8142024ecd747e0eb00e0dc69cfa5c64784a"
+    },
+    "working_assumptions": {
+      "interval_labels": "00:00-00:10 through 23:50-24:00; source values are keyed by physical interval and are never shifted",
+      "precision": "numeric values are stored at source precision and displayed to six decimals; displayed values can differ from stored values by rounding",
+      "battery": "AC-bus-side charge/discharge; 0.9 efficiency in each direction; energy bounds 1200 to 10800 kWh",
+      "billing": "full ledger bill includes every emergency tail; only the event listing omits intervals at or below 1e-7 kWh",
+      "interpretation": "protocol.md and protocol_amendments.md contain the frozen working interpretation and export clarification"
+    }
+  },
+  "result2.xlsx": {
+    "strategy_id": "Q2_D112",
+    "source_ledger": "results/q2_direct_v4/runs/D112/ledger.csv",
+    "date_range": "2025-02-01 through 2025-12-31",
+    "initial_energy_kwh": 7268.4231640740745,
+    "final_energy_kwh": 3139.6632536900206,
+    "fee_components_yuan": {
+      "original_cost_yuan": 13075237.028039372,
+      "increase_cost_yuan": 0.0,
+      "decrease_adjustment_yuan": 0.0,
+      "contract_cost_yuan": 13075237.028039372,
+      "emergency_cost_yuan": 838655.4538288129,
+      "total_cost_yuan": 13913892.481868183
+    },
+    "event_export_threshold_kwh": 1e-07,
+    "omitted_tiny_emergency_kwh": 0.0,
+    "omitted_tiny_emergency_cost_yuan": 0.0,
+    "sha256": {
+      "results/q2_direct_v4/runs/D112/ledger.csv": "2c4b8806402a16a19fff3b95b9156108a0a3acd88534b455c096507e6ae44cfb",
+      "CUMCM2026Problems/C题/附件/附件5/result2.xlsx": "1c26494cfc6d754e0bd9bff7e13e1126a73d2d2da6c5336eb251d89b9a1a1a47",
+      "scripts/q2_direct_v4/run_experiments.py": "46fb26030ff0643b815f31e93bb616d8a6a460720f4b5148f02c1d0994989d9c",
+      "scripts/q2_direct_v4/base_policy.py": "04f9944be72b613940b17a858cb6ce51aaca15fe61f72ff43bff05c186544b66",
+      "results/q2_direct_v4/runs/D112/config.json": "b22cb109a6b9e2f2733c808372a703f05eeab27f4be37c0b478ade3844279759"
+    },
+    "working_assumptions": {
+      "interval_labels": "00:00-00:10 through 23:50-24:00; source values are keyed by physical interval and are never shifted",
+      "precision": "numeric values are stored at source precision and displayed to six decimals; displayed values can differ from stored values by rounding",
+      "battery": "AC-bus-side charge/discharge; 0.9 efficiency in each direction; energy bounds 1200 to 10800 kWh",
+      "billing": "full ledger bill includes every emergency tail; only the event listing omits intervals at or below 1e-7 kWh",
+      "interpretation": "protocol.md and protocol_amendments.md contain the frozen working interpretation and export clarification"
+    }
+  },
+  "result3.xlsx": {
+    "strategy_id": "q3_raw",
+    "source_ledger": "results/unified_direct_v5/runs/q3_raw/ledger.csv",
+    "date_range": "2025-02-01 through 2025-12-31",
+    "initial_energy_kwh": 7268.4231640740745,
+    "final_energy_kwh": 2441.6949789320743,
+    "fee_components_yuan": {
+      "original_cost_yuan": 13348997.50199932,
+      "increase_cost_yuan": 183191.51387440876,
+      "decrease_adjustment_yuan": -269883.21448736225,
+      "contract_cost_yuan": 13262305.801386366,
+      "emergency_cost_yuan": 299527.6520275879,
+      "total_cost_yuan": 13561833.453413954
+    },
+    "event_export_threshold_kwh": 1e-07,
+    "omitted_tiny_emergency_kwh": 0.0,
+    "omitted_tiny_emergency_cost_yuan": 0.0,
+    "sha256": {
+      "results/unified_direct_v5/runs/q3_raw/ledger.csv": "69a9c906c4895d11708fafd6c04c7ef3b0f68206d45b925d6af0cb67e59957a3",
+      "CUMCM2026Problems/C题/附件/附件5/result3.xlsx": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc",
+      "results/unified_direct_v5/runs/q3_raw/config.json": "597bff7d105203d97d4e7ee051bf98f77c999a420a8a2d56b6ed7f7e5fdf86a8",
+      "configs/unified_direct_v5/experiments.json": "e72b2b91e0f22ec2b77ade7bd512f2a8fe10f8ca0b3fba13467e464987c69144",
+      "reports/unified_direct_v5/protocol.md": "014aa8f8568fa7909dd3e22f076837e3b6a208ba963a49c567dbd2dd8cf9b99b",
+      "reports/unified_direct_v5/protocol_amendments.md": "9d8681d649529f5e198019827c12b4f84d7f131dcd1c877115bd45ebe01985be",
+      "reports/unified_direct_v5/protocol_freeze.json": "e97a3181f991db8ce71b66dac191272225764bd33a8b021fab94b6c4499586e7"
+    },
+    "working_assumptions": {
+      "interval_labels": "00:00-00:10 through 23:50-24:00; source values are keyed by physical interval and are never shifted",
+      "precision": "numeric values are stored at source precision and displayed to six decimals; displayed values can differ from stored values by rounding",
+      "battery": "AC-bus-side charge/discharge; 0.9 efficiency in each direction; energy bounds 1200 to 10800 kWh",
+      "billing": "full ledger bill includes every emergency tail; only the event listing omits intervals at or below 1e-7 kWh",
+      "interpretation": "protocol.md and protocol_amendments.md contain the frozen working interpretation and export clarification"
+    }
+  },
+  "result4-2.xlsx": {
+    "strategy_id": "q42_fixed",
+    "source_ledger": "results/unified_direct_v5/runs/q42_fixed/ledger.csv",
+    "date_range": "2025-02-01 through 2025-12-31",
+    "initial_energy_kwh": 7268.4231640740745,
+    "final_energy_kwh": 3139.6632536900206,
+    "fee_components_yuan": {
+      "original_cost_yuan": 13807519.165064773,
+      "increase_cost_yuan": 0.0,
+      "decrease_adjustment_yuan": 0.0,
+      "contract_cost_yuan": 13807519.165064773,
+      "emergency_cost_yuan": 871020.2966258399,
+      "total_cost_yuan": 14678539.461690612
+    },
+    "event_export_threshold_kwh": 1e-07,
+    "omitted_tiny_emergency_kwh": 0.0,
+    "omitted_tiny_emergency_cost_yuan": 0.0,
+    "sha256": {
+      "results/unified_direct_v5/runs/q42_fixed/ledger.csv": "7d2f985be3d06ea41f0b90eb42cd3d99f6dfe61d56e9642df66f4d6dc64f0d36",
+      "CUMCM2026Problems/C题/附件/附件5/result4-2.xlsx": "1c26494cfc6d754e0bd9bff7e13e1126a73d2d2da6c5336eb251d89b9a1a1a47",
+      "results/unified_direct_v5/runs/q42_fixed/config.json": "5a00965b2f88312dbc575624e60875f690fbe0a2d5e83ea50b6e472f1c10488d",
+      "configs/unified_direct_v5/experiments.json": "e72b2b91e0f22ec2b77ade7bd512f2a8fe10f8ca0b3fba13467e464987c69144",
+      "reports/unified_direct_v5/protocol.md": "014aa8f8568fa7909dd3e22f076837e3b6a208ba963a49c567dbd2dd8cf9b99b",
+      "reports/unified_direct_v5/protocol_amendments.md": "9d8681d649529f5e198019827c12b4f84d7f131dcd1c877115bd45ebe01985be",
+      "reports/unified_direct_v5/protocol_freeze.json": "e97a3181f991db8ce71b66dac191272225764bd33a8b021fab94b6c4499586e7"
+    },
+    "working_assumptions": {
+      "interval_labels": "00:00-00:10 through 23:50-24:00; source values are keyed by physical interval and are never shifted",
+      "precision": "numeric values are stored at source precision and displayed to six decimals; displayed values can differ from stored values by rounding",
+      "battery": "AC-bus-side charge/discharge; 0.9 efficiency in each direction; energy bounds 1200 to 10800 kWh",
+      "billing": "full ledger bill includes every emergency tail; only the event listing omits intervals at or below 1e-7 kWh",
+      "interpretation": "protocol.md and protocol_amendments.md contain the frozen working interpretation and export clarification"
+    }
+  },
+  "result4-3.xlsx": {
+    "strategy_id": "q43_raw_ols",
+    "source_ledger": "results/unified_direct_v5/runs/q43_raw_ols/ledger.csv",
+    "date_range": "2025-02-01 through 2025-12-31",
+    "initial_energy_kwh": 7268.4231640740745,
+    "final_energy_kwh": 2387.061217486307,
+    "fee_components_yuan": {
+      "original_cost_yuan": 14103126.895934964,
+      "increase_cost_yuan": 193984.1050225702,
+      "decrease_adjustment_yuan": -302797.35288455884,
+      "contract_cost_yuan": 13994313.648072975,
+      "emergency_cost_yuan": 327544.7224731011,
+      "total_cost_yuan": 14321858.370546075
+    },
+    "event_export_threshold_kwh": 1e-07,
+    "omitted_tiny_emergency_kwh": 0.0,
+    "omitted_tiny_emergency_cost_yuan": 0.0,
+    "sha256": {
+      "results/unified_direct_v5/runs/q43_raw_ols/ledger.csv": "b3d4ddd7b810db1266471f40ba84133508c7a7ce8007ddbc5878001f601402e7",
+      "CUMCM2026Problems/C题/附件/附件5/result4-3.xlsx": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc",
+      "results/unified_direct_v5/runs/q43_raw_ols/config.json": "8343b9feb90580c68d3ec8aadd1e5c284c7546a925eccd72aa110c3536dd8710",
+      "configs/unified_direct_v5/experiments.json": "e72b2b91e0f22ec2b77ade7bd512f2a8fe10f8ca0b3fba13467e464987c69144",
+      "reports/unified_direct_v5/protocol.md": "014aa8f8568fa7909dd3e22f076837e3b6a208ba963a49c567dbd2dd8cf9b99b",
+      "reports/unified_direct_v5/protocol_amendments.md": "9d8681d649529f5e198019827c12b4f84d7f131dcd1c877115bd45ebe01985be",
+      "reports/unified_direct_v5/protocol_freeze.json": "e97a3181f991db8ce71b66dac191272225764bd33a8b021fab94b6c4499586e7"
+    },
+    "working_assumptions": {
+      "interval_labels": "00:00-00:10 through 23:50-24:00; source values are keyed by physical interval and are never shifted",
+      "precision": "numeric values are stored at source precision and displayed to six decimals; displayed values can differ from stored values by rounding",
+      "battery": "AC-bus-side charge/discharge; 0.9 efficiency in each direction; energy bounds 1200 to 10800 kWh",
+      "billing": "full ledger bill includes every emergency tail; only the event listing omits intervals at or below 1e-7 kWh",
+      "interpretation": "protocol.md and protocol_amendments.md contain the frozen working interpretation and export clarification"
+    }
+  },
+  "selection": {
+    "path": "results/unified_direct_v5/selection.json",
+    "sha256": "1a9e00b25d96099ad16c89043c0ce96bcb71e6abb053cb7032369aaf4501e64d",
+    "selected": {
+      "q3": "q3_raw",
+      "q42": "q42_fixed",
+      "q43": "q43_raw_ols",
+      "q2": "Q2_D112",
+      "q1": "baseline"
+    },
+    "rule": "minimum unrounded historical total, emergency fee, then frozen matrix order"
+  }
+}

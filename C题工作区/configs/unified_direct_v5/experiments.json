@@ -1,0 +1,86 @@
+{
+  "policies": {
+    "q3_no_update": {
+      "branch": "q3",
+      "price": "fixed",
+      "updates": false,
+      "pv_update": false,
+      "corrected": false
+    },
+    "q3_soc": {
+      "branch": "q3",
+      "price": "fixed",
+      "updates": true,
+      "pv_update": false,
+      "corrected": false
+    },
+    "q3_raw": {
+      "branch": "q3",
+      "price": "fixed",
+      "updates": true,
+      "pv_update": true,
+      "corrected": false
+    },
+    "q3_w28": {
+      "branch": "q3",
+      "price": "fixed",
+      "updates": true,
+      "pv_update": true,
+      "corrected": true
+    },
+    "q42_ols": {
+      "branch": "q42",
+      "price": "ols",
+      "updates": false,
+      "pv_update": false,
+      "corrected": false
+    },
+    "q42_fixed": {
+      "branch": "q42",
+      "price": "fixed",
+      "updates": false,
+      "pv_update": false,
+      "corrected": false
+    },
+    "q43_raw_ols": {
+      "branch": "q43",
+      "price": "ols",
+      "updates": true,
+      "pv_update": true,
+      "corrected": false
+    },
+    "q43_w28_ols": {
+      "branch": "q43",
+      "price": "ols",
+      "updates": true,
+      "pv_update": true,
+      "corrected": true
+    },
+    "q43_raw_fixed": {
+      "branch": "q43",
+      "price": "fixed",
+      "updates": true,
+      "pv_update": true,
+      "corrected": false
+    },
+    "q43_w28_fixed": {
+      "branch": "q43",
+      "price": "fixed",
+      "updates": true,
+      "pv_update": true,
+      "corrected": true
+    }
+  },
+  "optimizer": {
+    "maxiter": 180,
+    "maxfun": 1600,
+    "maxls": 30,
+    "maxcor": 10,
+    "ftol": 1e-10,
+    "gtol": 1e-05
+  },
+  "scenario_window": 112,
+  "kappa": 5,
+  "mu": 0.38232,
+  "initial_energy_kwh": 7268.4231640740745
+}

@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "coverage": {
+    "ledger_rows": 480960,
+    "decisions": 10354,
+    "candidate_vectors": 69138,
+    "candidate_scenario_paths": 7039035
+  },
+  "selected": {
+    "q3": "q3_raw",
+    "q42": "q42_fixed",
+    "q43": "q43_raw_ols",
+    "q2": "Q2_D112",
+    "q1": "baseline"
+  },
+  "checks": {
+    "independent": true,
+    "analysis": true,
+    "causality": true,
+    "numerical": true,
+    "reproduction": true,
+    "workbook": true,
+    "preservation": true
+  },
+  "unresolved_external_assumptions": true,
+  "research_not_blind_test": true,
+  "new_policies": 10,
+  "workbooks": 5,
+  "legacy_research_artifacts_unchanged": true,
+  "all_prior_files_byte_identical": false,
+  "metadata_exceptions": [
+    {
+      "path": "results/.DS_Store",
+      "before_sha256": "09e13e6a4253831bd2f40b12f9ce9945c18fd080344dd7da98755ae5b6ca291f",
+      "after_sha256": "9540661dce25d2fb48efdb8d2a336cd25afe3a2a8ac0ca00ec17c78d32d9562c",
+      "kind": "macOS directory metadata",
+      "cause": "not attributed; no task script intentionally writes this file; original bytes unavailable for restoration"
+    }
+  ]
+}

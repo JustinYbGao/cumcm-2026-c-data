@@ -1,0 +1,47 @@
+price 2025-02-01
+price 2025-03-01
+price 2025-04-01
+price 2025-05-01
+price 2025-06-01
+price 2025-07-01
+price 2025-08-01
+price 2025-09-01
+price 2025-10-01
+price 2025-11-01
+price 2025-12-01
+q3_raw 2025-02-01 seconds 0.2
+q3_raw 2025-03-01 seconds 6.12
+q3_raw 2025-04-01 seconds 13.92
+q3_raw 2025-05-01 seconds 22.29
+q3_raw 2025-06-01 seconds 31.32
+q3_raw 2025-07-01 seconds 40.39
+q3_raw 2025-08-01 seconds 49.46
+q3_raw 2025-09-01 seconds 58.59
+q3_raw 2025-10-01 seconds 67.72
+q3_raw 2025-11-01 seconds 76.82
+q3_raw 2025-12-01 seconds 85.39
+DONE q3_raw 13561833.453413954 299527.6520275879
+q42_fixed 2025-02-01 seconds 0.07
+q42_fixed 2025-03-01 seconds 2.19
+q42_fixed 2025-04-01 seconds 4.93
+q42_fixed 2025-05-01 seconds 7.95
+q42_fixed 2025-06-01 seconds 11.25
+q42_fixed 2025-07-01 seconds 14.37
+q42_fixed 2025-08-01 seconds 17.52
+q42_fixed 2025-09-01 seconds 20.77
+q42_fixed 2025-10-01 seconds 23.9
+q42_fixed 2025-11-01 seconds 27.19
+q42_fixed 2025-12-01 seconds 30.29
+DONE q42_fixed 14678539.461690612 871020.2966258399
+q43_raw_ols 2025-02-01 seconds 0.24
+q43_raw_ols 2025-03-01 seconds 6.36
+q43_raw_ols 2025-04-01 seconds 14.04
+q43_raw_ols 2025-05-01 seconds 22.66
+q43_raw_ols 2025-06-01 seconds 31.93
+q43_raw_ols 2025-07-01 seconds 40.73
+q43_raw_ols 2025-08-01 seconds 49.93
+q43_raw_ols 2025-09-01 seconds 59.23
+q43_raw_ols 2025-10-01 seconds 68.14
+q43_raw_ols 2025-11-01 seconds 76.9
+q43_raw_ols 2025-12-01 seconds 85.04
+DONE q43_raw_ols 14321858.370546076 327544.72247310117

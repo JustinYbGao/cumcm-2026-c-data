@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "manifest_files_verified": 14024,
+  "manifest_total_bytes": 2040166939,
+  "maximum_file_bytes": 44217397,
+  "all_files_under_64_MiB": true,
+  "package_manifest_sha256": "76a9ac30d23b71a5e9be01bbafb24a248f2b25022c8906be6cfcf96f444a7bc0",
+  "acceptance_report_sha256": {
+    "independent_report.json": "48afa0e049c36f832926450d356a602a7460635fa6d92740531d811cdf418a58",
+    "analysis_validation.json": "ea20f6e6cffb300e4c8bfc110165bdcae96585cb2cbf33eb1b28fa687ab937d3",
+    "causality_checks.json": "5aeb1fe148d8d614304db40b43a1def2c1d42be69ac43d71207a8e23530c66a5",
+    "numerical_checks.json": "23ca976fb424401fff24dacfb105169d4bc019bb9efb1703dc383062f043c04e",
+    "reproduction_comparison.json": "8b9ce6e0fe177bc7ddcb97f84c86139e8211fdc0f2311de744b221585aba899b",
+    "workbook_readback.json": "15a3d6929377b61f4e7902112591d643ddea8c0d2de4eb198ff0a6f488bb2414",
+    "preservation_check.json": "8c1db42ff39defa9af444324c4192b18fe5e5a4aef01d53d666e679148611ebc",
+    "package_readback.json": "1684160559ffc0d75c7c3f0173ea663b230608ac09312288dcf3e64456f03bdd"
+  },
+  "xlsx_sha256_verified": 5,
+  "expected_base_commit": "721ccce612c92aaf67df42d8a8c8ed92987fe3e3",
+  "credential_pattern_matches": 0,
+  "changes_to_frozen_manifest_files": []
+}

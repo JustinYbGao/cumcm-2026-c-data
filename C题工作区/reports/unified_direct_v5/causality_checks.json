@@ -1,0 +1,501 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "policy": "q3_raw",
+      "mutation": "load_actual",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [],
+      "post_available_plan_response_kwh": 1009.8670646564625,
+      "irrelevant_channel_negative_control": false,
+      "midnight_frozen_q_error_kwh": null,
+      "actual_bill_difference_yuan": 535311.607123884
+    },
+    {
+      "policy": "q3_raw",
+      "mutation": "pv_actual",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [],
+      "post_available_plan_response_kwh": 715.8449135999077,
+      "irrelevant_channel_negative_control": false,
+      "midnight_frozen_q_error_kwh": null,
+      "actual_bill_difference_yuan": 131190.10992399472
+    },
+    {
+      "policy": "q3_raw",
+      "mutation": "pv_release",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [],
+      "post_available_plan_response_kwh": 961.5433164879399,
+      "irrelevant_channel_negative_control": false,
+      "midnight_frozen_q_error_kwh": null,
+      "actual_bill_difference_yuan": 16326.837085064704
+    },
+    {
+      "policy": "q3_raw",
+      "mutation": "actual_price",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [],
+      "post_available_plan_response_kwh": 0.0,
+      "irrelevant_channel_negative_control": true,
+      "midnight_frozen_q_error_kwh": null,
+      "actual_bill_difference_yuan": 0.0
+    },
+    {
+      "policy": "q42_fixed",
+      "mutation": "load_actual",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        },
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        }
+      ],
+      "post_available_plan_response_kwh": 960.5676988747803,
+      "irrelevant_channel_negative_control": false,
+      "midnight_frozen_q_error_kwh": 0.0,
+      "actual_bill_difference_yuan": 706873.170551724
+    },
+    {
+      "policy": "q42_fixed",
+      "mutation": "pv_actual",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        },
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        }
+      ],
+      "post_available_plan_response_kwh": 442.45635725567104,
+      "irrelevant_channel_negative_control": false,
+      "midnight_frozen_q_error_kwh": 0.0,
+      "actual_bill_difference_yuan": 209258.77159098024
+    },
+    {
+      "policy": "q42_fixed",
+      "mutation": "pv_release",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        },
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        }
+      ],
+      "post_available_plan_response_kwh": 0.0,
+      "irrelevant_channel_negative_control": true,
+      "midnight_frozen_q_error_kwh": 0.0,
+      "actual_bill_difference_yuan": 0.0
+    },
+    {
+      "policy": "q42_fixed",
+      "mutation": "actual_price",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        },
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        }
+      ],
+      "post_available_plan_response_kwh": 0.0,
+      "irrelevant_channel_negative_control": true,
+      "midnight_frozen_q_error_kwh": 0.0,
+      "actual_bill_difference_yuan": 37367.97119786154
+    },
+    {
+      "policy": "q43_raw_ols",
+      "mutation": "load_actual",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [],
+      "post_available_plan_response_kwh": 1024.2460340254947,
+      "irrelevant_channel_negative_control": false,
+      "midnight_frozen_q_error_kwh": null,
+      "actual_bill_difference_yuan": 615165.0507703412
+    },
+    {
+      "policy": "q43_raw_ols",
+      "mutation": "pv_actual",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [],
+      "post_available_plan_response_kwh": 802.1360324896418,
+      "irrelevant_channel_negative_control": false,
+      "midnight_frozen_q_error_kwh": null,
+      "actual_bill_difference_yuan": 146775.53901415906
+    },
+    {
+      "policy": "q43_raw_ols",
+      "mutation": "pv_release",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [],
+      "post_available_plan_response_kwh": 976.2250928064452,
+      "irrelevant_channel_negative_control": false,
+      "midnight_frozen_q_error_kwh": null,
+      "actual_bill_difference_yuan": 18513.338957293017
+    },
+    {
+      "policy": "q43_raw_ols",
+      "mutation": "actual_price",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [],
+      "post_available_plan_response_kwh": 581.7063177820124,
+      "irrelevant_channel_negative_control": false,
+      "midnight_frozen_q_error_kwh": null,
+      "actual_bill_difference_yuan": 37106.41752564453
+    },
+    {
+      "policy": "q42_ols",
+      "mutation": "load_actual",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        },
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        }
+      ],
+      "post_available_plan_response_kwh": 1017.5435552235385,
+      "irrelevant_channel_negative_control": false,
+      "midnight_frozen_q_error_kwh": 0.0,
+      "actual_bill_difference_yuan": 704575.1600865293
+    },
+    {
+      "policy": "q42_ols",
+      "mutation": "pv_actual",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        },
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        }
+      ],
+      "post_available_plan_response_kwh": 432.9940838360425,
+      "irrelevant_channel_negative_control": false,
+      "midnight_frozen_q_error_kwh": 0.0,
+      "actual_bill_difference_yuan": 202593.32266109303
+    },
+    {
+      "policy": "q42_ols",
+      "mutation": "pv_release",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        },
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        }
+      ],
+      "post_available_plan_response_kwh": 0.0,
+      "irrelevant_channel_negative_control": true,
+      "midnight_frozen_q_error_kwh": 0.0,
+      "actual_bill_difference_yuan": 0.0
+    },
+    {
+      "policy": "q42_ols",
+      "mutation": "actual_price",
+      "cutoff": "2025-07-15 12:00:00",
+      "initial_kwh": 6000.0,
+      "prefix_intervals": 216,
+      "prefix_max_error": 0.0,
+      "pre_available_candidate_max_error_kwh": 0.0,
+      "pre_available_information_max_errors": {
+        "price": 0.0,
+        "load_hat": 0.0,
+        "pv_hat": 0.0,
+        "raw_pv": 0.0,
+        "scenario_net": 0.0,
+        "risk_delta": 0.0,
+        "q0": 0.0,
+        "current": 0.0,
+        "initial_energy_kwh": 0.0
+      },
+      "appendix3_read_guards": [
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        },
+        {
+          "active": true,
+          "positive_control_blocked": true,
+          "production_forbidden_reads": 0
+        }
+      ],
+      "post_available_plan_response_kwh": 406.4465874179739,
+      "irrelevant_channel_negative_control": false,
+      "midnight_frozen_q_error_kwh": 0.0,
+      "actual_bill_difference_yuan": 38193.93378629995
+    }
+  ],
+  "scope": "counterfactual implementation controls on three-day July paths; not annual economic or general robustness evidence",
+  "mutation_definitions": {
+    "load_actual": "all intervals starting at cut load +800 kWh",
+    "pv_actual": "all intervals starting at cut PV times .5",
+    "pv_release": "positive-PV forecasts issued at/after cut +200 kWh",
+    "actual_price": "all actual price intervals starting at cut times1.35"
+  },
+  "test_initial_state_kwh": 6000.0
+}

@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "derivatives": [
+    {
+      "horizon": 36,
+      "coordinates": 36,
+      "finite_difference_step_kwh": 0.001,
+      "max_gradient_error_yuan_per_kwh": 4.362863181839316e-09,
+      "objective_error_yuan": 3.637978807091713e-12,
+      "scaled_gradient_error": 4.3628631818393163e-10
+    },
+    {
+      "horizon": 72,
+      "coordinates": 72,
+      "finite_difference_step_kwh": 0.001,
+      "max_gradient_error_yuan_per_kwh": 8.83369200010975e-09,
+      "objective_error_yuan": 1.4551915228366852e-11,
+      "scaled_gradient_error": 8.83369200010975e-10
+    },
+    {
+      "horizon": 108,
+      "coordinates": 108,
+      "finite_difference_step_kwh": 0.001,
+      "max_gradient_error_yuan_per_kwh": 1.481464884101058e-08,
+      "objective_error_yuan": 1.4551915228366852e-11,
+      "scaled_gradient_error": 1.481464884101058e-09
+    },
+    {
+      "horizon": 144,
+      "coordinates": 144,
+      "finite_difference_step_kwh": 0.001,
+      "max_gradient_error_yuan_per_kwh": 1.9882750446065245e-08,
+      "objective_error_yuan": 0.0,
+      "scaled_gradient_error": 1.9882750446065245e-09
+    }
+  ],
+  "boundary_checks": [
+    {
+      "initial_kwh": 1200.0,
+      "objective_error_yuan": 0.0,
+      "end_error_kwh": 0.0
+    },
+    {
+      "initial_kwh": 1200.0,
+      "objective_error_yuan": 0.0,
+      "end_error_kwh": 0.0
+    },
+    {
+      "initial_kwh": 10800.0,
+      "objective_error_yuan": 0.0,
+      "end_error_kwh": 0.0
+    },
+    {
+      "initial_kwh": 10800.0,
+      "objective_error_yuan": 0.0,
+      "end_error_kwh": 0.0
+    },
+    {
+      "initial_kwh": 6000.0,
+      "objective_error_yuan": 0.0,
+      "end_error_kwh": 0.0
+    },
+    {
+      "initial_kwh": 6000.0,
+      "objective_error_yuan": 0.0,
+      "end_error_kwh": 0.0
+    }
+  ],
+  "fold_points": "no uniqueness claimed at folds; finite differences use nonfold random points"
+}

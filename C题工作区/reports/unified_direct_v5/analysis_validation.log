@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/unified_direct_v5/validate_analysis.py", line 74, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/unified_direct_v5/validate_analysis.py", line 27, in main
+    assert np.all(np.isfinite(f.select_dtypes(include='number').to_numpy()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

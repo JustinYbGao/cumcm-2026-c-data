@@ -1,0 +1,29 @@
+EEE
+======================================================================
+ERROR: test_final_contract_and_greedy_emergency (__main__.AdapterTests.test_final_contract_and_greedy_emergency)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/unified_direct_v5/test_adapter.py", line 8, in test_final_contract_and_greedy_emergency
+    from policy import evaluate
+ModuleNotFoundError: No module named 'policy'
+
+======================================================================
+ERROR: test_gradient_and_scaling (__main__.AdapterTests.test_gradient_and_scaling)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/unified_direct_v5/test_adapter.py", line 23, in test_gradient_and_scaling
+    from policy import evaluate
+ModuleNotFoundError: No module named 'policy'
+
+======================================================================
+ERROR: test_no_free_emergency_charging (__main__.AdapterTests.test_no_free_emergency_charging)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/unified_direct_v5/test_adapter.py", line 17, in test_no_free_emergency_charging
+    from policy import evaluate
+ModuleNotFoundError: No module named 'policy'
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+FAILED (errors=3)

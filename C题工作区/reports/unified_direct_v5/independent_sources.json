@@ -1,0 +1,302 @@
+{
+  "created_utc": "2026-09-11T20:43:05.400526+00:00",
+  "passed": true,
+  "scope": "sources_and_frozen_regressions",
+  "independence": "Raw XLSX, NumPy, pandas and openpyxl; no production imports.",
+  "tolerances": {
+    "physical_kwh": 1e-06,
+    "cash_yuan": 1e-05
+  },
+  "metrics": {
+    "source_actual_rows": 52560,
+    "B0_rebuilt_days": 364,
+    "raw_PV_rebuilt_issues": 1460,
+    "source_hashes": {
+      "CUMCM2026Problems/C题/附件/附件1.xlsx": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+      "CUMCM2026Problems/C题/附件/附件2.xlsx": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72",
+      "CUMCM2026Problems/C题/附件/附件3.xlsx": "8a61b06c52bd0d639a1cc37c61a7d9f5b75edcbca718f64c1bd3498ec9f9d843",
+      "CUMCM2026Problems/C题/附件/附件4.xlsx": "20e9c93aeab5e8e21ae4dd15587f9e190f7408692504c1319598461cd654fe71"
+    },
+    "policies": {}
+  },
+  "checks": [
+    {
+      "check": "source.load_actual_kwh.dates",
+      "passed": true,
+      "comparisons": 365,
+      "failures": 0
+    },
+    {
+      "check": "source.load_actual_kwh.endpoint_labels",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "source.load_actual_kwh.raw_workbook",
+      "passed": true,
+      "comparisons": 52560,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "source.pv_actual_kwh.dates",
+      "passed": true,
+      "comparisons": 365,
+      "failures": 0
+    },
+    {
+      "check": "source.pv_actual_kwh.endpoint_labels",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "source.pv_actual_kwh.raw_workbook",
+      "passed": true,
+      "comparisons": 52560,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "source.actual_price_yuan_per_kwh.dates",
+      "passed": true,
+      "comparisons": 365,
+      "failures": 0
+    },
+    {
+      "check": "source.actual_price_yuan_per_kwh.endpoint_labels",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "source.actual_price_yuan_per_kwh.raw_workbook",
+      "passed": true,
+      "comparisons": 52560,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "source.fixed_price",
+      "passed": true,
+      "comparisons": 144,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "source.actual_rows",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "source.unique_keys",
+      "passed": true,
+      "comparisons": 52560,
+      "failures": 0
+    },
+    {
+      "check": "source.interval_start",
+      "passed": true,
+      "comparisons": 52560,
+      "failures": 0
+    },
+    {
+      "check": "source.interval_end",
+      "passed": true,
+      "comparisons": 52560,
+      "failures": 0
+    },
+    {
+      "check": "source.availability",
+      "passed": true,
+      "comparisons": 52560,
+      "failures": 0
+    },
+    {
+      "check": "source.B0.load",
+      "passed": true,
+      "comparisons": 52416,
+      "failures": 0,
+      "max_abs_error": 9.777068044058979e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "source.B0.pv",
+      "passed": true,
+      "comparisons": 52416,
+      "failures": 0,
+      "max_abs_error": 1.8758328224066645e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "source.Appendix3.hourly_power",
+      "passed": true,
+      "comparisons": 35040,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "source.Appendix3.issue_time",
+      "passed": true,
+      "comparisons": 35040,
+      "failures": 0
+    },
+    {
+      "check": "source.Appendix3.interpolation_keys",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "source.Appendix3.trapezoid_energy",
+      "passed": true,
+      "comparisons": 210234,
+      "failures": 0,
+      "max_abs_error": 4.547473508864641e-13,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "source.Appendix3.previous_release_anchor",
+      "passed": true,
+      "comparisons": 210234,
+      "failures": 0
+    },
+    {
+      "check": "D112.charge_actual_kwh",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 4.092726157978177e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "D112.discharge_actual_kwh",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 6.480149750132114e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "D112.emergency_kwh",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 6.480149750132114e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "D112.surplus_kwh",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 4.206412995699793e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "D112.energy_start_actual_kwh",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 7.275957614183426e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "D112.energy_end_actual_kwh",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 7.275957614183426e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "D112.interval_cost",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 4.524736141320318e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "D112.total_regression",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "Q1.initial",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "Q1.terminal",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "Q1.state_continuity",
+      "passed": true,
+      "comparisons": 143,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "Q1.state_equation",
+      "passed": true,
+      "comparisons": 144,
+      "failures": 0,
+      "max_abs_error": 9.094947017729282e-13,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "Q1.energy_balance",
+      "passed": true,
+      "comparisons": 144,
+      "failures": 0,
+      "max_abs_error": 2.2737367544323206e-13,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "Q1.limits",
+      "passed": true,
+      "comparisons": 144,
+      "failures": 0
+    },
+    {
+      "check": "Q1.no_simultaneous",
+      "passed": true,
+      "comparisons": 144,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "Q1.total_regression",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    }
+  ],
+  "pending": [
+    "Independent XLSX readback is owned by the workbook reviewer and not asserted here.",
+    "Annual policy evidence audit was not requested in this source-only invocation."
+  ]
+}

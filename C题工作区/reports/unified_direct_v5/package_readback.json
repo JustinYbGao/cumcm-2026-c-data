@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "files": 14024,
+  "total_bytes": 2040166939,
+  "mismatches": [],
+  "manifest_sha256": "76a9ac30d23b71a5e9be01bbafb24a248f2b25022c8906be6cfcf96f444a7bc0",
+  "checksum_list_sha256": "150ceadef624581bb7e87f691eee10ba49381e05396049e136a47dac67ddaccb",
+  "scope": "saved manifest readback; every listed file reread and hashed; all files in five roots covered except three self-referential control files; dependency symlinks disclosed"
+}

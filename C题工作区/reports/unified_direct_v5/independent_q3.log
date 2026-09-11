@@ -1,0 +1,30 @@
+Auditing q3_soc
+Auditing q3_raw
+Auditing q3_w28
+{
+  "passed": true,
+  "failures": [],
+  "policies": {
+    "q3_soc": {
+      "ledger_rows": 48096,
+      "total_cost_yuan": 13707113.120146785,
+      "decisions": 1336,
+      "candidate_vectors": 9018,
+      "candidate_scenario_paths": 918135
+    },
+    "q3_raw": {
+      "ledger_rows": 48096,
+      "total_cost_yuan": 13561833.453413954,
+      "decisions": 1336,
+      "candidate_vectors": 9018,
+      "candidate_scenario_paths": 918135
+    },
+    "q3_w28": {
+      "ledger_rows": 48096,
+      "total_cost_yuan": 13564870.381683389,
+      "decisions": 1336,
+      "candidate_vectors": 9018,
+      "candidate_scenario_paths": 918135
+    }
+  }
+}

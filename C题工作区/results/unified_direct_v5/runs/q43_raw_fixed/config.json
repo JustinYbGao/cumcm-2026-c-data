@@ -1,0 +1,14 @@
+{
+  "policy": "q43_raw_fixed",
+  "branch": "q43",
+  "price": "fixed",
+  "updates": true,
+  "pv_update": true,
+  "corrected": false,
+  "start": "2025-02-01",
+  "end": "2025-12-31",
+  "initial_energy_kwh": 7268.4231640740745,
+  "scenario_window": 112,
+  "kappa": 5,
+  "mu": 0.38232
+}

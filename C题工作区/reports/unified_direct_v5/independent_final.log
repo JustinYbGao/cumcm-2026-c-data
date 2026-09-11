@@ -1,0 +1,86 @@
+Auditing q3_no_update
+Auditing q3_raw
+Auditing q3_soc
+Auditing q3_w28
+Auditing q42_fixed
+Auditing q42_ols
+Auditing q43_raw_fixed
+Auditing q43_raw_ols
+Auditing q43_w28_fixed
+Auditing q43_w28_ols
+{
+  "passed": true,
+  "failures": [],
+  "policies": {
+    "q3_no_update": {
+      "ledger_rows": 48096,
+      "total_cost_yuan": 13992686.861414928,
+      "decisions": 334,
+      "candidate_vectors": 2004,
+      "candidate_scenario_paths": 204030
+    },
+    "q3_raw": {
+      "ledger_rows": 48096,
+      "total_cost_yuan": 13561833.453413954,
+      "decisions": 1336,
+      "candidate_vectors": 9018,
+      "candidate_scenario_paths": 918135
+    },
+    "q3_soc": {
+      "ledger_rows": 48096,
+      "total_cost_yuan": 13707113.120146785,
+      "decisions": 1336,
+      "candidate_vectors": 9018,
+      "candidate_scenario_paths": 918135
+    },
+    "q3_w28": {
+      "ledger_rows": 48096,
+      "total_cost_yuan": 13564870.381683389,
+      "decisions": 1336,
+      "candidate_vectors": 9018,
+      "candidate_scenario_paths": 918135
+    },
+    "q42_fixed": {
+      "ledger_rows": 48096,
+      "total_cost_yuan": 14678539.461690612,
+      "decisions": 334,
+      "candidate_vectors": 2004,
+      "candidate_scenario_paths": 204030
+    },
+    "q42_ols": {
+      "ledger_rows": 48096,
+      "total_cost_yuan": 14685497.292798627,
+      "decisions": 334,
+      "candidate_vectors": 2004,
+      "candidate_scenario_paths": 204030
+    },
+    "q43_raw_fixed": {
+      "ledger_rows": 48096,
+      "total_cost_yuan": 14335049.532332055,
+      "decisions": 1336,
+      "candidate_vectors": 9018,
+      "candidate_scenario_paths": 918135
+    },
+    "q43_raw_ols": {
+      "ledger_rows": 48096,
+      "total_cost_yuan": 14321858.370546076,
+      "decisions": 1336,
+      "candidate_vectors": 9018,
+      "candidate_scenario_paths": 918135
+    },
+    "q43_w28_fixed": {
+      "ledger_rows": 48096,
+      "total_cost_yuan": 14338888.964007543,
+      "decisions": 1336,
+      "candidate_vectors": 9018,
+      "candidate_scenario_paths": 918135
+    },
+    "q43_w28_ols": {
+      "ledger_rows": 48096,
+      "total_cost_yuan": 14325147.63326037,
+      "decisions": 1336,
+      "candidate_vectors": 9018,
+      "candidate_scenario_paths": 918135
+    }
+  }
+}

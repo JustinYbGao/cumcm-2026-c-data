@@ -1,0 +1,42 @@
+{
+  "passed": false,
+  "status": "fail",
+  "checks": 4106606,
+  "numeric_comparisons": 2142606,
+  "error_count": 25,
+  "max_abs_error": {
+    "kWh": 7.275957614183426e-11,
+    "yuan": 1.30385160446167e-7,
+    "kW": 0.0
+  },
+  "failure_scope": "verifier metadata path resolution only",
+  "root_cause": "C题工作区-relative provenance paths were initially resolved from the repository parent; workbook values, formulas, dates, mappings, raw-source bills, and specified-day tables had no failures.",
+  "failed_paths": [
+    "results/q1/baseline/schedule.csv",
+    "scripts/solve_q1.py",
+    "results/q1/baseline/config_snapshot.json",
+    "results/q2_direct_v4/runs/D112/ledger.csv",
+    "scripts/q2_direct_v4/run_experiments.py",
+    "scripts/q2_direct_v4/base_policy.py",
+    "results/q2_direct_v4/runs/D112/config.json",
+    "results/unified_direct_v5/runs/q3_raw/ledger.csv",
+    "results/unified_direct_v5/runs/q3_raw/config.json",
+    "configs/unified_direct_v5/experiments.json",
+    "reports/unified_direct_v5/protocol.md",
+    "reports/unified_direct_v5/protocol_amendments.md",
+    "reports/unified_direct_v5/protocol_freeze.json",
+    "results/unified_direct_v5/runs/q42_fixed/ledger.csv",
+    "results/unified_direct_v5/runs/q42_fixed/config.json",
+    "configs/unified_direct_v5/experiments.json",
+    "reports/unified_direct_v5/protocol.md",
+    "reports/unified_direct_v5/protocol_amendments.md",
+    "reports/unified_direct_v5/protocol_freeze.json",
+    "results/unified_direct_v5/runs/q43_raw_ols/ledger.csv",
+    "results/unified_direct_v5/runs/q43_raw_ols/config.json",
+    "configs/unified_direct_v5/experiments.json",
+    "reports/unified_direct_v5/protocol.md",
+    "reports/unified_direct_v5/protocol_amendments.md",
+    "reports/unified_direct_v5/protocol_freeze.json"
+  ],
+  "validator_sha256": "21bb0a4189adaa33a11360b92c4acd81a1b3c38948b5f258cdbd7d00b2a84450"
+}
