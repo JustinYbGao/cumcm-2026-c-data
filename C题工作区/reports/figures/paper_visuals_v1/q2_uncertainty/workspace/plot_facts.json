@@ -1,0 +1,23 @@
+{
+  "bootstrap_source_sha256": "cdd726bf24ea3c383b228ff9a52880c8d030dbe8c9d6e079de30cde87106aeb1",
+  "win_loss_source_sha256": "bf6579b4489de9dadcbcc32109dd21b4d075dba7f301367d9148c15fb4e22e15",
+  "intervals_yuan": [
+    {
+      "block_days": 7,
+      "saving_yuan": 80389.77710279298,
+      "ci95_low_yuan": -115755.06817606352,
+      "ci95_high_yuan": 230578.1434474379
+    },
+    {
+      "block_days": 14,
+      "saving_yuan": 80389.77710279298,
+      "ci95_low_yuan": -110347.84164520596,
+      "ci95_high_yuan": 236233.4439029224
+    }
+  ],
+  "day_counts": {
+    "total_winning_days": 250,
+    "total_losing_days": 84,
+    "emergency_worse_days": 68
+  }
+}

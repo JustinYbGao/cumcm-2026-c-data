@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "return_code": 0,
+  "stdout": "",
+  "stderr": "/Users/mike/.matplotlib is not a writable directory\nMatplotlib created a temporary cache directory at /var/folders/nl/5lly2nzn01bfgd2v6bfck31w0000gn/T/matplotlib-tiz9q6g1 because there was an issue with the default path ({configdir}); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.\nMatplotlib is building the font cache; this may take a moment.\n",
+  "generated_files": [
+    "outputs/chart.svg",
+    "outputs/chart.png"
+  ],
+  "execution_time": 7.2982,
+  "error_type": ""
+}

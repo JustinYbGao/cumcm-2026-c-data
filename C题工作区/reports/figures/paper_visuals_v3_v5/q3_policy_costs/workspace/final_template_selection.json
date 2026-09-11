@@ -1,0 +1,29 @@
+{
+  "dataset_summary": "Four verified Problem 3 policy records with contract, emergency, and total realized costs in million CNY.",
+  "observed_data_features": [
+    "Four categorical policies",
+    "Two additive cost components",
+    "One selected policy flag"
+  ],
+  "relevant_columns": [
+    "policy_label",
+    "contract_cost_million_cny",
+    "emergency_cost_million_cny",
+    "total_cost_million_cny",
+    "selected"
+  ],
+  "candidate_comparisons": [],
+  "selected_template_id": "cmp_correlation_stacked_bar",
+  "selected_template_name": "相关性分析堆叠条形图",
+  "alternative_template_ids": [
+    "cmp_horizontal_percentage_stack"
+  ],
+  "selection_reason": "An absolute stacked bar preserves the additive cost decomposition and enables direct policy comparison without normalising away the cost level.",
+  "data_support_reason": "Contract and emergency costs are non-negative additive components available for every policy.",
+  "data_warnings": [
+    "The selected-policy flag denotes the frozen v5 choice, not statistical significance."
+  ],
+  "confidence": 0.95,
+  "needs_clarification": false,
+  "clarification_question": ""
+}

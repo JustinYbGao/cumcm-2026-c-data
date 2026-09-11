@@ -1,0 +1,40 @@
+{
+  "adapted_code": "from __future__ import annotations\n\nimport os\nimport sys\nfrom pathlib import Path\n\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport pandas as pd\n\n\ndef main() -> None:\n    data_path = Path(os.environ.get(\"DATA_PATH\", sys.argv[1]))\n    output_dir = Path(os.environ.get(\"OUTPUT_DIR\", sys.argv[2]))\n    output_dir.mkdir(parents=True, exist_ok=True)\n    data = pd.read_csv(data_path).sort_values(\"policy_order\")\n\n    plt.rcParams.update({\n        \"font.family\": \"DejaVu Serif\",\n        \"font.size\": 10,\n        \"axes.labelsize\": 11,\n        \"axes.titlesize\": 11,\n        \"pdf.fonttype\": 42,\n        \"ps.fonttype\": 42,\n    })\n    fig, ax = plt.subplots(figsize=(8.1, 4.8), constrained_layout=True)\n    x = np.arange(len(data))\n    contract = data[\"contract_cost_million_cny\"].to_numpy()\n    emergency = data[\"emergency_cost_million_cny\"].to_numpy()\n    total = data[\"total_cost_million_cny\"].to_numpy()\n\n    selected_index = int(np.where(data[\"selected\"].to_numpy())[0][0])\n    ax.axvspan(selected_index - 0.48, selected_index + 0.48, color=\"#EAF0F6\", zorder=0)\n    ax.bar(x, contract, width=0.62, color=\"#5F7FA3\", edgecolor=\"white\", linewidth=0.8,\n           label=\"Contract cost\", zorder=3)\n    ax.bar(x, emergency, width=0.62, bottom=contract, color=\"#D98B73\", edgecolor=\"white\",\n           linewidth=0.8, label=\"Emergency cost\", zorder=3)\n    for index, value in enumerate(total):\n        ax.text(index, value + 0.055, f\"{value:.3f}\", ha=\"center\", va=\"bottom\", fontsize=9)\n\n    ax.set_xticks(x, data[\"policy_label\"])\n    ax.set_ylabel(\"Realized cost (million CNY)\")\n    ax.set_ylim(0, max(total) + 0.42)\n    ax.yaxis.grid(True, color=\"#D9D9D9\", linewidth=0.65, alpha=0.9)\n    ax.set_axisbelow(True)\n    ax.spines[[\"top\", \"right\"]].set_visible(False)\n    ax.legend(loc=\"upper right\", frameon=False, ncol=2, handlelength=1.35)\n    ax.text(selected_index, -0.11, \"selected policy\", transform=ax.get_xaxis_transform(),\n            ha=\"center\", va=\"top\", fontsize=8.8, color=\"#40566F\")\n    fig.savefig(output_dir / \"chart.png\", dpi=300, bbox_inches=\"tight\")\n    fig.savefig(output_dir / \"chart.svg\", bbox_inches=\"tight\")\n    plt.close(fig)\n\n\nif __name__ == \"__main__\":\n    main()\n",
+  "changes_summary": [
+    "Replaced demonstration factors with verified v5 policy-cost columns.",
+    "Preserved the selected stacked-bar template family while using English paper labels."
+  ],
+  "preserved_style_elements": [
+    "serif scientific typography",
+    "muted two-colour palette",
+    "light grid",
+    "upright bar comparison",
+    "stacked component layout",
+    "compact legend"
+  ],
+  "changed_elements": [
+    "English labels",
+    "remove template-specific correlation semantics",
+    "add restrained selected-policy band"
+  ],
+  "data_columns_used": [
+    "policy_label",
+    "policy_order",
+    "contract_cost_million_cny",
+    "emergency_cost_million_cny",
+    "total_cost_million_cny",
+    "selected"
+  ],
+  "dependencies_used": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "additional_dependencies_requested": [],
+  "assumptions": [
+    "The compact plotting table is a traceable extract from the verified v5 result bundle."
+  ],
+  "warnings": [
+    "No causal interpretation is encoded by the chart."
+  ]
+}

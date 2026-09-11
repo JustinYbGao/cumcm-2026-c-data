@@ -1,0 +1,142 @@
+{
+  "original_request": "Create an English, paper-ready time-series chart from verified Problem 3 monthly savings. Show monthly and cumulative realized savings of the selected raw-PV rolling policy relative to the no-update policy. Use a clean scientific style, muted colours, readable units, no 3D, no pie chart, no smoothing, and no significance stars.",
+  "candidate_count": 7,
+  "total_templates": 89,
+  "candidates": [
+    {
+      "template_id": "trd_dual_axis_bar_line",
+      "template_name": "双Y轴柱状折线时间序列图",
+      "category": "trend_time_series",
+      "score": 0.52,
+      "matched_keywords": [
+        "柱状折线图",
+        "时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [
+        "dual_axis_bar_line_chart"
+      ],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "图表类型匹配：dual_axis_bar_line_chart；功能关键词匹配：柱状折线图, 时间序列",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_001/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_001/双Y轴柱状折线时间序列图.py",
+      "catalog_order": 85
+    },
+    {
+      "template_id": "trd_composite_line_bar_dual_axis",
+      "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+      "category": "trend_time_series",
+      "score": 0.28,
+      "matched_keywords": [
+        "柱状折线图",
+        "时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：柱状折线图, 时间序列",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_004/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_004/折线图、条形图和双Y轴的复合时间序列图.py",
+      "catalog_order": 88
+    },
+    {
+      "template_id": "mpn_scatter_matrix_timeseries_regression",
+      "template_name": "散点矩阵与时间序列回归报告",
+      "category": "multi_panel_report",
+      "score": 0.17,
+      "matched_keywords": [
+        "时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [
+        "科研风",
+        "简洁",
+        "低饱和"
+      ],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：时间序列；风格弱匹配：科研风, 简洁, 低饱和",
+      "preview": "templates/05_MPN_multi_panel_report/05_MPN_002/assets/preview.png",
+      "code_path": "templates/05_MPN_multi_panel_report/05_MPN_002/散点矩阵与时间序列回归报告.py",
+      "catalog_order": 29
+    },
+    {
+      "template_id": "opt_hants_parameter_selection",
+      "template_name": "HANTS最佳参数选择",
+      "category": "optimization_decision",
+      "score": 0.14,
+      "matched_keywords": [
+        "时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：时间序列",
+      "preview": "templates/07_OPT_optimization_decision/07_OPT_001/assets/preview.png",
+      "code_path": "templates/07_OPT_optimization_decision/07_OPT_001/HANTS最佳参数选择.py",
+      "catalog_order": 34
+    },
+    {
+      "template_id": "spa_pixelwise_standardized_regression",
+      "template_name": "逐像元标准化与多元线性回归",
+      "category": "spatial_geographic",
+      "score": 0.14,
+      "matched_keywords": [
+        "时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：时间序列",
+      "preview": "templates/11_SPA_spatial_geographic/11_SPA_001/assets/preview.png",
+      "code_path": "templates/11_SPA_spatial_geographic/11_SPA_001/逐像元标准化与多元线性回归.py",
+      "catalog_order": 81
+    },
+    {
+      "template_id": "spa_moving_window_rf_shap_drivers",
+      "template_name": "空间移动窗口随机森林与SHAP驱动因子分析",
+      "category": "spatial_geographic",
+      "score": 0.14,
+      "matched_keywords": [
+        "时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：时间序列",
+      "preview": "templates/11_SPA_spatial_geographic/11_SPA_003/assets/preview.png",
+      "code_path": "templates/11_SPA_spatial_geographic/11_SPA_003/空间移动窗口随机森林与SHAP驱动因子分析.py",
+      "catalog_order": 83
+    },
+    {
+      "template_id": "trd_lag_correlation_analysis",
+      "template_name": "滞后相关性分析图",
+      "category": "trend_time_series",
+      "score": 0.14,
+      "matched_keywords": [
+        "时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：时间序列",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_002/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_002/滞后相关性分析图.py",
+      "catalog_order": 86
+    }
+  ],
+  "warnings": []
+}

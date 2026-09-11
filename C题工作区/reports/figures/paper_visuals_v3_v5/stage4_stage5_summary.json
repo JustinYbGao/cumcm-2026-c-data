@@ -1,0 +1,16 @@
+{
+  "q3_policy_costs": {
+    "selection_success": true,
+    "adaptation_success": true,
+    "selection_failure": null,
+    "adaptation_failure": null,
+    "adaptation_error": null
+  },
+  "q4_price_effect": {
+    "selection_success": true,
+    "adaptation_success": true,
+    "selection_failure": null,
+    "adaptation_failure": null,
+    "adaptation_error": null
+  }
+}

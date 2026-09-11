@@ -1,0 +1,7 @@
+policy,policy_label,policy_order,contract_cost_million_cny,emergency_cost_million_cny,total_cost_million_cny,selected
+q3_no_update,No update,0,13.352739628329253,0.6399472330856741,13.992686861414928,False
+q3_soc,SOC feedback,1,13.430039925941022,0.27707319420576054,13.707113120146783,False
+q3_raw,"Raw PV update
+(selected)",2,13.262305801386368,0.29952765202758785,13.561833453413954,True
+q3_w28,"28-day correction
+(not selected)",3,13.286830290501216,0.27804009118217177,13.564870381683388,False

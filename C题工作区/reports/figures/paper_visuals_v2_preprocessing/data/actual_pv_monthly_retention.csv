@@ -1,0 +1,13 @@
+month,ten_minute_observations,zero_pv_observations,positive_pv_observations,month_label
+1,4464,2324,2140,Jan
+2,4032,1996,2036,Feb
+3,4464,2038,2426,Mar
+4,4320,1794,2526,Apr
+5,4464,1717,2747,May
+6,4320,1555,2765,Jun
+7,4464,1680,2784,Jul
+8,4464,1796,2668,Aug
+9,4320,1905,2415,Sep
+10,4464,2143,2321,Oct
+11,4320,2225,2095,Nov
+12,4464,2367,2097,Dec

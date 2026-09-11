@@ -1,0 +1,25 @@
+{
+  "original_request": "Create an English, paper-ready dual-axis bar-and-line time-series chart from the verified v5 monthly paired comparisons. Show monthly realized savings and cumulative savings for the Q4-2 and Q4-3 OLS-versus-fixed planning-price comparisons. Positive saving means the OLS candidate is cheaper. Use a clean scientific style, muted colours, readable units, no 3D and no pie chart.",
+  "goal": "Compare monthly and cumulative realized savings for two Q4 price-planning comparisons.",
+  "functional_keywords": [
+    "柱状折线图",
+    "时间序列",
+    "成本比较"
+  ],
+  "chart_types": [
+    "dual_axis_bar_line_chart"
+  ],
+  "style_keywords": [
+    "科研风",
+    "简洁",
+    "低饱和"
+  ],
+  "use_case": "论文正文",
+  "negative_requirements": [
+    "三维",
+    "饼图"
+  ],
+  "explicit_template": false,
+  "is_ambiguous": false,
+  "clarification_question": ""
+}

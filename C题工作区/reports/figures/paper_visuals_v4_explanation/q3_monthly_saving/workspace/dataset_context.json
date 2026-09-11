@@ -1,0 +1,175 @@
+{
+  "file_name": "q3_monthly_saving.csv",
+  "file_type": "csv",
+  "sheet_name": null,
+  "row_count": 11,
+  "column_count": 5,
+  "column_names": [
+    "month",
+    "soc_saving_yuan",
+    "raw_increment_saving_yuan",
+    "raw_vs_no_update_saving_yuan",
+    "cumulative_raw_vs_no_update_saving_yuan"
+  ],
+  "sample_records": [
+    {
+      "month": "2025-02",
+      "soc_saving_yuan": 8288.72710910792,
+      "raw_increment_saving_yuan": 26410.797661516615,
+      "raw_vs_no_update_saving_yuan": 34699.524770624535,
+      "cumulative_raw_vs_no_update_saving_yuan": 34699.524770624535
+    },
+    {
+      "month": "2025-03",
+      "soc_saving_yuan": 37307.56854697866,
+      "raw_increment_saving_yuan": 34907.067751221286,
+      "raw_vs_no_update_saving_yuan": 72214.63629819994,
+      "cumulative_raw_vs_no_update_saving_yuan": 106914.16106882448
+    },
+    {
+      "month": "2025-04",
+      "soc_saving_yuan": 21052.50399154093,
+      "raw_increment_saving_yuan": 11725.117547674095,
+      "raw_vs_no_update_saving_yuan": 32777.621539215026,
+      "cumulative_raw_vs_no_update_saving_yuan": 139691.7826080395
+    },
+    {
+      "month": "2025-05",
+      "soc_saving_yuan": 15160.521520844042,
+      "raw_increment_saving_yuan": 431.9930976769301,
+      "raw_vs_no_update_saving_yuan": 15592.514618520972,
+      "cumulative_raw_vs_no_update_saving_yuan": 155284.29722656048
+    },
+    {
+      "month": "2025-06",
+      "soc_saving_yuan": 11002.21922337601,
+      "raw_increment_saving_yuan": -10450.966967267032,
+      "raw_vs_no_update_saving_yuan": 551.252256108979,
+      "cumulative_raw_vs_no_update_saving_yuan": 155835.54948266945
+    },
+    {
+      "month": "2025-07",
+      "soc_saving_yuan": 120023.17787777002,
+      "raw_increment_saving_yuan": 9237.149378662089,
+      "raw_vs_no_update_saving_yuan": 129260.32725643212,
+      "cumulative_raw_vs_no_update_saving_yuan": 285095.87673910154
+    },
+    {
+      "month": "2025-08",
+      "soc_saving_yuan": 8428.044135543234,
+      "raw_increment_saving_yuan": 13940.05114411646,
+      "raw_vs_no_update_saving_yuan": 22368.095279659698,
+      "cumulative_raw_vs_no_update_saving_yuan": 307463.9720187612
+    },
+    {
+      "month": "2025-09",
+      "soc_saving_yuan": 18394.11281550989,
+      "raw_increment_saving_yuan": 17775.350031504808,
+      "raw_vs_no_update_saving_yuan": 36169.4628470147,
+      "cumulative_raw_vs_no_update_saving_yuan": 343633.4348657759
+    },
+    {
+      "month": "2025-10",
+      "soc_saving_yuan": 5929.402921317924,
+      "raw_increment_saving_yuan": 30882.75385756613,
+      "raw_vs_no_update_saving_yuan": 36812.156778884055,
+      "cumulative_raw_vs_no_update_saving_yuan": 380445.59164466
+    },
+    {
+      "month": "2025-11",
+      "soc_saving_yuan": -834.069537137606,
+      "raw_increment_saving_yuan": 7030.40020343299,
+      "raw_vs_no_update_saving_yuan": 6196.330666295384,
+      "cumulative_raw_vs_no_update_saving_yuan": 386641.92231095536
+    },
+    {
+      "month": "2025-12",
+      "soc_saving_yuan": 40821.53266329219,
+      "raw_increment_saving_yuan": 3389.953026725125,
+      "raw_vs_no_update_saving_yuan": 44211.48569001732,
+      "cumulative_raw_vs_no_update_saving_yuan": 430853.4080009727
+    }
+  ],
+  "head_records": [
+    {
+      "month": "2025-02",
+      "soc_saving_yuan": 8288.72710910792,
+      "raw_increment_saving_yuan": 26410.797661516615,
+      "raw_vs_no_update_saving_yuan": 34699.524770624535,
+      "cumulative_raw_vs_no_update_saving_yuan": 34699.524770624535
+    },
+    {
+      "month": "2025-03",
+      "soc_saving_yuan": 37307.56854697866,
+      "raw_increment_saving_yuan": 34907.067751221286,
+      "raw_vs_no_update_saving_yuan": 72214.63629819994,
+      "cumulative_raw_vs_no_update_saving_yuan": 106914.16106882448
+    },
+    {
+      "month": "2025-04",
+      "soc_saving_yuan": 21052.50399154093,
+      "raw_increment_saving_yuan": 11725.117547674095,
+      "raw_vs_no_update_saving_yuan": 32777.621539215026,
+      "cumulative_raw_vs_no_update_saving_yuan": 139691.7826080395
+    },
+    {
+      "month": "2025-05",
+      "soc_saving_yuan": 15160.521520844042,
+      "raw_increment_saving_yuan": 431.9930976769301,
+      "raw_vs_no_update_saving_yuan": 15592.514618520972,
+      "cumulative_raw_vs_no_update_saving_yuan": 155284.29722656048
+    },
+    {
+      "month": "2025-06",
+      "soc_saving_yuan": 11002.21922337601,
+      "raw_increment_saving_yuan": -10450.966967267032,
+      "raw_vs_no_update_saving_yuan": 551.252256108979,
+      "cumulative_raw_vs_no_update_saving_yuan": 155835.54948266945
+    },
+    {
+      "month": "2025-07",
+      "soc_saving_yuan": 120023.17787777002,
+      "raw_increment_saving_yuan": 9237.149378662089,
+      "raw_vs_no_update_saving_yuan": 129260.32725643212,
+      "cumulative_raw_vs_no_update_saving_yuan": 285095.87673910154
+    },
+    {
+      "month": "2025-08",
+      "soc_saving_yuan": 8428.044135543234,
+      "raw_increment_saving_yuan": 13940.05114411646,
+      "raw_vs_no_update_saving_yuan": 22368.095279659698,
+      "cumulative_raw_vs_no_update_saving_yuan": 307463.9720187612
+    },
+    {
+      "month": "2025-09",
+      "soc_saving_yuan": 18394.11281550989,
+      "raw_increment_saving_yuan": 17775.350031504808,
+      "raw_vs_no_update_saving_yuan": 36169.4628470147,
+      "cumulative_raw_vs_no_update_saving_yuan": 343633.4348657759
+    },
+    {
+      "month": "2025-10",
+      "soc_saving_yuan": 5929.402921317924,
+      "raw_increment_saving_yuan": 30882.75385756613,
+      "raw_vs_no_update_saving_yuan": 36812.156778884055,
+      "cumulative_raw_vs_no_update_saving_yuan": 380445.59164466
+    },
+    {
+      "month": "2025-11",
+      "soc_saving_yuan": -834.069537137606,
+      "raw_increment_saving_yuan": 7030.40020343299,
+      "raw_vs_no_update_saving_yuan": 6196.330666295384,
+      "cumulative_raw_vs_no_update_saving_yuan": 386641.92231095536
+    },
+    {
+      "month": "2025-12",
+      "soc_saving_yuan": 40821.53266329219,
+      "raw_increment_saving_yuan": 3389.953026725125,
+      "raw_vs_no_update_saving_yuan": 44211.48569001732,
+      "cumulative_raw_vs_no_update_saving_yuan": 430853.4080009727
+    }
+  ],
+  "sampled": false,
+  "sample_strategy": "数据行数 11 未超过阈值，提供前 11 行作为样例。",
+  "warnings": []
+}

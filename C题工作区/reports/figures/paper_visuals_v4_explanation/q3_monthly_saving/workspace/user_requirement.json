@@ -1,0 +1,27 @@
+{
+  "original_request": "Create an English, paper-ready time-series chart from verified Problem 3 monthly savings. Show monthly and cumulative realized savings of the selected raw-PV rolling policy relative to the no-update policy. Use a clean scientific style, muted colours, readable units, no 3D, no pie chart, no smoothing, and no significance stars.",
+  "goal": "Show how the realized saving of the selected Problem 3 update policy accumulates over months.",
+  "functional_keywords": [
+    "柱状折线图",
+    "时间序列",
+    "累计节省"
+  ],
+  "chart_types": [
+    "dual_axis_bar_line_chart"
+  ],
+  "style_keywords": [
+    "科研风",
+    "简洁",
+    "低饱和"
+  ],
+  "use_case": "论文正文",
+  "negative_requirements": [
+    "三维",
+    "饼图",
+    "平滑曲线",
+    "显著性标记"
+  ],
+  "explicit_template": false,
+  "is_ambiguous": false,
+  "clarification_question": ""
+}

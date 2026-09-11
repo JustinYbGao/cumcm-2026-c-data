@@ -1,0 +1,119 @@
+{
+  "q3_monthly_saving": {
+    "requirement": {
+      "original_request": "Create an English, paper-ready time-series chart from verified Problem 3 monthly savings. Show monthly and cumulative realized savings of the selected raw-PV rolling policy relative to the no-update policy. Use a clean scientific style, muted colours, readable units, no 3D, no pie chart, no smoothing, and no significance stars.",
+      "goal": "Show how the realized saving of the selected Problem 3 update policy accumulates over months.",
+      "functional_keywords": [
+        "柱状折线图",
+        "时间序列",
+        "累计节省"
+      ],
+      "chart_types": [
+        "dual_axis_bar_line_chart"
+      ],
+      "style_keywords": [
+        "科研风",
+        "简洁",
+        "低饱和"
+      ],
+      "use_case": "论文正文",
+      "negative_requirements": [
+        "三维",
+        "饼图",
+        "平滑曲线",
+        "显著性标记"
+      ],
+      "explicit_template": false,
+      "is_ambiguous": false,
+      "clarification_question": ""
+    },
+    "candidate_success": true,
+    "candidate_ids": [
+      "trd_dual_axis_bar_line",
+      "trd_composite_line_bar_dual_axis",
+      "mpn_scatter_matrix_timeseries_regression",
+      "opt_hants_parameter_selection",
+      "spa_pixelwise_standardized_regression",
+      "spa_moving_window_rf_shap_drivers",
+      "trd_lag_correlation_analysis"
+    ]
+  },
+  "q3_peak_day_execution": {
+    "requirement": {
+      "original_request": "Create an English, paper-ready two-panel time-series chart from a verified Problem 3 selected-policy daily ledger. Explain the physical executor on the single day with the largest realized emergency purchase: net load, regular grid purchase, emergency purchase, battery net energy, and state of charge. Use stepwise raw scheduling points only, muted scientific colours, readable units, no 3D, no pie chart, no smoothing, and no significance stars.",
+      "goal": "Explain the selected Problem 3 policy's interval-by-interval physical execution on a traceably chosen stress day.",
+      "functional_keywords": [
+        "时间序列",
+        "双Y轴",
+        "调度轨迹"
+      ],
+      "chart_types": [
+        "composite_time_series_chart"
+      ],
+      "style_keywords": [
+        "科研风",
+        "简洁",
+        "低饱和"
+      ],
+      "use_case": "论文正文",
+      "negative_requirements": [
+        "三维",
+        "饼图",
+        "平滑曲线",
+        "显著性标记"
+      ],
+      "explicit_template": false,
+      "is_ambiguous": false,
+      "clarification_question": ""
+    },
+    "candidate_success": true,
+    "candidate_ids": [
+      "trd_composite_line_bar_dual_axis",
+      "trd_dual_axis_bar_line",
+      "mpn_scatter_matrix_timeseries_regression",
+      "opt_hants_parameter_selection",
+      "spa_pixelwise_standardized_regression",
+      "spa_moving_window_rf_shap_drivers",
+      "trd_lag_correlation_analysis"
+    ]
+  },
+  "q43_causal_trace": {
+    "requirement": {
+      "original_request": "Create an English, paper-ready two-panel time-series chart from a verified Problem 4-3 causal-audit day. Show actual electricity price and the four available price-forecast versions above, and show the associated grid-purchase plan versions plus the executed purchase below. Use stepwise raw scheduling points only, a clean muted scientific style, readable units, no 3D, no pie chart, no smoothing, and no significance stars.",
+      "goal": "Explain the causal price-information and rolling-plan boundary in the selected Problem 4-3 policy.",
+      "functional_keywords": [
+        "时间序列",
+        "多线图",
+        "调度轨迹"
+      ],
+      "chart_types": [
+        "composite_time_series_chart"
+      ],
+      "style_keywords": [
+        "科研风",
+        "简洁",
+        "低饱和"
+      ],
+      "use_case": "论文正文",
+      "negative_requirements": [
+        "三维",
+        "饼图",
+        "平滑曲线",
+        "显著性标记"
+      ],
+      "explicit_template": false,
+      "is_ambiguous": false,
+      "clarification_question": ""
+    },
+    "candidate_success": true,
+    "candidate_ids": [
+      "trd_composite_line_bar_dual_axis",
+      "mpn_scatter_matrix_timeseries_regression",
+      "opt_hants_parameter_selection",
+      "spa_pixelwise_standardized_regression",
+      "spa_moving_window_rf_shap_drivers",
+      "trd_dual_axis_bar_line",
+      "trd_lag_correlation_analysis"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "adapted_code": "from __future__ import annotations\n\nimport csv\nimport os\nimport sys\nfrom pathlib import Path\n\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\nimport numpy as np\ndef main() -> None:\n    data_path = Path(os.environ.get(\"DATA_PATH\", sys.argv[1]))\n    output_dir = Path(os.environ.get(\"OUTPUT_DIR\", sys.argv[2]))\n    output_dir.mkdir(parents=True, exist_ok=True)\n    with data_path.open(newline=\"\", encoding=\"utf-8\") as handle:\n        data = sorted(csv.DictReader(handle), key=lambda row: row[\"month\"])\n    x = np.arange(len(data))\n    monthly = np.array([float(row[\"raw_vs_no_update_saving_yuan\"]) for row in data]) / 1000\n    cumulative = np.array([float(row[\"cumulative_raw_vs_no_update_saving_yuan\"]) for row in data]) / 1000\n    labels = [row[\"month\"].split(\"-\")[1] for row in data]\n\n    plt.rcParams.update({\n        \"font.family\": \"DejaVu Serif\", \"font.size\": 9.5, \"axes.labelsize\": 10.5,\n        \"pdf.fonttype\": 42, \"ps.fonttype\": 42,\n    })\n    fig, ax = plt.subplots(figsize=(8.5, 4.55), constrained_layout=True)\n    bars = ax.bar(x, monthly, width=0.67, color=\"#88A7C4\", edgecolor=\"white\", linewidth=0.6,\n                  label=\"Monthly saving\", zorder=3)\n    ax.axhline(0, color=\"#6C6C6C\", linewidth=0.8, zorder=2)\n    ax.set_xticks(x, labels)\n    ax.set_xlabel(\"Month in 2025\")\n    ax.set_ylabel(\"Monthly saving (thousand CNY)\")\n    ax.yaxis.grid(True, color=\"#DFDFDF\", linewidth=0.6)\n    ax.set_axisbelow(True)\n    ax.spines[[\"top\"]].set_visible(False)\n\n    secondary = ax.twinx()\n    line = secondary.plot(x, cumulative, color=\"#345F85\", marker=\"o\", markersize=4.4, linewidth=2.0,\n                          markerfacecolor=\"white\", markeredgewidth=1.15, label=\"Cumulative saving\")[0]\n    secondary.set_ylabel(\"Cumulative saving (thousand CNY)\")\n    secondary.spines[[\"top\"]].set_visible(False)\n    secondary.annotate(f\"{cumulative[-1]:+.1f}\", xy=(x[-1], cumulative[-1]), xytext=(5, 7),\n                       textcoords=\"offset points\", color=\"#345F85\", fontsize=9, fontweight=\"bold\")\n    ax.legend([bars, line], [\"Monthly saving\", \"Cumulative saving\"], loc=\"upper left\", frameon=False,\n              handlelength=1.55)\n    fig.text(0.5, -0.04,\n             \"Positive saving: q3_raw has lower realized cost than q3_no_update in the same month.\",\n             ha=\"center\", fontsize=8.8, color=\"#4A4A4A\")\n    fig.savefig(output_dir / \"chart.png\", dpi=300, bbox_inches=\"tight\")\n    fig.savefig(output_dir / \"chart.svg\", bbox_inches=\"tight\")\n    plt.close(fig)\n\n\nif __name__ == \"__main__\":\n    main()\n",
+  "changes_summary": [
+    "Replaced demonstration data with the verified explanatory input table.",
+    "Preserved the selected time-series template family in an English paper style."
+  ],
+  "preserved_style_elements": [
+    "serif scientific typography",
+    "muted palette",
+    "light grid",
+    "time-series comparison",
+    "compact legends",
+    "clean scientific axes"
+  ],
+  "changed_elements": [
+    "English labels",
+    "replace template demonstration data with verified v5 fields",
+    "use two panels when the data need distinct physical scales"
+  ],
+  "data_columns_used": [
+    "month",
+    "raw_vs_no_update_saving_yuan",
+    "cumulative_raw_vs_no_update_saving_yuan"
+  ],
+  "dependencies_used": [
+    "matplotlib",
+    "numpy"
+  ],
+  "additional_dependencies_requested": [],
+  "assumptions": [
+    "The prepared input is a traceable derivative of verified v5 results and does not modify raw source data."
+  ],
+  "warnings": [
+    "No smoothing, interpolation, or unsupported causal inference is introduced by the figure."
+  ]
+}

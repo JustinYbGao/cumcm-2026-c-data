@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "requested_packages": [
+    "scipy"
+  ],
+  "installed_packages": [],
+  "failed_packages": [],
+  "skipped_packages": [
+    "scipy"
+  ],
+  "stdout": "",
+  "stderr": "",
+  "warnings": [
+    "auto_install=false，未执行 pip install。"
+  ]
+}

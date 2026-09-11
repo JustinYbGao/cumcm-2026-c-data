@@ -1,0 +1,383 @@
+{
+  "file_name": "q3_peak_day_execution.csv",
+  "file_type": "csv",
+  "sheet_name": null,
+  "row_count": 144,
+  "column_count": 7,
+  "column_names": [
+    "slot_id",
+    "hour",
+    "net_load_kwh",
+    "grid_effective_kwh",
+    "emergency_kwh",
+    "battery_net_kwh",
+    "energy_end_actual_kwh"
+  ],
+  "sample_records": [
+    {
+      "slot_id": 1,
+      "hour": 0.0,
+      "net_load_kwh": 617.4203,
+      "grid_effective_kwh": 559.9945363867665,
+      "emergency_kwh": 0.0,
+      "battery_net_kwh": 57.42576361323347,
+      "energy_end_actual_kwh": 1313.3957126526193
+    },
+    {
+      "slot_id": 2,
+      "hour": 0.1666666666666666,
+      "net_load_kwh": 604.6776166666667,
+      "grid_effective_kwh": 587.4290605562713,
+      "emergency_kwh": 0.0,
+      "battery_net_kwh": 17.248556110395384,
+      "energy_end_actual_kwh": 1294.2306503077357
+    },
+    {
+      "slot_id": 3,
+      "hour": 0.3333333333333333,
+      "net_load_kwh": 570.015,
+      "grid_effective_kwh": 551.5509891277208,
+      "emergency_kwh": 0.0,
+      "battery_net_kwh": 18.464010872279232,
+      "energy_end_actual_kwh": 1273.7150826718696
+    },
+    {
+      "slot_id": 4,
+      "hour": 0.5,
+      "net_load_kwh": 613.9556333333334,
+      "grid_effective_kwh": 518.9173148308562,
+      "emergency_kwh": 28.69474409779454,
+      "battery_net_kwh": 66.34357440468264,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 5,
+      "hour": 0.6666666666666666,
+      "net_load_kwh": 654.7454166666666,
+      "grid_effective_kwh": 504.1018801674473,
+      "emergency_kwh": 150.64353649921935,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 6,
+      "hour": 0.8333333333333334,
+      "net_load_kwh": 651.52,
+      "grid_effective_kwh": 494.78607701876155,
+      "emergency_kwh": 156.73392298123844,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 7,
+      "hour": 1.0,
+      "net_load_kwh": 640.0374166666667,
+      "grid_effective_kwh": 456.14346164480247,
+      "emergency_kwh": 183.8939550218642,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 8,
+      "hour": 1.1666666666666667,
+      "net_load_kwh": 611.7769,
+      "grid_effective_kwh": 472.6341252363777,
+      "emergency_kwh": 139.14277476362224,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 9,
+      "hour": 1.3333333333333333,
+      "net_load_kwh": 589.4266666666666,
+      "grid_effective_kwh": 518.810392882716,
+      "emergency_kwh": 70.61627378395065,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 10,
+      "hour": 1.5,
+      "net_load_kwh": 610.1208166666667,
+      "grid_effective_kwh": 493.2756068908744,
+      "emergency_kwh": 116.84520977579224,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 11,
+      "hour": 1.6666666666666667,
+      "net_load_kwh": 600.72235,
+      "grid_effective_kwh": 465.1061432923868,
+      "emergency_kwh": 135.61620670761323,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 12,
+      "hour": 1.8333333333333333,
+      "net_load_kwh": 572.335,
+      "grid_effective_kwh": 483.4125760418803,
+      "emergency_kwh": 88.92242395811974,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 13,
+      "hour": 2.0,
+      "net_load_kwh": 605.6133333333333,
+      "grid_effective_kwh": 518.1300690267452,
+      "emergency_kwh": 87.48326430658813,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 14,
+      "hour": 2.1666666666666665,
+      "net_load_kwh": 615.3989166666667,
+      "grid_effective_kwh": 497.85727521987616,
+      "emergency_kwh": 117.54164144679048,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 15,
+      "hour": 2.3333333333333335,
+      "net_load_kwh": 590.305,
+      "grid_effective_kwh": 493.4006705875595,
+      "emergency_kwh": 96.90432941244046,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 16,
+      "hour": 2.5,
+      "net_load_kwh": 603.6421,
+      "grid_effective_kwh": 504.1606646658454,
+      "emergency_kwh": 99.48143533415464,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 17,
+      "hour": 2.6666666666666665,
+      "net_load_kwh": 604.7434666666667,
+      "grid_effective_kwh": 488.6126937854378,
+      "emergency_kwh": 116.13077288122888,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 18,
+      "hour": 2.8333333333333335,
+      "net_load_kwh": 580.4833333333333,
+      "grid_effective_kwh": 458.92582883258535,
+      "emergency_kwh": 121.557504500748,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 19,
+      "hour": 3.0,
+      "net_load_kwh": 571.30195,
+      "grid_effective_kwh": 482.09032514793745,
+      "emergency_kwh": 89.21162485206253,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 20,
+      "hour": 3.1666666666666665,
+      "net_load_kwh": 554.6953,
+      "grid_effective_kwh": 462.6571741061946,
+      "emergency_kwh": 92.0381258938054,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    }
+  ],
+  "head_records": [
+    {
+      "slot_id": 1,
+      "hour": 0.0,
+      "net_load_kwh": 617.4203,
+      "grid_effective_kwh": 559.9945363867665,
+      "emergency_kwh": 0.0,
+      "battery_net_kwh": 57.42576361323347,
+      "energy_end_actual_kwh": 1313.3957126526193
+    },
+    {
+      "slot_id": 2,
+      "hour": 0.1666666666666666,
+      "net_load_kwh": 604.6776166666667,
+      "grid_effective_kwh": 587.4290605562713,
+      "emergency_kwh": 0.0,
+      "battery_net_kwh": 17.248556110395384,
+      "energy_end_actual_kwh": 1294.2306503077357
+    },
+    {
+      "slot_id": 3,
+      "hour": 0.3333333333333333,
+      "net_load_kwh": 570.015,
+      "grid_effective_kwh": 551.5509891277208,
+      "emergency_kwh": 0.0,
+      "battery_net_kwh": 18.464010872279232,
+      "energy_end_actual_kwh": 1273.7150826718696
+    },
+    {
+      "slot_id": 4,
+      "hour": 0.5,
+      "net_load_kwh": 613.9556333333334,
+      "grid_effective_kwh": 518.9173148308562,
+      "emergency_kwh": 28.69474409779454,
+      "battery_net_kwh": 66.34357440468264,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 5,
+      "hour": 0.6666666666666666,
+      "net_load_kwh": 654.7454166666666,
+      "grid_effective_kwh": 504.1018801674473,
+      "emergency_kwh": 150.64353649921935,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 6,
+      "hour": 0.8333333333333334,
+      "net_load_kwh": 651.52,
+      "grid_effective_kwh": 494.78607701876155,
+      "emergency_kwh": 156.73392298123844,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 7,
+      "hour": 1.0,
+      "net_load_kwh": 640.0374166666667,
+      "grid_effective_kwh": 456.14346164480247,
+      "emergency_kwh": 183.8939550218642,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 8,
+      "hour": 1.1666666666666667,
+      "net_load_kwh": 611.7769,
+      "grid_effective_kwh": 472.6341252363777,
+      "emergency_kwh": 139.14277476362224,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 9,
+      "hour": 1.3333333333333333,
+      "net_load_kwh": 589.4266666666666,
+      "grid_effective_kwh": 518.810392882716,
+      "emergency_kwh": 70.61627378395065,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 10,
+      "hour": 1.5,
+      "net_load_kwh": 610.1208166666667,
+      "grid_effective_kwh": 493.2756068908744,
+      "emergency_kwh": 116.84520977579224,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 11,
+      "hour": 1.6666666666666667,
+      "net_load_kwh": 600.72235,
+      "grid_effective_kwh": 465.1061432923868,
+      "emergency_kwh": 135.61620670761323,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 12,
+      "hour": 1.8333333333333333,
+      "net_load_kwh": 572.335,
+      "grid_effective_kwh": 483.4125760418803,
+      "emergency_kwh": 88.92242395811974,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 13,
+      "hour": 2.0,
+      "net_load_kwh": 605.6133333333333,
+      "grid_effective_kwh": 518.1300690267452,
+      "emergency_kwh": 87.48326430658813,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 14,
+      "hour": 2.1666666666666665,
+      "net_load_kwh": 615.3989166666667,
+      "grid_effective_kwh": 497.85727521987616,
+      "emergency_kwh": 117.54164144679048,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 15,
+      "hour": 2.3333333333333335,
+      "net_load_kwh": 590.305,
+      "grid_effective_kwh": 493.4006705875595,
+      "emergency_kwh": 96.90432941244046,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 16,
+      "hour": 2.5,
+      "net_load_kwh": 603.6421,
+      "grid_effective_kwh": 504.1606646658454,
+      "emergency_kwh": 99.48143533415464,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 17,
+      "hour": 2.6666666666666665,
+      "net_load_kwh": 604.7434666666667,
+      "grid_effective_kwh": 488.6126937854378,
+      "emergency_kwh": 116.13077288122888,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 18,
+      "hour": 2.8333333333333335,
+      "net_load_kwh": 580.4833333333333,
+      "grid_effective_kwh": 458.92582883258535,
+      "emergency_kwh": 121.557504500748,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 19,
+      "hour": 3.0,
+      "net_load_kwh": 571.30195,
+      "grid_effective_kwh": 482.09032514793745,
+      "emergency_kwh": 89.21162485206253,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    },
+    {
+      "slot_id": 20,
+      "hour": 3.1666666666666665,
+      "net_load_kwh": 554.6953,
+      "grid_effective_kwh": 462.6571741061946,
+      "emergency_kwh": 92.0381258938054,
+      "battery_net_kwh": 0.0,
+      "energy_end_actual_kwh": 1200.0
+    }
+  ],
+  "sampled": false,
+  "sample_strategy": "数据行数 144 未超过阈值，提供前 20 行作为样例。",
+  "warnings": []
+}

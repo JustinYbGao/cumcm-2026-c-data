@@ -1,0 +1,39 @@
+{
+  "adapted_code": "from __future__ import annotations\n\nimport csv\nimport os\nimport sys\nfrom pathlib import Path\n\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\nimport numpy as np\ndef main() -> None:\n    data_path = Path(os.environ.get(\"DATA_PATH\", sys.argv[1]))\n    output_dir = Path(os.environ.get(\"OUTPUT_DIR\", sys.argv[2]))\n    output_dir.mkdir(parents=True, exist_ok=True)\n    with data_path.open(newline=\"\", encoding=\"utf-8\") as handle:\n        data = sorted(csv.DictReader(handle), key=lambda row: int(row[\"slot_id\"]))\n    hour = np.array([float(row[\"hour\"]) for row in data])\n    values = {key: np.array([float(row[key]) for row in data]) for key in (\n        \"net_load_kwh\", \"grid_effective_kwh\", \"emergency_kwh\", \"battery_net_kwh\", \"energy_end_actual_kwh\"\n    )}\n\n    plt.rcParams.update({\n        \"font.family\": \"DejaVu Serif\", \"font.size\": 8.9, \"axes.labelsize\": 10,\n        \"pdf.fonttype\": 42, \"ps.fonttype\": 42,\n    })\n    fig, (top, bottom) = plt.subplots(2, 1, figsize=(9.1, 6.2), sharex=True,\n                                      gridspec_kw={\"height_ratios\": [1.0, 1.0]}, constrained_layout=True)\n    top.step(hour, values[\"net_load_kwh\"], where=\"post\", color=\"#354F6D\", linewidth=1.65, label=\"Actual net load\")\n    top.step(hour, values[\"grid_effective_kwh\"], where=\"post\", color=\"#669C78\", linewidth=1.55,\n             label=\"Regular grid purchase\")\n    top.bar(hour, values[\"emergency_kwh\"], width=1/6, align=\"edge\", color=\"#D88A71\", alpha=0.88,\n            label=\"Emergency purchase\", zorder=3)\n    top.set_ylabel(\"Interval energy (kWh)\")\n    top.yaxis.grid(True, color=\"#E1E1E1\", linewidth=0.58)\n    top.set_axisbelow(True)\n    top.spines[[\"top\", \"right\"]].set_visible(False)\n    top.legend(loc=\"upper right\", frameon=False, ncol=3, fontsize=8.2, handlelength=1.45)\n\n    bottom.bar(hour, values[\"battery_net_kwh\"], width=1/6, align=\"edge\", color=\"#8BA9C5\", alpha=0.86,\n               label=\"Battery discharge (+) / charge (−)\", zorder=3)\n    bottom.axhline(0, color=\"#6C6C6C\", linewidth=0.75)\n    bottom.set_ylabel(\"Battery interval energy (kWh)\")\n    bottom.yaxis.grid(True, color=\"#E1E1E1\", linewidth=0.58)\n    bottom.set_axisbelow(True)\n    bottom.spines[[\"top\"]].set_visible(False)\n    secondary = bottom.twinx()\n    secondary.step(hour, values[\"energy_end_actual_kwh\"] / 1000, where=\"post\", color=\"#A3543C\", linewidth=1.75,\n                   label=\"End-of-interval SOC\")\n    secondary.axhline(1.2, color=\"#8C8C8C\", linewidth=0.75, linestyle=\"--\")\n    secondary.axhline(10.8, color=\"#8C8C8C\", linewidth=0.75, linestyle=\"--\")\n    secondary.set_ylabel(\"End-of-interval SOC (MWh)\")\n    secondary.spines[[\"top\"]].set_visible(False)\n    handles = [bottom.patches[0], secondary.lines[0]]\n    bottom.legend(handles, [\"Battery discharge (+) / charge (−)\", \"End-of-interval SOC\"],\n                  loc=\"upper right\", frameon=False, fontsize=8.1, handlelength=1.5)\n    bottom.set_xlim(0, 24)\n    bottom.set_xticks(np.arange(0, 25, 3))\n    bottom.set_xlabel(\"Hour of selected date\")\n    fig.text(0.5, -0.025,\n             \"The date is selected solely as the q3_raw day with the largest realized emergency purchase.\",\n             ha=\"center\", fontsize=8.3, color=\"#4A4A4A\")\n    fig.savefig(output_dir / \"chart.png\", dpi=300, bbox_inches=\"tight\")\n    fig.savefig(output_dir / \"chart.svg\", bbox_inches=\"tight\")\n    plt.close(fig)\n\n\nif __name__ == \"__main__\":\n    main()\n",
+  "changes_summary": [
+    "Replaced demonstration data with the verified explanatory input table.",
+    "Preserved the selected time-series template family in an English paper style."
+  ],
+  "preserved_style_elements": [
+    "serif scientific typography",
+    "muted palette",
+    "light grid",
+    "time-series comparison",
+    "compact legends",
+    "clean scientific axes"
+  ],
+  "changed_elements": [
+    "English labels",
+    "replace template demonstration data with verified v5 fields",
+    "use two panels when the data need distinct physical scales"
+  ],
+  "data_columns_used": [
+    "hour",
+    "net_load_kwh",
+    "grid_effective_kwh",
+    "emergency_kwh",
+    "battery_net_kwh",
+    "energy_end_actual_kwh"
+  ],
+  "dependencies_used": [
+    "matplotlib",
+    "numpy"
+  ],
+  "additional_dependencies_requested": [],
+  "assumptions": [
+    "The prepared input is a traceable derivative of verified v5 results and does not modify raw source data."
+  ],
+  "warnings": [
+    "No smoothing, interpolation, or unsupported causal inference is introduced by the figure."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "dataset_summary": "One traceably selected 144-interval q3_raw stress day with physical energy flows and state of charge.",
+  "observed_data_features": [
+    "One 144-interval day",
+    "Energy balance components",
+    "Battery state trajectory"
+  ],
+  "relevant_columns": [
+    "hour",
+    "net_load_kwh",
+    "grid_effective_kwh",
+    "emergency_kwh",
+    "battery_net_kwh",
+    "energy_end_actual_kwh"
+  ],
+  "candidate_comparisons": [],
+  "selected_template_id": "trd_dual_axis_bar_line",
+  "selected_template_name": "双Y轴柱状折线时间序列图",
+  "alternative_template_ids": [
+    "trd_composite_line_bar_dual_axis"
+  ],
+  "selection_reason": "A two-panel composite time series presents raw interval-level dispatch and SOC without smoothing or resampling.",
+  "data_support_reason": "All charted columns are present in the prepared traceable input table.",
+  "data_warnings": [
+    "The figures are descriptive historical-replay evidence, not a future-performance or significance claim."
+  ],
+  "confidence": 0.96,
+  "needs_clarification": false,
+  "clarification_question": ""
+}

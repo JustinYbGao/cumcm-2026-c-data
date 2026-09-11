@@ -1,0 +1,15 @@
+{
+  "source_sha256": {
+    "D112 direct purchase": "6be41043fcdc6dbfa1f94a03c19fe2a410c9569b97c4ff0de253428b06b32a25",
+    "X_strong risk purchase": "1e77362b7434af045b7f7c298a6cce3556660a257e2042e8c66f32f42dc1b9a1",
+    "January-selected policy": "15e6ad4b0c39cc8a046d1aa320fcc3b6536d62ebbc1e814bbb25f20a1e32430c",
+    "Seasonal baseline": "82d8dc4f4da71e6dacc712dfb9566761ac8817fd4719a54608a2298847f97551"
+  },
+  "annual_totals_yuan": {
+    "D112 direct purchase": 13913892.481868183,
+    "X_strong risk purchase": 13994282.258970976,
+    "January-selected policy": 16333683.39285065,
+    "Seasonal baseline": 15378207.350793209
+  },
+  "monthly_saving_total_yuan": 80389.77710279275
+}

@@ -1,0 +1,62 @@
+{
+  "template_id": "trd_dual_axis_bar_line",
+  "template_name": "双Y轴柱状折线时间序列图",
+  "plot_goal": "Eleven chronological monthly raw-PV-versus-no-update savings with a cumulative total.",
+  "selected_columns": [
+    "month",
+    "raw_vs_no_update_saving_yuan",
+    "cumulative_raw_vs_no_update_saving_yuan"
+  ],
+  "column_mappings": [
+    {
+      "data_column": "month",
+      "template_role": "plotted time-series field",
+      "reason": "Verified input field required by the explanatory trace."
+    },
+    {
+      "data_column": "raw_vs_no_update_saving_yuan",
+      "template_role": "plotted time-series field",
+      "reason": "Verified input field required by the explanatory trace."
+    },
+    {
+      "data_column": "cumulative_raw_vs_no_update_saving_yuan",
+      "template_role": "plotted time-series field",
+      "reason": "Verified input field required by the explanatory trace."
+    }
+  ],
+  "required_preprocessing": [
+    "Sort by chronological month or ten-minute slot; retain source values without smoothing."
+  ],
+  "required_dependencies": [
+    "matplotlib",
+    "numpy"
+  ],
+  "layout_elements_to_preserve": [
+    "time-series comparison",
+    "compact legends",
+    "clean scientific axes"
+  ],
+  "style_elements_to_preserve": [
+    "serif scientific typography",
+    "muted palette",
+    "light grid"
+  ],
+  "elements_allowed_to_change": [
+    "English labels",
+    "replace template demonstration data with verified v5 fields",
+    "use two panels when the data need distinct physical scales"
+  ],
+  "title_plan": "No internal title; the manuscript caption supplies the figure title.",
+  "axis_plan": "Label all physical quantities and time boundaries explicitly.",
+  "legend_plan": "Use only labels required to distinguish reported data series.",
+  "annotation_plan": "Show only predeclared date-selection or causality notes, with no significance claim.",
+  "output_formats": [
+    "png",
+    "svg"
+  ],
+  "warnings": [
+    "No smoothing, interpolation, or unsupported causal inference is introduced by the figure."
+  ],
+  "can_proceed": true,
+  "clarification_question": ""
+}

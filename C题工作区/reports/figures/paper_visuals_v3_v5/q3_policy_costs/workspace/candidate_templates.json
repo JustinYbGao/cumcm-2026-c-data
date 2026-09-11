@@ -1,0 +1,88 @@
+{
+  "original_request": "Create an English, paper-ready stacked bar chart from the verified v5 results. Compare contract cost and emergency cost across four Problem 3 rolling-update policies. Highlight, but do not overstate, the selected raw-PV policy. Use a clean scientific style, muted colours, readable units, no 3D, no pie chart and no significance stars.",
+  "candidate_count": 4,
+  "total_templates": 89,
+  "candidates": [
+    {
+      "template_id": "cmp_correlation_stacked_bar",
+      "template_name": "相关性分析堆叠条形图",
+      "category": "comparison_ranking",
+      "score": 0.52,
+      "matched_keywords": [
+        "堆叠条形图",
+        "分组比较"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [
+        "stacked_bar_chart"
+      ],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "图表类型匹配：stacked_bar_chart；功能关键词匹配：堆叠条形图, 分组比较",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_003/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_003/相关性分析堆叠条形图.py",
+      "catalog_order": 6
+    },
+    {
+      "template_id": "cmp_horizontal_percentage_stack",
+      "template_name": "横轴百分比堆叠图",
+      "category": "comparison_ranking",
+      "score": 0.52,
+      "matched_keywords": [
+        "堆叠条形图",
+        "分组比较"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [
+        "stacked_bar_chart"
+      ],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "图表类型匹配：stacked_bar_chart；功能关键词匹配：堆叠条形图, 分组比较",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_006/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_006/横轴百分比堆叠图.py",
+      "catalog_order": 9
+    },
+    {
+      "template_id": "cmp_radial_stacked_bar",
+      "template_name": "径向堆叠图",
+      "category": "comparison_ranking",
+      "score": 0.38,
+      "matched_keywords": [
+        "堆叠条形图"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [
+        "stacked_bar_chart"
+      ],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "图表类型匹配：stacked_bar_chart；功能关键词匹配：堆叠条形图",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_011/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_011/径向堆叠图.py",
+      "catalog_order": 14
+    },
+    {
+      "template_id": "trd_composite_line_bar_dual_axis",
+      "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+      "category": "trend_time_series",
+      "score": 0.14,
+      "matched_keywords": [
+        "堆叠条形图"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：堆叠条形图",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_004/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_004/折线图、条形图和双Y轴的复合时间序列图.py",
+      "catalog_order": 88
+    }
+  ],
+  "warnings": []
+}

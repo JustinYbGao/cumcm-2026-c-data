@@ -1,0 +1,27 @@
+{
+  "original_request": "Create an English, paper-ready two-panel time-series chart from a verified Problem 3 selected-policy daily ledger. Explain the physical executor on the single day with the largest realized emergency purchase: net load, regular grid purchase, emergency purchase, battery net energy, and state of charge. Use stepwise raw scheduling points only, muted scientific colours, readable units, no 3D, no pie chart, no smoothing, and no significance stars.",
+  "goal": "Explain the selected Problem 3 policy's interval-by-interval physical execution on a traceably chosen stress day.",
+  "functional_keywords": [
+    "时间序列",
+    "双Y轴",
+    "调度轨迹"
+  ],
+  "chart_types": [
+    "composite_time_series_chart"
+  ],
+  "style_keywords": [
+    "科研风",
+    "简洁",
+    "低饱和"
+  ],
+  "use_case": "论文正文",
+  "negative_requirements": [
+    "三维",
+    "饼图",
+    "平滑曲线",
+    "显著性标记"
+  ],
+  "explicit_template": false,
+  "is_ambiguous": false,
+  "clarification_question": ""
+}

@@ -1,0 +1,44 @@
+{
+  "adapted_code": "from __future__ import annotations\n\nimport csv\nimport os\nimport sys\nfrom pathlib import Path\n\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\nimport numpy as np\ndef main() -> None:\n    data_path = Path(os.environ.get(\"DATA_PATH\", sys.argv[1]))\n    output_dir = Path(os.environ.get(\"OUTPUT_DIR\", sys.argv[2]))\n    output_dir.mkdir(parents=True, exist_ok=True)\n    with data_path.open(newline=\"\", encoding=\"utf-8\") as handle:\n        data = sorted(csv.DictReader(handle), key=lambda row: int(row[\"slot_id\"]))\n    hour = np.array([float(row[\"hour\"]) for row in data])\n    def numeric(name: str) -> np.ndarray:\n        return np.array([float(row[name]) if row[name] else np.nan for row in data])\n    colours = {0: \"#64748B\", 6: \"#5B8F80\", 12: \"#4B76A3\", 18: \"#C27A59\"}\n\n    plt.rcParams.update({\n        \"font.family\": \"DejaVu Serif\", \"font.size\": 8.9, \"axes.labelsize\": 10,\n        \"pdf.fonttype\": 42, \"ps.fonttype\": 42,\n    })\n    fig, (top, bottom) = plt.subplots(2, 1, figsize=(9.25, 6.3), sharex=True, constrained_layout=True)\n    top.step(hour, numeric(\"actual_price_yuan_per_kwh\"), where=\"post\", color=\"#303030\", linewidth=1.75,\n             label=\"Actual settlement price\", zorder=4)\n    for issue in (0, 6, 12, 18):\n        top.step(hour, numeric(f\"price_forecast_{issue}_yuan_per_kwh\"), where=\"post\", color=colours[issue],\n                 linewidth=1.15, linestyle=\"--\", label=f\"{issue:02d}:00 price forecast\")\n    top.set_ylabel(\"Price (CNY/kWh)\")\n    top.yaxis.grid(True, color=\"#E1E1E1\", linewidth=0.58)\n    top.set_axisbelow(True)\n    top.spines[[\"top\", \"right\"]].set_visible(False)\n    top.legend(loc=\"upper right\", frameon=False, ncol=2, fontsize=7.9, handlelength=1.6)\n\n    for issue in (0, 6, 12, 18):\n        bottom.step(hour, numeric(f\"grid_plan_{issue}_kwh\"), where=\"post\", color=colours[issue],\n                    linewidth=1.2, linestyle=\"--\", label=f\"{issue:02d}:00 plan\")\n    bottom.step(hour, numeric(\"executed_grid_kwh\"), where=\"post\", color=\"#303030\", linewidth=1.8,\n                label=\"Executed regular purchase\", zorder=4)\n    for issue in (6, 12, 18):\n        bottom.axvline(issue, color=\"#A8A8A8\", linewidth=0.7, linestyle=\":\", zorder=1)\n    bottom.set_ylabel(\"Interval grid energy (kWh)\")\n    bottom.set_xlabel(\"Hour of 2025-07-14\")\n    bottom.yaxis.grid(True, color=\"#E1E1E1\", linewidth=0.58)\n    bottom.set_axisbelow(True)\n    bottom.spines[[\"top\", \"right\"]].set_visible(False)\n    bottom.legend(loc=\"upper right\", frameon=False, ncol=2, fontsize=7.9, handlelength=1.6)\n    bottom.set_xlim(0, 24)\n    bottom.set_xticks(np.arange(0, 25, 3))\n    fig.text(0.5, -0.025,\n             \"Forecast and plan segments start only at their release time; price is settled at the actual value.\",\n             ha=\"center\", fontsize=8.3, color=\"#4A4A4A\")\n    fig.savefig(output_dir / \"chart.png\", dpi=300, bbox_inches=\"tight\")\n    fig.savefig(output_dir / \"chart.svg\", bbox_inches=\"tight\")\n    plt.close(fig)\n\n\nif __name__ == \"__main__\":\n    main()\n",
+  "changes_summary": [
+    "Replaced demonstration data with the verified explanatory input table.",
+    "Preserved the selected time-series template family in an English paper style."
+  ],
+  "preserved_style_elements": [
+    "serif scientific typography",
+    "muted palette",
+    "light grid",
+    "time-series comparison",
+    "compact legends",
+    "clean scientific axes"
+  ],
+  "changed_elements": [
+    "English labels",
+    "replace template demonstration data with verified v5 fields",
+    "use two panels when the data need distinct physical scales"
+  ],
+  "data_columns_used": [
+    "hour",
+    "actual_price_yuan_per_kwh",
+    "price_forecast_0_yuan_per_kwh",
+    "price_forecast_6_yuan_per_kwh",
+    "price_forecast_12_yuan_per_kwh",
+    "price_forecast_18_yuan_per_kwh",
+    "grid_plan_0_kwh",
+    "grid_plan_6_kwh",
+    "grid_plan_12_kwh",
+    "grid_plan_18_kwh",
+    "executed_grid_kwh"
+  ],
+  "dependencies_used": [
+    "matplotlib",
+    "numpy"
+  ],
+  "additional_dependencies_requested": [],
+  "assumptions": [
+    "The prepared input is a traceable derivative of verified v5 results and does not modify raw source data."
+  ],
+  "warnings": [
+    "No smoothing, interpolation, or unsupported causal inference is introduced by the figure."
+  ]
+}

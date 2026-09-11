@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "attempt": 1,
+      "timestamp": "2026-09-11T21:29:04.129430+00:00",
+      "dependency_changes": [],
+      "technical_issues": [],
+      "visual_issues": [
+        "Selected-policy annotation overlaps the selected policy's two-line tick label."
+      ],
+      "changes_summary": [
+        "Removed only the label that overlapped the selected policy tick; no data or scale was changed."
+      ],
+      "script_path": "workspace/repair_versions/adapted_plot_v1.py",
+      "execution_success": true,
+      "technical_passed": true,
+      "visual_passed": false
+    }
+  ]
+}

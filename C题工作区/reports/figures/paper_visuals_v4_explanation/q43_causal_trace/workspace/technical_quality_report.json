@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "script_executed": true,
+  "dependencies_available": true,
+  "dependency_issues": [],
+  "image_exists": true,
+  "image_readable": true,
+  "image_width": 2809,
+  "image_height": 1993,
+  "file_size": 206748,
+  "pixel_variance": 1631.7126,
+  "possible_blank_image": false,
+  "generated_formats": [
+    "png",
+    "svg"
+  ],
+  "execution_errors": [
+    "/Users/mike/.matplotlib is not a writable directory\nMatplotlib created a temporary cache directory at /var/folders/nl/5lly2nzn01bfgd2v6bfck31w0000gn/T/matplotlib-s3z7socw because there was an issue with the default path ({configdir}); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.\nMatplotlib is building the font cache; this may take a moment.\n"
+  ],
+  "warnings": [],
+  "issues": [],
+  "needs_repair": false
+}

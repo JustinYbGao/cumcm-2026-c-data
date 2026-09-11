@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "requirement_alignment": "The figure answers the requested within-family comparison using verified v5 values.",
+  "data_expression_quality": "All plotted columns use the prepared traceable data table; signed savings are explicitly defined for Q4.",
+  "style_preservation": "The selected template family is retained with an English scientific-paper adaptation.",
+  "readability": "Labels, legends, axes, and annotations are readable at the rendered resolution.",
+  "layout_quality": "No overlap, clipping, or misleading cross-branch comparison is visible.",
+  "color_quality": "Muted branch-distinct colours have adequate contrast and do not encode unsupported significance.",
+  "issues": [],
+  "suggested_fixes": [],
+  "needs_repair": false,
+  "confidence": 0.97
+}

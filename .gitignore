@@ -31,6 +31,9 @@
 /C题工作区/data/interim/matplotlib/
 /C题工作区/data/interim/**/matplotlib/
 /C题工作区/data/interim/**/cache/
+/C题工作区/tools/modelviz-skill-main/
+/C题工作区/reports/figures/paper_visuals_v3_v5/mpl_config/
+/C题工作区/reports/figures/**/runtime/
 
 # Byte-identical ZIPs are distributed as <=64 MiB parts with a SHA256 manifest.
 # See C题工作区/deliverables/git_large_files_v1/README.md.

@@ -1,0 +1,29 @@
+{
+  "source_root": "/Users/mike/Desktop/国赛/cumcm-2026-c-data/C题工作区/results/unified_direct_v5",
+  "q3_monthly_saving": {
+    "source": "/Users/mike/Desktop/国赛/cumcm-2026-c-data/C题工作区/results/unified_direct_v5/paired_monthly.csv",
+    "sha256": "d390333d4ff995a121b519809bc996f1aa514a3657f72f73e85193c437b5357d",
+    "transformation": "For each month, raw-PV saving versus no-update equals the recorded SOC-feedback saving versus no-update plus the recorded raw-PV incremental saving versus SOC feedback."
+  },
+  "q3_peak_day_execution": {
+    "source": "/Users/mike/Desktop/国赛/cumcm-2026-c-data/C题工作区/results/unified_direct_v5/runs/q3_raw/ledger.csv",
+    "sha256": "69a9c906c4895d11708fafd6c04c7ef3b0f68206d45b925d6af0cb67e59957a3",
+    "selection_rule": "Choose the date with the largest total realized emergency purchase in q3_raw.",
+    "selected_date": "2025-07-04",
+    "selected_date_emergency_kwh": 5926.861215929632
+  },
+  "q43_causal_trace": {
+    "sources": {
+      "/Users/mike/Desktop/国赛/cumcm-2026-c-data/C题工作区/results/unified_direct_v5/runs/q43_raw_ols/plan_versions.csv": "0b047534fb71c47b4062e486a5b94ba21a695a3b7b9809deaf1814166179f70b",
+      "/Users/mike/Desktop/国赛/cumcm-2026-c-data/C题工作区/results/unified_direct_v5/runs/q43_raw_ols/ledger.csv": "b3d4ddd7b810db1266471f40ba84133508c7a7ce8007ddbc5878001f601402e7"
+    },
+    "selection_rule": "Use the predeclared causal-audit date 2025-07-14; no outcome-based date selection is used.",
+    "selected_date": "2025-07-14"
+  },
+  "units": {
+    "energy": "kWh per 10-minute interval",
+    "state_of_charge": "kWh",
+    "price": "CNY/kWh",
+    "saving": "CNY"
+  }
+}

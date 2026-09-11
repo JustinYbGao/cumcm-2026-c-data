@@ -1,0 +1,301 @@
+{
+  "file_name": "q4_price_effect.csv",
+  "file_type": "csv",
+  "sheet_name": null,
+  "row_count": 22,
+  "column_count": 5,
+  "column_names": [
+    "comparison_id",
+    "comparison_label",
+    "month",
+    "monthly_saving_yuan",
+    "cumulative_saving_yuan"
+  ],
+  "sample_records": [
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-02",
+      "monthly_saving_yuan": -715.6859969285815,
+      "cumulative_saving_yuan": -715.6859969285815
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-03",
+      "monthly_saving_yuan": 2946.944958186159,
+      "cumulative_saving_yuan": 2231.2589612575775
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-04",
+      "monthly_saving_yuan": 893.318337368095,
+      "cumulative_saving_yuan": 3124.5772986256725
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-05",
+      "monthly_saving_yuan": -571.8586943228474,
+      "cumulative_saving_yuan": 2552.718604302825
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-06",
+      "monthly_saving_yuan": 295.3899055821348,
+      "cumulative_saving_yuan": 2848.10850988496
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-07",
+      "monthly_saving_yuan": -17951.376283750178,
+      "cumulative_saving_yuan": -15103.267773865218
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-08",
+      "monthly_saving_yuan": 2462.28884614406,
+      "cumulative_saving_yuan": -12640.978927721158
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-09",
+      "monthly_saving_yuan": 3921.036660282105,
+      "cumulative_saving_yuan": -8719.942267439053
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-10",
+      "monthly_saving_yuan": -6036.029075851133,
+      "cumulative_saving_yuan": -14755.971343290186
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-11",
+      "monthly_saving_yuan": 7869.395483430006,
+      "cumulative_saving_yuan": -6886.575859860181
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-12",
+      "monthly_saving_yuan": -71.25524815539393,
+      "cumulative_saving_yuan": -6957.8311080155745
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-02",
+      "monthly_saving_yuan": 513.7865786006969,
+      "cumulative_saving_yuan": 513.7865786006969
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-03",
+      "monthly_saving_yuan": 6060.318859071966,
+      "cumulative_saving_yuan": 6574.105437672662
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-04",
+      "monthly_saving_yuan": 428.4824161966353,
+      "cumulative_saving_yuan": 7002.587853869298
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-05",
+      "monthly_saving_yuan": -2473.674477543638,
+      "cumulative_saving_yuan": 4528.91337632566
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-06",
+      "monthly_saving_yuan": 5107.437439765094,
+      "cumulative_saving_yuan": 9636.350816090751
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-07",
+      "monthly_saving_yuan": -2214.586994128764,
+      "cumulative_saving_yuan": 7421.763821961989
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-08",
+      "monthly_saving_yuan": 26.982092876427487,
+      "cumulative_saving_yuan": 7448.745914838417
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-09",
+      "monthly_saving_yuan": -2108.3643445084617,
+      "cumulative_saving_yuan": 5340.381570329955
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-10",
+      "monthly_saving_yuan": -1790.9970438858709,
+      "cumulative_saving_yuan": 3549.3845264440843
+    }
+  ],
+  "head_records": [
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-02",
+      "monthly_saving_yuan": -715.6859969285815,
+      "cumulative_saving_yuan": -715.6859969285815
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-03",
+      "monthly_saving_yuan": 2946.944958186159,
+      "cumulative_saving_yuan": 2231.2589612575775
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-04",
+      "monthly_saving_yuan": 893.318337368095,
+      "cumulative_saving_yuan": 3124.5772986256725
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-05",
+      "monthly_saving_yuan": -571.8586943228474,
+      "cumulative_saving_yuan": 2552.718604302825
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-06",
+      "monthly_saving_yuan": 295.3899055821348,
+      "cumulative_saving_yuan": 2848.10850988496
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-07",
+      "monthly_saving_yuan": -17951.376283750178,
+      "cumulative_saving_yuan": -15103.267773865218
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-08",
+      "monthly_saving_yuan": 2462.28884614406,
+      "cumulative_saving_yuan": -12640.978927721158
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-09",
+      "monthly_saving_yuan": 3921.036660282105,
+      "cumulative_saving_yuan": -8719.942267439053
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-10",
+      "monthly_saving_yuan": -6036.029075851133,
+      "cumulative_saving_yuan": -14755.971343290186
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-11",
+      "monthly_saving_yuan": 7869.395483430006,
+      "cumulative_saving_yuan": -6886.575859860181
+    },
+    {
+      "comparison_id": "q42_ols_vs_fixed",
+      "comparison_label": "Q4-2: OLS − fixed",
+      "month": "2025-12",
+      "monthly_saving_yuan": -71.25524815539393,
+      "cumulative_saving_yuan": -6957.8311080155745
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-02",
+      "monthly_saving_yuan": 513.7865786006969,
+      "cumulative_saving_yuan": 513.7865786006969
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-03",
+      "monthly_saving_yuan": 6060.318859071966,
+      "cumulative_saving_yuan": 6574.105437672662
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-04",
+      "monthly_saving_yuan": 428.4824161966353,
+      "cumulative_saving_yuan": 7002.587853869298
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-05",
+      "monthly_saving_yuan": -2473.674477543638,
+      "cumulative_saving_yuan": 4528.91337632566
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-06",
+      "monthly_saving_yuan": 5107.437439765094,
+      "cumulative_saving_yuan": 9636.350816090751
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-07",
+      "monthly_saving_yuan": -2214.586994128764,
+      "cumulative_saving_yuan": 7421.763821961989
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-08",
+      "monthly_saving_yuan": 26.982092876427487,
+      "cumulative_saving_yuan": 7448.745914838417
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-09",
+      "monthly_saving_yuan": -2108.3643445084617,
+      "cumulative_saving_yuan": 5340.381570329955
+    },
+    {
+      "comparison_id": "q43_ols_vs_fixed",
+      "comparison_label": "Q4-3: OLS − fixed",
+      "month": "2025-10",
+      "monthly_saving_yuan": -1790.9970438858709,
+      "cumulative_saving_yuan": 3549.3845264440843
+    }
+  ],
+  "sampled": false,
+  "sample_strategy": "数据行数 22 未超过阈值，提供前 20 行作为样例。",
+  "warnings": []
+}

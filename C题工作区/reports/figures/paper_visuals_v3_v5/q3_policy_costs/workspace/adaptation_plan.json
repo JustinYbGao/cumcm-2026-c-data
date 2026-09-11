@@ -1,0 +1,76 @@
+{
+  "template_id": "cmp_correlation_stacked_bar",
+  "template_name": "相关性分析堆叠条形图",
+  "plot_goal": "Show the verified cost composition of the four Problem 3 policies in English.",
+  "selected_columns": [
+    "policy_label",
+    "policy_order",
+    "contract_cost_million_cny",
+    "emergency_cost_million_cny",
+    "total_cost_million_cny",
+    "selected"
+  ],
+  "column_mappings": [
+    {
+      "data_column": "policy_label",
+      "template_role": "categorical x-axis",
+      "reason": "Policy labels provide the comparison groups."
+    },
+    {
+      "data_column": "contract_cost_million_cny",
+      "template_role": "lower stack",
+      "reason": "First additive cost component."
+    },
+    {
+      "data_column": "emergency_cost_million_cny",
+      "template_role": "upper stack",
+      "reason": "Second additive cost component."
+    },
+    {
+      "data_column": "total_cost_million_cny",
+      "template_role": "total annotation",
+      "reason": "Exact stacked totals are reported above the bars."
+    },
+    {
+      "data_column": "selected",
+      "template_role": "context highlight",
+      "reason": "Identifies the frozen v5 policy without an inferential claim."
+    }
+  ],
+  "required_preprocessing": [
+    "Sort rows by policy_order; use values already converted to million CNY."
+  ],
+  "required_dependencies": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "layout_elements_to_preserve": [
+    "upright bar comparison",
+    "stacked component layout",
+    "compact legend"
+  ],
+  "style_elements_to_preserve": [
+    "serif scientific typography",
+    "muted two-colour palette",
+    "light grid"
+  ],
+  "elements_allowed_to_change": [
+    "English labels",
+    "remove template-specific correlation semantics",
+    "add restrained selected-policy band"
+  ],
+  "title_plan": "No internal title; manuscript caption supplies the figure title.",
+  "axis_plan": "Categorical policy labels and realized cost in million CNY.",
+  "legend_plan": "Two component labels in the upper right.",
+  "annotation_plan": "Total cost to three decimals above each bar; selected policy label below its bar.",
+  "output_formats": [
+    "png",
+    "svg"
+  ],
+  "warnings": [
+    "No causal interpretation is encoded by the chart."
+  ],
+  "can_proceed": true,
+  "clarification_question": ""
+}

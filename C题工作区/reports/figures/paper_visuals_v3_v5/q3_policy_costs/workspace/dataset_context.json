@@ -1,0 +1,95 @@
+{
+  "file_name": "q3_policy_costs.csv",
+  "file_type": "csv",
+  "sheet_name": null,
+  "row_count": 4,
+  "column_count": 7,
+  "column_names": [
+    "policy",
+    "policy_label",
+    "policy_order",
+    "contract_cost_million_cny",
+    "emergency_cost_million_cny",
+    "total_cost_million_cny",
+    "selected"
+  ],
+  "sample_records": [
+    {
+      "policy": "q3_no_update",
+      "policy_label": "No update",
+      "policy_order": 0,
+      "contract_cost_million_cny": 13.352739628329251,
+      "emergency_cost_million_cny": 0.6399472330856741,
+      "total_cost_million_cny": 13.992686861414928,
+      "selected": false
+    },
+    {
+      "policy": "q3_soc",
+      "policy_label": "SOC feedback",
+      "policy_order": 1,
+      "contract_cost_million_cny": 13.430039925941022,
+      "emergency_cost_million_cny": 0.2770731942057605,
+      "total_cost_million_cny": 13.707113120146785,
+      "selected": false
+    },
+    {
+      "policy": "q3_raw",
+      "policy_label": "Raw PV update\n(selected)",
+      "policy_order": 2,
+      "contract_cost_million_cny": 13.262305801386368,
+      "emergency_cost_million_cny": 0.2995276520275878,
+      "total_cost_million_cny": 13.561833453413954,
+      "selected": true
+    },
+    {
+      "policy": "q3_w28",
+      "policy_label": "28-day correction\n(not selected)",
+      "policy_order": 3,
+      "contract_cost_million_cny": 13.286830290501216,
+      "emergency_cost_million_cny": 0.2780400911821717,
+      "total_cost_million_cny": 13.564870381683388,
+      "selected": false
+    }
+  ],
+  "head_records": [
+    {
+      "policy": "q3_no_update",
+      "policy_label": "No update",
+      "policy_order": 0,
+      "contract_cost_million_cny": 13.352739628329251,
+      "emergency_cost_million_cny": 0.6399472330856741,
+      "total_cost_million_cny": 13.992686861414928,
+      "selected": false
+    },
+    {
+      "policy": "q3_soc",
+      "policy_label": "SOC feedback",
+      "policy_order": 1,
+      "contract_cost_million_cny": 13.430039925941022,
+      "emergency_cost_million_cny": 0.2770731942057605,
+      "total_cost_million_cny": 13.707113120146785,
+      "selected": false
+    },
+    {
+      "policy": "q3_raw",
+      "policy_label": "Raw PV update\n(selected)",
+      "policy_order": 2,
+      "contract_cost_million_cny": 13.262305801386368,
+      "emergency_cost_million_cny": 0.2995276520275878,
+      "total_cost_million_cny": 13.561833453413954,
+      "selected": true
+    },
+    {
+      "policy": "q3_w28",
+      "policy_label": "28-day correction\n(not selected)",
+      "policy_order": 3,
+      "contract_cost_million_cny": 13.286830290501216,
+      "emergency_cost_million_cny": 0.2780400911821717,
+      "total_cost_million_cny": 13.564870381683388,
+      "selected": false
+    }
+  ],
+  "sampled": false,
+  "sample_strategy": "数据行数 4 未超过阈值，提供前 4 行作为样例。",
+  "warnings": []
+}

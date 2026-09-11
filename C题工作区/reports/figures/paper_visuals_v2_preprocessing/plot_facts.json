@@ -1,0 +1,23 @@
+{
+  "q1_records": 144,
+  "actual_records": 52560,
+  "hourly_records": 35040,
+  "converted_records": 210234,
+  "releases_with_138": 1,
+  "releases_with_144": 1459,
+  "structural_blank_dates": 1095,
+  "pv_zero_observations": 23540,
+  "base_checks_total": 57,
+  "base_checks_passed": 57,
+  "forecast_checks_total": 17,
+  "forecast_checks_passed": 17,
+  "source_sha256": {
+    "actual_10min.csv": "d64cb551ef7e644aa046e38ee7984607ab7bc57bf28d30ba6803db8696d1a513",
+    "pv_forecast_hourly.csv": "d635475b6017538c94974f22dea07452c5e7e18c9fc3937555e890f46a3c7098",
+    "forecast_coverage.csv": "1fbcbb81cae896b140389492c8e1d757c9fc0c42ccecde17a438f504a970cede",
+    "numeric_summary.csv": "5effef595ff7c7a3944d1c4f74256d145a3c499c95412c4713723fde17d236be",
+    "quality_report.md": "f83d91515b0285d59a5dff0cfb9909fa0a1cf702387485a1a1f0df96bd0d3159",
+    "validation_all.json": "4e39963e16dcdb6c31af41df91475d50b28bc631907b94dcff9408b3eba8f6a7",
+    "validation_forecast_diagnostics.json": "acc54db23fde3457d0a454f9b12e105b9c0b58e78fd62ffc7d6ea63b0be0e2da"
+  }
+}

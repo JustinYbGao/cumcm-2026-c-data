@@ -1,0 +1,287 @@
+[
+  {
+    "check": "Q1: 144 slots unique and ordered",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Q1: complete relative day intervals",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Q1: required values nonmissing",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "fixed_price: 144 slots unique and ordered",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "fixed_price: complete relative day intervals",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "fixed_price: required values nonmissing",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Q1: all original numeric cells preserved",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Q1: energy and signed net load",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Q1: fixed price identical",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Q1: negative net and zeros preserved",
+    "passed": true,
+    "detail": "negative net=30, PV zero=55"
+  },
+  {
+    "check": "actual_10min: interval_start timezone-naive",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "actual_10min: interval_end timezone-naive",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "actual_10min: available_time timezone-naive",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "pv_forecast_hourly: issue_time timezone-naive",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "pv_forecast_hourly: target_time timezone-naive",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "pv_forecast_10min: interval_start timezone-naive",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "pv_forecast_10min: interval_end timezone-naive",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "pv_forecast_10min: issue_time timezone-naive",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "pv_forecast_10min: endpoint_issue_time timezone-naive",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: 52560 unique contiguous intervals",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: every day 144 slots",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: end/start and year-end business date",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: no missing data or unexpected join loss",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: all load_actual_kw raw cells reconcile",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: load source rows reconcile",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: load_actual_kw zeros preserved",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: all pv_actual_kw raw cells reconcile",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: pv source rows reconcile",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: pv_actual_kw zeros preserved",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: all actual_price_yuan_per_kwh raw cells reconcile",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: price source rows reconcile",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: actual_price_yuan_per_kwh zeros preserved",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: energy and signed net conversion",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: negative net preserved",
+    "passed": true,
+    "detail": "negative net=10130"
+  },
+  {
+    "check": "Actual: fixed price mapping",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Actual: availability is interval end",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Hourly: 35040 unique version-target keys",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Hourly: 1460 issue times / 24 horizons",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Hourly: target equals issue plus horizon",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Hourly: every original power preserved",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Hourly: date fills recorded",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Hourly: date-fill flags map to exact source rows",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Hourly: all 1095 date-fill source cells logged",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Hourly: overlapping versions and cross-year retained",
+    "passed": true,
+    "detail": "targets after actual end=36"
+  },
+  {
+    "check": "10min: 210234 rows and unique version-interval keys",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "10min: initial issue 138 intervals, remaining 1459 issues 144",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "10min: all intervals 10min and within 24h",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "10min: no internal gaps per version",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "10min: missing initial hour not invented",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "10min: business date and slot",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "10min: endpoint source older by 6h",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "10min: every interval independently integrates raw forecast powers",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "10min: finite nonnegative derived values",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Causal access: 23 decision timestamps, future rows excluded",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Causal access: February 1 uses all January and none of February",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "Synthetic boundary/units/version/isolation tests",
+    "passed": true,
+    "detail": "9 tests"
+  },
+  {
+    "check": "All original workbooks including templates unchanged",
+    "passed": true,
+    "detail": ""
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "adapted_code": "from __future__ import annotations\n\nimport csv\nimport os\nimport sys\nfrom collections import defaultdict\nfrom pathlib import Path\n\nimport matplotlib\nmatplotlib.use(\"Agg\")\nimport matplotlib.pyplot as plt\nimport numpy as np\n\n\ndef read_groups(path: Path):\n    groups = defaultdict(list)\n    with path.open(newline=\"\", encoding=\"utf-8\") as handle:\n        for row in csv.DictReader(handle):\n            groups[row[\"comparison_id\"]].append(row)\n    return groups\n\n\ndef main() -> None:\n    data_path = Path(os.environ.get(\"DATA_PATH\", sys.argv[1]))\n    output_dir = Path(os.environ.get(\"OUTPUT_DIR\", sys.argv[2]))\n    output_dir.mkdir(parents=True, exist_ok=True)\n    groups = read_groups(data_path)\n    order = [\"q42_ols_vs_fixed\", \"q43_ols_vs_fixed\"]\n    colours = [(\"#89A6C3\", \"#3F638A\"), (\"#D9A07D\", \"#A9533C\")]\n\n    plt.rcParams.update({\n        \"font.family\": \"DejaVu Serif\",\n        \"font.size\": 9.5,\n        \"axes.labelsize\": 10.5,\n        \"pdf.fonttype\": 42,\n        \"ps.fonttype\": 42,\n    })\n    fig, axes = plt.subplots(1, 2, figsize=(10.6, 4.35), sharey=False, constrained_layout=True)\n    for ax, comparison_id, (bar_colour, line_colour) in zip(axes, order, colours):\n        rows = sorted(groups[comparison_id], key=lambda item: item[\"month\"])\n        months = [row[\"month\"].split(\"-\")[1] for row in rows]\n        monthly = np.array([float(row[\"monthly_saving_yuan\"]) for row in rows]) / 1000\n        cumulative = np.array([float(row[\"cumulative_saving_yuan\"]) for row in rows]) / 1000\n        x = np.arange(len(rows))\n\n        bars = ax.bar(x, monthly, width=0.68, color=bar_colour, edgecolor=\"white\", linewidth=0.55,\n                      label=\"Monthly saving\", zorder=3)\n        ax.axhline(0, color=\"#777777\", linewidth=0.75, zorder=2)\n        ax.set_xticks(x, months)\n        ax.set_xlabel(\"Month in 2025\")\n        ax.set_ylabel(\"Monthly saving (thousand CNY)\")\n        ax.yaxis.grid(True, color=\"#DEDEDE\", linewidth=0.6)\n        ax.set_axisbelow(True)\n        ax.spines[[\"top\"]].set_visible(False)\n\n        secondary = ax.twinx()\n        secondary.plot(x, cumulative, color=line_colour, marker=\"o\", markersize=4.2, linewidth=2.0,\n                       markerfacecolor=\"white\", markeredgewidth=1.15, label=\"Cumulative saving\")\n        secondary.set_ylabel(\"Cumulative saving (thousand CNY)\")\n        secondary.spines[[\"top\"]].set_visible(False)\n        secondary.annotate(f\"{cumulative[-1]:+.2f}\", xy=(x[-1], cumulative[-1]),\n                           xytext=(4, 7 if cumulative[-1] >= 0 else -13), textcoords=\"offset points\",\n                           color=line_colour, fontsize=9, fontweight=\"bold\")\n        handles = [bars, secondary.lines[0]]\n        ax.legend(handles, [\"Monthly saving\", \"Cumulative saving\"], loc=\"upper left\", frameon=False,\n                  fontsize=8.4, handlelength=1.45)\n        title = rows[0][\"comparison_label\"].replace(\" − \", \" vs. \")\n        ax.set_title(title, loc=\"left\", fontsize=10.5, fontweight=\"bold\", pad=6)\n\n    fig.text(0.5, -0.045, \"Positive saving: the OLS planning-price candidate has lower realized cost.\",\n             ha=\"center\", fontsize=9, color=\"#4A4A4A\")\n    fig.savefig(output_dir / \"chart.png\", dpi=300, bbox_inches=\"tight\")\n    fig.savefig(output_dir / \"chart.svg\", bbox_inches=\"tight\")\n    plt.close(fig)\n\n\nif __name__ == \"__main__\":\n    main()\n",
+  "changes_summary": [
+    "Replaced hourly power/SOC demonstration data with verified v5 paired monthly savings.",
+    "Preserved the dual-axis bar-line structure while separating non-comparable Q4 branches into panels."
+  ],
+  "preserved_style_elements": [
+    "serif scientific typography",
+    "muted gradient-inspired paired colours",
+    "inward-looking clean axes",
+    "dual y-axes",
+    "bar-plus-line time-series structure",
+    "compact legends"
+  ],
+  "changed_elements": [
+    "replace hourly power/SOC values with monthly saving data",
+    "use two panels because the branches are not directly comparable"
+  ],
+  "data_columns_used": [
+    "comparison_id",
+    "comparison_label",
+    "month",
+    "monthly_saving_yuan",
+    "cumulative_saving_yuan"
+  ],
+  "dependencies_used": [
+    "matplotlib",
+    "numpy"
+  ],
+  "additional_dependencies_requested": [],
+  "assumptions": [
+    "The compact plotting table is a traceable extract from the verified v5 result bundle."
+  ],
+  "warnings": [
+    "No confidence interval or significance label is added because the visual is descriptive."
+  ]
+}

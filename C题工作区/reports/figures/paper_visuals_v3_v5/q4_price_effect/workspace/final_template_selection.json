@@ -1,0 +1,29 @@
+{
+  "dataset_summary": "Monthly paired realized savings for two OLS-versus-fixed planning-price comparisons, with cumulative savings computed in chronological order.",
+  "observed_data_features": [
+    "Two categorical comparison branches",
+    "Eleven monthly observations per branch",
+    "Monthly signed savings and cumulative signed savings"
+  ],
+  "relevant_columns": [
+    "comparison_id",
+    "comparison_label",
+    "month",
+    "monthly_saving_yuan",
+    "cumulative_saving_yuan"
+  ],
+  "candidate_comparisons": [],
+  "selected_template_id": "trd_dual_axis_bar_line",
+  "selected_template_name": "双Y轴柱状折线时间序列图",
+  "alternative_template_ids": [
+    "trd_composite_line_bar_dual_axis"
+  ],
+  "selection_reason": "The dual-axis bar-and-line layout separates month-level fluctuations from the cumulative annual comparison in each Q4 branch.",
+  "data_support_reason": "Both signed monthly savings and accumulated savings are present at the same monthly time scale.",
+  "data_warnings": [
+    "The two branches have different information structures; the panels are matched within branch and must not be read as an absolute cross-branch ranking."
+  ],
+  "confidence": 0.96,
+  "needs_clarification": false,
+  "clarification_question": ""
+}

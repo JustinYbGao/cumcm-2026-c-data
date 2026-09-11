@@ -1,0 +1,32 @@
+{
+  "source_root": "/Users/mike/Desktop/国赛/cumcm-2026-c-data/C题工作区/results/unified_direct_v5",
+  "source_sha256": {
+    "/Users/mike/Desktop/国赛/cumcm-2026-c-data/C题工作区/results/unified_direct_v5/comparison_all.csv": "d5f7a1a27aa3c783f9ad63254c6d506e9188ab39fea0957abfd12c1a8ad01fba",
+    "/Users/mike/Desktop/国赛/cumcm-2026-c-data/C题工作区/results/unified_direct_v5/paired_monthly.csv": "d390333d4ff995a121b519809bc996f1aa514a3657f72f73e85193c437b5357d",
+    "/Users/mike/Desktop/国赛/cumcm-2026-c-data/C题工作区/results/unified_direct_v5/paired_summary.csv": "218104644bf7330fbc386b7acd1db0b59ad02a203c87d86a985acab729caa9ec"
+  },
+  "selection": {
+    "q3_policy_ids": [
+      "q3_no_update",
+      "q3_soc",
+      "q3_raw",
+      "q3_w28"
+    ],
+    "q4_monthly_comparisons": {
+      "q42_ols_vs_fixed": {
+        "candidate": "q42_ols",
+        "reference": "q42_fixed",
+        "label": "Q4-2: OLS − fixed"
+      },
+      "q43_ols_vs_fixed": {
+        "candidate": "q43_raw_ols",
+        "reference": "q43_raw_fixed",
+        "label": "Q4-3: OLS − fixed"
+      }
+    }
+  },
+  "units": {
+    "q3_costs": "million CNY",
+    "q4_monthly_and_cumulative_savings": "CNY; positive means the candidate has a lower realized total cost"
+  }
+}

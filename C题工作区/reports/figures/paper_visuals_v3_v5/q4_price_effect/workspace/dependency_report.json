@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "python_executable": "/Users/mike/Documents/Codex/2026-09-10/zhe/work/notebook-env/bin/python3",
+  "required_dependencies": [
+    "matplotlib",
+    "numpy",
+    "Pillow"
+  ],
+  "installed_dependencies": [
+    {
+      "import_name": "matplotlib",
+      "package_name": "matplotlib",
+      "installed_version": "3.11.1",
+      "available": true
+    },
+    {
+      "import_name": "numpy",
+      "package_name": "numpy",
+      "installed_version": "2.3.5",
+      "available": true
+    },
+    {
+      "import_name": "PIL",
+      "package_name": "Pillow",
+      "installed_version": "12.3.0",
+      "available": true
+    }
+  ],
+  "missing_dependencies": [],
+  "unresolved_dependencies": [],
+  "version_conflicts": [],
+  "warnings": []
+}

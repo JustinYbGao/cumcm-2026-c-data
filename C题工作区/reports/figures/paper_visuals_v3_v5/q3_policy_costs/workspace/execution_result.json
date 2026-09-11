@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "return_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "generated_files": [
+    "outputs/chart.svg",
+    "outputs/chart.png"
+  ],
+  "execution_time": 0.3934,
+  "error_type": ""
+}
