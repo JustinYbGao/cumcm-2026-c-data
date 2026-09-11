@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_cost_aware_v2/test_lower_bound.py", line 3, in <module>
+    from lower_bound import solve_relaxation
+ModuleNotFoundError: No module named 'lower_bound'

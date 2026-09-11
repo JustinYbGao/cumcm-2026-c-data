@@ -1,0 +1,68 @@
+test_charge_ceiling_and_paid_disposal (__main__.PolicyTests.test_charge_ceiling_and_paid_disposal) ... FAIL
+test_conditional_reserve_cannot_charge_from_emergency (__main__.PolicyTests.test_conditional_reserve_cannot_charge_from_emergency) ... FAIL
+test_insufficient_history_falls_back_to_zero (__main__.PolicyTests.test_insufficient_history_falls_back_to_zero) ... FAIL
+test_internal_power_side_conversion (__main__.PolicyTests.test_internal_power_side_conversion) ... FAIL
+test_joint_residual_quantile_and_future_exclusion (__main__.PolicyTests.test_joint_residual_quantile_and_future_exclusion) ... FAIL
+test_reserve_uses_only_strictly_future_higher_price_predictions (__main__.PolicyTests.test_reserve_uses_only_strictly_future_higher_price_predictions) ... FAIL
+test_storage_floor_and_power_limit (__main__.PolicyTests.test_storage_floor_and_power_limit) ... FAIL
+
+======================================================================
+FAIL: test_charge_ceiling_and_paid_disposal (__main__.PolicyTests.test_charge_ceiling_and_paid_disposal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/emergency_improvement_v1/test_policy.py", line 10, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('policy'), 'risk policy implementation is missing')
+AssertionError: unexpectedly None : risk policy implementation is missing
+
+======================================================================
+FAIL: test_conditional_reserve_cannot_charge_from_emergency (__main__.PolicyTests.test_conditional_reserve_cannot_charge_from_emergency)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/emergency_improvement_v1/test_policy.py", line 10, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('policy'), 'risk policy implementation is missing')
+AssertionError: unexpectedly None : risk policy implementation is missing
+
+======================================================================
+FAIL: test_insufficient_history_falls_back_to_zero (__main__.PolicyTests.test_insufficient_history_falls_back_to_zero)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/emergency_improvement_v1/test_policy.py", line 10, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('policy'), 'risk policy implementation is missing')
+AssertionError: unexpectedly None : risk policy implementation is missing
+
+======================================================================
+FAIL: test_internal_power_side_conversion (__main__.PolicyTests.test_internal_power_side_conversion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/emergency_improvement_v1/test_policy.py", line 10, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('policy'), 'risk policy implementation is missing')
+AssertionError: unexpectedly None : risk policy implementation is missing
+
+======================================================================
+FAIL: test_joint_residual_quantile_and_future_exclusion (__main__.PolicyTests.test_joint_residual_quantile_and_future_exclusion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/emergency_improvement_v1/test_policy.py", line 10, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('policy'), 'risk policy implementation is missing')
+AssertionError: unexpectedly None : risk policy implementation is missing
+
+======================================================================
+FAIL: test_reserve_uses_only_strictly_future_higher_price_predictions (__main__.PolicyTests.test_reserve_uses_only_strictly_future_higher_price_predictions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/emergency_improvement_v1/test_policy.py", line 10, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('policy'), 'risk policy implementation is missing')
+AssertionError: unexpectedly None : risk policy implementation is missing
+
+======================================================================
+FAIL: test_storage_floor_and_power_limit (__main__.PolicyTests.test_storage_floor_and_power_limit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/emergency_improvement_v1/test_policy.py", line 10, in setUp
+    self.assertIsNotNone(importlib.util.find_spec('policy'), 'risk policy implementation is missing')
+AssertionError: unexpectedly None : risk policy implementation is missing
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+FAILED (failures=7)

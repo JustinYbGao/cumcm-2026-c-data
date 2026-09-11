@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/analyze_results.py", line 85, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/analyze_results.py", line 48, in main
+    table.to_csv(out/'comparison_all.csv')
+                 ~~~^~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for /: 'list' and 'str'

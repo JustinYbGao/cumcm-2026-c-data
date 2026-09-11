@@ -1,0 +1,21 @@
+{
+  "start": "2025-02-01",
+  "end": "2025-12-31",
+  "initial_energy_kwh": 7268.4231640740745,
+  "risk_window": 28,
+  "scenario_window": 56,
+  "mu": 0.38232,
+  "terminal_energy_kwh": 1200.0,
+  "cvar_alpha": 0.9,
+  "policy": "R_cost",
+  "profiles": [
+    "anchor",
+    "day_trim",
+    "evening_hedge",
+    "rebalance",
+    "soft",
+    "strong",
+    "morning_hedge"
+  ],
+  "guard": "none"
+}

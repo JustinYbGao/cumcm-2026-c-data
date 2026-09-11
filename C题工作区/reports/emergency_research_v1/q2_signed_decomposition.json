@@ -1,0 +1,9 @@
+{
+  "load_underforecast": 115540.29360980025,
+  "pv_overforecast": 56526.90951963258,
+  "charge_difference": -11766.52069450532,
+  "discharge_difference": 592307.9805409655,
+  "disposal_difference": -724.541280995295,
+  "emergency_kwh": 751884.1216948977,
+  "warning": "Signed accounting identity on realized emergency intervals; not causal effects or independent additive interventions."
+}

@@ -1,0 +1,17 @@
+{
+  "audit.log": "91b0817cbf14269c6a066c9e0d267f3825a172e6a7c869c02968b3fe86474aa2",
+  "audit.py": "7e59e71e1344f51e5a8acf6a1d6d8c46421bc5d8cf4b945a479834c65d1545fa",
+  "audit_environment.json": "7ce5cb6cbbd98ff42a6d93ea28f1aa17101cda95c02160af38a41750dba88e3b",
+  "audit_results.json": "b9a867137aca5de5bc6756494561f7f029f0626e57a637355d6bf1ce61e1a7d4",
+  "costs_recomputed.csv": "3ac54aaa6e20f5603fd52136b1932c7d77d886645984b8a2a776603719df3372",
+  "d112_rerun.log": "765852a7a6585e2f128c6d19efc56ba0fd348f77cd239d81d644385fd85747e3",
+  "extra_checks.json": "a2ca7573d5ce7afc0cafc4eca044733cadd68d9633577f7476befb07cc2fc22b",
+  "extra_checks.log": "02b87969c64474b2fed5b39ecc32f57ecfff437519ed34c9c09b2c7f5c147500",
+  "extra_checks.py": "09f332369b31d2e701711992db6bb30d836fc760b2626e86480722f461920a6e",
+  "git_status_before.txt": "87bf5d997c41926f73ea8101e9ba85862a6992b77a2fe9338169cece8d9fdb90",
+  "numeric_checks.csv": "da27fbfd203d88e789270c4afa8ad75879e8d110071f3e96cae04cea531d3fa0",
+  "preservation_after.json": "4ed0e7442505e1323b4e6eb156101b129dd9ba34fa60d7800177ecca5d60abd6",
+  "preservation_before.json": "418171d0820a841b14702fcda15d78ae34dc3fdf443540551753230078d11aec",
+  "rerun_comparison.json": "17528804da8ba18999716b5b2feb447bde53eda647180b9a9937d015a6b62715",
+  "review.md": "67ceec930ef3a40db003b119037f226322761f0435d76c1fdbc7333863b5e2e9"
+}

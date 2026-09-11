@@ -1,0 +1,126 @@
+{
+  "success": true,
+  "adaptation_plan": {
+    "template_id": "trd_composite_line_bar_dual_axis",
+    "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+    "plot_goal": "Exact paired monthly cost lines and paired-difference bars retain losses without fitted trends.",
+    "selected_columns": [
+      "month",
+      "P",
+      "P_floor",
+      "S_joint"
+    ],
+    "column_mappings": [
+      {
+        "data_column": "month",
+        "template_role": "Category/time key",
+        "reason": ""
+      },
+      {
+        "data_column": "P",
+        "template_role": "Exact cost or certified bound in CNY",
+        "reason": ""
+      },
+      {
+        "data_column": "P_floor",
+        "template_role": "Exact cost or certified bound in CNY",
+        "reason": ""
+      },
+      {
+        "data_column": "S_joint",
+        "template_role": "Exact cost or certified bound in CNY",
+        "reason": ""
+      }
+    ],
+    "required_preprocessing": [
+      "Read CSV; preserve original dates and declared policy order; divide CNY by display unit only"
+    ],
+    "required_dependencies": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "layout_elements_to_preserve": [
+      "Matplotlib",
+      "Serif typography",
+      "Muted blue/orange palette",
+      "Horizontal grids",
+      "Shared month axis, paired lines and auxiliary savings bars"
+    ],
+    "style_elements_to_preserve": [
+      "Matplotlib",
+      "Serif typography",
+      "Muted blue/orange palette",
+      "Horizontal grids",
+      "Shared month axis, paired lines and auxiliary savings bars"
+    ],
+    "elements_allowed_to_change": [
+      "Replace demo data with supplied CSV",
+      "English labels and currency units",
+      "Remove fitted demo trends",
+      "Repeat matched line/bar layout in two panels",
+      "300 dpi PNG and SVG"
+    ],
+    "title_plan": "English Q2 economic outcome",
+    "axis_plan": "Explicit million CNY; monthly savings on disclosed second axis in thousand CNY",
+    "legend_plan": "Separated upper legend band",
+    "annotation_plan": "Actual totals, relaxed-bound scope, daily losses; no external-validation claim",
+    "output_formats": [
+      "png",
+      "svg"
+    ],
+    "warnings": [
+      "Historical conditional results; no future guarantee"
+    ],
+    "can_proceed": true,
+    "clarification_question": ""
+  },
+  "adaptation_result": {
+    "adapted_code": "\"\"\"TRD_004 observed paired lines and difference bars, including losses.\"\"\"\nimport sys\nfrom pathlib import Path\nimport numpy as np\nimport pandas as pd\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.lines import Line2D\nfrom matplotlib.patches import Patch\n\nf=pd.read_csv(sys.argv[1]);out=Path(sys.argv[2]);out.mkdir(parents=True,exist_ok=True)\nx=np.arange(len(f));months=pd.to_datetime(f.month).dt.strftime('%b')\nplt.rcParams.update({'font.family':'DejaVu Serif','font.size':10,'svg.fonttype':'none','svg.hashsalt':'q2_cost_aware_v2','axes.spines.top':False,'axes.spines.right':False})\nfig,axes=plt.subplots(2,1,figsize=(11,8),sharex=True);fig.subplots_adjust(left=.10,right=.88,top=.82,bottom=.19,hspace=.39)\nblue='#3B6C8E';orange='#CB8B52';gray='#676D73'\nlimit=np.ceil(max(abs(f.P-f.P_floor).max(),abs(f.P_floor-f.S_joint).max())/10000)*10\nfor ax,b,target,title in zip(axes,['P','P_floor'],['P_floor','S_joint'],['A | Fixed floor versus prior risk policy','B | Joint selection versus fixed floor']):\n    saving=(f[b]-f[target])/1000;twin=ax.twinx();twin.spines['top'].set_visible(False)\n    twin.bar(x,saving,width=.6,color=orange,alpha=.33);twin.axhline(0,color=orange,lw=.8)\n    twin.set_ylim(-limit,limit);twin.set_ylabel('Savings (thousand CNY)',color='#9C6337')\n    ax.plot(x,f[b]/1e6,color=gray,ls='--',marker='o',ms=3,lw=1.6)\n    ax.plot(x,f[target]/1e6,color=blue,marker='o',ms=3,lw=1.7)\n    ax.set_ylabel('Actual cost (million CNY)');ax.grid(axis='y',alpha=.15)\n    ax.set_zorder(twin.get_zorder()+1);ax.patch.set_visible(False)\n    ax.set_title(title,loc='left',fontsize=11,pad=10)\n    ax.text(.99,1.05,f'Total saving: {saving.sum():+.1f} thousand CNY',transform=ax.transAxes,ha='right',va='bottom',fontsize=9)\naxes[-1].set_xticks(x,months);axes[-1].set_xlabel('Evaluation month in 2025')\nfig.suptitle('Monthly evidence includes cost increases',x=.1,y=.965,ha='left',fontsize=15)\nfig.legend(handles=[Line2D([],[],color=gray,ls='--',label='Reference policy'),Line2D([],[],color=blue,label='Compared policy'),Patch(color=orange,alpha=.33,label='Reference minus compared')],loc='upper left',bbox_to_anchor=(.09,.922),ncol=3,frameon=False)\nfig.text(.1,.092,'P_floor loses on 32 of 334 days versus P, despite savings in every evaluated month.',fontsize=9)\nfig.text(.1,.052,'Lines use left axes; bars use right axes with a common savings scale. Negative bars mean higher cost.',fontsize=9)\nfig.savefig(out/'chart.png',dpi=300);fig.savefig(out/'chart.svg',metadata={'Date':None});plt.close(fig)\n",
+    "changes_summary": [
+      "Exact paired monthly cost lines and paired-difference bars retain losses without fitted trends."
+    ],
+    "preserved_style_elements": [
+      "Matplotlib",
+      "Serif typography",
+      "Muted blue/orange palette",
+      "Horizontal grids",
+      "Shared month axis, paired lines and auxiliary savings bars"
+    ],
+    "changed_elements": [
+      "Replace demo data with supplied CSV",
+      "English labels and currency units",
+      "Remove fitted demo trends",
+      "Repeat matched line/bar layout in two panels",
+      "300 dpi PNG and SVG"
+    ],
+    "data_columns_used": [
+      "month",
+      "P",
+      "P_floor",
+      "S_joint"
+    ],
+    "dependencies_used": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "additional_dependencies_requested": [],
+    "assumptions": [
+      "Historical 2025 replay; original rules except explicitly varied planning terminal target; no sale revenue."
+    ],
+    "warnings": []
+  },
+  "execution_result": {
+    "success": true,
+    "return_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "generated_files": [
+      "/Users/justingao/Documents/CUMCM/C题工作区/reports/q2_cost_aware_v2/figures/monthly/outputs/chart.svg",
+      "/Users/justingao/Documents/CUMCM/C题工作区/reports/q2_cost_aware_v2/figures/monthly/outputs/chart.png"
+    ],
+    "execution_time": 0.4672,
+    "error_type": ""
+  }
+}

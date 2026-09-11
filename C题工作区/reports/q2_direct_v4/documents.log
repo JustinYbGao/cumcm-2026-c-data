@@ -1,0 +1,34 @@
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:116: SyntaxWarning: invalid escape sequence '\{'
+  $$c_t^s=\min\{{(v_t^s)^+,P,((E_{{\max}}-E_{{t-1}}^s)/\eta_c)^+\}},$$
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:116: SyntaxWarning: invalid escape sequence '\}'
+  $$c_t^s=\min\{{(v_t^s)^+,P,((E_{{\max}}-E_{{t-1}}^s)/\eta_c)^+\}},$$
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:117: SyntaxWarning: invalid escape sequence '\{'
+  $$d_t^s=\min\{{(-v_t^s)^+,P,(\eta_d(E_{{t-1}}^s-E_{{\min}}))^+\}},\quad u_t^s=(-v_t^s-d_t^s)^+,$$
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:117: SyntaxWarning: invalid escape sequence '\}'
+  $$d_t^s=\min\{{(-v_t^s)^+,P,(\eta_d(E_{{t-1}}^s-E_{{\min}}))^+\}},\quad u_t^s=(-v_t^s-d_t^s)^+,$$
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:187: SyntaxWarning: invalid escape sequence '\m'
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:177: SyntaxWarning: invalid escape sequence '\m'
+  '''
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:177: SyntaxWarning: invalid escape sequence '\e'
+  '''
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:178: SyntaxWarning: invalid escape sequence '\m'
+  (PAPER/'paper_supplement.md').write_text(paper)
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:177: SyntaxWarning: invalid escape sequence '\e'
+  '''
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:177: SyntaxWarning: invalid escape sequence '\m'
+  '''
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:177: SyntaxWarning: invalid escape sequence '\q'
+  '''
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:177: SyntaxWarning: invalid escape sequence '\e'
+  '''
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:177: SyntaxWarning: invalid escape sequence '\s'
+  '''
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:177: SyntaxWarning: invalid escape sequence '\i'
+  '''
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:177: SyntaxWarning: invalid escape sequence '\l'
+  '''
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:177: SyntaxWarning: invalid escape sequence '\q'
+  '''
+/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/build_documents.py:177: SyntaxWarning: invalid escape sequence '\g'
+  '''
+Research report and paper supplement generated.

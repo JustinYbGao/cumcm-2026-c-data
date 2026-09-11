@@ -1,0 +1,103 @@
+{
+  "dataset_summary": "11 actual months × five policy bills; chart compares fixed B0/P and B1/P pairs",
+  "observed_data_features": [],
+  "relevant_columns": [
+    "month",
+    "B0",
+    "B1",
+    "P",
+    "E",
+    "PE"
+  ],
+  "candidate_comparisons": [
+    {
+      "template_id": "cmp_3d_ribbon_chart",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, fitted-trend or unrelated distribution encoding is less direct for this exact comparison."
+      ],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_dual_axis_bar_line",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, fitted-trend or unrelated distribution encoding is less direct for this exact comparison."
+      ],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_lag_correlation_analysis",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, fitted-trend or unrelated distribution encoding is less direct for this exact comparison."
+      ],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "mpn_scatter_matrix_timeseries_regression",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, fitted-trend or unrelated distribution encoding is less direct for this exact comparison."
+      ],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_flowing_percentage_stack",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, fitted-trend or unrelated distribution encoding is less direct for this exact comparison."
+      ],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_3d_waterfall_distribution",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, fitted-trend or unrelated distribution encoding is less direct for this exact comparison."
+      ],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_smoothed_trend_curves",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, fitted-trend or unrelated distribution encoding is less direct for this exact comparison."
+      ],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_composite_line_bar_dual_axis",
+      "suitable": true,
+      "advantages": [
+        "Two observed cost lines and signed savings bars share each original month. Preserve TRD_004 line/bar dual-axis composition, serif labels and muted palette; remove fitted trend and significance claims; repeat for two fixed baselines."
+      ],
+      "limitations": [],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    }
+  ],
+  "selected_template_id": "trd_composite_line_bar_dual_axis",
+  "selected_template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "alternative_template_ids": [],
+  "selection_reason": "Two observed cost lines and signed savings bars share each original month. Preserve TRD_004 line/bar dual-axis composition, serif labels and muted palette; remove fitted trend and significance claims; repeat for two fixed baselines.",
+  "data_support_reason": "All plotted quantities are present in the real CSV or exact subtraction/unit conversion thereof.",
+  "data_warnings": [],
+  "confidence": 0.96,
+  "needs_clarification": false,
+  "clarification_question": ""
+}

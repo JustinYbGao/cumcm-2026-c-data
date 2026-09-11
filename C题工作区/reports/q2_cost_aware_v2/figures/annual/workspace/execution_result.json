@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "return_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "generated_files": [
+    "/Users/justingao/Documents/CUMCM/C题工作区/reports/q2_cost_aware_v2/figures/annual/outputs/chart.svg",
+    "/Users/justingao/Documents/CUMCM/C题工作区/reports/q2_cost_aware_v2/figures/annual/outputs/chart.png"
+  ],
+  "execution_time": 0.4446,
+  "error_type": ""
+}

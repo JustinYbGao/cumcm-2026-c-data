@@ -1,0 +1,13 @@
+{
+  "P": 14209509.845353533,
+  "S_tau": 14271939.871226463,
+  "S_terminal": 14021677.812358541,
+  "S_joint": 14080772.771030001,
+  "tau_selection_saving": -62430.025872930884,
+  "terminal_selection_saving": 187832.03299499117,
+  "joint_saving": 128737.07432353124,
+  "tau_increment_on_terminal": -59094.95867145993,
+  "terminal_increment_on_tau": 191167.10019646212,
+  "interaction_extra_saving": 3335.0672014690936,
+  "scope": "Independent continuous paths include endogenous state feedback; not isolated same-SOC daily causal contributions."
+}

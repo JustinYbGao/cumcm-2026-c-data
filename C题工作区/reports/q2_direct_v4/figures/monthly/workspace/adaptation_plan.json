@@ -1,0 +1,74 @@
+{
+  "template_id": "trd_composite_line_bar_dual_axis",
+  "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "plot_goal": "Observed monthly savings compare the best eligible follow-up with fixed and guarded alternatives; losses remain visible.",
+  "selected_columns": [
+    "month",
+    "D112",
+    "D56_risk625",
+    "D56_mu0"
+  ],
+  "column_mappings": [
+    {
+      "data_column": "month",
+      "template_role": "Category key",
+      "reason": ""
+    },
+    {
+      "data_column": "D112",
+      "template_role": "Actual bill difference, emergency amount, or cap outcome",
+      "reason": ""
+    },
+    {
+      "data_column": "D56_risk625",
+      "template_role": "Actual bill difference, emergency amount, or cap outcome",
+      "reason": ""
+    },
+    {
+      "data_column": "D56_mu0",
+      "template_role": "Actual bill difference, emergency amount, or cap outcome",
+      "reason": ""
+    }
+  ],
+  "required_preprocessing": [
+    "Read actual CSV, preserve order; divide yuan by 1000 for axis display"
+  ],
+  "required_dependencies": [
+    "numpy",
+    "pandas",
+    "matplotlib"
+  ],
+  "layout_elements_to_preserve": [
+    "Matplotlib",
+    "Shared time axis with bars and marked lines",
+    "Serif typography",
+    "Muted green gold blue colors",
+    "Horizontal grid"
+  ],
+  "style_elements_to_preserve": [
+    "Matplotlib",
+    "Shared time axis with bars and marked lines",
+    "Serif typography",
+    "Muted green gold blue colors",
+    "Horizontal grid"
+  ],
+  "elements_allowed_to_change": [
+    "Use supplied paired monthly savings",
+    "Use a single currency axis because every series has identical units",
+    "Remove demonstration regression and p values",
+    "English labels and 300dpi PNG plus SVG"
+  ],
+  "title_plan": "English Q2 fee tradeoffs",
+  "axis_plan": "Explicit thousand CNY and zero lines; savings panels disclose differing ranges",
+  "legend_plan": "Upper separate band when needed",
+  "annotation_plan": "Direct amounts, all failures and scope notes; no significance stars",
+  "output_formats": [
+    "png",
+    "svg"
+  ],
+  "warnings": [
+    "Historical exploratory comparison; no future cap guarantee."
+  ],
+  "can_proceed": true,
+  "clarification_question": ""
+}

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "members": 59,
+  "bytes": 6759606,
+  "sha256": "4a0f396bb5e2422babed1c4edc6d0b1d91b7b78cf17886571521741bbb24e4d7",
+  "under_20_MB": true,
+  "purpose": "Compact internal review handoff; not formal submission and requires existing repository ledgers to regenerate XLSX."
+}

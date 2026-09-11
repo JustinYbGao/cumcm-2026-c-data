@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "scope": "Complete 334-day best observed policy replay after relocation, original inputs and reference paths reconstructed inside new nested workspace; other 17 annual paths have full independent equation audit but were not all rerun in clone.",
+  "details": {
+    "passed": true,
+    "scope": "One selected annual policy relocation smoke",
+    "by_policy": {
+      "X_strong_morning85": {
+        "max_numeric_difference": 0.0,
+        "text_columns_match": true,
+        "total_cost_difference_yuan": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "original_request": "继续研究Q2整体费用改进，modelviz-skill，图内全部英文，300dpi PNG与SVG，公开负结果",
+  "goal": "比较Q2各策略实际合同费、紧急费组成与理想下界，堆叠柱状图",
+  "functional_keywords": [
+    "比较",
+    "组成",
+    "堆叠柱状图"
+  ],
+  "chart_types": [
+    "柱状图"
+  ],
+  "style_keywords": [
+    "科研风",
+    "English labels",
+    "serif typography"
+  ],
+  "use_case": "论文正文",
+  "negative_requirements": [
+    "No Chinese text",
+    "No smoothing",
+    "No 3D"
+  ],
+  "explicit_template": false,
+  "is_ambiguous": false,
+  "clarification_question": ""
+}

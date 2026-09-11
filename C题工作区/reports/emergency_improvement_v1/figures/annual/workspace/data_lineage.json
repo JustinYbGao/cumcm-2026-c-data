@@ -1,0 +1,7 @@
+{
+  "source": "/Users/justingao/Documents/CUMCM/C题工作区/results/emergency_improvement_v1/comparison_all.csv",
+  "source_sha256": "a5a20e2329979be31a1b480bd6f7ce594462f3ee3cbf4b1647051c98b35c0ebb",
+  "plot_data_sha256": "f09d67b5a285d0aa779061da1c019f13aa99f1664398a409e6bbb2757113d5cd",
+  "rows": 5,
+  "transform": "Select declared policies/columns; preserve exact data and dates. CNY to million CNY for display."
+}

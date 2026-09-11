@@ -1,0 +1,1 @@
+Cloned sources and verified forecast archives. The independent source audit reconstructs both forecast methods from original actual prefixes. The clone preservation manifest covers supplied snapshots only; the delivered 3268-file preservation audit remains separate.

@@ -1,0 +1,657 @@
+{
+  "created_utc": "2026-09-11T17:15:26.133140+00:00",
+  "passed": true,
+  "scope": "january",
+  "independence": "Only standard library, numpy and pandas; no imports from producer predictor/planner/scorer/executor.",
+  "tolerances": {
+    "physical_kwh": 1e-06,
+    "cost_yuan": 1e-05
+  },
+  "sources": {
+    "passed": true,
+    "checks": [
+      {
+        "check": "source_snapshot.actual_10min.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.fixed_price.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.model_baseline.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.q2_baseline.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.original_run_q2.py",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.original_solve_q1.py",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.problem_text.txt",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.selection.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.bzd_quantile_record.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "original_baseline_snapshot.B0",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "original_baseline_snapshot.B1",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "original_baseline_snapshot.no_storage",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.ledger.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.plans.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.daily.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.summary.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.config.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.models_and_solvers.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.ledger.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.plans.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.daily.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.summary.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.config.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.models_and_solvers.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.ledger.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.plans.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.daily.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.summary.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.config.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.models_and_solvers.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.ledger.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.plans.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.daily.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.summary.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.config.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.models_and_solvers.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "protocol.frozen_sha256",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.frozen_sha256",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "protected_files_unchanged",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "count": 3268,
+          "changed": []
+        }
+      },
+      {
+        "check": "actual.complete_unique_ordered",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "expected_rows": 52560,
+          "actual_rows": 52560,
+          "duplicates": 0
+        }
+      },
+      {
+        "check": "price.slots",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "price.start_minutes",
+        "passed": true,
+        "comparisons": 144,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "price.end_minutes",
+        "passed": true,
+        "comparisons": 144,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "actual.units.load",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "actual.units.pv",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "actual.nonnegative",
+        "passed": true,
+        "comparisons": 105120,
+        "failures": 0
+      },
+      {
+        "check": "price.positive",
+        "passed": true,
+        "comparisons": 144,
+        "failures": 0
+      },
+      {
+        "check": "actual.interval_start",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "actual.interval_end",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "actual.available_time",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "archive.complete_unique_ordered",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "expected_rows": 52416,
+          "actual_rows": 52416,
+          "duplicates": 0
+        }
+      },
+      {
+        "check": "archive.issue_time",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0
+      },
+      {
+        "check": "archive.history_end",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0
+      },
+      {
+        "check": "archive.residual_available_time",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0
+      },
+      {
+        "check": "archive.source.load_actual_kwh",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "archive.source.pv_actual_kwh",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "archive.load_from_history",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "archive.pv_from_history",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "archive.net_error",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      }
+    ],
+    "check_groups": 59,
+    "comparisons": 787722,
+    "failed_groups": 0
+  },
+  "completeness": {
+    "passed": true,
+    "checks": [
+      {
+        "check": "january.path_set",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      }
+    ],
+    "check_groups": 1,
+    "comparisons": 1,
+    "failed_groups": 0
+  },
+  "runs": {
+    "january/S_tau": {
+      "passed": true,
+      "checks": [],
+      "check_groups": 689,
+      "comparisons": 94404,
+      "failed_groups": 0,
+      "checks_contains": "failures_only; all groups included in counts and error maxima",
+      "max_abs_error_by_tolerance": {
+        "0": 0,
+        "1e-06": 1.8189894035458565e-12,
+        "1e-05": 1.1641532182693481e-10
+      },
+      "totals": {
+        "grid_plan_kwh": 296102.3134740582,
+        "emergency_kwh": 380.58240831331784,
+        "planned_cost_yuan": 178033.94573953573,
+        "emergency_cost_yuan": 2294.105248678355,
+        "total_cost_yuan": 180328.0509882141,
+        "charge_actual_kwh": 91114.13102522692,
+        "discharge_actual_kwh": 73119.22932779457,
+        "surplus_kwh": 13411.877318272502,
+        "unused_grid_kwh": 9016.504327014583,
+        "pv_curtailment_kwh": 4395.372991257917,
+        "days": 4.0,
+        "intervals": 576.0,
+        "initial_energy_kwh": 6000.0,
+        "final_energy_kwh": 6759.129780710269,
+        "inventory_value_yuan_per_kwh": 0.6895775000000001,
+        "inventory_adjusted_cost_yuan": 179804.57217185636,
+        "emergency_intervals": 6.0,
+        "emergency_days": 2.0,
+        "emergency_share_of_load": 0.000915178798025977
+      },
+      "candidates_verified": 20,
+      "scenario_candidate_replays": 290,
+      "solver_statistics": {
+        "solver_count": 20,
+        "solver_runtime_seconds": 0.48474529100349173,
+        "solver_max_runtime_seconds": 0.034888250011135824,
+        "solver_max_mip_gap": 0.0,
+        "solver_failures": 0,
+        "solver_fallbacks": 0
+      },
+      "artifact_sha256": {
+        "config.json": "ceaf1a7f2abfb8541bebd294614c77e1b5bd863c04694dbe97eecb28d129f89a",
+        "ledger.csv": "5a976f6c07a24265439c3c73d91d35cdb4c10db49441407a7c6c0f1674a1a237",
+        "plans.csv": "721827859970ade70f9df03b9c3fa9234497643bcf9010c7ddc19ec1b24dfc03",
+        "daily.csv": "3df7902ec3c2043d13d3656190e5f656179c11dc2043d13543724c1c76c2ee78",
+        "summary.json": "69c72e45e6a0d3c60e569ed38b12afbbc1534ffac2d7b10278ec1bfb190023cd",
+        "decisions.json": "a77f4b92a1e46be9c544399fb1f0993779658d60bbc72ce645ad73b5d320e3fe",
+        "decision_evidence.npz": "02be52320f1c6146a4e3933d3a3e12a768db3336c44b5626c53485c8980c9700"
+      }
+    },
+    "january/S_terminal": {
+      "passed": true,
+      "checks": [],
+      "check_groups": 489,
+      "comparisons": 76780,
+      "failed_groups": 0,
+      "checks_contains": "failures_only; all groups included in counts and error maxima",
+      "max_abs_error_by_tolerance": {
+        "0": 0,
+        "1e-06": 2.1032064978498966e-12,
+        "1e-05": 8.731149137020111e-11
+      },
+      "totals": {
+        "grid_plan_kwh": 297507.08110086067,
+        "emergency_kwh": 135.7354390649465,
+        "planned_cost_yuan": 181214.34924269986,
+        "emergency_cost_yuan": 766.5501838425264,
+        "total_cost_yuan": 181980.89942654237,
+        "charge_actual_kwh": 82932.90760671864,
+        "discharge_actual_kwh": 70580.98879722724,
+        "surplus_kwh": 20214.780863767555,
+        "unused_grid_kwh": 14794.36707074999,
+        "pv_curtailment_kwh": 5420.413793017565,
+        "days": 4.0,
+        "intervals": 576.0,
+        "initial_energy_kwh": 6000.0,
+        "final_energy_kwh": 2216.2959602387273,
+        "inventory_value_yuan_per_kwh": 0.6895775000000001,
+        "inventory_adjusted_cost_yuan": 184590.05659902084,
+        "emergency_intervals": 4.0,
+        "emergency_days": 2.0,
+        "emergency_share_of_load": 0.00032640025723605946
+      },
+      "candidates_verified": 12,
+      "scenario_candidate_replays": 174,
+      "solver_statistics": {
+        "solver_count": 12,
+        "solver_runtime_seconds": 0.2801449990074616,
+        "solver_max_runtime_seconds": 0.032046874999650754,
+        "solver_max_mip_gap": 0.0,
+        "solver_failures": 0,
+        "solver_fallbacks": 0
+      },
+      "artifact_sha256": {
+        "config.json": "fbe053074755051dd978bc59fb83c4cacc0141964d921eb3804f999399a82470",
+        "ledger.csv": "a03ceb2f2df566b2615effaa0e755bf57155f6f519bfbe6dc558b737b00420e0",
+        "plans.csv": "d54b6df58c6c784f3d687c992cddf79d28313351e6e111fb86c47f3676ad2141",
+        "daily.csv": "c32566cddf2fed734c159f2ce62c15e125c2fba8c23d3710b922459f2de2ed8a",
+        "summary.json": "dd5067550e7fcec64248352297eaa44dee3a98490d3270a8e21676e6fe2822d1",
+        "decisions.json": "815239a09a192afff4a5f0a1846b0daa0836eb5e0ff5a5759962d67949c0645e",
+        "decision_evidence.npz": "9532c4537229ee5a563b16cf2b85a7429f10918c62e619255833b91e565a4841"
+      }
+    },
+    "january/S_joint": {
+      "passed": true,
+      "checks": [],
+      "check_groups": 1689,
+      "comparisons": 182524,
+      "failed_groups": 0,
+      "checks_contains": "failures_only; all groups included in counts and error maxima",
+      "max_abs_error_by_tolerance": {
+        "0": 0,
+        "1e-06": 1.8189894035458565e-12,
+        "1e-05": 1.1641532182693481e-10
+      },
+      "totals": {
+        "grid_plan_kwh": 290768.9801407249,
+        "emergency_kwh": 435.93525844839337,
+        "planned_cost_yuan": 175968.27944075,
+        "emergency_cost_yuan": 2410.2413291133275,
+        "total_cost_yuan": 178378.52076986333,
+        "charge_actual_kwh": 86338.29762423714,
+        "discharge_actual_kwh": 73237.52201384993,
+        "surplus_kwh": 13028.022922119386,
+        "unused_grid_kwh": 8710.86745058071,
+        "pv_curtailment_kwh": 4317.155471538676,
+        "days": 4.0,
+        "intervals": 576.0,
+        "initial_energy_kwh": 6000.0,
+        "final_energy_kwh": 2329.4434019801793,
+        "inventory_value_yuan_per_kwh": 0.6895775000000001,
+        "inventory_adjusted_cost_yuan": 180909.65401233436,
+        "emergency_intervals": 9.0,
+        "emergency_days": 2.0,
+        "emergency_share_of_load": 0.0010482846740396312
+      },
+      "candidates_verified": 60,
+      "scenario_candidate_replays": 870,
+      "solver_statistics": {
+        "solver_count": 60,
+        "solver_runtime_seconds": 1.25459132900869,
+        "solver_max_runtime_seconds": 0.035782791004749015,
+        "solver_max_mip_gap": 2.239965984738531e-16,
+        "solver_failures": 0,
+        "solver_fallbacks": 0
+      },
+      "artifact_sha256": {
+        "config.json": "8e9f2eebf56d78f5b7f18aa66f6103cc684f55ca852893546aafe7341d279005",
+        "ledger.csv": "df07decbdc53d9e892af332319020431a1b73909738339b4d64708bb2eb030b6",
+        "plans.csv": "238c36fb11acd16efb64377278d5ce96e031bb0eaa9c42741c4fee64df748e60",
+        "daily.csv": "5ef1a84cfd874e20490932af9fb225aecb8e1c9fdf3d113f81c09fa6db204b0f",
+        "summary.json": "1f453125004b7b7387e901e1563fa84933bfbb48a471808401842b7396a73638",
+        "decisions.json": "f4948008ac03882241ba7a70a68385e2536ca00bde81492e3686685bd58da1ea",
+        "decision_evidence.npz": "be23b3f6c582668092b480b25c4f27e8281b79294c0ed85ef08bf7e4c465d3c2"
+      }
+    },
+    "january/P_floor": {
+      "passed": true,
+      "checks": [],
+      "check_groups": 289,
+      "comparisons": 59156,
+      "failed_groups": 0,
+      "checks_contains": "failures_only; all groups included in counts and error maxima",
+      "max_abs_error_by_tolerance": {
+        "0": 0,
+        "1e-06": 2.1032064978498966e-12,
+        "1e-05": 8.731149137020111e-11
+      },
+      "totals": {
+        "grid_plan_kwh": 297497.3309757612,
+        "emergency_kwh": 135.7354390649465,
+        "planned_cost_yuan": 181283.64174573292,
+        "emergency_cost_yuan": 766.5501838425264,
+        "total_cost_yuan": 182050.19192957543,
+        "charge_actual_kwh": 82936.91248403127,
+        "discharge_actual_kwh": 70584.23274785047,
+        "surplus_kwh": 20204.269811978702,
+        "unused_grid_kwh": 14783.856018961134,
+        "pv_curtailment_kwh": 5420.413793017565,
+        "days": 4.0,
+        "intervals": 576.0,
+        "initial_energy_kwh": 6000.0,
+        "final_energy_kwh": 2216.295960238727,
+        "inventory_value_yuan_per_kwh": 0.6895775000000001,
+        "inventory_adjusted_cost_yuan": 184659.3491020539,
+        "emergency_intervals": 4.0,
+        "emergency_days": 2.0,
+        "emergency_share_of_load": 0.00032640025723605946
+      },
+      "candidates_verified": 4,
+      "scenario_candidate_replays": 58,
+      "solver_statistics": {
+        "solver_count": 4,
+        "solver_runtime_seconds": 0.07410879300732631,
+        "solver_max_runtime_seconds": 0.0289555420022225,
+        "solver_max_mip_gap": 0.0,
+        "solver_failures": 0,
+        "solver_fallbacks": 0
+      },
+      "artifact_sha256": {
+        "config.json": "130c4357e6edc48916ac21989f2ea1d998e3c700b800b6dd872188cb17d92dfe",
+        "ledger.csv": "44a42c69caa80b9813179542dc331730c820cfa7407479bfc49b95f427d3d325",
+        "plans.csv": "73165d07f94d01c4893cd9446989f25a211fa5d4556eac47347060aa803a3802",
+        "daily.csv": "0e17de451b021ee38285c8f0ad8cbcc043571409db4f0c8f1845c353e55a1b08",
+        "summary.json": "b0fa2c5f6bed478efd164a74226005c7f22b95a659e50335dc9e95166c00c352",
+        "decisions.json": "0759867f07d0b4b24230892a54e27a0236373a31ac9f3e7959f2294aeafd2ace",
+        "decision_evidence.npz": "e2e7f28468d9464051e181a52d1b13a833e9034d58e2baab5cf4f7965f6b528a"
+      }
+    }
+  },
+  "references": {},
+  "validator_sha256": "fed23258d0a2ce988ccc79d1425a7901bde141399c7060cab64d88afb0fd2e03",
+  "limitations": [
+    "Processed source was independently audited; raw XLSX cleaning was not repeated.",
+    "Solver evidence is checked against independently reconstructed feasible candidates, without rerunning all MILPs.",
+    "Historical replay is not a prospective held-out validation; interval balancing uses the inherited within-slot response assumption."
+  ]
+}

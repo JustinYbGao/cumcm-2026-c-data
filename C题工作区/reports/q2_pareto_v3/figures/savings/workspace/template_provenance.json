@@ -1,0 +1,18 @@
+{
+  "source_catalog_sha256": "4c09d0ab2aece35a9fec50a202525995e6864985cb7fb3eca2254759bcb52f12",
+  "source_script": "/Users/justingao/.codex/skills/modelviz-skill/templates/02_CMP_comparison_ranking/02_CMP_005/渐变单因子条形图.py",
+  "source_script_sha256": "c0a678d6d652377449f9ebb2a246a65f2c1a273150f95793c7fb23031b549697",
+  "source_preview": "/Users/justingao/.codex/skills/modelviz-skill/templates/02_CMP_comparison_ranking/02_CMP_005/assets/preview.png",
+  "source_preview_sha256": "b86dd8b852dfe31a340390bd5fa0030a17a0fcf140d86ddc406f2e5c692cf0f6",
+  "original_dependencies": [
+    "pillow",
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "local_catalog_additions": [
+    "numpy",
+    "pandas"
+  ],
+  "reason": "Adapter dependency preflight; bundled service validates before extra-dependency pass. Original catalog/template are unchanged."
+}

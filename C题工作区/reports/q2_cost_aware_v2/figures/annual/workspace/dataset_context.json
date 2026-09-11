@@ -1,0 +1,147 @@
+{
+  "file_name": "data.csv",
+  "file_type": "csv",
+  "sheet_name": null,
+  "row_count": 9,
+  "column_count": 5,
+  "column_names": [
+    "policy",
+    "planned_cost_yuan",
+    "emergency_cost_yuan",
+    "total_cost_yuan",
+    "relaxed_lower_bound_yuan"
+  ],
+  "sample_records": [
+    {
+      "policy": "B0",
+      "planned_cost_yuan": 11987831.567381367,
+      "emergency_cost_yuan": 4345851.825469283,
+      "total_cost_yuan": 16333683.392850649,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "B1",
+      "planned_cost_yuan": 12263657.576506453,
+      "emergency_cost_yuan": 3114549.774286757,
+      "total_cost_yuan": 15378207.350793209,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "P",
+      "planned_cost_yuan": 13567664.565959878,
+      "emergency_cost_yuan": 641845.2793936513,
+      "total_cost_yuan": 14209509.845353533,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "P_terminal",
+      "planned_cost_yuan": 13395135.420731423,
+      "emergency_cost_yuan": 640493.3727182364,
+      "total_cost_yuan": 14035628.793449664,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "P_floor",
+      "planned_cost_yuan": 13361564.945683166,
+      "emergency_cost_yuan": 661273.6528153808,
+      "total_cost_yuan": 14022838.598498546,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "S_terminal",
+      "planned_cost_yuan": 13361633.361082146,
+      "emergency_cost_yuan": 660044.4512763959,
+      "total_cost_yuan": 14021677.81235854,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "S_joint",
+      "planned_cost_yuan": 13239940.726312116,
+      "emergency_cost_yuan": 840832.0447178853,
+      "total_cost_yuan": 14080772.77103,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "P_B1",
+      "planned_cost_yuan": 13750060.199329784,
+      "emergency_cost_yuan": 563768.1905106914,
+      "total_cost_yuan": 14313828.389840476,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "P_B1_floor",
+      "planned_cost_yuan": 13543591.757924575,
+      "emergency_cost_yuan": 583631.1008132328,
+      "total_cost_yuan": 14127222.858737808,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    }
+  ],
+  "head_records": [
+    {
+      "policy": "B0",
+      "planned_cost_yuan": 11987831.567381367,
+      "emergency_cost_yuan": 4345851.825469283,
+      "total_cost_yuan": 16333683.392850649,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "B1",
+      "planned_cost_yuan": 12263657.576506453,
+      "emergency_cost_yuan": 3114549.774286757,
+      "total_cost_yuan": 15378207.350793209,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "P",
+      "planned_cost_yuan": 13567664.565959878,
+      "emergency_cost_yuan": 641845.2793936513,
+      "total_cost_yuan": 14209509.845353533,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "P_terminal",
+      "planned_cost_yuan": 13395135.420731423,
+      "emergency_cost_yuan": 640493.3727182364,
+      "total_cost_yuan": 14035628.793449664,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "P_floor",
+      "planned_cost_yuan": 13361564.945683166,
+      "emergency_cost_yuan": 661273.6528153808,
+      "total_cost_yuan": 14022838.598498546,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "S_terminal",
+      "planned_cost_yuan": 13361633.361082146,
+      "emergency_cost_yuan": 660044.4512763959,
+      "total_cost_yuan": 14021677.81235854,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "S_joint",
+      "planned_cost_yuan": 13239940.726312116,
+      "emergency_cost_yuan": 840832.0447178853,
+      "total_cost_yuan": 14080772.77103,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "P_B1",
+      "planned_cost_yuan": 13750060.199329784,
+      "emergency_cost_yuan": 563768.1905106914,
+      "total_cost_yuan": 14313828.389840476,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    },
+    {
+      "policy": "P_B1_floor",
+      "planned_cost_yuan": 13543591.757924575,
+      "emergency_cost_yuan": 583631.1008132328,
+      "total_cost_yuan": 14127222.858737808,
+      "relaxed_lower_bound_yuan": 12227565.30317241
+    }
+  ],
+  "sampled": false,
+  "sample_strategy": "数据行数 9 未超过阈值，提供前 9 行作为样例。",
+  "warnings": []
+}

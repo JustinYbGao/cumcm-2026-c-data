@@ -1,0 +1,86 @@
+{
+  "template_id": "trd_composite_line_bar_dual_axis",
+  "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "plot_goal": "Two observed cost lines and signed savings bars share each original month. Preserve TRD_004 line/bar dual-axis composition, serif labels and muted palette; remove fitted trend and significance claims; repeat for two fixed baselines.",
+  "selected_columns": [
+    "month",
+    "B0",
+    "B1",
+    "P",
+    "E",
+    "PE"
+  ],
+  "column_mappings": [
+    {
+      "data_column": "month",
+      "template_role": "Category/time key",
+      "reason": ""
+    },
+    {
+      "data_column": "B0",
+      "template_role": "Observed cost in CNY; convert for display",
+      "reason": ""
+    },
+    {
+      "data_column": "B1",
+      "template_role": "Observed cost in CNY; convert for display",
+      "reason": ""
+    },
+    {
+      "data_column": "P",
+      "template_role": "Observed cost in CNY; convert for display",
+      "reason": ""
+    },
+    {
+      "data_column": "E",
+      "template_role": "Observed cost in CNY; convert for display",
+      "reason": ""
+    },
+    {
+      "data_column": "PE",
+      "template_role": "Observed cost in CNY; convert for display",
+      "reason": ""
+    }
+  ],
+  "required_preprocessing": [
+    "Read CSV; preserve original dates and declared policy order; divide CNY by display unit only"
+  ],
+  "required_dependencies": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "layout_elements_to_preserve": [
+    "Matplotlib",
+    "Serif typography",
+    "Muted blue/orange palette",
+    "Horizontal grids",
+    "Shared month axis, paired lines and auxiliary savings bars"
+  ],
+  "style_elements_to_preserve": [
+    "Matplotlib",
+    "Serif typography",
+    "Muted blue/orange palette",
+    "Horizontal grids",
+    "Shared month axis, paired lines and auxiliary savings bars"
+  ],
+  "elements_allowed_to_change": [
+    "Replace all demonstration values with exact CSV columns",
+    "English labels and units",
+    "No interpolation, fitted trend or significance stars; disclose daily losses",
+    "Export 300 dpi PNG and SVG"
+  ],
+  "title_plan": "English Q2 economic outcome",
+  "axis_plan": "Explicit million CNY; monthly savings on disclosed second axis in thousand CNY",
+  "legend_plan": "Separated upper legend band",
+  "annotation_plan": "Totals, conditional E/PE caveat and daily losses",
+  "output_formats": [
+    "png",
+    "svg"
+  ],
+  "warnings": [
+    "Historical conditional results; no future guarantee"
+  ],
+  "can_proceed": true,
+  "clarification_question": ""
+}

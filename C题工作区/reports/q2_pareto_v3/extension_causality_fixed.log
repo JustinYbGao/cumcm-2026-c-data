@@ -1,0 +1,36 @@
+{'policy': 'X_morning90', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 802.5181559305157, 'passed': True}
+X_strong_morning85 2025-01-24 cumulative_cost 24989.19868562015
+DONE extension_causality_original X_strong_morning85 111287.72446004886 25.77362514425515
+X_strong_morning85 2025-01-24 cumulative_cost 24989.19868562015
+DONE extension_causality_mutated X_strong_morning85 939744.4763949153 820759.3525914279
+{'policy': 'X_strong_morning85', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 802.5181559305157, 'passed': True}
+X_day60 2025-01-24 cumulative_cost 24661.45987535484
+DONE extension_causality_original X_day60 110746.11647228626 398.10142756815503
+X_day60 2025-01-24 cumulative_cost 24661.45987535484
+DONE extension_causality_mutated X_day60 942614.3437658543 824685.5707849632
+{'policy': 'X_day60', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 802.5181559305157, 'passed': True}
+X_day50 2025-01-24 cumulative_cost 24303.377324543624
+DONE extension_causality_original X_day50 113286.5290104347 4059.7182002178533
+X_day50 2025-01-24 cumulative_cost 24303.377324543624
+DONE extension_causality_mutated X_day50 945731.9874581213 828901.0848075727
+{'policy': 'X_day50', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 802.5181559305157, 'passed': True}
+X_day60_morning85 2025-01-24 cumulative_cost 24744.84339851256
+DONE extension_causality_original X_day60_morning85 110625.15618794446 25.77362514425515
+X_day60_morning85 2025-01-24 cumulative_cost 24744.84339851256
+DONE extension_causality_mutated X_day60_morning85 941910.7728337768 823730.9821846965
+{'policy': 'X_day60_morning85', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 802.5181559305157, 'passed': True}
+X_evening85_day60 2025-01-24 cumulative_cost 23831.60091113294
+DONE extension_causality_original X_evening85_day60 111714.8438390725 3022.877932596173
+X_evening85_day60 2025-01-24 cumulative_cost 23831.60091113294
+DONE extension_causality_mutated X_evening85_day60 972764.6829070615 862948.4141027804
+{'policy': 'X_evening85_day60', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 640.7050351744417, 'passed': True}
+X_uniform70 2025-01-24 cumulative_cost 23353.40845786523
+DONE extension_causality_original X_uniform70 109803.41521420378 2118.6015404789005
+X_uniform70 2025-01-24 cumulative_cost 23353.40845786523
+DONE extension_causality_mutated X_uniform70 976097.7057701313 867688.2964211493
+{'policy': 'X_uniform70', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 640.7050351744416, 'passed': True}
+X_uniform75 2025-01-24 cumulative_cost 23946.539639929848
+DONE extension_causality_original X_uniform75 109547.99124448327 75.68586228383627
+X_uniform75 2025-01-24 cumulative_cost 23946.539639929848
+DONE extension_causality_mutated X_uniform75 971136.6518457913 860783.5910253881
+{'policy': 'X_uniform75', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 640.7050351744418, 'passed': True}

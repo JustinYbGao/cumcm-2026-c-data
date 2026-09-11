@@ -1,0 +1,217 @@
+{
+  "passed": true,
+  "method": "Independent pandas readback; selected exact dates/slots from independently validated main ledgers, reaggregated four-hour charge/discharge, compared all saved columns and emergency rows. Missing non-risk metadata compared equal_nan; booleans compared as booleans. No producer imports.",
+  "checks": [
+    {
+      "check": "B0.four_days",
+      "passed": true,
+      "rows": 576,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "B0.table1_intervals",
+      "passed": true,
+      "rows": 24,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "B0.table1_daily",
+      "passed": true,
+      "rows": 4,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "B0.table2_charge_discharge",
+      "passed": true,
+      "rows": 24,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "B0.table3_emergencies",
+      "passed": true,
+      "rows": 42,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "B1.four_days",
+      "passed": true,
+      "rows": 576,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "B1.table1_intervals",
+      "passed": true,
+      "rows": 24,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "B1.table1_daily",
+      "passed": true,
+      "rows": 4,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "B1.table2_charge_discharge",
+      "passed": true,
+      "rows": 24,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "B1.table3_emergencies",
+      "passed": true,
+      "rows": 28,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "P.four_days",
+      "passed": true,
+      "rows": 576,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "P.table1_intervals",
+      "passed": true,
+      "rows": 24,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "P.table1_daily",
+      "passed": true,
+      "rows": 4,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "P.table2_charge_discharge",
+      "passed": true,
+      "rows": 24,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "P.table3_emergencies",
+      "passed": true,
+      "rows": 1,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "E.four_days",
+      "passed": true,
+      "rows": 576,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "E.table1_intervals",
+      "passed": true,
+      "rows": 24,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "E.table1_daily",
+      "passed": true,
+      "rows": 4,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "E.table2_charge_discharge",
+      "passed": true,
+      "rows": 24,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "E.table3_emergencies",
+      "passed": true,
+      "rows": 221,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "PE.four_days",
+      "passed": true,
+      "rows": 576,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "PE.table1_intervals",
+      "passed": true,
+      "rows": 24,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "PE.table1_daily",
+      "passed": true,
+      "rows": 4,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "PE.table2_charge_discharge",
+      "passed": true,
+      "rows": 24,
+      "max_numeric_difference": 0.0
+    },
+    {
+      "check": "PE.table3_emergencies",
+      "passed": true,
+      "rows": 99,
+      "max_numeric_difference": 0.0
+    }
+  ],
+  "artifact_sha256": {
+    "results/emergency_improvement_v1/runs/B0/ledger.csv": "7b0547b7d1c406c91a09abc6551a05a849a1c5fc5c812330314a17405d23a23e",
+    "results/emergency_improvement_v1/runs/B0/daily.csv": "15e6ad4b0c39cc8a046d1aa320fcc3b6536d62ebbc1e814bbb25f20a1e32430c",
+    "results/emergency_improvement_v1/representative/B0/four_days_ledger.csv": "1a483b33c1bdd88bbf963cde6443ca09867689b968d8a25b80344f19909a0bb0",
+    "results/emergency_improvement_v1/representative/B0/table1_intervals.csv": "5b75e06ebfb0b2c980bc2b2f71fad129192501b83297a2267c3a1615746db688",
+    "results/emergency_improvement_v1/representative/B0/table1_daily_and_terminal.csv": "3fcad3523f03ade106dfe679cb9758a31f61319be5942aadbdcda6eb8dd2a1b4",
+    "results/emergency_improvement_v1/representative/B0/table2_charge_discharge.csv": "f252c366e55759662cdbec5c755b62240ea2f73b787ef46c1ec79750f6cc2025",
+    "results/emergency_improvement_v1/representative/B0/table3_emergency_intervals.csv": "55ac438f4ea47976b92a0bdbda7c2591d4a3e9ab07ed66b906766dac3d9cde6b",
+    "results/emergency_improvement_v1/runs/B1/ledger.csv": "4ff3e944c66648f00d709166d358241be74671e084222cfa3ade4a3ef5d0c478",
+    "results/emergency_improvement_v1/runs/B1/daily.csv": "82d8dc4f4da71e6dacc712dfb9566761ac8817fd4719a54608a2298847f97551",
+    "results/emergency_improvement_v1/representative/B1/four_days_ledger.csv": "ec004a307c5eaa6996b0c0a4d9ccc337798c23b59485fb7fcde2401f025fa3c3",
+    "results/emergency_improvement_v1/representative/B1/table1_intervals.csv": "83672c362f3741061cb2937188bd6e6829e4079dd1ea209312ef28ad4b63df0d",
+    "results/emergency_improvement_v1/representative/B1/table1_daily_and_terminal.csv": "2657e9aa7d41cb34d616d8122109b375eb5db6269cad06ec05ea92958b55bada",
+    "results/emergency_improvement_v1/representative/B1/table2_charge_discharge.csv": "c48608851fda34743cfc50f8e6ae769071a818591f669749670c5430b975a18d",
+    "results/emergency_improvement_v1/representative/B1/table3_emergency_intervals.csv": "36b6ed026d7b2ee824b32e1092a77fefa0b54aad5b6ed5b05ed22b7590770c39",
+    "results/emergency_improvement_v1/runs/P/ledger.csv": "5147190954bc6b620854ed4bc52533c116bad1deb73b53224ec39ebd53675b58",
+    "results/emergency_improvement_v1/runs/P/daily.csv": "6c7d71ee6f0d3fb89902202e44d710ddd805d6559ed286ee94e22ea114cad0b9",
+    "results/emergency_improvement_v1/representative/P/four_days_ledger.csv": "2eea448109ed112cae09f5e6d317ff0409246d540579e4b9001931db3bff652e",
+    "results/emergency_improvement_v1/representative/P/table1_intervals.csv": "9c6b70180be36db275a65c8b2a82b913425214068993384e2081b89bf1935d8b",
+    "results/emergency_improvement_v1/representative/P/table1_daily_and_terminal.csv": "bc66257a4025e97d591eb6a19c3154d21ba4f6ce06f748d068ab3d70ef89c26e",
+    "results/emergency_improvement_v1/representative/P/table2_charge_discharge.csv": "19423d0836b6e91b5753c1ef8bf76cb812e090d461c836f4b18102dbebde3c28",
+    "results/emergency_improvement_v1/representative/P/table3_emergency_intervals.csv": "53c8e455b1456a08043c4497612c10d00ca60ef1721c10a2c492e781238827b6",
+    "results/emergency_improvement_v1/runs/E/ledger.csv": "98512e72c93768e6cb84703a49c008daa2e45ca4d2ae9cca1a1b8695e9216d9e",
+    "results/emergency_improvement_v1/runs/E/daily.csv": "6697a0cf585b9eface3338dbd5f111c15cd11cd1520a387f30696a8c36ec5b4e",
+    "results/emergency_improvement_v1/representative/E/four_days_ledger.csv": "c426c75708f642ca766cfc0112fc6e93cb69631230747a85f373a61f74442fc2",
+    "results/emergency_improvement_v1/representative/E/table1_intervals.csv": "5b75e06ebfb0b2c980bc2b2f71fad129192501b83297a2267c3a1615746db688",
+    "results/emergency_improvement_v1/representative/E/table1_daily_and_terminal.csv": "b0842288ebf64a3054777c96d0c894b8eda3f5f01c03ead2c7a66b0f3f45b1ae",
+    "results/emergency_improvement_v1/representative/E/table2_charge_discharge.csv": "02a1145f863879052cb26a5686777d96d1e0541bac33304f302e8d65445c42a7",
+    "results/emergency_improvement_v1/representative/E/table3_emergency_intervals.csv": "169948e8014e59bc81a41d676330cf543e9ae8663db817425b6344b98ae36a44",
+    "results/emergency_improvement_v1/runs/PE/ledger.csv": "5790709645806f8d86e62c65438f386418d15a0744c36b46713650bae3d5a9f1",
+    "results/emergency_improvement_v1/runs/PE/daily.csv": "f2217b19e53d97bb2fbf09ac08acc89b817ae54ea12ab3dee79e464c3b4a263c",
+    "results/emergency_improvement_v1/representative/PE/four_days_ledger.csv": "3a6a03f176d4e5aa80587918bc016a00a49bbd8f7edf0151b44622e4209f135a",
+    "results/emergency_improvement_v1/representative/PE/table1_intervals.csv": "9c6b70180be36db275a65c8b2a82b913425214068993384e2081b89bf1935d8b",
+    "results/emergency_improvement_v1/representative/PE/table1_daily_and_terminal.csv": "719ab17b86302cd70e97334911a175b9418434e3572cf6a88aa917ae2d19e0c9",
+    "results/emergency_improvement_v1/representative/PE/table2_charge_discharge.csv": "46f8fa0e95b7aaf8037249a3a1db843b3fe91eefad2c3b7356103b5431a5adf9",
+    "results/emergency_improvement_v1/representative/PE/table3_emergency_intervals.csv": "2b9aba9dfb27ba33682f1894bb2a169573696073628a6470a770b721c6197f8a"
+  },
+  "previous_attempt": {
+    "passed": false,
+    "failed_checks": [
+      {
+        "check": "B0.four_days",
+        "passed": false,
+        "rows": 576,
+        "max_numeric_difference": 0.0
+      },
+      {
+        "check": "B1.four_days",
+        "passed": false,
+        "rows": 576,
+        "max_numeric_difference": 0.0
+      },
+      {
+        "check": "E.four_days",
+        "passed": false,
+        "rows": 576,
+        "max_numeric_difference": 0.0
+      }
+    ],
+    "reason": "Checker treated matching NaN risk-history metadata in non-risk policies as unequal; no numeric or exported artifact difference. A first pre-output checker call also attempted boolean subtraction; both checker issues corrected without product changes."
+  }
+}

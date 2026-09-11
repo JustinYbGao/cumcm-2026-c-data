@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "validator_sha256": "db0f49ff98da8c860ab1e97f1cde46e88651b537703ac68052187c0df7a818b2",
+  "reports": {
+    "independent_validation.json": "d6f58e0b9b308212ba1ddd27bba2f65e38920ed5d53e91bea3402850efe4e087",
+    "independent_validation_extension_all.json": "e48796c902b24b6fc5259971aadc55bae067ded462be53aef85823c11a72813b"
+  },
+  "annual_paths": 18,
+  "annual_candidates": 14028,
+  "annual_scenario_candidate_replays": 707819,
+  "max_annual_errors": {
+    "1e-06": 3.4071945265168324e-09,
+    "1e-05": 1.7462298274040222e-10
+  },
+  "old_files_preserved": 3668,
+  "reference_policies": [
+    "B0",
+    "B1",
+    "P",
+    "P_terminal",
+    "P_floor",
+    "S_terminal"
+  ],
+  "best_observed_policy": "X_strong_morning85",
+  "scope": "Original ten and subsequent eight frozen Q2 paths, all candidate physics, source forecasts, scenario scores, CVaR, masks, decisions, causal replays and analysis. Original and changed user acceptance definitions are preserved separately."
+}

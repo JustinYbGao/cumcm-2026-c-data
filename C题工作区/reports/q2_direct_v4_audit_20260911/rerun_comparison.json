@@ -1,0 +1,16 @@
+{
+  "ledger_max_numeric_difference": 0.0,
+  "text_identical": true,
+  "candidate_arrays_identical": {
+    "q": true,
+    "initializer_plan": true,
+    "risk_delta": true,
+    "scenario_net": true,
+    "emergency_fee": true,
+    "end_energy": true,
+    "score": true,
+    "ordinary": true,
+    "selected_index": true
+  },
+  "passed": true
+}

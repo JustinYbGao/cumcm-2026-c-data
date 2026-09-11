@@ -1,0 +1,9 @@
+{
+  "policy": "D112",
+  "start": "2025-07-14",
+  "end": "2025-07-16",
+  "initial_energy_kwh": 6000.0,
+  "scenario_window": 112,
+  "kappa": 5,
+  "mu": 0.38232
+}

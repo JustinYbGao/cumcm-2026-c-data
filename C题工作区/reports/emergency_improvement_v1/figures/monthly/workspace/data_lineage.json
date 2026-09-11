@@ -1,0 +1,7 @@
+{
+  "source": "/Users/justingao/Documents/CUMCM/C题工作区/results/emergency_improvement_v1/monthly_costs_and_differences.csv",
+  "source_sha256": "0d554374c776c6ba7f15d96a2e43651472a83358f8c0f08f51cabd74a4908178",
+  "plot_data_sha256": "d7c45337966ee501b2dfb00c5c34aa6d0ade93bb73b98b5683e4714632b70dfa",
+  "rows": 11,
+  "transform": "Select declared policies/columns; preserve exact data and dates. CNY to million CNY for display."
+}

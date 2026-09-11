@@ -1,5 +1,7 @@
 # Paper Review Findings
 
+> Revision note (2026-09-11): the original review below is preserved. Current dispositions are in [issue_resolution.md](../reports/revision_v1/issue_resolution.md). The friend's commit is merged into the working branch, the manuscript has been repaired, and five populated internal-review workbooks are available. Official conventions and final PDF/AI human-review gates remain separate from internal validation.
+
 ## Evidence reviewed
 
 - Current `main` at commit `861e840`: verified Q1–Q3 drafts, data processing, result ledgers, and validation records.

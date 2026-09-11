@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "scope": "Independent code/numerical and all nine BZD model-solution sections of Q2 research and supplement, including fixed reproduction dependency. No formal whole-paper/PDF or not-yet-created ZIP certification.",
+  "checks": {
+    "reports/emergency_improvement_v1/independent_validation.json": true,
+    "reports/emergency_improvement_v1/independent_validation_representative.json": true,
+    "reports/emergency_improvement_v1/independent_validation_reproduction_order.json": true,
+    "reports/emergency_improvement_v1/reproduction_dependency_validation.json": true,
+    "reports/emergency_improvement_v1/reproduction_january_gate.json": true,
+    "precise_independent_validation_role": true,
+    "nine_bzd_sections_present": true,
+    "auditor_script_matches_final_numeric_evidence": true
+  },
+  "reviewed_file_sha256": {
+    "reports/emergency_improvement_v1/research_report.md": "d92d0ce1654a21ddae0de64fb19bafb75ed9b1f6c408f572b2f80edec295da12",
+    "papers/emergency_improvement_v1/paper_supplement.md": "811a244fa8bc5f3718b5ee4aff5f9b8ea5571b869a1bd05c324a8a0a5e6c63d0",
+    "reports/emergency_improvement_v1/README.md": "ac91480f86e6f2e64f22ef73fab0208c71b287fab7e9ae394225b212697c9141",
+    "scripts/emergency_improvement_v1/reproduce.py": "4d11fd504ebf81560cb4ccf68516ff8794d898ddd03ef2faece3c8a5898f56a7",
+    "reports/emergency_improvement_v1/independent_review.md": "ee46e86c3c56eefe1247427a7fa6cfb293e577bb9e8790176e13f4afa7bec3ed",
+    "reports/emergency_improvement_v1/independent_validation.json": "3b6e76d7120703d0953c7ca0a4d399c1c5622a1f000b610ab78cbcff9fe4f250",
+    "reports/emergency_improvement_v1/independent_validation_representative.json": "8c8ab7fd6f0dec9d2f62447f418f9e72b05d605900f771e06053f48750e11581",
+    "reports/emergency_improvement_v1/independent_validation_reproduction_order.json": "a878ec68ecc474110f127fa53049e121f91ae507ea4f49070a659f6014eef219",
+    "reports/emergency_improvement_v1/reproduction_dependency_validation.json": "728e57572aba48dc01ca12b0c2cec73b366b0f422f09e0f0b4f72c0134563048",
+    "reports/emergency_improvement_v1/reproduction_january_gate.json": "dc3244995f5d5b1fa40a6ae51275b50f1680c5990e33b298935402f491c6c3c5"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "success": true,
+  "python_executable": "/Users/justingao/Documents/CUMCM/C题工作区/.venv/bin/python",
+  "required_dependencies": [
+    "matplotlib",
+    "pandas",
+    "scipy",
+    "Pillow",
+    "numpy"
+  ],
+  "installed_dependencies": [
+    {
+      "import_name": "matplotlib",
+      "package_name": "matplotlib",
+      "installed_version": "3.11.1",
+      "available": true
+    },
+    {
+      "import_name": "pandas",
+      "package_name": "pandas",
+      "installed_version": "2.2.3",
+      "available": true
+    },
+    {
+      "import_name": "scipy",
+      "package_name": "scipy",
+      "installed_version": "1.18.1",
+      "available": true
+    },
+    {
+      "import_name": "PIL",
+      "package_name": "Pillow",
+      "installed_version": "12.3.0",
+      "available": true
+    },
+    {
+      "import_name": "numpy",
+      "package_name": "numpy",
+      "installed_version": "2.3.5",
+      "available": true
+    }
+  ],
+  "missing_dependencies": [],
+  "unresolved_dependencies": [],
+  "version_conflicts": [],
+  "warnings": []
+}

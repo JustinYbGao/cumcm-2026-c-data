@@ -1,0 +1,839 @@
+{
+  "created_utc": "2026-09-11T17:26:26.998439+00:00",
+  "passed": true,
+  "scope": "january",
+  "extension": true,
+  "independence": "Only standard library, numpy and pandas; no imports from producer predictor/planner/scorer/executor.",
+  "tolerances": {
+    "physical_kwh": 1e-06,
+    "cost_yuan": 1e-05
+  },
+  "sources": {
+    "passed": true,
+    "checks": [
+      {
+        "check": "source_snapshot.actual_10min.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.fixed_price.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.model_baseline.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.q2_baseline.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.original_run_q2.py",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.original_solve_q1.py",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.problem_text.txt",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.selection.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.bzd_quantile_record.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "original_baseline_snapshot.B0",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "original_baseline_snapshot.B1",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "original_baseline_snapshot.no_storage",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.ledger.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.plans.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.daily.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.summary.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.config.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.models_and_solvers.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.ledger.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.plans.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.daily.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.summary.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.config.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.models_and_solvers.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.ledger.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.plans.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.daily.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.summary.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.config.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.models_and_solvers.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.ledger.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.plans.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.daily.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.summary.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.config.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.models_and_solvers.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "protocol.frozen_sha256",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.frozen_sha256",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.main_predeclared",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.seven_predeclared",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.library.S_tau",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.period.S_tau",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.initial.S_tau",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "config.windows.S_tau",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.library.S_terminal",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.period.S_terminal",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.initial.S_terminal",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "config.windows.S_terminal",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.library.S_joint",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.period.S_joint",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.initial.S_joint",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "config.windows.S_joint",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.library.S_w14",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.period.S_w14",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.initial.S_w14",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "config.windows.S_w14",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.library.S_w56",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.period.S_w56",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.initial.S_w56",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "config.windows.S_w56",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.library.S_no_inventory",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.period.S_no_inventory",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.initial.S_no_inventory",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "config.windows.S_no_inventory",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.library.P_floor",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.period.P_floor",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.initial.P_floor",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "config.windows.P_floor",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "protected_files_unchanged",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "count": 3268,
+          "changed": []
+        }
+      },
+      {
+        "check": "actual.complete_unique_ordered",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "expected_rows": 52560,
+          "actual_rows": 52560,
+          "duplicates": 0
+        }
+      },
+      {
+        "check": "price.slots",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "price.start_minutes",
+        "passed": true,
+        "comparisons": 144,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "price.end_minutes",
+        "passed": true,
+        "comparisons": 144,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "actual.units.load",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "actual.units.pv",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "actual.nonnegative",
+        "passed": true,
+        "comparisons": 105120,
+        "failures": 0
+      },
+      {
+        "check": "price.positive",
+        "passed": true,
+        "comparisons": 144,
+        "failures": 0
+      },
+      {
+        "check": "actual.interval_start",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "actual.interval_end",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "actual.available_time",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "archive.complete_unique_ordered",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "expected_rows": 52416,
+          "actual_rows": 52416,
+          "duplicates": 0
+        }
+      },
+      {
+        "check": "archive.issue_time",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0
+      },
+      {
+        "check": "archive.history_end",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0
+      },
+      {
+        "check": "archive.residual_available_time",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0
+      },
+      {
+        "check": "archive.source.load_actual_kwh",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "archive.source.pv_actual_kwh",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "archive.load_from_history",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "archive.pv_from_history",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "archive.net_error",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "seasonal.complete_unique_ordered",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "expected_rows": 52416,
+          "actual_rows": 52416,
+          "duplicates": 0
+        }
+      },
+      {
+        "check": "seasonal.load_history",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "seasonal.pv_history",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "seasonal.net_error",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "seasonal.issue_time",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0
+      },
+      {
+        "check": "seasonal.history_end",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0
+      },
+      {
+        "check": "seasonal.residual_available_time",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0
+      },
+      {
+        "check": "extension.protocol_frozen",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "extension.config_frozen",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      }
+    ],
+    "check_groups": 98,
+    "comparisons": 1102251,
+    "failed_groups": 0
+  },
+  "completeness": {
+    "passed": true,
+    "checks": [
+      {
+        "check": "january.path_set",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      }
+    ],
+    "check_groups": 1,
+    "comparisons": 1,
+    "failed_groups": 0
+  },
+  "runs": {
+    "january/P_B1": {
+      "passed": true,
+      "checks": [],
+      "check_groups": 289,
+      "comparisons": 59156,
+      "failed_groups": 0,
+      "checks_contains": "failures_only; all groups included in counts and error maxima",
+      "max_abs_error_by_tolerance": {
+        "0": 0,
+        "1e-06": 2.0179413695586845e-12,
+        "1e-05": 5.820766091346741e-11
+      },
+      "totals": {
+        "grid_plan_kwh": 306630.77330728393,
+        "emergency_kwh": 126.66833999999949,
+        "planned_cost_yuan": 185137.9212566297,
+        "emergency_cost_yuan": 713.1264627583304,
+        "total_cost_yuan": 185851.04771938804,
+        "charge_actual_kwh": 89940.60973522635,
+        "discharge_actual_kwh": 70394.01682333334,
+        "surplus_kwh": 22134.73186872428,
+        "unused_grid_kwh": 16868.46554740741,
+        "pv_curtailment_kwh": 5266.266321316869,
+        "days": 4.0,
+        "intervals": 576.0,
+        "initial_energy_kwh": 6000.0,
+        "final_energy_kwh": 8730.974513555555,
+        "inventory_value_yuan_per_kwh": 0.6895775000000001,
+        "inventory_adjusted_cost_yuan": 183967.82914176668,
+        "emergency_intervals": 5.0,
+        "emergency_days": 2.0,
+        "emergency_share_of_load": 0.0003045967880199804
+      },
+      "candidates_verified": 4,
+      "scenario_candidate_replays": 58,
+      "solver_statistics": {
+        "solver_count": 4,
+        "solver_runtime_seconds": 0.08994445898861159,
+        "solver_max_runtime_seconds": 0.02596875000745058,
+        "solver_max_mip_gap": 0.0,
+        "solver_failures": 0,
+        "solver_fallbacks": 0
+      },
+      "artifact_sha256": {
+        "config.json": "52dcb256a66b66e7ff5875bc54e261d8d26f087e4587cbabf68969ea0f35d50e",
+        "ledger.csv": "ff520df84c8212ea04f6b40f52d28639363c0f09dc4ba1d1a9984a1e97cb942b",
+        "plans.csv": "f9e3ea9fad14bda04618dd6a08843ddb8bffd829f8c6f4569465d375af1de225",
+        "daily.csv": "6369c321ad12071b4e8ad6a10b2ae510df9a766b0719faefd1e51b5cc129073a",
+        "summary.json": "a325eaffd25b3e5f240c1ddf48539da988f49cccae2983eba194cf8ea1c2ca3e",
+        "decisions.json": "48bbb7f4821dc332b64794214abb1039f7b1abf598a313bc35d432f7fc8c265a",
+        "decision_evidence.npz": "b0a5c2d254f319fb8d5ed5d1a7de7ccb07ca5e50bf9e9595df2ade48cbc76bfd"
+      }
+    },
+    "january/P_B1_floor": {
+      "passed": true,
+      "checks": [],
+      "check_groups": 289,
+      "comparisons": 59156,
+      "failed_groups": 0,
+      "checks_contains": "failures_only; all groups included in counts and error maxima",
+      "max_abs_error_by_tolerance": {
+        "0": 0,
+        "1e-06": 2.0179413695586845e-12,
+        "1e-05": 5.820766091346741e-11
+      },
+      "totals": {
+        "grid_plan_kwh": 298638.5774160494,
+        "emergency_kwh": 126.66833999999949,
+        "planned_cost_yuan": 182013.7177348525,
+        "emergency_cost_yuan": 713.1264627583304,
+        "total_cost_yuan": 182726.84419761083,
+        "charge_actual_kwh": 82857.1466670782,
+        "discharge_actual_kwh": 70482.81355,
+        "surplus_kwh": 21314.79577230452,
+        "unused_grid_kwh": 16048.529450987651,
+        "pv_curtailment_kwh": 5266.266321316869,
+        "days": 4.0,
+        "intervals": 576.0,
+        "initial_energy_kwh": 6000.0,
+        "final_energy_kwh": 2257.1947225925924,
+        "inventory_value_yuan_per_kwh": 0.6895775000000001,
+        "inventory_adjusted_cost_yuan": 185307.79850379223,
+        "emergency_intervals": 5.0,
+        "emergency_days": 2.0,
+        "emergency_share_of_load": 0.0003045967880199804
+      },
+      "candidates_verified": 4,
+      "scenario_candidate_replays": 58,
+      "solver_statistics": {
+        "solver_count": 4,
+        "solver_runtime_seconds": 0.06773962599982042,
+        "solver_max_runtime_seconds": 0.022344708995660767,
+        "solver_max_mip_gap": 2.2517203678714806e-16,
+        "solver_failures": 0,
+        "solver_fallbacks": 0
+      },
+      "artifact_sha256": {
+        "config.json": "163133694099388cf9c2e828437057e8f276d597b9ee78b9da4332a15b0967e8",
+        "ledger.csv": "5f1c15331d6e8a2e141834891168ff8719dd857c6a1dc0ba7154b506db6e581b",
+        "plans.csv": "7ab711e4f8287b05b9d8fc5f41c071a85710e6d690896d2390eeba5beb64cf44",
+        "daily.csv": "85b8c555b06df9bd7768c5f3b92671a32d2a5a8c9ea9780cdbccded694ef1e7e",
+        "summary.json": "b12d437dec5548ecd12b0fcfdf50177de8fe85717b64822f44ca1757450f48a6",
+        "decisions.json": "4079d60fd04e24724796f9c203c665628885667372777c06d9b386cda1941b18",
+        "decision_evidence.npz": "65648eb5c3e6435a39b7277588b8ac9093eb756509125e5d5d5b31670ef2ad3b"
+      }
+    }
+  },
+  "references": {},
+  "lower_bound": {
+    "passed": null,
+    "status": "outside_partial_scope"
+  },
+  "causality": {
+    "passed": null,
+    "status": "outside_partial_scope"
+  },
+  "validator_sha256": "dc2bda337c7c19e913da5512f70e1c6690d88096cede2808a61f2cc7f7353a8c",
+  "limitations": [
+    "Processed source was independently audited; raw XLSX cleaning was not repeated.",
+    "Solver evidence is checked against independently reconstructed feasible candidates, without rerunning all MILPs.",
+    "Historical replay is not a prospective held-out validation; interval balancing uses the inherited within-slot response assumption."
+  ]
+}

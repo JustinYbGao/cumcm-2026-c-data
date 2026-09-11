@@ -1,0 +1,102 @@
+{
+  "dataset_summary": "11 real rows; ['month', 'X_strong_morning85', 'T_strong', 'R_guard', 'R_cost']",
+  "observed_data_features": [],
+  "relevant_columns": [
+    "month",
+    "X_strong_morning85",
+    "T_strong",
+    "R_guard",
+    "R_cost"
+  ],
+  "candidate_comparisons": [
+    {
+      "template_id": "cmp_3d_ribbon_chart",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+      ],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_dual_axis_bar_line",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+      ],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_lag_correlation_analysis",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+      ],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "mpn_scatter_matrix_timeseries_regression",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+      ],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_flowing_percentage_stack",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+      ],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_3d_waterfall_distribution",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+      ],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_smoothed_trend_curves",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+      ],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_composite_line_bar_dual_axis",
+      "suitable": true,
+      "advantages": [
+        "Observed monthly savings compare the best eligible follow-up with fixed and guarded alternatives; losses remain visible."
+      ],
+      "limitations": [],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    }
+  ],
+  "selected_template_id": "trd_composite_line_bar_dual_axis",
+  "selected_template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "alternative_template_ids": [],
+  "selection_reason": "Observed monthly savings compare the best eligible follow-up with fixed and guarded alternatives; losses remain visible.",
+  "data_support_reason": "Data CSV contains all plotted values and their policy/month keys; no synthetic series.",
+  "data_warnings": [],
+  "confidence": 0.96,
+  "needs_clarification": false,
+  "clarification_question": ""
+}

@@ -1,0 +1,14 @@
+S_tau 2025-01-24 cumulative_cost 25570.49179119856
+DONE causality_original S_tau 112449.31276532284 2118.6015404789005
+S_tau 2025-01-24 cumulative_cost 25570.49179119856
+DONE causality_mutated S_tau 966553.0171383395 855740.0064746953
+{'policy': 'S_tau', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 858.7120515133047, 'passed': True}
+S_terminal 2025-01-24 cumulative_cost 24688.731127183935
+DONE causality_original S_terminal 111560.2218584741 25.77362514425515
+S_terminal 2025-01-24 cumulative_cost 24688.731127183935
+DONE causality_mutated S_terminal 965391.7746027166 852764.9204086184
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_cost_aware_v2/causality_checks.py", line 47, in <module>
+    planned=float(abs(pa.loc[frozen,keys].to_numpy()-pb.loc[frozen,keys].to_numpy()).max())
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for -: 'float' and 'str'

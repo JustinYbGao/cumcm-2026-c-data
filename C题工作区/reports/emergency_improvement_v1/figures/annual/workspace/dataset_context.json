@@ -1,0 +1,80 @@
+{
+  "file_name": "data.csv",
+  "file_type": "csv",
+  "sheet_name": null,
+  "row_count": 5,
+  "column_count": 4,
+  "column_names": [
+    "policy",
+    "planned_cost_yuan",
+    "emergency_cost_yuan",
+    "total_cost_yuan"
+  ],
+  "sample_records": [
+    {
+      "policy": "B0",
+      "planned_cost_yuan": 11987831.567381367,
+      "emergency_cost_yuan": 4345851.825469283,
+      "total_cost_yuan": 16333683.392850649
+    },
+    {
+      "policy": "B1",
+      "planned_cost_yuan": 12263657.576506453,
+      "emergency_cost_yuan": 3114549.774286757,
+      "total_cost_yuan": 15378207.350793209
+    },
+    {
+      "policy": "P",
+      "planned_cost_yuan": 13567664.565959878,
+      "emergency_cost_yuan": 641845.2793936513,
+      "total_cost_yuan": 14209509.845353533
+    },
+    {
+      "policy": "E",
+      "planned_cost_yuan": 11988496.010828802,
+      "emergency_cost_yuan": 14197055.53209753,
+      "total_cost_yuan": 26185551.542926338
+    },
+    {
+      "policy": "PE",
+      "planned_cost_yuan": 13567684.042555235,
+      "emergency_cost_yuan": 11102907.25896778,
+      "total_cost_yuan": 24670591.301523015
+    }
+  ],
+  "head_records": [
+    {
+      "policy": "B0",
+      "planned_cost_yuan": 11987831.567381367,
+      "emergency_cost_yuan": 4345851.825469283,
+      "total_cost_yuan": 16333683.392850649
+    },
+    {
+      "policy": "B1",
+      "planned_cost_yuan": 12263657.576506453,
+      "emergency_cost_yuan": 3114549.774286757,
+      "total_cost_yuan": 15378207.350793209
+    },
+    {
+      "policy": "P",
+      "planned_cost_yuan": 13567664.565959878,
+      "emergency_cost_yuan": 641845.2793936513,
+      "total_cost_yuan": 14209509.845353533
+    },
+    {
+      "policy": "E",
+      "planned_cost_yuan": 11988496.010828802,
+      "emergency_cost_yuan": 14197055.53209753,
+      "total_cost_yuan": 26185551.542926338
+    },
+    {
+      "policy": "PE",
+      "planned_cost_yuan": 13567684.042555235,
+      "emergency_cost_yuan": 11102907.25896778,
+      "total_cost_yuan": 24670591.301523015
+    }
+  ],
+  "sampled": false,
+  "sample_strategy": "数据行数 5 未超过阈值，提供前 5 行作为样例。",
+  "warnings": []
+}

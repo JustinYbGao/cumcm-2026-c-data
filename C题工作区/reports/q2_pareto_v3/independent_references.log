@@ -1,0 +1,7 @@
+reference/B0 PASS
+reference/B1 PASS
+reference/P PASS
+reference/P_terminal PASS
+reference/P_floor PASS
+reference/S_terminal PASS
+{"passed": true, "output": "/Users/justingao/Documents/CUMCM/C题工作区/reports/q2_pareto_v3/independent_validation_references.json"}

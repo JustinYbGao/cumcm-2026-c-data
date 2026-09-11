@@ -1,0 +1,18 @@
+{
+  "reviewer": "Codex assistant; actual PNG and original template preview viewed",
+  "inspected_png_sha256": "6617ad93730e03bb3edcc1c7d8d7992d99bff741c7b686f83b71d44f017f36f0",
+  "inspected_script_sha256": "2064df486dd1c48a077449ca097b16ebaa7d6e6835d92f181277675862729831",
+  "report": {
+    "passed": true,
+    "requirement_alignment": "English titles, labels, legends and annotations; 300 dpi PNG plus SVG.",
+    "data_expression_quality": "Observed actual costs and exact paired differences; original year and negative monthly outcomes preserved. Certified relaxed bound explicitly not achievable.",
+    "style_preservation": "CMP_003 categorical stacking with white edges or TRD_004 matched line/bar axes; serif typography, muted blue/orange and horizontal grids.",
+    "readability": "Actual rendered PNG inspected. Labels, units, values and footnotes legible; monthly numeric index was repaired to share the observed month axis.",
+    "layout_quality": "Separated title, legend, plot and notes; monthly bars have the same savings scale.",
+    "color_quality": "Blue ordinary bill/compared policy, orange emergency bill/savings, gray reference; dashed bound separately labeled.",
+    "issues": [],
+    "suggested_fixes": [],
+    "needs_repair": false,
+    "confidence": 0.98
+  }
+}

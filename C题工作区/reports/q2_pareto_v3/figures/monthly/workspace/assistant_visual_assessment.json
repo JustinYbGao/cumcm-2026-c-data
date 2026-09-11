@@ -1,0 +1,17 @@
+{
+  "inspected_png_sha256": "4d4abde65fd0df4bfdeb5f3bf431c2021b66b908efccfb880af8d0c71cbddb79",
+  "inspected_script_sha256": "57500775f789cd4d673d68165c8bdac621f7bf7b7eba7f807f0e9337787c2d97",
+  "report": {
+    "passed": true,
+    "requirement_alignment": "Actual PNG inspected: all visible titles, axes, labels, legends and notes are English; negative results retained.",
+    "data_expression_quality": "Real signed savings are measured from zero; all 18 new policies are shown in the fee panels; monthly chart preserves every observed month.",
+    "style_preservation": "Compared with the actual ModelViz previews: horizontal gradient bars and repeated gray panels; composite monthly bar/marker-line design and serif type retained.",
+    "readability": "Legible labels and direct values; no overlap or clipping observed at supplied resolution.",
+    "layout_quality": "Separate title/legend/footnote bands; shared policy order; zero lines and panel units explicit.",
+    "color_quality": "Gradient preserves source palette without representing unsupported significance; cap violations hatched; monthly series distinguishable by markers.",
+    "issues": [],
+    "suggested_fixes": [],
+    "needs_repair": false,
+    "confidence": 0.96
+  }
+}

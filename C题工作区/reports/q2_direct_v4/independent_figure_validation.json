@@ -1,0 +1,464 @@
+{
+  "created_utc": "2026-09-11T18:54:01.287484+00:00",
+  "scope": "figure_validation",
+  "passed": true,
+  "independence": "Standard library, NumPy and pandas only; no production predictor, planner, dispatch, score or gradient imports.",
+  "tolerances": {
+    "physical_kwh": 1e-06,
+    "cost_yuan": 1e-05
+  },
+  "checks": [
+    {
+      "check": "savings.source_hash",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.data_hash",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.all_eight_policies",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.mapping_ordinary_saving_vs_X_strong_morning85_yuan",
+      "passed": true,
+      "comparisons": 8,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "savings.mapping_emergency_saving_vs_X_strong_morning85_yuan",
+      "passed": true,
+      "comparisons": 8,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "savings.mapping_total_saving_vs_X_strong_morning85_yuan",
+      "passed": true,
+      "comparisons": 8,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "savings.mapping_emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 8,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "savings.mapping_passes_improvement",
+      "passed": true,
+      "comparisons": 8,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "savings.png_signature",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.png_300dpi",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.svg_text_available",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.svg_no_chinese_text",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.currency_units",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+157.09",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_-124.77",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+32.32",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+157.26",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_-123.23",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+34.03",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+274.75",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_-194.36",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+80.39",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+44.10",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+5.75",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+49.85",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+55.74",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_-89.92",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_-34.18",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+197.87",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_-275.75",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_-77.88",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+274.04",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_-194.82",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+79.21",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+44.57",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+0.62",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.signed_annotation_+45.19",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.visual_image_sha",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.visual_script_sha",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.independent_actual_image_inspection",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.technical_quality_report.json_passed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.visual_quality_report.json_passed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.final_quality_report.json_passed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.technical_dimensions",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.technical_size",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.selected_from_recalled_candidates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.source_hash",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.data_hash",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.eleven_months",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.mapping_D112",
+      "passed": true,
+      "comparisons": 11,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "monthly.mapping_D56_risk625",
+      "passed": true,
+      "comparisons": 11,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "monthly.mapping_D56_mu0",
+      "passed": true,
+      "comparisons": 11,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "monthly.png_signature",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.png_300dpi",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.svg_text_available",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.svg_no_chinese_text",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.currency_units",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.visual_image_sha",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.visual_script_sha",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.independent_actual_image_inspection",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.technical_quality_report.json_passed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.visual_quality_report.json_passed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.final_quality_report.json_passed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.technical_dimensions",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.technical_size",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "monthly.selected_from_recalled_candidates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "savings.initial_failure_retained",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    }
+  ],
+  "metrics": {
+    "savings": {
+      "png_sha256": "5b1861fe27753da11e81773ac6b1348228c77dfaaf0f4469e52c08656ea831a1",
+      "svg_sha256": "e41b297f01a478f98df97de7d891755d3fc4c27b2c726bfe568296f3e4fc89f9",
+      "dimensions": [
+        4800,
+        2220
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "csv_rows": 8,
+      "visible_svg_text_count": 55,
+      "actual_image_review": "PASS: English labels, signed values and negative months retained; no visible clipping or overlap.",
+      "manual_repair_record_present": true
+    },
+    "monthly": {
+      "png_sha256": "b1602a3eacf6c94c7b518435e5fc20f611195e87465c6851d5f0b8bf94d3b612",
+      "svg_sha256": "d25764e7f05fab35ef66628288b8bed12f7ae1f5d1374701ec18ddfa72637b12",
+      "dimensions": [
+        3900,
+        2040
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "csv_rows": 11,
+      "visible_svg_text_count": 24,
+      "actual_image_review": "PASS: English labels, signed values and negative months retained; no visible clipping or overlap.",
+      "manual_repair_record_present": false
+    }
+  }
+}

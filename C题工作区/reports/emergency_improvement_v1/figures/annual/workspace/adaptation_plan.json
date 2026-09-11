@@ -1,0 +1,74 @@
+{
+  "template_id": "cmp_correlation_stacked_bar",
+  "template_name": "相关性分析堆叠条形图",
+  "plot_goal": "Stacked rectangular columns expose the additive normal and emergency bill. Preserve CMP_003 categorical stacking, white edges, serif typography and horizontal grids; replace correlation demo factors with actual currency components.",
+  "selected_columns": [
+    "policy",
+    "planned_cost_yuan",
+    "emergency_cost_yuan",
+    "total_cost_yuan"
+  ],
+  "column_mappings": [
+    {
+      "data_column": "policy",
+      "template_role": "Category/time key",
+      "reason": ""
+    },
+    {
+      "data_column": "planned_cost_yuan",
+      "template_role": "Observed cost in CNY; convert for display",
+      "reason": ""
+    },
+    {
+      "data_column": "emergency_cost_yuan",
+      "template_role": "Observed cost in CNY; convert for display",
+      "reason": ""
+    },
+    {
+      "data_column": "total_cost_yuan",
+      "template_role": "Observed cost in CNY; convert for display",
+      "reason": ""
+    }
+  ],
+  "required_preprocessing": [
+    "Read CSV; preserve original dates and declared policy order; divide CNY by display unit only"
+  ],
+  "required_dependencies": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "layout_elements_to_preserve": [
+    "Matplotlib",
+    "Serif typography",
+    "Muted blue/orange palette",
+    "Horizontal grids",
+    "Stacked categorical columns with white edges"
+  ],
+  "style_elements_to_preserve": [
+    "Matplotlib",
+    "Serif typography",
+    "Muted blue/orange palette",
+    "Horizontal grids",
+    "Stacked categorical columns with white edges"
+  ],
+  "elements_allowed_to_change": [
+    "Replace all demonstration values with exact CSV columns",
+    "English labels and units",
+    "Show full 5p emergency bill and all declared main policies",
+    "Export 300 dpi PNG and SVG"
+  ],
+  "title_plan": "English Q2 economic outcome",
+  "axis_plan": "Explicit million CNY; monthly savings on disclosed second axis in thousand CNY",
+  "legend_plan": "Separated upper legend band",
+  "annotation_plan": "Totals, conditional E/PE caveat and daily losses",
+  "output_formats": [
+    "png",
+    "svg"
+  ],
+  "warnings": [
+    "Historical conditional results; no future guarantee"
+  ],
+  "can_proceed": true,
+  "clarification_question": ""
+}

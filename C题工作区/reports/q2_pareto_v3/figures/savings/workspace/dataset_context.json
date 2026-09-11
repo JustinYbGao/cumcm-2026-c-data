@@ -1,0 +1,310 @@
+{
+  "file_name": "data.csv",
+  "file_type": "csv",
+  "sheet_name": null,
+  "row_count": 18,
+  "column_count": 6,
+  "column_names": [
+    "policy",
+    "ordinary_saving_vs_P_floor_yuan",
+    "emergency_saving_vs_P_floor_yuan",
+    "total_saving_vs_P_floor_yuan",
+    "emergency_cost_yuan",
+    "passes_user_requirement"
+  ],
+  "sample_records": [
+    {
+      "policy": "T_day_trim",
+      "ordinary_saving_vs_P_floor_yuan": 185504.18552896753,
+      "emergency_saving_vs_P_floor_yuan": -192258.44877172777,
+      "total_saving_vs_P_floor_yuan": -6754.263242762536,
+      "emergency_cost_yuan": 853532.1015871086,
+      "passes_user_requirement": false
+    },
+    {
+      "policy": "T_evening_hedge",
+      "ordinary_saving_vs_P_floor_yuan": -120110.571674563,
+      "emergency_saving_vs_P_floor_yuan": 129685.4630247415,
+      "total_saving_vs_P_floor_yuan": 9574.891350176184,
+      "emergency_cost_yuan": 531588.1897906393,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "T_rebalance",
+      "ordinary_saving_vs_P_floor_yuan": 64490.55610255897,
+      "emergency_saving_vs_P_floor_yuan": -40652.42851321283,
+      "total_saving_vs_P_floor_yuan": 23838.12758934498,
+      "emergency_cost_yuan": 701926.0813285937,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "T_soft",
+      "ordinary_saving_vs_P_floor_yuan": 45836.91213258356,
+      "emergency_saving_vs_P_floor_yuan": -26100.06107910839,
+      "total_saving_vs_P_floor_yuan": 19736.85105347447,
+      "emergency_cost_yuan": 687373.7138944892,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "T_strong",
+      "ordinary_saving_vs_P_floor_yuan": 47329.209364160895,
+      "emergency_saving_vs_P_floor_yuan": -21882.92516309279,
+      "total_saving_vs_P_floor_yuan": 25446.28420106694,
+      "emergency_cost_yuan": 683156.5779784736,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "T_morning_hedge",
+      "ordinary_saving_vs_P_floor_yuan": 28159.1900392659,
+      "emergency_saving_vs_P_floor_yuan": -2736.3298983142013,
+      "total_saving_vs_P_floor_yuan": 25422.860140949488,
+      "emergency_cost_yuan": 664009.982713695,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "R_guard",
+      "ordinary_saving_vs_P_floor_yuan": 1530.5867731943729,
+      "emergency_saving_vs_P_floor_yuan": 0.0,
+      "total_saving_vs_P_floor_yuan": 1530.58677319251,
+      "emergency_cost_yuan": 661273.6528153808,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "R_mean",
+      "ordinary_saving_vs_P_floor_yuan": 13152.637822426856,
+      "emergency_saving_vs_P_floor_yuan": -21585.48219735641,
+      "total_saving_vs_P_floor_yuan": -8432.844374932349,
+      "emergency_cost_yuan": 682859.1350127372,
+      "passes_user_requirement": false
+    },
+    {
+      "policy": "R_cost",
+      "ordinary_saving_vs_P_floor_yuan": 59896.26554802805,
+      "emergency_saving_vs_P_floor_yuan": -70920.10709829326,
+      "total_saving_vs_P_floor_yuan": -11023.841550268233,
+      "emergency_cost_yuan": 732193.7599136741,
+      "passes_user_requirement": false
+    },
+    {
+      "policy": "R_w28",
+      "ordinary_saving_vs_P_floor_yuan": 3525.3598435372114,
+      "emergency_saving_vs_P_floor_yuan": -5972.2872926045675,
+      "total_saving_vs_P_floor_yuan": -2446.9274490680546,
+      "emergency_cost_yuan": 667245.9401079854,
+      "passes_user_requirement": false
+    },
+    {
+      "policy": "X_morning90",
+      "ordinary_saving_vs_P_floor_yuan": -17870.924642842263,
+      "emergency_saving_vs_P_floor_yuan": 39907.62658671406,
+      "total_saving_vs_P_floor_yuan": 22036.70194386877,
+      "emergency_cost_yuan": 621366.0262286668,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "X_strong_morning85",
+      "ordinary_saving_vs_P_floor_yuan": 11574.851714832708,
+      "emergency_saving_vs_P_floor_yuan": 16981.487812737352,
+      "total_saving_vs_P_floor_yuan": 28556.33952756971,
+      "emergency_cost_yuan": 644292.1650026435,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "X_day60",
+      "ordinary_saving_vs_P_floor_yuan": 124327.88463691065,
+      "emergency_saving_vs_P_floor_yuan": -117537.83023182956,
+      "total_saving_vs_P_floor_yuan": 6790.0544050801545,
+      "emergency_cost_yuan": 778811.4830472104,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "X_day50",
+      "ordinary_saving_vs_P_floor_yuan": 263548.9137551673,
+      "emergency_saving_vs_P_floor_yuan": -351125.1183589153,
+      "total_saving_vs_P_floor_yuan": -87576.2046037484,
+      "emergency_cost_yuan": 1012398.7711742962,
+      "passes_user_requirement": false
+    },
+    {
+      "policy": "X_day60_morning85",
+      "ordinary_saving_vs_P_floor_yuan": 89149.84620873444,
+      "emergency_saving_vs_P_floor_yuan": -73053.5123227149,
+      "total_saving_vs_P_floor_yuan": 16096.333886018025,
+      "emergency_cost_yuan": 734327.1651380957,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "X_evening85_day60",
+      "ordinary_saving_vs_P_floor_yuan": 292486.6378848534,
+      "emergency_saving_vs_P_floor_yuan": -338009.65767837036,
+      "total_saving_vs_P_floor_yuan": -45523.01979351789,
+      "emergency_cost_yuan": 999283.3104937512,
+      "passes_user_requirement": false
+    },
+    {
+      "policy": "X_uniform70",
+      "ordinary_saving_vs_P_floor_yuan": 461828.60422343016,
+      "emergency_saving_vs_P_floor_yuan": -565878.940310207,
+      "total_saving_vs_P_floor_yuan": -104050.33608677796,
+      "emergency_cost_yuan": 1227152.5931255878,
+      "passes_user_requirement": false
+    },
+    {
+      "policy": "X_uniform75",
+      "ordinary_saving_vs_P_floor_yuan": 244857.5444113128,
+      "emergency_saving_vs_P_floor_yuan": -260936.435048835,
+      "total_saving_vs_P_floor_yuan": -16078.890637524426,
+      "emergency_cost_yuan": 922210.0878642158,
+      "passes_user_requirement": false
+    }
+  ],
+  "head_records": [
+    {
+      "policy": "T_day_trim",
+      "ordinary_saving_vs_P_floor_yuan": 185504.18552896753,
+      "emergency_saving_vs_P_floor_yuan": -192258.44877172777,
+      "total_saving_vs_P_floor_yuan": -6754.263242762536,
+      "emergency_cost_yuan": 853532.1015871086,
+      "passes_user_requirement": false
+    },
+    {
+      "policy": "T_evening_hedge",
+      "ordinary_saving_vs_P_floor_yuan": -120110.571674563,
+      "emergency_saving_vs_P_floor_yuan": 129685.4630247415,
+      "total_saving_vs_P_floor_yuan": 9574.891350176184,
+      "emergency_cost_yuan": 531588.1897906393,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "T_rebalance",
+      "ordinary_saving_vs_P_floor_yuan": 64490.55610255897,
+      "emergency_saving_vs_P_floor_yuan": -40652.42851321283,
+      "total_saving_vs_P_floor_yuan": 23838.12758934498,
+      "emergency_cost_yuan": 701926.0813285937,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "T_soft",
+      "ordinary_saving_vs_P_floor_yuan": 45836.91213258356,
+      "emergency_saving_vs_P_floor_yuan": -26100.06107910839,
+      "total_saving_vs_P_floor_yuan": 19736.85105347447,
+      "emergency_cost_yuan": 687373.7138944892,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "T_strong",
+      "ordinary_saving_vs_P_floor_yuan": 47329.209364160895,
+      "emergency_saving_vs_P_floor_yuan": -21882.92516309279,
+      "total_saving_vs_P_floor_yuan": 25446.28420106694,
+      "emergency_cost_yuan": 683156.5779784736,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "T_morning_hedge",
+      "ordinary_saving_vs_P_floor_yuan": 28159.1900392659,
+      "emergency_saving_vs_P_floor_yuan": -2736.3298983142013,
+      "total_saving_vs_P_floor_yuan": 25422.860140949488,
+      "emergency_cost_yuan": 664009.982713695,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "R_guard",
+      "ordinary_saving_vs_P_floor_yuan": 1530.5867731943729,
+      "emergency_saving_vs_P_floor_yuan": 0.0,
+      "total_saving_vs_P_floor_yuan": 1530.58677319251,
+      "emergency_cost_yuan": 661273.6528153808,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "R_mean",
+      "ordinary_saving_vs_P_floor_yuan": 13152.637822426856,
+      "emergency_saving_vs_P_floor_yuan": -21585.48219735641,
+      "total_saving_vs_P_floor_yuan": -8432.844374932349,
+      "emergency_cost_yuan": 682859.1350127372,
+      "passes_user_requirement": false
+    },
+    {
+      "policy": "R_cost",
+      "ordinary_saving_vs_P_floor_yuan": 59896.26554802805,
+      "emergency_saving_vs_P_floor_yuan": -70920.10709829326,
+      "total_saving_vs_P_floor_yuan": -11023.841550268233,
+      "emergency_cost_yuan": 732193.7599136741,
+      "passes_user_requirement": false
+    },
+    {
+      "policy": "R_w28",
+      "ordinary_saving_vs_P_floor_yuan": 3525.3598435372114,
+      "emergency_saving_vs_P_floor_yuan": -5972.2872926045675,
+      "total_saving_vs_P_floor_yuan": -2446.9274490680546,
+      "emergency_cost_yuan": 667245.9401079854,
+      "passes_user_requirement": false
+    },
+    {
+      "policy": "X_morning90",
+      "ordinary_saving_vs_P_floor_yuan": -17870.924642842263,
+      "emergency_saving_vs_P_floor_yuan": 39907.62658671406,
+      "total_saving_vs_P_floor_yuan": 22036.70194386877,
+      "emergency_cost_yuan": 621366.0262286668,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "X_strong_morning85",
+      "ordinary_saving_vs_P_floor_yuan": 11574.851714832708,
+      "emergency_saving_vs_P_floor_yuan": 16981.487812737352,
+      "total_saving_vs_P_floor_yuan": 28556.33952756971,
+      "emergency_cost_yuan": 644292.1650026435,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "X_day60",
+      "ordinary_saving_vs_P_floor_yuan": 124327.88463691065,
+      "emergency_saving_vs_P_floor_yuan": -117537.83023182956,
+      "total_saving_vs_P_floor_yuan": 6790.0544050801545,
+      "emergency_cost_yuan": 778811.4830472104,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "X_day50",
+      "ordinary_saving_vs_P_floor_yuan": 263548.9137551673,
+      "emergency_saving_vs_P_floor_yuan": -351125.1183589153,
+      "total_saving_vs_P_floor_yuan": -87576.2046037484,
+      "emergency_cost_yuan": 1012398.7711742962,
+      "passes_user_requirement": false
+    },
+    {
+      "policy": "X_day60_morning85",
+      "ordinary_saving_vs_P_floor_yuan": 89149.84620873444,
+      "emergency_saving_vs_P_floor_yuan": -73053.5123227149,
+      "total_saving_vs_P_floor_yuan": 16096.333886018025,
+      "emergency_cost_yuan": 734327.1651380957,
+      "passes_user_requirement": true
+    },
+    {
+      "policy": "X_evening85_day60",
+      "ordinary_saving_vs_P_floor_yuan": 292486.6378848534,
+      "emergency_saving_vs_P_floor_yuan": -338009.65767837036,
+      "total_saving_vs_P_floor_yuan": -45523.01979351789,
+      "emergency_cost_yuan": 999283.3104937512,
+      "passes_user_requirement": false
+    },
+    {
+      "policy": "X_uniform70",
+      "ordinary_saving_vs_P_floor_yuan": 461828.60422343016,
+      "emergency_saving_vs_P_floor_yuan": -565878.940310207,
+      "total_saving_vs_P_floor_yuan": -104050.33608677796,
+      "emergency_cost_yuan": 1227152.5931255878,
+      "passes_user_requirement": false
+    },
+    {
+      "policy": "X_uniform75",
+      "ordinary_saving_vs_P_floor_yuan": 244857.5444113128,
+      "emergency_saving_vs_P_floor_yuan": -260936.435048835,
+      "total_saving_vs_P_floor_yuan": -16078.890637524426,
+      "emergency_cost_yuan": 922210.0878642158,
+      "passes_user_requirement": false
+    }
+  ],
+  "sampled": false,
+  "sample_strategy": "数据行数 18 未超过阈值，提供前 18 行作为样例。",
+  "warnings": []
+}

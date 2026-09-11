@@ -1,0 +1,207 @@
+{
+  "selection": {
+    "dataset_summary": "8 real rows; ['policy', 'ordinary_saving_vs_X_strong_morning85_yuan', 'emergency_saving_vs_X_strong_morning85_yuan', 'total_saving_vs_X_strong_morning85_yuan', 'emergency_cost_yuan', 'passes_improvement']",
+    "relevant_columns": [
+      "policy",
+      "ordinary_saving_vs_X_strong_morning85_yuan",
+      "emergency_saving_vs_X_strong_morning85_yuan",
+      "total_saving_vs_X_strong_morning85_yuan",
+      "emergency_cost_yuan",
+      "passes_improvement"
+    ],
+    "candidate_comparisons": [
+      {
+        "template_id": "cmp_multi_metric_radar",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+        ],
+        "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion."
+      },
+      {
+        "template_id": "rel_network_radar_report",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+        ],
+        "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion."
+      },
+      {
+        "template_id": "cmp_gradient_single_factor_bar",
+        "suitable": true,
+        "advantages": [
+          "Three matched horizontal-bar panels show all eight policies and positive/negative bill differences without conflating additive components."
+        ],
+        "limitations": [],
+        "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion."
+      },
+      {
+        "template_id": "cmp_stack_pie_box_report",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+        ],
+        "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion."
+      },
+      {
+        "template_id": "cmp_circular_barplot",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+        ],
+        "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion."
+      },
+      {
+        "template_id": "cmp_ternary_scatter",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+        ],
+        "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion."
+      },
+      {
+        "template_id": "cmp_correlation_stacked_bar",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+        ],
+        "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion."
+      },
+      {
+        "template_id": "cmp_flowing_percentage_stack",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+        ],
+        "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion."
+      }
+    ],
+    "selected_template_id": "cmp_gradient_single_factor_bar",
+    "selected_template_name": "渐变单因子条形图",
+    "selection_reason": "Three matched horizontal-bar panels show all eight policies and positive/negative bill differences without conflating additive components.",
+    "data_support_reason": "Data CSV contains all plotted values and their policy/month keys; no synthetic series.",
+    "confidence": 0.96
+  },
+  "plan": {
+    "template_id": "cmp_gradient_single_factor_bar",
+    "template_name": "渐变单因子条形图",
+    "plot_goal": "Three matched horizontal-bar panels show all eight policies and positive/negative bill differences without conflating additive components.",
+    "selected_columns": [
+      "policy",
+      "ordinary_saving_vs_X_strong_morning85_yuan",
+      "emergency_saving_vs_X_strong_morning85_yuan",
+      "total_saving_vs_X_strong_morning85_yuan",
+      "emergency_cost_yuan",
+      "passes_improvement"
+    ],
+    "column_mappings": [
+      {
+        "data_column": "policy",
+        "template_role": "Category key"
+      },
+      {
+        "data_column": "ordinary_saving_vs_X_strong_morning85_yuan",
+        "template_role": "Actual bill difference, emergency amount, or cap outcome"
+      },
+      {
+        "data_column": "emergency_saving_vs_X_strong_morning85_yuan",
+        "template_role": "Actual bill difference, emergency amount, or cap outcome"
+      },
+      {
+        "data_column": "total_saving_vs_X_strong_morning85_yuan",
+        "template_role": "Actual bill difference, emergency amount, or cap outcome"
+      },
+      {
+        "data_column": "emergency_cost_yuan",
+        "template_role": "Actual bill difference, emergency amount, or cap outcome"
+      },
+      {
+        "data_column": "passes_improvement",
+        "template_role": "Actual bill difference, emergency amount, or cap outcome"
+      }
+    ],
+    "required_preprocessing": [
+      "Read actual CSV, preserve order; divide yuan by 1000 for axis display"
+    ],
+    "required_dependencies": [
+      "numpy",
+      "pandas",
+      "matplotlib"
+    ],
+    "layout_elements_to_preserve": [
+      "Horizontal gradient bars",
+      "Repeated aligned panels",
+      "Serif typography",
+      "Gray background and white grid",
+      "Direct numeric labels"
+    ],
+    "style_elements_to_preserve": [
+      "Horizontal gradient bars",
+      "Repeated aligned panels",
+      "Serif typography",
+      "Gray background and white grid",
+      "Direct numeric labels"
+    ],
+    "elements_allowed_to_change": [
+      "Use three panels with a shared policy order",
+      "Display positive and negative savings from zero",
+      "Remove unsupported p-value stars",
+      "Hatch cap violations, never omit them",
+      "English labels and 300dpi PNG plus SVG"
+    ],
+    "title_plan": "English Q2 fee tradeoffs",
+    "axis_plan": "Explicit thousand CNY and zero lines; savings panels disclose differing ranges",
+    "legend_plan": "Upper separate band when needed",
+    "annotation_plan": "Direct amounts, all failures and scope notes; no significance stars",
+    "output_formats": [
+      "png",
+      "svg"
+    ],
+    "warnings": [
+      "Historical exploratory comparison; no future cap guarantee."
+    ]
+  },
+  "adaptation": {
+    "changes_summary": [
+      "Three matched horizontal-bar panels show all eight policies and positive/negative bill differences without conflating additive components."
+    ],
+    "preserved_style_elements": [
+      "Horizontal gradient bars",
+      "Repeated aligned panels",
+      "Serif typography",
+      "Gray background and white grid",
+      "Direct numeric labels"
+    ],
+    "changed_elements": [
+      "Use three panels with a shared policy order",
+      "Display positive and negative savings from zero",
+      "Remove unsupported p-value stars",
+      "Hatch cap violations, never omit them",
+      "English labels and 300dpi PNG plus SVG"
+    ],
+    "data_columns_used": [
+      "policy",
+      "ordinary_saving_vs_X_strong_morning85_yuan",
+      "emergency_saving_vs_X_strong_morning85_yuan",
+      "total_saving_vs_X_strong_morning85_yuan",
+      "emergency_cost_yuan",
+      "passes_improvement"
+    ],
+    "dependencies_used": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "additional_dependencies_requested": [],
+    "assumptions": [
+      "Exact historical actual bills; unchanged physical and information constraints."
+    ]
+  }
+}

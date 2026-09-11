@@ -1,0 +1,150 @@
+{
+  "file_name": "data.csv",
+  "file_type": "csv",
+  "sheet_name": null,
+  "row_count": 8,
+  "column_count": 6,
+  "column_names": [
+    "policy",
+    "ordinary_saving_vs_X_strong_morning85_yuan",
+    "emergency_saving_vs_X_strong_morning85_yuan",
+    "total_saving_vs_X_strong_morning85_yuan",
+    "emergency_cost_yuan",
+    "passes_improvement"
+  ],
+  "sample_records": [
+    {
+      "policy": "D56",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 157090.4506499637,
+      "emergency_saving_vs_X_strong_morning85_yuan": -124772.82297835592,
+      "total_saving_vs_X_strong_morning85_yuan": 32317.62767160684,
+      "emergency_cost_yuan": 769064.9879809994,
+      "passes_improvement": true
+    },
+    {
+      "policy": "D28",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 157257.81717392989,
+      "emergency_saving_vs_X_strong_morning85_yuan": -123231.43705148937,
+      "total_saving_vs_X_strong_morning85_yuan": 34026.38012243807,
+      "emergency_cost_yuan": 767523.6020541328,
+      "passes_improvement": true
+    },
+    {
+      "policy": "D112",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 274753.0659289621,
+      "emergency_saving_vs_X_strong_morning85_yuan": -194363.28882616933,
+      "total_saving_vs_X_strong_morning85_yuan": 80389.77710279077,
+      "emergency_cost_yuan": 838655.4538288128,
+      "passes_improvement": true
+    },
+    {
+      "policy": "D56_risk625",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 44098.359006876126,
+      "emergency_saving_vs_X_strong_morning85_yuan": 5753.155851399293,
+      "total_saving_vs_X_strong_morning85_yuan": 49851.51485827565,
+      "emergency_cost_yuan": 638539.0091512442,
+      "passes_improvement": true
+    },
+    {
+      "policy": "D56_mu069",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 55744.719459606335,
+      "emergency_saving_vs_X_strong_morning85_yuan": -89923.70900874375,
+      "total_saving_vs_X_strong_morning85_yuan": -34178.98954913765,
+      "emergency_cost_yuan": 734215.8740113872,
+      "passes_improvement": false
+    },
+    {
+      "policy": "D56_mu0",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 197866.5605863575,
+      "emergency_saving_vs_X_strong_morning85_yuan": -275748.1505093584,
+      "total_saving_vs_X_strong_morning85_yuan": -77881.58992300183,
+      "emergency_cost_yuan": 920040.315512002,
+      "passes_improvement": false
+    },
+    {
+      "policy": "D112_refined",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 274038.7664770577,
+      "emergency_saving_vs_X_strong_morning85_yuan": -194823.88626786065,
+      "total_saving_vs_X_strong_morning85_yuan": 79214.88020919636,
+      "emergency_cost_yuan": 839116.0512705041,
+      "passes_improvement": true
+    },
+    {
+      "policy": "D56_risk625_refined",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 44567.10590633191,
+      "emergency_saving_vs_X_strong_morning85_yuan": 619.4018602576107,
+      "total_saving_vs_X_strong_morning85_yuan": 45186.50776658952,
+      "emergency_cost_yuan": 643672.7631423859,
+      "passes_improvement": true
+    }
+  ],
+  "head_records": [
+    {
+      "policy": "D56",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 157090.4506499637,
+      "emergency_saving_vs_X_strong_morning85_yuan": -124772.82297835592,
+      "total_saving_vs_X_strong_morning85_yuan": 32317.62767160684,
+      "emergency_cost_yuan": 769064.9879809994,
+      "passes_improvement": true
+    },
+    {
+      "policy": "D28",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 157257.81717392989,
+      "emergency_saving_vs_X_strong_morning85_yuan": -123231.43705148937,
+      "total_saving_vs_X_strong_morning85_yuan": 34026.38012243807,
+      "emergency_cost_yuan": 767523.6020541328,
+      "passes_improvement": true
+    },
+    {
+      "policy": "D112",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 274753.0659289621,
+      "emergency_saving_vs_X_strong_morning85_yuan": -194363.28882616933,
+      "total_saving_vs_X_strong_morning85_yuan": 80389.77710279077,
+      "emergency_cost_yuan": 838655.4538288128,
+      "passes_improvement": true
+    },
+    {
+      "policy": "D56_risk625",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 44098.359006876126,
+      "emergency_saving_vs_X_strong_morning85_yuan": 5753.155851399293,
+      "total_saving_vs_X_strong_morning85_yuan": 49851.51485827565,
+      "emergency_cost_yuan": 638539.0091512442,
+      "passes_improvement": true
+    },
+    {
+      "policy": "D56_mu069",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 55744.719459606335,
+      "emergency_saving_vs_X_strong_morning85_yuan": -89923.70900874375,
+      "total_saving_vs_X_strong_morning85_yuan": -34178.98954913765,
+      "emergency_cost_yuan": 734215.8740113872,
+      "passes_improvement": false
+    },
+    {
+      "policy": "D56_mu0",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 197866.5605863575,
+      "emergency_saving_vs_X_strong_morning85_yuan": -275748.1505093584,
+      "total_saving_vs_X_strong_morning85_yuan": -77881.58992300183,
+      "emergency_cost_yuan": 920040.315512002,
+      "passes_improvement": false
+    },
+    {
+      "policy": "D112_refined",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 274038.7664770577,
+      "emergency_saving_vs_X_strong_morning85_yuan": -194823.88626786065,
+      "total_saving_vs_X_strong_morning85_yuan": 79214.88020919636,
+      "emergency_cost_yuan": 839116.0512705041,
+      "passes_improvement": true
+    },
+    {
+      "policy": "D56_risk625_refined",
+      "ordinary_saving_vs_X_strong_morning85_yuan": 44567.10590633191,
+      "emergency_saving_vs_X_strong_morning85_yuan": 619.4018602576107,
+      "total_saving_vs_X_strong_morning85_yuan": 45186.50776658952,
+      "emergency_cost_yuan": 643672.7631423859,
+      "passes_improvement": true
+    }
+  ],
+  "sampled": false,
+  "sample_strategy": "数据行数 8 未超过阈值，提供前 8 行作为样例。",
+  "warnings": []
+}

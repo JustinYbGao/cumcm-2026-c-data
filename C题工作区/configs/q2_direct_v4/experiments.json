@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-09-11T18:30:27.496029+00:00",
+  "emergency_cap_yuan": 1000000.0,
+  "reference_total_yuan": 13994282.258970976,
+  "primary": "D56",
+  "bootstrap_seed": 20260915,
+  "bootstrap_replicates": 2000,
+  "bootstrap_blocks": [
+    7,
+    14
+  ],
+  "optimizer": {
+    "maxiter": 180,
+    "maxfun": 1600,
+    "maxls": 30,
+    "maxcor": 10,
+    "ftol": 1e-10,
+    "gtol": 1e-05
+  },
+  "runs": [
+    {
+      "policy": "D56",
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "scenario_window": 56,
+      "kappa": 5,
+      "mu": 0.38232
+    },
+    {
+      "policy": "D28",
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "scenario_window": 28,
+      "kappa": 5,
+      "mu": 0.38232
+    },
+    {
+      "policy": "D112",
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "scenario_window": 112,
+      "kappa": 5,
+      "mu": 0.38232
+    },
+    {
+      "policy": "D56_risk625",
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "scenario_window": 56,
+      "kappa": 6.25,
+      "mu": 0.38232
+    },
+    {
+      "policy": "D56_mu069",
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "scenario_window": 56,
+      "kappa": 5,
+      "mu": 0.6895775
+    },
+    {
+      "policy": "D56_mu0",
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "scenario_window": 56,
+      "kappa": 5,
+      "mu": 0
+    }
+  ]
+}

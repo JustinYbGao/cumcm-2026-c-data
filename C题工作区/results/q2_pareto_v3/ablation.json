@@ -1,0 +1,23 @@
+{
+  "total_cost": {
+    "P_floor": 14022838.598498546,
+    "day_trim": 14029592.861741308,
+    "evening_hedge": 14013263.70714837,
+    "rebalance": 13999000.4709092,
+    "R_guard": 14021308.011725353,
+    "R_mean": 14031271.442873478,
+    "R_cost": 14033862.440048814,
+    "R_w28": 14025285.525947614
+  },
+  "emergency_cost": {
+    "P_floor": 661273.6528153808,
+    "day_trim": 853532.1015871086,
+    "evening_hedge": 531588.1897906393,
+    "rebalance": 701926.0813285937,
+    "R_guard": 661273.6528153808,
+    "R_mean": 682859.1350127372,
+    "R_cost": 732193.7599136741,
+    "R_w28": 667245.9401079854
+  },
+  "scope": "Continuous independent trajectories include state feedback; library contrasts do not prove separable causal contributions."
+}

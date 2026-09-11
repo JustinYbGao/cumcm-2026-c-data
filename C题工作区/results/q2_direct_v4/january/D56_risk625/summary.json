@@ -1,0 +1,23 @@
+{
+  "grid_plan_kwh": 296955.44759497955,
+  "planned_cost_yuan": 179307.73748284893,
+  "emergency_kwh": 174.86778342872952,
+  "emergency_cost_yuan": 877.8395398747714,
+  "total_cost_yuan": 180185.5770227237,
+  "charge_actual_kwh": 84386.06356761031,
+  "discharge_actual_kwh": 70927.50482954606,
+  "surplus_kwh": 18595.639773677336,
+  "unused_grid_kwh": 14671.99562312703,
+  "pv_curtailment_kwh": 3923.6441505503035,
+  "policy": "D56_risk625",
+  "days": 4,
+  "intervals": 576,
+  "initial_energy_kwh": 6000.0,
+  "final_energy_kwh": 3139.1185113536717,
+  "inventory_adjusted_cost_yuan": 182158.37652746073,
+  "optimizer_count": 8,
+  "optimizer_success_count": 8,
+  "optimizer_nfev": 1335,
+  "milp_count": 4,
+  "wall_seconds": 0.31543162500020117
+}

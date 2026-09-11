@@ -1,0 +1,35 @@
+{
+  "adapted_code": "\"\"\"CMP_003 stacked-column grammar adapted to exact Q2 cost components.\"\"\"\nimport sys\nfrom pathlib import Path\nimport numpy as np\nimport pandas as pd\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\n\nf=pd.read_csv(sys.argv[1]);out=Path(sys.argv[2]);out.mkdir(parents=True,exist_ok=True)\nplt.rcParams.update({'font.family':'DejaVu Serif','font.size':11,'svg.fonttype':'none','axes.spines.top':False,'axes.spines.right':False})\nfig,ax=plt.subplots(figsize=(11,6.5));fig.subplots_adjust(left=.09,right=.98,top=.78,bottom=.23)\nx=np.arange(len(f));blue='#3B6C8E';orange='#CB8B52'\nax.axvspan(2.6,4.5,color='#EEE7E0',alpha=.45,zorder=0)\nax.bar(x,f.planned_cost_yuan/1e6,width=.64,color=blue,edgecolor='white',linewidth=1.2,label='Committed normal purchase')\nax.bar(x,f.emergency_cost_yuan/1e6,bottom=f.planned_cost_yuan/1e6,width=.64,color=orange,edgecolor='white',linewidth=1.2,label='Emergency purchase (full 5p)')\nfor i,row in f.iterrows():\n    ax.text(i,row.total_cost_yuan/1e6+.4,f'{row.total_cost_yuan/1e6:.3f}',ha='center',fontsize=11,fontweight='bold' if row.policy=='P' else 'normal')\nax.set_xticks(x,['B0\\nFrozen','B1\\nSeasonal','P\\nRisk purchase','E*\\nReserve execution','PE*\\nCombined'])\nax.set_ylabel('Actual total cost (million CNY)');ax.set_ylim(0,30);ax.set_xlim(-.6,4.6)\nax.set_yticks(np.arange(0,31,5));ax.grid(axis='y',alpha=.18);ax.set_axisbelow(True)\nax.legend(loc='upper left',bbox_to_anchor=(0,1.16),ncol=2,frameon=False,fontsize=10)\nfig.suptitle('Q2 risk purchase lowers the bill; reserve execution fails',x=.09,y=.96,ha='left',fontsize=15)\nfig.text(.09,.90,'Historical replay | February–December 2025 | Common initial energy: 7,268.423 kWh',fontsize=10,color='#555555')\nfig.text(.09,.115,'P: tau = 0.8, 28-day residual window; original point forecaster, greedy execution and terminal constraint.',fontsize=9)\nfig.text(.09,.077,'* E and PE require discretionary discharge permission. Both increase the bill relative to B0 and B1.',fontsize=9)\nfig.text(.09,.039,'Same fixed tariff, physical limits and initial state. Paid unused energy is fully charged; no sale revenue.',fontsize=9)\nfig.savefig(out/'chart.png',dpi=300);fig.savefig(out/'chart.svg');plt.close(fig)\n",
+  "changes_summary": [
+    "Stacked rectangular columns expose the additive normal and emergency bill. Preserve CMP_003 categorical stacking, white edges, serif typography and horizontal grids; replace correlation demo factors with actual currency components."
+  ],
+  "preserved_style_elements": [
+    "Matplotlib",
+    "Serif typography",
+    "Muted blue/orange palette",
+    "Horizontal grids",
+    "Stacked categorical columns with white edges"
+  ],
+  "changed_elements": [
+    "Replace all demonstration values with exact CSV columns",
+    "English labels and units",
+    "Show full 5p emergency bill and all declared main policies",
+    "Export 300 dpi PNG and SVG"
+  ],
+  "data_columns_used": [
+    "policy",
+    "planned_cost_yuan",
+    "emergency_cost_yuan",
+    "total_cost_yuan"
+  ],
+  "dependencies_used": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "additional_dependencies_requested": [],
+  "assumptions": [
+    "Internal original interval-end interpretation; English visible text only; no new results inferred from plot"
+  ],
+  "warnings": []
+}

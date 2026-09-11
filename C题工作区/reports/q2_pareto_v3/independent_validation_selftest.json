@@ -1,0 +1,107 @@
+{
+  "scope": "selftest",
+  "passed": true,
+  "checks": [
+    {
+      "check": "fractional_tail",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-12,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "integer_tail",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-12,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "tied_boundary",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-12,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "single_tail",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-12,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "mean_constraint_roles",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "tail_constraint_roles",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "first_feasible_tie",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 0,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "hourly_linear_interpolation",
+      "passed": true,
+      "comparisons": 144,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-12,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "short_risk_history_rejected",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    }
+  ],
+  "check_groups": 9,
+  "comparisons": 152,
+  "failed_groups": 0,
+  "created_utc": "2026-09-11T18:08:43.311641+00:00",
+  "validator_sha256": "6b3a5b63ddee19a8ab1b93b0c10e5e756cde25054de790af9a7e1c0623164105",
+  "independence": "Only standard library, numpy and pandas; no production prediction, planning, scoring or dispatch function imports.",
+  "producer_sha256": {
+    "analyze_results.py": "2bce204c3a66d15dac18025e9669dc2abe09f0770e09982ce588728d6d03125a",
+    "causality_checks.py": "b2848ac1015c0a30d773d70acc3f5ec1e6b10424c02620aa93f0e73c64808b65",
+    "policy.py": "09809c9fac2973f2bba8402b370c26b3aa02ad30a89ced79172350f4ddf70f94",
+    "base_policy.py": "f47c6eaac4c8fb944806bde582936c5838fc6feb433d76164535835f74656562",
+    "run_experiments.py": "3ff0bc11ca182c245989549cb6e0797c45dbf9e104dbc339dffa3c44e20aa2ba",
+    "test_policy.py": "b356d7be9f64fbb54a4a3faac264fc4f6106c0d530864f6e66098ed338828597"
+  },
+  "tolerances": {
+    "physical_kwh": 1e-06,
+    "cost_yuan": 1e-05
+  },
+  "limitations": [
+    "Processed source and frozen copies audited; raw XLSX cleaning not repeated.",
+    "All saved candidate constraints checked without repeating MILP optimization; solver metadata is not an independently rerun optimality certificate.",
+    "Historical exploration and short tail samples do not guarantee future or whole-year fee caps."
+  ]
+}

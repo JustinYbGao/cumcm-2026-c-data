@@ -1,0 +1,8 @@
+{
+  "selected": "linear_harmonic",
+  "frozen_at": "2025-02-01T00:00:00",
+  "calibration_last_available_time": "2025-02-01T00:00:00",
+  "inventory_value_yuan_per_kwh": 0.6895775000000001,
+  "common_evaluation_initial_energy_kwh": 7268.4231640740745,
+  "selection_criterion": "Jan15-Jan31 continuous shadow replay from same Jan15 SOC; minimize actual_cost minus mean_fixed_price*eta_discharge*(end_energy-start_energy); freeze Feb1"
+}

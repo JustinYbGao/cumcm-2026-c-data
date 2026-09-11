@@ -1,0 +1,14 @@
+                     planned_cost_yuan  emergency_cost_yuan  total_cost_yuan  passes_emergency_cap  passes_improvement
+policy                                                                                                                
+B0                        1.198783e+07         4.345852e+06     1.633368e+07                 False               False
+B1                        1.226366e+07         3.114550e+06     1.537821e+07                 False               False
+P_floor                   1.336156e+07         6.612737e+05     1.402284e+07                  True               False
+X_strong_morning85        1.334999e+07         6.442922e+05     1.399428e+07                  True               False
+D56                       1.319290e+07         7.690650e+05     1.396196e+07                  True                True
+D28                       1.319273e+07         7.675236e+05     1.396026e+07                  True                True
+D112                      1.307524e+07         8.386555e+05     1.391389e+07                  True                True
+D56_risk625               1.330589e+07         6.385390e+05     1.394443e+07                  True                True
+D56_mu069                 1.329425e+07         7.342159e+05     1.402846e+07                  True               False
+D56_mu0                   1.315212e+07         9.200403e+05     1.407216e+07                  True               False
+D112_refined              1.307595e+07         8.391161e+05     1.391507e+07                  True                True
+D56_risk625_refined       1.330542e+07         6.436728e+05     1.394910e+07                  True                True

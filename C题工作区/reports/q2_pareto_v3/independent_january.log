@@ -1,0 +1,6 @@
+january/T_rebalance PASS
+january/R_guard PASS
+january/R_mean PASS
+january/R_cost PASS
+january/R_w28 PASS
+{"passed": true, "output": "/Users/justingao/Documents/CUMCM/C题工作区/reports/q2_pareto_v3/independent_validation_january.json"}

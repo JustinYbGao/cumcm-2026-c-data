@@ -1,0 +1,7 @@
+{
+  "scenarios": 22,
+  "paths": 110,
+  "rows": 15840,
+  "scope": "Historical tail diagnostics with each policy own actual-path state and frozen plan; overlaps scoring scenarios, not independent validation or fair same-initial annual ranking.",
+  "construction": "Common point net forecast plus whole historical net-error day, signed net demand, no physical-source clipping or alteration."
+}

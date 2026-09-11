@@ -1,0 +1,9 @@
+{
+  "scope": "sources",
+  "passed": true,
+  "checks": 24,
+  "metrics": {
+    "source_rows": 52560,
+    "forecast_days": 364
+  }
+}

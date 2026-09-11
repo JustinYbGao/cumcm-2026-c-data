@@ -1,0 +1,103 @@
+{
+  "dataset_summary": "18 real rows; ['policy', 'ordinary_saving_vs_P_floor_yuan', 'emergency_saving_vs_P_floor_yuan', 'total_saving_vs_P_floor_yuan', 'emergency_cost_yuan', 'passes_user_requirement']",
+  "observed_data_features": [],
+  "relevant_columns": [
+    "policy",
+    "ordinary_saving_vs_P_floor_yuan",
+    "emergency_saving_vs_P_floor_yuan",
+    "total_saving_vs_P_floor_yuan",
+    "emergency_cost_yuan",
+    "passes_user_requirement"
+  ],
+  "candidate_comparisons": [
+    {
+      "template_id": "cmp_multi_metric_radar",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+      ],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "rel_network_radar_report",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+      ],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_gradient_single_factor_bar",
+      "suitable": true,
+      "advantages": [
+        "Three matched horizontal-bar panels show all 18 policies and positive/negative bill differences without conflating additive components."
+      ],
+      "limitations": [],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_stack_pie_box_report",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+      ],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_circular_barplot",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+      ],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_ternary_scatter",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+      ],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_correlation_stacked_bar",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+      ],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_flowing_percentage_stack",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "This candidate introduces unnecessary radial, fitted, normalized, 3D, or unrelated analytical encoding."
+      ],
+      "data_compatibility": "Only real named columns, exact paired subtraction and currency conversion.",
+      "requirement_compatibility": ""
+    }
+  ],
+  "selected_template_id": "cmp_gradient_single_factor_bar",
+  "selected_template_name": "渐变单因子条形图",
+  "alternative_template_ids": [],
+  "selection_reason": "Three matched horizontal-bar panels show all 18 policies and positive/negative bill differences without conflating additive components.",
+  "data_support_reason": "Data CSV contains all plotted values and their policy/month keys; no synthetic series.",
+  "data_warnings": [],
+  "confidence": 0.96,
+  "needs_clarification": false,
+  "clarification_question": ""
+}

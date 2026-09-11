@@ -1,0 +1,17 @@
+{
+  "policy": "P_efficiency",
+  "forecast_model": "linear_harmonic",
+  "risk": true,
+  "tau": 0.8,
+  "residual_days": 28,
+  "executor": "greedy",
+  "eta_charge": 0.9486832980505138,
+  "eta_discharge": 0.9486832980505138,
+  "power_basis": "AC_bus",
+  "terminal_target": "equal_initial",
+  "start": "2025-02-01",
+  "end": "2025-12-31",
+  "initial_energy_kwh": 7268.4231640740745,
+  "group": "efficiency",
+  "conditional": false
+}

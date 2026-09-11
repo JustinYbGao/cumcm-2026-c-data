@@ -1,0 +1,11 @@
+{
+  "paths": 18,
+  "annual_milp": 14028,
+  "summed_solver_seconds": 343.12669402733445,
+  "max_single_solver_seconds": 0.07000962499296293,
+  "max_gap": 4.182235147216388e-15,
+  "summed_path_wall_seconds": 683.0506439580495,
+  "failures": 0,
+  "fallbacks": 0,
+  "note": "Summed path wall times overlap because some groups ran concurrently; not total elapsed task duration."
+}

@@ -1,0 +1,147 @@
+{
+  "created_utc": "2026-09-11T17:08:06.831524+00:00",
+  "runs": [
+    {
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "risk_window": 28,
+      "scenario_window": 28,
+      "mu": 0.38232,
+      "taus": [
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "terminals": [
+        "equal_initial"
+      ],
+      "policy": "S_tau"
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "risk_window": 28,
+      "scenario_window": 28,
+      "mu": 0.38232,
+      "taus": [
+        0.8
+      ],
+      "terminals": [
+        "equal_initial",
+        1200.0,
+        6000.0
+      ],
+      "policy": "S_terminal"
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "risk_window": 28,
+      "scenario_window": 28,
+      "mu": 0.38232,
+      "taus": [
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "terminals": [
+        "equal_initial",
+        1200.0,
+        6000.0
+      ],
+      "policy": "S_joint"
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "risk_window": 28,
+      "scenario_window": 14,
+      "mu": 0.38232,
+      "taus": [
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "terminals": [
+        "equal_initial",
+        1200.0,
+        6000.0
+      ],
+      "policy": "S_w14"
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "risk_window": 28,
+      "scenario_window": 56,
+      "mu": 0.38232,
+      "taus": [
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "terminals": [
+        "equal_initial",
+        1200.0,
+        6000.0
+      ],
+      "policy": "S_w56"
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "risk_window": 28,
+      "scenario_window": 28,
+      "mu": 0.0,
+      "taus": [
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "terminals": [
+        "equal_initial",
+        1200.0,
+        6000.0
+      ],
+      "policy": "S_no_inventory"
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "risk_window": 28,
+      "scenario_window": 28,
+      "mu": 0.38232,
+      "taus": [
+        0.8
+      ],
+      "terminals": [
+        1200.0
+      ],
+      "policy": "P_floor"
+    }
+  ],
+  "main_policy": "S_joint",
+  "bootstrap_seed": 20260911,
+  "bootstrap_replicates": 2000,
+  "bootstrap_blocks": [
+    7,
+    14
+  ]
+}

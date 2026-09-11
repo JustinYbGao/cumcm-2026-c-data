@@ -1,0 +1,38 @@
+{
+  "adapted_code": "\"\"\"ModelViz CMP-005: repeated horizontal gradient bars for exact bill differences.\"\"\"\nimport os\nfrom pathlib import Path\nimport sys\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.colors import LinearSegmentedColormap\nimport numpy as np\nimport pandas as pd\n\nsource=Path(os.environ.get('DATA_PATH',sys.argv[1] if len(sys.argv)>1 else 'data.csv'))\nout=Path(os.environ.get('OUTPUT_DIR',sys.argv[2] if len(sys.argv)>2 else 'outputs'));out.mkdir(parents=True,exist_ok=True)\nf=pd.read_csv(source,float_precision='round_trip');assert len(f)==18\nplt.rcParams.update({'font.family':'serif','font.serif':['Times New Roman','DejaVu Serif'],'font.size':11,'svg.fonttype':'none'})\nfig,axes=plt.subplots(1,3,figsize=(16,10),sharey=True)\nfig.subplots_adjust(left=.205,right=.98,bottom=.12,top=.87,wspace=.18)\ncmap=LinearSegmentedColormap.from_list('template_gradient',['#66CDAA','#20B2AA','#008B8B','#4682B4','#000080','#191970'])\ncolors=cmap(np.linspace(0,1,len(f)));y=np.arange(len(f))\nfields=['ordinary_saving_vs_P_floor_yuan','emergency_saving_vs_P_floor_yuan','total_saving_vs_P_floor_yuan']\nfor i,(ax,col,title) in enumerate(zip(axes,fields,['(a) Ordinary purchase savings','(b) Emergency purchase savings','(c) Total savings'])):\n    ax.set_facecolor('#F5F5F5');values=f[col].to_numpy()/1000\n    bars=ax.barh(y,values,color=colors,edgecolor='#253741',linewidth=.6,height=.72,zorder=3)\n    for j,b in enumerate(bars):\n        if f.emergency_cost_yuan.iloc[j]>1e6+1e-5:b.set_hatch('///')\n    span=max(values.max(),0)-min(values.min(),0);pad=max(span*.022,.7)\n    for j,v in enumerate(values):ax.text(v+(pad if v>=0 else -pad),j,f'{v:+.2f}',ha='left' if v>=0 else 'right',va='center',fontsize=9)\n    ax.set_xlim(min(values.min(),0)-span*.24-pad,max(values.max(),0)+span*.26+pad)\n    ax.axvline(0,color='#484848',linewidth=.8,zorder=4)\n    ax.axhline(9.5,color='#919191',linestyle='--',linewidth=.8)\n    ax.set_title(title,fontsize=13,fontweight='bold',pad=12)\n    ax.set_xlabel('Savings vs P_floor (thousand CNY)',fontsize=10)\n    ax.set_yticks(y,labels=f.policy.tolist());ax.grid(axis='x',color='white',linewidth=1.5,zorder=0)\n    ax.tick_params(length=0)\n    for spine in ax.spines.values():spine.set_visible(False)\naxes[0].invert_yaxis()\nfig.suptitle('Q2: less ordinary purchasing can increase the emergency bill',fontsize=19,fontweight='bold',y=.97)\nfig.text(.205,.917,'All 18 new policies | 334-day historical replay | Positive values mean lower cost',fontsize=12)\nfig.text(.205,.062,'Dashed row: eight follow-up profiles. Hatched bars: emergency bill exceeds the 1,000,000 CNY cap.',fontsize=11)\nfig.text(.205,.035,'The cap is checked on the observed year; no future cap guarantee. Panel ranges differ; units are identical.',fontsize=10,color='#555555')\nfor ext in ['png','svg']:fig.savefig(out/('chart.'+ext),dpi=300,metadata={'Creator':'Q2 ModelViz adaptation'} if ext=='svg' else None)\nplt.close(fig)\n",
+  "changes_summary": [
+    "Three matched horizontal-bar panels show all 18 policies and positive/negative bill differences without conflating additive components."
+  ],
+  "preserved_style_elements": [
+    "Horizontal gradient bars",
+    "Repeated aligned panels",
+    "Serif typography",
+    "Gray background and white grid",
+    "Direct numeric labels"
+  ],
+  "changed_elements": [
+    "Use three panels with a shared policy order",
+    "Display positive and negative savings from zero",
+    "Remove unsupported p-value stars",
+    "Hatch cap violations, never omit them",
+    "English labels and 300dpi PNG plus SVG"
+  ],
+  "data_columns_used": [
+    "policy",
+    "ordinary_saving_vs_P_floor_yuan",
+    "emergency_saving_vs_P_floor_yuan",
+    "total_saving_vs_P_floor_yuan",
+    "emergency_cost_yuan",
+    "passes_user_requirement"
+  ],
+  "dependencies_used": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "additional_dependencies_requested": [],
+  "assumptions": [
+    "Exact historical actual bills; unchanged physical and information constraints."
+  ],
+  "warnings": []
+}

@@ -1,0 +1,17 @@
+{
+  "annual_policies": 8,
+  "annual_days": 2672,
+  "actual_intervals": 384768,
+  "saved_candidates": 16032,
+  "optimizer_calls": 5344,
+  "optimizer_success": 2533,
+  "optimizer_non_success": 2811,
+  "optimizer_evaluations": 1624651,
+  "candidate_rescore_evaluations": 16032,
+  "total_objective_calls_including_rescore": 1640683,
+  "saved_candidate_scenario_pairs": 1014762,
+  "optimizer_total_seconds": 127.01355781200982,
+  "optimizer_max_seconds": 0.17975512500561308,
+  "milp_total_seconds": 65.22313590980775,
+  "milp_max_seconds": 0.07221341600234155
+}

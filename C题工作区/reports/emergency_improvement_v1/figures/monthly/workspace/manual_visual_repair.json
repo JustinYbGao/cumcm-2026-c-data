@@ -1,0 +1,10 @@
+{
+  "manual_repair_count": 1,
+  "issue": "The first footnote said common scales without limiting it to the right savings axes.",
+  "repair": "Only the English footnote was changed; data and geometry unchanged.",
+  "source_backup": "repair_versions/adapted_plot_v0.py",
+  "png_backup": "repair_versions/chart_v0.png",
+  "repaired_png_actually_viewed": true,
+  "final_png_sha256": "d709bcd66b84cc9cdcb4d2bad92107a2e5e31f34d96e7fdbf99665585bdd2e26",
+  "note": "The downstream automated quality service performed zero further repairs; its repair_history.json records those automatic rounds only."
+}

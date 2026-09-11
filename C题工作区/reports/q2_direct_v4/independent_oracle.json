@@ -1,0 +1,167 @@
+{
+  "created_utc": "2026-09-11T18:30:01.921248+00:00",
+  "scope": "oracle",
+  "passed": true,
+  "independence": "Standard library, NumPy and pandas only; no production predictor, planner, dispatch, score or gradient imports.",
+  "tolerances": {
+    "physical_kwh": 1e-06,
+    "cost_yuan": 1e-05
+  },
+  "checks": [
+    {
+      "check": "source.coverage",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "source.net",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "source.price",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "source.initial",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "lp.balance",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 1.1368683772161603e-13,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "lp.recurrence",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 1.0231815394945443e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "lp.nonnegative",
+      "passed": true,
+      "comparisons": 192384,
+      "failures": 0
+    },
+    {
+      "check": "lp.power",
+      "passed": true,
+      "comparisons": 96192,
+      "failures": 0
+    },
+    {
+      "check": "lp.soc",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "dual.stationarity",
+      "passed": true,
+      "comparisons": 240480,
+      "failures": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "tolerance": 1e-09
+    },
+    {
+      "check": "dual.lower_sign",
+      "passed": true,
+      "comparisons": 240480,
+      "failures": 0
+    },
+    {
+      "check": "dual.upper_sign",
+      "passed": true,
+      "comparisons": 240480,
+      "failures": 0
+    },
+    {
+      "check": "dual.unbounded_upper_zero",
+      "passed": true,
+      "comparisons": 96192,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-09
+    },
+    {
+      "check": "dual.gap",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "lp.recorded_cost",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "greedy.balance",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 1.1368683772161603e-13,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "greedy.power",
+      "passed": true,
+      "comparisons": 96192,
+      "failures": 0
+    },
+    {
+      "check": "greedy.soc",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "greedy.emergency_zero",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 2.2168933355715126e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "greedy.upper_equals_lower",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    }
+  ],
+  "metrics": {
+    "dual_bound_yuan": 12227565.30317241,
+    "lp_primal_yuan": 12227565.30317241,
+    "strict_greedy_total_yuan": 12227565.30317241,
+    "strict_greedy_emergency_yuan": 3.2661159421465414e-10,
+    "max_greedy_emergency_kwh": 2.2168933355715126e-12,
+    "greedy_final_kwh": 1200.0,
+    "lp_final_kwh": 1200.0,
+    "max_greedy_vs_lp_soc_difference_kwh": 9600.0,
+    "certificate_sha256": "2d808f0a9f936a8afc25fbcbd6808d3b9aaa3d76ab731051ecc22cd85878a6f6"
+  }
+}

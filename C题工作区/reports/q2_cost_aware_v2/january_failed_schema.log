@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_cost_aware_v2/run_experiments.py", line 100, in <module>
+    run_one(cfg, args.stage)
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_cost_aware_v2/run_experiments.py", line 24, in run_one
+    d = decision(archive, day, load_hat, pv_hat, price, energy, cfg)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_cost_aware_v2/policy.py", line 115, in decision
+    plans.append(np.column_stack([plan[key] for key in PLAN_KEYS]))
+                                  ~~~~^^^^^
+KeyError: 'pv_curtailment_kwh'

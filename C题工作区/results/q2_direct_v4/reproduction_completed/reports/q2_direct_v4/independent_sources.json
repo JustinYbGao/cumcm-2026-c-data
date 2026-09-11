@@ -1,0 +1,174 @@
+{
+  "created_utc": "2026-09-11T18:45:46.894553+00:00",
+  "scope": "sources",
+  "passed": true,
+  "independence": "Standard library, NumPy and pandas only; no production predictor, planner, dispatch, score or gradient imports.",
+  "tolerances": {
+    "physical_kwh": 1e-06,
+    "cost_yuan": 1e-05
+  },
+  "checks": [
+    {
+      "check": "source.coverage",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "source.ordered_keys",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "source.unique_keys",
+      "passed": true,
+      "comparisons": 52560,
+      "failures": 0
+    },
+    {
+      "check": "source.complete_days",
+      "passed": true,
+      "comparisons": 365,
+      "failures": 0
+    },
+    {
+      "check": "source.nonnegative",
+      "passed": true,
+      "comparisons": 105120,
+      "failures": 0
+    },
+    {
+      "check": "source.load_power_to_energy",
+      "passed": true,
+      "comparisons": 52560,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "source.pv_power_to_energy",
+      "passed": true,
+      "comparisons": 52560,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "source.ten_minutes",
+      "passed": true,
+      "comparisons": 52560,
+      "failures": 0
+    },
+    {
+      "check": "source.availability",
+      "passed": true,
+      "comparisons": 52560,
+      "failures": 0
+    },
+    {
+      "check": "snapshot.actual_10min.csv",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "snapshot.fixed_price.csv",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "snapshot.model_baseline.json",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "snapshot.q2_baseline.json",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "snapshot.problem_text.txt",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "forecast.keys",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "forecast.dates_unique",
+      "passed": true,
+      "comparisons": 52416,
+      "failures": 0
+    },
+    {
+      "check": "forecast.load_source",
+      "passed": true,
+      "comparisons": 52416,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "forecast.pv_source",
+      "passed": true,
+      "comparisons": 52416,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "forecast.load_forecast",
+      "passed": true,
+      "comparisons": 52416,
+      "failures": 0,
+      "max_abs_error": 9.777068044058979e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "forecast.pv_forecast",
+      "passed": true,
+      "comparisons": 52416,
+      "failures": 0,
+      "max_abs_error": 1.8758328224066645e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "forecast.net_residual",
+      "passed": true,
+      "comparisons": 52416,
+      "failures": 0,
+      "max_abs_error": 9.777068044058979e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "forecast.midnight_issue",
+      "passed": true,
+      "comparisons": 52416,
+      "failures": 0
+    },
+    {
+      "check": "forecast.history_cutoff",
+      "passed": true,
+      "comparisons": 52416,
+      "failures": 0
+    },
+    {
+      "check": "forecast.residual_release",
+      "passed": true,
+      "comparisons": 52416,
+      "failures": 0
+    }
+  ],
+  "metrics": {
+    "source_rows": 52560,
+    "forecast_days": 364
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "policy": "D56",
+  "start": "2025-01-15",
+  "end": "2025-01-18",
+  "initial_energy_kwh": 6000.0,
+  "scenario_window": 56,
+  "kappa": 5,
+  "mu": 0.38232
+}

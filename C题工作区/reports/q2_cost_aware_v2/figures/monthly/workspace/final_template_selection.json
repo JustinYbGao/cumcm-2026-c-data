@@ -1,0 +1,101 @@
+{
+  "dataset_summary": "11 observed months, three actual-cost policies",
+  "observed_data_features": [],
+  "relevant_columns": [
+    "month",
+    "P",
+    "P_floor",
+    "S_joint"
+  ],
+  "candidate_comparisons": [
+    {
+      "template_id": "cmp_3d_ribbon_chart",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+      ],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_dual_axis_bar_line",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+      ],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_lag_correlation_analysis",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+      ],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "mpn_scatter_matrix_timeseries_regression",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+      ],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_flowing_percentage_stack",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+      ],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_3d_waterfall_distribution",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+      ],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_smoothed_trend_curves",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+      ],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_composite_line_bar_dual_axis",
+      "suitable": true,
+      "advantages": [
+        "Exact paired monthly cost lines and paired-difference bars retain losses without fitted trends."
+      ],
+      "limitations": [],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    }
+  ],
+  "selected_template_id": "trd_composite_line_bar_dual_axis",
+  "selected_template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "alternative_template_ids": [],
+  "selection_reason": "Exact paired monthly cost lines and paired-difference bars retain losses without fitted trends.",
+  "data_support_reason": "All plotted quantities are present in the real CSV or exact subtraction/unit conversion thereof.",
+  "data_warnings": [],
+  "confidence": 0.96,
+  "needs_clarification": false,
+  "clarification_question": ""
+}

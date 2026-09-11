@@ -1,0 +1,29 @@
+FFF
+======================================================================
+FAIL: test_gradient_away_from_kinks (__main__.KernelTest.test_gradient_away_from_kinks)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/test_kernel.py", line 38, in test_gradient_away_from_kinks
+    self.assertAlmostEqual(r['score'],expected[0],places=7)
+AssertionError: 0.0 != np.float64(237720.49331296494) within 7 places (np.float64(237720.49331296494) difference)
+
+======================================================================
+FAIL: test_hand_and_boundaries (__main__.KernelTest.test_hand_and_boundaries)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/test_kernel.py", line 29, in test_hand_and_boundaries
+    self.assertAlmostEqual(r['score'],expected[0],places=8)
+AssertionError: 0.0 != np.float64(42572.8024) within 8 places (np.float64(42572.8024) difference)
+
+======================================================================
+FAIL: test_prefix (__main__.KernelTest.test_prefix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_direct_v4/test_kernel.py", line 51, in test_prefix
+    self.assertGreater(evaluate(q,mutated,p,6000.)['score'],evaluate(q,n,p,6000.)['score'])
+AssertionError: 0.0 not greater than 0.0
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.024s
+
+FAILED (failures=3)

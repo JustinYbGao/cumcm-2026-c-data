@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-09-11T18:37:55.543384+00:00",
+  "scope": "gradient",
+  "passed": true,
+  "independence": "Standard library, NumPy and pandas only; no production predictor, planner, dispatch, score or gradient imports.",
+  "tolerances": {
+    "physical_kwh": 1e-06,
+    "cost_yuan": 1e-05
+  },
+  "checks": [
+    {
+      "check": "gradient.independent_score",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 2.9103830456733704e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "gradient.forward_vs_reverse",
+      "passed": true,
+      "comparisons": 144,
+      "failures": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "tolerance": 1e-09
+    },
+    {
+      "check": "gradient.non_kink_margin",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "gradient.finite_difference",
+      "passed": true,
+      "comparisons": 144,
+      "failures": 0,
+      "max_abs_error": 3.59529878313225e-07,
+      "tolerance": 5e-06
+    }
+  ],
+  "metrics": {
+    "minimum_branch_margin_kwh": 1.0713039782278884,
+    "finite_difference_step_kwh": 0.0001,
+    "maximum_finite_difference_error": 3.59529878313225e-07
+  }
+}

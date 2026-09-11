@@ -1,0 +1,56 @@
+[
+  {
+    "policy": "B0",
+    "max_segment_difference": 0.0,
+    "total_cost_difference_yuan": 0.0,
+    "column_differences": {
+      "load_forecast_kwh": 0.0,
+      "pv_forecast_kwh": 0.0,
+      "grid_plan_kwh": 0.0,
+      "charge_plan_kwh": 0.0,
+      "discharge_plan_kwh": 0.0,
+      "energy_start_plan_kwh": 0.0,
+      "energy_end_plan_kwh": 0.0,
+      "pv_curtailment_plan_kwh": 0.0,
+      "charge_mode_plan": 0.0,
+      "emergency_kwh": 0.0,
+      "planned_cost_yuan": 0.0,
+      "emergency_cost_yuan": 0.0,
+      "total_cost_yuan": 0.0,
+      "charge_actual_kwh": 0.0,
+      "discharge_actual_kwh": 0.0,
+      "surplus_kwh": 0.0,
+      "unused_grid_kwh": 0.0,
+      "pv_curtailment_kwh": 0.0,
+      "energy_start_actual_kwh": 0.0,
+      "energy_end_actual_kwh": 0.0
+    }
+  },
+  {
+    "policy": "B1",
+    "max_segment_difference": 0.0,
+    "total_cost_difference_yuan": 0.0,
+    "column_differences": {
+      "load_forecast_kwh": 0.0,
+      "pv_forecast_kwh": 0.0,
+      "grid_plan_kwh": 0.0,
+      "charge_plan_kwh": 0.0,
+      "discharge_plan_kwh": 0.0,
+      "energy_start_plan_kwh": 0.0,
+      "energy_end_plan_kwh": 0.0,
+      "pv_curtailment_plan_kwh": 0.0,
+      "charge_mode_plan": 0.0,
+      "emergency_kwh": 0.0,
+      "planned_cost_yuan": 0.0,
+      "emergency_cost_yuan": 0.0,
+      "total_cost_yuan": 0.0,
+      "charge_actual_kwh": 0.0,
+      "discharge_actual_kwh": 0.0,
+      "surplus_kwh": 0.0,
+      "unused_grid_kwh": 0.0,
+      "pv_curtailment_kwh": 0.0,
+      "energy_start_actual_kwh": 0.0,
+      "energy_end_actual_kwh": 0.0
+    }
+  }
+]

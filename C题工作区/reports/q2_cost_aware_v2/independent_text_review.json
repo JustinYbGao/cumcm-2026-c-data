@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-09-11T17:50:53.666020+00:00",
+  "passed": true,
+  "scope": "Final complete BZD nine-part textual review plus incremental closure of three earlier editorial/reproducibility findings; no rerun of main scientific audits.",
+  "blocking_findings": [],
+  "unresolved_in_scope_findings": [],
+  "resolved_findings": [
+    "Hourly 6 x history-day sample pool and linear quantile interpolation specified.",
+    "Solver options, exact software versions, environment and reproducibility entry points specified.",
+    "Final report, PNG/SVG links and figures verified."
+  ],
+  "reviewed_conclusions": [
+    "LP relaxation lower-bound mapping and dual interpretation are valid.",
+    "Inventory score and auxiliary stock value are separate from actual bill.",
+    "Small improvement versus P_terminal has block intervals spanning zero and is not claimed robust.",
+    "Main joint-selection and seasonal follow-up negative results are retained.",
+    "Relocation test scope is explicitly one complete P_floor annual path, not a second all-nine replay."
+  ],
+  "artifact_sha256": {
+    "papers/q2_cost_aware_v2/paper_supplement.md": "91b3bfb484b9d0b3679f3534560ac8810b00d62e0d523695ddd02963867327da",
+    "reports/q2_cost_aware_v2/research_report.md": "42fc86f74da381dddcebeb566e3d883fdfbc6104a8fff682fae3846d7e601fac",
+    "reports/q2_cost_aware_v2/README.md": "da6aeb3fc5b9a42afd731917018d945b7ec0d90e780bf8edcde5119d021a032f",
+    "reports/q2_cost_aware_v2/environment.json": "561f055f18989ce7f2423f06bed133406915c2b578175cec8b325c957207008b",
+    "reports/q2_cost_aware_v2/requirements.lock.txt": "a428f8ad70a2c76b82ec3ea207b59171743068175f8594a01d9d098137dfb229",
+    "reports/q2_cost_aware_v2/method_fit_and_workflow.md": "b68974471304cd88b3a7a9f3ecda94b4fea24b8ff28308c2d27d4655114b3503",
+    "reports/q2_cost_aware_v2/independent_bzd_review.md": "1b2345ff99cefb426d1aea143460e8780abc5c06782666355b0a9fcf30cdd482",
+    "scripts/q2_cost_aware_v2/reproduce.py": "5aeb2633a550954cd3438c11073e4ef844f36aaf03bd7a1c1a34b9364417b708",
+    "reports/q2_cost_aware_v2/portability_validation.json": "694aaac3a7cc4b1fd0c1287b997939fef542e5cb9927b421a64f86e8236f61a7",
+    "reports/q2_cost_aware_v2/independent_validation.json": "5f8fcb651e96b2600bdcc8c99a5b98d8f04121a0b9894bc3278b26ddbce1f625",
+    "reports/q2_cost_aware_v2/independent_validation_followup.json": "ffb6d762fc88f4522ba0f953e4e07c4884fdf7330c97ecb7b6b4035e5a663715",
+    "reports/q2_cost_aware_v2/independent_figure_review.json": "723725a8f9362b7295b369beba799b5f9eb15d8cab0f27aa640a0ebae5ec6c18"
+  }
+}

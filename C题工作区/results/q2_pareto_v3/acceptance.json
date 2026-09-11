@@ -1,0 +1,15 @@
+{
+  "primary": "R_guard",
+  "primary_passed": true,
+  "caps": {
+    "emergency_cap_yuan": 661273.6528153808,
+    "ordinary_cap_yuan": 13361564.945683166,
+    "total_cap_yuan": 14022838.598498546,
+    "secondary_emergency_cap_yuan": 641845.2793936513
+  },
+  "new_joint_passes": [
+    "R_guard"
+  ],
+  "new_stricter_joint_passes": [],
+  "scope": "Observed 334-day joint criterion; all candidates and failures retained, no future guarantee."
+}

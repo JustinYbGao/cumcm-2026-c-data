@@ -1,0 +1,9 @@
+test_discrete_tail_fraction_and_atoms (__main__.Tests.test_discrete_tail_fraction_and_atoms) ... ok
+test_hour_profile_uses_only_completed_past_rows (__main__.Tests.test_hour_profile_uses_only_completed_past_rows) ... ok
+test_scenario_actions_cannot_see_future (__main__.Tests.test_scenario_actions_cannot_see_future) ... ok
+test_tail_guard_rejects_same_mean_riskier_candidate (__main__.Tests.test_tail_guard_rejects_same_mean_riskier_candidate) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.023s
+
+OK

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "manifest_files": 319,
+  "zip_entries": 320,
+  "zip_bytes": 153095689,
+  "zip_sha256": "a65a0c2216116ade7d9805e28e879027bc1cba90a48281ef1c778544b5d54f35",
+  "readback_sha256_all_match": true,
+  "excluded": "runtime caches and duplicate portability workspace; its logs/validation are included",
+  "manifest_self_reference": "Manifest and archive validation sidecars excluded from manifest; manifest included in ZIP."
+}

@@ -1,0 +1,1747 @@
+{
+  "created_utc": "2026-09-11T17:27:27.031352+00:00",
+  "passed": true,
+  "scope": "causality",
+  "extension": true,
+  "independence": "Only standard library, numpy and pandas; no imports from producer predictor/planner/scorer/executor.",
+  "tolerances": {
+    "physical_kwh": 1e-06,
+    "cost_yuan": 1e-05
+  },
+  "sources": {
+    "passed": true,
+    "checks": [
+      {
+        "check": "source_snapshot.actual_10min.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.fixed_price.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.model_baseline.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.q2_baseline.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.original_run_q2.py",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.original_solve_q1.py",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.problem_text.txt",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.selection.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "source_snapshot.bzd_quantile_record.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "original_baseline_snapshot.B0",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "original_baseline_snapshot.B1",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "original_baseline_snapshot.no_storage",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.ledger.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.plans.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.daily.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.summary.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.config.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B0.models_and_solvers.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.ledger.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.plans.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.daily.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.summary.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.config.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.B1.models_and_solvers.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.ledger.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.plans.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.daily.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.summary.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.config.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P.models_and_solvers.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.ledger.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.plans.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.daily.csv",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.summary.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.config.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "previous_verified_copy.P_terminal.models_and_solvers.json",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "protocol.frozen_sha256",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.frozen_sha256",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.main_predeclared",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.seven_predeclared",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.library.S_tau",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.period.S_tau",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.initial.S_tau",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "config.windows.S_tau",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.library.S_terminal",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.period.S_terminal",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.initial.S_terminal",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "config.windows.S_terminal",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.library.S_joint",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.period.S_joint",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.initial.S_joint",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "config.windows.S_joint",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.library.S_w14",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.period.S_w14",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.initial.S_w14",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "config.windows.S_w14",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.library.S_w56",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.period.S_w56",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.initial.S_w56",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "config.windows.S_w56",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.library.S_no_inventory",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.period.S_no_inventory",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.initial.S_no_inventory",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "config.windows.S_no_inventory",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.library.P_floor",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.period.P_floor",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "config.initial.P_floor",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "config.windows.P_floor",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "protected_files_unchanged",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "count": 3268,
+          "changed": []
+        }
+      },
+      {
+        "check": "actual.complete_unique_ordered",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "expected_rows": 52560,
+          "actual_rows": 52560,
+          "duplicates": 0
+        }
+      },
+      {
+        "check": "price.slots",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "price.start_minutes",
+        "passed": true,
+        "comparisons": 144,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "price.end_minutes",
+        "passed": true,
+        "comparisons": 144,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "actual.units.load",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "actual.units.pv",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "actual.nonnegative",
+        "passed": true,
+        "comparisons": 105120,
+        "failures": 0
+      },
+      {
+        "check": "price.positive",
+        "passed": true,
+        "comparisons": 144,
+        "failures": 0
+      },
+      {
+        "check": "actual.interval_start",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "actual.interval_end",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "actual.available_time",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "archive.complete_unique_ordered",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "expected_rows": 52416,
+          "actual_rows": 52416,
+          "duplicates": 0
+        }
+      },
+      {
+        "check": "archive.issue_time",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0
+      },
+      {
+        "check": "archive.history_end",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0
+      },
+      {
+        "check": "archive.residual_available_time",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0
+      },
+      {
+        "check": "archive.source.load_actual_kwh",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "archive.source.pv_actual_kwh",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "archive.load_from_history",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "archive.pv_from_history",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "archive.net_error",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "seasonal.complete_unique_ordered",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "expected_rows": 52416,
+          "actual_rows": 52416,
+          "duplicates": 0
+        }
+      },
+      {
+        "check": "seasonal.load_history",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "seasonal.pv_history",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "seasonal.net_error",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "seasonal.issue_time",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0
+      },
+      {
+        "check": "seasonal.history_end",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0
+      },
+      {
+        "check": "seasonal.residual_available_time",
+        "passed": true,
+        "comparisons": 52416,
+        "failures": 0
+      },
+      {
+        "check": "extension.protocol_frozen",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "extension.config_frozen",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      }
+    ],
+    "check_groups": 98,
+    "comparisons": 1102251,
+    "failed_groups": 0
+  },
+  "completeness": {
+    "passed": true,
+    "checks": [],
+    "check_groups": 0,
+    "comparisons": 0,
+    "failed_groups": 0
+  },
+  "runs": {},
+  "references": {},
+  "lower_bound": {
+    "passed": null,
+    "status": "outside_partial_scope"
+  },
+  "causality": {
+    "passed": true,
+    "checks": [
+      {
+        "check": "evidence_present",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "cutoff",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "mutated_source.keys",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "mutated_source.date",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "mutated_source.slot_id",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated_source.load_actual_kw",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated_source.interval_end",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "mutated_source.interval_start",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "mutated_source.load_raw_time_label",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "mutated_source.load_source_row",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated_source.load_source_column",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "mutated_source.pv_actual_kw",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated_source.pv_raw_time_label",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "mutated_source.pv_source_row",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated_source.pv_source_column",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "mutated_source.actual_price_yuan_per_kwh",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated_source.price_raw_time_label",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "mutated_source.price_source_row",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated_source.price_source_column",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "mutated_source.fixed_price_yuan_per_kwh",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated_source.load_actual_kwh",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated_source.pv_actual_kwh",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated_source.net_load_actual_kw",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated_source.net_load_actual_kwh",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated_source.available_time",
+        "passed": true,
+        "comparisons": 52560,
+        "failures": 0
+      },
+      {
+        "check": "original.releases.complete_unique_ordered",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "expected_rows": 3600,
+          "actual_rows": 3600,
+          "duplicates": 0
+        }
+      },
+      {
+        "check": "original.load_prediction",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "original.pv_prediction",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "original.source.load_actual_kwh",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "original.source.pv_actual_kwh",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "original.net_residual",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "original.issue_time",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0
+      },
+      {
+        "check": "original.history_end",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0
+      },
+      {
+        "check": "original.residual_available_time",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0
+      },
+      {
+        "check": "mutated.releases.complete_unique_ordered",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "expected_rows": 3600,
+          "actual_rows": 3600,
+          "duplicates": 0
+        }
+      },
+      {
+        "check": "mutated.load_prediction",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated.pv_prediction",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated.source.load_actual_kwh",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated.source.pv_actual_kwh",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated.net_residual",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "mutated.issue_time",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0
+      },
+      {
+        "check": "mutated.history_end",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0
+      },
+      {
+        "check": "mutated.residual_available_time",
+        "passed": true,
+        "comparisons": 3600,
+        "failures": 0
+      },
+      {
+        "check": "all_declared_policies",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_B1.original.independent_replay",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_B1.mutated.independent_replay",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_B1.noninterference.prefix",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 9.094947017729282e-13
+        }
+      },
+      {
+        "check": "P_B1.noninterference.frozen_plan",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_B1.noninterference.candidate_evidence",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_B1.positive_control",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_B1.reported.prefix_rows",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_B1.reported.prefix_difference_kwh",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_B1.reported.frozen_plan_difference_kwh",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_B1.reported.next_day_response_kwh",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_B1.reported.evidence_identical",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_B1.reported.passed",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_B1_floor.original.independent_replay",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_B1_floor.mutated.independent_replay",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_B1_floor.noninterference.prefix",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 9.094947017729282e-13
+        }
+      },
+      {
+        "check": "P_B1_floor.noninterference.frozen_plan",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_B1_floor.noninterference.candidate_evidence",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_B1_floor.positive_control",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_B1_floor.reported.prefix_rows",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_B1_floor.reported.prefix_difference_kwh",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_B1_floor.reported.frozen_plan_difference_kwh",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_B1_floor.reported.next_day_response_kwh",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_B1_floor.reported.evidence_identical",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_B1_floor.reported.passed",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "reported_pass",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "script_sha256",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "scenario_prefix.evidence_present",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "scenario_prefix.initial",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "scenario_prefix.cutoff",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "scenario_prefix.price",
+        "passed": true,
+        "comparisons": 144,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "scenario_prefix.contract_source",
+        "passed": true,
+        "comparisons": 144,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "scenario_prefix.net_source",
+        "passed": true,
+        "comparisons": 432,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 2.2737367544323206e-13
+        }
+      },
+      {
+        "check": "scenario_prefix.mutation",
+        "passed": true,
+        "comparisons": 432,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 2.2737367544323206e-13
+        }
+      },
+      {
+        "check": "scenario_prefix.trace.original.charge",
+        "passed": true,
+        "comparisons": 432,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 2.0463630789890885e-12
+        }
+      },
+      {
+        "check": "scenario_prefix.trace.original.discharge",
+        "passed": true,
+        "comparisons": 432,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 4.263256414560601e-13
+        }
+      },
+      {
+        "check": "scenario_prefix.trace.original.emergency",
+        "passed": true,
+        "comparisons": 432,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 4.263256414560601e-13
+        }
+      },
+      {
+        "check": "scenario_prefix.trace.original.surplus",
+        "passed": true,
+        "comparisons": 432,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 2.1600499167107046e-12
+        }
+      },
+      {
+        "check": "scenario_prefix.trace.original.energy_start",
+        "passed": true,
+        "comparisons": 432,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 1.8189894035458565e-12
+        }
+      },
+      {
+        "check": "scenario_prefix.trace.original.energy_end",
+        "passed": true,
+        "comparisons": 432,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 1.8189894035458565e-12
+        }
+      },
+      {
+        "check": "scenario_prefix.trace.mutated.charge",
+        "passed": true,
+        "comparisons": 432,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 2.0463630789890885e-12
+        }
+      },
+      {
+        "check": "scenario_prefix.trace.mutated.discharge",
+        "passed": true,
+        "comparisons": 432,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 4.263256414560601e-13
+        }
+      },
+      {
+        "check": "scenario_prefix.trace.mutated.emergency",
+        "passed": true,
+        "comparisons": 432,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 4.263256414560601e-13
+        }
+      },
+      {
+        "check": "scenario_prefix.trace.mutated.surplus",
+        "passed": true,
+        "comparisons": 432,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 2.1600499167107046e-12
+        }
+      },
+      {
+        "check": "scenario_prefix.trace.mutated.energy_start",
+        "passed": true,
+        "comparisons": 432,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 1.8189894035458565e-12
+        }
+      },
+      {
+        "check": "scenario_prefix.trace.mutated.energy_end",
+        "passed": true,
+        "comparisons": 432,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 1.8189894035458565e-12
+        }
+      },
+      {
+        "check": "scenario_prefix.noninterference",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "scenario_prefix.positive_response",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "scenario_prefix.reported_prefix",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "scenario_prefix.reported_response",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "scenario_prefix.reported_pass",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      }
+    ],
+    "check_groups": 94,
+    "comparisons": 1220296,
+    "failed_groups": 0,
+    "replays": {
+      "original/P_B1": {
+        "passed": true,
+        "checks": [],
+        "check_groups": 243,
+        "comparisons": 47932,
+        "failed_groups": 0,
+        "checks_contains": "failures_only; all groups included in counts and error maxima",
+        "max_abs_error_by_tolerance": {
+          "0": 0,
+          "1e-06": 2.0463630789890885e-12,
+          "1e-05": 1.1641532182693481e-10
+        },
+        "totals": {
+          "grid_plan_kwh": 197793.49177411525,
+          "emergency_kwh": 68.93228139999792,
+          "planned_cost_yuan": 114470.87135721795,
+          "emergency_cost_yuan": 480.8715950463855,
+          "total_cost_yuan": 114951.74295226432,
+          "charge_actual_kwh": 65736.63336802469,
+          "discharge_actual_kwh": 51267.752701933336,
+          "surplus_kwh": 17425.564739423884,
+          "unused_grid_kwh": 10159.978775020583,
+          "pv_curtailment_kwh": 7265.585964403299,
+          "days": 3.0,
+          "intervals": 432.0,
+          "initial_energy_kwh": 6000.0,
+          "final_energy_kwh": 8198.800362407406,
+          "inventory_value_yuan_per_kwh": 0.6895775000000001,
+          "inventory_adjusted_cost_yuan": 113435.49969535632,
+          "emergency_intervals": 1.0,
+          "emergency_days": 1.0,
+          "emergency_share_of_load": 0.00023988406646527748
+        },
+        "candidates_verified": 3,
+        "scenario_candidate_replays": 69,
+        "solver_statistics": {
+          "solver_count": 3,
+          "solver_runtime_seconds": 0.10176099999807775,
+          "solver_max_runtime_seconds": 0.05087720799201634,
+          "solver_max_mip_gap": 0.0,
+          "solver_failures": 0,
+          "solver_fallbacks": 0
+        },
+        "artifact_sha256": {
+          "config.json": "0efd7b5de8d179538b5f01082486c12aafef9ae67b0c41724f54dea2432d12dd",
+          "ledger.csv": "acda429f41fc4c338558a0abccef3eb7bd411deae8f50d39ddae4f9c6ac9fb83",
+          "plans.csv": "1ef2bf7ecb0e60e38fcf1533bd518cce54b78d853694221e7d493f835a84de8c",
+          "daily.csv": "eafbceaf10fb5d58c965f77045cbbbd7c38af3abffffc58173c3ef435f2d6d7d",
+          "summary.json": "0b197d663ebe7f4d6e871a317ae3fe5137646e7899028de47b6526f644326417",
+          "decisions.json": "a8abe0f5b206e464c17cc35c36581367bfadd4cebb6c7affd80a706585f68b72",
+          "decision_evidence.npz": "23d4e6c15a0aaee90f62db4077084ea4b712d45cf312f20b953741b8813703cf"
+        }
+      },
+      "mutated/P_B1": {
+        "passed": true,
+        "checks": [],
+        "check_groups": 243,
+        "comparisons": 47932,
+        "failed_groups": 0,
+        "checks_contains": "failures_only; all groups included in counts and error maxima",
+        "max_abs_error_by_tolerance": {
+          "0": 0,
+          "1e-06": 2.0463630789890885e-12,
+          "1e-05": 1.1641532182693481e-10
+        },
+        "totals": {
+          "grid_plan_kwh": 209252.40703779837,
+          "emergency_kwh": 171433.06993888458,
+          "planned_cost_yuan": 122986.64831082235,
+          "emergency_cost_yuan": 807674.8357984528,
+          "total_cost_yuan": 930661.4841092752,
+          "charge_actual_kwh": 32218.217165452665,
+          "discharge_actual_kwh": 30416.75590401666,
+          "surplus_kwh": 10211.185590246927,
+          "unused_grid_kwh": 6923.941642510294,
+          "pv_curtailment_kwh": 3287.243947736633,
+          "days": 3.0,
+          "intervals": 432.0,
+          "initial_energy_kwh": 6000.0,
+          "final_energy_kwh": 1200.0,
+          "inventory_value_yuan_per_kwh": 0.6895775000000001,
+          "inventory_adjusted_cost_yuan": 933971.4561092751,
+          "emergency_intervals": 182.0,
+          "emergency_days": 2.0,
+          "emergency_share_of_load": 0.37255371719183317
+        },
+        "candidates_verified": 3,
+        "scenario_candidate_replays": 69,
+        "solver_statistics": {
+          "solver_count": 3,
+          "solver_runtime_seconds": 0.09811787601211108,
+          "solver_max_runtime_seconds": 0.05085029199835844,
+          "solver_max_mip_gap": 2.1309748257249746e-16,
+          "solver_failures": 0,
+          "solver_fallbacks": 0
+        },
+        "artifact_sha256": {
+          "config.json": "0efd7b5de8d179538b5f01082486c12aafef9ae67b0c41724f54dea2432d12dd",
+          "ledger.csv": "aef4811570c914a7c2740291a93ef6d94504bfe466dc7422580e2a9d88c12520",
+          "plans.csv": "ddd9bd07fb5a34ef7cab0999d7fc7488db26de0ac43ad30e0c07d9a78e0f54e5",
+          "daily.csv": "8cc0e7d85bbfa8645b1180f37be3e02c955f2790550b6e423b6f316b5a1101b8",
+          "summary.json": "afeb85d042c9d5688d93c71dab74da4568ce17451748f87a87b0d829d89f05a8",
+          "decisions.json": "046d0f5edc72fc31cb6976f5f305513eb86d5fd3285edfc8c8c374ebbfa0c93c",
+          "decision_evidence.npz": "44b0d3c05f57180e41f63c2de9b12fa9910d679163c63f7c55fb76761c0b1edd"
+        }
+      },
+      "original/P_B1_floor": {
+        "passed": true,
+        "checks": [],
+        "check_groups": 243,
+        "comparisons": 47932,
+        "failed_groups": 0,
+        "checks_contains": "failures_only; all groups included in counts and error maxima",
+        "max_abs_error_by_tolerance": {
+          "0": 0,
+          "1e-06": 2.0463630789890885e-12,
+          "1e-05": 1.1641532182693481e-10
+        },
+        "totals": {
+          "grid_plan_kwh": 189877.13467399176,
+          "emergency_kwh": 68.93228139999633,
+          "planned_cost_yuan": 111301.1838402935,
+          "emergency_cost_yuan": 480.87159504637435,
+          "total_cost_yuan": 111782.05543533989,
+          "charge_actual_kwh": 58632.68092090534,
+          "discharge_actual_kwh": 51349.44605859999,
+          "surplus_kwh": 16694.853443086435,
+          "unused_grid_kwh": 9429.267478683134,
+          "pv_curtailment_kwh": 7265.585964403299,
+          "days": 3.0,
+          "intervals": 432.0,
+          "initial_energy_kwh": 6000.0,
+          "final_energy_kwh": 1714.4727637037033,
+          "inventory_value_yuan_per_kwh": 0.6895775000000001,
+          "inventory_adjusted_cost_yuan": 114737.258593127,
+          "emergency_intervals": 1.0,
+          "emergency_days": 1.0,
+          "emergency_share_of_load": 0.00023988406646527195
+        },
+        "candidates_verified": 3,
+        "scenario_candidate_replays": 69,
+        "solver_statistics": {
+          "solver_count": 3,
+          "solver_runtime_seconds": 0.06821145898720715,
+          "solver_max_runtime_seconds": 0.030031249989406206,
+          "solver_max_mip_gap": 0.0,
+          "solver_failures": 0,
+          "solver_fallbacks": 0
+        },
+        "artifact_sha256": {
+          "config.json": "f698dbb8dd21c73647c219a88d121e88870499e019296a73508b87f3946bbed9",
+          "ledger.csv": "2f5884550bf135f5d83d7786d7cd3e351e89eb138ce5ab2777080a4510f0308d",
+          "plans.csv": "64a8f84d3fc0f2814a36e18f934906f939d95e35f48f214b2734a8daa4c9f134",
+          "daily.csv": "4f9812bfe9b62100cf9a05e099b98275fea5ac6456ff5d809c65955ec5037122",
+          "summary.json": "c83c45057706137ee4db0d272586b68f489eb809a8b3de1fc482f5a8efa24528",
+          "decisions.json": "c62104f309a41b34aa1554261f2934a87ba2015e45e138828965f6c23d69ebbe",
+          "decision_evidence.npz": "ee9ac54a199a0c7fde2a3aff33afbd15adbf75fce037b52ba56c0fa6a5772ca5"
+        }
+      },
+      "mutated/P_B1_floor": {
+        "passed": true,
+        "checks": [],
+        "check_groups": 243,
+        "comparisons": 47932,
+        "failed_groups": 0,
+        "checks_contains": "failures_only; all groups included in counts and error maxima",
+        "max_abs_error_by_tolerance": {
+          "0": 0,
+          "1e-06": 2.0463630789890885e-12,
+          "1e-05": 1.1641532182693481e-10
+        },
+        "totals": {
+          "grid_plan_kwh": 202570.47628265433,
+          "emergency_kwh": 177754.7664513578,
+          "planned_cost_yuan": 120267.12302165729,
+          "emergency_cost_yuan": 820887.3476919304,
+          "total_cost_yuan": 941154.4707135876,
+          "charge_actual_kwh": 31811.026798786,
+          "discharge_actual_kwh": 30086.931707016658,
+          "surplus_kwh": 9928.31751724281,
+          "unused_grid_kwh": 6641.073569506176,
+          "pv_curtailment_kwh": 3287.243947736633,
+          "days": 3.0,
+          "intervals": 432.0,
+          "initial_energy_kwh": 6000.0,
+          "final_energy_kwh": 1200.0,
+          "inventory_value_yuan_per_kwh": 0.6895775000000001,
+          "inventory_adjusted_cost_yuan": 944464.4427135875,
+          "emergency_intervals": 189.0,
+          "emergency_days": 2.0,
+          "emergency_share_of_load": 0.3862918573040073
+        },
+        "candidates_verified": 3,
+        "scenario_candidate_replays": 69,
+        "solver_statistics": {
+          "solver_count": 3,
+          "solver_runtime_seconds": 0.05803716702212114,
+          "solver_max_runtime_seconds": 0.030406167003093287,
+          "solver_max_mip_gap": 2.1309748257249746e-16,
+          "solver_failures": 0,
+          "solver_fallbacks": 0
+        },
+        "artifact_sha256": {
+          "config.json": "f698dbb8dd21c73647c219a88d121e88870499e019296a73508b87f3946bbed9",
+          "ledger.csv": "1285d66dedfe1954b870ab0ec954f2b0942eabfeee00c8c800cf2ef30952e69e",
+          "plans.csv": "c2d8c824e5e32dff68ba584e7e0877754b1f379dbe3f33e2accbe03af1ca1c55",
+          "daily.csv": "11d1fa06469e534f6265953ddfc09ec050a3fbeed8599b87b1ea39f0e1579a3c",
+          "summary.json": "61ba0c0953632172f24b0b3f872d8d8c48c73bbf510faa969a18dfc59d7c8522",
+          "decisions.json": "ce7494e1a0c5dc9e7de6c93bb674ede689a6f7686c75f848153b2db86a559d8a",
+          "decision_evidence.npz": "70934db31c65c65b7fc410d39fbaaf8822dd9f680bbeb9a955660b0846e3ca87"
+        }
+      }
+    },
+    "artifact_sha256": {
+      "causality_extension_inputs/future_mutated_forecasts.csv": "195a3b97130385a7ce5f13f0d1c41783439647f1ce63fa5fff758703a19ac09b",
+      "causality_extension_inputs/future_mutated_actual.csv": "69917e7eb017518fc703642f12399700e7b248d2eefb2e7bd789ad9ca241a55a",
+      "causality_extension_inputs/original_forecasts.csv": "8eb24e4db08ba7694add23bf0276ce90da74f36fa9c21482d7fa70b0b8e95326",
+      "causality_extension_inputs/scenario_prefix_evidence.npz": "8f968ca10bb83a71a8170b5ce895fd6ab118d6f12fb4c21d751343a104a2cc44"
+    }
+  },
+  "extension_causality": {
+    "passed": null,
+    "status": "outside_partial_scope"
+  },
+  "validator_sha256": "50afb33ed18a16da515c1be3e7495c7557d46bce95d93ea7cf058e25305038ba",
+  "limitations": [
+    "Processed source was independently audited; raw XLSX cleaning was not repeated.",
+    "Solver evidence is checked against independently reconstructed feasible candidates, without rerunning all MILPs.",
+    "Historical replay is not a prospective held-out validation; interval balancing uses the inherited within-slot response assumption."
+  ]
+}

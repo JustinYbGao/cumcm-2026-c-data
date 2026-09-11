@@ -1,0 +1,22 @@
+january/T_rebalance PASS
+january/R_guard PASS
+january/R_mean PASS
+january/R_cost PASS
+january/R_w28 PASS
+runs/T_day_trim PASS
+runs/T_evening_hedge PASS
+runs/T_rebalance PASS
+runs/T_soft PASS
+runs/T_strong PASS
+runs/T_morning_hedge PASS
+runs/R_guard PASS
+runs/R_mean PASS
+runs/R_cost PASS
+runs/R_w28 PASS
+reference/B0 PASS
+reference/B1 PASS
+reference/P PASS
+reference/P_terminal PASS
+reference/P_floor PASS
+reference/S_terminal PASS
+{"passed": true, "output": "/Users/justingao/Documents/CUMCM/C题工作区/reports/q2_pareto_v3/independent_validation.json"}

@@ -1,0 +1,17 @@
+{
+  "policy": "D112_refined",
+  "start": "2025-01-24",
+  "end": "2025-01-26",
+  "initial_energy_kwh": 6000.0,
+  "scenario_window": 112,
+  "kappa": 5,
+  "mu": 0.38232,
+  "optimizer": {
+    "maxiter": 1200,
+    "maxfun": 10000,
+    "maxls": 30,
+    "maxcor": 10,
+    "ftol": 1e-10,
+    "gtol": 1e-05
+  }
+}

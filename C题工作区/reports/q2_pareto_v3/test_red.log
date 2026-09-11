@@ -1,0 +1,42 @@
+test_discrete_tail_fraction_and_atoms (__main__.Tests.test_discrete_tail_fraction_and_atoms) ... ERROR
+test_hour_profile_uses_only_completed_past_rows (__main__.Tests.test_hour_profile_uses_only_completed_past_rows) ... ERROR
+test_scenario_actions_cannot_see_future (__main__.Tests.test_scenario_actions_cannot_see_future) ... ok
+test_tail_guard_rejects_same_mean_riskier_candidate (__main__.Tests.test_tail_guard_rejects_same_mean_riskier_candidate) ... ERROR
+
+======================================================================
+ERROR: test_discrete_tail_fraction_and_atoms (__main__.Tests.test_discrete_tail_fraction_and_atoms)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_pareto_v3/test_policy.py", line 9, in test_discrete_tail_fraction_and_atoms
+    np.testing.assert_allclose(empirical_cvar(np.array([[0.,10.,20.],[7.,7.,7.]]),.5),[50/3,7])
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_pareto_v3/policy.py", line 6, in empirical_cvar
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_hour_profile_uses_only_completed_past_rows (__main__.Tests.test_hour_profile_uses_only_completed_past_rows)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_pareto_v3/test_policy.py", line 25, in test_hour_profile_uses_only_completed_past_rows
+    delta=profile_delta(a,'2025-01-09',profile)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_pareto_v3/policy.py", line 14, in profile_delta
+    raise NotImplementedError
+NotImplementedError
+
+======================================================================
+ERROR: test_tail_guard_rejects_same_mean_riskier_candidate (__main__.Tests.test_tail_guard_rejects_same_mean_riskier_candidate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_pareto_v3/test_policy.py", line 16, in test_tail_guard_rejects_same_mean_riskier_candidate
+    np.testing.assert_array_equal(guard_mask(ordinary,emergency,energy,'tail',.9),[True,False,True,False,False])
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_pareto_v3/policy.py", line 10, in guard_mask
+    raise NotImplementedError
+NotImplementedError
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.019s
+
+FAILED (errors=3)

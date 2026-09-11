@@ -1,0 +1,5 @@
+baseline,block_days,point_saving_yuan,ci95_low_yuan,ci95_high_yuan,replicates,seed,scope
+B0,7,2124173.547497119,1484687.6218908147,2838775.5992518393,2000,20260911,conditional historical circular moving-block bootstrap; no independent-year guarantee
+B0,14,2124173.547497119,1426877.5460267346,2829823.665425263,2000,20260911,conditional historical circular moving-block bootstrap; no independent-year guarantee
+B1,7,1168697.505439679,663491.2989339216,1819726.7282343553,2000,20260911,conditional historical circular moving-block bootstrap; no independent-year guarantee
+B1,14,1168697.505439679,633537.7937620506,1835482.9097313562,2000,20260911,conditional historical circular moving-block bootstrap; no independent-year guarantee

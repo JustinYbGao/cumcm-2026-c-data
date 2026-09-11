@@ -1,0 +1,19 @@
+{
+  "primary": "D56",
+  "primary_passed": true,
+  "best_observed_policy": "D112",
+  "best_total_yuan": 13913892.481868185,
+  "best_emergency_yuan": 838655.4538288128,
+  "emergency_cap_yuan": 1000000.0,
+  "new_passes": [
+    "D56",
+    "D28",
+    "D112",
+    "D56_risk625",
+    "D112_refined",
+    "D56_risk625_refined"
+  ],
+  "oracle_lower_bound_yuan": 12227565.30317241,
+  "best_gap_to_prescient_bound_yuan": 1686327.1786957756,
+  "scope": "Historical selection from first-stage policies and references; with --all, includes two outcome-informed solver-budget refinements. Year already observed."
+}

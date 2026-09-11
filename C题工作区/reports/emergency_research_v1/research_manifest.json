@@ -1,0 +1,69 @@
+{
+  "scope": "Research only; original outputs preserved; proposed experiments not run",
+  "files": {
+    "reports/emergency_research_v1/analysis_validation.json": {
+      "sha256": "e52f1105842a3967a0d67d080e1042dc738d1d877aa451fdbd04e8982c23a6a8",
+      "bytes": 10019
+    },
+    "reports/emergency_research_v1/binding_constraints.csv": {
+      "sha256": "809e036bec2f49a74a172bb8c935098cb6a7b9cd427ca997e8b4a4149cb83c2e",
+      "bytes": 901
+    },
+    "reports/emergency_research_v1/bzd_quantile_record.json": {
+      "sha256": "2bf2e1a1854e5303511b01a2265fa33d8f4ffbd6c659c7e8d6d86fef73e9aa73",
+      "bytes": 2655
+    },
+    "reports/emergency_research_v1/experiment_plan.md": {
+      "sha256": "d988d0621b68ae8b049b3612072fe41ff1f7f25368bca9c7a263f1386c0ee8a3",
+      "bytes": 6603
+    },
+    "reports/emergency_research_v1/hourly.csv": {
+      "sha256": "a2e28bddcaaf2c0f5918665bcfc4819ecd857774ec91b6cb02a62363be6bea75",
+      "bytes": 8022
+    },
+    "reports/emergency_research_v1/independent_validation.json": {
+      "sha256": "7412adbb6e11f5b4995e370210c3be1789eb18728ddb8a7ce677dadd4d72d997",
+      "bytes": 2036
+    },
+    "reports/emergency_research_v1/monthly.csv": {
+      "sha256": "8e985937c554e15514c5c9a4536dbcd24b3035f97944bec061beb9f841ca4ca4",
+      "bytes": 4716
+    },
+    "reports/emergency_research_v1/policy_comparison.csv": {
+      "sha256": "9c2b5b14c4fa4defdc1fdbb69be1a38d6aaa186b47df65ba38ce2b3f267a48a3",
+      "bytes": 1751
+    },
+    "reports/emergency_research_v1/q2_daily_diagnosis.csv": {
+      "sha256": "0840c4bbd8f48c99fa080b078c457ef8a54ba6348426a57e86f4e5b9af4c0365",
+      "bytes": 39195
+    },
+    "reports/emergency_research_v1/q2_diagnostics.json": {
+      "sha256": "b6df35f63c826dae61d46e30beb334daa81dab077d0b0f8c4bd9ef18903700d7",
+      "bytes": 403
+    },
+    "reports/emergency_research_v1/q2_signed_decomposition.json": {
+      "sha256": "b9cbdef1e827df34ea5602a659f9d80c50d537ebfb95baab57a185b04aef567e",
+      "bytes": 391
+    },
+    "reports/emergency_research_v1/q2_slot_diagnosis.csv": {
+      "sha256": "fa7cf95f4512f4f89a21646b183ad841175507d8c2d614463cb387d32538b9e1",
+      "bytes": 19343
+    },
+    "reports/emergency_research_v1/research_note.md": {
+      "sha256": "d57f8b230718a2df86e266ad7e4b96741721949a7e8ac2e2dae76d47fc5738a5",
+      "bytes": 11747
+    },
+    "reports/emergency_research_v1/verification.log": {
+      "sha256": "7c325c48246b40e905f21f2ad042af431867f58b762f57e1ae5fd2a928fa8e19",
+      "bytes": 298
+    },
+    "scripts/research_emergency_costs.py": {
+      "sha256": "ba4b2d1f959208c452169c2bb7f7e1cc6b987e64fb123201718d113b92e5497b",
+      "bytes": 9111
+    },
+    "scripts/verify_emergency_research.py": {
+      "sha256": "0934c43d791d3564c0a81a3fcc96bda4fd2e1a6f7fcc5b57e57d34188432c7cb",
+      "bytes": 4745
+    }
+  }
+}

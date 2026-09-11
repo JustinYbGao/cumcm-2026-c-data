@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "mutation_cutoff": "2025-01-25 12:00:00",
+  "mutation": "Source copy: interval_start >= cutoff has load +800kWh, PV times .5; corresponding kW updated.",
+  "scope": "Six policies three-day full source/forecast/decision/execution recomputation; not a formal all-input proof.",
+  "checks": [
+    {
+      "policy": "D56",
+      "prefix_rows": 216,
+      "prefix_difference_kwh": 9.094947017729282e-13,
+      "frozen_plan_difference_kwh": 0.0,
+      "earlier_candidate_evidence_identical": true,
+      "next_day_response_kwh": 219.04794822336453,
+      "passed": true
+    },
+    {
+      "policy": "D28",
+      "prefix_rows": 216,
+      "prefix_difference_kwh": 9.094947017729282e-13,
+      "frozen_plan_difference_kwh": 0.0,
+      "earlier_candidate_evidence_identical": true,
+      "next_day_response_kwh": 219.04794822336453,
+      "passed": true
+    },
+    {
+      "policy": "D112",
+      "prefix_rows": 216,
+      "prefix_difference_kwh": 9.094947017729282e-13,
+      "frozen_plan_difference_kwh": 0.0,
+      "earlier_candidate_evidence_identical": true,
+      "next_day_response_kwh": 219.04794822336453,
+      "passed": true
+    },
+    {
+      "policy": "D56_risk625",
+      "prefix_rows": 216,
+      "prefix_difference_kwh": 9.094947017729282e-13,
+      "frozen_plan_difference_kwh": 0.0,
+      "earlier_candidate_evidence_identical": true,
+      "next_day_response_kwh": 600.8705124186778,
+      "passed": true
+    },
+    {
+      "policy": "D56_mu069",
+      "prefix_rows": 216,
+      "prefix_difference_kwh": 9.094947017729282e-13,
+      "frozen_plan_difference_kwh": 0.0,
+      "earlier_candidate_evidence_identical": true,
+      "next_day_response_kwh": 724.1702250689043,
+      "passed": true
+    },
+    {
+      "policy": "D56_mu0",
+      "prefix_rows": 216,
+      "prefix_difference_kwh": 9.094947017729282e-13,
+      "frozen_plan_difference_kwh": 0.0,
+      "earlier_candidate_evidence_identical": true,
+      "next_day_response_kwh": 422.1144709201802,
+      "passed": true
+    }
+  ]
+}

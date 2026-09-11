@@ -1,0 +1,351 @@
+annual {
+  "original_request": "Q2紧急购电改进研究；modelviz-skill；图内全部英文；PNG300dpi及SVG",
+  "candidate_count": 8,
+  "total_templates": 89,
+  "candidates": [
+    {
+      "template_id": "cmp_correlation_stacked_bar",
+      "template_name": "相关性分析堆叠条形图",
+      "category": "comparison_ranking",
+      "score": 0.58,
+      "matched_keywords": [
+        "比较",
+        "组成"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [
+        "柱状图"
+      ],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "图表类型匹配：柱状图；功能关键词匹配：比较, 组成",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_003/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_003/相关性分析堆叠条形图.py",
+      "catalog_order": 6
+    },
+    {
+      "template_id": "cmp_nightingale_rose_grid",
+      "template_name": "自由组合南丁格尔玫瑰图",
+      "category": "comparison_ranking",
+      "score": 0.58,
+      "matched_keywords": [
+        "比较",
+        "组成"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [
+        "柱状图"
+      ],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "图表类型匹配：柱状图；功能关键词匹配：比较, 组成",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_009/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_009/自由组合南丁格尔玫瑰图.py",
+      "catalog_order": 12
+    },
+    {
+      "template_id": "cmp_radial_stacked_bar",
+      "template_name": "径向堆叠图",
+      "category": "comparison_ranking",
+      "score": 0.58,
+      "matched_keywords": [
+        "比较",
+        "组成"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [
+        "柱状图"
+      ],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "图表类型匹配：柱状图；功能关键词匹配：比较, 组成",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_011/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_011/径向堆叠图.py",
+      "catalog_order": 14
+    },
+    {
+      "template_id": "cmp_gradient_single_factor_bar",
+      "template_name": "渐变单因子条形图",
+      "category": "comparison_ranking",
+      "score": 0.47,
+      "matched_keywords": [
+        "比较"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [
+        "柱状图"
+      ],
+      "matched_use_cases": [],
+      "matched_styles": [
+        "科研风",
+        "English labels",
+        "serif typography"
+      ],
+      "penalties": [],
+      "candidate_reason": "图表类型匹配：柱状图；功能关键词匹配：比较；风格弱匹配：科研风, English labels, serif typography",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_005/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_005/渐变单因子条形图.py",
+      "catalog_order": 8
+    },
+    {
+      "template_id": "cmp_circular_barplot",
+      "template_name": "环状条形图",
+      "category": "comparison_ranking",
+      "score": 0.44,
+      "matched_keywords": [
+        "比较"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [
+        "柱状图"
+      ],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "图表类型匹配：柱状图；功能关键词匹配：比较",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_001/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_001/环状条形图.py",
+      "catalog_order": 4
+    },
+    {
+      "template_id": "cmp_3d_bar_chart",
+      "template_name": "3D柱状图",
+      "category": "comparison_ranking",
+      "score": 0.44,
+      "matched_keywords": [
+        "比较"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [
+        "柱状图"
+      ],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "图表类型匹配：柱状图；功能关键词匹配：比较",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_016/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_016/3D柱状图.py",
+      "catalog_order": 19
+    },
+    {
+      "template_id": "dis_radial_bar_error_significance",
+      "template_name": "带显著性标记与误差棒的环形柱状图",
+      "category": "distribution_uncertainty",
+      "score": 0.38,
+      "matched_keywords": [
+        "比较"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [
+        "柱状图"
+      ],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "图表类型匹配：柱状图；功能关键词匹配：比较",
+      "preview": "templates/04_DIS_distribution_uncertainty/04_DIS_005/assets/preview.png",
+      "code_path": "templates/04_DIS_distribution_uncertainty/04_DIS_005/带显著性标记与误差棒的环形柱状图.py",
+      "catalog_order": 26
+    },
+    {
+      "template_id": "cmp_stack_pie_box_report",
+      "template_name": "百分比堆叠、内嵌饼图与箱线图报告",
+      "category": "comparison_ranking",
+      "score": 0.37,
+      "matched_keywords": [
+        "比较",
+        "组成"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [
+        "科研风",
+        "English labels",
+        "serif typography"
+      ],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：比较, 组成；风格弱匹配：科研风, English labels, serif typography",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_010/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_010/百分比堆叠、内嵌饼图与箱线图报告.py",
+      "catalog_order": 13
+    }
+  ],
+  "warnings": []
+}
+
+monthly {
+  "original_request": "Q2紧急购电改进研究；modelviz-skill；图内全部英文；PNG300dpi及SVG",
+  "candidate_count": 8,
+  "total_templates": 89,
+  "candidates": [
+    {
+      "template_id": "cmp_3d_ribbon_chart",
+      "template_name": "3D条带图",
+      "category": "comparison_ranking",
+      "score": 0.48,
+      "matched_keywords": [
+        "趋势",
+        "比较",
+        "复合时间序列",
+        "多指标时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较, 复合时间序列, 多指标时间序列",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_013/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_013/3D条带图.py",
+      "catalog_order": 16
+    },
+    {
+      "template_id": "trd_dual_axis_bar_line",
+      "template_name": "双Y轴柱状折线时间序列图",
+      "category": "trend_time_series",
+      "score": 0.48,
+      "matched_keywords": [
+        "趋势",
+        "比较",
+        "复合时间序列",
+        "多指标时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较, 复合时间序列, 多指标时间序列",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_001/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_001/双Y轴柱状折线时间序列图.py",
+      "catalog_order": 85
+    },
+    {
+      "template_id": "trd_lag_correlation_analysis",
+      "template_name": "滞后相关性分析图",
+      "category": "trend_time_series",
+      "score": 0.48,
+      "matched_keywords": [
+        "趋势",
+        "比较",
+        "复合时间序列",
+        "多指标时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较, 复合时间序列, 多指标时间序列",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_002/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_002/滞后相关性分析图.py",
+      "catalog_order": 86
+    },
+    {
+      "template_id": "mpn_scatter_matrix_timeseries_regression",
+      "template_name": "散点矩阵与时间序列回归报告",
+      "category": "multi_panel_report",
+      "score": 0.345,
+      "matched_keywords": [
+        "趋势",
+        "复合时间序列",
+        "多指标时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [
+        "科研风",
+        "English labels",
+        "serif typography"
+      ],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 复合时间序列, 多指标时间序列；风格弱匹配：科研风, English labels, serif typography",
+      "preview": "templates/05_MPN_multi_panel_report/05_MPN_002/assets/preview.png",
+      "code_path": "templates/05_MPN_multi_panel_report/05_MPN_002/散点矩阵与时间序列回归报告.py",
+      "catalog_order": 29
+    },
+    {
+      "template_id": "cmp_flowing_percentage_stack",
+      "template_name": "流动趋势百分比堆叠图",
+      "category": "comparison_ranking",
+      "score": 0.27,
+      "matched_keywords": [
+        "趋势",
+        "比较"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_004/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_004/流动趋势百分比堆叠图.py",
+      "catalog_order": 7
+    },
+    {
+      "template_id": "cmp_3d_waterfall_distribution",
+      "template_name": "三维瀑布图",
+      "category": "comparison_ranking",
+      "score": 0.27,
+      "matched_keywords": [
+        "趋势",
+        "比较"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_014/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_014/三维瀑布图.py",
+      "catalog_order": 17
+    },
+    {
+      "template_id": "trd_smoothed_trend_curves",
+      "template_name": "平滑趋势曲线",
+      "category": "trend_time_series",
+      "score": 0.27,
+      "matched_keywords": [
+        "趋势",
+        "比较"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_003/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_003/平滑趋势曲线.py",
+      "catalog_order": 87
+    },
+    {
+      "template_id": "trd_composite_line_bar_dual_axis",
+      "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+      "category": "trend_time_series",
+      "score": 0.27,
+      "matched_keywords": [
+        "趋势",
+        "复合时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 复合时间序列",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_004/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_004/折线图、条形图和双Y轴的复合时间序列图.py",
+      "catalog_order": 88
+    }
+  ],
+  "warnings": []
+}
+

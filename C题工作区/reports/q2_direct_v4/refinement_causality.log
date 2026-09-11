@@ -1,0 +1,10 @@
+D112_refined 2025-01-24 total 23235.332154187003 seconds 0.08392579200153705
+DONE causality_original D112_refined 107328.77026708993 67.50627922094381
+D112_refined 2025-01-24 total 23235.332154187003 seconds 0.08067049999954179
+DONE causality_mutated D112_refined 972868.2614751344 864156.1852508289
+{'policy': 'D112_refined', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 297.93490923177114, 'passed': True}
+D56_risk625_refined 2025-01-24 total 23691.762263666704 seconds 0.08312087500235066
+DONE causality_original D56_risk625_refined 107906.28552897258 0.0
+D56_risk625_refined 2025-01-24 total 23691.762263666704 seconds 0.08439375000307336
+DONE causality_mutated D56_risk625_refined 961992.4935693402 850571.0153331988
+{'policy': 'D56_risk625_refined', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 605.0941084497215, 'passed': True}

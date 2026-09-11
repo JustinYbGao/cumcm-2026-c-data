@@ -1,0 +1,17 @@
+extension_january/X_morning90 PASS
+extension_january/X_strong_morning85 PASS
+extension_january/X_day60 PASS
+extension_january/X_day50 PASS
+extension_january/X_day60_morning85 PASS
+extension_january/X_evening85_day60 PASS
+extension_january/X_uniform70 PASS
+extension_january/X_uniform75 PASS
+extension_runs/X_morning90 PASS
+extension_runs/X_strong_morning85 PASS
+extension_runs/X_day60 PASS
+extension_runs/X_day50 PASS
+extension_runs/X_day60_morning85 PASS
+extension_runs/X_evening85_day60 PASS
+extension_runs/X_uniform70 PASS
+extension_runs/X_uniform75 PASS
+{"passed": true, "output": "/Users/justingao/Documents/CUMCM/C题工作区/reports/q2_pareto_v3/independent_validation_extension_all.json"}

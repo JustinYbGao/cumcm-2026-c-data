@@ -1,0 +1,25 @@
+test_candidate_plan_roundtrip (__main__.PolicyTests.test_candidate_plan_roundtrip) ... ERROR
+test_floor_power_ceiling_and_surplus (__main__.PolicyTests.test_floor_power_ceiling_and_surplus) ... ok
+test_inventory_is_only_a_scoring_credit (__main__.PolicyTests.test_inventory_is_only_a_scoring_credit) ... ok
+test_negative_net_means_surplus (__main__.PolicyTests.test_negative_net_means_surplus) ... ok
+test_scenario_cutoff_and_order (__main__.PolicyTests.test_scenario_cutoff_and_order) ... ok
+test_scenario_future_cannot_change_prefix (__main__.PolicyTests.test_scenario_future_cannot_change_prefix) ... ok
+test_shared_plan_tradeoff_uses_total_cost (__main__.PolicyTests.test_shared_plan_tradeoff_uses_total_cost) ... ok
+test_tie_uses_predeclared_order (__main__.PolicyTests.test_tie_uses_predeclared_order) ... ok
+
+======================================================================
+ERROR: test_candidate_plan_roundtrip (__main__.PolicyTests.test_candidate_plan_roundtrip)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_cost_aware_v2/test_policy.py", line 12, in test_candidate_plan_roundtrip
+    result = decision(archive, '2025-01-15', f.load_forecast_kwh.to_numpy(), f.pv_forecast_kwh.to_numpy(),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_cost_aware_v2/policy.py", line 115, in decision
+    plans.append(np.column_stack([plan[key] for key in PLAN_KEYS]))
+                                  ~~~~^^^^^
+KeyError: 'pv_curtailment_kwh'
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.141s
+
+FAILED (errors=1)

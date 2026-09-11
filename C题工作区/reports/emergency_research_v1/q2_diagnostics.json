@@ -1,0 +1,10 @@
+{
+  "net_error_positive_rate": 0.5406894544244844,
+  "load_MAE_kwh": 29.263924485364626,
+  "PV_MAE_kwh": 34.85781084012239,
+  "total_load_underforecast_kwh": 10330.654864388081,
+  "total_PV_overforecast_kwh": 247721.87318703643,
+  "emergency_cost_top10_days_share": 0.16073179733865725,
+  "emergency_cost_18_23h_share": 0.7720530388743139,
+  "net_error_positive_rate_on_emergency": 0.8360323886639676
+}

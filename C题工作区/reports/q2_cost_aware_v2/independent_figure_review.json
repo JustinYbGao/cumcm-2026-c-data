@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "figures": {
+    "annual": {
+      "passed": true,
+      "data_max_difference_yuan": 0.0,
+      "png_dimensions": [
+        3600,
+        2100
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "6617ad93730e03bb3edcc1c7d8d7992d99bff741c7b686f83b71d44f017f36f0",
+      "svg_sha256": "3dbdde295daf603f8870c2474620a38f57e7a44b4c649d3624e8fa389f990d30",
+      "visual_review": "Both final PNGs actually viewed: English labels, clear units, complete legends, no clipping/overlap; monthly left/right axes explicitly distinguished and negative costs retained.",
+      "bound_difference_yuan": 0.0
+    },
+    "monthly": {
+      "passed": true,
+      "data_max_difference_yuan": 0.0,
+      "png_dimensions": [
+        3300,
+        2400
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "png_sha256": "b0c1709732960cee97b7536702d19b76146613cabc58d4dbd100f5f4c73c0640",
+      "svg_sha256": "27c4a8264dcc4e4669432a2391e4e9ea26b889bd4ceb6ecd2e26c985565bbe44",
+      "visual_review": "Both final PNGs actually viewed: English labels, clear units, complete legends, no clipping/overlap; monthly left/right axes explicitly distinguished and negative costs retained."
+    }
+  },
+  "scope": "Incremental source, technical and visual figure review; no plot edits and no rerun of primary numerical audit."
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "manifest_files": 449,
+  "zip_entries": 450,
+  "zip_bytes": 383366880,
+  "zip_sha256": "e52e54d7f80063429d8dcf566a80796b48c790a19bbed53d5eeff19b71c49745",
+  "readback_sha256_all_match": true,
+  "exclusions": "Runtime and duplicate relocation workspaces; logs and relocation report included.",
+  "self_reference": "Manifest excludes itself and package-validation sidecars. Manifest is included in ZIP."
+}

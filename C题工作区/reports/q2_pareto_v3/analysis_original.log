@@ -1,0 +1,18 @@
+                 total_cost_yuan  planned_cost_yuan  emergency_cost_yuan  passes_joint  passes_stricter_joint
+policy                                                                                                       
+B0                  1.633368e+07       1.198783e+07         4.345852e+06         False                  False
+B1                  1.537821e+07       1.226366e+07         3.114550e+06         False                  False
+P                   1.420951e+07       1.356766e+07         6.418453e+05         False                  False
+P_terminal          1.403563e+07       1.339514e+07         6.404934e+05         False                  False
+P_floor             1.402284e+07       1.336156e+07         6.612737e+05         False                  False
+S_terminal          1.402168e+07       1.336163e+07         6.600445e+05         False                  False
+T_day_trim          1.402959e+07       1.317606e+07         8.535321e+05         False                  False
+T_evening_hedge     1.401326e+07       1.348168e+07         5.315882e+05         False                  False
+T_rebalance         1.399900e+07       1.329707e+07         7.019261e+05         False                  False
+T_soft              1.400310e+07       1.331573e+07         6.873737e+05         False                  False
+T_strong            1.399739e+07       1.331424e+07         6.831566e+05         False                  False
+T_morning_hedge     1.399742e+07       1.333341e+07         6.640100e+05         False                  False
+R_guard             1.402131e+07       1.336003e+07         6.612737e+05          True                  False
+R_mean              1.403127e+07       1.334841e+07         6.828591e+05         False                  False
+R_cost              1.403386e+07       1.330167e+07         7.321938e+05         False                  False
+R_w28               1.402529e+07       1.335804e+07         6.672459e+05         False                  False

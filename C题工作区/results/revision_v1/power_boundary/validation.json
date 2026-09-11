@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "milp_solves": 4,
+  "lp_solves": 4,
+  "algebra_checks": 48,
+  "source_sha256": "cf306e67d092cfe335dafda003a3a7c8dca8ab58468a412e47854f72a6ecb73e",
+  "config_sha256": "23603c8c223d40006607ea5c3dd31dec8ab2435776ff3a363f2eaca0aaf09019",
+  "script_sha256": "d6b224539666f71ff5805e9f3fa1c2ac2b30c8f9e71def82a10615464704b91b",
+  "baseline_cost_reproduced": true,
+  "roundtrip_cost_reproduced": true,
+  "scope": "Q1 one-day physical convention sensitivity, not annual robustness or a choice of official convention."
+}

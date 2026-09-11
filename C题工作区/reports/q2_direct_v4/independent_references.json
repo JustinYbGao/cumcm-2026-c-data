@@ -1,0 +1,2062 @@
+{
+  "created_utc": "2026-09-11T18:40:22.714888+00:00",
+  "scope": "references",
+  "passed": true,
+  "independence": "Standard library, NumPy and pandas only; no production predictor, planner, dispatch, score or gradient imports.",
+  "tolerances": {
+    "physical_kwh": 1e-06,
+    "cost_yuan": 1e-05
+  },
+  "checks": [
+    {
+      "check": "B0.source_keys",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "B0.plan_keys",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "B0.unique_keys",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B0.source_load_actual_kwh",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.source_pv_actual_kwh",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.fixed_contract",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.fixed_prices",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.nonnegative_contract",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B0.midnight_issue",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B0.information_cutoff",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B0.greedy_charge",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 6.063149982082905e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.greedy_discharge",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 4.888534022029489e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.greedy_emergency",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 4.888534022029489e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.greedy_surplus",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 5.9543481256696396e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.greedy_start",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 5.4569682106375694e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.greedy_end",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 5.4569682106375694e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.soc_range",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B0.charge_power",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B0.discharge_power",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B0.mutual_exclusion",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B0.balance",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 2.8421709430404007e-13,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.soc_recurrence",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 9.094947017729282e-13,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.cross_interval",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.unused_grid",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 5.9543481256696396e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.pv_curtailment",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 4.092726157978177e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.planned_cost_yuan",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B0.emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 3.319655661471188e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B0.total_cost_yuan",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 3.319655661471188e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B0.daily_dates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "B0.daily_grid_plan_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.daily_planned_cost_yuan",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B0.daily_emergency_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 5.4569682106375694e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.daily_emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 3.2741809263825417e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B0.daily_total_cost_yuan",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 2.9103830456733704e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B0.daily_charge_actual_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 3.637978807091713e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.daily_discharge_actual_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 7.275957614183426e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.daily_surplus_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 5.4569682106375694e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.daily_unused_grid_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 5.4569682106375694e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.daily_pv_curtailment_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 4.092726157978177e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.independent_annual_grid_plan_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.independent_annual_planned_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B0.independent_annual_emergency_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 1.1641532182693481e-10,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.independent_annual_emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B0.independent_annual_total_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 1.862645149230957e-09,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B0.independent_annual_charge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.independent_annual_discharge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.independent_annual_surplus_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.independent_annual_unused_grid_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.independent_annual_pv_curtailment_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.summary_grid_plan_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.summary_planned_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B0.summary_emergency_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 1.1641532182693481e-10,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.summary_emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B0.summary_total_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 1.862645149230957e-09,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B0.summary_charge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.summary_discharge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.summary_surplus_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.summary_unused_grid_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.summary_pv_curtailment_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.summary_initial_energy_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.summary_final_energy_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.summary_inventory_adjusted_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 1.862645149230957e-09,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B0.summary_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B0.summary_intervals",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.source_keys",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "B1.plan_keys",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "B1.unique_keys",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B1.source_load_actual_kwh",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.source_pv_actual_kwh",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.fixed_contract",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.fixed_prices",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.nonnegative_contract",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B1.midnight_issue",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B1.information_cutoff",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B1.greedy_charge",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 1.000444171950221e-11,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.greedy_discharge",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 3.296918293926865e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.greedy_emergency",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 3.296918293926865e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.greedy_surplus",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 8.08597633294994e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.greedy_start",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 9.094947017729282e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.greedy_end",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 9.094947017729282e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.soc_range",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B1.charge_power",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B1.discharge_power",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B1.mutual_exclusion",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "B1.balance",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 1.000444171950221e-11,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.soc_recurrence",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 9.094947017729282e-13,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.cross_interval",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.unused_grid",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 9.976020010071807e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.pv_curtailment",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 9.976020010071807e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.planned_cost_yuan",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B1.emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 2.319211489520967e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B1.total_cost_yuan",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 2.319211489520967e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B1.daily_dates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "B1.daily_grid_plan_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.daily_planned_cost_yuan",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B1.daily_emergency_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 3.637978807091713e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.daily_emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 2.546585164964199e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B1.daily_total_cost_yuan",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 2.9103830456733704e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B1.daily_charge_actual_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 3.637978807091713e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.daily_discharge_actual_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 3.637978807091713e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.daily_surplus_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 7.73070496506989e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.daily_unused_grid_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 9.549694368615746e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.daily_pv_curtailment_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 4.092726157978177e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.independent_annual_grid_plan_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.independent_annual_planned_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B1.independent_annual_emergency_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.independent_annual_emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B1.independent_annual_total_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B1.independent_annual_charge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.independent_annual_discharge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.independent_annual_surplus_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.independent_annual_unused_grid_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.independent_annual_pv_curtailment_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.summary_grid_plan_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.summary_planned_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B1.summary_emergency_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.summary_emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B1.summary_total_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B1.summary_charge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.summary_discharge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.summary_surplus_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.summary_unused_grid_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.summary_pv_curtailment_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.summary_initial_energy_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.summary_final_energy_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.summary_inventory_adjusted_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "B1.summary_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "B1.summary_intervals",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.source_keys",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "P_floor.plan_keys",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "P_floor.unique_keys",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "P_floor.source_load_actual_kwh",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.source_pv_actual_kwh",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.fixed_contract",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.fixed_prices",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.nonnegative_contract",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "P_floor.midnight_issue",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "P_floor.information_cutoff",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "P_floor.greedy_charge",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 4.092726157978177e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.greedy_discharge",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 3.296918293926865e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.greedy_emergency",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 3.296918293926865e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.greedy_surplus",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 4.092726157978177e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.greedy_start",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 3.637978807091713e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.greedy_end",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 3.637978807091713e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.soc_range",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "P_floor.charge_power",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "P_floor.discharge_power",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "P_floor.mutual_exclusion",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "P_floor.balance",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 2.2737367544323206e-13,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.soc_recurrence",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 9.094947017729282e-13,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.cross_interval",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.unused_grid",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 4.092726157978177e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.pv_curtailment",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 2.0463630789890885e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.planned_cost_yuan",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "P_floor.emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 2.2225776774575934e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "P_floor.total_cost_yuan",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 2.2225776774575934e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "P_floor.daily_dates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "P_floor.daily_grid_plan_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.daily_planned_cost_yuan",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "P_floor.daily_emergency_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 3.637978807091713e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.daily_emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 2.2737367544323206e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "P_floor.daily_total_cost_yuan",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 2.1827872842550278e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "P_floor.daily_charge_actual_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 3.637978807091713e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.daily_discharge_actual_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 3.637978807091713e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.daily_surplus_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 4.547473508864641e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.daily_unused_grid_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 4.092726157978177e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.daily_pv_curtailment_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 2.2737367544323206e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.independent_annual_grid_plan_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.independent_annual_planned_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "P_floor.independent_annual_emergency_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.independent_annual_emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "P_floor.independent_annual_total_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "P_floor.independent_annual_charge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.independent_annual_discharge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.independent_annual_surplus_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 4.656612873077393e-10,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.independent_annual_unused_grid_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.independent_annual_pv_curtailment_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.summary_grid_plan_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.summary_planned_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "P_floor.summary_emergency_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.summary_emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "P_floor.summary_total_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "P_floor.summary_charge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.summary_discharge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.summary_surplus_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 4.656612873077393e-10,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.summary_unused_grid_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.summary_pv_curtailment_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.summary_initial_energy_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.summary_final_energy_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.summary_inventory_adjusted_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "P_floor.summary_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "P_floor.summary_intervals",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.source_keys",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "X_strong_morning85.plan_keys",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "X_strong_morning85.unique_keys",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "X_strong_morning85.source_load_actual_kwh",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.source_pv_actual_kwh",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.fixed_contract",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.fixed_prices",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.nonnegative_contract",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "X_strong_morning85.midnight_issue",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "X_strong_morning85.information_cutoff",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "X_strong_morning85.greedy_charge",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 4.092726157978177e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.greedy_discharge",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 3.268496584496461e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.greedy_emergency",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 3.296918293926865e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.greedy_surplus",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 4.092726157978177e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.greedy_start",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 3.637978807091713e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.greedy_end",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 3.637978807091713e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.soc_range",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "X_strong_morning85.charge_power",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "X_strong_morning85.discharge_power",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "X_strong_morning85.mutual_exclusion",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0
+    },
+    {
+      "check": "X_strong_morning85.balance",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 2.2737367544323206e-13,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.soc_recurrence",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 9.094947017729282e-13,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.cross_interval",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.unused_grid",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 4.092726157978177e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.pv_curtailment",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 4.064304448547773e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.planned_cost_yuan",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "X_strong_morning85.emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 2.2737367544323206e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "X_strong_morning85.total_cost_yuan",
+      "passed": true,
+      "comparisons": 48096,
+      "failures": 0,
+      "max_abs_error": 2.2737367544323206e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "X_strong_morning85.daily_dates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "X_strong_morning85.daily_grid_plan_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.daily_planned_cost_yuan",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "X_strong_morning85.daily_emergency_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 3.296918293926865e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.daily_emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 2.2737367544323206e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "X_strong_morning85.daily_total_cost_yuan",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 2.1827872842550278e-11,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "X_strong_morning85.daily_charge_actual_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 7.275957614183426e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.daily_discharge_actual_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 3.637978807091713e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.daily_surplus_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 9.094947017729282e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.daily_unused_grid_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 9.094947017729282e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.daily_pv_curtailment_kwh",
+      "passed": true,
+      "comparisons": 334,
+      "failures": 0,
+      "max_abs_error": 3.865352482534945e-12,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.independent_annual_grid_plan_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.independent_annual_planned_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "X_strong_morning85.independent_annual_emergency_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 2.9103830456733704e-11,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.independent_annual_emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 1.1641532182693481e-10,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "X_strong_morning85.independent_annual_total_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "X_strong_morning85.independent_annual_charge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 9.313225746154785e-10,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.independent_annual_discharge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.independent_annual_surplus_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.independent_annual_unused_grid_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.independent_annual_pv_curtailment_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.summary_grid_plan_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.summary_planned_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "X_strong_morning85.summary_emergency_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 2.9103830456733704e-11,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.summary_emergency_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 1.1641532182693481e-10,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "X_strong_morning85.summary_total_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "X_strong_morning85.summary_charge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 9.313225746154785e-10,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.summary_discharge_actual_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.summary_surplus_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.summary_unused_grid_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.summary_pv_curtailment_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.summary_initial_energy_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.summary_final_energy_kwh",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.summary_inventory_adjusted_cost_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "X_strong_morning85.summary_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "X_strong_morning85.summary_intervals",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-06
+    },
+    {
+      "check": "reference.best_total",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "check": "reference.best_emergency",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "max_abs_error": 1.1641532182693481e-10,
+      "tolerance": 1e-05
+    }
+  ],
+  "metrics": {
+    "B0": {
+      "grid_plan_kwh": 19839930.398287483,
+      "planned_cost_yuan": 11987831.567381367,
+      "emergency_kwh": 751884.1216948978,
+      "emergency_cost_yuan": 4345851.825469283,
+      "total_cost_yuan": 16333683.39285065,
+      "charge_actual_kwh": 6468111.533041743,
+      "discharge_actual_kwh": 5243260.664473787,
+      "surplus_kwh": 1427774.156447757,
+      "unused_grid_kwh": 330363.1500750936,
+      "pv_curtailment_kwh": 1097411.0063726634,
+      "initial_energy_kwh": 7268.4231640740745,
+      "final_energy_kwh": 2723.6201529907166,
+      "inventory_adjusted_cost_yuan": 16336817.386749025,
+      "days": 334,
+      "intervals": 48096,
+      "emergency_cap_passed": false
+    },
+    "B1": {
+      "grid_plan_kwh": 20243492.085644614,
+      "planned_cost_yuan": 12263657.576506453,
+      "emergency_kwh": 519849.5915405929,
+      "emergency_cost_yuan": 3114549.774286757,
+      "total_cost_yuan": 15378207.350793209,
+      "charge_actual_kwh": 6632272.907899279,
+      "discharge_actual_kwh": 5372891.878119217,
+      "surplus_kwh": 1564771.1524384758,
+      "unused_grid_kwh": 420651.70110225386,
+      "pv_curtailment_kwh": 1144119.4513362218,
+      "initial_energy_kwh": 7268.4231640740745,
+      "final_energy_kwh": 6434.175696518038,
+      "inventory_adjusted_cost_yuan": 15378782.629076267,
+      "days": 334,
+      "intervals": 48096,
+      "emergency_cap_passed": false
+    },
+    "P_floor": {
+      "grid_plan_kwh": 21709846.670354728,
+      "planned_cost_yuan": 13361564.945683166,
+      "emergency_kwh": 116089.3529995809,
+      "emergency_cost_yuan": 661273.6528153808,
+      "total_cost_yuan": 14022838.598498546,
+      "charge_actual_kwh": 6262055.860909414,
+      "discharge_actual_kwh": 5077026.132406618,
+      "surplus_kwh": 2701716.799884846,
+      "unused_grid_kwh": 1287669.4949824326,
+      "pv_curtailment_kwh": 1414047.3049024136,
+      "initial_energy_kwh": 7268.4231640740745,
+      "final_energy_kwh": 1978.550864081664,
+      "inventory_adjusted_cost_yuan": 14026486.375414494,
+      "days": 334,
+      "intervals": 48096,
+      "emergency_cap_passed": true
+    },
+    "X_strong_morning85": {
+      "grid_plan_kwh": 21424792.554141,
+      "planned_cost_yuan": 13349990.093968334,
+      "emergency_kwh": 109264.54993955462,
+      "emergency_cost_yuan": 644292.1650026436,
+      "total_cost_yuan": 13994282.258970976,
+      "charge_actual_kwh": 6144426.290149971,
+      "discharge_actual_kwh": 4981329.318886366,
+      "surplus_kwh": 2431770.6378502855,
+      "unused_grid_kwh": 1046885.0139261587,
+      "pv_curtailment_kwh": 1384885.6239241268,
+      "initial_energy_kwh": 7268.4231640740745,
+      "final_energy_kwh": 2441.7299808642265,
+      "inventory_adjusted_cost_yuan": 13997610.637989521,
+      "days": 334,
+      "intervals": 48096,
+      "emergency_cap_passed": true
+    }
+  }
+}

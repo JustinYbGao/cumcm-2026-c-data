@@ -1,0 +1,36 @@
+{
+  "status": "internal_working_assumptions_not_submission",
+  "input": "data/processed/q1_day.csv",
+  "interval_minutes": 10,
+  "time_mapping": "raw label denotes interval end; 00:10 -> [00:00,00:10); no shift or circular wrap",
+  "power_interpretation": "interval_average",
+  "template_export": "blocked_pending_time_mapping_confirmation",
+  "battery": {
+    "rated_capacity_kwh": 12000,
+    "min_energy_kwh": 1200,
+    "max_energy_kwh": 10800,
+    "max_charge_kw": 5000,
+    "max_discharge_kw": 5000,
+    "power_boundary": "AC_bus_side_working_assumption",
+    "initial_energy_kwh": 6000,
+    "initial_basis": "Chinese Appendix 1 fixes Jan 1 at 6000; English says start of operation; adopted for undated Q1, not a source date",
+    "terminal": "equal_to_fixed_initial",
+    "eta_charge": 0.9,
+    "eta_discharge": 0.9,
+    "efficiency_basis": "each_direction_0.9_working_assumption_not_official"
+  },
+  "sensitivity": {"name": "roundtrip_90", "eta_charge": 0.9486832980505138, "eta_discharge": 0.9486832980505138},
+  "curtailment": "PV_only_0_to_given_PV; no_grid_sale; no_disposal_of_purchased_energy",
+  "solver": {
+    "name": "HiGHS",
+    "threads": 1,
+    "random_seed": 0,
+    "time_limit": 120,
+    "mip_rel_gap": 1e-9,
+    "mip_abs_gap": 1e-7,
+    "primal_feasibility_tolerance": 1e-8,
+    "dual_feasibility_tolerance": 1e-8,
+    "mip_feasibility_tolerance": 1e-8
+  },
+  "validation": {"energy_atol_kwh": 1e-6, "cost_atol_yuan": 1e-6, "integer_atol": 1e-7}
+}

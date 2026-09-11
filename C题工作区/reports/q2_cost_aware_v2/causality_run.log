@@ -1,0 +1,27 @@
+{'policy': 'S_tau', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 858.7120515133047, 'passed': True}
+{'policy': 'S_terminal', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 640.7050351744417, 'passed': True}
+S_joint 2025-01-24 cumulative_cost 23353.40845786523
+DONE causality_original S_joint 110316.3202583815 2118.6015404789005
+S_joint 2025-01-24 cumulative_cost 23353.40845786523
+DONE causality_mutated S_joint 966392.7208818279 855530.3753399616
+{'policy': 'S_joint', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 830.9298792489484, 'passed': True}
+S_w14 2025-01-24 cumulative_cost 23353.40845786523
+DONE causality_original S_w14 109803.41521420378 2118.6015404789005
+S_w14 2025-01-24 cumulative_cost 23353.40845786523
+DONE causality_mutated S_w14 967336.1323200319 856709.6396377166
+{'policy': 'S_w14', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 832.724553086746, 'passed': True}
+S_w56 2025-01-24 cumulative_cost 23353.40845786523
+DONE causality_original S_w56 110316.3202583815 2118.6015404789005
+S_w56 2025-01-24 cumulative_cost 23353.40845786523
+DONE causality_mutated S_w56 966392.7208818279 855530.3753399616
+{'policy': 'S_w56', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 830.9298792489484, 'passed': True}
+S_no_inventory 2025-01-24 cumulative_cost 23353.40845786523
+DONE causality_original S_no_inventory 109803.41521420378 2118.6015404789005
+S_no_inventory 2025-01-24 cumulative_cost 23353.40845786523
+DONE causality_mutated S_no_inventory 976097.7057701313 867688.2964211493
+{'policy': 'S_no_inventory', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 640.7050351744416, 'passed': True}
+P_floor 2025-01-24 cumulative_cost 24688.731127183935
+DONE causality_original P_floor 111560.2218584741 25.77362514425515
+P_floor 2025-01-24 cumulative_cost 24688.731127183935
+DONE causality_mutated P_floor 965391.7746027166 852764.9204086184
+{'policy': 'P_floor', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 640.7050351744417, 'passed': True}

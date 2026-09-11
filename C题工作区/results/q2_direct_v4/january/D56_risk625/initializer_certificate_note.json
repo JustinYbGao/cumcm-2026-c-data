@@ -1,0 +1,12 @@
+{
+  "scope": "Additional rerun certificate, original q and score bitwise identical for all six candidates on every January day. Original artifacts unchanged.",
+  "columns": [
+    "grid_kwh",
+    "charge_kwh",
+    "discharge_kwh",
+    "energy_start_kwh",
+    "energy_end_kwh",
+    "curtailment_kwh",
+    "charge_mode"
+  ]
+}

@@ -1,0 +1,2 @@
+{'policy': 'P_B1', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 1058.8786199999997, 'passed': True}
+{'policy': 'P_B1_floor', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 1058.8786199999997, 'passed': True}

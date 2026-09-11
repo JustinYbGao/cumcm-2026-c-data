@@ -1,0 +1,25 @@
+AUDITED D56
+AUDITED D28
+AUDITED D112
+AUDITED D56_risk625
+AUDITED D56_mu069
+AUDITED D56_mu0
+AUDITED D112_refined
+AUDITED D56_risk625_refined
+{
+  "passed": true,
+  "ledger_rows": 577152,
+  "forecast_releases": 364,
+  "candidate_vectors": 16032,
+  "numeric_checks": 50918,
+  "oracle": {
+    "primal": 12227565.30317241,
+    "dual": 12227565.30317241,
+    "greedy_total": 12227565.30317241,
+    "greedy_emergency_fee": 3.266115942146543e-10,
+    "maximum_soc_difference": 9600.0
+  },
+  "zip_sha256": "e52e54d7f80063429d8dcf566a80796b48c790a19bbed53d5eeff19b71c49745",
+  "manifest_files": 449,
+  "zip_entries": 450
+}

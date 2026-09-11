@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "copied_source_workspace": "C\u9898\u5de5\u4f5c\u533a/results/emergency_improvement_v1/portability_check",
+  "forecast_archive_rebuilt": true,
+  "policy": "P",
+  "days": 334,
+  "ledger_sha256_identical": true,
+  "total_cost_difference_yuan": 0.0,
+  "scope": "Relocated source/input/config run with independent path; all 18 were not redundantly reoptimized here."
+}

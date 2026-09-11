@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "reports_sha256": {
+    "independent_sources.json": "80f7f95c81d5bbe4a57502f61c9c9956454e27fdc0c6f82d1024f617d807119f",
+    "independent_references.json": "e9f6a8ac6bf81daebd5e8d6431fc360bf4b464a1cb5499377d251261883ba020",
+    "independent_oracle.json": "58d973c8cc2f62616eeb0947ff11aba5b2e27be3a12258d094740b49f31cd412",
+    "independent_gradient.json": "1bbdcf13731bb12668755236bf6c1978490117b2db660259ec04908e4b794aac",
+    "independent_january.json": "c1caf73a4b62aa4a3b22ab5cde08dd66d8f7a7a8fddb87064924f64805a41a64",
+    "independent_annual.json": "57f2441bb38807da4c0e5ae323b8841f7c8ffbe4201ef7c9f4413f05c2525c42",
+    "independent_causality.json": "06808c1f8e9b07c94ed22f29280a40ca31a281811cb3cdf3fe45140d6ff2117b",
+    "independent_analysis.json": "1262161f347624f5f46577dff4266d7781d9319cbca2e2b18402e4c801253e2a",
+    "independent_refinement_january.json": "5d43a6a5456bbda8fd4f5576abfa0167ee2e18e5a4f6582dc40e893777b80a92",
+    "independent_refinement_annual.json": "08a9c54dfa7adf7efd7b62791c3997324957c19b5620c107507c209ae74d2e09",
+    "independent_refinement_causality.json": "44463a971caacad00c47096517f5c7497304755867fc494285d827ddeb07abc3",
+    "independent_analysis_all.json": "e190f70b31bfb6889a740f81e2671cefa8feb1f57eaf77df99a51bb18891f22e",
+    "independent_figure_validation.json": "b2759631626e94accd931c69ad913b4d73e661865e32b96310a807134a9566a4",
+    "independent_text_review.json": "2b36e582e8b0bfb9ae271dff9c296291e6de900556d5f78fc669e2eb5966235a",
+    "independent_final_summary.json": "0c21b04dda49370fc5b2376427d5413b0c28d5ce6b81f60d427cc74f90d45f36",
+    "portability_validation.json": "0b4169cb2e70a37fbe1754a81f563e69e3bcd72c44fd22975d604032c150b164",
+    "preservation_validation.json": "5c38515e83f73b1c46f7ecb8b7a7bb11d29d63f310a50f7be384e2170c387c7e"
+  },
+  "protected_files": 4305
+}

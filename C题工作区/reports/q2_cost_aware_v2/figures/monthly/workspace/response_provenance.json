@@ -1,0 +1,5 @@
+{
+  "author": "Codex assistant",
+  "method": "Assistant-authored structured decisions through RunnableLambda with deterministic schema validation; no external model API call.",
+  "visual_check": "Actual image must be inspected before pass."
+}

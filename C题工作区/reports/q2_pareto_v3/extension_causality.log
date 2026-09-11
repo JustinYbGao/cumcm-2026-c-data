@@ -1,0 +1,9 @@
+X_morning90 2025-01-24 cumulative_cost 24858.48288993258
+DONE extension_causality_original X_morning90 111671.68209219715 25.77362514425515
+X_morning90 2025-01-24 cumulative_cost 24858.48288993258
+DONE extension_causality_mutated X_morning90 963558.944539481 850569.9991746878
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_pareto_v3/causality_checks.py", line 52, in <module>
+    pa=pd.read_csv(ROOT/(prefix+'causality_original')/cfg['policy']/'plans.csv',float_precision='round_trip',dtype={'selected_terminal':str})
+                         ~~~~~~^~~~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for +: 'float' and 'str'

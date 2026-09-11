@@ -1,0 +1,42 @@
+D112 2025-07-14 total 54079.98702734042 seconds 0.1257218329992611
+DONE audit_causality_original D112 162930.5127960018 0.0
+D112 2025-07-14 total 54079.98702734042 seconds 0.1233224580064416
+DONE audit_causality_mutated D112 981729.5220636961 797374.9368230654
+{
+  "passed": true,
+  "gradient_checks": [
+    {
+      "kappa": 5.0,
+      "mu": 0.38232,
+      "max_fd_error": 2.547852684386953e-08,
+      "score_difference": 5.820766091346741e-11,
+      "step_kwh": 0.001
+    },
+    {
+      "kappa": 6.25,
+      "mu": 0.38232,
+      "max_fd_error": 3.1498521568806837e-08,
+      "score_difference": 0.0,
+      "step_kwh": 0.001
+    },
+    {
+      "kappa": 5.0,
+      "mu": 0.0,
+      "max_fd_error": 2.6237725769817644e-08,
+      "score_difference": 0.0,
+      "step_kwh": 0.001
+    }
+  ],
+  "causality": {
+    "policy": "D112",
+    "cutoff": "2025-07-15 12:00:00",
+    "initial_kwh": 6000.0,
+    "scenario_count": 112,
+    "prefix_rows": 216,
+    "prefix_max_error": 0.0,
+    "frozen_plan_error": 0.0,
+    "first_two_days_candidate_arrays_identical": true,
+    "next_day_q_response_kwh": 1052.6851158088832,
+    "scope": "Additional counterfactual implementation test, not an annual economic experiment or universal causality proof."
+  }
+}

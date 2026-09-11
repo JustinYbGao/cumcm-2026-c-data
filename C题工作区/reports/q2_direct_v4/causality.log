@@ -1,0 +1,30 @@
+D56 2025-01-24 total 23235.332154187003 seconds 0.08941587500157766
+DONE causality_original D56 107256.94088734197 0.0
+D56 2025-01-24 total 23235.332154187003 seconds 0.07902104199456517
+DONE causality_mutated D56 972780.5893261695 864055.1229422081
+{'policy': 'D56', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 219.04794822336453, 'passed': True}
+D28 2025-01-24 total 23235.332154187003 seconds 0.07680783300020266
+DONE causality_original D28 107256.94088734197 0.0
+D28 2025-01-24 total 23235.332154187003 seconds 0.0774416670028586
+DONE causality_mutated D28 972780.5893261695 864055.1229422081
+{'policy': 'D28', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 219.04794822336453, 'passed': True}
+D112 2025-01-24 total 23235.332154187003 seconds 0.07953400000405964
+DONE causality_original D112 107256.94088734197 0.0
+D112 2025-01-24 total 23235.332154187003 seconds 0.07838762499159202
+DONE causality_mutated D112 972780.5893261695 864055.1229422081
+{'policy': 'D112', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 219.04794822336453, 'passed': True}
+D56_risk625 2025-01-24 total 23671.139512237583 seconds 0.08916937500180211
+DONE causality_original D56_risk625 107906.27642046542 0.0
+D56_risk625 2025-01-24 total 23671.139512237583 seconds 0.09592066700861324
+DONE causality_mutated D56_risk625 962393.8957367995 851091.8604957658
+{'policy': 'D56_risk625', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 600.8705124186778, 'passed': True}
+D56_mu069 2025-01-24 total 27144.658481664424 seconds 0.12613470799988136
+DONE causality_original D56_mu069 111499.21416706647 448.29787266807097
+D56_mu069 2025-01-24 total 27144.658481664424 seconds 0.07908333399973344
+DONE causality_mutated D56_mu069 943903.5012753995 827981.762142745
+{'policy': 'D56_mu069', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 724.1702250689043, 'passed': True}
+D56_mu0 2025-01-24 total 23053.12136789613 seconds 0.07560966699384153
+DONE causality_original D56_mu0 107044.19389418754 45.05988475118246
+D56_mu0 2025-01-24 total 23053.12136789613 seconds 0.08236220901017077
+DONE causality_mutated D56_mu0 977670.2652740899 870065.1786104948
+{'policy': 'D56_mu0', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 422.1144709201802, 'passed': True}

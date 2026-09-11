@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "policy": "D112",
+  "scope": "Complete 334-day best-policy relocation, C recompile and independent source/candidate/physical/bill audits.",
+  "ledger_max_numeric_difference": 0.0,
+  "total_cost_difference_yuan": 0.0,
+  "text_identical": true,
+  "candidate_evidence_bitwise_identical": true,
+  "independent_check_count": 18449,
+  "actual": {
+    "grid_plan_kwh": 20999350.338290498,
+    "planned_cost_yuan": 13075237.028039372,
+    "emergency_kwh": 147407.72985395137,
+    "emergency_cost_yuan": 838655.4538288128,
+    "total_cost_yuan": 13913892.481868185,
+    "charge_actual_kwh": 6034574.932373809,
+    "discharge_actual_kwh": 4891721.579142132,
+    "surplus_kwh": 2064715.219946105,
+    "unused_grid_kwh": 733479.5440586898,
+    "pv_curtailment_kwh": 1331235.6758874154,
+    "initial_energy_kwh": 7268.4231640740745,
+    "final_energy_kwh": 3139.6632536900206,
+    "inventory_adjusted_cost_yuan": 13916739.581805289,
+    "days": 334,
+    "intervals": 48096,
+    "emergency_cap_passed": true
+  },
+  "candidates": {
+    "days": 334,
+    "candidates": 2004,
+    "optimizer_count": 668,
+    "optimizer_successes": 106,
+    "optimizer_nfev": 154442,
+    "profile_full_milp_path_verified": true
+  },
+  "target": "/Users/justingao/Documents/CUMCM/C题工作区/results/q2_direct_v4/reproduction_completed"
+}

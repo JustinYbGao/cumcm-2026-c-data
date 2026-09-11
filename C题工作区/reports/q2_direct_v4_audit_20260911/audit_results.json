@@ -1,0 +1,237 @@
+{
+  "passed": true,
+  "ledger_rows": 577152,
+  "forecast_releases": 364,
+  "candidate_vectors": 16032,
+  "numeric_checks": 50918,
+  "evidence": {
+    "D56": {
+      "candidate_days": 334,
+      "candidate_vectors": 2004,
+      "minimum_scenarios": 30,
+      "maximum_scenarios": 56,
+      "full_window_days": 308,
+      "optimizer_successes": 188
+    },
+    "D28": {
+      "candidate_days": 334,
+      "candidate_vectors": 2004,
+      "minimum_scenarios": 28,
+      "maximum_scenarios": 28,
+      "full_window_days": 334,
+      "optimizer_successes": 301
+    },
+    "D112": {
+      "candidate_days": 334,
+      "candidate_vectors": 2004,
+      "minimum_scenarios": 30,
+      "maximum_scenarios": 112,
+      "full_window_days": 252,
+      "optimizer_successes": 106
+    },
+    "D56_risk625": {
+      "candidate_days": 334,
+      "candidate_vectors": 2004,
+      "minimum_scenarios": 30,
+      "maximum_scenarios": 56,
+      "full_window_days": 308,
+      "optimizer_successes": 233
+    },
+    "D56_mu069": {
+      "candidate_days": 334,
+      "candidate_vectors": 2004,
+      "minimum_scenarios": 30,
+      "maximum_scenarios": 56,
+      "full_window_days": 308,
+      "optimizer_successes": 248
+    },
+    "D56_mu0": {
+      "candidate_days": 334,
+      "candidate_vectors": 2004,
+      "minimum_scenarios": 30,
+      "maximum_scenarios": 56,
+      "full_window_days": 308,
+      "optimizer_successes": 135
+    },
+    "D112_refined": {
+      "candidate_days": 334,
+      "candidate_vectors": 2004,
+      "minimum_scenarios": 30,
+      "maximum_scenarios": 112,
+      "full_window_days": 252,
+      "optimizer_successes": 661
+    },
+    "D56_risk625_refined": {
+      "candidate_days": 334,
+      "candidate_vectors": 2004,
+      "minimum_scenarios": 30,
+      "maximum_scenarios": 56,
+      "full_window_days": 308,
+      "optimizer_successes": 661
+    }
+  },
+  "paired_statistics": {
+    "D56": {
+      "day_month_counts": [
+        222,
+        112,
+        71,
+        8,
+        6
+      ],
+      "total_savings_intervals": {
+        "7": [
+          -109929.32821154653,
+          163730.41209352782
+        ],
+        "14": [
+          -125573.6221647958,
+          173578.8184046357
+        ]
+      }
+    },
+    "D28": {
+      "day_month_counts": [
+        227,
+        107,
+        78,
+        8,
+        10
+      ],
+      "total_savings_intervals": {
+        "7": [
+          -61091.48479527608,
+          121829.19905817752
+        ],
+        "14": [
+          -63878.49850392128,
+          121071.99635032439
+        ]
+      }
+    },
+    "D112": {
+      "day_month_counts": [
+        250,
+        84,
+        68,
+        8,
+        7
+      ],
+      "total_savings_intervals": {
+        "7": [
+          -115755.06817606404,
+          230578.1434474374
+        ],
+        "14": [
+          -110347.84164520637,
+          236233.44390292236
+        ]
+      }
+    },
+    "D56_risk625": {
+      "day_month_counts": [
+        212,
+        122,
+        58,
+        7,
+        5
+      ],
+      "total_savings_intervals": {
+        "7": [
+          -55596.605512556955,
+          162455.2034920234
+        ],
+        "14": [
+          -59624.299797919135,
+          158009.27435853044
+        ]
+      }
+    },
+    "D56_mu069": {
+      "day_month_counts": [
+        197,
+        137,
+        71,
+        6,
+        6
+      ],
+      "total_savings_intervals": {
+        "7": [
+          -165955.4005545091,
+          98732.79062635948
+        ],
+        "14": [
+          -176976.57456751796,
+          94521.5241668936
+        ]
+      }
+    },
+    "D56_mu0": {
+      "day_month_counts": [
+        219,
+        115,
+        112,
+        6,
+        8
+      ],
+      "total_savings_intervals": {
+        "7": [
+          -238164.2516258056,
+          66411.47330725078
+        ],
+        "14": [
+          -257844.96286513231,
+          75465.17706828729
+        ]
+      }
+    },
+    "D112_refined": {
+      "day_month_counts": [
+        248,
+        86,
+        69,
+        8,
+        7
+      ],
+      "total_savings_intervals": {
+        "7": [
+          -109809.59389211271,
+          231971.8539131104
+        ],
+        "14": [
+          -112373.78544093626,
+          238074.1297113011
+        ]
+      }
+    },
+    "D56_risk625_refined": {
+      "day_month_counts": [
+        211,
+        123,
+        58,
+        7,
+        5
+      ],
+      "total_savings_intervals": {
+        "7": [
+          -59859.38688155444,
+          164098.4323074624
+        ],
+        "14": [
+          -65086.677412755445,
+          151597.07185701033
+        ]
+      }
+    }
+  },
+  "oracle": {
+    "primal": 12227565.30317241,
+    "dual": 12227565.30317241,
+    "greedy_total": 12227565.30317241,
+    "greedy_emergency_fee": 3.266115942146543e-10,
+    "maximum_soc_difference": 9600.0
+  },
+  "zip_sha256": "e52e54d7f80063429d8dcf566a80796b48c790a19bbed53d5eeff19b71c49745",
+  "manifest_files": 449,
+  "zip_entries": 450
+}

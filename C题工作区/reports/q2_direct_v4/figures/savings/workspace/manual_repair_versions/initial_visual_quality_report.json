@@ -1,0 +1,17 @@
+{
+  "passed": false,
+  "requirement_alignment": "Actual PNG inspected; all visible text English, real observed costs, negative values retained.",
+  "data_expression_quality": "Exact signed costs with explicit thousand CNY units; no synthetic data or fitted trends.",
+  "style_preservation": "Original template source read: serif typography, gradient bars/gray grid or marked lines and bars preserved.",
+  "readability": "Fee panel axis labels overlap the first footnote.",
+  "layout_quality": "Bottom annotation band needs more separation.",
+  "color_quality": "Distinct bar and line colors and markers; zero is explicit.",
+  "issues": [
+    "X-axis labels overlap first footnote."
+  ],
+  "suggested_fixes": [
+    "Increase bottom subplot margin and preserve footer position."
+  ],
+  "needs_repair": true,
+  "confidence": 0.96
+}

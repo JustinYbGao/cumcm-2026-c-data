@@ -1,0 +1,18 @@
+{
+  "source_catalog_sha256": "4c09d0ab2aece35a9fec50a202525995e6864985cb7fb3eca2254759bcb52f12",
+  "source_script": "/Users/justingao/.codex/skills/modelviz-skill/templates/02_CMP_comparison_ranking/02_CMP_003/相关性分析堆叠条形图.py",
+  "source_script_sha256": "8c96fa012d70282335b608ab4fd97ae964de3e81fc7a54498f1898a7f9df7c23",
+  "source_preview": "/Users/justingao/.codex/skills/modelviz-skill/templates/02_CMP_comparison_ranking/02_CMP_003/assets/preview.png",
+  "source_preview_sha256": "3f3d72fae2a3ac470d15229926b6d2ff6502c4e0395683bfddd602b004850d0e",
+  "original_dependencies": [
+    "pillow",
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "local_catalog_additions": [
+    "numpy",
+    "pandas"
+  ],
+  "reason": "Adapter dependency preflight; bundled service validates before extra-dependency pass. Original catalog/template are unchanged."
+}

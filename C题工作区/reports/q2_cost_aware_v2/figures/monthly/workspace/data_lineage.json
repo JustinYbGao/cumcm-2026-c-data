@@ -1,0 +1,7 @@
+{
+  "source": "/Users/justingao/Documents/CUMCM/C题工作区/results/q2_cost_aware_v2/monthly_costs_and_differences.csv",
+  "source_sha256": "0ccc1b98e1ab5f940998f21460906f3d485487b6692a45f9efbd4fe44e849071",
+  "plot_data_sha256": "ff9a4ef9232c090164a8295b40c4355170031a0df1165cc58676e9c5fa6acaa5",
+  "rows": 11,
+  "transform": "Declared policies, exact monthly dates and paired subtraction; CNY unit conversion only."
+}

@@ -1,0 +1,17 @@
+{
+  "policy": "D56_risk625_refined",
+  "start": "2025-01-15",
+  "end": "2025-01-18",
+  "initial_energy_kwh": 6000.0,
+  "scenario_window": 56,
+  "kappa": 6.25,
+  "mu": 0.38232,
+  "optimizer": {
+    "maxiter": 1200,
+    "maxfun": 10000,
+    "maxls": 30,
+    "maxcor": 10,
+    "ftol": 1e-10,
+    "gtol": 1e-05
+  }
+}

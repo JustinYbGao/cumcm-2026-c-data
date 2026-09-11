@@ -1,0 +1,10 @@
+P_B1 2025-01-24 cumulative_cost 28273.914030804743
+DONE causality_original P_B1 114951.74295226432 480.8715950463855
+P_B1 2025-01-24 cumulative_cost 28273.914030804743
+DONE causality_mutated P_B1 930661.4841092752 807674.8357984528
+{'policy': 'P_B1', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 1058.8786199999997, 'passed': True}
+P_B1_floor 2025-01-24 cumulative_cost 26056.83069747141
+DONE causality_original P_B1_floor 111782.05543533989 480.87159504637435
+P_B1_floor 2025-01-24 cumulative_cost 26056.83069747141
+DONE causality_mutated P_B1_floor 941154.4707135876 820887.3476919304
+{'policy': 'P_B1_floor', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 1058.8786199999997, 'passed': True}

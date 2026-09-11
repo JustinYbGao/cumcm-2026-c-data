@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "method": "Parse rendered SVG text nodes for CJK, inspect PNG native dimensions and DPI with Pillow; final technical and visual modelviz reports retained separately.",
+  "figures": [
+    {
+      "figure": "annual",
+      "visible_svg_text_nodes": 30,
+      "chinese_visible_text": [],
+      "png_pixels": [
+        3300,
+        1950
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "modelviz_quality_passed": true,
+      "passed": true
+    },
+    {
+      "figure": "monthly",
+      "visible_svg_text_nodes": 46,
+      "chinese_visible_text": [],
+      "png_pixels": [
+        3300,
+        2340
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "modelviz_quality_passed": true,
+      "passed": true
+    }
+  ]
+}

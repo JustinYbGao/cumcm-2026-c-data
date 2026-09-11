@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "mutation_cutoff": "2025-01-25 12:00:00",
+  "mutation": "Source copy: interval_start >= cutoff has load +800kWh, PV times .5; corresponding kW updated.",
+  "scope": "Full source/forecast/decision/execution recomputation; not a formal all-input proof.",
+  "checks": [
+    {
+      "policy": "D112_refined",
+      "prefix_rows": 216,
+      "prefix_difference_kwh": 9.094947017729282e-13,
+      "frozen_plan_difference_kwh": 0.0,
+      "earlier_candidate_evidence_identical": true,
+      "next_day_response_kwh": 297.93490923177114,
+      "passed": true
+    },
+    {
+      "policy": "D56_risk625_refined",
+      "prefix_rows": 216,
+      "prefix_difference_kwh": 9.094947017729282e-13,
+      "frozen_plan_difference_kwh": 0.0,
+      "earlier_candidate_evidence_identical": true,
+      "next_day_response_kwh": 605.0941084497215,
+      "passed": true
+    }
+  ]
+}

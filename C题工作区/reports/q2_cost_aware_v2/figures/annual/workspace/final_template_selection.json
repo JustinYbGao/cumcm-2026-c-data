@@ -1,0 +1,102 @@
+{
+  "dataset_summary": "9 strategies and additive actual bills",
+  "observed_data_features": [],
+  "relevant_columns": [
+    "policy",
+    "planned_cost_yuan",
+    "emergency_cost_yuan",
+    "total_cost_yuan",
+    "relaxed_lower_bound_yuan"
+  ],
+  "candidate_comparisons": [
+    {
+      "template_id": "cmp_correlation_stacked_bar",
+      "suitable": true,
+      "advantages": [
+        "Exact categorical stacks of actual normal and emergency bills, with a separately certified relaxed lower bound."
+      ],
+      "limitations": [],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_nightingale_rose_grid",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+      ],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_radial_stacked_bar",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+      ],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_gradient_single_factor_bar",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+      ],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_circular_barplot",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+      ],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_3d_bar_chart",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+      ],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "dis_radial_bar_error_significance",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+      ],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_stack_pie_box_report",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+      ],
+      "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only.",
+      "requirement_compatibility": ""
+    }
+  ],
+  "selected_template_id": "cmp_correlation_stacked_bar",
+  "selected_template_name": "相关性分析堆叠条形图",
+  "alternative_template_ids": [],
+  "selection_reason": "Exact categorical stacks of actual normal and emergency bills, with a separately certified relaxed lower bound.",
+  "data_support_reason": "All plotted quantities are present in the real CSV or exact subtraction/unit conversion thereof.",
+  "data_warnings": [],
+  "confidence": 0.96,
+  "needs_clarification": false,
+  "clarification_question": ""
+}

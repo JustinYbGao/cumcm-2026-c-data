@@ -1,0 +1,50 @@
+T_day_trim 2025-01-24 cumulative_cost 24158.394010501775
+DONE causality_original T_day_trim 109930.29085083702 25.77362514425515
+T_day_trim 2025-01-24 cumulative_cost 24158.394010501775
+DONE causality_mutated T_day_trim 970069.7843889156 859216.7307842768
+{'policy': 'T_day_trim', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 640.7050351744417, 'passed': True}
+T_evening_hedge 2025-01-24 cumulative_cost 25193.113930479056
+DONE causality_original T_evening_hedge 112642.49573486163 25.77362514425515
+T_evening_hedge 2025-01-24 cumulative_cost 25193.113930479056
+DONE causality_mutated T_evening_hedge 960839.8129825625 846735.9835836894
+{'policy': 'T_evening_hedge', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 802.5181559305157, 'passed': True}
+T_rebalance 2025-01-24 cumulative_cost 24662.776813796896
+DONE causality_original T_rebalance 111012.14797354216 25.77362514425515
+T_rebalance 2025-01-24 cumulative_cost 24662.776813796896
+DONE causality_mutated T_rebalance 965517.8076519102 853187.7939593478
+{'policy': 'T_rebalance', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 802.5181559305157, 'passed': True}
+T_soft 2025-01-24 cumulative_cost 24555.120748062778
+DONE causality_original T_soft 110993.04085135284 25.77362514425515
+T_soft 2025-01-24 cumulative_cost 24555.120748062778
+DONE causality_mutated T_soft 966348.1776951891 854170.4694647889
+{'policy': 'T_soft', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 649.2191491989693, 'passed': True}
+T_strong 2025-01-24 cumulative_cost 24904.86310479231
+DONE causality_original T_strong 111035.10251933911 25.77362514425515
+T_strong 2025-01-24 cumulative_cost 24904.86310479231
+DONE causality_mutated T_strong 940447.0474313743 821714.1957187039
+{'policy': 'T_strong', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 802.5181559305157, 'passed': True}
+T_morning_hedge 2025-01-24 cumulative_cost 24747.313059784345
+DONE causality_original T_morning_hedge 111264.97057941151 25.77362514425515
+T_morning_hedge 2025-01-24 cumulative_cost 24747.313059784345
+DONE causality_mutated T_morning_hedge 964815.4372806109 852232.9508320717
+{'policy': 'T_morning_hedge', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 802.5181559305157, 'passed': True}
+R_guard 2025-01-24 cumulative_cost 24688.731127183935
+DONE causality_original R_guard 111560.2218584741 25.77362514425515
+R_guard 2025-01-24 cumulative_cost 24688.731127183935
+DONE causality_mutated R_guard 965391.7746027166 852764.9204086184
+{'policy': 'R_guard', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 640.7050351744417, 'passed': True}
+R_mean 2025-01-24 cumulative_cost 24688.731127183935
+DONE causality_original R_mean 111560.2218584741 25.77362514425515
+R_mean 2025-01-24 cumulative_cost 24688.731127183935
+DONE causality_mutated R_mean 965391.7746027166 852764.9204086184
+{'policy': 'R_mean', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 640.7050351744417, 'passed': True}
+R_cost 2025-01-24 cumulative_cost 24158.394010501775
+DONE causality_original R_cost 109930.29085083702 25.77362514425515
+R_cost 2025-01-24 cumulative_cost 24158.394010501775
+DONE causality_mutated R_cost 970069.7843889156 859216.7307842768
+{'policy': 'R_cost', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 640.7050351744417, 'passed': True}
+R_w28 2025-01-24 cumulative_cost 24688.731127183935
+DONE causality_original R_w28 111560.2218584741 25.77362514425515
+R_w28 2025-01-24 cumulative_cost 24688.731127183935
+DONE causality_mutated R_w28 965391.7746027166 852764.9204086184
+{'policy': 'R_w28', 'prefix_rows': 216, 'prefix_difference_kwh': 9.094947017729282e-13, 'frozen_plan_difference_kwh': 0.0, 'earlier_candidate_evidence_identical': True, 'next_day_response_kwh': 640.7050351744417, 'passed': True}

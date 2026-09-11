@@ -1,0 +1,24 @@
+{
+  "original_request": "研究Q2总费用改进，紧急购电费不超过100万元；按modelviz-skill绘图，图内全部英文，300dpi PNG与SVG，公开负结果。",
+  "goal": "比较全部新方案的普通、紧急和总费用节省，分组柱状图，多指标正负值比较",
+  "functional_keywords": [
+    "比较",
+    "分组柱状图",
+    "多指标"
+  ],
+  "chart_types": [],
+  "style_keywords": [
+    "科研风",
+    "English labels",
+    "serif typography"
+  ],
+  "use_case": "论文正文",
+  "negative_requirements": [
+    "No Chinese text",
+    "No smoothing",
+    "No 3D"
+  ],
+  "explicit_template": false,
+  "is_ambiguous": false,
+  "clarification_question": ""
+}

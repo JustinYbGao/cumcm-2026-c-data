@@ -1,0 +1,427 @@
+{
+  "plan_columns": [
+    "grid_plan_kwh",
+    "charge_plan_kwh",
+    "discharge_plan_kwh",
+    "energy_start_plan_kwh",
+    "energy_end_plan_kwh",
+    "pv_curtailment_plan_kwh",
+    "charge_mode_plan"
+  ],
+  "days": [
+    {
+      "date": "2025-01-24",
+      "initial_energy_kwh": 6000.0,
+      "scenario_source_dates": [
+        "2025-01-02",
+        "2025-01-03",
+        "2025-01-04",
+        "2025-01-05",
+        "2025-01-06",
+        "2025-01-07",
+        "2025-01-08",
+        "2025-01-09",
+        "2025-01-10",
+        "2025-01-11",
+        "2025-01-12",
+        "2025-01-13",
+        "2025-01-14",
+        "2025-01-15",
+        "2025-01-16",
+        "2025-01-17",
+        "2025-01-18",
+        "2025-01-19",
+        "2025-01-20",
+        "2025-01-21",
+        "2025-01-22",
+        "2025-01-23"
+      ],
+      "scenario_count": 22,
+      "selected_index": 2,
+      "candidates": [
+        {
+          "tau": 0.5,
+          "terminal": "equal_initial",
+          "terminal_energy_kwh": 6000.0,
+          "solver": {
+            "status": "Optimal",
+            "objective_yuan": 23513.627494393142,
+            "solver_objective": 23513.627494393142,
+            "relaxed": false,
+            "lower_bound_yuan": 23513.627494393142,
+            "mip_gap": 0.0,
+            "nodes": 1,
+            "runtime_seconds": 0.023644000000786036,
+            "variables": 865,
+            "constraints": 578,
+            "max_primal_infeasibility": 3.296918293926865e-12,
+            "max_integrality_violation": 3.9968028886505635e-15,
+            "lower_bound_unit": "yuan",
+            "primary_cost_cap_yuan": null
+          }
+        },
+        {
+          "tau": 0.6,
+          "terminal": "equal_initial",
+          "terminal_energy_kwh": 6000.0,
+          "solver": {
+            "status": "Optimal",
+            "objective_yuan": 24444.955411152343,
+            "solver_objective": 24444.95541115234,
+            "relaxed": false,
+            "lower_bound_yuan": 24444.95541115234,
+            "mip_gap": 0.0,
+            "nodes": 1,
+            "runtime_seconds": 0.021904124994762242,
+            "variables": 865,
+            "constraints": 578,
+            "max_primal_infeasibility": 4.255854927729766e-12,
+            "max_integrality_violation": 6.5503158452884236e-15,
+            "lower_bound_unit": "yuan",
+            "primary_cost_cap_yuan": null
+          }
+        },
+        {
+          "tau": 0.7,
+          "terminal": "equal_initial",
+          "terminal_energy_kwh": 6000.0,
+          "solver": {
+            "status": "Optimal",
+            "objective_yuan": 25570.49179119856,
+            "solver_objective": 25570.49179119856,
+            "relaxed": false,
+            "lower_bound_yuan": 25570.49179119856,
+            "mip_gap": 0.0,
+            "nodes": 1,
+            "runtime_seconds": 0.022550833004061133,
+            "variables": 865,
+            "constraints": 578,
+            "max_primal_infeasibility": 5.5706550483591855e-12,
+            "max_integrality_violation": 1.5654144647214707e-14,
+            "lower_bound_unit": "yuan",
+            "primary_cost_cap_yuan": null
+          }
+        },
+        {
+          "tau": 0.8,
+          "terminal": "equal_initial",
+          "terminal_energy_kwh": 6000.0,
+          "solver": {
+            "status": "Optimal",
+            "objective_yuan": 26905.81446051727,
+            "solver_objective": 26905.814460517267,
+            "relaxed": false,
+            "lower_bound_yuan": 26905.814460517267,
+            "mip_gap": 0.0,
+            "nodes": 1,
+            "runtime_seconds": 0.02242645900696516,
+            "variables": 865,
+            "constraints": 578,
+            "max_primal_infeasibility": 6.139089236967266e-12,
+            "max_integrality_violation": 7.327471962526033e-15,
+            "lower_bound_unit": "yuan",
+            "primary_cost_cap_yuan": null
+          }
+        },
+        {
+          "tau": 0.9,
+          "terminal": "equal_initial",
+          "terminal_energy_kwh": 6000.0,
+          "solver": {
+            "status": "Optimal",
+            "objective_yuan": 29309.011717638772,
+            "solver_objective": 29309.011717638772,
+            "relaxed": false,
+            "lower_bound_yuan": 29309.011717638772,
+            "mip_gap": 0.0,
+            "nodes": 1,
+            "runtime_seconds": 0.024650167004438117,
+            "variables": 865,
+            "constraints": 578,
+            "max_primal_infeasibility": 9.094947017729282e-13,
+            "max_integrality_violation": 2.775557561562901e-16,
+            "lower_bound_unit": "yuan",
+            "primary_cost_cap_yuan": null
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-01-25",
+      "initial_energy_kwh": 6410.63575558293,
+      "scenario_source_dates": [
+        "2025-01-02",
+        "2025-01-03",
+        "2025-01-04",
+        "2025-01-05",
+        "2025-01-06",
+        "2025-01-07",
+        "2025-01-08",
+        "2025-01-09",
+        "2025-01-10",
+        "2025-01-11",
+        "2025-01-12",
+        "2025-01-13",
+        "2025-01-14",
+        "2025-01-15",
+        "2025-01-16",
+        "2025-01-17",
+        "2025-01-18",
+        "2025-01-19",
+        "2025-01-20",
+        "2025-01-21",
+        "2025-01-22",
+        "2025-01-23",
+        "2025-01-24"
+      ],
+      "scenario_count": 23,
+      "selected_index": 2,
+      "candidates": [
+        {
+          "tau": 0.5,
+          "terminal": "equal_initial",
+          "terminal_energy_kwh": 6410.63575558293,
+          "solver": {
+            "status": "Optimal",
+            "objective_yuan": 23537.547344907267,
+            "solver_objective": 23537.547344907267,
+            "relaxed": false,
+            "lower_bound_yuan": 23537.547344907267,
+            "mip_gap": 0.0,
+            "nodes": 1,
+            "runtime_seconds": 0.02494312499766238,
+            "variables": 865,
+            "constraints": 578,
+            "max_primal_infeasibility": 1.1482370609883219e-11,
+            "max_integrality_violation": 1.3766765505351941e-14,
+            "lower_bound_unit": "yuan",
+            "primary_cost_cap_yuan": null
+          }
+        },
+        {
+          "tau": 0.6,
+          "terminal": "equal_initial",
+          "terminal_energy_kwh": 6410.63575558293,
+          "solver": {
+            "status": "Optimal",
+            "objective_yuan": 24438.55166831007,
+            "solver_objective": 24438.55166831007,
+            "relaxed": false,
+            "lower_bound_yuan": 24438.55166831007,
+            "mip_gap": 0.0,
+            "nodes": 1,
+            "runtime_seconds": 0.0281491660134634,
+            "variables": 865,
+            "constraints": 578,
+            "max_primal_infeasibility": 9.094947017729282e-13,
+            "max_integrality_violation": 2.9976021664879227e-15,
+            "lower_bound_unit": "yuan",
+            "primary_cost_cap_yuan": null
+          }
+        },
+        {
+          "tau": 0.7,
+          "terminal": "equal_initial",
+          "terminal_energy_kwh": 6410.63575558293,
+          "solver": {
+            "status": "Optimal",
+            "objective_yuan": 25513.679607592665,
+            "solver_objective": 25513.679607592665,
+            "relaxed": false,
+            "lower_bound_yuan": 25513.679607592665,
+            "mip_gap": 0.0,
+            "nodes": 1,
+            "runtime_seconds": 0.026442709000548348,
+            "variables": 865,
+            "constraints": 578,
+            "max_primal_infeasibility": 9.094947017729282e-13,
+            "max_integrality_violation": 2.9976021664879227e-15,
+            "lower_bound_unit": "yuan",
+            "primary_cost_cap_yuan": null
+          }
+        },
+        {
+          "tau": 0.8,
+          "terminal": "equal_initial",
+          "terminal_energy_kwh": 6410.63575558293,
+          "solver": {
+            "status": "Optimal",
+            "objective_yuan": 26854.84411939686,
+            "solver_objective": 26854.84411939686,
+            "relaxed": false,
+            "lower_bound_yuan": 26854.84411939686,
+            "mip_gap": 0.0,
+            "nodes": 1,
+            "runtime_seconds": 0.03230058299959637,
+            "variables": 865,
+            "constraints": 578,
+            "max_primal_infeasibility": 9.094947017729282e-13,
+            "max_integrality_violation": 7.327471962526033e-15,
+            "lower_bound_unit": "yuan",
+            "primary_cost_cap_yuan": null
+          }
+        },
+        {
+          "tau": 0.9,
+          "terminal": "equal_initial",
+          "terminal_energy_kwh": 6410.63575558293,
+          "solver": {
+            "status": "Optimal",
+            "objective_yuan": 29195.19495114076,
+            "solver_objective": 29195.19495114076,
+            "relaxed": false,
+            "lower_bound_yuan": 29195.19495114076,
+            "mip_gap": 0.0,
+            "nodes": 1,
+            "runtime_seconds": 0.024471834010910243,
+            "variables": 865,
+            "constraints": 578,
+            "max_primal_infeasibility": 9.094947017729282e-13,
+            "max_integrality_violation": 2.9976021664879227e-15,
+            "lower_bound_unit": "yuan",
+            "primary_cost_cap_yuan": null
+          }
+        }
+      ]
+    },
+    {
+      "date": "2025-01-26",
+      "initial_energy_kwh": 1200.0,
+      "scenario_source_dates": [
+        "2025-01-02",
+        "2025-01-03",
+        "2025-01-04",
+        "2025-01-05",
+        "2025-01-06",
+        "2025-01-07",
+        "2025-01-08",
+        "2025-01-09",
+        "2025-01-10",
+        "2025-01-11",
+        "2025-01-12",
+        "2025-01-13",
+        "2025-01-14",
+        "2025-01-15",
+        "2025-01-16",
+        "2025-01-17",
+        "2025-01-18",
+        "2025-01-19",
+        "2025-01-20",
+        "2025-01-21",
+        "2025-01-22",
+        "2025-01-23",
+        "2025-01-24",
+        "2025-01-25"
+      ],
+      "scenario_count": 24,
+      "selected_index": 2,
+      "candidates": [
+        {
+          "tau": 0.5,
+          "terminal": "equal_initial",
+          "terminal_energy_kwh": 1200.0,
+          "solver": {
+            "status": "Optimal",
+            "objective_yuan": 57159.65208497523,
+            "solver_objective": 57159.65208497523,
+            "relaxed": false,
+            "lower_bound_yuan": 57159.65208497523,
+            "mip_gap": 0.0,
+            "nodes": 1,
+            "runtime_seconds": 0.0217075419932371,
+            "variables": 865,
+            "constraints": 578,
+            "max_primal_infeasibility": 3.2173375075217336e-11,
+            "max_integrality_violation": 3.863576125695545e-14,
+            "lower_bound_unit": "yuan",
+            "primary_cost_cap_yuan": null
+          }
+        },
+        {
+          "tau": 0.6,
+          "terminal": "equal_initial",
+          "terminal_energy_kwh": 1200.0,
+          "solver": {
+            "status": "Optimal",
+            "objective_yuan": 58318.15870028386,
+            "solver_objective": 58318.15870028386,
+            "relaxed": false,
+            "lower_bound_yuan": 58318.158700283864,
+            "mip_gap": 0.0,
+            "nodes": 1,
+            "runtime_seconds": 0.017512416001409292,
+            "variables": 865,
+            "constraints": 578,
+            "max_primal_infeasibility": 9.094947017729282e-13,
+            "max_integrality_violation": 2.6645352591003757e-15,
+            "lower_bound_unit": "yuan",
+            "primary_cost_cap_yuan": null
+          }
+        },
+        {
+          "tau": 0.7,
+          "terminal": "equal_initial",
+          "terminal_energy_kwh": 1200.0,
+          "solver": {
+            "status": "Optimal",
+            "objective_yuan": 59728.83926485296,
+            "solver_objective": 59728.83926485296,
+            "relaxed": false,
+            "lower_bound_yuan": 59728.83926485296,
+            "mip_gap": 0.0,
+            "nodes": 1,
+            "runtime_seconds": 0.006088958994951099,
+            "variables": 865,
+            "constraints": 578,
+            "max_primal_infeasibility": 9.094947017729282e-13,
+            "max_integrality_violation": 0.0,
+            "lower_bound_unit": "yuan",
+            "primary_cost_cap_yuan": null
+          }
+        },
+        {
+          "tau": 0.8,
+          "terminal": "equal_initial",
+          "terminal_energy_kwh": 1200.0,
+          "solver": {
+            "status": "Optimal",
+            "objective_yuan": 61445.156909111036,
+            "solver_objective": 61445.156909111036,
+            "relaxed": false,
+            "lower_bound_yuan": 61445.15690911104,
+            "mip_gap": 0.0,
+            "nodes": 1,
+            "runtime_seconds": 0.006721500001731329,
+            "variables": 865,
+            "constraints": 578,
+            "max_primal_infeasibility": 7.958078640513122e-13,
+            "max_integrality_violation": 1.1102230246251565e-16,
+            "lower_bound_unit": "yuan",
+            "primary_cost_cap_yuan": null
+          }
+        },
+        {
+          "tau": 0.9,
+          "terminal": "equal_initial",
+          "terminal_energy_kwh": 1200.0,
+          "solver": {
+            "status": "Optimal",
+            "objective_yuan": 64808.30998971392,
+            "solver_objective": 64808.30998971392,
+            "relaxed": false,
+            "lower_bound_yuan": 64808.30998971392,
+            "mip_gap": 0.0,
+            "nodes": 1,
+            "runtime_seconds": 0.005874957991181873,
+            "variables": 865,
+            "constraints": 578,
+            "max_primal_infeasibility": 8.526512829121202e-13,
+            "max_integrality_violation": 0.0,
+            "lower_bound_unit": "yuan",
+            "primary_cost_cap_yuan": null
+          }
+        }
+      ]
+    }
+  ]
+}

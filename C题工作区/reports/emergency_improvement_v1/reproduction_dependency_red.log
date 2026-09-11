@@ -1,0 +1,4 @@
+{"passed": false, "checks": [{"check": "causality_evidence_present", "passed": false, "comparisons": 1, "failures": 1}], "comparisons": 1, "failed_groups": 1}
+Traceback (most recent call last):
+  File "<stdin>", line 7, in <module>
+AssertionError: January gate fails without causality producer output

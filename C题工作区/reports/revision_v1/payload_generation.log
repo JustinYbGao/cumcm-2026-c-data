@@ -1,0 +1,57 @@
+[
+  {
+    "file": "result1.xlsx",
+    "policy": "baseline",
+    "days": 1,
+    "original_cost_yuan": 35126.94858928963,
+    "increase_cost_yuan": 0,
+    "decrease_adjustment_yuan": 0,
+    "contract_cost_yuan": 35126.94858928963,
+    "emergency_cost_yuan": 0,
+    "total_cost_yuan": 35126.94858928963
+  },
+  {
+    "file": "result2.xlsx",
+    "policy": "selected",
+    "days": 334,
+    "original_cost_yuan": 11987831.567381365,
+    "increase_cost_yuan": 0,
+    "decrease_adjustment_yuan": 0,
+    "contract_cost_yuan": 11987831.567381365,
+    "emergency_cost_yuan": 4345851.825469283,
+    "total_cost_yuan": 16333683.39285065
+  },
+  {
+    "file": "result3.xlsx",
+    "policy": "fixed_w28",
+    "days": 334,
+    "original_cost_yuan": 12188689.829582471,
+    "increase_cost_yuan": 1039399.1309384764,
+    "decrease_adjustment_yuan": -161214.92259501026,
+    "contract_cost_yuan": 13066874.037925936,
+    "emergency_cost_yuan": 659859.5370419322,
+    "total_cost_yuan": 13726733.574967869
+  },
+  {
+    "file": "result4-2.xlsx",
+    "policy": "q42_ols",
+    "days": 334,
+    "original_cost_yuan": 12683183.670697108,
+    "increase_cost_yuan": 0.0,
+    "decrease_adjustment_yuan": 0.0,
+    "contract_cost_yuan": 12683183.670697108,
+    "emergency_cost_yuan": 4347698.026677684,
+    "total_cost_yuan": 17030881.69737479
+  },
+  {
+    "file": "result4-3.xlsx",
+    "policy": "variable_w28",
+    "days": 334,
+    "original_cost_yuan": 12910681.287740031,
+    "increase_cost_yuan": 1073843.3388183855,
+    "decrease_adjustment_yuan": -171321.01831596936,
+    "contract_cost_yuan": 13813203.608242448,
+    "emergency_cost_yuan": 679075.9381927691,
+    "total_cost_yuan": 14492279.546435216
+  }
+]

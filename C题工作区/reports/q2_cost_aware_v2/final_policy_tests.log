@@ -1,0 +1,13 @@
+test_candidate_plan_roundtrip (__main__.PolicyTests.test_candidate_plan_roundtrip) ... ok
+test_floor_power_ceiling_and_surplus (__main__.PolicyTests.test_floor_power_ceiling_and_surplus) ... ok
+test_inventory_is_only_a_scoring_credit (__main__.PolicyTests.test_inventory_is_only_a_scoring_credit) ... ok
+test_negative_net_means_surplus (__main__.PolicyTests.test_negative_net_means_surplus) ... ok
+test_scenario_cutoff_and_order (__main__.PolicyTests.test_scenario_cutoff_and_order) ... ok
+test_scenario_future_cannot_change_prefix (__main__.PolicyTests.test_scenario_future_cannot_change_prefix) ... ok
+test_shared_plan_tradeoff_uses_total_cost (__main__.PolicyTests.test_shared_plan_tradeoff_uses_total_cost) ... ok
+test_tie_uses_predeclared_order (__main__.PolicyTests.test_tie_uses_predeclared_order) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.161s
+
+OK

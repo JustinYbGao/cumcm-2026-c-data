@@ -1,0 +1,563 @@
+[
+  {
+    "date": "2025-01-15",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-15 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 59490.09151576124,
+      "solver_objective": 59490.09151576123,
+      "relaxed": false,
+      "lower_bound_yuan": 59490.09151576123,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.03058362498995848,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 9.094947017729282e-13,
+      "max_integrality_violation": 1.2434497875801753e-14,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 6000.0
+  },
+  {
+    "date": "2025-01-16",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-16 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 60575.99976315885,
+      "solver_objective": 60575.99976315885,
+      "relaxed": false,
+      "lower_bound_yuan": 60575.99976315885,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.02236533400719054,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 7.958078640513122e-13,
+      "max_integrality_violation": 2.55351295663786e-15,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 5909.040937777778
+  },
+  {
+    "date": "2025-01-17",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-17 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 25047.730950984136,
+      "solver_objective": 25047.730950984136,
+      "relaxed": false,
+      "lower_bound_yuan": 25047.730950984136,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.02576666600361932,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 2.0463630789890885e-12,
+      "max_integrality_violation": 1.176836406102666e-14,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 5829.147164814815
+  },
+  {
+    "date": "2025-01-18",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-18 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 24644.341846369505,
+      "solver_objective": 24644.341846369505,
+      "relaxed": false,
+      "lower_bound_yuan": 24644.341846369505,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.021764499993878417,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 9.094947017729282e-13,
+      "max_integrality_violation": 1.2212453270876722e-15,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 5635.293724629628
+  },
+  {
+    "date": "2025-01-19",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-19 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 59026.740193765494,
+      "solver_objective": 59026.740193765494,
+      "relaxed": false,
+      "lower_bound_yuan": 59026.740193765494,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.020654583000577986,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 8.526512829121202e-13,
+      "max_integrality_violation": 3.3306690738754696e-16,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 5529.349957407405
+  },
+  {
+    "date": "2025-01-20",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-20 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 60050.699996488875,
+      "solver_objective": 60050.69999648887,
+      "relaxed": false,
+      "lower_bound_yuan": 60050.69999648887,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.024550250003812835,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 8.526512829121202e-13,
+      "max_integrality_violation": 4.6629367034256575e-15,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 5524.009217962961
+  },
+  {
+    "date": "2025-01-21",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-21 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 59393.86602050354,
+      "solver_objective": 59393.866020503534,
+      "relaxed": false,
+      "lower_bound_yuan": 59393.866020503534,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.01991683300002478,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 2.3874235921539366e-12,
+      "max_integrality_violation": 6.5503158452884236e-15,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 5758.158606111108
+  },
+  {
+    "date": "2025-01-22",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-22 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 56708.910979691536,
+      "solver_objective": 56708.91097969154,
+      "relaxed": false,
+      "lower_bound_yuan": 56708.91097969154,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.023379666992696002,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 1.1368683772161603e-12,
+      "max_integrality_violation": 1.3322676295501878e-15,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 6041.4515114814785
+  },
+  {
+    "date": "2025-01-23",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-23 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 59683.40291135296,
+      "solver_objective": 59683.40291135296,
+      "relaxed": false,
+      "lower_bound_yuan": 59683.402911352954,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.02335279200633522,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 1.862164727961697e-12,
+      "max_integrality_violation": 2.2345976735540366e-15,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 5884.250190370367
+  },
+  {
+    "date": "2025-01-24",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-24 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 24854.17953701815,
+      "solver_objective": 24854.17953701815,
+      "relaxed": false,
+      "lower_bound_yuan": 24854.17953701815,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.023143375001382083,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 9.094947017729282e-13,
+      "max_integrality_violation": 3.885780586188048e-15,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 5908.952411296294
+  },
+  {
+    "date": "2025-01-25",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-25 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 23263.371185800996,
+      "solver_objective": 23263.371185800996,
+      "relaxed": false,
+      "lower_bound_yuan": 23263.371185800996,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.03001441700325813,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 1.6768808563938364e-12,
+      "max_integrality_violation": 0.0,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 5972.70897
+  },
+  {
+    "date": "2025-01-26",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-26 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 55880.86074277321,
+      "solver_objective": 55880.860742773206,
+      "relaxed": false,
+      "lower_bound_yuan": 55880.860742773206,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.026040958997327834,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 9.094947017729282e-13,
+      "max_integrality_violation": 3.552713678800501e-15,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 6138.210308703703
+  },
+  {
+    "date": "2025-01-27",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-27 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 58470.992835805555,
+      "solver_objective": 58470.992835805555,
+      "relaxed": false,
+      "lower_bound_yuan": 58470.992835805555,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.02425454200420063,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 9.094947017729282e-13,
+      "max_integrality_violation": 2.2426505097428162e-14,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 6154.458591481481
+  },
+  {
+    "date": "2025-01-28",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-28 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 55798.679809706795,
+      "solver_objective": 55798.67980970679,
+      "relaxed": false,
+      "lower_bound_yuan": 55798.67980970679,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.024059582996414974,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 7.958078640513122e-13,
+      "max_integrality_violation": 3.938083135152509e-15,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 6014.556352962965
+  },
+  {
+    "date": "2025-01-29",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-29 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 58135.55486551687,
+      "solver_objective": 58135.55486551687,
+      "relaxed": false,
+      "lower_bound_yuan": 58135.55486551687,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.021040375009761192,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 9.094947017729282e-13,
+      "max_integrality_violation": 7.993605777301127e-15,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 5989.9533292592605
+  },
+  {
+    "date": "2025-01-30",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-30 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 54249.907615512035,
+      "solver_objective": 54249.907615512035,
+      "relaxed": false,
+      "lower_bound_yuan": 54249.907615512035,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.022533291994477622,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 9.094947017729282e-13,
+      "max_integrality_violation": 2.4424906541753444e-15,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 6480.747056111111
+  },
+  {
+    "date": "2025-01-31",
+    "forecast": {
+      "method": "seasonal",
+      "history_end": "2025-01-31 00:00:00",
+      "load_method": "lag7",
+      "pv_method": "lag1"
+    },
+    "risk": {
+      "risk_history_start": "",
+      "risk_history_end": "",
+      "risk_sample_count": 0,
+      "risk_history_days": 0,
+      "risk_cold_start": false
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 21594.5838359842,
+      "solver_objective": 21594.5838359842,
+      "relaxed": false,
+      "lower_bound_yuan": 21594.5838359842,
+      "mip_gap": 0.0,
+      "nodes": 1,
+      "runtime_seconds": 0.03140258300118148,
+      "variables": 865,
+      "constraints": 578,
+      "max_primal_infeasibility": 8.526512829121202e-13,
+      "max_integrality_violation": 0.0,
+      "lower_bound_unit": "yuan",
+      "primary_cost_cap_yuan": null
+    },
+    "initial_energy_kwh": 6518.504302777777
+  }
+]

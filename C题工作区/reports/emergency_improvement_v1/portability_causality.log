@@ -1,0 +1,5 @@
+{'policy': 'B0', 'prefix_max_difference_kwh': 0.0, 'already_frozen_plans_max_difference_kwh': 0.0, 'next_day_positive_control_difference_kwh': 860.8078944775696, 'prefix_rows': 1512, 'passed': True}
+{'policy': 'B1', 'prefix_max_difference_kwh': 0.0, 'already_frozen_plans_max_difference_kwh': 0.0, 'next_day_positive_control_difference_kwh': 1052.5154333333332, 'prefix_rows': 1512, 'passed': True}
+{'policy': 'P', 'prefix_max_difference_kwh': 0.0, 'already_frozen_plans_max_difference_kwh': 0.0, 'next_day_positive_control_difference_kwh': 867.2815236797594, 'prefix_rows': 1512, 'passed': True}
+{'policy': 'E', 'prefix_max_difference_kwh': 0.0, 'already_frozen_plans_max_difference_kwh': 0.0, 'next_day_positive_control_difference_kwh': 860.8078944775696, 'prefix_rows': 1512, 'passed': True}
+{'policy': 'PE', 'prefix_max_difference_kwh': 0.0, 'already_frozen_plans_max_difference_kwh': 0.0, 'next_day_positive_control_difference_kwh': 867.2815236797594, 'prefix_rows': 1512, 'passed': True}

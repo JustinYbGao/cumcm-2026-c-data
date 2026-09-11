@@ -30,3 +30,10 @@
 /C题工作区/data/interim/matplotlib/
 /C题工作区/data/interim/**/matplotlib/
 /C题工作区/data/interim/**/cache/
+
+# Byte-identical ZIPs are distributed as <=64 MiB parts with a SHA256 manifest.
+# See C题工作区/deliverables/git_large_files_v1/README.md.
+/C题工作区/reports/emergency_improvement_v1/q2_emergency_improvement_v1_review.zip
+/C题工作区/reports/q2_cost_aware_v2/q2_cost_aware_v2_review.zip
+/C题工作区/reports/q2_pareto_v3/q2_pareto_v3_review.zip
+/C题工作区/reports/q2_direct_v4/q2_direct_v4_review.zip

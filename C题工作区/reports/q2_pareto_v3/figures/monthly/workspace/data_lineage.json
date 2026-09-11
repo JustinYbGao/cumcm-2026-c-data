@@ -1,0 +1,7 @@
+{
+  "source": "/Users/justingao/Documents/CUMCM/C题工作区/results/q2_pareto_v3/analysis_user_cap/monthly.csv",
+  "source_sha256": "a87de64701d645488af3005961b565465c9d4485234961665a86cb9ce6e7db88",
+  "plot_data_sha256": "14a4dbec05e34e0f659bf356766f637a37b3e5f8e7bce0e581082c8314792696",
+  "rows": 11,
+  "transform": "All 18 new paths, or declared monthly paired comparisons with P_floor; exact subtraction and display unit conversion only."
+}

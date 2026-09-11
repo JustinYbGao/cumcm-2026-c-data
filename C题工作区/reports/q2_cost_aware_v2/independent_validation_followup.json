@@ -1,0 +1,1869 @@
+{
+  "created_utc": "2026-09-11T17:34:18.112189+00:00",
+  "scope": "incremental_followup",
+  "passed": true,
+  "checks": [
+    {
+      "check": "primary_passed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "primary_validator_exact_source",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "followup_artifacts",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "unchanged_audited_ledger.B0",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "unchanged_audited_ledger.B1",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "unchanged_audited_ledger.P",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "unchanged_audited_ledger.P_terminal",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "unchanged_audited_ledger.P_floor",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "unchanged_audited_ledger.S_terminal",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "complete_dates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "pairs",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "bootstrap_pairs",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    },
+    {
+      "check": "P_floor.B0.stats.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.stats.winning_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.stats.losing_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.stats.tied_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.stats.positive_months",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.stats.worst_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.stats.best_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.bootstrap.7.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.bootstrap.7.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.bootstrap.7.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.bootstrap.7.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.bootstrap.7.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.bootstrap.14.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.bootstrap.14.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.bootstrap.14.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.bootstrap.14.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B0.bootstrap.14.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.stats.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.stats.winning_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.stats.losing_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.stats.tied_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.stats.positive_months",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.stats.worst_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.stats.best_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.bootstrap.7.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.bootstrap.7.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.bootstrap.7.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.bootstrap.7.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.bootstrap.7.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.bootstrap.14.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.bootstrap.14.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.bootstrap.14.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.bootstrap.14.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.B1.bootstrap.14.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.stats.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.stats.winning_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.stats.losing_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.stats.tied_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.stats.positive_months",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.stats.worst_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.stats.best_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.bootstrap.7.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.bootstrap.7.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.bootstrap.7.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.bootstrap.7.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.bootstrap.7.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.bootstrap.14.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.bootstrap.14.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.bootstrap.14.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.bootstrap.14.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P.bootstrap.14.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.stats.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.stats.winning_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.stats.losing_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.stats.tied_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.stats.positive_months",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.stats.worst_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.stats.best_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.bootstrap.7.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.bootstrap.7.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.bootstrap.7.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.bootstrap.7.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.bootstrap.7.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.bootstrap.14.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.bootstrap.14.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.bootstrap.14.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.bootstrap.14.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "P_floor.P_terminal.bootstrap.14.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.stats.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.stats.winning_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.stats.losing_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.stats.tied_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.stats.positive_months",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.stats.worst_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.stats.best_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.bootstrap.7.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.bootstrap.7.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.bootstrap.7.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.bootstrap.7.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.bootstrap.7.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.bootstrap.14.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.bootstrap.14.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.bootstrap.14.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.bootstrap.14.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B0.bootstrap.14.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.stats.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.stats.winning_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.stats.losing_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.stats.tied_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.stats.positive_months",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.stats.worst_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.stats.best_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.bootstrap.7.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.bootstrap.7.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.bootstrap.7.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.bootstrap.7.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.bootstrap.7.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.bootstrap.14.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.bootstrap.14.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.bootstrap.14.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.bootstrap.14.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.B1.bootstrap.14.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.stats.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.stats.winning_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.stats.losing_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.stats.tied_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.stats.positive_months",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.stats.worst_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.stats.best_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.bootstrap.7.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.bootstrap.7.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.bootstrap.7.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.bootstrap.7.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.bootstrap.7.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.bootstrap.14.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.bootstrap.14.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.bootstrap.14.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.bootstrap.14.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P.bootstrap.14.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.stats.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.stats.winning_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.stats.losing_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.stats.tied_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.stats.positive_months",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.stats.worst_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.stats.best_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.bootstrap.7.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.bootstrap.7.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.bootstrap.7.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.bootstrap.7.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.bootstrap.7.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.bootstrap.14.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.bootstrap.14.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.bootstrap.14.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.bootstrap.14.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_terminal.bootstrap.14.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.stats.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.stats.winning_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.stats.losing_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.stats.tied_days",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.stats.positive_months",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.stats.worst_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.stats.best_day_saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.bootstrap.7.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.bootstrap.7.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.bootstrap.7.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.bootstrap.7.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.bootstrap.7.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.bootstrap.14.saving_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.bootstrap.14.ci95_low_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.bootstrap.14.ci95_high_yuan",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.bootstrap.14.seed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "S_terminal.P_floor.bootstrap.14.replicates",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0,
+      "detail": {
+        "tolerance": 1e-05,
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "representative_passed",
+      "passed": true,
+      "comparisons": 1,
+      "failures": 0
+    }
+  ],
+  "check_groups": 166,
+  "comparisons": 166,
+  "failed_groups": 0,
+  "representative": {
+    "passed": true,
+    "checks": [
+      {
+        "check": "P_floor.files",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_floor.four_day_keys",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_floor.four_day_values",
+        "passed": true,
+        "comparisons": 22464,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_floor.six_time_keys",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_floor.six_time_values",
+        "passed": true,
+        "comparisons": 48,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-05,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_floor.daily_dates",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_floor.daily_values",
+        "passed": true,
+        "comparisons": 16,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-05,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_floor.terminal_dates",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_floor.initial",
+        "passed": true,
+        "comparisons": 4,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_floor.final",
+        "passed": true,
+        "comparisons": 4,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_floor.blocks",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_floor.block_values",
+        "passed": true,
+        "comparisons": 48,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "P_floor.emergency_keys",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "P_floor.emergency_values",
+        "passed": true,
+        "comparisons": 2,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-05,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "S_terminal.files",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "S_terminal.four_day_keys",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "S_terminal.four_day_values",
+        "passed": true,
+        "comparisons": 22464,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "S_terminal.six_time_keys",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "S_terminal.six_time_values",
+        "passed": true,
+        "comparisons": 48,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-05,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "S_terminal.daily_dates",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "S_terminal.daily_values",
+        "passed": true,
+        "comparisons": 16,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-05,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "S_terminal.terminal_dates",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "S_terminal.initial",
+        "passed": true,
+        "comparisons": 4,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "S_terminal.final",
+        "passed": true,
+        "comparisons": 4,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "S_terminal.blocks",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "S_terminal.block_values",
+        "passed": true,
+        "comparisons": 48,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-06,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "check": "S_terminal.emergency_keys",
+        "passed": true,
+        "comparisons": 1,
+        "failures": 0
+      },
+      {
+        "check": "S_terminal.emergency_values",
+        "passed": true,
+        "comparisons": 2,
+        "failures": 0,
+        "detail": {
+          "tolerance": 1e-05,
+          "max_abs_error": 0.0
+        }
+      }
+    ],
+    "check_groups": 28,
+    "comparisons": 45186,
+    "failed_groups": 0
+  },
+  "primary_report_sha256": "5f8fcb651e96b2600bdcc8c99a5b98d8f04121a0b9894bc3278b26ddbce1f625",
+  "artifact_sha256": {
+    "followup_diagnostics/block_bootstrap.csv": "4b8ff87e0e103e0cfc829e0c03754b3ae04dbec90556e4a4a7cc94dc444c0421",
+    "followup_diagnostics/scope.json": "6495e0a9355920b127049776311a9d5836331ac602be173c49cbfbfb2a88ce50",
+    "followup_diagnostics/win_loss.csv": "76ead4b0afc0e2a9e702201481670092a06dc59fc55b2b0fd5efaa1f3d3ca3e8",
+    "followup_diagnostics/representative/S_terminal/table1_daily.csv": "f243425048ff613c872eb3b35aa91659fceee05be4186c0c1c09f4621d2b731b",
+    "followup_diagnostics/representative/S_terminal/table3_emergency.csv": "53c8e455b1456a08043c4497612c10d00ca60ef1721c10a2c492e781238827b6",
+    "followup_diagnostics/representative/S_terminal/table1_intervals.csv": "9c6b70180be36db275a65c8b2a82b913425214068993384e2081b89bf1935d8b",
+    "followup_diagnostics/representative/S_terminal/terminal.csv": "65f576b5097f2b154c663a04edab8f435edd89d154104c5e1bd58950ba97f1a1",
+    "followup_diagnostics/representative/S_terminal/table2_charge_discharge.csv": "4c045081bc7ae97f8c4482d925d482ceee600c953ce6b86ca60da7991d659df2",
+    "followup_diagnostics/representative/S_terminal/four_days_ledger.csv": "b69403a58509e48e616593a5bad4e09ee6912928002703d09bd1c197adb3bcde",
+    "followup_diagnostics/representative/P_floor/table1_daily.csv": "a66dc765caf74741d1ec0c7d5b2575403b66515fa7c2927e19fb8d1d1073a83e",
+    "followup_diagnostics/representative/P_floor/table3_emergency.csv": "53c8e455b1456a08043c4497612c10d00ca60ef1721c10a2c492e781238827b6",
+    "followup_diagnostics/representative/P_floor/table1_intervals.csv": "9c6b70180be36db275a65c8b2a82b913425214068993384e2081b89bf1935d8b",
+    "followup_diagnostics/representative/P_floor/terminal.csv": "510ab80def1835b818f881f2304b2ea552e1b1fc5c0416a87b707c581e28360b",
+    "followup_diagnostics/representative/P_floor/table2_charge_discharge.csv": "83a433b24af6af6d47908820f36e65e915bafcbbca1beb5add8ccbffeda6b5d7",
+    "followup_diagnostics/representative/P_floor/four_days_ledger.csv": "f28e106368b59735dff2897fef167650c2fadb70f148d9a14b9ec26c065b38a7"
+  },
+  "validator_sha256": "cd427c878df21fc5899fcfb353ce93a6dda01ed82000959983c4afa12ad65f38"
+}

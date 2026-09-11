@@ -1,0 +1,75 @@
+{
+  "template_id": "trd_composite_line_bar_dual_axis",
+  "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "plot_goal": "Exact paired monthly cost lines and paired-difference bars retain losses without fitted trends.",
+  "selected_columns": [
+    "month",
+    "P",
+    "P_floor",
+    "S_joint"
+  ],
+  "column_mappings": [
+    {
+      "data_column": "month",
+      "template_role": "Category/time key",
+      "reason": ""
+    },
+    {
+      "data_column": "P",
+      "template_role": "Exact cost or certified bound in CNY",
+      "reason": ""
+    },
+    {
+      "data_column": "P_floor",
+      "template_role": "Exact cost or certified bound in CNY",
+      "reason": ""
+    },
+    {
+      "data_column": "S_joint",
+      "template_role": "Exact cost or certified bound in CNY",
+      "reason": ""
+    }
+  ],
+  "required_preprocessing": [
+    "Read CSV; preserve original dates and declared policy order; divide CNY by display unit only"
+  ],
+  "required_dependencies": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "layout_elements_to_preserve": [
+    "Matplotlib",
+    "Serif typography",
+    "Muted blue/orange palette",
+    "Horizontal grids",
+    "Shared month axis, paired lines and auxiliary savings bars"
+  ],
+  "style_elements_to_preserve": [
+    "Matplotlib",
+    "Serif typography",
+    "Muted blue/orange palette",
+    "Horizontal grids",
+    "Shared month axis, paired lines and auxiliary savings bars"
+  ],
+  "elements_allowed_to_change": [
+    "Replace demo data with supplied CSV",
+    "English labels and currency units",
+    "Remove fitted demo trends",
+    "Repeat matched line/bar layout in two panels",
+    "300 dpi PNG and SVG"
+  ],
+  "title_plan": "English Q2 economic outcome",
+  "axis_plan": "Explicit million CNY; monthly savings on disclosed second axis in thousand CNY",
+  "legend_plan": "Separated upper legend band",
+  "annotation_plan": "Actual totals, relaxed-bound scope, daily losses; no external-validation claim",
+  "output_formats": [
+    "png",
+    "svg"
+  ],
+  "warnings": [
+    "Historical conditional results; no future guarantee"
+  ],
+  "can_proceed": true,
+  "clarification_question": ""
+}

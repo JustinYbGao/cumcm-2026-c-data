@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "mutation_cutoff": "2025-01-25 12:00:00",
+  "mutation": "All future load +800 kWh and future PV ×0.5; in-memory data copy only",
+  "method": "Raw source to rolling forecast archive to risk calibration to state-dependent plan to interval execution, rerun independently per input",
+  "scope": "Five policies; January boundary test, not exhaustive formal proof. Current-interval realization remains an explicit inherited assumption.",
+  "checks": [
+    {
+      "policy": "B0",
+      "prefix_max_difference_kwh": 0.0,
+      "already_frozen_plans_max_difference_kwh": 0.0,
+      "next_day_positive_control_difference_kwh": 860.8078944775696,
+      "prefix_rows": 1512,
+      "passed": true
+    },
+    {
+      "policy": "B1",
+      "prefix_max_difference_kwh": 0.0,
+      "already_frozen_plans_max_difference_kwh": 0.0,
+      "next_day_positive_control_difference_kwh": 1052.5154333333332,
+      "prefix_rows": 1512,
+      "passed": true
+    },
+    {
+      "policy": "P",
+      "prefix_max_difference_kwh": 0.0,
+      "already_frozen_plans_max_difference_kwh": 0.0,
+      "next_day_positive_control_difference_kwh": 867.2815236797594,
+      "prefix_rows": 1512,
+      "passed": true
+    },
+    {
+      "policy": "E",
+      "prefix_max_difference_kwh": 0.0,
+      "already_frozen_plans_max_difference_kwh": 0.0,
+      "next_day_positive_control_difference_kwh": 860.8078944775696,
+      "prefix_rows": 1512,
+      "passed": true
+    },
+    {
+      "policy": "PE",
+      "prefix_max_difference_kwh": 0.0,
+      "already_frozen_plans_max_difference_kwh": 0.0,
+      "next_day_positive_control_difference_kwh": 867.2815236797594,
+      "prefix_rows": 1512,
+      "passed": true
+    }
+  ],
+  "script_sha256": "424e718bfa750d6acd9d0eb578a1888d3ce6488a4ecf890f9744c0a69a0c5dfd"
+}

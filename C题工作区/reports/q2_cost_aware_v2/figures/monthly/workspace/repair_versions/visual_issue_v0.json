@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "issue": "Top panel shows numeric indices instead of month labels because x axes were not shared.",
+  "repair": "Share x axes; bottom supplies observed month labels. All data unchanged."
+}

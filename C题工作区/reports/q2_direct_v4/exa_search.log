@@ -1,0 +1,18 @@
+[mcporter] exa appears offline (SSE error: TypeError: fetch failed: getaddrinfo ENOTFOUND mcp.exa.ai).
+[mcporter] exa appears offline (SSE error: TypeError: fetch failed: getaddrinfo ENOTFOUND mcp.exa.ai).
+[mcporter] SSE error: TypeError: fetch failed: getaddrinfo ENOTFOUND mcp.exa.ai
+SseError: SSE error: TypeError: fetch failed: getaddrinfo ENOTFOUND mcp.exa.ai
+    at _eventSource.onerror (file:///Users/justingao/.npm-global/lib/node_modules/mcporter/node_modules/@modelcontextprotocol/sdk/dist/esm/client/sse.js:93:31)
+    at EventSource.scheduleReconnect_fn (file:///Users/justingao/.npm-global/lib/node_modules/mcporter/node_modules/eventsource/dist/index.js:248:53)
+    at file:///Users/justingao/.npm-global/lib/node_modules/mcporter/node_modules/eventsource/dist/index.js:98:174
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: undefined,
+  event: {
+    type: 'error',
+    message: 'TypeError: fetch failed: getaddrinfo ENOTFOUND mcp.exa.ai',
+    code: undefined,
+    defaultPrevented: false,
+    cancelable: false,
+    timeStamp: 204.2955
+  }
+}

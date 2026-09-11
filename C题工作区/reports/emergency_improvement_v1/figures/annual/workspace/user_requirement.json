@@ -1,0 +1,26 @@
+{
+  "original_request": "Q2紧急购电改进研究；modelviz-skill；图内全部英文；PNG300dpi及SVG",
+  "goal": "比较五个问题2策略总费用及合同费、紧急费组成，堆叠柱状图",
+  "functional_keywords": [
+    "比较",
+    "组成",
+    "堆叠柱状图"
+  ],
+  "chart_types": [
+    "柱状图"
+  ],
+  "style_keywords": [
+    "科研风",
+    "English labels",
+    "serif typography"
+  ],
+  "use_case": "论文正文",
+  "negative_requirements": [
+    "No Chinese text",
+    "No smoothing",
+    "No 3D"
+  ],
+  "explicit_template": false,
+  "is_ambiguous": false,
+  "clarification_question": ""
+}

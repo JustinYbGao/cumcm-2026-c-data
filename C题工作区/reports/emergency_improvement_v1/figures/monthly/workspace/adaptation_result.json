@@ -1,0 +1,37 @@
+{
+  "adapted_code": "\"\"\"TRD_004 paired line/bar grammar; exact months, no fitted trend.\"\"\"\nimport sys\nfrom pathlib import Path\nimport numpy as np\nimport pandas as pd\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.lines import Line2D\nfrom matplotlib.patches import Patch\n\nf=pd.read_csv(sys.argv[1]);out=Path(sys.argv[2]);out.mkdir(parents=True,exist_ok=True)\nx=np.arange(len(f));months=pd.to_datetime(f.month).dt.strftime('%b')\nplt.rcParams.update({'font.family':'DejaVu Serif','font.size':10,'svg.fonttype':'none','axes.spines.top':False,'axes.spines.right':False})\nfig,axes=plt.subplots(2,1,figsize=(11,7.8),sharex=True);fig.subplots_adjust(left=.10,right=.88,top=.82,bottom=.18,hspace=.37)\nblue='#3B6C8E';orange='#CB8B52';gray='#676D73'\nfor ax,b,title in zip(axes,['B0','B1'],['A | P versus frozen baseline B0','B | P versus seasonal baseline B1']):\n    saving=(f[b]-f.P)/1000\n    twin=ax.twinx();twin.spines['top'].set_visible(False)\n    twin.bar(x,saving,width=.6,color=orange,alpha=.3);twin.axhline(0,color=orange,lw=.8)\n    twin.set_ylim(-450,450);twin.set_ylabel('Savings (thousand CNY)',color='#9C6337')\n    ax.plot(x,f[b]/1e6,color=gray,ls='--',marker='o',ms=3,lw=1.6)\n    ax.plot(x,f.P/1e6,color=blue,marker='o',ms=3,lw=1.7)\n    ax.set_ylabel('Actual cost (million CNY)');ax.grid(axis='y',alpha=.15)\n    ax.set_zorder(twin.get_zorder()+1);ax.patch.set_visible(False)\n    ax.set_title(title,loc='left',fontsize=11,pad=9)\n    ax.text(.99,1.05,f'Total saving: {saving.sum()/1000:.3f} million CNY',transform=ax.transAxes,ha='right',va='bottom',fontsize=9)\naxes[-1].set_xticks(x,months);axes[-1].set_xlabel('Evaluation month in 2025')\nfig.suptitle('Monthly savings are positive against both Q2 baselines',x=.1,y=.965,ha='left',fontsize=15)\nfig.legend(handles=[Line2D([],[],color=gray,ls='--',label='Matched baseline'),Line2D([],[],color=blue,label='P: risk purchase'),Patch(color=orange,alpha=.3,label='Baseline minus P')],loc='upper left',bbox_to_anchor=(.09,.922),ncol=3,frameon=False)\nfig.text(.1,.083,'Monthly totals hide daily losses: P costs more on 97 days versus B0 and on 160 days versus B1.',fontsize=9)\nfig.text(.1,.048,'Historical replay, Feb–Dec 2025. Lines: left axes. Bars: right axes with a common savings scale.',fontsize=9)\nfig.savefig(out/'chart.png',dpi=300);fig.savefig(out/'chart.svg');plt.close(fig)\n",
+  "changes_summary": [
+    "Two observed cost lines and signed savings bars share each original month. Preserve TRD_004 line/bar dual-axis composition, serif labels and muted palette; remove fitted trend and significance claims; repeat for two fixed baselines."
+  ],
+  "preserved_style_elements": [
+    "Matplotlib",
+    "Serif typography",
+    "Muted blue/orange palette",
+    "Horizontal grids",
+    "Shared month axis, paired lines and auxiliary savings bars"
+  ],
+  "changed_elements": [
+    "Replace all demonstration values with exact CSV columns",
+    "English labels and units",
+    "No interpolation, fitted trend or significance stars; disclose daily losses",
+    "Export 300 dpi PNG and SVG"
+  ],
+  "data_columns_used": [
+    "month",
+    "B0",
+    "B1",
+    "P",
+    "E",
+    "PE"
+  ],
+  "dependencies_used": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "additional_dependencies_requested": [],
+  "assumptions": [
+    "Internal original interval-end interpretation; English visible text only; no new results inferred from plot"
+  ],
+  "warnings": []
+}

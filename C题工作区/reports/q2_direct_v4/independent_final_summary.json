@@ -1,0 +1,160 @@
+{
+  "created_utc": "2026-09-11T19:06:07.487830+00:00",
+  "scope": "Independent scientific verification of Q2 direct v4: first six plus two outcome-informed refinements and four frozen baselines; completed numerical, figure and final-text reviews.",
+  "passed": true,
+  "unresolved_in_scope_findings": [],
+  "audit_reports": [
+    {
+      "path": "reports/q2_direct_v4/independent_sources.json",
+      "sha256": "80f7f95c81d5bbe4a57502f61c9c9956454e27fdc0c6f82d1024f617d807119f",
+      "passed": true,
+      "check_rows": 24
+    },
+    {
+      "path": "reports/q2_direct_v4/independent_references.json",
+      "sha256": "e9f6a8ac6bf81daebd5e8d6431fc360bf4b464a1cb5499377d251261883ba020",
+      "passed": true,
+      "check_rows": 258
+    },
+    {
+      "path": "reports/q2_direct_v4/independent_oracle.json",
+      "sha256": "58d973c8cc2f62616eeb0947ff11aba5b2e27be3a12258d094740b49f31cd412",
+      "passed": true,
+      "check_rows": 20
+    },
+    {
+      "path": "reports/q2_direct_v4/independent_gradient.json",
+      "sha256": "1bbdcf13731bb12668755236bf6c1978490117b2db660259ec04908e4b794aac",
+      "passed": true,
+      "check_rows": 4
+    },
+    {
+      "path": "reports/q2_direct_v4/independent_january.json",
+      "sha256": "c1caf73a4b62aa4a3b22ab5cde08dd66d8f7a7a8fddb87064924f64805a41a64",
+      "passed": true,
+      "check_rows": 1764
+    },
+    {
+      "path": "reports/q2_direct_v4/independent_annual.json",
+      "sha256": "57f2441bb38807da4c0e5ae323b8841f7c8ffbe4201ef7c9f4413f05c2525c42",
+      "passed": true,
+      "check_rows": 110700
+    },
+    {
+      "path": "reports/q2_direct_v4/independent_causality.json",
+      "sha256": "06808c1f8e9b07c94ed22f29280a40ca31a281811cb3cdf3fe45140d6ff2117b",
+      "passed": true,
+      "check_rows": 3225
+    },
+    {
+      "path": "reports/q2_direct_v4/independent_analysis.json",
+      "sha256": "1262161f347624f5f46577dff4266d7781d9319cbca2e2b18402e4c801253e2a",
+      "passed": true,
+      "check_rows": 36825
+    },
+    {
+      "path": "reports/q2_direct_v4/independent_refinement_january.json",
+      "sha256": "5d43a6a5456bbda8fd4f5576abfa0167ee2e18e5a4f6582dc40e893777b80a92",
+      "passed": true,
+      "check_rows": 600
+    },
+    {
+      "path": "reports/q2_direct_v4/independent_refinement_annual.json",
+      "sha256": "08a9c54dfa7adf7efd7b62791c3997324957c19b5620c107507c209ae74d2e09",
+      "passed": true,
+      "check_rows": 36900
+    },
+    {
+      "path": "reports/q2_direct_v4/independent_refinement_causality.json",
+      "sha256": "44463a971caacad00c47096517f5c7497304755867fc494285d827ddeb07abc3",
+      "passed": true,
+      "check_rows": 1097
+    },
+    {
+      "path": "reports/q2_direct_v4/independent_analysis_all.json",
+      "sha256": "e190f70b31bfb6889a740f81e2671cefa8feb1f57eaf77df99a51bb18891f22e",
+      "passed": true,
+      "check_rows": 49047
+    },
+    {
+      "path": "reports/q2_direct_v4/independent_figure_validation.json",
+      "sha256": "b2759631626e94accd931c69ad913b4d73e661865e32b96310a807134a9566a4",
+      "passed": true,
+      "check_rows": 67
+    },
+    {
+      "path": "reports/q2_direct_v4/independent_text_review.json",
+      "sha256": "2b36e582e8b0bfb9ae271dff9c296291e6de900556d5f78fc669e2eb5966235a",
+      "passed": true,
+      "check_rows": 118
+    }
+  ],
+  "source_sha256": {
+    "scripts/q2_direct_v4/base_policy.py": "04f9944be72b613940b17a858cb6ce51aaca15fe61f72ff43bff05c186544b66",
+    "scripts/q2_direct_v4/policy.py": "bbcde7f15976cefb9181acbae44401e8b64f26f37c2705a32f2f43d9b627e246",
+    "scripts/q2_direct_v4/kernel.c": "064f9aaed5272c7caf2e3b18baf6de660cb182ae357ac97b873e1970995802cd",
+    "scripts/q2_direct_v4/kernel.py": "aeff871771993d1bf7a45120c9c31d0968debba6c4084a13dc8924e7f911bde1",
+    "scripts/q2_direct_v4/run_experiments.py": "46fb26030ff0643b815f31e93bb616d8a6a460720f4b5148f02c1d0994989d9c",
+    "scripts/q2_direct_v4/analyze_results.py": "5e708df1d04a3a36402b1aeb6421ed355fbc09c24176655911b65125d51e3093",
+    "scripts/q2_direct_v4/causality_checks.py": "a764a8b6c7469a04d07f502fa8bd62ce64ac9a6f7ea0c0e943999283db930648",
+    "scripts/q2_direct_v4/reproduce.py": "07e05f16197f9c8077b56d3b0dd81cfc88387431f6d52a6fe2a9756d40e73c69",
+    "scripts/q2_direct_v4/build_documents.py": "e9309eed79779dc784233757f6fa2fd36a2e159c3a9aaf8bcd46b9d3477d90de",
+    "scripts/q2_direct_v4/independent_verify.py": "5dcec76a2eddecf97fea39b8b58197273c43f8f00d7a1a841ccb7b7da0d92920"
+  },
+  "review_narratives_sha256": {
+    "reports/q2_direct_v4/independent_design_review.md": "c4d3d330f522ed3efe37ebaf7e187e5e586b335c7c99849d4c940cc6c7faed6d",
+    "reports/q2_direct_v4/independent_code_review.md": "a24e12cadbbae923cf5142fcfc7fbde9bacd23f6983b7a93bf7eb633bb39316d",
+    "reports/q2_direct_v4/independent_oracle_review.md": "673f57340506d4d5e3df920048e4f18185310b40b7746ba90cf1bcb885e85f58",
+    "reports/q2_direct_v4/independent_paper_review.md": "baad69d8c0f87c1c6e21e3f11d7ba2c5c65194959da7e4afe75e09fff82babfb"
+  },
+  "final_text_sha256": {
+    "reports/q2_direct_v4/research_report.md": "62aa399efd980e0144c1f4ccb2554c4f0a511cfaaac0127cc893cefa050c8910",
+    "papers/q2_direct_v4/paper_supplement.md": "208eef7e6c739c4bb994428df62325a5e6c6d583c102bc1945aa8efe7a1bb8cd",
+    "reports/q2_direct_v4/README.md": "b5bf2311816ae4016d6eaf14d521bf3e13d37bd0f255f563934dedfef2b48cca",
+    "reports/q2_direct_v4/method_fit_and_sources.md": "e31eb840121b8ab48402f4cc36839e4cbcddb9efe807f21056ce86d5c3d72225",
+    "reports/q2_direct_v4/computation_scale.json": "5dbfb9baed2469b25f08bdb7480b9b0c8bab6ea846f04fd14978dd87d4b45191",
+    "reports/q2_direct_v4/environment.json": "69b43ca2d5bbc6e905c38cb27d1199a3578e01b4996bc81075a44d07bf4fbe32",
+    "reports/q2_direct_v4/compiler_build.json": "4adf5f2d2e2952684c20fe887f7f8b850d8949fe93068726b9921980d970e70f",
+    "reports/q2_direct_v4/requirements.txt": "8c023ff2e864f3f18c65d22aefc2f727d0a553f8cc96cf26643dd5fcca517ba7",
+    "reports/q2_direct_v4/protocol.md": "cf9e6153d08e81a1568e500f6941fe8664b33b0737bf68221b952b34c0b2a683",
+    "reports/q2_direct_v4/protocol_freeze.json": "300ddb6b96bbe43ecf7183dcec19b486e6c093bf63ef5e509aecb5ef103b3c0f",
+    "reports/q2_direct_v4/refinement_protocol.md": "e9dc19c726def0e922907444dc981a84c83ed693497a771230c7815f968444cd",
+    "reports/q2_direct_v4/refinement_freeze.json": "cca5bd499b3e190097d692b7a331ddd45fcd2cf16a887a91e10a1ba5c5bc83df",
+    "reports/q2_direct_v4/cap_clarification.md": "43795a2886f7d24377ac40216ce6a07dfeab4b399097a90db71c999ec6ce777b"
+  },
+  "comparison_csv_sha256": "aaebcb72537540cb77901f2a99e303637cc163d05a323b4fce808b1757168325",
+  "acceptance_sha256": "e06a48f76a3735013f60f99f6a75466ccbe64916233ac16d7e75ffb9fe0a2b73",
+  "best_observed": {
+    "policy": "D112",
+    "days": 334,
+    "start_date": "2025-02-01",
+    "end_date": "2025-12-31",
+    "total_cost_yuan": 13913892.481868185,
+    "emergency_cost_yuan": 838655.4538288128,
+    "ordinary_cost_yuan": 13075237.028039372,
+    "saving_vs_v3_yuan": 80389.77710279077,
+    "cap_yuan": 1000000,
+    "cap_passed_without_tolerance": true
+  },
+  "portability_report": {
+    "path": "reports/q2_direct_v4/portability_validation.json",
+    "sha256": "0b4169cb2e70a37fbe1754a81f563e69e3bcd72c44fd22975d604032c150b164",
+    "passed": true
+  },
+  "scientific_limitations": [
+    "Historical outcome-informed selection, including both refinement paths; no blinded future-year evidence.",
+    "Nonsmooth local search and software success provide no global or strict local optimality certificate.",
+    "Emergency cap passed for this 334-day replay only; no future-probability guarantee.",
+    "Prescient numerical optimum is for the stated 334-day full-future problem, not causal Q2 optimum or EVPI.",
+    "Reproduction checked on the recorded machine/software environment in a separate directory, not all platforms.",
+    "Formal result2.xlsx migration, whole-paper formatting and Q3/Q4 are outside this research-supplement review.",
+    "External references checked at official metadata/abstract/documentation level, not full theoretical proof."
+  ],
+  "excluded_from_unresolved_findings": [
+    "Intentional kernel red tests followed by passing implementation checks.",
+    "Initial savings figure footer overlap followed by retained repair history and final visual/technical PASS.",
+    "Corrected document escape/count wording and transient analysis variable collision; final artifacts rechecked."
+  ],
+  "superseded_partial_report": "independent_annual_partial.json retained for history; complete independent_annual.json is the gate.",
+  "archive_boundary": "This seal covers the listed scientific evidence and source hashes. Final ZIP and final 4305-original-file readback remain the packaging workflow responsibility; compare these hashes at packaging time. No self-referential final-summary hash is embedded."
+}

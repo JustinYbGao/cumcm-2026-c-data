@@ -1,0 +1,5 @@
+{
+  "author": "Codex assistant",
+  "method": "Assistant-authored structured outputs passed through RunnableLambda; deterministic validators; no external model call",
+  "visual_check": "Must inspect actual PNG before pass"
+}

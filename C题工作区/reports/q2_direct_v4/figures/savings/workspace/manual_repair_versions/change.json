@@ -1,0 +1,6 @@
+{
+  "source": "Assistant actual PNG inspection",
+  "issue": "X-axis labels overlap first footnote",
+  "fix": "Increase bottom margin from .12 to .20, top .87 to .84; data and encoding unchanged",
+  "workflow": "Initial ModelViz quality failure saved; source repaired locally then rerun through adaptation and quality services after actual image inspection."
+}

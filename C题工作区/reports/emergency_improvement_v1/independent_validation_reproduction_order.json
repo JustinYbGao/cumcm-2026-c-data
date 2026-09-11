@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "checks": {
+    "new_command_dependencies": true,
+    "previous_bad_order_rejected": true,
+    "readme_matches_order": true,
+    "all_expected_stage_commands_once": true,
+    "actual_cloned_gate_passed": true,
+    "actual_gate_hash_matches": true,
+    "fixed_reproducer_hash_matches": true
+  },
+  "method": "Independent AST/README dependency reconstruction with known-bad-order negative control, followed by independent readback and SHA verification of actual cloned January and causal gate. No redundant 18-run reoptimization claimed.",
+  "commands": [
+    [
+      "run_experiments.py",
+      [
+        "forecasts"
+      ]
+    ],
+    [
+      "run_experiments.py",
+      [
+        "baselines"
+      ]
+    ],
+    [
+      "run_experiments.py",
+      [
+        "january"
+      ]
+    ],
+    [
+      "causality_checks.py",
+      []
+    ],
+    [
+      "independent_verify.py",
+      [
+        "--scope",
+        "january"
+      ]
+    ],
+    [
+      "run_experiments.py",
+      [
+        "january_pe"
+      ]
+    ],
+    [
+      "run_experiments.py",
+      [
+        "main"
+      ]
+    ],
+    [
+      "run_experiments.py",
+      [
+        "sensitivity"
+      ]
+    ],
+    [
+      "analyze_results.py",
+      []
+    ],
+    [
+      "independent_verify.py",
+      []
+    ]
+  ],
+  "sha256": {
+    "scripts/emergency_improvement_v1/reproduce.py": "4d11fd504ebf81560cb4ccf68516ff8794d898ddd03ef2faece3c8a5898f56a7",
+    "reports/emergency_improvement_v1/README.md": "ac91480f86e6f2e64f22ef73fab0208c71b287fab7e9ae394225b212697c9141",
+    "reports/emergency_improvement_v1/reproduction_january_gate.json": "dc3244995f5d5b1fa40a6ae51275b50f1680c5990e33b298935402f491c6c3c5"
+  }
+}

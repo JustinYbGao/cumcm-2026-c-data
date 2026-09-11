@@ -1,0 +1,21 @@
+{
+  "inspected_png_sha256": "8ee4f9f6cd9c6aa3d64cdd18d32a9706aea560a3389338bc7fa854ae519b46ba",
+  "inspected_script_sha256": "87c28d0df613880b465638813c958624dac28151b154b8f55eea5f56c8d2cf97",
+  "report": {
+    "passed": false,
+    "requirement_alignment": "Actual PNG inspected; all visible text English, real observed costs, negative values retained.",
+    "data_expression_quality": "Exact signed costs with explicit thousand CNY units; no synthetic data or fitted trends.",
+    "style_preservation": "Original template source read: serif typography, gradient bars/gray grid or marked lines and bars preserved.",
+    "readability": "Fee panel axis labels overlap the first footnote.",
+    "layout_quality": "Bottom annotation band needs more separation.",
+    "color_quality": "Distinct bar and line colors and markers; zero is explicit.",
+    "issues": [
+      "X-axis labels overlap first footnote."
+    ],
+    "suggested_fixes": [
+      "Increase bottom subplot margin and preserve footer position."
+    ],
+    "needs_repair": true,
+    "confidence": 0.96
+  }
+}

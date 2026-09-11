@@ -1,0 +1,17 @@
+{
+  "policy": "P_terminal",
+  "forecast_model": "linear_harmonic",
+  "risk": true,
+  "tau": 0.8,
+  "residual_days": 28,
+  "executor": "greedy",
+  "eta_charge": 0.9,
+  "eta_discharge": 0.9,
+  "power_basis": "AC_bus",
+  "terminal_target": 6000.0,
+  "start": "2025-02-01",
+  "end": "2025-12-31",
+  "initial_energy_kwh": 7268.4231640740745,
+  "group": "terminal",
+  "conditional": false
+}

@@ -1,0 +1,31 @@
+{
+  "emergency_cap_yuan": 1000000.0,
+  "ordinary_cost_is_hard_constraint": false,
+  "total_reference_yuan": 14022838.598498546,
+  "best_observed_policy": "X_strong_morning85",
+  "best_total_cost_yuan": 13994282.258970976,
+  "best_emergency_cost_yuan": 644292.1650026435,
+  "passed_new_policies": [
+    "T_evening_hedge",
+    "T_rebalance",
+    "T_soft",
+    "T_strong",
+    "T_morning_hedge",
+    "R_guard",
+    "X_morning90",
+    "X_strong_morning85",
+    "X_day60",
+    "X_day60_morning85"
+  ],
+  "failed_new_policies": [
+    "T_day_trim",
+    "R_mean",
+    "R_cost",
+    "R_w28",
+    "X_day50",
+    "X_evening85_day60",
+    "X_uniform70",
+    "X_uniform75"
+  ],
+  "interpretation": "Observed historical minimum among 24 reported paths; user cap changed before eight extension runs; no future cap guarantee or global optimality claim."
+}

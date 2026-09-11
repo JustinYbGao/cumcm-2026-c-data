@@ -1,5 +1,18 @@
 # 给队友的审阅导航
 
+## 2026-09-11修订后的优先入口
+
+这次审阅以以下文件为准。下方`friend_review_v1`仍保留上一次Part装配与追溯作用，里面的“Excel尚未生成”等历史状态不代表当前状态。
+
+1. **[修订英文全文](papers/Problem_Restatement_EN.md)**：保留你推送的结构，修复口径/符号/归因，指定四日完整表放回各问题。文件名虽然叫Restatement，内容已经是全篇审阅稿。
+2. **[逐项修复与是否重跑](reports/revision_v1/issue_resolution.md)**：逐一对应你的P0/P1/P2清单；区分已修实现、真实负结果、尚未确认的题意。新增功率侧别测试在末尾。
+3. **[五份结果Excel及说明](outputs/revision_v1/README.md)**：全年的购电、充放电和紧急事件已填，原模板不改；副本明确采用interval-end审阅映射。先看费用列含义，不能重复加计划/调整表的费用。
+4. **[独立读回验证](reports/revision_v1/export_validation.md)**与[最终独立审阅](reports/revision_v1/final_review.md)：检查时段、日期、金额、物理状态和正文表格。运行命令见[复现说明](reports/revision_v1/reproduction.md)。
+
+另看[文献核验](reports/revision_v1/paper_references.md)、[AI真实使用工作稿](papers/revision_v1/AI工具使用详情_工作稿.md)和[2026格式核对](reports/revision_v1/submission_format.md)。AI人工核验记录、正式题意口径与最终PDF排版仍需完成，不能把目前的审阅包直接认作正式提交。
+
+## 上一版Part归属与历史阅读入口
+
 本次完整内容在分支 **codex/innovation-experiments**。从这份导航开始；下列阅读副本仅把本机绝对链接转换为仓库相对链接，公式、数值与原装配稿相同，适合GitHub预览。原稿与冻结结果包均保留。
 
 ## 优先看这四处

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "cc",
+    "-O3",
+    "-std=c99",
+    "-dynamiclib",
+    "-fPIC",
+    "/Users/justingao/Documents/CUMCM/C\u9898\u5de5\u4f5c\u533a/results/q2_direct_v4/reproduction_completed/scripts/q2_direct_v4/kernel.c",
+    "-o",
+    "/Users/justingao/Documents/CUMCM/C\u9898\u5de5\u4f5c\u533a/results/q2_direct_v4/reproduction_completed/results/q2_direct_v4/runtime/064f9aaed5272c7caf2e3b18baf6de660cb182ae357ac97b873e1970995802cd/kernel.dylib"
+  ],
+  "source_sha256": "064f9aaed5272c7caf2e3b18baf6de660cb182ae357ac97b873e1970995802cd",
+  "binary_sha256": "2e766ceae98b83dc0ff93f2153b72f890703e119b083ac6abc682f7adffcb9c6",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n"
+}

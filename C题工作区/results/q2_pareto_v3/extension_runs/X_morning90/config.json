@@ -1,0 +1,43 @@
+{
+  "start": "2025-02-01",
+  "end": "2025-12-31",
+  "initial_energy_kwh": 7268.4231640740745,
+  "risk_window": 28,
+  "scenario_window": 56,
+  "mu": 0.38232,
+  "terminal_energy_kwh": 1200.0,
+  "cvar_alpha": 0.9,
+  "policy": "X_morning90",
+  "profiles": [
+    "X_morning90"
+  ],
+  "guard": "none",
+  "profile_definitions": {
+    "X_morning90": [
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.9,
+      0.9,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.8,
+      0.8
+    ]
+  }
+}

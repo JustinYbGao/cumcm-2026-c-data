@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "audit": {
+    "passed": true,
+    "checks": [],
+    "check_groups": 17140,
+    "comparisons": 7067445,
+    "failed_groups": 0,
+    "checks_contains": "failures_only; all groups included in counts and error maxima",
+    "max_abs_error_by_tolerance": {
+      "0": 0,
+      "1e-06": 1.2960299500264227e-11,
+      "1e-05": 1.1641532182693481e-10
+    },
+    "totals": {
+      "grid_plan_kwh": 21424792.554141,
+      "emergency_kwh": 109264.54993955459,
+      "planned_cost_yuan": 13349990.093968334,
+      "emergency_cost_yuan": 644292.1650026435,
+      "total_cost_yuan": 13994282.258970976,
+      "charge_actual_kwh": 6144426.290149972,
+      "discharge_actual_kwh": 4981329.318886366,
+      "surplus_kwh": 2431770.6378502855,
+      "unused_grid_kwh": 1046885.0139261587,
+      "pv_curtailment_kwh": 1384885.6239241268,
+      "days": 334.0,
+      "intervals": 48096.0,
+      "initial_energy_kwh": 7268.4231640740745,
+      "final_energy_kwh": 2441.7299808642265,
+      "inventory_value_yuan_per_kwh": 0.6895775000000001,
+      "inventory_adjusted_cost_yuan": 13997610.637989521,
+      "emergency_intervals": 595.0,
+      "emergency_days": 91.0,
+      "emergency_share_of_load": 0.002952451233555457
+    },
+    "candidates_verified": 334,
+    "scenario_candidate_replays": 18353,
+    "solver_statistics": {
+      "solver_count": 334,
+      "solver_runtime_seconds": 8.119454540094011,
+      "solver_max_runtime_seconds": 0.05647500000486616,
+      "solver_max_mip_gap": 3.8735709319363955e-16,
+      "solver_failures": 0,
+      "solver_fallbacks": 0
+    },
+    "artifact_sha256": {
+      "config.json": "9ce88e446bce9e81d5f47340e7b494fa734a548dc7aa8763456e2d28f288addc",
+      "ledger.csv": "6808cb0d529062200ab24a69da67c3f0d1a80e55760c7351b14cfcadbb28cadc",
+      "plans.csv": "701974c25a13b9ad6cd7047485029b69f5f8d5bd014d3728d6d2abedf8350734",
+      "daily.csv": "1e77362b7434af045b7f7c298a6cce3556660a257e2042e8c66f32f42dc1b9a1",
+      "summary.json": "cebd44b4517e0fb19988e0f9fdea6297d3f2f3c487f7116c9097f2007206703a",
+      "decisions.json": "3fea0831f2934f89e2996c6b3e338976287f9ac0790d93019f30cbd3b06661f3",
+      "decision_evidence.npz": "50900089863a15f490be0d48890567d7bbb01b928b3973d602045cb32d05798e"
+    }
+  }
+}

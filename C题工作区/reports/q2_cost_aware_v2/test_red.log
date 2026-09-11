@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/q2_cost_aware_v2/test_policy.py", line 4, in <module>
+    from policy import simulate, choose_index, scenario_bank
+ModuleNotFoundError: No module named 'policy'

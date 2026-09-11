@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "requirement_alignment": "Actual PNG inspected; all visible text English, real observed costs, negative values retained.",
+  "data_expression_quality": "Exact signed costs with explicit thousand CNY units; no synthetic data or fitted trends.",
+  "style_preservation": "Original template source read: serif typography, gradient bars/gray grid or marked lines and bars preserved.",
+  "readability": "Monthly labels and legend are legible, no clipping or overlap observed.",
+  "layout_quality": "Monthly title, legend, plot and note bands are separate.",
+  "color_quality": "Distinct bar and line colors and markers; zero is explicit.",
+  "issues": [],
+  "suggested_fixes": [],
+  "needs_repair": false,
+  "confidence": 0.96
+}

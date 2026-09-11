@@ -1,0 +1,167 @@
+{
+  "passed": true,
+  "table_rows_checked": 32,
+  "method": "Exact comparison to the documented decimal display precision, not relaxed scientific ledger tolerances.",
+  "checks": [
+    {
+      "line": 15,
+      "policy": "B0",
+      "passed": true
+    },
+    {
+      "line": 16,
+      "policy": "B1",
+      "passed": true
+    },
+    {
+      "line": 17,
+      "policy": "P",
+      "passed": true
+    },
+    {
+      "line": 18,
+      "policy": "P_terminal",
+      "passed": true
+    },
+    {
+      "line": 19,
+      "policy": "P_floor",
+      "passed": true
+    },
+    {
+      "line": 20,
+      "policy": "S_terminal",
+      "passed": true
+    },
+    {
+      "line": 21,
+      "policy": "R_guard",
+      "passed": true
+    },
+    {
+      "line": 22,
+      "policy": "X_strong_morning85",
+      "passed": true
+    },
+    {
+      "line": 30,
+      "policy": "B0",
+      "passed": true
+    },
+    {
+      "line": 31,
+      "policy": "B1",
+      "passed": true
+    },
+    {
+      "line": 32,
+      "policy": "P",
+      "passed": true
+    },
+    {
+      "line": 33,
+      "policy": "P_terminal",
+      "passed": true
+    },
+    {
+      "line": 34,
+      "policy": "P_floor",
+      "passed": true
+    },
+    {
+      "line": 35,
+      "policy": "S_terminal",
+      "passed": true
+    },
+    {
+      "line": 36,
+      "policy": "T_day_trim",
+      "passed": true
+    },
+    {
+      "line": 37,
+      "policy": "T_evening_hedge",
+      "passed": true
+    },
+    {
+      "line": 38,
+      "policy": "T_rebalance",
+      "passed": true
+    },
+    {
+      "line": 39,
+      "policy": "T_soft",
+      "passed": true
+    },
+    {
+      "line": 40,
+      "policy": "T_strong",
+      "passed": true
+    },
+    {
+      "line": 41,
+      "policy": "T_morning_hedge",
+      "passed": true
+    },
+    {
+      "line": 42,
+      "policy": "R_guard",
+      "passed": true
+    },
+    {
+      "line": 43,
+      "policy": "R_mean",
+      "passed": true
+    },
+    {
+      "line": 44,
+      "policy": "R_cost",
+      "passed": true
+    },
+    {
+      "line": 45,
+      "policy": "R_w28",
+      "passed": true
+    },
+    {
+      "line": 46,
+      "policy": "X_morning90",
+      "passed": true
+    },
+    {
+      "line": 47,
+      "policy": "X_strong_morning85",
+      "passed": true
+    },
+    {
+      "line": 48,
+      "policy": "X_day60",
+      "passed": true
+    },
+    {
+      "line": 49,
+      "policy": "X_day50",
+      "passed": true
+    },
+    {
+      "line": 50,
+      "policy": "X_day60_morning85",
+      "passed": true
+    },
+    {
+      "line": 51,
+      "policy": "X_evening85_day60",
+      "passed": true
+    },
+    {
+      "line": 52,
+      "policy": "X_uniform70",
+      "passed": true
+    },
+    {
+      "line": 53,
+      "policy": "X_uniform75",
+      "passed": true
+    }
+  ]
+}

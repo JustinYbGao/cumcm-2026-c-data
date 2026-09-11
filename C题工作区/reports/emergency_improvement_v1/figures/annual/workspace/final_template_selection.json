@@ -1,0 +1,101 @@
+{
+  "dataset_summary": "5 policies × exact annual cost components",
+  "observed_data_features": [],
+  "relevant_columns": [
+    "policy",
+    "planned_cost_yuan",
+    "emergency_cost_yuan",
+    "total_cost_yuan"
+  ],
+  "candidate_comparisons": [
+    {
+      "template_id": "cmp_correlation_stacked_bar",
+      "suitable": true,
+      "advantages": [
+        "Stacked rectangular columns expose the additive normal and emergency bill. Preserve CMP_003 categorical stacking, white edges, serif typography and horizontal grids; replace correlation demo factors with actual currency components."
+      ],
+      "limitations": [],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_nightingale_rose_grid",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, fitted-trend or unrelated distribution encoding is less direct for this exact comparison."
+      ],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_radial_stacked_bar",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, fitted-trend or unrelated distribution encoding is less direct for this exact comparison."
+      ],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_gradient_single_factor_bar",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, fitted-trend or unrelated distribution encoding is less direct for this exact comparison."
+      ],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_circular_barplot",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, fitted-trend or unrelated distribution encoding is less direct for this exact comparison."
+      ],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_3d_bar_chart",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, fitted-trend or unrelated distribution encoding is less direct for this exact comparison."
+      ],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "dis_radial_bar_error_significance",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, fitted-trend or unrelated distribution encoding is less direct for this exact comparison."
+      ],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_stack_pie_box_report",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, 3D, fitted-trend or unrelated distribution encoding is less direct for this exact comparison."
+      ],
+      "data_compatibility": "Exact categorical currency or time-key mapping; no synthetic data.",
+      "requirement_compatibility": ""
+    }
+  ],
+  "selected_template_id": "cmp_correlation_stacked_bar",
+  "selected_template_name": "相关性分析堆叠条形图",
+  "alternative_template_ids": [],
+  "selection_reason": "Stacked rectangular columns expose the additive normal and emergency bill. Preserve CMP_003 categorical stacking, white edges, serif typography and horizontal grids; replace correlation demo factors with actual currency components.",
+  "data_support_reason": "All plotted quantities are present in the real CSV or exact subtraction/unit conversion thereof.",
+  "data_warnings": [],
+  "confidence": 0.96,
+  "needs_clarification": false,
+  "clarification_question": ""
+}

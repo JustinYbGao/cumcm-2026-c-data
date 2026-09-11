@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "bug": "Fresh reproduction attempted the January independent gate before creating its mandatory causal evidence.",
+  "negative_control": "reproduction_dependency_red.log: missing causality_evidence_present triggered AssertionError.",
+  "fix": "Run causal producer after January B0/B1/P/E and before the independent gate; formal PE replay remains after the gate.",
+  "actual_execution": [
+    "Cloned January B0/B1/P/E: 4 x 17 daily MILPs, exit 0",
+    "Cloned full causality test: 5 x 2 x 12 daily MILPs, exit 0",
+    "Cloned independent January gate, exit 0 and passed true"
+  ],
+  "gate_artifact": "reproduction_january_gate.json",
+  "gate_sha256": "dc3244995f5d5b1fa40a6ae51275b50f1680c5990e33b298935402f491c6c3c5",
+  "gate_causality_passed": true,
+  "fixed_script_sha256": "4d11fd504ebf81560cb4ccf68516ff8794d898ddd03ef2faece3c8a5898f56a7",
+  "pipeline_dependency_order_passed": true,
+  "scope": "Actual affected January/causal gate only; 18 annual paths were not redundantly optimized again. Existing relocated P 334-day replay remains separately verified."
+}

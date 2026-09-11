@@ -1,0 +1,12 @@
+test_charge_ceiling_and_paid_disposal (__main__.PolicyTests.test_charge_ceiling_and_paid_disposal) ... ok
+test_conditional_reserve_cannot_charge_from_emergency (__main__.PolicyTests.test_conditional_reserve_cannot_charge_from_emergency) ... ok
+test_insufficient_history_falls_back_to_zero (__main__.PolicyTests.test_insufficient_history_falls_back_to_zero) ... ok
+test_internal_power_side_conversion (__main__.PolicyTests.test_internal_power_side_conversion) ... ok
+test_joint_residual_quantile_and_future_exclusion (__main__.PolicyTests.test_joint_residual_quantile_and_future_exclusion) ... ok
+test_reserve_uses_only_strictly_future_higher_price_predictions (__main__.PolicyTests.test_reserve_uses_only_strictly_future_higher_price_predictions) ... ok
+test_storage_floor_and_power_limit (__main__.PolicyTests.test_storage_floor_and_power_limit) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.053s
+
+OK

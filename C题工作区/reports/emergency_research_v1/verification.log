@@ -1,0 +1,1 @@
+{"passed": true, "verified_ledger_rows": 336672, "protected_files_unchanged": 70, "verifier_sha256": "0934c43d791d3564c0a81a3fcc96bda4fd2e1a6f7fcc5b57e57d34188432c7cb", "scope": "Independent arithmetic, physical bounds and continuity checks; not proof of policy optimality or forecast causality."}

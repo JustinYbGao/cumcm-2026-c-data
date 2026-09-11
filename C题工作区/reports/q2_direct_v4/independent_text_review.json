@@ -1,0 +1,545 @@
+{
+  "created_utc": "2026-09-11T19:06:07.368044+00:00",
+  "scope": "Final BZD nine-part review of research report, paper supplement, README and supporting method/environment/protocol text.",
+  "passed": true,
+  "checks": [
+    {
+      "check": "text.control_characters.research_report.md",
+      "passed": true
+    },
+    {
+      "check": "text.control_characters.paper_supplement.md",
+      "passed": true
+    },
+    {
+      "check": "text.control_characters.README.md",
+      "passed": true
+    },
+    {
+      "check": "text.control_characters.method_fit_and_sources.md",
+      "passed": true
+    },
+    {
+      "check": "text.control_characters.computation_scale.json",
+      "passed": true
+    },
+    {
+      "check": "text.control_characters.environment.json",
+      "passed": true
+    },
+    {
+      "check": "text.control_characters.compiler_build.json",
+      "passed": true
+    },
+    {
+      "check": "text.control_characters.requirements.txt",
+      "passed": true
+    },
+    {
+      "check": "text.control_characters.protocol.md",
+      "passed": true
+    },
+    {
+      "check": "text.control_characters.protocol_freeze.json",
+      "passed": true
+    },
+    {
+      "check": "text.control_characters.refinement_protocol.md",
+      "passed": true
+    },
+    {
+      "check": "text.control_characters.refinement_freeze.json",
+      "passed": true
+    },
+    {
+      "check": "text.control_characters.cap_clarification.md",
+      "passed": true
+    },
+    {
+      "check": "comparison_all.twelve_policies",
+      "passed": true
+    },
+    {
+      "check": "research_report.comparison.B0",
+      "passed": true
+    },
+    {
+      "check": "research_report.comparison.B1",
+      "passed": true
+    },
+    {
+      "check": "research_report.comparison.P_floor",
+      "passed": true
+    },
+    {
+      "check": "research_report.comparison.X_strong_morning85",
+      "passed": true
+    },
+    {
+      "check": "research_report.comparison.D56",
+      "passed": true
+    },
+    {
+      "check": "research_report.comparison.D28",
+      "passed": true
+    },
+    {
+      "check": "research_report.comparison.D112",
+      "passed": true
+    },
+    {
+      "check": "research_report.comparison.D56_risk625",
+      "passed": true
+    },
+    {
+      "check": "research_report.comparison.D56_mu069",
+      "passed": true
+    },
+    {
+      "check": "research_report.comparison.D56_mu0",
+      "passed": true
+    },
+    {
+      "check": "research_report.comparison.D112_refined",
+      "passed": true
+    },
+    {
+      "check": "research_report.comparison.D56_risk625_refined",
+      "passed": true
+    },
+    {
+      "check": "paper_supplement.comparison.B0",
+      "passed": true
+    },
+    {
+      "check": "paper_supplement.comparison.B1",
+      "passed": true
+    },
+    {
+      "check": "paper_supplement.comparison.P_floor",
+      "passed": true
+    },
+    {
+      "check": "paper_supplement.comparison.X_strong_morning85",
+      "passed": true
+    },
+    {
+      "check": "paper_supplement.comparison.D56",
+      "passed": true
+    },
+    {
+      "check": "paper_supplement.comparison.D28",
+      "passed": true
+    },
+    {
+      "check": "paper_supplement.comparison.D112",
+      "passed": true
+    },
+    {
+      "check": "paper_supplement.comparison.D56_risk625",
+      "passed": true
+    },
+    {
+      "check": "paper_supplement.comparison.D56_mu069",
+      "passed": true
+    },
+    {
+      "check": "paper_supplement.comparison.D56_mu0",
+      "passed": true
+    },
+    {
+      "check": "paper_supplement.comparison.D112_refined",
+      "passed": true
+    },
+    {
+      "check": "paper_supplement.comparison.D56_risk625_refined",
+      "passed": true
+    },
+    {
+      "check": "research_report.best_and_cap",
+      "passed": true
+    },
+    {
+      "check": "research_report.fee_tradeoff",
+      "passed": true
+    },
+    {
+      "check": "research_report.historical_limit",
+      "passed": true
+    },
+    {
+      "check": "paper_supplement.best_and_cap",
+      "passed": true
+    },
+    {
+      "check": "paper_supplement.fee_tradeoff",
+      "passed": true
+    },
+    {
+      "check": "paper_supplement.historical_limit",
+      "passed": true
+    },
+    {
+      "check": "README.best_and_cap",
+      "passed": true
+    },
+    {
+      "check": "README.fee_tradeoff",
+      "passed": true
+    },
+    {
+      "check": "README.historical_limit",
+      "passed": true
+    },
+    {
+      "check": "paper.initial_and_units",
+      "passed": true
+    },
+    {
+      "check": "paper.reference_metadata",
+      "passed": true
+    },
+    {
+      "check": "research_report.oracle_conditions",
+      "passed": true
+    },
+    {
+      "check": "research_report.oracle_not_causal_or_evpi",
+      "passed": true
+    },
+    {
+      "check": "research_report.refinement_posthoc",
+      "passed": true
+    },
+    {
+      "check": "paper.oracle_conditions",
+      "passed": true
+    },
+    {
+      "check": "paper.oracle_not_causal_or_evpi",
+      "passed": true
+    },
+    {
+      "check": "paper.refinement_posthoc",
+      "passed": true
+    },
+    {
+      "check": "report.kernel_call_accounting",
+      "passed": true
+    },
+    {
+      "check": "scale.annual_policies",
+      "passed": true
+    },
+    {
+      "check": "scale.annual_days",
+      "passed": true
+    },
+    {
+      "check": "scale.actual_intervals",
+      "passed": true
+    },
+    {
+      "check": "scale.saved_candidates",
+      "passed": true
+    },
+    {
+      "check": "scale.optimizer_calls",
+      "passed": true
+    },
+    {
+      "check": "scale.optimizer_success",
+      "passed": true
+    },
+    {
+      "check": "scale.optimizer_non_success",
+      "passed": true
+    },
+    {
+      "check": "scale.optimizer_evaluations",
+      "passed": true
+    },
+    {
+      "check": "scale.candidate_rescore_evaluations",
+      "passed": true
+    },
+    {
+      "check": "scale.total_objective_calls_including_rescore",
+      "passed": true
+    },
+    {
+      "check": "scale.saved_candidate_scenario_pairs",
+      "passed": true
+    },
+    {
+      "check": "scale.call_sum",
+      "passed": true
+    },
+    {
+      "check": "environment.requirements.numpy",
+      "passed": true
+    },
+    {
+      "check": "environment.requirements.pandas",
+      "passed": true
+    },
+    {
+      "check": "environment.requirements.scipy",
+      "passed": true
+    },
+    {
+      "check": "environment.requirements.highspy",
+      "passed": true
+    },
+    {
+      "check": "environment.requirements.matplotlib",
+      "passed": true
+    },
+    {
+      "check": "environment.requirements.pillow",
+      "passed": true
+    },
+    {
+      "check": "environment.requirements.langchain-core",
+      "passed": true
+    },
+    {
+      "check": "environment.requirements.pydantic",
+      "passed": true
+    },
+    {
+      "check": "environment.requirements.PyYAML",
+      "passed": true
+    },
+    {
+      "check": "compiler.matches_kernel",
+      "passed": true
+    },
+    {
+      "check": "freeze.initial.configs/q2_direct_v4/experiments.json",
+      "passed": true
+    },
+    {
+      "check": "freeze.initial.reports/q2_direct_v4/protocol.md",
+      "passed": true
+    },
+    {
+      "check": "freeze.refinement.C题工作区/configs/q2_direct_v4/refinement.json",
+      "passed": true
+    },
+    {
+      "check": "freeze.refinement.C题工作区/reports/q2_direct_v4/refinement_protocol.md",
+      "passed": true
+    },
+    {
+      "check": "README.command_script.python scripts/q2_direct_v4/run_experiments.py january",
+      "passed": true
+    },
+    {
+      "check": "README.stage.january",
+      "passed": true
+    },
+    {
+      "check": "README.command_script.python scripts/q2_direct_v4/independent_verify.py --scope january",
+      "passed": true
+    },
+    {
+      "check": "README.scope.january",
+      "passed": true
+    },
+    {
+      "check": "README.command_script.python scripts/q2_direct_v4/run_experiments.py runs",
+      "passed": true
+    },
+    {
+      "check": "README.stage.runs",
+      "passed": true
+    },
+    {
+      "check": "README.command_script.python scripts/q2_direct_v4/causality_checks.py",
+      "passed": true
+    },
+    {
+      "check": "README.command_script.python scripts/q2_direct_v4/run_experiments.py january --refinement",
+      "passed": true
+    },
+    {
+      "check": "README.refinement.run_experiments.py",
+      "passed": true
+    },
+    {
+      "check": "README.stage.january",
+      "passed": true
+    },
+    {
+      "check": "README.command_script.python scripts/q2_direct_v4/independent_verify.py --scope refinement_january",
+      "passed": true
+    },
+    {
+      "check": "README.scope.refinement_january",
+      "passed": true
+    },
+    {
+      "check": "README.command_script.python scripts/q2_direct_v4/run_experiments.py runs --refinement",
+      "passed": true
+    },
+    {
+      "check": "README.refinement.run_experiments.py",
+      "passed": true
+    },
+    {
+      "check": "README.stage.runs",
+      "passed": true
+    },
+    {
+      "check": "README.command_script.python scripts/q2_direct_v4/causality_checks.py --refinement",
+      "passed": true
+    },
+    {
+      "check": "README.refinement.causality_checks.py",
+      "passed": true
+    },
+    {
+      "check": "README.command_script.python scripts/q2_direct_v4/analyze_results.py --all",
+      "passed": true
+    },
+    {
+      "check": "README.all",
+      "passed": true
+    },
+    {
+      "check": "README.command_script.python scripts/q2_direct_v4/independent_verify.py --scope annual",
+      "passed": true
+    },
+    {
+      "check": "README.scope.annual",
+      "passed": true
+    },
+    {
+      "check": "README.command_script.python scripts/q2_direct_v4/independent_verify.py --scope refinement_annual",
+      "passed": true
+    },
+    {
+      "check": "README.scope.refinement_annual",
+      "passed": true
+    },
+    {
+      "check": "README.command_script.python scripts/q2_direct_v4/independent_verify.py --scope causality",
+      "passed": true
+    },
+    {
+      "check": "README.scope.causality",
+      "passed": true
+    },
+    {
+      "check": "README.command_script.python scripts/q2_direct_v4/independent_verify.py --scope refinement_causality",
+      "passed": true
+    },
+    {
+      "check": "README.scope.refinement_causality",
+      "passed": true
+    },
+    {
+      "check": "README.command_script.python scripts/q2_direct_v4/independent_verify.py --scope analysis_all",
+      "passed": true
+    },
+    {
+      "check": "README.scope.analysis_all",
+      "passed": true
+    },
+    {
+      "check": "README.single_reproduction_cli",
+      "passed": true
+    },
+    {
+      "check": "README.new_target_required",
+      "passed": true
+    },
+    {
+      "check": "README.dependencies_and_scope",
+      "passed": true
+    },
+    {
+      "check": "README.numeric_reproduction_reference",
+      "passed": true
+    },
+    {
+      "check": "hard_cap_clarified",
+      "passed": true
+    },
+    {
+      "check": "BZD.nine_sections",
+      "passed": true
+    },
+    {
+      "check": "BZD.no_pending_readme",
+      "passed": true
+    }
+  ],
+  "reviewed_text_sha256": {
+    "reports/q2_direct_v4/research_report.md": "62aa399efd980e0144c1f4ccb2554c4f0a511cfaaac0127cc893cefa050c8910",
+    "papers/q2_direct_v4/paper_supplement.md": "208eef7e6c739c4bb994428df62325a5e6c6d583c102bc1945aa8efe7a1bb8cd",
+    "reports/q2_direct_v4/README.md": "b5bf2311816ae4016d6eaf14d521bf3e13d37bd0f255f563934dedfef2b48cca",
+    "reports/q2_direct_v4/method_fit_and_sources.md": "e31eb840121b8ab48402f4cc36839e4cbcddb9efe807f21056ce86d5c3d72225",
+    "reports/q2_direct_v4/computation_scale.json": "5dbfb9baed2469b25f08bdb7480b9b0c8bab6ea846f04fd14978dd87d4b45191",
+    "reports/q2_direct_v4/environment.json": "69b43ca2d5bbc6e905c38cb27d1199a3578e01b4996bc81075a44d07bf4fbe32",
+    "reports/q2_direct_v4/compiler_build.json": "4adf5f2d2e2952684c20fe887f7f8b850d8949fe93068726b9921980d970e70f",
+    "reports/q2_direct_v4/requirements.txt": "8c023ff2e864f3f18c65d22aefc2f727d0a553f8cc96cf26643dd5fcca517ba7",
+    "reports/q2_direct_v4/protocol.md": "cf9e6153d08e81a1568e500f6941fe8664b33b0737bf68221b952b34c0b2a683",
+    "reports/q2_direct_v4/protocol_freeze.json": "300ddb6b96bbe43ecf7183dcec19b486e6c093bf63ef5e509aecb5ef103b3c0f",
+    "reports/q2_direct_v4/refinement_protocol.md": "e9dc19c726def0e922907444dc981a84c83ed693497a771230c7815f968444cd",
+    "reports/q2_direct_v4/refinement_freeze.json": "cca5bd499b3e190097d692b7a331ddd45fcd2cf16a887a91e10a1ba5c5bc83df",
+    "reports/q2_direct_v4/cap_clarification.md": "43795a2886f7d24377ac40216ce6a07dfeab4b399097a90db71c999ec6ce777b"
+  },
+  "review_narrative_sha256": "baad69d8c0f87c1c6e21e3f11d7ba2c5c65194959da7e4afe75e09fff82babfb",
+  "document_generator_sha256": "e9309eed79779dc784233757f6fa2fd36a2e159c3a9aaf8bcd46b9d3477d90de",
+  "resolved_findings": [
+    {
+      "id": "T1",
+      "severity": "minor",
+      "issue": "Optimizer internal evaluations were confused with all objective calls.",
+      "resolution": "1624651 internal + 16032 rescoring = 1640683 total."
+    },
+    {
+      "id": "T2",
+      "severity": "minor",
+      "issue": "Scenario initial condition and kappa units were not explicit.",
+      "resolution": "Common E_0^s=E_d0 and dimensionless kappa stated."
+    },
+    {
+      "id": "T3",
+      "severity": "minor",
+      "issue": "Scenario emergency was described as actual deficit.",
+      "resolution": "Scenario deficit and actual transaction are distinguished."
+    },
+    {
+      "id": "T4",
+      "severity": "minor",
+      "issue": "Oracle horizon/terminal scope needed precision.",
+      "resolution": "334 days, exact common initial, no daily terminal equality, terminal 1200 to 10800 stated."
+    },
+    {
+      "id": "T5",
+      "severity": "editorial",
+      "issue": "Reference 2 author metadata could be clearer.",
+      "resolution": "Wang Y, Pan B, Tu W, et al. included."
+    },
+    {
+      "id": "T6",
+      "severity": "verification",
+      "issue": "README was pending in preliminary review.",
+      "resolution": "Now read in full; reproduction flags, scopes, paths and limitations match current code."
+    }
+  ],
+  "unresolved_in_scope_findings": [],
+  "scientific_limitations": [
+    "Historical outcome-informed selection, including both refinement paths; no blinded future-year evidence.",
+    "Nonsmooth local search and software success provide no global or strict local optimality certificate.",
+    "Emergency cap passed for this 334-day replay only; no future-probability guarantee.",
+    "Prescient numerical optimum is for the stated 334-day full-future problem, not causal Q2 optimum or EVPI.",
+    "Reproduction checked on the recorded machine/software environment in a separate directory, not all platforms.",
+    "Formal result2.xlsx migration, whole-paper formatting and Q3/Q4 are outside this research-supplement review.",
+    "External references checked at official metadata/abstract/documentation level, not full theoretical proof."
+  ],
+  "archive_boundary": "Final ZIP readback and final original-file preservation gate are separately recorded by the packaging workflow; not pre-certified here."
+}

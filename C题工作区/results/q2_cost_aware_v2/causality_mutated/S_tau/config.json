@@ -1,0 +1,19 @@
+{
+  "start": "2025-01-24",
+  "end": "2025-01-26",
+  "initial_energy_kwh": 6000.0,
+  "risk_window": 28,
+  "scenario_window": 28,
+  "mu": 0.38232,
+  "taus": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "terminals": [
+    "equal_initial"
+  ],
+  "policy": "S_tau"
+}

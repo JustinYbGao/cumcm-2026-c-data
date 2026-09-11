@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "scope": "Independent figure-data equality/lineage, image DPI and actual visual inspection; no redraw or production plotting imports.",
+  "figures": {
+    "savings": {
+      "data_matches_audited_analysis": true,
+      "source_sha_matches": true,
+      "plot_data_sha_matches": true,
+      "png_size_pixels": [
+        4800,
+        3000
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "svg_contains_no_chinese": true,
+      "visual_inspection": "Actually viewed both PNGs. English labels, units, zero lines, negative outcomes and caveats readable; no clipping or overlapping text observed.",
+      "artifact_sha256": {
+        "data.csv": "e1d7e6a5144f32ce871c020a79ffb7f5570610f655484b1c95ef57ea4f8307d6",
+        "outputs/chart.png": "13bf64e0139106a5fcf2cc8a7b42b56e37f8ca9ec1d756644483476c1fd135a2",
+        "outputs/chart.svg": "8d198cf4c67698e79e1477966944e6acecf840a7a79246d5b4999a6b6cae7bf0"
+      }
+    },
+    "monthly": {
+      "data_matches_audited_analysis": true,
+      "source_sha_matches": true,
+      "plot_data_sha_matches": true,
+      "png_size_pixels": [
+        3900,
+        2040
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "svg_contains_no_chinese": true,
+      "visual_inspection": "Actually viewed both PNGs. English labels, units, zero lines, negative outcomes and caveats readable; no clipping or overlapping text observed.",
+      "artifact_sha256": {
+        "data.csv": "14a4dbec05e34e0f659bf356766f637a37b3e5f8e7bce0e581082c8314792696",
+        "outputs/chart.png": "4d4abde65fd0df4bfdeb5f3bf431c2021b66b908efccfb880af8d0c71cbddb79",
+        "outputs/chart.svg": "54918417e740abac501f8ab8f8d78fc8b907787a063a65f98b846c2ce67cd0c9"
+      }
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "selection": {
+    "dataset_summary": "9 strategies and additive actual bills",
+    "relevant_columns": [
+      "policy",
+      "planned_cost_yuan",
+      "emergency_cost_yuan",
+      "total_cost_yuan",
+      "relaxed_lower_bound_yuan"
+    ],
+    "candidate_comparisons": [
+      {
+        "template_id": "cmp_correlation_stacked_bar",
+        "suitable": true,
+        "advantages": [
+          "Exact categorical stacks of actual normal and emergency bills, with a separately certified relaxed lower bound."
+        ],
+        "limitations": [],
+        "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only."
+      },
+      {
+        "template_id": "cmp_nightingale_rose_grid",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+        ],
+        "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only."
+      },
+      {
+        "template_id": "cmp_radial_stacked_bar",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+        ],
+        "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only."
+      },
+      {
+        "template_id": "cmp_gradient_single_factor_bar",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+        ],
+        "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only."
+      },
+      {
+        "template_id": "cmp_circular_barplot",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+        ],
+        "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only."
+      },
+      {
+        "template_id": "cmp_3d_bar_chart",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+        ],
+        "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only."
+      },
+      {
+        "template_id": "dis_radial_bar_error_significance",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+        ],
+        "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only."
+      },
+      {
+        "template_id": "cmp_stack_pie_box_report",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Radial, 3D, normalized or fitted encoding is less direct for exact additive bills and paired observed differences."
+        ],
+        "data_compatibility": "Real categorical or month columns; exact unit conversion and subtraction only."
+      }
+    ],
+    "selected_template_id": "cmp_correlation_stacked_bar",
+    "selected_template_name": "相关性分析堆叠条形图",
+    "selection_reason": "Exact categorical stacks of actual normal and emergency bills, with a separately certified relaxed lower bound.",
+    "data_support_reason": "All plotted quantities are present in the real CSV or exact subtraction/unit conversion thereof.",
+    "confidence": 0.96
+  },
+  "plan": {
+    "template_id": "cmp_correlation_stacked_bar",
+    "template_name": "相关性分析堆叠条形图",
+    "plot_goal": "Exact categorical stacks of actual normal and emergency bills, with a separately certified relaxed lower bound.",
+    "selected_columns": [
+      "policy",
+      "planned_cost_yuan",
+      "emergency_cost_yuan",
+      "total_cost_yuan",
+      "relaxed_lower_bound_yuan"
+    ],
+    "column_mappings": [
+      {
+        "data_column": "policy",
+        "template_role": "Category/time key"
+      },
+      {
+        "data_column": "planned_cost_yuan",
+        "template_role": "Exact cost or certified bound in CNY"
+      },
+      {
+        "data_column": "emergency_cost_yuan",
+        "template_role": "Exact cost or certified bound in CNY"
+      },
+      {
+        "data_column": "total_cost_yuan",
+        "template_role": "Exact cost or certified bound in CNY"
+      },
+      {
+        "data_column": "relaxed_lower_bound_yuan",
+        "template_role": "Exact cost or certified bound in CNY"
+      }
+    ],
+    "required_preprocessing": [
+      "Read CSV; preserve original dates and declared policy order; divide CNY by display unit only"
+    ],
+    "required_dependencies": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "layout_elements_to_preserve": [
+      "Matplotlib",
+      "Serif typography",
+      "Muted blue/orange palette",
+      "Horizontal grids",
+      "Stacked categorical columns with white edges"
+    ],
+    "style_elements_to_preserve": [
+      "Matplotlib",
+      "Serif typography",
+      "Muted blue/orange palette",
+      "Horizontal grids",
+      "Stacked categorical columns with white edges"
+    ],
+    "elements_allowed_to_change": [
+      "Replace demo data with supplied CSV",
+      "English labels and currency units",
+      "Remove fitted demo trends",
+      "Show certified reference bound",
+      "300 dpi PNG and SVG"
+    ],
+    "title_plan": "English Q2 economic outcome",
+    "axis_plan": "Explicit million CNY; monthly savings on disclosed second axis in thousand CNY",
+    "legend_plan": "Separated upper legend band",
+    "annotation_plan": "Actual totals, relaxed-bound scope, daily losses; no external-validation claim",
+    "output_formats": [
+      "png",
+      "svg"
+    ],
+    "warnings": [
+      "Historical conditional results; no future guarantee"
+    ]
+  },
+  "adaptation": {
+    "changes_summary": [
+      "Exact categorical stacks of actual normal and emergency bills, with a separately certified relaxed lower bound."
+    ],
+    "preserved_style_elements": [
+      "Matplotlib",
+      "Serif typography",
+      "Muted blue/orange palette",
+      "Horizontal grids",
+      "Stacked categorical columns with white edges"
+    ],
+    "changed_elements": [
+      "Replace demo data with supplied CSV",
+      "English labels and currency units",
+      "Remove fitted demo trends",
+      "Show certified reference bound",
+      "300 dpi PNG and SVG"
+    ],
+    "data_columns_used": [
+      "policy",
+      "planned_cost_yuan",
+      "emergency_cost_yuan",
+      "total_cost_yuan",
+      "relaxed_lower_bound_yuan"
+    ],
+    "dependencies_used": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "additional_dependencies_requested": [],
+    "assumptions": [
+      "Historical 2025 replay; original rules except explicitly varied planning terminal target; no sale revenue."
+    ]
+  }
+}

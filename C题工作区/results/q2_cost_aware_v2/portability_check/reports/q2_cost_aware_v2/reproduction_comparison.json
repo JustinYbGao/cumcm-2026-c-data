@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "scope": "P_floor relocation smoke",
+  "by_policy": {
+    "P_floor": {
+      "max_numeric_difference": 0.0,
+      "text_columns_match": true,
+      "total_cost_difference_yuan": 0.0
+    }
+  }
+}

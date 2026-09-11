@@ -1,0 +1,3 @@
+Completed independent_verify.py --scope sources
+Completed run_experiments.py runs --policies P_floor
+Numerical reproduction passed: /Users/justingao/Documents/CUMCM/C题工作区/results/q2_cost_aware_v2/portability_check

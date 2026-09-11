@@ -1,0 +1,8 @@
+{
+  "policy_comparison": "Conditional per-policy states from actual path; not same-initial-state annual policy ranking",
+  "scenario": "Common B0 forecast plus one historical load/PV error trajectory; nonnegative clipping is logged",
+  "scenario_count": 22,
+  "paths": 66,
+  "rows": 9504,
+  "oracle_used": false
+}

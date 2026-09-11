@@ -1,0 +1,50 @@
+{
+  "created_utc": "2026-09-11T18:42:12.293682+00:00",
+  "rationale": "After six observed annual paths, D112 minimizes actual cost and D56_risk625 has both bill components below v3. Many L-BFGS-B iterations hit 180. Test only larger search budget from same two starts; no new forecast/hardware/actual-price rule. Historical adaptive research, not blind selection.",
+  "runs": [
+    {
+      "policy": "D112_refined",
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "scenario_window": 112,
+      "kappa": 5,
+      "mu": 0.38232,
+      "optimizer": {
+        "maxiter": 1200,
+        "maxfun": 10000,
+        "maxls": 30,
+        "maxcor": 10,
+        "ftol": 1e-10,
+        "gtol": 1e-05
+      }
+    },
+    {
+      "policy": "D56_risk625_refined",
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "scenario_window": 56,
+      "kappa": 6.25,
+      "mu": 0.38232,
+      "optimizer": {
+        "maxiter": 1200,
+        "maxfun": 10000,
+        "maxls": 30,
+        "maxcor": 10,
+        "ftol": 1e-10,
+        "gtol": 1e-05
+      }
+    }
+  ],
+  "optimizer": {
+    "maxiter": 1200,
+    "maxfun": 10000,
+    "maxls": 30,
+    "maxcor": 10,
+    "ftol": 1e-10,
+    "gtol": 1e-05
+  },
+  "parent_protocol": "protocol.md",
+  "emergency_cap_yuan": 1000000
+}

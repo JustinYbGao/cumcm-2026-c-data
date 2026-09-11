@@ -1,0 +1,359 @@
+{
+  "created_utc": "2026-09-11T18:09:24.749610+00:00",
+  "user_emergency_cap_yuan": 1000000.0,
+  "primary_metric": "actual total purchase cost",
+  "ordinary_cost_is_hard_constraint": false,
+  "runs": [
+    {
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "risk_window": 28,
+      "scenario_window": 56,
+      "mu": 0.38232,
+      "terminal_energy_kwh": 1200.0,
+      "cvar_alpha": 0.9,
+      "policy": "X_morning90",
+      "profiles": [
+        "X_morning90"
+      ],
+      "guard": "none",
+      "profile_definitions": {
+        "X_morning90": [
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.9,
+          0.9,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.9,
+          0.9,
+          0.9,
+          0.9,
+          0.8,
+          0.8
+        ]
+      }
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "risk_window": 28,
+      "scenario_window": 56,
+      "mu": 0.38232,
+      "terminal_energy_kwh": 1200.0,
+      "cvar_alpha": 0.9,
+      "policy": "X_strong_morning85",
+      "profiles": [
+        "X_strong_morning85"
+      ],
+      "guard": "none",
+      "profile_definitions": {
+        "X_strong_morning85": [
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.85,
+          0.85,
+          0.65,
+          0.65,
+          0.65,
+          0.65,
+          0.65,
+          0.65,
+          0.65,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.8,
+          0.8
+        ]
+      }
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "risk_window": 28,
+      "scenario_window": 56,
+      "mu": 0.38232,
+      "terminal_energy_kwh": 1200.0,
+      "cvar_alpha": 0.9,
+      "policy": "X_day60",
+      "profiles": [
+        "X_day60"
+      ],
+      "guard": "none",
+      "profile_definitions": {
+        "X_day60": [
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.8,
+          0.8
+        ]
+      }
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "risk_window": 28,
+      "scenario_window": 56,
+      "mu": 0.38232,
+      "terminal_energy_kwh": 1200.0,
+      "cvar_alpha": 0.9,
+      "policy": "X_day50",
+      "profiles": [
+        "X_day50"
+      ],
+      "guard": "none",
+      "profile_definitions": {
+        "X_day50": [
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.8,
+          0.8
+        ]
+      }
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "risk_window": 28,
+      "scenario_window": 56,
+      "mu": 0.38232,
+      "terminal_energy_kwh": 1200.0,
+      "cvar_alpha": 0.9,
+      "policy": "X_day60_morning85",
+      "profiles": [
+        "X_day60_morning85"
+      ],
+      "guard": "none",
+      "profile_definitions": {
+        "X_day60_morning85": [
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.85,
+          0.85,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.95,
+          0.95,
+          0.95,
+          0.95,
+          0.8,
+          0.8
+        ]
+      }
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "risk_window": 28,
+      "scenario_window": 56,
+      "mu": 0.38232,
+      "terminal_energy_kwh": 1200.0,
+      "cvar_alpha": 0.9,
+      "policy": "X_evening85_day60",
+      "profiles": [
+        "X_evening85_day60"
+      ],
+      "guard": "none",
+      "profile_definitions": {
+        "X_evening85_day60": [
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.8,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.85,
+          0.85,
+          0.85,
+          0.85,
+          0.8,
+          0.8
+        ]
+      }
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "risk_window": 28,
+      "scenario_window": 56,
+      "mu": 0.38232,
+      "terminal_energy_kwh": 1200.0,
+      "cvar_alpha": 0.9,
+      "policy": "X_uniform70",
+      "profiles": [
+        "X_uniform70"
+      ],
+      "guard": "none",
+      "profile_definitions": {
+        "X_uniform70": [
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7,
+          0.7
+        ]
+      }
+    },
+    {
+      "start": "2025-02-01",
+      "end": "2025-12-31",
+      "initial_energy_kwh": 7268.4231640740745,
+      "risk_window": 28,
+      "scenario_window": 56,
+      "mu": 0.38232,
+      "terminal_energy_kwh": 1200.0,
+      "cvar_alpha": 0.9,
+      "policy": "X_uniform75",
+      "profiles": [
+        "X_uniform75"
+      ],
+      "guard": "none",
+      "profile_definitions": {
+        "X_uniform75": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75
+        ]
+      }
+    }
+  ],
+  "bootstrap_seed": 20260914,
+  "bootstrap_blocks": [
+    7,
+    14
+  ],
+  "bootstrap_replicates": 2000,
+  "interpretation": "Post-diagnostic historical exploration; all eight fixed profiles reported, no new blind test."
+}

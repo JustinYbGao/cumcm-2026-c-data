@@ -1,0 +1,1 @@
+Relocated supplied source snapshots, both forecast archives and six references. The independent auditor reconstructs forecasts from raw processed prefixes. Clone preservation covers copied snapshots; original 3668-file preservation is separately audited. No original workspace dependency is required for numerical replay. ModelViz plotting additionally needs the local skill.

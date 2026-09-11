@@ -1,0 +1,17 @@
+{
+  "policy": "PE",
+  "forecast_model": "linear_harmonic",
+  "risk": true,
+  "tau": 0.8,
+  "residual_days": 28,
+  "executor": "reserve",
+  "eta_charge": 0.9,
+  "eta_discharge": 0.9,
+  "power_basis": "AC_bus",
+  "terminal_target": "equal_initial",
+  "start": "2025-01-15",
+  "end": "2025-01-31",
+  "initial_energy_kwh": 6000.0,
+  "group": "main",
+  "conditional": true
+}

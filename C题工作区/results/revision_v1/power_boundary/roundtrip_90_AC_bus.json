@@ -1,0 +1,94 @@
+{
+  "scenario": "roundtrip_90_AC_bus",
+  "physical_config": {
+    "status": "internal_working_assumptions_not_submission",
+    "input": "data/processed/q1_day.csv",
+    "interval_minutes": 10,
+    "time_mapping": "raw label denotes interval end; 00:10 -> [00:00,00:10); no shift or circular wrap",
+    "power_interpretation": "interval_average",
+    "template_export": "blocked_pending_time_mapping_confirmation",
+    "battery": {
+      "rated_capacity_kwh": 12000,
+      "min_energy_kwh": 1200,
+      "max_energy_kwh": 10800,
+      "max_charge_kw": 5000,
+      "max_discharge_kw": 5000,
+      "power_boundary": "AC_bus_side_working_assumption",
+      "initial_energy_kwh": 6000,
+      "initial_basis": "Chinese Appendix 1 fixes Jan 1 at 6000; English says start of operation; adopted for undated Q1, not a source date",
+      "terminal": "equal_to_fixed_initial",
+      "eta_charge": 0.9486832980505138,
+      "eta_discharge": 0.9486832980505138,
+      "efficiency_basis": "each_direction_0.9_working_assumption_not_official"
+    },
+    "sensitivity": {
+      "name": "roundtrip_90",
+      "eta_charge": 0.9486832980505138,
+      "eta_discharge": 0.9486832980505138
+    },
+    "curtailment": "PV_only_0_to_given_PV; no_grid_sale; no_disposal_of_purchased_energy",
+    "solver": {
+      "name": "HiGHS",
+      "threads": 1,
+      "random_seed": 0,
+      "time_limit": 120,
+      "mip_rel_gap": 1e-09,
+      "mip_abs_gap": 1e-07,
+      "primal_feasibility_tolerance": 1e-08,
+      "dual_feasibility_tolerance": 1e-08,
+      "mip_feasibility_tolerance": 1e-08
+    },
+    "validation": {
+      "energy_atol_kwh": 1e-06,
+      "cost_atol_yuan": 1e-06,
+      "integer_atol": 1e-07
+    }
+  },
+  "milp": {
+    "status": "Optimal",
+    "objective_yuan": 33801.49554222201,
+    "solver_objective": 33801.495542222016,
+    "relaxed": false,
+    "lower_bound_yuan": 33801.495542222016,
+    "mip_gap": 0.0,
+    "nodes": 1,
+    "runtime_seconds": 0.02845254199928604,
+    "variables": 865,
+    "constraints": 578,
+    "max_primal_infeasibility": 1.5916157281026244e-12,
+    "max_integrality_violation": 2.220446049250313e-16,
+    "lower_bound_unit": "yuan",
+    "primary_cost_cap_yuan": null
+  },
+  "lp_same_model": {
+    "status": "Optimal",
+    "objective_yuan": 33801.49554222201,
+    "solver_objective": 33801.49554222201,
+    "relaxed": true,
+    "lower_bound_yuan": 33801.49554222201,
+    "mip_gap": null,
+    "nodes": null,
+    "runtime_seconds": 0.0020193340023979545,
+    "variables": 865,
+    "constraints": 578,
+    "max_primal_infeasibility": 0.0,
+    "max_integrality_violation": null,
+    "lower_bound_unit": "yuan",
+    "primary_cost_cap_yuan": null
+  },
+  "independent_algebra_checks": {
+    "balance_kwh": 1.1368683772161603e-13,
+    "state_kwh": 1.5916157281026244e-12,
+    "continuity_kwh": 0.0,
+    "terminal_kwh": 0.0,
+    "initial_kwh": 0.0,
+    "charge_limit_kw": 0.0,
+    "discharge_limit_kw": 0.0,
+    "lower_energy_kwh": 0.0,
+    "upper_energy_kwh": 0.0,
+    "mutex_kwh": 0.0,
+    "negative_flows_kwh": 0.0,
+    "pv_disposal_bound_kwh": 0.0
+  },
+  "lp_note": "LP uses the same model builder; algebra checks independently recompute exported dispatch constraints."
+}

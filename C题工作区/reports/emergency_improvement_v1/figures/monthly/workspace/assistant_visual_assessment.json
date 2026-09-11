@@ -1,0 +1,18 @@
+{
+  "reviewer": "Codex assistant; actual PNG viewed",
+  "inspected_png_sha256": "d709bcd66b84cc9cdcb4d2bad92107a2e5e31f34d96e7fdbf99665585bdd2e26",
+  "inspected_script_sha256": "67e5fdc962d9c46e518cc72558351953bc053c1b0c11a7b9cd398a8cf3e323dd",
+  "report": {
+    "passed": true,
+    "requirement_alignment": "English-only titles, axis labels, legend, annotations and notes; 300 dpi PNG and SVG.",
+    "data_expression_quality": "Exact observed annual components or original monthly bills and differences. Negative E/PE outcome and daily losses are explicit.",
+    "style_preservation": "CMP_003 stacked categorical columns or TRD_004 paired lines and bars; serif text and muted blue/orange.",
+    "readability": "Actual PNG inspected; labels, values and units legible; no overlapping text.",
+    "layout_quality": "Separated title, legends, chart and footnotes; monthly repair clarifies that only savings axes share exact scale.",
+    "color_quality": "Normal purchase/risk candidate blue, emergency/savings orange, matched baseline gray.",
+    "issues": [],
+    "suggested_fixes": [],
+    "needs_repair": false,
+    "confidence": 0.98
+  }
+}

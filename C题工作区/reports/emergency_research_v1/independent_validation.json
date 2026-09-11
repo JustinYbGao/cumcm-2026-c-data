@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "verified_ledger_rows": 336672,
+  "protected_files_unchanged": 70,
+  "verifier_sha256": "0934c43d791d3564c0a81a3fcc96bda4fd2e1a6f7fcc5b57e57d34188432c7cb",
+  "checks": {
+    "q2_selected": {
+      "rows": 48096,
+      "max_interval_residual": 9.094947017729282e-13,
+      "max_summary_difference": 2.2351741790771484e-08,
+      "floor_fee_share": 0.983151722288686,
+      "evening_fee_share": 0.7720530388743119
+    },
+    "q2_seasonal": {
+      "rows": 48096,
+      "max_interval_residual": 1.000444171950221e-11,
+      "max_summary_difference": 1.862645149230957e-08,
+      "floor_fee_share": 0.9757854162180654,
+      "evening_fee_share": 0.7825456564898988
+    },
+    "q2_no_storage": {
+      "rows": 48096,
+      "max_interval_residual": 0.0,
+      "max_summary_difference": 1.4156103134155273e-07,
+      "floor_fee_share": 0.0,
+      "evening_fee_share": 0.32426906753931145
+    },
+    "q3_no_update": {
+      "rows": 48096,
+      "max_interval_residual": 9.094947017729282e-13,
+      "max_summary_difference": 3.3527612686157227e-08,
+      "floor_fee_share": 0.985856308727337,
+      "evening_fee_share": 0.8464630679088976
+    },
+    "q3_corrected": {
+      "rows": 48096,
+      "max_interval_residual": 9.094947017729282e-13,
+      "max_summary_difference": 5.029141902923584e-08,
+      "floor_fee_share": 0.9100596308583169,
+      "evening_fee_share": 0.7582031890811763
+    },
+    "q42": {
+      "rows": 48096,
+      "max_interval_residual": 9.094947017729282e-13,
+      "max_summary_difference": 7.82310962677002e-08,
+      "floor_fee_share": 0.9831780980447471,
+      "evening_fee_share": 0.7676487125612318
+    },
+    "q43_corrected": {
+      "rows": 48096,
+      "max_interval_residual": 9.094947017729282e-13,
+      "max_summary_difference": 5.029141902923584e-08,
+      "floor_fee_share": 0.908897412069199,
+      "evening_fee_share": 0.7421991599904111
+    }
+  },
+  "scope": "Independent arithmetic, physical bounds and continuity checks; not proof of policy optimality or forecast causality."
+}

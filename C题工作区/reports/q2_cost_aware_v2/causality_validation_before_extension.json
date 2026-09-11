@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "mutation_cutoff": "2025-01-25 12:00:00",
+  "mutation": "Source copy: interval_start >= cutoff has load +800kWh, PV times .5; corresponding kW values updated.",
+  "scope": "All seven policy configurations, three-day replay, whole raw-source forecast/archive/selection/execution recomputation; not a formal all-input proof.",
+  "script_sha256": "cd70063140e35f51753dac7d8ddef8f52de3093bd0e145048498adae3af0f3db",
+  "checks": [
+    {
+      "policy": "S_tau",
+      "prefix_rows": 216,
+      "prefix_difference_kwh": 9.094947017729282e-13,
+      "frozen_plan_difference_kwh": 0.0,
+      "earlier_candidate_evidence_identical": true,
+      "next_day_response_kwh": 858.7120515133047,
+      "passed": true
+    },
+    {
+      "policy": "S_terminal",
+      "prefix_rows": 216,
+      "prefix_difference_kwh": 9.094947017729282e-13,
+      "frozen_plan_difference_kwh": 0.0,
+      "earlier_candidate_evidence_identical": true,
+      "next_day_response_kwh": 640.7050351744417,
+      "passed": true
+    },
+    {
+      "policy": "S_joint",
+      "prefix_rows": 216,
+      "prefix_difference_kwh": 9.094947017729282e-13,
+      "frozen_plan_difference_kwh": 0.0,
+      "earlier_candidate_evidence_identical": true,
+      "next_day_response_kwh": 830.9298792489484,
+      "passed": true
+    },
+    {
+      "policy": "S_w14",
+      "prefix_rows": 216,
+      "prefix_difference_kwh": 9.094947017729282e-13,
+      "frozen_plan_difference_kwh": 0.0,
+      "earlier_candidate_evidence_identical": true,
+      "next_day_response_kwh": 832.724553086746,
+      "passed": true
+    },
+    {
+      "policy": "S_w56",
+      "prefix_rows": 216,
+      "prefix_difference_kwh": 9.094947017729282e-13,
+      "frozen_plan_difference_kwh": 0.0,
+      "earlier_candidate_evidence_identical": true,
+      "next_day_response_kwh": 830.9298792489484,
+      "passed": true
+    },
+    {
+      "policy": "S_no_inventory",
+      "prefix_rows": 216,
+      "prefix_difference_kwh": 9.094947017729282e-13,
+      "frozen_plan_difference_kwh": 0.0,
+      "earlier_candidate_evidence_identical": true,
+      "next_day_response_kwh": 640.7050351744416,
+      "passed": true
+    },
+    {
+      "policy": "P_floor",
+      "prefix_rows": 216,
+      "prefix_difference_kwh": 9.094947017729282e-13,
+      "frozen_plan_difference_kwh": 0.0,
+      "earlier_candidate_evidence_identical": true,
+      "next_day_response_kwh": 640.7050351744417,
+      "passed": true
+    }
+  ],
+  "scenario_prefix_check": {
+    "passed": true,
+    "prefix_max_difference_kwh": 0.0,
+    "future_positive_response_kwh": 9600.0,
+    "cutoff_index": 72
+  }
+}
