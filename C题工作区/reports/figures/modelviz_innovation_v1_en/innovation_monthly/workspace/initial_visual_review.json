@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "reviewer": "Codex assistant actual PNG inspection",
+  "issues": [
+    "Total-savings annotations intersect December curves; move to panel header band."
+  ],
+  "inspected_png_sha256": "6bb43fd2609c1e1de3b14b76ff19732a663ca959e3753ed8737b81002fda970c"
+}

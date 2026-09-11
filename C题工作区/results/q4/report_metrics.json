@@ -1,0 +1,13 @@
+{
+  "check_count": 211834,
+  "solves": 8016,
+  "execution_intervals": 432864,
+  "price_floor_activations": 0,
+  "q42_ols_saving_yuan": 42860.98429861665,
+  "q43_ols_saving_yuan": -6183.031763851643,
+  "q43_updates_saving_yuan": 2108394.5638292953,
+  "q43_price_updates_extra_cost_yuan": 85.45247660577297,
+  "old_Q2_actions_repriced_yuan": 17073577.452081837,
+  "max_balance_kwh": 2.9654845246085415e-10,
+  "perfect_price_worse_days_q42": 111
+}

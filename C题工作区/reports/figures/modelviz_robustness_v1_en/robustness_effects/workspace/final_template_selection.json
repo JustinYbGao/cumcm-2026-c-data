@@ -1,0 +1,102 @@
+{
+  "dataset_summary": "Six matched cash effects with historical uncertainty and inventory diagnostic",
+  "observed_data_features": [],
+  "relevant_columns": [
+    "comparison_id",
+    "cash_gain_yuan",
+    "inventory_adjusted_gain_yuan",
+    "lower_95_yuan",
+    "upper_95_yuan"
+  ],
+  "candidate_comparisons": [
+    {
+      "template_id": "cmp_gradient_single_factor_bar",
+      "suitable": true,
+      "advantages": [
+        "CMP_005 horizontal gradient bars directly compare six categorical monetary effects; retain teal-blue palette, light background and serif typography. Add interval segments from saved percentiles, remove all significance stars and retain predeclared order."
+      ],
+      "limitations": [],
+      "data_compatibility": "Exact mapped columns",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_circular_barplot",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+      ],
+      "data_compatibility": "Does not represent the required direct paired effects",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "rel_bar_association_matrix",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+      ],
+      "data_compatibility": "Does not represent the required direct paired effects",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_correlation_stacked_bar",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+      ],
+      "data_compatibility": "Does not represent the required direct paired effects",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_horizontal_percentage_stack",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+      ],
+      "data_compatibility": "Does not represent the required direct paired effects",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_radial_stacked_bar",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+      ],
+      "data_compatibility": "Does not represent the required direct paired effects",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "prd_grouped_regression_fit",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+      ],
+      "data_compatibility": "Does not represent the required direct paired effects",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "clu_pcoa_permanova",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+      ],
+      "data_compatibility": "Does not represent the required direct paired effects",
+      "requirement_compatibility": ""
+    }
+  ],
+  "selected_template_id": "cmp_gradient_single_factor_bar",
+  "selected_template_name": "渐变单因子条形图",
+  "alternative_template_ids": [],
+  "selection_reason": "CMP_005 horizontal gradient bars directly compare six categorical monetary effects; retain teal-blue palette, light background and serif typography. Add interval segments from saved percentiles, remove all significance stars and retain predeclared order.",
+  "data_support_reason": "Actual 6-row paired table and 9-row monthly table, no invented measurements or fitted distribution",
+  "data_warnings": [],
+  "confidence": 0.97,
+  "needs_clarification": false,
+  "clarification_question": ""
+}

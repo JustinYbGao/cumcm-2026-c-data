@@ -1,0 +1,35 @@
+{
+  "policies": {
+    "pv_raw": "pv",
+    "pv_bias": "pv",
+    "risk_none": "risk",
+    "risk_fixed": "risk",
+    "risk_g05": "risk",
+    "risk_g10": "risk",
+    "gate_paid": "gate",
+    "gate_q50": "gate",
+    "gate_q75": "gate",
+    "gate_frozen": "gate",
+    "gate_info_frozen": "gate"
+  },
+  "calibration_start": "2025-02-01",
+  "selection_start": "2025-03-01",
+  "selection_end": "2025-03-31",
+  "evaluation_start": "2025-04-01",
+  "evaluation_end": "2025-12-31",
+  "feb_initial": 7268.4231640740745,
+  "april_initial": {
+    "risk": 1252.8578340593256,
+    "pv": 7465.440572772747,
+    "gate": 7465.440572772747
+  },
+  "proxy_penalty_yuan_per_kwh": 0.6895775000000001,
+  "risk_alpha": 0.75,
+  "fixed_reserve_kwh": 2400.0,
+  "risk_window": [
+    72,
+    108
+  ],
+  "retrospective": true,
+  "formal_submission": false
+}

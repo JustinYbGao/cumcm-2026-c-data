@@ -1,0 +1,342 @@
+innovation_monthly {
+  "original_request": "按计划做创新实验；使用modelviz-skill，全部英文标注。",
+  "candidate_count": 8,
+  "total_templates": 89,
+  "candidates": [
+    {
+      "template_id": "cmp_3d_ribbon_chart",
+      "template_name": "3D条带图",
+      "category": "comparison_ranking",
+      "score": 0.48,
+      "matched_keywords": [
+        "趋势",
+        "比较",
+        "复合时间序列",
+        "多指标时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较, 复合时间序列, 多指标时间序列",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_013/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_013/3D条带图.py",
+      "catalog_order": 16
+    },
+    {
+      "template_id": "trd_dual_axis_bar_line",
+      "template_name": "双Y轴柱状折线时间序列图",
+      "category": "trend_time_series",
+      "score": 0.48,
+      "matched_keywords": [
+        "趋势",
+        "比较",
+        "复合时间序列",
+        "多指标时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较, 复合时间序列, 多指标时间序列",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_001/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_001/双Y轴柱状折线时间序列图.py",
+      "catalog_order": 85
+    },
+    {
+      "template_id": "trd_lag_correlation_analysis",
+      "template_name": "滞后相关性分析图",
+      "category": "trend_time_series",
+      "score": 0.48,
+      "matched_keywords": [
+        "趋势",
+        "比较",
+        "复合时间序列",
+        "多指标时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较, 复合时间序列, 多指标时间序列",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_002/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_002/滞后相关性分析图.py",
+      "catalog_order": 86
+    },
+    {
+      "template_id": "mpn_scatter_matrix_timeseries_regression",
+      "template_name": "散点矩阵与时间序列回归报告",
+      "category": "multi_panel_report",
+      "score": 0.345,
+      "matched_keywords": [
+        "趋势",
+        "复合时间序列",
+        "多指标时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [
+        "English labels",
+        "serif typography"
+      ],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 复合时间序列, 多指标时间序列；风格弱匹配：English labels, serif typography",
+      "preview": "templates/05_MPN_multi_panel_report/05_MPN_002/assets/preview.png",
+      "code_path": "templates/05_MPN_multi_panel_report/05_MPN_002/散点矩阵与时间序列回归报告.py",
+      "catalog_order": 29
+    },
+    {
+      "template_id": "cmp_flowing_percentage_stack",
+      "template_name": "流动趋势百分比堆叠图",
+      "category": "comparison_ranking",
+      "score": 0.27,
+      "matched_keywords": [
+        "趋势",
+        "比较"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_004/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_004/流动趋势百分比堆叠图.py",
+      "catalog_order": 7
+    },
+    {
+      "template_id": "cmp_3d_waterfall_distribution",
+      "template_name": "三维瀑布图",
+      "category": "comparison_ranking",
+      "score": 0.27,
+      "matched_keywords": [
+        "趋势",
+        "比较"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_014/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_014/三维瀑布图.py",
+      "catalog_order": 17
+    },
+    {
+      "template_id": "trd_smoothed_trend_curves",
+      "template_name": "平滑趋势曲线",
+      "category": "trend_time_series",
+      "score": 0.27,
+      "matched_keywords": [
+        "趋势",
+        "比较"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_003/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_003/平滑趋势曲线.py",
+      "catalog_order": 87
+    },
+    {
+      "template_id": "trd_composite_line_bar_dual_axis",
+      "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+      "category": "trend_time_series",
+      "score": 0.27,
+      "matched_keywords": [
+        "趋势",
+        "复合时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 复合时间序列",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_004/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_004/折线图、条形图和双Y轴的复合时间序列图.py",
+      "catalog_order": 88
+    }
+  ],
+  "warnings": []
+}
+
+innovation_risk {
+  "original_request": "按计划做创新实验；使用modelviz-skill，全部英文标注。",
+  "candidate_count": 8,
+  "total_templates": 89,
+  "candidates": [
+    {
+      "template_id": "cmp_3d_ribbon_chart",
+      "template_name": "3D条带图",
+      "category": "comparison_ranking",
+      "score": 0.48,
+      "matched_keywords": [
+        "趋势",
+        "比较",
+        "复合时间序列",
+        "多指标时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较, 复合时间序列, 多指标时间序列",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_013/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_013/3D条带图.py",
+      "catalog_order": 16
+    },
+    {
+      "template_id": "trd_dual_axis_bar_line",
+      "template_name": "双Y轴柱状折线时间序列图",
+      "category": "trend_time_series",
+      "score": 0.48,
+      "matched_keywords": [
+        "趋势",
+        "比较",
+        "复合时间序列",
+        "多指标时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较, 复合时间序列, 多指标时间序列",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_001/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_001/双Y轴柱状折线时间序列图.py",
+      "catalog_order": 85
+    },
+    {
+      "template_id": "trd_lag_correlation_analysis",
+      "template_name": "滞后相关性分析图",
+      "category": "trend_time_series",
+      "score": 0.48,
+      "matched_keywords": [
+        "趋势",
+        "比较",
+        "复合时间序列",
+        "多指标时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较, 复合时间序列, 多指标时间序列",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_002/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_002/滞后相关性分析图.py",
+      "catalog_order": 86
+    },
+    {
+      "template_id": "mpn_scatter_matrix_timeseries_regression",
+      "template_name": "散点矩阵与时间序列回归报告",
+      "category": "multi_panel_report",
+      "score": 0.345,
+      "matched_keywords": [
+        "趋势",
+        "复合时间序列",
+        "多指标时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [
+        "English labels",
+        "serif typography"
+      ],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 复合时间序列, 多指标时间序列；风格弱匹配：English labels, serif typography",
+      "preview": "templates/05_MPN_multi_panel_report/05_MPN_002/assets/preview.png",
+      "code_path": "templates/05_MPN_multi_panel_report/05_MPN_002/散点矩阵与时间序列回归报告.py",
+      "catalog_order": 29
+    },
+    {
+      "template_id": "cmp_flowing_percentage_stack",
+      "template_name": "流动趋势百分比堆叠图",
+      "category": "comparison_ranking",
+      "score": 0.27,
+      "matched_keywords": [
+        "趋势",
+        "比较"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_004/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_004/流动趋势百分比堆叠图.py",
+      "catalog_order": 7
+    },
+    {
+      "template_id": "cmp_3d_waterfall_distribution",
+      "template_name": "三维瀑布图",
+      "category": "comparison_ranking",
+      "score": 0.27,
+      "matched_keywords": [
+        "趋势",
+        "比较"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_014/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_014/三维瀑布图.py",
+      "catalog_order": 17
+    },
+    {
+      "template_id": "trd_smoothed_trend_curves",
+      "template_name": "平滑趋势曲线",
+      "category": "trend_time_series",
+      "score": 0.27,
+      "matched_keywords": [
+        "趋势",
+        "比较"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 比较",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_003/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_003/平滑趋势曲线.py",
+      "catalog_order": 87
+    },
+    {
+      "template_id": "trd_composite_line_bar_dual_axis",
+      "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+      "category": "trend_time_series",
+      "score": 0.27,
+      "matched_keywords": [
+        "趋势",
+        "复合时间序列"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：趋势, 复合时间序列",
+      "preview": "templates/12_TRD_trend_time_series/12_TRD_004/assets/preview.png",
+      "code_path": "templates/12_TRD_trend_time_series/12_TRD_004/折线图、条形图和双Y轴的复合时间序列图.py",
+      "catalog_order": 88
+    }
+  ],
+  "warnings": []
+}
+

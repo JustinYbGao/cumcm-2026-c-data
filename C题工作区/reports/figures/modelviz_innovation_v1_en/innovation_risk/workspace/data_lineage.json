@@ -1,0 +1,8 @@
+{
+  "source_files": {
+    "results/innovation/risk_models.json": "03b62111de2d9427fb11939f885c4578ed69fd3790a5fc5aa1cf5a1eb65741ad"
+  },
+  "plot_data_sha256": "f1be20c78cb666b2e5602392e77e3a33884c6613a973a2a9ed1aa48e2a1cb4ec",
+  "rows": 275,
+  "transformation": "Select evaluation dates and two recorded risk quantities; no smoothing or shifting"
+}

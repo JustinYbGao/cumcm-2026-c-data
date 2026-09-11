@@ -1,0 +1,11 @@
+{
+  "source_files": {
+    "results/q4/q43_all_A_ols/ledger.csv": "3a785be451b7bf9e5ee57d8a94fd1aef690a20e510a89cdc7baacc4d93ef9834",
+    "results/q4/price_forecasts.csv": "2cdb915df2f73cb4f06a1759da0a1be354e0e0ba51050abc8054efee450acad6"
+  },
+  "plot_data_sha256": "5ac2247cd8410f205ccdfebf57750fd25182ce785a1b3026f2eed0f39e7b567d",
+  "rows": 576,
+  "transformation": "Select four prescribed dates; join midnight forecast by original interval-start key",
+  "units": "CNY and CNY/kWh; only display-unit conversion",
+  "time_assumption": "Internal interval-end mapping, no shifting"
+}

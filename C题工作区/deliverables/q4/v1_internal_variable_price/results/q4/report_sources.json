@@ -1,0 +1,8 @@
+{
+  "results/q4/comparison.csv": "f9b9f04c983c705c2f4a1b3c4d47bbd615fb8502abdb3e0dfffba945e8234e89",
+  "results/q4/validation.json": "d212002632e1cd82a50ba544fa01586f5aa8ab2fe189185fe9c4e4ca7475d921",
+  "results/q4/independent_lp_audit.json": "7087b6d66a775ef39b5dbdd550ec5ec0e25b73416d0f7ee5068d46879daf422f",
+  "results/q4/price_forecasts.csv": "2cdb915df2f73cb4f06a1759da0a1be354e0e0ba51050abc8054efee450acad6",
+  "results/q4/price_models.json": "f655f16ad03bef2187da4c5a9a322607366e93ab022921a45aa6163ab48cb3c0",
+  "scripts/report_q4.py": "0d4c96273697a312d59b8ab4cfd6192b6cdd04be1765be8b1cd24f687bb8fb66"
+}

@@ -1,0 +1,79 @@
+{
+  "template_id": "cmp_gradient_single_factor_bar",
+  "template_name": "渐变单因子条形图",
+  "plot_goal": "Six matched cash effects with historical uncertainty and inventory diagnostic",
+  "selected_columns": [
+    "comparison_id",
+    "cash_gain_yuan",
+    "inventory_adjusted_gain_yuan",
+    "lower_95_yuan",
+    "upper_95_yuan"
+  ],
+  "column_mappings": [
+    {
+      "data_column": "comparison_id",
+      "template_role": "Category/time key",
+      "reason": ""
+    },
+    {
+      "data_column": "cash_gain_yuan",
+      "template_role": "Observed monetary quantity or saved interval endpoint",
+      "reason": ""
+    },
+    {
+      "data_column": "inventory_adjusted_gain_yuan",
+      "template_role": "Observed monetary quantity or saved interval endpoint",
+      "reason": ""
+    },
+    {
+      "data_column": "lower_95_yuan",
+      "template_role": "Observed monetary quantity or saved interval endpoint",
+      "reason": ""
+    },
+    {
+      "data_column": "upper_95_yuan",
+      "template_role": "Observed monetary quantity or saved interval endpoint",
+      "reason": ""
+    }
+  ],
+  "required_preprocessing": [
+    "Read CSV with exact floating-point parsing; convert yuan to thousand/million CNY for display only"
+  ],
+  "required_dependencies": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "layout_elements_to_preserve": [
+    "Matplotlib horizontal bars",
+    "Light-gray plotting background",
+    "Teal-blue gradient",
+    "Serif typography"
+  ],
+  "style_elements_to_preserve": [
+    "Matplotlib horizontal bars",
+    "Light-gray plotting background",
+    "Teal-blue gradient",
+    "Serif typography"
+  ],
+  "elements_allowed_to_change": [
+    "Use observed CNY effects and data-based axis limits",
+    "Remove demo significance flags and stars",
+    "Add saved percentile intervals and separately marked inventory diagnostic",
+    "Preserve frozen comparison order instead of ranking new winners",
+    "Use English text and PNG300dpi/SVG"
+  ],
+  "title_plan": "English title names comparison and period",
+  "axis_plan": "Clearly labeled currency scale and positive-savings direction",
+  "legend_plan": "Different shapes for cash/inventory; interval meaning explicit",
+  "annotation_plan": "Numerical observed effects; historical interval caveat; negative months retained",
+  "output_formats": [
+    "png",
+    "svg"
+  ],
+  "warnings": [
+    "Intervals are retrospective within-month block-resampling variability; no future guarantee or p-values"
+  ],
+  "can_proceed": true,
+  "clarification_question": ""
+}

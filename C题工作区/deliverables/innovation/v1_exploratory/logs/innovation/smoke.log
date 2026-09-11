@@ -1,0 +1,23 @@
+smoke pv_raw 2025-04-01 SOC 7481.32
+smoke pv_raw cost 83718.88
+smoke pv_bias 2025-04-01 SOC 7481.32
+smoke pv_bias cost 83950.19
+smoke risk_none 2025-04-01 SOC 1206.25
+smoke risk_none cost 125247.3
+smoke risk_fixed 2025-04-01 SOC 1206.25
+smoke risk_fixed cost 125247.3
+smoke risk_g05 2025-04-01 SOC 1206.25
+smoke risk_g05 cost 125247.3
+smoke risk_g10 2025-04-01 SOC 1206.25
+smoke risk_g10 cost 125247.3
+smoke gate_paid 2025-04-01 SOC 7481.32
+smoke gate_paid cost 83718.88
+smoke gate_q50 2025-04-01 SOC 7481.32
+smoke gate_q50 cost 83718.88
+smoke gate_q75 2025-04-01 SOC 7481.32
+smoke gate_q75 cost 83718.88
+smoke gate_frozen 2025-04-01 SOC 7481.32
+smoke gate_frozen cost 93066.46
+smoke gate_info_frozen 2025-04-01 SOC 7481.32
+smoke gate_info_frozen cost 93066.46
+All eleven smoke policies completed

@@ -1,0 +1,10 @@
+{
+  "passed": false,
+  "issues": [
+    "Summary overlaps legend",
+    "July negative label touches bottom axis",
+    "November savings label overlaps cost line"
+  ],
+  "inspection": "Actual rendered PNG viewed by assistant",
+  "inspected_png_sha256": "abb0bd81304f4d22e0743f17cfda52098b913308b04d4498067fb97c49001528"
+}

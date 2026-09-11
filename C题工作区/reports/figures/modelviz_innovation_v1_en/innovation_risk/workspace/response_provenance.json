@@ -1,0 +1,5 @@
+{
+  "author": "Codex current assistant",
+  "method": "Assistant-authored structured outputs via RunnableLambda; no external model API",
+  "visual_check": "Actual PNG inspection required"
+}

@@ -1,0 +1,63 @@
+{
+  "template_id": "trd_composite_line_bar_dual_axis",
+  "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "plot_goal": "Daily maximum prefix risk and causal quantile forecast with positive underprediction",
+  "selected_columns": [
+    "date",
+    "observed_prefix_kwh",
+    "forecast_prefix_kwh"
+  ],
+  "column_mappings": [
+    {
+      "data_column": "date",
+      "template_role": "Original time key",
+      "reason": ""
+    },
+    {
+      "data_column": "observed_prefix_kwh",
+      "template_role": "Observed series; subtraction and display-unit conversion only",
+      "reason": ""
+    },
+    {
+      "data_column": "forecast_prefix_kwh",
+      "template_role": "Observed series; subtraction and display-unit conversion only",
+      "reason": ""
+    }
+  ],
+  "required_preprocessing": [
+    "Read actual CSV; use original keys; convert CNY to million CNY or kWh to MWh for line display only"
+  ],
+  "required_dependencies": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "layout_elements_to_preserve": [
+    "Matplotlib line-bar composition",
+    "Shared time axes",
+    "Serif labels and panel letters"
+  ],
+  "style_elements_to_preserve": [
+    "Blue, orange and gray palette",
+    "Muted bars and clear foreground lines"
+  ],
+  "elements_allowed_to_change": [
+    "Replace demo series with real cost or price series",
+    "Repeat panels over prescribed dates",
+    "Remove fitted trends and significance claims",
+    "Use English-only visible strings"
+  ],
+  "title_plan": "English innovation, mechanism and evaluation-period titles",
+  "axis_plan": "Original calendar months/dates; currency/energy units; explicitly distinct secondary scales",
+  "legend_plan": "Distinct policy names, line styles and a separate upper legend band where needed",
+  "annotation_plan": "Actual total savings or observed coverage with internal/exploratory scope",
+  "output_formats": [
+    "png",
+    "svg"
+  ],
+  "warnings": [
+    "Risk is a feature, not required storage capacity or joint safety guarantee"
+  ],
+  "can_proceed": true,
+  "clarification_question": ""
+}

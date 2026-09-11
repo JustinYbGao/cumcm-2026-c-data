@@ -1,0 +1,106 @@
+{
+  "dataset_summary": "Three matched monthly ablations with exact costs and signed savings",
+  "observed_data_features": [],
+  "relevant_columns": [
+    "month",
+    "pv_raw",
+    "pv_bias",
+    "risk_none",
+    "risk_fixed",
+    "gate_paid",
+    "gate_q75"
+  ],
+  "candidate_comparisons": [
+    {
+      "template_id": "cmp_3d_ribbon_chart",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "3D, smoothing, percentages or correlation do not match direct observed series and difference bars"
+      ],
+      "data_compatibility": "Unnecessary encoding or transformation",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_dual_axis_bar_line",
+      "suitable": true,
+      "advantages": [
+        "Also supports line/bar time series"
+      ],
+      "limitations": [
+        "Less direct support for multiple line comparisons than selected composite template"
+      ],
+      "data_compatibility": "Exact field mapping",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_lag_correlation_analysis",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "3D, smoothing, percentages or correlation do not match direct observed series and difference bars"
+      ],
+      "data_compatibility": "Unnecessary encoding or transformation",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "mpn_scatter_matrix_timeseries_regression",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "3D, smoothing, percentages or correlation do not match direct observed series and difference bars"
+      ],
+      "data_compatibility": "Unnecessary encoding or transformation",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_flowing_percentage_stack",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "3D, smoothing, percentages or correlation do not match direct observed series and difference bars"
+      ],
+      "data_compatibility": "Unnecessary encoding or transformation",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_3d_waterfall_distribution",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "3D, smoothing, percentages or correlation do not match direct observed series and difference bars"
+      ],
+      "data_compatibility": "Unnecessary encoding or transformation",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_smoothed_trend_curves",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "3D, smoothing, percentages or correlation do not match direct observed series and difference bars"
+      ],
+      "data_compatibility": "Unnecessary encoding or transformation",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_composite_line_bar_dual_axis",
+      "suitable": true,
+      "advantages": [
+        "TRD_004 supports two direct line series and an auxiliary bar measure on the same original time keys. Preserve serif typography, muted blue/orange/gray and dual-axis line/bar grammar; repeat over three mechanisms only for monthly data. No fitted trend or smoothing."
+      ],
+      "limitations": [],
+      "data_compatibility": "Exact field mapping",
+      "requirement_compatibility": ""
+    }
+  ],
+  "selected_template_id": "trd_composite_line_bar_dual_axis",
+  "selected_template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "alternative_template_ids": [],
+  "selection_reason": "TRD_004 supports two direct line series and an auxiliary bar measure on the same original time keys. Preserve serif typography, muted blue/orange/gray and dual-axis line/bar grammar; repeat over three mechanisms only for monthly data. No fitted trend or smoothing.",
+  "data_support_reason": "Observed columns support exact time alignment, monetary differences or prefix forecast errors. No fabricated data.",
+  "data_warnings": [],
+  "confidence": 0.97,
+  "needs_clarification": false,
+  "clarification_question": ""
+}

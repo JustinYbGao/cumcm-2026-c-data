@@ -1,0 +1,9 @@
+{
+  "source_files": {
+    "results/robustness/paired_summary.csv": "83f3485d54d61083548668236de81eea9f42ef72e0b61d7abc98be36cfaea572",
+    "results/robustness/bootstrap_intervals.csv": "3fae7cc5d558f3430e5b7aa030d1e8ce70fda6daa8b959e7bbbcb8de2f49316d"
+  },
+  "plot_data_sha256": "024988955df542c9cc344f59678be05b6fa1d023f66b4a4d70f2cbc61d81a842",
+  "rows": 6,
+  "transformation": "April-Dec exact paired cash savings; seven-day within-month moving-block percentile interval; inventory value diagnostic"
+}

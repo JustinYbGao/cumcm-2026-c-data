@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "script_executed": true,
+  "dependencies_available": true,
+  "dependency_issues": [],
+  "image_exists": true,
+  "image_readable": true,
+  "image_width": 3300,
+  "image_height": 1950,
+  "file_size": 501726,
+  "pixel_variance": 1513.76,
+  "possible_blank_image": false,
+  "generated_formats": [
+    "png",
+    "svg"
+  ],
+  "execution_errors": [],
+  "warnings": [],
+  "issues": [],
+  "needs_repair": false
+}

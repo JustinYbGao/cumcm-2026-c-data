@@ -1,0 +1,8 @@
+{
+  "results/q4/q42_fixed/daily.csv": "ec5e13c12e2b6dee6118039df07232500840af678bf243251e053d6e72b24151",
+  "results/q4/q42_ols/daily.csv": "53a411c1114e7d316e8ac38ccca7642be1865ba952316f2d85221277ee3900d0",
+  "results/q4/q43_all_A_fixed/daily.csv": "d9b35caff2319d09505518907cf576eafef1cd3f2ddc25c373439a2245ae8cd9",
+  "results/q4/q43_all_A_ols/daily.csv": "76c8ec0b9aac0763118638c24a63d9a4faea419ea0393360f41ab2cd9f747e86",
+  "results/q4/q43_all_A_ols/ledger.csv": "3a785be451b7bf9e5ee57d8a94fd1aef690a20e510a89cdc7baacc4d93ef9834",
+  "results/q4/price_forecasts.csv": "2cdb915df2f73cb4f06a1759da0a1be354e0e0ba51050abc8054efee450acad6"
+}

@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checks": {
+    "six_comparisons": true,
+    "complete_daily_pairs": true,
+    "main_scope_275_days": true,
+    "full_scope_334_days": true,
+    "gain_breakdown": true,
+    "daily_sign_counts": true,
+    "bootstrap_design": true,
+    "finite_outputs": true
+  },
+  "comparisons": 6,
+  "daily_rows": 2004,
+  "monthly_rows": 120,
+  "bootstrap_rows": 24,
+  "inventory_value_yuan_per_kwh": 0.6895775000000001,
+  "tie_tolerance_yuan": 1e-06,
+  "bootstrap": {
+    "replicates": 5000,
+    "seed": 20260910,
+    "moving_block_days": [
+      3,
+      7,
+      14
+    ],
+    "circular_control_days": [
+      7
+    ]
+  },
+  "interpretation": "Conditional retrospective resampling variability only; no future guarantee, fresh holdout, p-value, or distribution-free claim."
+}

@@ -1,0 +1,9 @@
+test_nonfinite_residual_does_not_pass (tests.test_robustness_audit.AuditBoundaries.test_nonfinite_residual_does_not_pass) ... ok
+test_settlement_uses_final_volume_and_actual_price (tests.test_robustness_audit.AuditBoundaries.test_settlement_uses_final_volume_and_actual_price) ... ok
+test_shape_mismatch_cannot_broadcast_to_success (tests.test_robustness_audit.AuditBoundaries.test_shape_mismatch_cannot_broadcast_to_success) ... ok
+test_table_preserves_declared_missing_values_and_booleans (tests.test_robustness_audit.AuditBoundaries.test_table_preserves_declared_missing_values_and_booleans) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.014s
+
+OK

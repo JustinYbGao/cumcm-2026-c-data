@@ -1,0 +1,60 @@
+FFFFF
+======================================================================
+FAIL: test_actual_settlement_uses_actual_not_forecast_price (test_q4.Q4Tests.test_actual_settlement_uses_actual_not_forecast_price)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q4.py", line 59, in test_actual_settlement_uses_actual_not_forecast_price
+    billed=self.module().bill(frame,'A')
+           ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q4.py", line 17, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q4'),'Q4 implementation missing')
+AssertionError: unexpectedly None : Q4 implementation missing
+
+======================================================================
+FAIL: test_constant_price_forecast (test_q4.Q4Tests.test_constant_price_forecast)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q4.py", line 34, in test_constant_price_forecast
+    forecast,meta=self.module().forecast_price(history,issue,self.config())
+                  ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q4.py", line 17, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q4'),'Q4 implementation missing')
+AssertionError: unexpectedly None : Q4 implementation missing
+
+======================================================================
+FAIL: test_forecast_rejects_future_actual (test_q4.Q4Tests.test_forecast_rejects_future_actual)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q4.py", line 29, in test_forecast_rejects_future_actual
+    self.module().forecast_price(self.data(),pd.Timestamp('2025-02-01'),self.config())
+    ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q4.py", line 17, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q4'),'Q4 implementation missing')
+AssertionError: unexpectedly None : Q4 implementation missing
+
+======================================================================
+FAIL: test_intraday_completed_interval_is_included (test_q4.Q4Tests.test_intraday_completed_interval_is_included)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q4.py", line 42, in test_intraday_completed_interval_is_included
+    before,_=self.module().forecast_price(history,issue,self.config())
+             ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q4.py", line 17, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q4'),'Q4 implementation missing')
+AssertionError: unexpectedly None : Q4 implementation missing
+
+======================================================================
+FAIL: test_past_only_forecast_has_exact_horizon (test_q4.Q4Tests.test_past_only_forecast_has_exact_horizon)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q4.py", line 50, in test_past_only_forecast_has_exact_horizon
+    predicted,meta=self.module().forecast_price(data.loc[data.interval_end<=issue],issue,self.config())
+                   ^^^^^^^^^^^^^
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_q4.py", line 17, in module
+    self.assertIsNotNone(importlib.util.find_spec('run_q4'),'Q4 implementation missing')
+AssertionError: unexpectedly None : Q4 implementation missing
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (failures=5)

@@ -1,0 +1,22 @@
+{
+  "original_request": "按计划做创新实验；使用modelviz-skill，全部英文标注。",
+  "goal": "比较创新实验月度费用及节省时间序列",
+  "functional_keywords": [
+    "趋势",
+    "比较",
+    "复合时间序列",
+    "多指标时间序列"
+  ],
+  "chart_types": [],
+  "style_keywords": [
+    "English labels",
+    "serif typography"
+  ],
+  "use_case": "论文正文",
+  "negative_requirements": [
+    "No Chinese text in figures"
+  ],
+  "explicit_template": false,
+  "is_ambiguous": false,
+  "clarification_question": ""
+}

@@ -1,0 +1,7 @@
+{
+  "n": 275,
+  "alpha": 0.75,
+  "coverage": 0.7345454545454545,
+  "pinball_loss_kwh": 489.2062489483476,
+  "negative_clipped_forecasts": 2
+}

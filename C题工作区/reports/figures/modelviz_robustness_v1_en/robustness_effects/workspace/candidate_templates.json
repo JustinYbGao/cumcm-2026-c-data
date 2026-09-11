@@ -1,0 +1,169 @@
+{
+  "original_request": "新的敏感性鲁棒性测试也要；modelviz-skill；全部英文标注。",
+  "candidate_count": 8,
+  "total_templates": 89,
+  "candidates": [
+    {
+      "template_id": "cmp_gradient_single_factor_bar",
+      "template_name": "渐变单因子条形图",
+      "category": "comparison_ranking",
+      "score": 0.405,
+      "matched_keywords": [
+        "比较",
+        "排序",
+        "条形图"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [
+        "English labels",
+        "serif typography"
+      ],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：比较, 排序, 条形图；风格弱匹配：English labels, serif typography",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_005/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_005/渐变单因子条形图.py",
+      "catalog_order": 8
+    },
+    {
+      "template_id": "cmp_circular_barplot",
+      "template_name": "环状条形图",
+      "category": "comparison_ranking",
+      "score": 0.375,
+      "matched_keywords": [
+        "比较",
+        "排序",
+        "条形图"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：比较, 排序, 条形图",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_001/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_001/环状条形图.py",
+      "catalog_order": 4
+    },
+    {
+      "template_id": "rel_bar_association_matrix",
+      "template_name": "横向条形图与关联矩阵组合图",
+      "category": "relationship_correlation",
+      "score": 0.315,
+      "matched_keywords": [
+        "比较",
+        "排序",
+        "条形图"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：比较, 排序, 条形图",
+      "preview": "templates/09_REL_relationship_correlation/09_REL_011/assets/preview.png",
+      "code_path": "templates/09_REL_relationship_correlation/09_REL_011/横向条形图与关联矩阵组合图.py",
+      "catalog_order": 55
+    },
+    {
+      "template_id": "cmp_correlation_stacked_bar",
+      "template_name": "相关性分析堆叠条形图",
+      "category": "comparison_ranking",
+      "score": 0.27,
+      "matched_keywords": [
+        "比较",
+        "条形图"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：比较, 条形图",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_003/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_003/相关性分析堆叠条形图.py",
+      "catalog_order": 6
+    },
+    {
+      "template_id": "cmp_horizontal_percentage_stack",
+      "template_name": "横轴百分比堆叠图",
+      "category": "comparison_ranking",
+      "score": 0.27,
+      "matched_keywords": [
+        "比较",
+        "条形图"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：比较, 条形图",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_006/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_006/横轴百分比堆叠图.py",
+      "catalog_order": 9
+    },
+    {
+      "template_id": "cmp_radial_stacked_bar",
+      "template_name": "径向堆叠图",
+      "category": "comparison_ranking",
+      "score": 0.27,
+      "matched_keywords": [
+        "比较",
+        "条形图"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：比较, 条形图",
+      "preview": "templates/02_CMP_comparison_ranking/02_CMP_011/assets/preview.png",
+      "code_path": "templates/02_CMP_comparison_ranking/02_CMP_011/径向堆叠图.py",
+      "catalog_order": 14
+    },
+    {
+      "template_id": "prd_grouped_regression_fit",
+      "template_name": "多组别回归拟合图",
+      "category": "prediction_evaluation",
+      "score": 0.24,
+      "matched_keywords": [
+        "比较",
+        "不确定性"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [
+        "English labels",
+        "serif typography"
+      ],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：比较, 不确定性；风格弱匹配：English labels, serif typography",
+      "preview": "templates/08_PRD_prediction_evaluation/08_PRD_004/assets/preview.png",
+      "code_path": "templates/08_PRD_prediction_evaluation/08_PRD_004/多组别回归拟合图.py",
+      "catalog_order": 38
+    },
+    {
+      "template_id": "clu_pcoa_permanova",
+      "template_name": "PCoA分析图",
+      "category": "clustering_reduction",
+      "score": 0.21,
+      "matched_keywords": [
+        "比较",
+        "排序"
+      ],
+      "matched_synonyms": [],
+      "matched_chart_types": [],
+      "matched_use_cases": [],
+      "matched_styles": [],
+      "penalties": [],
+      "candidate_reason": "功能关键词匹配：比较, 排序",
+      "preview": "templates/01_CLU_clustering_reduction/01_CLU_003/assets/preview.png",
+      "code_path": "templates/01_CLU_clustering_reduction/01_CLU_003/PCoA分析图.py",
+      "catalog_order": 2
+    }
+  ],
+  "warnings": []
+}

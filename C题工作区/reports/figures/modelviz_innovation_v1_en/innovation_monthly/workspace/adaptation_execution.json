@@ -1,0 +1,140 @@
+{
+  "success": true,
+  "adaptation_plan": {
+    "template_id": "trd_composite_line_bar_dual_axis",
+    "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+    "plot_goal": "Three matched monthly ablations with exact costs and signed savings",
+    "selected_columns": [
+      "month",
+      "pv_raw",
+      "pv_bias",
+      "risk_none",
+      "risk_fixed",
+      "gate_paid",
+      "gate_q75"
+    ],
+    "column_mappings": [
+      {
+        "data_column": "month",
+        "template_role": "Original time key",
+        "reason": ""
+      },
+      {
+        "data_column": "pv_raw",
+        "template_role": "Observed series; subtraction and display-unit conversion only",
+        "reason": ""
+      },
+      {
+        "data_column": "pv_bias",
+        "template_role": "Observed series; subtraction and display-unit conversion only",
+        "reason": ""
+      },
+      {
+        "data_column": "risk_none",
+        "template_role": "Observed series; subtraction and display-unit conversion only",
+        "reason": ""
+      },
+      {
+        "data_column": "risk_fixed",
+        "template_role": "Observed series; subtraction and display-unit conversion only",
+        "reason": ""
+      },
+      {
+        "data_column": "gate_paid",
+        "template_role": "Observed series; subtraction and display-unit conversion only",
+        "reason": ""
+      },
+      {
+        "data_column": "gate_q75",
+        "template_role": "Observed series; subtraction and display-unit conversion only",
+        "reason": ""
+      }
+    ],
+    "required_preprocessing": [
+      "Read actual CSV; use original keys; convert CNY to million CNY or kWh to MWh for line display only"
+    ],
+    "required_dependencies": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "layout_elements_to_preserve": [
+      "Matplotlib line-bar composition",
+      "Shared time axes",
+      "Serif labels and panel letters"
+    ],
+    "style_elements_to_preserve": [
+      "Blue, orange and gray palette",
+      "Muted bars and clear foreground lines"
+    ],
+    "elements_allowed_to_change": [
+      "Replace demo series with real cost or price series",
+      "Repeat panels over prescribed dates",
+      "Remove fitted trends and significance claims",
+      "Use English-only visible strings"
+    ],
+    "title_plan": "English innovation, mechanism and evaluation-period titles",
+    "axis_plan": "Original calendar months/dates; currency/energy units; explicitly distinct secondary scales",
+    "legend_plan": "Distinct policy names, line styles and a separate upper legend band where needed",
+    "annotation_plan": "Actual total savings or observed coverage with internal/exploratory scope",
+    "output_formats": [
+      "png",
+      "svg"
+    ],
+    "warnings": [
+      "No statistical safety guarantee; panel C gate is an unselected predeclared ablation"
+    ],
+    "can_proceed": true,
+    "clarification_question": ""
+  },
+  "adaptation_result": {
+    "adapted_code": "\"\"\"Real monthly ablations in the TRD_004 line/bar visual grammar.\"\"\"\nimport sys\nfrom pathlib import Path\nimport numpy as np\nimport pandas as pd\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.lines import Line2D\nfrom matplotlib.patches import Patch\n\npath=Path(sys.argv[1]);out=Path(sys.argv[2]);out.mkdir(parents=True,exist_ok=True)\nf=pd.read_csv(path);x=np.arange(len(f));months=pd.to_datetime(f.month).dt.strftime('%b')\nplt.rcParams.update({'font.family':'DejaVu Serif','font.size':10,'axes.spines.top':False,'axes.spines.right':False,'svg.fonttype':'none'})\nfig,axes=plt.subplots(3,1,figsize=(11,9),sharex=True);fig.subplots_adjust(left=.10,right=.88,top=.86,bottom=.12,hspace=.36)\nblue='#3B6C8E';orange='#CB8B52';gray='#676D73'\npairs=[('pv_raw','pv_bias','A  |  PV bias correction'),('risk_none','risk_fixed','B  |  Fixed reserve (2400 kWh)'),('gate_paid','gate_q75','C  |  Reliability gate (alpha = 0.75)')]\nfor ax,(base,candidate,title) in zip(axes,pairs):\n    saving=f[base]-f[candidate];other=ax.twinx();other.spines['top'].set_visible(False)\n    ax.plot(x,f[base]/1e6,color=gray,lw=1.7,ls='--',marker='o',ms=3)\n    ax.plot(x,f[candidate]/1e6,color=blue,lw=1.6,marker='o',ms=3)\n    other.bar(x,saving,color=orange,alpha=.32,width=.56,zorder=0);other.axhline(0,color=orange,lw=.7,alpha=.6)\n    scale=max(1.,float(np.abs(saving).max())*1.25);other.set_ylim(-scale,scale)\n    ax.set_ylabel('Actual cost (million CNY)');other.set_ylabel('Savings (CNY)',color='#9C6337')\n    ax.set_title(title,loc='left',fontsize=11,pad=7);ax.grid(axis='y',alpha=.16)\n    ax.text(.99,1.045,f'Total savings: {saving.sum():,.2f} CNY',transform=ax.transAxes,ha='right',va='bottom',fontsize=9)\n    ax.set_zorder(other.get_zorder()+1);ax.patch.set_visible(False)\naxes[-1].set_xticks(x,months);axes[-1].set_xlabel('Evaluation month in 2025')\nfig.suptitle('Innovation ablations: small gains and negative results',y=.96,fontsize=15)\nfig.legend(handles=[Line2D([],[],color=gray,ls='--',label='Matched baseline'),Line2D([],[],color=blue,label='Candidate'),Patch(color=orange,alpha=.32,label='Baseline minus candidate')],loc='upper center',bbox_to_anchor=(.5,.918),ncol=3,frameon=False)\nfig.text(.1,.046,'Same realized tariff within each panel. Positive bars indicate savings; each right axis has its own scale.',fontsize=8)\nfig.text(.1,.027,'Predeclared ablations; panel C was not selected in March. Exploratory internal results, April–December.',fontsize=8)\nfig.savefig(out/'chart.png',dpi=300);fig.savefig(out/'chart.svg');plt.close(fig)\n",
+    "changes_summary": [
+      "TRD_004 supports two direct line series and an auxiliary bar measure on the same original time keys. Preserve serif typography, muted blue/orange/gray and dual-axis line/bar grammar; repeat over three mechanisms only for monthly data. No fitted trend or smoothing."
+    ],
+    "preserved_style_elements": [
+      "Matplotlib line-bar composition",
+      "Shared time axes",
+      "Serif labels and panel letters",
+      "Blue, orange and gray palette",
+      "Muted bars and clear foreground lines"
+    ],
+    "changed_elements": [
+      "Replace demo series with real cost or price series",
+      "Repeat panels over prescribed dates",
+      "Remove fitted trends and significance claims",
+      "Use English-only visible strings"
+    ],
+    "data_columns_used": [
+      "month",
+      "pv_raw",
+      "pv_bias",
+      "risk_none",
+      "risk_fixed",
+      "gate_paid",
+      "gate_q75"
+    ],
+    "dependencies_used": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "additional_dependencies_requested": [],
+    "assumptions": [
+      "Historical evaluation; forecasts use completed observations only; all visible text English"
+    ],
+    "warnings": []
+  },
+  "execution_result": {
+    "success": true,
+    "return_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "generated_files": [
+      "/Users/justingao/Documents/CUMCM/C题工作区/reports/figures/modelviz_innovation_v1_en/innovation_monthly/outputs/chart.svg",
+      "/Users/justingao/Documents/CUMCM/C题工作区/reports/figures/modelviz_innovation_v1_en/innovation_monthly/outputs/chart.png"
+    ],
+    "execution_time": 0.5407,
+    "error_type": ""
+  }
+}

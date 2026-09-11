@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "sample_count": 36,
+  "max_milp_minus_lp_yuan": 2.9103830456733704e-11,
+  "max_primal_violation": 1.8189894035458565e-12,
+  "method": "Independent scipy sparse matrix formulation reused from Q3, forecast prices from each Q4 version; same HiGHS algorithm family, not independent vendor"
+}

@@ -1,0 +1,87 @@
+{
+  "template_id": "trd_composite_line_bar_dual_axis",
+  "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "plot_goal": "Three matched monthly ablations with exact costs and signed savings",
+  "selected_columns": [
+    "month",
+    "pv_raw",
+    "pv_bias",
+    "risk_none",
+    "risk_fixed",
+    "gate_paid",
+    "gate_q75"
+  ],
+  "column_mappings": [
+    {
+      "data_column": "month",
+      "template_role": "Original time key",
+      "reason": ""
+    },
+    {
+      "data_column": "pv_raw",
+      "template_role": "Observed series; subtraction and display-unit conversion only",
+      "reason": ""
+    },
+    {
+      "data_column": "pv_bias",
+      "template_role": "Observed series; subtraction and display-unit conversion only",
+      "reason": ""
+    },
+    {
+      "data_column": "risk_none",
+      "template_role": "Observed series; subtraction and display-unit conversion only",
+      "reason": ""
+    },
+    {
+      "data_column": "risk_fixed",
+      "template_role": "Observed series; subtraction and display-unit conversion only",
+      "reason": ""
+    },
+    {
+      "data_column": "gate_paid",
+      "template_role": "Observed series; subtraction and display-unit conversion only",
+      "reason": ""
+    },
+    {
+      "data_column": "gate_q75",
+      "template_role": "Observed series; subtraction and display-unit conversion only",
+      "reason": ""
+    }
+  ],
+  "required_preprocessing": [
+    "Read actual CSV; use original keys; convert CNY to million CNY or kWh to MWh for line display only"
+  ],
+  "required_dependencies": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "layout_elements_to_preserve": [
+    "Matplotlib line-bar composition",
+    "Shared time axes",
+    "Serif labels and panel letters"
+  ],
+  "style_elements_to_preserve": [
+    "Blue, orange and gray palette",
+    "Muted bars and clear foreground lines"
+  ],
+  "elements_allowed_to_change": [
+    "Replace demo series with real cost or price series",
+    "Repeat panels over prescribed dates",
+    "Remove fitted trends and significance claims",
+    "Use English-only visible strings"
+  ],
+  "title_plan": "English innovation, mechanism and evaluation-period titles",
+  "axis_plan": "Original calendar months/dates; currency/energy units; explicitly distinct secondary scales",
+  "legend_plan": "Distinct policy names, line styles and a separate upper legend band where needed",
+  "annotation_plan": "Actual total savings or observed coverage with internal/exploratory scope",
+  "output_formats": [
+    "png",
+    "svg"
+  ],
+  "warnings": [
+    "No statistical safety guarantee; panel C gate is an unselected predeclared ablation"
+  ],
+  "can_proceed": true,
+  "clarification_question": ""
+}

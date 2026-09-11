@@ -1,0 +1,17 @@
+{
+  "package": "v1_exploratory",
+  "file_count": 388,
+  "extract_all_parts_into_one_directory": true,
+  "archives": [
+    {
+      "file": "v1_exploratory.part01.zip",
+      "bytes": 72173948,
+      "sha256": "56c530acf505c653bccb5415a037e05949613488afac0ba57131c1bb4eabb2fe"
+    },
+    {
+      "file": "v1_exploratory.part02.zip",
+      "bytes": 33290256,
+      "sha256": "1fe4396c9431e41b27e759f9b4bf1c88b2867e8b220a57d4b290e49f845673cb"
+    }
+  ]
+}

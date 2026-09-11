@@ -1,0 +1,13 @@
+{
+  "source_files": {
+    "results/q4/q42_fixed/daily.csv": "ec5e13c12e2b6dee6118039df07232500840af678bf243251e053d6e72b24151",
+    "results/q4/q42_ols/daily.csv": "53a411c1114e7d316e8ac38ccca7642be1865ba952316f2d85221277ee3900d0",
+    "results/q4/q43_all_A_fixed/daily.csv": "d9b35caff2319d09505518907cf576eafef1cd3f2ddc25c373439a2245ae8cd9",
+    "results/q4/q43_all_A_ols/daily.csv": "76c8ec0b9aac0763118638c24a63d9a4faea419ea0393360f41ab2cd9f747e86"
+  },
+  "plot_data_sha256": "99b128fc426f0cb23b6ad24da8f33718e977d9842acdfcb37fccacf3ca1b02d9",
+  "rows": 11,
+  "transformation": "Sum actual bills by original calendar month; derive fixed-policy minus OLS-policy cost",
+  "units": "CNY and CNY/kWh; only display-unit conversion",
+  "time_assumption": "Internal interval-end mapping, no shifting"
+}

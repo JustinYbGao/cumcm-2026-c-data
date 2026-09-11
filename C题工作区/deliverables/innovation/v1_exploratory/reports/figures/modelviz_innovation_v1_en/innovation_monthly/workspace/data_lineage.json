@@ -1,0 +1,18 @@
+{
+  "source_files": {
+    "results/innovation/evaluation/gate_frozen/daily.csv": "3846a9c798ee5ae3d0af406cffed3867e2c6f0f947dcebb0513a45826adb7ede",
+    "results/innovation/evaluation/gate_info_frozen/daily.csv": "3846a9c798ee5ae3d0af406cffed3867e2c6f0f947dcebb0513a45826adb7ede",
+    "results/innovation/evaluation/gate_paid/daily.csv": "f022aff6908600bc3fa5a6a7ccb5da2d9e848f8419a86b54470669af5aa18ab6",
+    "results/innovation/evaluation/gate_q50/daily.csv": "dc62e56eb81a6ec3732a07f1cb803d3d3b828dfb91f1941f8539d238ae900a69",
+    "results/innovation/evaluation/gate_q75/daily.csv": "c0d64e1958d6a6f3da0940c0139015be64b557848d442d030a6695f91f880806",
+    "results/innovation/evaluation/pv_bias/daily.csv": "660b71428b1a33d5e193f82c9410510c5e7e61b678ee8d7f7eef0e1a5d094416",
+    "results/innovation/evaluation/pv_raw/daily.csv": "c522651fd8509b5c059bd94f5b53ef0c6c60abc6534f7dd285b14d87a8e249c9",
+    "results/innovation/evaluation/risk_fixed/daily.csv": "0a9e38d165c0504efea02df1e73b644de2f5c367b8b844bf0790bfabf919b4f0",
+    "results/innovation/evaluation/risk_g05/daily.csv": "7a22d3e7d681094aab713c74b209d618f7db19a93d6380b84a4e03d9f846b7d4",
+    "results/innovation/evaluation/risk_g10/daily.csv": "f69e09ce2d936e86a08eab08b15c5c9aeaf99fedc8897c4ed70fd5925e5e1c68",
+    "results/innovation/evaluation/risk_none/daily.csv": "77457bf041dc955deef936600dc09a898584fae48861fb90662580678eeb0040"
+  },
+  "plot_data_sha256": "8289530696de7b905883e5a3149ab4b55e2ab3cbe0adfbabcbeacb7fbd58558e",
+  "rows": 9,
+  "transformation": "Monthly exact actual-bill sums"
+}

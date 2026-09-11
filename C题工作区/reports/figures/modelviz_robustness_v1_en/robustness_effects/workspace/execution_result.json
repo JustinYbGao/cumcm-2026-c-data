@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "return_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "generated_files": [
+    "/Users/justingao/Documents/CUMCM/C题工作区/reports/figures/modelviz_robustness_v1_en/robustness_effects/outputs/chart.svg",
+    "/Users/justingao/Documents/CUMCM/C题工作区/reports/figures/modelviz_robustness_v1_en/robustness_effects/outputs/chart.png"
+  ],
+  "execution_time": 0.4567,
+  "error_type": ""
+}

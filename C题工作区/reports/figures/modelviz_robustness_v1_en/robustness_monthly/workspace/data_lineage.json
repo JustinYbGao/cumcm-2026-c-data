@@ -1,0 +1,8 @@
+{
+  "source_files": {
+    "results/robustness/paired_monthly.csv": "fe023004975387d4868958a99f514e451c5ec5b29d4bb3082fd3ecc7118f64d1"
+  },
+  "plot_data_sha256": "9f6e1076ec027a31def59d422ffface7a20997457ab3c27346091cf854696ba9",
+  "rows": 9,
+  "transformation": "Main 28-day policy monthly actual costs and signed savings, no shift or smoothing"
+}

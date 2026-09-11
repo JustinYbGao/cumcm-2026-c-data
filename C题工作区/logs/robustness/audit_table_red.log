@@ -1,0 +1,22 @@
+test_nonfinite_residual_does_not_pass (tests.test_robustness_audit.AuditBoundaries.test_nonfinite_residual_does_not_pass) ... ok
+test_settlement_uses_final_volume_and_actual_price (tests.test_robustness_audit.AuditBoundaries.test_settlement_uses_final_volume_and_actual_price) ... ok
+test_shape_mismatch_cannot_broadcast_to_success (tests.test_robustness_audit.AuditBoundaries.test_shape_mismatch_cannot_broadcast_to_success) ... ok
+test_table_preserves_declared_missing_values_and_booleans (tests.test_robustness_audit.AuditBoundaries.test_table_preserves_declared_missing_values_and_booleans) ... ERROR
+
+======================================================================
+ERROR: test_table_preserves_declared_missing_values_and_booleans (tests.test_robustness_audit.AuditBoundaries.test_table_preserves_declared_missing_values_and_booleans)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/justingao/Documents/CUMCM/C题工作区/tests/test_robustness_audit.py", line 29, in test_table_preserves_declared_missing_values_and_booleans
+    audit.frame('table', frame, frame.copy())
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/validate_robustness.py", line 62, in frame
+    self.close(key+'_'+col, actual[col], expected[col], 1e-5)
+  File "/Users/justingao/Documents/CUMCM/C题工作区/scripts/validate_robustness.py", line 51, in close
+    residual = float(np.max(np.abs(a-b), initial=0))
+                                   ~^~
+TypeError: numpy boolean subtract, the `-` operator, is not supported, use the bitwise_xor, the `^` operator, or the logical_xor function instead.
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.015s
+
+FAILED (errors=1)

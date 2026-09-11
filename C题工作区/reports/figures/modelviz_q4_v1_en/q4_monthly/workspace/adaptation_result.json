@@ -1,0 +1,38 @@
+{
+  "adapted_code": "\"\"\"ModelViz TRD_004 line-bar grammar and blue/orange palette, without fitted trends.\"\"\"\nimport json\nfrom pathlib import Path\nimport sys\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nimport numpy as np\nimport pandas as pd\n\nplt.rcParams.update({'font.family':['Times New Roman','DejaVu Serif'],'font.size':11,\n    'axes.spines.top':False,'axes.spines.right':False,'legend.frameon':False,\n    'svg.hashsalt':'cumcm-q4-v1-en','savefig.facecolor':'white'})\nd=pd.read_csv(sys.argv[1],float_precision='round_trip');out=Path(sys.argv[2]);out.mkdir(parents=True,exist_ok=True)\nassert d.month.tolist()==[f'2025-{i:02d}' for i in range(2,13)]\nx=np.arange(11)\nfig,ax=plt.subplots(2,1,figsize=(10.5,7.5),sharex=True,layout='constrained',gridspec_kw={'height_ratios':[2,1]})\nfig.suptitle('Problem 4 | Value of adapting to variable prices',x=.075,y=.985,ha='left',fontsize=17)\nfor fixed,ols,color,label in [('q42_fixed','q42_ols','#1f78b4','Day-ahead'),('q43_all_A_fixed','q43_all_A_ols','#d87928','All updates, A')]:\n    ax[0].plot(x,d[fixed+'_cost_yuan']/1e6,ls='--',lw=1.3,color=color,alpha=.65,label=label+': fixed-price input')\n    ax[0].plot(x,d[ols+'_cost_yuan']/1e6,'o-',ms=4,lw=1.5,color=color,label=label+': OLS price input')\nax[0].set(ylabel='Actual cost (million CNY)',ylim=(0,float(d.filter(like='_cost_yuan').to_numpy().max()/1e6)*1.3))\nax[0].set_title('(a) All policies are billed at actual variable prices',loc='left',fontsize=12,pad=8)\nax[0].legend(ncol=2,loc='upper left',fontsize=10)\nax[1].bar(x-.17,d.q42_saving_yuan/1000,.32,color='#a6cee3',label='Day-ahead')\nax[1].bar(x+.17,d.q43_saving_yuan/1000,.32,color='#fdbf6f',label='All updates, A')\nax[1].axhline(0,color='#555555',lw=.8)\nax[1].set(ylabel='Savings (thousand CNY)',xlabel='Month (2025)',xticks=x,xticklabels=['Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'])\nax[1].set_title('(b) Fixed-price input minus OLS input: positive means lower actual cost',loc='left',fontsize=11.5,pad=8)\nfor a in ax:a.set_axisbelow(True);a.grid(axis='y',color='#d5dbe0',lw=.5,alpha=.7);a.set_xlim(-.65,10.65)\nfig.get_layout_engine().set(rect=(0,.08,1,.85))\nfig.text(.075,.025,'Same tariff for settlement; only the planning price input changes within each branch. Internal assumptions.',fontsize=9.5,color='#59636f')\nfor ext in ['png','svg']:fig.savefig(out/f'chart.{ext}',dpi=300,metadata={'Date':None} if ext=='svg' else None)\nplt.close(fig)\n(out.parent/'workspace/plot_facts.json').write_text(json.dumps({'monthly_rows':11,'q42_saving_yuan':float(d.q42_saving_yuan.sum()),'q43_saving_yuan':float(d.q43_saving_yuan.sum())},indent=2)+'\\n')\n",
+  "changes_summary": [
+    "TRD_004 provides a shared time axis, distinct line series and auxiliary bars. Preserve serif typography and blue/orange/gray colors; omit unsupported trend regressions. Use a lower savings panel for monthly costs or repeated daily panels with a separate error scale for prices."
+  ],
+  "preserved_style_elements": [
+    "Matplotlib line-bar composition",
+    "Shared time axes",
+    "Serif labels and panel letters",
+    "Blue, orange and gray palette",
+    "Muted bars and clear foreground lines"
+  ],
+  "changed_elements": [
+    "Replace demo series with real cost or price series",
+    "Repeat panels over prescribed dates",
+    "Remove fitted trends and significance claims",
+    "Use English-only visible strings"
+  ],
+  "data_columns_used": [
+    "month",
+    "q42_fixed_cost_yuan",
+    "q42_ols_cost_yuan",
+    "q43_all_A_fixed_cost_yuan",
+    "q43_all_A_ols_cost_yuan",
+    "q42_saving_yuan",
+    "q43_saving_yuan"
+  ],
+  "dependencies_used": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "additional_dependencies_requested": [],
+  "assumptions": [
+    "All actual prices are for settlement or retrospective evaluation, not future information in causal fits."
+  ],
+  "warnings": []
+}

@@ -1,0 +1,126 @@
+{
+  "success": true,
+  "adaptation_plan": {
+    "template_id": "trd_composite_line_bar_dual_axis",
+    "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+    "plot_goal": "576 intervals on four prescribed dates; actual and causal price forecasts with signed forecast errors",
+    "selected_columns": [
+      "date",
+      "slot_id",
+      "price_actual_yuan_per_kwh",
+      "price_midnight_yuan_per_kwh",
+      "price_forecast_yuan_per_kwh"
+    ],
+    "column_mappings": [
+      {
+        "data_column": "date",
+        "template_role": "One physical time-series panel per prescribed date",
+        "reason": ""
+      },
+      {
+        "data_column": "slot_id",
+        "template_role": "Original ten-minute interval boundaries",
+        "reason": ""
+      },
+      {
+        "data_column": "price_actual_yuan_per_kwh",
+        "template_role": "Actual price dark line, evaluation only",
+        "reason": ""
+      },
+      {
+        "data_column": "price_midnight_yuan_per_kwh",
+        "template_role": "Midnight forecast dashed orange line",
+        "reason": ""
+      },
+      {
+        "data_column": "price_forecast_yuan_per_kwh",
+        "template_role": "Active forecast blue line and error versus actual on secondary axis",
+        "reason": ""
+      }
+    ],
+    "required_preprocessing": [
+      "Read fixed plotting copy; divide CNY by 1e6/1000 only for display; derive signed errors from observed columns"
+    ],
+    "required_dependencies": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "layout_elements_to_preserve": [
+      "Matplotlib line-bar composition",
+      "Shared time axes",
+      "Serif labels and panel letters"
+    ],
+    "style_elements_to_preserve": [
+      "Blue, orange and gray palette",
+      "Muted bars and clear foreground lines"
+    ],
+    "elements_allowed_to_change": [
+      "Replace demo series with real cost or price series",
+      "Repeat panels over prescribed dates",
+      "Remove fitted trends and significance claims",
+      "Use English-only visible strings"
+    ],
+    "title_plan": "English problem and scenario titles",
+    "axis_plan": "Calendar months or original hour boundaries; currency and price units",
+    "legend_plan": "Distinct policy names, line styles and a separate upper legend band where needed",
+    "annotation_plan": "Same realized tariff; causal inputs and internal assumptions",
+    "output_formats": [
+      "png",
+      "svg"
+    ],
+    "warnings": [
+      "Internal assumptions; perfect-price policies omitted from plots of implementable policies."
+    ],
+    "can_proceed": true,
+    "clarification_question": ""
+  },
+  "adaptation_result": {
+    "adapted_code": "\"\"\"ModelViz TRD_004: line series and auxiliary error bars on four prescribed days.\"\"\"\nimport json\nfrom pathlib import Path\nimport sys\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.lines import Line2D\nfrom matplotlib.patches import Patch\nimport numpy as np\nimport pandas as pd\n\nplt.rcParams.update({'font.family':['Times New Roman','DejaVu Serif'],'font.size':10,\n    'axes.spines.top':False,'legend.frameon':False,'svg.hashsalt':'cumcm-q4-v1-en','savefig.facecolor':'white'})\nd=pd.read_csv(sys.argv[1],float_precision='round_trip');out=Path(sys.argv[2]);out.mkdir(parents=True,exist_ok=True)\ndates=['2025-03-20','2025-06-21','2025-09-23','2025-12-21'];assert len(d)==576\nfig,axes=plt.subplots(4,1,figsize=(11,10),sharex=True,layout='constrained')\nfig.suptitle('Problem 4 | Causal price forecasts and realized prices',x=.07,y=.988,ha='left',fontsize=17)\nlimit=float(d[['price_actual_yuan_per_kwh','price_midnight_yuan_per_kwh','price_forecast_yuan_per_kwh']].to_numpy().max())*1.12\nerrlim=max(.02,float(np.abs(d.price_forecast_yuan_per_kwh-d.price_actual_yuan_per_kwh).max())*1.15)\nfacts=[]\nfor i,date in enumerate(dates):\n    f=d.loc[d.date==date];edge=np.arange(145)/6;x=edge[:-1];a=axes[i];t=a.twinx()\n    residual=f.price_forecast_yuan_per_kwh-f.price_actual_yuan_per_kwh\n    t.bar(x,residual,width=1/6,align='edge',color='#c7dce9',alpha=.6,zorder=0)\n    t.axhline(0,color='#aab5bf',lw=.5);t.set(ylabel='Forecast error (CNY/kWh)',ylim=(-errlim,errlim))\n    a.set_zorder(t.get_zorder()+1);a.patch.set_visible(False)\n    for column,color,style,lw in [('price_midnight_yuan_per_kwh','#d87928','--',1),('price_forecast_yuan_per_kwh','#1f78b4','-',1.4),('price_actual_yuan_per_kwh','#454b52','-',1)]:\n        a.stairs(f[column].to_numpy(),edge,color=color,linestyle=style,lw=lw)\n    a.set(ylabel='Price (CNY/kWh)',ylim=(0,limit),xlim=(0,24),xticks=[0,6,12,18,24])\n    a.set_title(f'({chr(97+i)}) {date}',loc='left',fontsize=12,pad=7)\n    for hour in [6,12,18]:a.axvline(hour,color='#9ca7b1',ls=':',lw=.7)\n    a.grid(axis='y',color='#d5dbe0',lw=.5,alpha=.6)\n    facts.append({'date':date,'active_price_mae_yuan_per_kwh':float(residual.abs().mean())})\naxes[-1].set_xlabel('Hour of day')\nhandles=[Line2D([],[],color='#454b52',label='Actual price'),Line2D([],[],color='#d87928',ls='--',label='Midnight OLS forecast'),\n    Line2D([],[],color='#1f78b4',label='Active OLS forecast'),Patch(color='#c7dce9',label='Active forecast minus actual')]\nfig.legend(handles=handles,ncol=4,loc='upper left',bbox_to_anchor=(.065,.952),fontsize=10)\nfig.get_layout_engine().set(rect=(0,.06,1,.825))\nfig.text(.07,.022,'All-update A policy. Actual prices are shown only for evaluation; future prices never enter the OLS fit.',fontsize=10,color='#59636f')\nfor ext in ['png','svg']:fig.savefig(out/f'chart.{ext}',dpi=300,metadata={'Date':None} if ext=='svg' else None)\nplt.close(fig)\n(out.parent/'workspace/plot_facts.json').write_text(json.dumps({'rows':576,'dates':facts},indent=2)+'\\n')\n",
+    "changes_summary": [
+      "TRD_004 provides a shared time axis, distinct line series and auxiliary bars. Preserve serif typography and blue/orange/gray colors; omit unsupported trend regressions. Use a lower savings panel for monthly costs or repeated daily panels with a separate error scale for prices."
+    ],
+    "preserved_style_elements": [
+      "Matplotlib line-bar composition",
+      "Shared time axes",
+      "Serif labels and panel letters",
+      "Blue, orange and gray palette",
+      "Muted bars and clear foreground lines"
+    ],
+    "changed_elements": [
+      "Replace demo series with real cost or price series",
+      "Repeat panels over prescribed dates",
+      "Remove fitted trends and significance claims",
+      "Use English-only visible strings"
+    ],
+    "data_columns_used": [
+      "date",
+      "slot_id",
+      "price_actual_yuan_per_kwh",
+      "price_midnight_yuan_per_kwh",
+      "price_forecast_yuan_per_kwh"
+    ],
+    "dependencies_used": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "additional_dependencies_requested": [],
+    "assumptions": [
+      "All actual prices are for settlement or retrospective evaluation, not future information in causal fits."
+    ],
+    "warnings": []
+  },
+  "execution_result": {
+    "success": true,
+    "return_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "generated_files": [
+      "/Users/justingao/Documents/CUMCM/C题工作区/reports/figures/modelviz_q4_v1_en/q4_prices/outputs/chart.svg",
+      "/Users/justingao/Documents/CUMCM/C题工作区/reports/figures/modelviz_q4_v1_en/q4_prices/outputs/chart.png"
+    ],
+    "execution_time": 0.9026,
+    "error_type": ""
+  }
+}

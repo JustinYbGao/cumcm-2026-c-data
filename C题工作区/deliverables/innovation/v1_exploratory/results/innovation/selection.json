@@ -1,0 +1,28 @@
+{
+  "selected": {
+    "pv": "pv_bias",
+    "risk": "risk_fixed",
+    "gate": "gate_paid"
+  },
+  "eligible": {
+    "pv": [
+      "pv_raw",
+      "pv_bias"
+    ],
+    "risk": [
+      "risk_none",
+      "risk_fixed",
+      "risk_g05",
+      "risk_g10"
+    ],
+    "gate": [
+      "gate_paid",
+      "gate_q50",
+      "gate_q75"
+    ]
+  },
+  "available_time": "2025-04-01 00:00:00",
+  "criterion": "Minimum March actual bill; ordered simpler candidate breaks exact ties",
+  "scores_sha256": "c7145017124d26457fe8a938ddd9ecd8b9675045db0b77eb047ac4f0cd9610da",
+  "selected_before_evaluation": true
+}

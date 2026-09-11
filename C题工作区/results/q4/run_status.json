@@ -1,0 +1,19 @@
+{
+  "completed": true,
+  "inputs_unchanged": true,
+  "policies": [
+    "q42_fixed",
+    "q42_ols",
+    "q42_perfect",
+    "q43_no_update_ols",
+    "q43_all_A_ols",
+    "q43_all_B_ols",
+    "q43_all_A_hold0",
+    "q43_all_A_fixed",
+    "q43_all_A_perfect"
+  ],
+  "evaluation_days": 334,
+  "formal_excel_exported": false,
+  "q4_executed": true,
+  "future_actual_price_only_in_labeled_perfect_branches": true
+}

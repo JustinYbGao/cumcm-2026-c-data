@@ -1,0 +1,30 @@
+{
+  "status": "internal_working_assumptions_not_submission",
+  "evaluation_start": "2025-02-01",
+  "evaluation_end": "2025-12-31",
+  "price_information": "Unknown future price by default; observed only at interval_end <= decision_time. Perfect-price branches are explicitly hypothetical.",
+  "settlement": "All contracted and emergency energy settled at target interval actual price; final effective quantity billed once relative to midnight original. No advance price locking.",
+  "price_model": "OLS intercept, daily Fourier K=2, price lag1day and lag7day, six weekday indicators; last 28 completed days/intervals, re-fit at each allowed decision",
+  "price_training_days": 28,
+  "price_harmonics": 2,
+  "price_floor_yuan_per_kwh": 0.000001,
+  "price_floor_basis": "Predeclared numerical positivity floor, never estimated from future minima; record every activation",
+  "forecasts": "Q4-2 inherits frozen Q2 selected load and PV forecasts. Q4-3 inherits same load and exact issue PV from Appendix 3. No load or PV re-selection.",
+  "initial_state": "Common Q2 January warmup February 1 state; actual state continues independently per policy",
+  "terminal_state": "Each forecast horizon ends at today's midnight actual state; extra baseline assumption, actual state never reset",
+  "surplus": "Allow free disposal of paid grid and PV, no sale; Q3 planner/executor unchanged",
+  "inventory_proxy": "Known Appendix1 mean fixed price times discharge efficiency, not realized future average price",
+  "policies": {
+    "q42_fixed": {"branch": "4-2", "price": "fixed", "rule": "A", "update_hours": []},
+    "q42_ols": {"branch": "4-2", "price": "ols", "rule": "A", "update_hours": []},
+    "q42_perfect": {"branch": "4-2", "price": "perfect", "rule": "A", "update_hours": []},
+    "q43_no_update_ols": {"branch": "4-3", "price": "ols", "rule": "A", "update_hours": []},
+    "q43_all_A_ols": {"branch": "4-3", "price": "ols", "rule": "A", "update_hours": [6, 12, 18]},
+    "q43_all_B_ols": {"branch": "4-3", "price": "ols", "rule": "B", "update_hours": [6, 12, 18]},
+    "q43_all_A_hold0": {"branch": "4-3", "price": "hold0", "rule": "A", "update_hours": [6, 12, 18]},
+    "q43_all_A_fixed": {"branch": "4-3", "price": "fixed", "rule": "A", "update_hours": [6, 12, 18]},
+    "q43_all_A_perfect": {"branch": "4-3", "price": "perfect", "rule": "A", "update_hours": [6, 12, 18]}
+  },
+  "design_disclosure": "Policy families fixed before this Q4 calculation, after Q2/Q3 annual results were inspected; retrospective evaluation, no full-year retuning or claim of untouched test selection",
+  "formal_excel_exported": false
+}

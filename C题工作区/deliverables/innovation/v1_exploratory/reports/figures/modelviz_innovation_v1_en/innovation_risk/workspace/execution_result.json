@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "return_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "generated_files": [
+    "/Users/justingao/Documents/CUMCM/C题工作区/reports/figures/modelviz_innovation_v1_en/innovation_risk/outputs/chart.svg",
+    "/Users/justingao/Documents/CUMCM/C题工作区/reports/figures/modelviz_innovation_v1_en/innovation_risk/outputs/chart.png"
+  ],
+  "execution_time": 0.5078,
+  "error_type": ""
+}

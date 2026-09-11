@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "sample_count": 36,
+  "case_counts": {
+    "gate_paid:hold": 12,
+    "gate_paid:update": 12,
+    "pv_raw:selected": 4,
+    "risk_fixed:selected": 4,
+    "risk_g10:selected": 4
+  },
+  "minimum_milp_minus_lp_yuan": -3.456079866737127e-11,
+  "maximum_relaxation_gap_yuan": 226.84556174751924,
+  "mean_relaxation_gap_yuan": 6.7093568538709105,
+  "maximum_lp_primal_violation": 1.8189894035458565e-12,
+  "analytical_self_check_objective_yuan": 9.0,
+  "method": "Independent SciPy sparse-matrix LP relaxation using the HiGHS algorithm family; no planner modules imported.",
+  "scope": "Four evaluation dates; risk_fixed/risk_g10/PV raw at 00:00 and gate_paid hold/update at 06:00, 12:00, 18:00."
+}

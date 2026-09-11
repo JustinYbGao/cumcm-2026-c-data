@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "scripts/validate_q4.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "scripts/audit_q4_lp.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_q4.py"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "source": "papers/assembly_v1",
+  "change": "Markdown absolute file/image links converted to relative repository links only; model and result text unchanged",
+  "all_relative_links_resolve": true,
+  "files": {
+    "00_README_装配顺序.md": {
+      "source_sha256": "7485f6830bd16cc64b73fc9ba4dafa43359cf05eaf05198f7cda085f0a0fe857",
+      "reading_copy_sha256": "df981740f62d19cc847a4cccd436f6ffba58974a2c5ab645cbae1792926cfdaf"
+    },
+    "appendix_A_required_tables.md": {
+      "source_sha256": "84b6c183fc17cc089d553e7610ccaed738d6ba00e3616e3a694d6157a87b732f",
+      "reading_copy_sha256": "5c62c96a30de7bb045c3d05195d7d10a3f350fc10f8e500792f93ffdc04ef226"
+    },
+    "appendix_B_innovation_archive.md": {
+      "source_sha256": "14e79ea3e023ef13d62997eacb7cceba37ce45e8570ff6573acffa41354fb4a1",
+      "reading_copy_sha256": "83a956516a8d1f047e65c2da32189a28294f98c8861ed58c32d9690010dca866"
+    },
+    "assembled_review_draft.md": {
+      "source_sha256": "c50f083b7796b0b2655c9b5f913c4a9ae3425d5dbd2877572cacc03e00c449e0",
+      "reading_copy_sha256": "eaa290eb6f447b805b752a3fcae6d8a6d8d2a1dc1bb2edde87dba40945b505af"
+    },
+    "part01_problem_analysis.md": {
+      "source_sha256": "fe3cf4ee600947793eb3235c77179bcf49e809a17a6ef352639f1dcedb17f162",
+      "reading_copy_sha256": "fe3cf4ee600947793eb3235c77179bcf49e809a17a6ef352639f1dcedb17f162"
+    },
+    "part02_assumptions_notation.md": {
+      "source_sha256": "fc9310165ae97c407f75a2ce8bc6120abb9bb6ca831d4efbcfaf388bb5c0803b",
+      "reading_copy_sha256": "fc9310165ae97c407f75a2ce8bc6120abb9bb6ca831d4efbcfaf388bb5c0803b"
+    },
+    "part03_shared_model.md": {
+      "source_sha256": "3dfe86bf8507a90e36eba8b07ba8bedba1e0a9a0dca4d5e60502137a34577683",
+      "reading_copy_sha256": "3dfe86bf8507a90e36eba8b07ba8bedba1e0a9a0dca4d5e60502137a34577683"
+    },
+    "part04_q1.md": {
+      "source_sha256": "a67ce9fc6d4fc4ceb990df29f7cea21eb11619caabce37bd39c5caf238282822",
+      "reading_copy_sha256": "1595e37b26d460a66d2fd8b2000a4dcbe510fc416c1f49438a97b1ac787a48b4"
+    },
+    "part05_q2.md": {
+      "source_sha256": "c2db4ad3933aa6944268e4d3425b764c6120e12da25ebce499b39f2204727201",
+      "reading_copy_sha256": "6a98814c8d6373ff0486c58226143bdaf3fc00a9f9ec76857872765a788bf39b"
+    },
+    "part06_q3.md": {
+      "source_sha256": "51512a0bd814729d7f99433972d94fbd4896cf60b7e8a1348e3516dda24c3323",
+      "reading_copy_sha256": "3345a348fd21dc242c1d8e404c6a5de4db209142d4dc306cc3954397cd39289b"
+    },
+    "part07_q4.md": {
+      "source_sha256": "463fc48310965a02077564e98a811dcbaaf9670b6f763db0add79c672574ce89",
+      "reading_copy_sha256": "c9b6aa48e0ea961ae3423100c53ae4e2e2fa74be5d41d0a3fc2f51f6396fc8ba"
+    },
+    "part08_validation_sensitivity.md": {
+      "source_sha256": "246d6a9542ccf79ce38fef82dbbf68497ecdfb01249923c5a954d2277d345572",
+      "reading_copy_sha256": "6966a3149746f3d657de456abf2fd54308b43bd80daf034c5680bbe7d80e0978"
+    },
+    "part09_evaluation_limits.md": {
+      "source_sha256": "7d237f9a3b524f51528006ab7cb4d31df2ece2886c6d8007a419d8e420a59594",
+      "reading_copy_sha256": "7d237f9a3b524f51528006ab7cb4d31df2ece2886c6d8007a419d8e420a59594"
+    },
+    "part10_references_reproduction.md": {
+      "source_sha256": "b126e2d904af2db5e9f85704b3ea50846368eb0be7b47f5f64f8ad6be83bd681",
+      "reading_copy_sha256": "b126e2d904af2db5e9f85704b3ea50846368eb0be7b47f5f64f8ad6be83bd681"
+    }
+  }
+}

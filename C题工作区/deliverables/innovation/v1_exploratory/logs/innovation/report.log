@@ -1,0 +1,13 @@
+          policy  total_cost_yuan   saving_yuan  march_selected
+          pv_raw     1.143814e+07  0.000000e+00           False
+         pv_bias     1.139199e+07  4.614649e+04            True
+       risk_none     1.375037e+07  0.000000e+00           False
+      risk_fixed     1.375036e+07  5.030658e+00            True
+        risk_g05     1.375036e+07  5.030658e+00           False
+        risk_g10     1.375037e+07  2.362229e+00           False
+       gate_paid     1.143805e+07  0.000000e+00            True
+        gate_q50     1.144033e+07 -2.279990e+03           False
+        gate_q75     1.157363e+07 -1.355787e+05           False
+     gate_frozen     1.323953e+07 -1.801479e+06           False
+gate_info_frozen     1.323953e+07 -1.801479e+06           False
+Risk: {'n': 275, 'alpha': 0.75, 'coverage': 0.7345454545454545, 'pinball_loss_kwh': 489.2062489483476, 'negative_clipped_forecasts': 2}

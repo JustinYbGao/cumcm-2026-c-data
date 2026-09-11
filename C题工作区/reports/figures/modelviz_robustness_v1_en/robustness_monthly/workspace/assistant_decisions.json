@@ -1,0 +1,188 @@
+{
+  "selection": {
+    "dataset_summary": "Nine monthly costs of raw and corrected PV, with signed savings",
+    "relevant_columns": [
+      "month",
+      "raw_total_cost_yuan",
+      "corrected_total_cost_yuan",
+      "cash_gain_yuan"
+    ],
+    "candidate_comparisons": [
+      {
+        "template_id": "cmp_3d_ribbon_chart",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+        ],
+        "data_compatibility": "Does not represent the required direct paired effects"
+      },
+      {
+        "template_id": "trd_dual_axis_bar_line",
+        "suitable": true,
+        "advantages": [
+          "Supports time-aligned lines and bars"
+        ],
+        "limitations": [
+          "Single-series line/bar variant offers less direct support for two costs"
+        ],
+        "data_compatibility": "Exact mapped columns"
+      },
+      {
+        "template_id": "trd_lag_correlation_analysis",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+        ],
+        "data_compatibility": "Does not represent the required direct paired effects"
+      },
+      {
+        "template_id": "mpn_scatter_matrix_timeseries_regression",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+        ],
+        "data_compatibility": "Does not represent the required direct paired effects"
+      },
+      {
+        "template_id": "cmp_flowing_percentage_stack",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+        ],
+        "data_compatibility": "Does not represent the required direct paired effects"
+      },
+      {
+        "template_id": "cmp_3d_waterfall_distribution",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+        ],
+        "data_compatibility": "Does not represent the required direct paired effects"
+      },
+      {
+        "template_id": "trd_smoothed_trend_curves",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+        ],
+        "data_compatibility": "Does not represent the required direct paired effects"
+      },
+      {
+        "template_id": "trd_composite_line_bar_dual_axis",
+        "suitable": true,
+        "advantages": [
+          "TRD_004 encodes two actual monthly-cost lines and a signed-savings bar on an explicitly labeled secondary axis; no smoothing or data shifting."
+        ],
+        "limitations": [],
+        "data_compatibility": "Exact mapped columns"
+      }
+    ],
+    "selected_template_id": "trd_composite_line_bar_dual_axis",
+    "selected_template_name": "折线图、条形图和双Y轴的复合时间序列图",
+    "selection_reason": "TRD_004 encodes two actual monthly-cost lines and a signed-savings bar on an explicitly labeled secondary axis; no smoothing or data shifting.",
+    "data_support_reason": "Actual 6-row paired table and 9-row monthly table, no invented measurements or fitted distribution",
+    "confidence": 0.97
+  },
+  "plan": {
+    "template_id": "trd_composite_line_bar_dual_axis",
+    "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+    "plot_goal": "Nine monthly costs of raw and corrected PV, with signed savings",
+    "selected_columns": [
+      "month",
+      "raw_total_cost_yuan",
+      "corrected_total_cost_yuan",
+      "cash_gain_yuan"
+    ],
+    "column_mappings": [
+      {
+        "data_column": "month",
+        "template_role": "Category/time key"
+      },
+      {
+        "data_column": "raw_total_cost_yuan",
+        "template_role": "Observed monetary quantity or saved interval endpoint"
+      },
+      {
+        "data_column": "corrected_total_cost_yuan",
+        "template_role": "Observed monetary quantity or saved interval endpoint"
+      },
+      {
+        "data_column": "cash_gain_yuan",
+        "template_role": "Observed monetary quantity or saved interval endpoint"
+      }
+    ],
+    "required_preprocessing": [
+      "Read CSV with exact floating-point parsing; convert yuan to thousand/million CNY for display only"
+    ],
+    "required_dependencies": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "layout_elements_to_preserve": [
+      "Matplotlib line-bar composition",
+      "Shared time keys and separate scales",
+      "Muted blue/orange/gray palette",
+      "Serif typography"
+    ],
+    "style_elements_to_preserve": [
+      "Matplotlib line-bar composition",
+      "Shared time keys and separate scales",
+      "Muted blue/orange/gray palette",
+      "Serif typography"
+    ],
+    "elements_allowed_to_change": [
+      "Use exact monthly costs and signed difference",
+      "Preserve negative months",
+      "Use English text and PNG300dpi/SVG"
+    ],
+    "title_plan": "English title names comparison and period",
+    "axis_plan": "Clearly labeled currency scale and positive-savings direction",
+    "legend_plan": "Two policy lines and right-axis savings bars",
+    "annotation_plan": "Numerical observed effects; historical interval caveat; negative months retained",
+    "output_formats": [
+      "png",
+      "svg"
+    ],
+    "warnings": [
+      "Intervals are retrospective within-month block-resampling variability; no future guarantee or p-values"
+    ]
+  },
+  "adaptation": {
+    "changes_summary": [
+      "TRD_004 encodes two actual monthly-cost lines and a signed-savings bar on an explicitly labeled secondary axis; no smoothing or data shifting."
+    ],
+    "preserved_style_elements": [
+      "Matplotlib line-bar composition",
+      "Shared time keys and separate scales",
+      "Muted blue/orange/gray palette",
+      "Serif typography"
+    ],
+    "changed_elements": [
+      "Use exact monthly costs and signed difference",
+      "Preserve negative months",
+      "Use English text and PNG300dpi/SVG"
+    ],
+    "data_columns_used": [
+      "month",
+      "raw_total_cost_yuan",
+      "corrected_total_cost_yuan",
+      "cash_gain_yuan"
+    ],
+    "dependencies_used": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "additional_dependencies_requested": [],
+    "assumptions": [
+      "Each effect compares its own matched baseline; window28 remains main; all visible text English"
+    ]
+  }
+}

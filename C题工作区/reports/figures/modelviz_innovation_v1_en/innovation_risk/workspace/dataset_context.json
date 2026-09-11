@@ -1,0 +1,219 @@
+{
+  "file_name": "data.csv",
+  "file_type": "csv",
+  "sheet_name": null,
+  "row_count": 275,
+  "column_count": 3,
+  "column_names": [
+    "date",
+    "observed_prefix_kwh",
+    "forecast_prefix_kwh"
+  ],
+  "sample_records": [
+    {
+      "date": "2025-04-01",
+      "observed_prefix_kwh": 2404.0645489821563,
+      "forecast_prefix_kwh": 798.9912797627009
+    },
+    {
+      "date": "2025-04-02",
+      "observed_prefix_kwh": 1252.7656392553106,
+      "forecast_prefix_kwh": 1162.8515801422343
+    },
+    {
+      "date": "2025-04-03",
+      "observed_prefix_kwh": 0.0,
+      "forecast_prefix_kwh": 1248.8919944196982
+    },
+    {
+      "date": "2025-04-04",
+      "observed_prefix_kwh": 18.617212082802553,
+      "forecast_prefix_kwh": 1111.6162465252835
+    },
+    {
+      "date": "2025-04-05",
+      "observed_prefix_kwh": 937.4262593312014,
+      "forecast_prefix_kwh": 1060.502529154499
+    },
+    {
+      "date": "2025-04-06",
+      "observed_prefix_kwh": 18.83603981349995,
+      "forecast_prefix_kwh": 1278.6810404269931
+    },
+    {
+      "date": "2025-04-07",
+      "observed_prefix_kwh": 716.8880436809861,
+      "forecast_prefix_kwh": 1171.25296314383
+    },
+    {
+      "date": "2025-04-08",
+      "observed_prefix_kwh": 0.0,
+      "forecast_prefix_kwh": 1104.3431236064316
+    },
+    {
+      "date": "2025-04-09",
+      "observed_prefix_kwh": 2191.871543654319,
+      "forecast_prefix_kwh": 1147.8284748822407
+    },
+    {
+      "date": "2025-04-10",
+      "observed_prefix_kwh": 0.0,
+      "forecast_prefix_kwh": 1347.1712618901238
+    },
+    {
+      "date": "2025-04-11",
+      "observed_prefix_kwh": 0.0,
+      "forecast_prefix_kwh": 965.6266306198428
+    },
+    {
+      "date": "2025-04-12",
+      "observed_prefix_kwh": 716.6897801276973,
+      "forecast_prefix_kwh": 977.4917358660756
+    },
+    {
+      "date": "2025-04-13",
+      "observed_prefix_kwh": 566.0582899377905,
+      "forecast_prefix_kwh": 1357.706604674947
+    },
+    {
+      "date": "2025-04-14",
+      "observed_prefix_kwh": 279.8366399861402,
+      "forecast_prefix_kwh": 1335.4274476100554
+    },
+    {
+      "date": "2025-04-15",
+      "observed_prefix_kwh": 427.0642269052196,
+      "forecast_prefix_kwh": 805.1894012461414
+    },
+    {
+      "date": "2025-04-16",
+      "observed_prefix_kwh": 742.4073174296944,
+      "forecast_prefix_kwh": 761.7336515170139
+    },
+    {
+      "date": "2025-04-17",
+      "observed_prefix_kwh": 555.0687303013932,
+      "forecast_prefix_kwh": 790.9787238132091
+    },
+    {
+      "date": "2025-04-18",
+      "observed_prefix_kwh": 188.68253726900616,
+      "forecast_prefix_kwh": 699.2047466800157
+    },
+    {
+      "date": "2025-04-19",
+      "observed_prefix_kwh": 0.0,
+      "forecast_prefix_kwh": 698.6187603952029
+    },
+    {
+      "date": "2025-04-20",
+      "observed_prefix_kwh": 327.92832030451905,
+      "forecast_prefix_kwh": 743.9838843479305
+    }
+  ],
+  "head_records": [
+    {
+      "date": "2025-04-01",
+      "observed_prefix_kwh": 2404.0645489821563,
+      "forecast_prefix_kwh": 798.9912797627009
+    },
+    {
+      "date": "2025-04-02",
+      "observed_prefix_kwh": 1252.7656392553106,
+      "forecast_prefix_kwh": 1162.8515801422343
+    },
+    {
+      "date": "2025-04-03",
+      "observed_prefix_kwh": 0.0,
+      "forecast_prefix_kwh": 1248.8919944196982
+    },
+    {
+      "date": "2025-04-04",
+      "observed_prefix_kwh": 18.617212082802553,
+      "forecast_prefix_kwh": 1111.6162465252835
+    },
+    {
+      "date": "2025-04-05",
+      "observed_prefix_kwh": 937.4262593312014,
+      "forecast_prefix_kwh": 1060.502529154499
+    },
+    {
+      "date": "2025-04-06",
+      "observed_prefix_kwh": 18.83603981349995,
+      "forecast_prefix_kwh": 1278.6810404269931
+    },
+    {
+      "date": "2025-04-07",
+      "observed_prefix_kwh": 716.8880436809861,
+      "forecast_prefix_kwh": 1171.25296314383
+    },
+    {
+      "date": "2025-04-08",
+      "observed_prefix_kwh": 0.0,
+      "forecast_prefix_kwh": 1104.3431236064316
+    },
+    {
+      "date": "2025-04-09",
+      "observed_prefix_kwh": 2191.871543654319,
+      "forecast_prefix_kwh": 1147.8284748822407
+    },
+    {
+      "date": "2025-04-10",
+      "observed_prefix_kwh": 0.0,
+      "forecast_prefix_kwh": 1347.1712618901238
+    },
+    {
+      "date": "2025-04-11",
+      "observed_prefix_kwh": 0.0,
+      "forecast_prefix_kwh": 965.6266306198428
+    },
+    {
+      "date": "2025-04-12",
+      "observed_prefix_kwh": 716.6897801276973,
+      "forecast_prefix_kwh": 977.4917358660756
+    },
+    {
+      "date": "2025-04-13",
+      "observed_prefix_kwh": 566.0582899377905,
+      "forecast_prefix_kwh": 1357.706604674947
+    },
+    {
+      "date": "2025-04-14",
+      "observed_prefix_kwh": 279.8366399861402,
+      "forecast_prefix_kwh": 1335.4274476100554
+    },
+    {
+      "date": "2025-04-15",
+      "observed_prefix_kwh": 427.0642269052196,
+      "forecast_prefix_kwh": 805.1894012461414
+    },
+    {
+      "date": "2025-04-16",
+      "observed_prefix_kwh": 742.4073174296944,
+      "forecast_prefix_kwh": 761.7336515170139
+    },
+    {
+      "date": "2025-04-17",
+      "observed_prefix_kwh": 555.0687303013932,
+      "forecast_prefix_kwh": 790.9787238132091
+    },
+    {
+      "date": "2025-04-18",
+      "observed_prefix_kwh": 188.68253726900616,
+      "forecast_prefix_kwh": 699.2047466800157
+    },
+    {
+      "date": "2025-04-19",
+      "observed_prefix_kwh": 0.0,
+      "forecast_prefix_kwh": 698.6187603952029
+    },
+    {
+      "date": "2025-04-20",
+      "observed_prefix_kwh": 327.92832030451905,
+      "forecast_prefix_kwh": 743.9838843479305
+    }
+  ],
+  "sampled": false,
+  "sample_strategy": "数据行数 275 未超过阈值，提供前 20 行作为样例。",
+  "warnings": []
+}

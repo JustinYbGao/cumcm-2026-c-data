@@ -1,0 +1,4 @@
+policy,candidate_acceptances,nonzero_contract_changes,rejections,positive_local_replay_fraction,mean_threshold_yuan
+gate_paid,825,816,0,0.6872727272727273,2708.297601055935
+gate_q50,651,651,174,0.6763636363636364,795.6791963479201
+gate_q75,357,357,468,0.6642424242424242,2965.557177377797

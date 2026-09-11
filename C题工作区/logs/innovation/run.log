@@ -1,0 +1,155 @@
+calibration pv_raw 2025-02-01 SOC 7551.59
+calibration pv_raw 2025-03-01 SOC 7503.37
+calibration pv_raw cost 2334744.82
+calibration pv_bias 2025-02-01 SOC 7551.59
+calibration pv_bias 2025-03-01 SOC 7506.33
+calibration pv_bias cost 2324487.64
+calibration risk_none 2025-02-01 SOC 7209.96
+calibration risk_none 2025-03-01 SOC 3237.03
+calibration risk_none cost 2583457.03
+calibration risk_fixed 2025-02-01 SOC 7209.96
+calibration risk_fixed 2025-03-01 SOC 3250.93
+calibration risk_fixed cost 2583355.65
+calibration risk_g05 2025-02-01 SOC 7209.96
+calibration risk_g05 2025-03-01 SOC 3250.93
+calibration risk_g05 cost 2583355.65
+calibration risk_g10 2025-02-01 SOC 7209.96
+calibration risk_g10 2025-03-01 SOC 3250.93
+calibration risk_g10 cost 2583355.65
+calibration gate_paid 2025-02-01 SOC 7551.59
+calibration gate_paid 2025-03-01 SOC 7503.37
+calibration gate_paid cost 2334744.82
+calibration gate_q50 2025-02-01 SOC 7551.59
+calibration gate_q50 2025-03-01 SOC 7503.37
+calibration gate_q50 cost 2334886.43
+calibration gate_q75 2025-02-01 SOC 7551.59
+calibration gate_q75 2025-03-01 SOC 7503.37
+calibration gate_q75 cost 2349278.45
+calibration gate_frozen 2025-02-01 SOC 7524.6
+calibration gate_frozen 2025-03-01 SOC 6752.2
+calibration gate_frozen cost 2600431.63
+calibration gate_info_frozen 2025-02-01 SOC 7524.6
+calibration gate_info_frozen 2025-03-01 SOC 6752.2
+calibration gate_info_frozen cost 2600431.63
+evaluation pv_raw 2025-04-01 SOC 7481.32
+evaluation pv_raw 2025-05-01 SOC 5464.13
+evaluation pv_raw 2025-06-01 SOC 6767.8
+evaluation pv_raw 2025-07-01 SOC 9818.34
+evaluation pv_raw 2025-08-01 SOC 10653.96
+evaluation pv_raw 2025-09-01 SOC 10800.0
+evaluation pv_raw 2025-10-01 SOC 5908.05
+evaluation pv_raw 2025-11-01 SOC 6813.87
+evaluation pv_raw 2025-12-01 SOC 6812.94
+evaluation pv_raw cost 11438135.24
+evaluation pv_bias 2025-04-01 SOC 7481.32
+evaluation pv_bias 2025-05-01 SOC 5554.25
+evaluation pv_bias 2025-06-01 SOC 8898.8
+evaluation pv_bias 2025-07-01 SOC 9818.34
+evaluation pv_bias 2025-08-01 SOC 10693.36
+evaluation pv_bias 2025-09-01 SOC 10800.0
+evaluation pv_bias 2025-10-01 SOC 5655.4
+evaluation pv_bias 2025-11-01 SOC 6807.55
+evaluation pv_bias 2025-12-01 SOC 6736.03
+evaluation pv_bias cost 11391988.76
+evaluation risk_none 2025-04-01 SOC 1206.25
+evaluation risk_none 2025-05-01 SOC 1200.0
+evaluation risk_none 2025-06-01 SOC 1200.0
+evaluation risk_none 2025-07-01 SOC 4101.48
+evaluation risk_none 2025-08-01 SOC 4615.58
+evaluation risk_none 2025-09-01 SOC 5392.08
+evaluation risk_none 2025-10-01 SOC 2187.58
+evaluation risk_none 2025-11-01 SOC 1200.0
+evaluation risk_none 2025-12-01 SOC 1200.0
+evaluation risk_none cost 13750367.53
+evaluation risk_fixed 2025-04-01 SOC 1206.25
+evaluation risk_fixed 2025-05-01 SOC 1200.0
+evaluation risk_fixed 2025-06-01 SOC 1200.0
+evaluation risk_fixed 2025-07-01 SOC 4101.48
+evaluation risk_fixed 2025-08-01 SOC 4615.58
+evaluation risk_fixed 2025-09-01 SOC 5392.08
+evaluation risk_fixed 2025-10-01 SOC 2187.58
+evaluation risk_fixed 2025-11-01 SOC 1200.0
+evaluation risk_fixed 2025-12-01 SOC 1200.0
+evaluation risk_fixed cost 13750362.5
+evaluation risk_g05 2025-04-01 SOC 1206.25
+evaluation risk_g05 2025-05-01 SOC 1200.0
+evaluation risk_g05 2025-06-01 SOC 1200.0
+evaluation risk_g05 2025-07-01 SOC 4101.48
+evaluation risk_g05 2025-08-01 SOC 4615.58
+evaluation risk_g05 2025-09-01 SOC 5392.08
+evaluation risk_g05 2025-10-01 SOC 2187.58
+evaluation risk_g05 2025-11-01 SOC 1200.0
+evaluation risk_g05 2025-12-01 SOC 1200.0
+evaluation risk_g05 cost 13750362.5
+evaluation risk_g10 2025-04-01 SOC 1206.25
+evaluation risk_g10 2025-05-01 SOC 1200.0
+evaluation risk_g10 2025-06-01 SOC 1200.0
+evaluation risk_g10 2025-07-01 SOC 4101.48
+evaluation risk_g10 2025-08-01 SOC 4615.58
+evaluation risk_g10 2025-09-01 SOC 5392.08
+evaluation risk_g10 2025-10-01 SOC 2187.58
+evaluation risk_g10 2025-11-01 SOC 1200.0
+evaluation risk_g10 2025-12-01 SOC 1200.0
+evaluation risk_g10 cost 13750365.17
+evaluation gate_paid 2025-04-01 SOC 7481.32
+evaluation gate_paid 2025-05-01 SOC 5443.93
+evaluation gate_paid 2025-06-01 SOC 6805.22
+evaluation gate_paid 2025-07-01 SOC 9818.34
+evaluation gate_paid 2025-08-01 SOC 10653.96
+evaluation gate_paid 2025-09-01 SOC 10800.0
+evaluation gate_paid 2025-10-01 SOC 5903.67
+evaluation gate_paid 2025-11-01 SOC 6813.87
+evaluation gate_paid 2025-12-01 SOC 6727.98
+evaluation gate_paid cost 11438052.17
+evaluation gate_q50 2025-04-01 SOC 7481.32
+evaluation gate_q50 2025-05-01 SOC 5422.77
+evaluation gate_q50 2025-06-01 SOC 6803.09
+evaluation gate_q50 2025-07-01 SOC 9818.34
+evaluation gate_q50 2025-08-01 SOC 10653.96
+evaluation gate_q50 2025-09-01 SOC 10800.0
+evaluation gate_q50 2025-10-01 SOC 5903.67
+evaluation gate_q50 2025-11-01 SOC 6813.87
+evaluation gate_q50 2025-12-01 SOC 6727.98
+evaluation gate_q50 cost 11440332.16
+evaluation gate_q75 2025-04-01 SOC 7481.32
+evaluation gate_q75 2025-05-01 SOC 5447.55
+evaluation gate_q75 2025-06-01 SOC 6761.48
+evaluation gate_q75 2025-07-01 SOC 9818.34
+evaluation gate_q75 2025-08-01 SOC 10653.96
+evaluation gate_q75 2025-09-01 SOC 10800.0
+evaluation gate_q75 2025-10-01 SOC 5905.81
+evaluation gate_q75 2025-11-01 SOC 6813.87
+evaluation gate_q75 2025-12-01 SOC 6713.86
+evaluation gate_q75 cost 11573630.89
+evaluation gate_frozen 2025-04-01 SOC 7481.32
+evaluation gate_frozen 2025-05-01 SOC 5416.96
+evaluation gate_frozen 2025-06-01 SOC 5673.13
+evaluation gate_frozen 2025-07-01 SOC 8274.85
+evaluation gate_frozen 2025-08-01 SOC 9032.56
+evaluation gate_frozen 2025-09-01 SOC 10800.0
+evaluation gate_frozen 2025-10-01 SOC 5325.58
+evaluation gate_frozen 2025-11-01 SOC 4708.2
+evaluation gate_frozen 2025-12-01 SOC 4013.81
+evaluation gate_frozen cost 13239531.48
+evaluation gate_info_frozen 2025-04-01 SOC 7481.32
+evaluation gate_info_frozen 2025-05-01 SOC 5416.96
+evaluation gate_info_frozen 2025-06-01 SOC 5673.13
+evaluation gate_info_frozen 2025-07-01 SOC 8274.85
+evaluation gate_info_frozen 2025-08-01 SOC 9032.56
+evaluation gate_info_frozen 2025-09-01 SOC 10800.0
+evaluation gate_info_frozen 2025-10-01 SOC 5325.58
+evaluation gate_info_frozen 2025-11-01 SOC 4708.2
+evaluation gate_info_frozen 2025-12-01 SOC 4013.81
+evaluation gate_info_frozen cost 13239531.48
+          policy  total_cost_yuan  emergency_kwh  accepted_updates
+          pv_raw     1.143814e+07  115781.783236                 0
+         pv_bias     1.139199e+07  107231.288066                 0
+       risk_none     1.375037e+07  676738.389457                 0
+      risk_fixed     1.375036e+07  676735.970580                 0
+        risk_g05     1.375036e+07  676735.970580                 0
+        risk_g10     1.375037e+07  676735.970580                 0
+       gate_paid     1.143805e+07  115748.103000               825
+        gate_q50     1.144033e+07  119018.242572               651
+        gate_q75     1.157363e+07  145217.448236               357
+     gate_frozen     1.323953e+07  507500.070395                 0
+gate_info_frozen     1.323953e+07  507500.070395                 0

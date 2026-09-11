@@ -1,0 +1,30 @@
+{
+  "completed": true,
+  "state": "completed",
+  "inputs_unchanged": true,
+  "policies": [
+    "fixed_raw",
+    "fixed_w28",
+    "fixed_w14",
+    "fixed_w56",
+    "efficiency_raw",
+    "efficiency_w28",
+    "soft_raw",
+    "soft_w28",
+    "variable_raw",
+    "variable_w28"
+  ],
+  "policy_count": 10,
+  "evaluation_days_each": 334,
+  "evaluation_intervals_each": 48096,
+  "continuous_state_across_days": true,
+  "fixed_raw_expected_total_cost_yuan": 13772880.061223056,
+  "fixed_raw_observed_total_cost_yuan": 13772880.061223056,
+  "fixed_raw_difference_yuan": 0.0,
+  "baseline_matches": true,
+  "input_code_hashes_before_sha256": "134dbeaff96585a7cd91483a9774b9b281675f7f7b930b42b805dc98576148cd",
+  "input_code_hashes_after_sha256": "134dbeaff96585a7cd91483a9774b9b281675f7f7b930b42b805dc98576148cd",
+  "config_sha256": "1ebe2e37d86b75d956022c54258179662f913fd2071420bbdf2157e5cdb9241e",
+  "formal_excel_exported": false,
+  "retrospective": true
+}

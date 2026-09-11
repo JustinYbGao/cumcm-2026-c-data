@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "requirement_alignment": "All visible labels, legends, axes, dates and footnotes are English. Internal assumptions are disclosed.",
+  "data_expression_quality": "Monthly actual bills and signed paired savings; unsmoothed prescribed-day prices joined by original interval keys. Forecast overlap reflects data.",
+  "style_preservation": "Selected serif line-bar template grammar with muted blue/orange/gray palette retained.",
+  "readability": "Actual PNGs inspected; labels and curves are legible.",
+  "layout_quality": "Dedicated legend bands avoid overlap; no clipping observed in either figure.",
+  "color_quality": "Actual gray, OLS blue and comparator orange are distinguishable through line styles and paired bars.",
+  "issues": [],
+  "suggested_fixes": [],
+  "needs_repair": false,
+  "confidence": 0.98
+}

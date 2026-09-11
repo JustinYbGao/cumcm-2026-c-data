@@ -1,0 +1,20 @@
+{
+  "completed": true,
+  "inputs_unchanged": true,
+  "selection_unchanged": true,
+  "policies": [
+    "pv_raw",
+    "pv_bias",
+    "risk_none",
+    "risk_fixed",
+    "risk_g05",
+    "risk_g10",
+    "gate_paid",
+    "gate_q50",
+    "gate_q75",
+    "gate_frozen",
+    "gate_info_frozen"
+  ],
+  "evaluation_days": 275,
+  "formal_excel_exported": false
+}

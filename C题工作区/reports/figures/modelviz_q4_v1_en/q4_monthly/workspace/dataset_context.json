@@ -1,0 +1,221 @@
+{
+  "file_name": "data.csv",
+  "file_type": "csv",
+  "sheet_name": null,
+  "row_count": 11,
+  "column_count": 7,
+  "column_names": [
+    "month",
+    "q42_fixed_cost_yuan",
+    "q42_ols_cost_yuan",
+    "q43_all_A_fixed_cost_yuan",
+    "q43_all_A_ols_cost_yuan",
+    "q42_saving_yuan",
+    "q43_saving_yuan"
+  ],
+  "sample_records": [
+    {
+      "month": "2025-02",
+      "q42_fixed_cost_yuan": 1339651.6551406337,
+      "q42_ols_cost_yuan": 1343213.5788555923,
+      "q43_all_A_fixed_cost_yuan": 1271142.7753684137,
+      "q43_all_A_ols_cost_yuan": 1274978.0194994651,
+      "q42_saving_yuan": -3561.923714958597,
+      "q43_saving_yuan": -3835.2441310514696
+    },
+    {
+      "month": "2025-03",
+      "q42_fixed_cost_yuan": 1274710.7679235556,
+      "q42_ols_cost_yuan": 1272745.4276086793,
+      "q43_all_A_fixed_cost_yuan": 1115760.8917125282,
+      "q43_all_A_ols_cost_yuan": 1116640.513433991,
+      "q42_saving_yuan": 1965.340314876288,
+      "q43_saving_yuan": -879.6217214628123
+    },
+    {
+      "month": "2025-04",
+      "q42_fixed_cost_yuan": 1086898.9234084878,
+      "q42_ols_cost_yuan": 1090327.9417673245,
+      "q43_all_A_fixed_cost_yuan": 920896.7878403404,
+      "q43_all_A_ols_cost_yuan": 922756.9154845228,
+      "q42_saving_yuan": -3429.018358836649,
+      "q43_saving_yuan": -1860.1276441824157
+    },
+    {
+      "month": "2025-05",
+      "q42_fixed_cost_yuan": 1123702.6205059404,
+      "q42_ols_cost_yuan": 1126505.7419273525,
+      "q43_all_A_fixed_cost_yuan": 972051.6384067718,
+      "q43_all_A_ols_cost_yuan": 976697.749591719,
+      "q42_saving_yuan": -2803.121421412099,
+      "q43_saving_yuan": -4646.111184947193
+    },
+    {
+      "month": "2025-06",
+      "q42_fixed_cost_yuan": 1795764.9925275643,
+      "q42_ols_cost_yuan": 1792441.922248498,
+      "q43_all_A_fixed_cost_yuan": 1423825.7017493194,
+      "q43_all_A_ols_cost_yuan": 1422422.070184401,
+      "q42_saving_yuan": 3323.070279066218,
+      "q43_saving_yuan": 1403.6315649184398
+    },
+    {
+      "month": "2025-07",
+      "q42_fixed_cost_yuan": 1986730.677633206,
+      "q42_ols_cost_yuan": 1957871.9536409632,
+      "q43_all_A_fixed_cost_yuan": 1792142.349633462,
+      "q43_all_A_ols_cost_yuan": 1787303.344073384,
+      "q42_saving_yuan": 28858.72399224248,
+      "q43_saving_yuan": 4839.00556007796
+    },
+    {
+      "month": "2025-08",
+      "q42_fixed_cost_yuan": 1710964.3644382537,
+      "q42_ols_cost_yuan": 1687247.3714529728,
+      "q43_all_A_fixed_cost_yuan": 1435743.8138966446,
+      "q43_all_A_ols_cost_yuan": 1434562.9326268667,
+      "q42_saving_yuan": 23716.992985280696,
+      "q43_saving_yuan": 1180.8812697778922
+    },
+    {
+      "month": "2025-09",
+      "q42_fixed_cost_yuan": 1561373.2075603022,
+      "q42_ols_cost_yuan": 1564103.448529994,
+      "q43_all_A_fixed_cost_yuan": 1194708.8269392163,
+      "q43_all_A_ols_cost_yuan": 1196269.0867880324,
+      "q42_saving_yuan": -2730.2409696916584,
+      "q43_saving_yuan": -1560.2598488160877
+    },
+    {
+      "month": "2025-10",
+      "q42_fixed_cost_yuan": 1423448.2449314373,
+      "q42_ols_cost_yuan": 1425814.5795170516,
+      "q43_all_A_fixed_cost_yuan": 1151452.2978950331,
+      "q43_all_A_ols_cost_yuan": 1153985.3700049955,
+      "q42_saving_yuan": -2366.3345856142696,
+      "q43_saving_yuan": -2533.0721099625807
+    },
+    {
+      "month": "2025-11",
+      "q42_fixed_cost_yuan": 1565251.2002713117,
+      "q42_ols_cost_yuan": 1563868.4101906838,
+      "q43_all_A_fixed_cost_yuan": 1312804.9233803556,
+      "q43_all_A_ols_cost_yuan": 1314927.3306415954,
+      "q42_saving_yuan": 1382.7900806278922,
+      "q43_saving_yuan": -2122.4072612398304
+    },
+    {
+      "month": "2025-12",
+      "q42_fixed_cost_yuan": 2205246.027332714,
+      "q42_ols_cost_yuan": 2206741.3216356793,
+      "q43_all_A_fixed_cost_yuan": 1937349.603817111,
+      "q43_all_A_ols_cost_yuan": 1933519.3100740751,
+      "q42_saving_yuan": -1495.29430296598,
+      "q43_saving_yuan": 3830.293743035989
+    }
+  ],
+  "head_records": [
+    {
+      "month": "2025-02",
+      "q42_fixed_cost_yuan": 1339651.6551406337,
+      "q42_ols_cost_yuan": 1343213.5788555923,
+      "q43_all_A_fixed_cost_yuan": 1271142.7753684137,
+      "q43_all_A_ols_cost_yuan": 1274978.0194994651,
+      "q42_saving_yuan": -3561.923714958597,
+      "q43_saving_yuan": -3835.2441310514696
+    },
+    {
+      "month": "2025-03",
+      "q42_fixed_cost_yuan": 1274710.7679235556,
+      "q42_ols_cost_yuan": 1272745.4276086793,
+      "q43_all_A_fixed_cost_yuan": 1115760.8917125282,
+      "q43_all_A_ols_cost_yuan": 1116640.513433991,
+      "q42_saving_yuan": 1965.340314876288,
+      "q43_saving_yuan": -879.6217214628123
+    },
+    {
+      "month": "2025-04",
+      "q42_fixed_cost_yuan": 1086898.9234084878,
+      "q42_ols_cost_yuan": 1090327.9417673245,
+      "q43_all_A_fixed_cost_yuan": 920896.7878403404,
+      "q43_all_A_ols_cost_yuan": 922756.9154845228,
+      "q42_saving_yuan": -3429.018358836649,
+      "q43_saving_yuan": -1860.1276441824157
+    },
+    {
+      "month": "2025-05",
+      "q42_fixed_cost_yuan": 1123702.6205059404,
+      "q42_ols_cost_yuan": 1126505.7419273525,
+      "q43_all_A_fixed_cost_yuan": 972051.6384067718,
+      "q43_all_A_ols_cost_yuan": 976697.749591719,
+      "q42_saving_yuan": -2803.121421412099,
+      "q43_saving_yuan": -4646.111184947193
+    },
+    {
+      "month": "2025-06",
+      "q42_fixed_cost_yuan": 1795764.9925275643,
+      "q42_ols_cost_yuan": 1792441.922248498,
+      "q43_all_A_fixed_cost_yuan": 1423825.7017493194,
+      "q43_all_A_ols_cost_yuan": 1422422.070184401,
+      "q42_saving_yuan": 3323.070279066218,
+      "q43_saving_yuan": 1403.6315649184398
+    },
+    {
+      "month": "2025-07",
+      "q42_fixed_cost_yuan": 1986730.677633206,
+      "q42_ols_cost_yuan": 1957871.9536409632,
+      "q43_all_A_fixed_cost_yuan": 1792142.349633462,
+      "q43_all_A_ols_cost_yuan": 1787303.344073384,
+      "q42_saving_yuan": 28858.72399224248,
+      "q43_saving_yuan": 4839.00556007796
+    },
+    {
+      "month": "2025-08",
+      "q42_fixed_cost_yuan": 1710964.3644382537,
+      "q42_ols_cost_yuan": 1687247.3714529728,
+      "q43_all_A_fixed_cost_yuan": 1435743.8138966446,
+      "q43_all_A_ols_cost_yuan": 1434562.9326268667,
+      "q42_saving_yuan": 23716.992985280696,
+      "q43_saving_yuan": 1180.8812697778922
+    },
+    {
+      "month": "2025-09",
+      "q42_fixed_cost_yuan": 1561373.2075603022,
+      "q42_ols_cost_yuan": 1564103.448529994,
+      "q43_all_A_fixed_cost_yuan": 1194708.8269392163,
+      "q43_all_A_ols_cost_yuan": 1196269.0867880324,
+      "q42_saving_yuan": -2730.2409696916584,
+      "q43_saving_yuan": -1560.2598488160877
+    },
+    {
+      "month": "2025-10",
+      "q42_fixed_cost_yuan": 1423448.2449314373,
+      "q42_ols_cost_yuan": 1425814.5795170516,
+      "q43_all_A_fixed_cost_yuan": 1151452.2978950331,
+      "q43_all_A_ols_cost_yuan": 1153985.3700049955,
+      "q42_saving_yuan": -2366.3345856142696,
+      "q43_saving_yuan": -2533.0721099625807
+    },
+    {
+      "month": "2025-11",
+      "q42_fixed_cost_yuan": 1565251.2002713117,
+      "q42_ols_cost_yuan": 1563868.4101906838,
+      "q43_all_A_fixed_cost_yuan": 1312804.9233803556,
+      "q43_all_A_ols_cost_yuan": 1314927.3306415954,
+      "q42_saving_yuan": 1382.7900806278922,
+      "q43_saving_yuan": -2122.4072612398304
+    },
+    {
+      "month": "2025-12",
+      "q42_fixed_cost_yuan": 2205246.027332714,
+      "q42_ols_cost_yuan": 2206741.3216356793,
+      "q43_all_A_fixed_cost_yuan": 1937349.603817111,
+      "q43_all_A_ols_cost_yuan": 1933519.3100740751,
+      "q42_saving_yuan": -1495.29430296598,
+      "q43_saving_yuan": 3830.293743035989
+    }
+  ],
+  "sampled": false,
+  "sample_strategy": "数据行数 11 未超过阈值，提供前 11 行作为样例。",
+  "warnings": []
+}

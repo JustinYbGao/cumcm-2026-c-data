@@ -1,0 +1,10 @@
+{
+  "results/robustness/paired_summary.csv": "83f3485d54d61083548668236de81eea9f42ef72e0b61d7abc98be36cfaea572",
+  "results/robustness/paired_monthly.csv": "fe023004975387d4868958a99f514e451c5ec5b29d4bb3082fd3ecc7118f64d1",
+  "results/robustness/paired_daily.csv": "83e79091ef76c31eded6ed22d4afb0279f9fc8c37ef0a40ad16743999de00993",
+  "results/robustness/bootstrap_intervals.csv": "3fae7cc5d558f3430e5b7aa030d1e8ce70fda6daa8b959e7bbbcb8de2f49316d",
+  "results/robustness/validation.json": "8e0d9ff2a5e913bba120701691c221fa84621c8c1625d6e3606839b884358afa",
+  "results/robustness/lp_audit.json": "9e6d45ca4b3cdf94cabc1c415e93580f16b3fbeb3edf854cc89c4e327466171c",
+  "results/robustness/analysis_validation.json": "220c3e2d37d08c3999417676f1fdad0ba69914055dbd3616e675f9feb4f60979",
+  "scripts/report_robustness.py": "49056eea617b672bbc8f36e2157cfa548b20f18bd056280cd6f90991549653b3"
+}

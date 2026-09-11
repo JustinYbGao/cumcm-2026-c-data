@@ -1,0 +1,5 @@
+policy,minimum_SOC_kwh,longest_emergency_minutes,emergency_intervals,emergency_at_discharge_limit,emergency_at_min_SOC,actual_reference_miss_days,absolute_grid_change_kwh,reference_days,reference_shortfall_days,mean_reference_kwh
+risk_none,1200.0,440,3865,275,3590,0,0.0,0,0,0.0
+risk_fixed,1200.0,440,3865,275,3590,9,4765.918842540003,275,0,2400.0
+risk_g05,1200.0,440,3865,275,3590,1,4765.9188425400125,275,0,822.8282342767184
+risk_g10,1200.0,440,3865,275,3590,6,4860.688819377216,275,0,1645.6564685534368

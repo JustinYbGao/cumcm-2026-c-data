@@ -1,0 +1,57 @@
+fixed_raw 16 LP horizons
+fixed_w28 16 LP horizons
+fixed_w14 16 LP horizons
+fixed_w56 16 LP horizons
+efficiency_raw 16 LP horizons
+efficiency_w28 16 LP horizons
+soft_raw 16 LP horizons
+soft_w28 16 LP horizons
+variable_raw 16 LP horizons
+variable_w28 16 LP horizons
+{
+  "passed": true,
+  "sample_count": 160,
+  "case_counts": {
+    "efficiency_raw": 16,
+    "efficiency_w28": 16,
+    "fixed_raw": 16,
+    "fixed_w14": 16,
+    "fixed_w28": 16,
+    "fixed_w56": 16,
+    "soft_raw": 16,
+    "soft_w28": 16,
+    "variable_raw": 16,
+    "variable_w28": 16
+  },
+  "maximum_relaxation_gap_yuan": 5.820766091346741e-11,
+  "minimum_milp_minus_lp_yuan": -1.4551915228366852e-11,
+  "maximum_lp_primal_violation": 1.8189894035458565e-12,
+  "failed": [],
+  "method": "Independent SciPy sparse-matrix continuous relaxation; no planner imports. Lower bounds, not equality or annual optimality.",
+  "scope": {
+    "policies": [
+      "fixed_raw",
+      "fixed_w28",
+      "fixed_w14",
+      "fixed_w56",
+      "efficiency_raw",
+      "efficiency_w28",
+      "soft_raw",
+      "soft_w28",
+      "variable_raw",
+      "variable_w28"
+    ],
+    "dates": [
+      "2025-04-01",
+      "2025-06-21",
+      "2025-09-23",
+      "2025-12-21"
+    ],
+    "hours": [
+      0,
+      6,
+      12,
+      18
+    ]
+  }
+}

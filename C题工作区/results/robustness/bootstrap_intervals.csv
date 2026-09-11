@@ -1,0 +1,25 @@
+comparison_id,comparison_label,scope,estimand,method,point_estimate_yuan,lower_95_yuan,upper_95_yuan,positive_fraction,replicates,block_days,seed
+fixed_w14_vs_raw,Fixed price: 14-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,36667.06629863546,11789.980486179984,67635.57297296452,0.9972,5000,3,20260910
+fixed_w28_vs_raw,Fixed price: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,46146.4862551859,23401.76244085282,72496.63303123074,1.0,5000,3,20260910
+fixed_w56_vs_raw,Fixed price: 56-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,48792.9706043238,27188.152379202133,72468.94947936229,1.0,5000,3,20260910
+efficiency_w28_vs_raw,Higher efficiency: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,50928.62721674794,28155.395325772,77059.4618052293,1.0,5000,3,20260910
+soft_w28_vs_raw,Soft terminal: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,46188.423594672764,23386.590822582002,72540.05085807973,1.0,5000,3,20260910
+variable_w28_vs_raw,Variable price: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,41783.09596783196,17846.11660644759,68064.11478857003,0.9998,5000,3,20260910
+fixed_w14_vs_raw,Fixed price: 14-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,36667.06629863546,13081.375779154836,76921.76338267411,0.9964,5000,7,20260910
+fixed_w28_vs_raw,Fixed price: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,46146.4862551859,23728.63208104759,78185.25517146838,1.0,5000,7,20260910
+fixed_w56_vs_raw,Fixed price: 56-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,48792.9706043238,26750.280065483003,77635.1300197765,1.0,5000,7,20260910
+efficiency_w28_vs_raw,Higher efficiency: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,50928.62721674794,27239.9492960434,82231.29477441713,1.0,5000,7,20260910
+soft_w28_vs_raw,Soft terminal: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,46188.423594672764,23765.66978042466,78236.18434412575,1.0,5000,7,20260910
+variable_w28_vs_raw,Variable price: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,41783.09596783196,17826.920692778294,71039.97215781029,0.9996,5000,7,20260910
+fixed_w14_vs_raw,Fixed price: 14-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,36667.06629863546,24269.308688736997,69691.71345357975,1.0,5000,14,20260910
+fixed_w28_vs_raw,Fixed price: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,46146.4862551859,32685.65052471516,73421.16578301734,1.0,5000,14,20260910
+fixed_w56_vs_raw,Fixed price: 56-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,48792.9706043238,34220.87804679358,70950.07609225673,1.0,5000,14,20260910
+efficiency_w28_vs_raw,Higher efficiency: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,50928.62721674794,36132.00955550534,77673.2702244285,1.0,5000,14,20260910
+soft_w28_vs_raw,Soft terminal: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,46188.423594672764,32718.693570486215,73426.48104651766,1.0,5000,14,20260910
+variable_w28_vs_raw,Variable price: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,moving_block,41783.09596783196,25685.874243886185,65626.51742500468,1.0,5000,14,20260910
+fixed_w14_vs_raw,Fixed price: 14-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,circular_block_control,36667.06629863546,4349.179263649514,70469.99157309846,0.9856,5000,7,20260910
+fixed_w28_vs_raw,Fixed price: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,circular_block_control,46146.4862551859,18561.793664146648,75579.41027661104,0.9992,5000,7,20260910
+fixed_w56_vs_raw,Fixed price: 56-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,circular_block_control,48792.9706043238,23801.32416718183,75633.59666692132,1.0,5000,7,20260910
+efficiency_w28_vs_raw,Higher efficiency: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,circular_block_control,50928.62721674794,23595.956945923157,80152.1551924947,1.0,5000,7,20260910
+soft_w28_vs_raw,Soft terminal: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,circular_block_control,46188.423594672764,18644.290748727584,75606.7877607361,0.9992,5000,7,20260910
+variable_w28_vs_raw,Variable price: 28-day correction vs raw PV,april_december,raw_minus_corrected_cash_cost_yuan,circular_block_control,41783.09596783196,14271.383527282595,71675.09770656191,0.9986,5000,7,20260910

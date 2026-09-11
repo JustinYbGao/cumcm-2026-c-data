@@ -1,0 +1,7 @@
+fixed_raw anchor_max_abs 0.0
+variable_raw anchor_max_abs 0.0
+policies 10 paired_rows 6 ledger_rows_each 48096
+active_bias_records 6600
+fixed_raw_total 13772880.061223056167
+hash_manifests_equal True
+artifact_check OK

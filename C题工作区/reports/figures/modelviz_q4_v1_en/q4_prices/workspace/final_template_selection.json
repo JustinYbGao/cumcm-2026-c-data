@@ -1,0 +1,102 @@
+{
+  "dataset_summary": "576 intervals on four prescribed dates; actual and causal price forecasts with signed forecast errors",
+  "observed_data_features": [],
+  "relevant_columns": [
+    "date",
+    "slot_id",
+    "price_actual_yuan_per_kwh",
+    "price_midnight_yuan_per_kwh",
+    "price_forecast_yuan_per_kwh"
+  ],
+  "candidate_comparisons": [
+    {
+      "template_id": "cmp_3d_ribbon_chart",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Extra dimensions, percentage normalization, correlation or smoothing do not express this direct price/cost comparison."
+      ],
+      "data_compatibility": "Not selected",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_dual_axis_bar_line",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Extra dimensions, percentage normalization, correlation or smoothing do not express this direct price/cost comparison."
+      ],
+      "data_compatibility": "Not selected",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_lag_correlation_analysis",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Extra dimensions, percentage normalization, correlation or smoothing do not express this direct price/cost comparison."
+      ],
+      "data_compatibility": "Not selected",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "mpn_scatter_matrix_timeseries_regression",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Extra dimensions, percentage normalization, correlation or smoothing do not express this direct price/cost comparison."
+      ],
+      "data_compatibility": "Not selected",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_flowing_percentage_stack",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Extra dimensions, percentage normalization, correlation or smoothing do not express this direct price/cost comparison."
+      ],
+      "data_compatibility": "Not selected",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_3d_waterfall_distribution",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Extra dimensions, percentage normalization, correlation or smoothing do not express this direct price/cost comparison."
+      ],
+      "data_compatibility": "Not selected",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_smoothed_trend_curves",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Extra dimensions, percentage normalization, correlation or smoothing do not express this direct price/cost comparison."
+      ],
+      "data_compatibility": "Not selected",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_composite_line_bar_dual_axis",
+      "suitable": true,
+      "advantages": [
+        "TRD_004 provides a shared time axis, distinct line series and auxiliary bars. Preserve serif typography and blue/orange/gray colors; omit unsupported trend regressions. Use a lower savings panel for monthly costs or repeated daily panels with a separate error scale for prices."
+      ],
+      "limitations": [],
+      "data_compatibility": "Exact time-series field mapping",
+      "requirement_compatibility": ""
+    }
+  ],
+  "selected_template_id": "trd_composite_line_bar_dual_axis",
+  "selected_template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "alternative_template_ids": [],
+  "selection_reason": "TRD_004 provides a shared time axis, distinct line series and auxiliary bars. Preserve serif typography and blue/orange/gray colors; omit unsupported trend regressions. Use a lower savings panel for monthly costs or repeated daily panels with a separate error scale for prices.",
+  "data_support_reason": "Real columns and declared units; no fabricated observations, smoothing or time shifts.",
+  "data_warnings": [],
+  "confidence": 0.97,
+  "needs_clarification": false,
+  "clarification_question": ""
+}

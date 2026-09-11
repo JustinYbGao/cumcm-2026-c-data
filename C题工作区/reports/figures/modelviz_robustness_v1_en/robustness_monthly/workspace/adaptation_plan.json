@@ -1,0 +1,71 @@
+{
+  "template_id": "trd_composite_line_bar_dual_axis",
+  "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "plot_goal": "Nine monthly costs of raw and corrected PV, with signed savings",
+  "selected_columns": [
+    "month",
+    "raw_total_cost_yuan",
+    "corrected_total_cost_yuan",
+    "cash_gain_yuan"
+  ],
+  "column_mappings": [
+    {
+      "data_column": "month",
+      "template_role": "Category/time key",
+      "reason": ""
+    },
+    {
+      "data_column": "raw_total_cost_yuan",
+      "template_role": "Observed monetary quantity or saved interval endpoint",
+      "reason": ""
+    },
+    {
+      "data_column": "corrected_total_cost_yuan",
+      "template_role": "Observed monetary quantity or saved interval endpoint",
+      "reason": ""
+    },
+    {
+      "data_column": "cash_gain_yuan",
+      "template_role": "Observed monetary quantity or saved interval endpoint",
+      "reason": ""
+    }
+  ],
+  "required_preprocessing": [
+    "Read CSV with exact floating-point parsing; convert yuan to thousand/million CNY for display only"
+  ],
+  "required_dependencies": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "layout_elements_to_preserve": [
+    "Matplotlib line-bar composition",
+    "Shared time keys and separate scales",
+    "Muted blue/orange/gray palette",
+    "Serif typography"
+  ],
+  "style_elements_to_preserve": [
+    "Matplotlib line-bar composition",
+    "Shared time keys and separate scales",
+    "Muted blue/orange/gray palette",
+    "Serif typography"
+  ],
+  "elements_allowed_to_change": [
+    "Use exact monthly costs and signed difference",
+    "Preserve negative months",
+    "Use English text and PNG300dpi/SVG"
+  ],
+  "title_plan": "English title names comparison and period",
+  "axis_plan": "Clearly labeled currency scale and positive-savings direction",
+  "legend_plan": "Two policy lines and right-axis savings bars",
+  "annotation_plan": "Numerical observed effects; historical interval caveat; negative months retained",
+  "output_formats": [
+    "png",
+    "svg"
+  ],
+  "warnings": [
+    "Intervals are retrospective within-month block-resampling variability; no future guarantee or p-values"
+  ],
+  "can_proceed": true,
+  "clarification_question": ""
+}

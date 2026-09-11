@@ -1,8 +1,44 @@
 # C题数据工作区
 
-本目录独立于朋友的 `111`，数据脚本直接读取 `../CUMCM2026Problems/C题/附件/`，不覆盖原附件或其他成员代码。问题1—3已有内部模型、实际求解、独立核验及论文初稿；问题2负结果继续保留。尚未填写正式附件5，问题4未执行。当前进度见 `reports/workflow_progress.md`，较早报告中的后续状态属于当时快照。
+本目录独立于朋友的 `111`，数据脚本直接读取 `../CUMCM2026Problems/C题/附件/`，不覆盖原附件或其他成员代码。问题1—4已有内部模型、实际求解、独立核验及论文初稿；问题2和问题4负结果继续保留。尚未填写正式附件5。当前进度见 `reports/workflow_progress.md`，较早报告中的后续状态属于当时快照。
 
-## 最新交付：问题2冻结、问题3内部验收
+## 最新交付：创新实验完成
+
+- [论文实验增补](papers/innovation_draft.md)、[完整模型与结果](reports/innovation/model_and_results.md)、[冻结执行计划](reports/innovation/execution_plan.md)、[BZD检查](reports/innovation/bzd_solution_check.md)。
+- 按统一方案顺序完成PV校正、连续风险余量、更新门槛，共11组；2月启动，3月校准，4—12月275天评价。明确属于探索性顺序回测。
+- PV校正省46,146.49元；风险余量只有2—5元差额，不列为实质改进；α0.5/0.75门槛分别增费2,279.99/135,578.73元。3月冻结选择保留校正、固定余量和不加门槛，失败候选未删。
+- 308,491项独立检查、36个独立LP、34项新旧单测通过；LP有真实松弛差，未声称完全等价。两张[全英文ModelViz图](reports/figures/modelviz_innovation_v1_en/)已实际检查。
+- [冻结结果包入口](deliverables/innovation/v1_exploratory/README.md)，运输ZIP分卷与校验值见[archive_index.json](deliverables/innovation/archive_index.json)。所有分卷解压至同一目录，无需拼接字节。
+
+```bash
+.venv/bin/python -B scripts/validate_innovation.py
+.venv/bin/python -B scripts/audit_innovation_lp.py
+.venv/bin/python -B scripts/verify_innovation_artifacts.py
+```
+
+当前不生成正式Excel，不把单模块结果外推为组合策略或Q4提升。问题1—4原结果和冻结包保留。
+
+## 问题4内部验收
+
+- [问题4论文初稿](papers/q4_draft.md)、[模型与实际结果](reports/q4_model_and_results.md)、[四日完整表](reports/q4_representative_tables.md)、[BZD检查](reports/q4_bzd_solution_check.md)。
+- 九组策略均以附件4实际价结算：日前OLS 17,030,881.70元，比同核固定价输入省42,860.98元（0.251%）；日内全更新A/OLS 14,534,062.64元，反而比固定价输入多6,183.03元。B/OLS为14,537,309.28元。
+- 全更新A比同PV来源的仅0点OLS省2,108,394.56元；单独再估价格比保持0点价格多85.45元。不能把整体更新收益全归于价格预测。
+- 211,834项独立检查、1,336次价格模型重建、36个独立矩阵LP、25项Q1—Q4单测通过。两张[ModelViz英文图](reports/figures/modelviz_q4_v1_en/)均有300 dpi PNG/SVG及实际视觉检查记录。
+- [冻结包](deliverables/q4/v1_internal_variable_price.zip)包含来源、版本、完整账本、初稿及复制包数值重验日志；使用副本复验，不覆盖冻结版本。
+- 正式时间、未来价格可用性、结算、效率及每日终态解释仍待确认，当前不是正式提交版。
+
+在本工作区复核：
+
+```bash
+.venv/bin/python -B scripts/validate_q4.py
+.venv/bin/python -B scripts/audit_q4_lp.py
+.venv/bin/python -B scripts/verify_q4_artifacts.py
+.venv/bin/python -B -m unittest discover -s tests -p 'test_q*.py'
+```
+
+首次安装使用requirements-q3.txt。完整重算必须另开版本且不复制完成结果目录；详见问题4报告。以下保留前阶段交付索引。
+
+## 问题2冻结、问题3内部验收
 
 - 问题2补齐[论文初稿](papers/q2_draft.md)与[138文件冻结包](deliverables/q2/v1_internal_baseline.zip)，已在复制包内重新独立验证。
 - 问题3[论文初稿](papers/q3_draft.md)、[模型与数值说明](reports/q3_model_and_results.md)、[A/B四日完整表](reports/q3_representative_tables.md)、[BZD局部检查](reports/q3_bzd_solution_check.md)。
@@ -124,3 +160,9 @@ C题工作区/.venv/bin/python C题工作区/scripts/validate_data.py --stage q1
 Q1—Q3内部结果与论文初稿已完成；Q2候选退化证据保留，Q3费用/时刻及信息反馈对照已完成。Q4具备实际价格归档，尚未计算。所有正式模板填写仍待时间映射确认。当前状态以workflow_progress.md为准。
 
 `data/interim`保存题面抽取、源文件清单、日期变换日志、预报覆盖、111运行副本。`reports/figures`存放三张描述性图；绘图源代码为 `scripts/report_data.py`。本轮没有单独创建空模块。
+
+## 论文装配与新增敏感性（2026-09-10）
+
+先读 [装配顺序与逐文件归属](papers/assembly_v1/00_README_装配顺序.md)，或直接读[合并装配初稿](papers/assembly_v1/assembled_review_draft.md)。原五份初稿保留，新的[连续策略与稳健性初稿](papers/robustness_draft.md)已放入Part08，PV校正及迁移分别衔接Part06/07。
+
+10条334日回放、429222独立检查、160 LP及11新增单测通过；图全部英文。主28天部署省46146.49元，有限对照方向稳定，但存在增费日/月，不作跨年保证。可追溯包入口：[README](deliverables/robustness/v1_continuous_audit/README.md)。当前仍为内部假设版，正式时间与交易等口径未确认。

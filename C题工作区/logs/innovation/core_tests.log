@@ -1,0 +1,25 @@
+Command:
+TMPDIR="$PWD/data/interim/innovation" TMP="$PWD/data/interim/innovation" TEMP="$PWD/data/interim/innovation" .venv/bin/python -B -m unittest tests.test_q3 tests.test_innovation_core -v
+
+test_billing_examples (tests.test_q3.Q3Tests.test_billing_examples) ... ok
+test_final_settlement_ignores_superseded_versions (tests.test_q3.Q3Tests.test_final_settlement_ignores_superseded_versions) ... ok
+test_frozen_original_excess_can_be_disposed (tests.test_q3.Q3Tests.test_frozen_original_excess_can_be_disposed) ... ok
+test_increase_cost_and_no_emergency_charging_channel (tests.test_q3.Q3Tests.test_increase_cost_and_no_emergency_charging_channel) ... ok
+test_one_interval_decrease_A_and_no_decrease_B (tests.test_q3.Q3Tests.test_one_interval_decrease_A_and_no_decrease_B) ... ok
+test_pv_selector_never_uses_future_issue (tests.test_q3.Q3Tests.test_pv_selector_never_uses_future_issue) ... ok
+test_q1_objective_reproduced_by_horizon_solver (tests.test_q3.Q3Tests.test_q1_objective_reproduced_by_horizon_solver) ... ok
+test_free_update_cannot_cost_more_than_holding_same_plan (tests.test_innovation_core.SolverTests.test_free_update_cannot_cost_more_than_holding_same_plan) ... ok
+test_frozen_grid_shortage_is_feasible_without_emergency_charging (tests.test_innovation_core.SolverTests.test_frozen_grid_shortage_is_feasible_without_emergency_charging) ... ok
+test_soft_terminal_requires_explicit_penalty (tests.test_innovation_core.SolverTests.test_soft_terminal_requires_explicit_penalty) ... ok
+test_unreachable_reserve_uses_shortfall_instead_of_becoming_infeasible (tests.test_innovation_core.SolverTests.test_unreachable_reserve_uses_shortfall_instead_of_becoming_infeasible) ... ok
+test_zero_reserve_matches_q3_hard_terminal (tests.test_innovation_core.SolverTests.test_zero_reserve_matches_q3_hard_terminal) ... ok
+test_gate_excludes_future_wrong_hour_and_expired_records (tests.test_innovation_core.StatisticalKernelTests.test_gate_excludes_future_wrong_hour_and_expired_records) ... ok
+test_quantile_lp_fits_analytical_intercept_and_clips_prediction (tests.test_innovation_core.StatisticalKernelTests.test_quantile_lp_fits_analytical_intercept_and_clips_prediction) ... ok
+test_rank_deficiency_falls_back_to_empirical_quantile (tests.test_innovation_core.StatisticalKernelTests.test_rank_deficiency_falls_back_to_empirical_quantile) ... ok
+test_risk_prefix_allows_deficit_cancellation (tests.test_innovation_core.StatisticalKernelTests.test_risk_prefix_allows_deficit_cancellation) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.052s
+
+OK
+Exit code: 0

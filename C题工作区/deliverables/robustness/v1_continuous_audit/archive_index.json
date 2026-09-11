@@ -1,0 +1,16 @@
+{
+  "file_count": 269,
+  "archives": [
+    {
+      "file": "v1_continuous_audit.part01.zip",
+      "bytes": 80614373,
+      "sha256": "3e5b399d1900e66771adf2de7500a63719b083c6fe22d381d95d25024eb90b13"
+    },
+    {
+      "file": "v1_continuous_audit.part02.zip",
+      "bytes": 55316764,
+      "sha256": "b6d01b93cf62ae21c17ad03fcb111841da4dac67065b959893607a3b599209c1"
+    }
+  ],
+  "extraction": "Extract all disjoint ZIPs into one directory"
+}

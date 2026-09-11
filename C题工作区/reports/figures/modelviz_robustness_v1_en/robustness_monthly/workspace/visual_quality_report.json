@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "requirement_alignment": "Actual PNG inspected; all visible text English; planned monetary comparisons present",
+  "data_expression_quality": "Mapped saved effects and intervals or exact monthly costs; no smoothed or fabricated data",
+  "style_preservation": "Selected horizontal gradient bar or composite line-bar template structure and serif style retained",
+  "readability": "Labels, scales, markers and legends are readable; negative months visible",
+  "layout_quality": "Actual final PNG has separate title/summary/legend bands and no clipping or label collisions",
+  "color_quality": "Muted teal-blue or blue-orange palette; policy line styles and inventory shape differentiate quantities",
+  "issues": [],
+  "suggested_fixes": [],
+  "needs_repair": false,
+  "confidence": 0.97
+}

@@ -1,0 +1,14 @@
+{
+  "data/processed/actual_10min.csv": "d64cb551ef7e644aa046e38ee7984607ab7bc57bf28d30ba6803db8696d1a513",
+  "data/processed/fixed_price.csv": "6a2d48f1d678ce0399a10719dcf34e81403a2c133dfb871c35cd3cc0eb76d4f2",
+  "data/processed/pv_forecast_10min.csv": "5d79c8dfb20686da0f8b766bfd7013a934a6af140ff5b5842cd585413ffea426",
+  "results/q2/selected/ledger.csv": "7d35f62b7403281a0f24016cf602e065bdb141f0d459db5172e98455be83d00d",
+  "results/q2/selected/models_and_solvers.json": "81b949f1f919afb9f19778fe924973d526a2ba596ffd9b4fbdac2884693beb1c",
+  "results/q2/selection.json": "77faa01e698ebc3130bae8672c862337820a33a582af5b5372040bf78bf6cc77",
+  "configs/q4_baseline.json": "1a4a5b1e03f96b2cd7d33471fbc1b080daf6740bd7e9058b49a6bc7f8fb74282",
+  "configs/model_baseline.json": "23603c8c223d40006607ea5c3dd31dec8ab2435776ff3a363f2eaca0aaf09019",
+  "scripts/run_q4.py": "7c2d18e99e03126f195ab26de7aa673538a05a843a94c6cb4e664db4ace81f33",
+  "scripts/run_q3.py": "15b41692bea0b24ed19cfdb559e9d6bb85dbd32c45803a5a0456b57056a1ba44",
+  "scripts/run_q2.py": "2fbe74adb5a3a39efe01ed1429016561360c6c58716a095c6ebb18870ca0ce0a",
+  "scripts/solve_q1.py": "fe351fb7fd979897b9958b2b01ceb75bdf8fcf7a633e04ba71c0c4ee9c2bef6e"
+}

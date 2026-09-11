@@ -1,0 +1,119 @@
+Price models complete 1336 floor activations 0
+q42_fixed 2025-02-01 actual SOC 7209.957
+q42_fixed 2025-03-01 actual SOC 3237.027
+q42_fixed 2025-04-01 actual SOC 1206.248
+q42_fixed 2025-05-01 actual SOC 1200.0
+q42_fixed 2025-06-01 actual SOC 1200.0
+q42_fixed 2025-07-01 actual SOC 4101.481
+q42_fixed 2025-08-01 actual SOC 4615.583
+q42_fixed 2025-09-01 actual SOC 5392.082
+q42_fixed 2025-10-01 actual SOC 2187.582
+q42_fixed 2025-11-01 actual SOC 1200.0
+q42_fixed 2025-12-01 actual SOC 1200.0
+q42_fixed actual cost 17073742.681673408
+q42_ols 2025-02-01 actual SOC 7208.272
+q42_ols 2025-03-01 actual SOC 3944.982
+q42_ols 2025-04-01 actual SOC 1200.0
+q42_ols 2025-05-01 actual SOC 1200.0
+q42_ols 2025-06-01 actual SOC 1200.0
+q42_ols 2025-07-01 actual SOC 4718.844
+q42_ols 2025-08-01 actual SOC 5613.929
+q42_ols 2025-09-01 actual SOC 5392.082
+q42_ols 2025-10-01 actual SOC 2283.728
+q42_ols 2025-11-01 actual SOC 1200.0
+q42_ols 2025-12-01 actual SOC 1200.0
+q42_ols actual cost 17030881.69737479
+q42_perfect 2025-02-01 actual SOC 7208.678
+q42_perfect 2025-03-01 actual SOC 3376.758
+q42_perfect 2025-04-01 actual SOC 1200.0
+q42_perfect 2025-05-01 actual SOC 1200.0
+q42_perfect 2025-06-01 actual SOC 1200.0
+q42_perfect 2025-07-01 actual SOC 3715.778
+q42_perfect 2025-08-01 actual SOC 4210.278
+q42_perfect 2025-09-01 actual SOC 5564.234
+q42_perfect 2025-10-01 actual SOC 2046.7
+q42_perfect 2025-11-01 actual SOC 1200.0
+q42_perfect 2025-12-01 actual SOC 1200.0
+q42_perfect actual cost 17013664.079085827
+q43_no_update_ols 2025-02-01 actual SOC 7528.635
+q43_no_update_ols 2025-03-01 actual SOC 7192.863
+q43_no_update_ols 2025-04-01 actual SOC 6511.837
+q43_no_update_ols 2025-05-01 actual SOC 5068.387
+q43_no_update_ols 2025-06-01 actual SOC 6571.623
+q43_no_update_ols 2025-07-01 actual SOC 8567.528
+q43_no_update_ols 2025-08-01 actual SOC 9741.491
+q43_no_update_ols 2025-09-01 actual SOC 10800.0
+q43_no_update_ols 2025-10-01 actual SOC 6023.429
+q43_no_update_ols 2025-11-01 actual SOC 5897.826
+q43_no_update_ols 2025-12-01 actual SOC 5576.376
+q43_no_update_ols actual cost 16642457.206232343
+q43_all_A_ols 2025-02-01 actual SOC 7555.622
+q43_all_A_ols 2025-03-01 actual SOC 7796.171
+q43_all_A_ols 2025-04-01 actual SOC 8065.459
+q43_all_A_ols 2025-05-01 actual SOC 6209.903
+q43_all_A_ols 2025-06-01 actual SOC 8441.569
+q43_all_A_ols 2025-07-01 actual SOC 9818.342
+q43_all_A_ols 2025-08-01 actual SOC 10671.409
+q43_all_A_ols 2025-09-01 actual SOC 10800.0
+q43_all_A_ols 2025-10-01 actual SOC 6730.269
+q43_all_A_ols 2025-11-01 actual SOC 7206.601
+q43_all_A_ols 2025-12-01 actual SOC 7533.419
+q43_all_A_ols actual cost 14534062.642403048
+q43_all_B_ols 2025-02-01 actual SOC 7555.622
+q43_all_B_ols 2025-03-01 actual SOC 7780.019
+q43_all_B_ols 2025-04-01 actual SOC 8069.189
+q43_all_B_ols 2025-05-01 actual SOC 6205.578
+q43_all_B_ols 2025-06-01 actual SOC 8568.366
+q43_all_B_ols 2025-07-01 actual SOC 9818.342
+q43_all_B_ols 2025-08-01 actual SOC 10671.409
+q43_all_B_ols 2025-09-01 actual SOC 10800.0
+q43_all_B_ols 2025-10-01 actual SOC 6730.269
+q43_all_B_ols 2025-11-01 actual SOC 7211.862
+q43_all_B_ols 2025-12-01 actual SOC 7523.355
+q43_all_B_ols actual cost 14537309.27792612
+q43_all_A_hold0 2025-02-01 actual SOC 7555.622
+q43_all_A_hold0 2025-03-01 actual SOC 7796.171
+q43_all_A_hold0 2025-04-01 actual SOC 8069.805
+q43_all_A_hold0 2025-05-01 actual SOC 6212.156
+q43_all_A_hold0 2025-06-01 actual SOC 8441.569
+q43_all_A_hold0 2025-07-01 actual SOC 9818.342
+q43_all_A_hold0 2025-08-01 actual SOC 10671.409
+q43_all_A_hold0 2025-09-01 actual SOC 10800.0
+q43_all_A_hold0 2025-10-01 actual SOC 6730.269
+q43_all_A_hold0 2025-11-01 actual SOC 7206.601
+q43_all_A_hold0 2025-12-01 actual SOC 7533.367
+q43_all_A_hold0 actual cost 14533977.189926442
+q43_all_A_fixed 2025-02-01 actual SOC 7551.588
+q43_all_A_fixed 2025-03-01 actual SOC 7503.367
+q43_all_A_fixed 2025-04-01 actual SOC 7481.32
+q43_all_A_fixed 2025-05-01 actual SOC 5464.132
+q43_all_A_fixed 2025-06-01 actual SOC 6767.8
+q43_all_A_fixed 2025-07-01 actual SOC 9818.342
+q43_all_A_fixed 2025-08-01 actual SOC 10653.955
+q43_all_A_fixed 2025-09-01 actual SOC 10800.0
+q43_all_A_fixed 2025-10-01 actual SOC 5908.054
+q43_all_A_fixed 2025-11-01 actual SOC 6813.871
+q43_all_A_fixed 2025-12-01 actual SOC 6812.938
+q43_all_A_fixed actual cost 14527879.610639196
+q43_all_A_perfect 2025-02-01 actual SOC 7551.872
+q43_all_A_perfect 2025-03-01 actual SOC 7388.011
+q43_all_A_perfect 2025-04-01 actual SOC 7042.227
+q43_all_A_perfect 2025-05-01 actual SOC 4488.013
+q43_all_A_perfect 2025-06-01 actual SOC 6552.383
+q43_all_A_perfect 2025-07-01 actual SOC 9818.342
+q43_all_A_perfect 2025-08-01 actual SOC 10627.743
+q43_all_A_perfect 2025-09-01 actual SOC 10800.0
+q43_all_A_perfect 2025-10-01 actual SOC 5657.57
+q43_all_A_perfect 2025-11-01 actual SOC 6683.887
+q43_all_A_perfect 2025-12-01 actual SOC 6066.276
+q43_all_A_perfect actual cost 14428710.54159093
+           policy  total_cost_yuan  emergency_kwh  saving_percent_vs_branch_fixed
+        q42_fixed     1.707374e+07  751925.130971                        0.000000
+          q42_ols     1.703088e+07  748055.240241                        0.251034
+      q42_perfect     1.701366e+07  772568.700137                        0.351877
+q43_no_update_ols     1.664246e+07  573155.623193                      -14.555308
+    q43_all_A_ols     1.453406e+07  126591.527898                       -0.042560
+    q43_all_B_ols     1.453731e+07  122828.690908                       -0.064907
+  q43_all_A_hold0     1.453398e+07  126576.674476                       -0.041972
+  q43_all_A_fixed     1.452788e+07  125345.247630                        0.000000
+q43_all_A_perfect     1.442871e+07  136556.837538                        0.682612

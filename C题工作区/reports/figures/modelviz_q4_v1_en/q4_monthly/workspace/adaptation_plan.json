@@ -1,0 +1,87 @@
+{
+  "template_id": "trd_composite_line_bar_dual_axis",
+  "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "plot_goal": "11 months of actual costs under the same variable tariff; fixed versus OLS planning inputs in two branches",
+  "selected_columns": [
+    "month",
+    "q42_fixed_cost_yuan",
+    "q42_ols_cost_yuan",
+    "q43_all_A_fixed_cost_yuan",
+    "q43_all_A_ols_cost_yuan",
+    "q42_saving_yuan",
+    "q43_saving_yuan"
+  ],
+  "column_mappings": [
+    {
+      "data_column": "month",
+      "template_role": "Calendar-month x-axis",
+      "reason": ""
+    },
+    {
+      "data_column": "q42_fixed_cost_yuan",
+      "template_role": "Day-ahead fixed-input dashed line",
+      "reason": ""
+    },
+    {
+      "data_column": "q42_ols_cost_yuan",
+      "template_role": "Day-ahead OLS-input solid line",
+      "reason": ""
+    },
+    {
+      "data_column": "q43_all_A_fixed_cost_yuan",
+      "template_role": "All-update A fixed-input dashed line",
+      "reason": ""
+    },
+    {
+      "data_column": "q43_all_A_ols_cost_yuan",
+      "template_role": "All-update A OLS-input solid line",
+      "reason": ""
+    },
+    {
+      "data_column": "q42_saving_yuan",
+      "template_role": "Day-ahead savings bars",
+      "reason": ""
+    },
+    {
+      "data_column": "q43_saving_yuan",
+      "template_role": "All-update A savings bars",
+      "reason": ""
+    }
+  ],
+  "required_preprocessing": [
+    "Read fixed plotting copy; divide CNY by 1e6/1000 only for display; derive signed errors from observed columns"
+  ],
+  "required_dependencies": [
+    "matplotlib",
+    "numpy",
+    "pandas"
+  ],
+  "layout_elements_to_preserve": [
+    "Matplotlib line-bar composition",
+    "Shared time axes",
+    "Serif labels and panel letters"
+  ],
+  "style_elements_to_preserve": [
+    "Blue, orange and gray palette",
+    "Muted bars and clear foreground lines"
+  ],
+  "elements_allowed_to_change": [
+    "Replace demo series with real cost or price series",
+    "Repeat panels over prescribed dates",
+    "Remove fitted trends and significance claims",
+    "Use English-only visible strings"
+  ],
+  "title_plan": "English problem and scenario titles",
+  "axis_plan": "Calendar months or original hour boundaries; currency and price units",
+  "legend_plan": "Distinct policy names, line styles and a separate upper legend band where needed",
+  "annotation_plan": "Same realized tariff; causal inputs and internal assumptions",
+  "output_formats": [
+    "png",
+    "svg"
+  ],
+  "warnings": [
+    "Internal assumptions; perfect-price policies omitted from plots of implementable policies."
+  ],
+  "can_proceed": true,
+  "clarification_question": ""
+}

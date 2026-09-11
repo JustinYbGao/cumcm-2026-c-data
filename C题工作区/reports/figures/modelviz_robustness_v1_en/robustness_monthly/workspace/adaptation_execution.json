@@ -1,0 +1,119 @@
+{
+  "success": true,
+  "adaptation_plan": {
+    "template_id": "trd_composite_line_bar_dual_axis",
+    "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+    "plot_goal": "Nine monthly costs of raw and corrected PV, with signed savings",
+    "selected_columns": [
+      "month",
+      "raw_total_cost_yuan",
+      "corrected_total_cost_yuan",
+      "cash_gain_yuan"
+    ],
+    "column_mappings": [
+      {
+        "data_column": "month",
+        "template_role": "Category/time key",
+        "reason": ""
+      },
+      {
+        "data_column": "raw_total_cost_yuan",
+        "template_role": "Observed monetary quantity or saved interval endpoint",
+        "reason": ""
+      },
+      {
+        "data_column": "corrected_total_cost_yuan",
+        "template_role": "Observed monetary quantity or saved interval endpoint",
+        "reason": ""
+      },
+      {
+        "data_column": "cash_gain_yuan",
+        "template_role": "Observed monetary quantity or saved interval endpoint",
+        "reason": ""
+      }
+    ],
+    "required_preprocessing": [
+      "Read CSV with exact floating-point parsing; convert yuan to thousand/million CNY for display only"
+    ],
+    "required_dependencies": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "layout_elements_to_preserve": [
+      "Matplotlib line-bar composition",
+      "Shared time keys and separate scales",
+      "Muted blue/orange/gray palette",
+      "Serif typography"
+    ],
+    "style_elements_to_preserve": [
+      "Matplotlib line-bar composition",
+      "Shared time keys and separate scales",
+      "Muted blue/orange/gray palette",
+      "Serif typography"
+    ],
+    "elements_allowed_to_change": [
+      "Use exact monthly costs and signed difference",
+      "Preserve negative months",
+      "Use English text and PNG300dpi/SVG"
+    ],
+    "title_plan": "English title names comparison and period",
+    "axis_plan": "Clearly labeled currency scale and positive-savings direction",
+    "legend_plan": "Two policy lines and right-axis savings bars",
+    "annotation_plan": "Numerical observed effects; historical interval caveat; negative months retained",
+    "output_formats": [
+      "png",
+      "svg"
+    ],
+    "warnings": [
+      "Intervals are retrospective within-month block-resampling variability; no future guarantee or p-values"
+    ],
+    "can_proceed": true,
+    "clarification_question": ""
+  },
+  "adaptation_result": {
+    "adapted_code": "\"\"\"Adapt TRD_004 line/bar composition to main-policy monthly costs.\"\"\"\nimport os\nfrom pathlib import Path\nimport numpy as np\nimport pandas as pd\nimport matplotlib\nmatplotlib.use('Agg')\nimport matplotlib.pyplot as plt\nfrom matplotlib.lines import Line2D\nfrom matplotlib.patches import Patch\n\nd=pd.read_csv(os.environ['DATA_PATH'],float_precision='round_trip');out=Path(os.environ['OUTPUT_DIR']);out.mkdir(parents=True,exist_ok=True)\nplt.rcParams.update({'font.family':'serif','font.serif':['Times New Roman','DejaVu Serif'],'font.size':12,'svg.fonttype':'none'})\nx=np.arange(len(d));gain=d.cash_gain_yuan.to_numpy()/1000\nfig,ax=plt.subplots(figsize=(11,5.8));right=ax.twinx();right.set_zorder(0);ax.set_zorder(1);ax.patch.set_visible(False)\nright.bar(x,gain,width=.58,color=np.where(gain>=0,'#A9BBC8','#D4AC8F'),alpha=.75)\nright.axhline(0,color='#999999',lw=.8);right.set_ylabel('Monthly savings (thousand CNY)',color='#676D73')\nax.plot(x,d.raw_total_cost_yuan/1e6,'o-',color='#3B6C8E',lw=2,ms=5)\nax.plot(x,d.corrected_total_cost_yuan/1e6,'s--',color='#CB8B52',lw=1.8,ms=4)\nax.set_ylabel('Actual monthly cost (million CNY)');ax.set_xticks(x,pd.to_datetime(d.month).dt.strftime('%b'));ax.set_xlabel('2025');ax.set_xlim(-.6,len(d)-.4)\nfig.text(.10,.94,'Main 28-day correction: monthly costs and savings',fontsize=16,fontweight='bold')\nfig.text(.10,.89,f'Total saving: {d.cash_gain_yuan.sum():,.2f} CNY | Positive months: {int((gain>0).sum())} of {len(d)}',fontsize=11,color='#555555')\nax.grid(axis='y',alpha=.17)\nlo=min(-3.5,float(gain.min())*2.5);hi=max(2,float(gain.max())*1.4);right.set_ylim(lo,hi)\nfor xi,v in zip(x,gain):right.text(xi,(v*.22 if v>=1 else v+.5) if v>=0 else v-(hi-lo)*.025,f'{v:,.2f}',ha='center',va='center' if v>=0 else 'top',fontsize=10,color='#555555')\nhandles=[Line2D([0],[0],color='#3B6C8E',marker='o',label='Raw PV'),Line2D([0],[0],color='#CB8B52',marker='s',ls='--',label='28-day correction'),Patch(facecolor='#A9BBC8',label='Savings (right axis)')]\nfig.legend(handles=handles,loc='upper center',bbox_to_anchor=(.5,.85),ncol=3,frameon=False,fontsize=11)\nfig.text(.5,.035,'Continuous state of charge from February; correction enabled on April 1. Negative months retained.',ha='center',fontsize=10,color='#555555')\nfig.subplots_adjust(left=.10,right=.88,bottom=.16,top=.72)\nfig.savefig(out/'chart.png',dpi=300);fig.savefig(out/'chart.svg');plt.close(fig)\n",
+    "changes_summary": [
+      "TRD_004 encodes two actual monthly-cost lines and a signed-savings bar on an explicitly labeled secondary axis; no smoothing or data shifting."
+    ],
+    "preserved_style_elements": [
+      "Matplotlib line-bar composition",
+      "Shared time keys and separate scales",
+      "Muted blue/orange/gray palette",
+      "Serif typography"
+    ],
+    "changed_elements": [
+      "Use exact monthly costs and signed difference",
+      "Preserve negative months",
+      "Use English text and PNG300dpi/SVG"
+    ],
+    "data_columns_used": [
+      "month",
+      "raw_total_cost_yuan",
+      "corrected_total_cost_yuan",
+      "cash_gain_yuan"
+    ],
+    "dependencies_used": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "additional_dependencies_requested": [],
+    "assumptions": [
+      "Each effect compares its own matched baseline; window28 remains main; all visible text English"
+    ],
+    "warnings": []
+  },
+  "execution_result": {
+    "success": true,
+    "return_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "generated_files": [
+      "/Users/justingao/Documents/CUMCM/C题工作区/reports/figures/modelviz_robustness_v1_en/robustness_monthly/outputs/chart.svg",
+      "/Users/justingao/Documents/CUMCM/C题工作区/reports/figures/modelviz_robustness_v1_en/robustness_monthly/outputs/chart.png"
+    ],
+    "execution_time": 0.4355,
+    "error_type": ""
+  }
+}

@@ -1,0 +1,596 @@
+NEW FILE scripts/innovation_core.py
+"""Small numerical kernels for the frozen innovation experiments."""
+from __future__ import annotations
+
+import os
+from pathlib import Path
+
+WORK = Path(__file__).resolve().parents[1]
+for _key in ("TMPDIR", "TMP", "TEMP"):
+    os.environ[_key] = str(WORK / "data/interim/innovation")
+
+import highspy
+import numpy as np
+import pandas as pd
+from scipy.optimize import linprog
+
+from run_q3 import contract_fee, solve_horizon
+
+
+def _arrays(load, pv, price, original, fixed_grid):
+    load = np.asarray(load, dtype=float)
+    pv = np.asarray(pv, dtype=float)
+    price = np.asarray(price, dtype=float)
+    if load.ndim != 1 or len(load) == 0 or len(pv) != len(load) or len(price) != len(load):
+        raise ValueError("load, pv and price must be equal nonempty vectors")
+    if not np.all(np.isfinite(np.r_[load, pv, price])) or np.any(load < 0) or np.any(price < 0):
+        raise ValueError("inputs must be finite; load and price must be nonnegative")
+    original = None if original is None else np.asarray(original, dtype=float)
+    fixed_grid = None if fixed_grid is None else np.asarray(fixed_grid, dtype=float)
+    if original is not None and (original.shape != load.shape or np.any(original < 0)):
+        raise ValueError("original must be a nonnegative horizon vector")
+    if fixed_grid is not None and (fixed_grid.shape != load.shape or np.any(fixed_grid < 0)):
+        raise ValueError("fixed_grid must be a nonnegative horizon vector")
+    return load, pv, price, original, fixed_grid
+
+
+def _normalized_baseline(plan, status):
+    n = len(plan["grid_kwh"])
+    result = dict(plan)
+    result["emergency_plan_kwh"] = np.zeros(n)
+    normalized = dict(status)
+    normalized.update(
+        emergency_plan_kwh=0.0,
+        reserve_shortfall_kwh=0.0,
+        terminal_deviation_kwh=0.0,
+        contract_cost_yuan=float(status["objective_yuan"]),
+        emergency_cost_yuan=0.0,
+        reserve_proxy_yuan=0.0,
+        terminal_proxy_yuan=0.0,
+        proxy_cost_yuan=0.0,
+        total_objective_yuan=float(status["objective_yuan"]),
+    )
+    return result, normalized
+
+
+def solve(load, pv, price, initial, terminal, physical, original=None,
+          fixed_grid=None, reserve=None, soft_terminal=False, relaxed=False,
+          terminal_penalty=None):
+    """Solve one bounded horizon using settlement A for changed commitments."""
+    load, pv, price, original, fixed_grid = _arrays(load, pv, price, original, fixed_grid)
+    if soft_terminal and terminal_penalty is None:
+        raise ValueError("soft_terminal requires explicit terminal_penalty")
+    if terminal_penalty is not None and (not soft_terminal or terminal_penalty < 0):
+        raise ValueError("terminal_penalty is only valid for a soft terminal")
+
+    reserve_amount = 0.0
+    if reserve is not None:
+        required = {"index", "amount_kwh", "penalty_yuan_per_kwh"}
+        if set(reserve) != required:
+            raise ValueError("reserve requires index, amount_kwh and penalty_yuan_per_kwh")
+        reserve_index = int(reserve["index"])
+        reserve_amount = float(reserve["amount_kwh"])
+        reserve_penalty = float(reserve["penalty_yuan_per_kwh"])
+        if not 0 <= reserve_index <= len(load) or reserve_amount < 0 or reserve_penalty < 0:
+            raise ValueError("invalid reserve specification")
+
+    if not soft_terminal and fixed_grid is None and reserve_amount == 0:
+        plan, status = solve_horizon(
+            load, pv, price, initial, terminal, physical,
+            original=original, rule="A", relaxed=relaxed,
+        )
+        return _normalized_baseline(plan, status)
+
+    n = len(load)
+    battery = physical["battery"]
+    dt = physical["interval_minutes"] / 60
+    max_charge = float(battery["max_charge_kw"] * dt)
+    max_discharge = float(battery["max_discharge_kw"] * dt)
+    h = highspy.Highs()
+    h.setOptionValue("output_flag", False)
+    for key, value in physical["solver"].items():
+        if key != "name" and h.setOptionValue(key, value) != highspy.HighsStatus.kOk:
+            raise ValueError(key)
+    q = [h.addVariable(lb=float(fixed_grid[t]) if fixed_grid is not None else 0,
+                       ub=float(fixed_grid[t]) if fixed_grid is not None else highspy.kHighsInf,
+                       obj=float(price[t]) if original is None else 0, name=f"q_{t}") for t in range(n)]
+    c = [h.addVariable(ub=max_charge, name=f"c_{t}") for t in range(n)]
+    d = [h.addVariable(ub=max_discharge, name=f"d_{t}") for t in range(n)]
+    w = [h.addVariable(name=f"w_{t}") for t in range(n)]
+    e = [h.addVariable(lb=battery["min_energy_kwh"], ub=battery["max_energy_kwh"], name=f"E_{t}")
+         for t in range(n + 1)]
+    vartype = highspy.HighsVarType.kContinuous if relaxed else highspy.HighsVarType.kInteger
+    z = [h.addVariable(ub=1, type=vartype, name=f"z_{t}") for t in range(n)]
+    u = [h.addVariable(ub=float(load[t]), obj=5 * float(price[t]), name=f"u_{t}") for t in range(n)] if soft_terminal else []
+    y = [h.addVariable(ub=1, type=vartype, name=f"y_{t}") for t in range(n)] if soft_terminal else []
+    h.addConstr(e[0] == float(initial))
+    terminal_pos = terminal_neg = None
+    if soft_terminal:
+        terminal_pos = h.addVariable(obj=float(terminal_penalty), name="terminal_above")
+        terminal_neg = h.addVariable(obj=float(terminal_penalty), name="terminal_below")
+        h.addConstr(e[-1] - float(terminal) == terminal_pos - terminal_neg)
+    else:
+        h.addConstr(e[-1] == float(terminal))
+    for t in range(n):
+        emergency = u[t] if soft_terminal else 0
+        h.addConstr(q[t] + emergency + d[t] - c[t] - w[t] == float(load[t] - pv[t]))
+        h.addConstr(e[t + 1] == e[t] + battery["eta_charge"] * c[t]
+                    - (1 / battery["eta_discharge"]) * d[t])
+        h.addConstr(c[t] <= max_charge * z[t])
+        h.addConstr(d[t] <= max_discharge * (1 - z[t]))
+        if soft_terminal:
+            h.addConstr(u[t] <= float(load[t]) * y[t])
+            h.addConstr(c[t] <= max_charge * (1 - y[t]))
+        if original is not None:
+            fee = h.addVariable(obj=1, name=f"fee_{t}")
+            p, base = float(price[t]), float(original[t])
+            h.addConstr(fee >= 1.5 * p * q[t] - 0.5 * p * base)
+            h.addConstr(fee >= 0.5 * p * q[t] + 0.5 * p * base)
+    shortfall = None
+    if reserve_amount > 0:
+        shortfall = h.addVariable(obj=reserve_penalty, name="reserve_shortfall")
+        reference = float(battery["min_energy_kwh"]) + reserve_amount
+        h.addConstr(e[reserve_index] + shortfall >= reference)
+    h.run()
+    if h.getModelStatus() != highspy.HighsModelStatus.kOptimal:
+        raise RuntimeError(h.modelStatusToString(h.getModelStatus()))
+    solution, info = h.getSolution(), h.getInfo()
+    values = lambda variables: np.array([solution.col_value[int(v)] for v in variables])
+    state = values(e)
+    emergency_values = values(u) if soft_terminal else np.zeros(n)
+    plan = {
+        "grid_kwh": values(q), "charge_kwh": values(c), "discharge_kwh": values(d),
+        "surplus_kwh": values(w), "energy_start_kwh": state[:-1],
+        "energy_end_kwh": state[1:], "charge_mode": values(z),
+        "emergency_plan_kwh": emergency_values,
+    }
+    contract = float(np.dot(price, plan["grid_kwh"]) if original is None else
+                     contract_fee(original, plan["grid_kwh"], price, "A").sum())
+    emergency_cost = float(np.dot(5 * price, emergency_values))
+    reserve_shortfall = 0.0 if shortfall is None else float(solution.col_value[int(shortfall)])
+    terminal_deviation = 0.0 if not soft_terminal else float(
+        solution.col_value[int(terminal_pos)] + solution.col_value[int(terminal_neg)])
+    reserve_proxy = reserve_penalty * reserve_shortfall if reserve_amount > 0 else 0.0
+    terminal_proxy = float(terminal_penalty or 0) * terminal_deviation
+    objective = float(h.getObjectiveValue())
+    status = {
+        "status": "Optimal", "objective_yuan": objective, "total_objective_yuan": objective,
+        "solver_objective_yuan": objective,
+        "contract_cost_yuan": contract, "emergency_cost_yuan": emergency_cost,
+        "reserve_proxy_yuan": float(reserve_proxy), "terminal_proxy_yuan": terminal_proxy,
+        "proxy_cost_yuan": float(reserve_proxy + terminal_proxy),
+        "emergency_plan_kwh": float(emergency_values.sum()),
+        "reserve_shortfall_kwh": reserve_shortfall,
+        "terminal_deviation_kwh": terminal_deviation,
+        "lower_bound_yuan": objective if relaxed else float(info.mip_dual_bound),
+        "mip_gap": None if relaxed else float(info.mip_gap), "runtime_seconds": h.getRunTime(),
+        "max_primal_infeasibility": float(info.max_primal_infeasibility),
+        "relaxed": bool(relaxed), "variables": h.getNumCol(), "constraints": h.getNumRow(),
+    }
+    return plan, status
+
+
+def quantile_fit_predict(X, y, x, alpha=0.75):
+    """Fit linear pinball loss and predict one nonnegative value."""
+    X = np.asarray(X, dtype=float)
+    y = np.asarray(y, dtype=float)
+    x = np.asarray(x, dtype=float)
+    if X.ndim != 2 or y.shape != (len(X),) or x.shape != (X.shape[1],) or len(y) == 0:
+        raise ValueError("incompatible quantile regression inputs")
+    if not 0 < alpha < 1 or not np.all(np.isfinite(np.r_[X.ravel(), y, x])):
+        raise ValueError("alpha and data must be finite and valid")
+    n, p = X.shape
+    rank = int(np.linalg.matrix_rank(X))
+    if rank < p or n <= p:
+        quantile = float(np.quantile(y, alpha, method="higher"))
+        residual = y - quantile
+        objective = float(np.sum(alpha * np.maximum(residual, 0)
+                                 + (1 - alpha) * np.maximum(-residual, 0)))
+        beta = np.zeros(p)
+        if p:
+            beta[0] = quantile
+        return max(0.0, quantile), {
+            "beta": beta.tolist(), "rank": rank, "objective": objective,
+            "source": "empirical_quantile", "n": int(n),
+        }
+    objective = np.r_[np.zeros(p), np.full(n, alpha), np.full(n, 1 - alpha)]
+    equality = np.column_stack([X, np.eye(n), -np.eye(n)])
+    result = linprog(objective, A_eq=equality, b_eq=y,
+                     bounds=[(None, None)] * p + [(0, None)] * (2 * n), method="highs")
+    if not result.success:
+        raise RuntimeError(f"quantile LP failed: {result.message}")
+    beta = result.x[:p]
+    return max(0.0, float(x @ beta)), {
+        "beta": beta.tolist(), "rank": rank, "objective": float(result.fun),
+        "source": "pinball_lp", "n": int(n),
+    }
+
+
+def risk_prefix(residual):
+    values = np.asarray(residual, dtype=float)
+    if values.ndim != 1 or not np.all(np.isfinite(values)):
+        raise ValueError("residual must be a finite vector")
+    return float(max(0.0, np.max(np.cumsum(values), initial=0.0)))
+
+
+def gate_threshold(records, issue, hour, alpha, window_days=56, min_samples=20):
+    """Build a causal empirical update threshold for one publication hour."""
+    if not 0 < alpha < 1 or window_days <= 0 or min_samples <= 0:
+        raise ValueError("invalid gate settings")
+    issue = pd.Timestamp(issue)
+    frame = pd.DataFrame(records).copy()
+    if frame.empty:
+        return 0.0, {"n": 0, "latest_available_time": None, "record_ids": [], "active": False}
+    required = {"available_time", "issue_time", "issue_hour", "zeta_yuan"}
+    if not required.issubset(frame.columns):
+        raise ValueError("gate records missing required fields")
+    frame["available_time"] = pd.to_datetime(frame["available_time"])
+    frame["issue_time"] = pd.to_datetime(frame["issue_time"])
+    start = issue - pd.Timedelta(days=window_days)
+    frame = frame.loc[(frame.available_time <= issue) & (frame.issue_time < issue)
+                      & (frame.issue_time >= start) & (frame.issue_hour == hour)].copy()
+    frame = frame.sort_values(["issue_time", "available_time"], kind="stable")
+    ids = frame["id"].tolist() if "id" in frame else frame.index.tolist()
+    latest = None if frame.empty else str(pd.Timestamp(frame.available_time.max()))
+    active = len(frame) >= min_samples
+    tau = max(0.0, float(np.quantile(frame.zeta_yuan.to_numpy(float), alpha, method="higher"))) if active else 0.0
+    return tau, {"n": int(len(frame)), "latest_available_time": latest,
+                 "record_ids": [str(value) for value in ids], "active": bool(active)}
+
+NEW FILE scripts/run_innovation.py
+"""Sequential, predeclared innovation ablations; immutable baseline files are inputs."""
+import hashlib
+import json
+import os
+from pathlib import Path
+import sys
+import numpy as np
+import pandas as pd
+from run_q3 import select_forecast,execute_interval,contract_fee,export_policy
+from innovation_core import solve,quantile_fit_predict,risk_prefix,gate_threshold
+
+WORK=Path(__file__).resolve().parents[1];OUT=WORK/'results/innovation'
+for k in ['TMPDIR','TMP','TEMP']:os.environ[k]=str(WORK/'data/interim/innovation')
+sys.dont_write_bytecode=True
+POLICIES={'pv_raw':'pv','pv_bias':'pv','risk_none':'risk','risk_fixed':'risk','risk_g05':'risk','risk_g10':'risk',
+    'gate_paid':'gate','gate_q50':'gate','gate_q75':'gate','gate_frozen':'gate','gate_info_frozen':'gate'}
+
+def read(p):return pd.read_csv(p,float_precision='round_trip')
+def write(p,x):
+    p.parent.mkdir(parents=True,exist_ok=True)
+    p.write_text(json.dumps(x,ensure_ascii=False,indent=2,allow_nan=False)+'\n')
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+
+def bill(f,price):
+    delta=f.grid_effective_kwh-f.grid_original_kwh
+    f['price_yuan_per_kwh']=price;f['original_cost_yuan']=price*f.grid_original_kwh
+    f['increase_cost_yuan']=1.5*price*np.maximum(delta,0)
+    f['decrease_adjustment_yuan']=-.5*price*np.maximum(-delta,0)
+    f['contract_cost_yuan']=f.original_cost_yuan+f.increase_cost_yuan+f.decrease_adjustment_yuan
+    f['emergency_cost_yuan']=5*price*f.emergency_kwh
+    f['total_cost_yuan']=f.contract_cost_yuan+f.emergency_cost_yuan
+    return f
+
+def replay(q,actual,initial,original,price,ec,ed,target,terminal_penalty):
+    energy=initial;emergency=0.
+    for i,row in enumerate(actual.itertuples()):
+        event=execute_interval(float(max(q[i],0)),row.load_actual_kwh,row.pv_actual_kwh,energy,ec,ed)
+        energy=event['energy_end_actual_kwh'];emergency+=5*price[i]*event['emergency_kwh']
+    contract=float(contract_fee(original,q,price,'A').sum());proxy=terminal_penalty*abs(energy-target)
+    return {'cost_with_terminal_proxy_yuan':contract+emergency+proxy,'contract_cost_yuan':contract,
+        'emergency_cost_yuan':float(emergency),'terminal_proxy_yuan':float(proxy),'terminal_energy_kwh':float(energy)}
+
+class Inputs:
+    def __init__(self):
+        self.physical=json.loads((WORK/'configs/model_baseline.json').read_text())
+        self.b=self.physical['battery'];self.ec=self.b['eta_charge'];self.ed=self.b['eta_discharge']
+        self.price=read(WORK/'data/processed/fixed_price.csv').price_yuan_per_kwh.to_numpy()
+        self.penalty=float(self.price.mean()*self.ed)
+        actual=read(WORK/'data/processed/actual_10min.csv')
+        for c in ['interval_start','interval_end']:actual[c]=pd.to_datetime(actual[c])
+        self.actual={d:f.reset_index(drop=True) for d,f in actual.groupby('date')}
+        self.truth=actual.set_index('interval_start')
+        self.q2=read(WORK/'results/q2/selected/ledger.csv')
+        self.days={d:f.reset_index(drop=True) for d,f in self.q2.groupby('date')}
+        forecast=read(WORK/'data/processed/pv_forecast_10min.csv')
+        for c in ['issue_time','interval_start','interval_end']:forecast[c]=pd.to_datetime(forecast[c])
+        self.issues={k:f for k,f in forecast.groupby('issue_time')};self.bias_cache={};self.risk_cache={}
+        # Only the same-day portion used by Q3; future targets remain unavailable until completion.
+        hist=forecast.loc[(forecast.interval_end<=forecast.issue_time.dt.normalize()+pd.Timedelta(days=1)) &
+            forecast.interval_start.isin(self.truth.index) & (forecast.pv_forecast_kwh>0)].copy()
+        hist['residual_kwh']=self.truth.loc[hist.interval_start].pv_actual_kwh.to_numpy()-hist.pv_forecast_kwh.to_numpy()
+        hist['hour']=hist.issue_time.dt.hour;self.pv_hist=hist
+        risks=[]
+        for date,f in self.days.items():
+            part=f.iloc[72:108];real=self.actual[date].iloc[72:108]
+            residual=(real.load_actual_kwh-real.pv_actual_kwh).to_numpy()-(part.load_forecast_kwh-part.pv_forecast_kwh).to_numpy()
+            risks.append({'date':date,'available_time':str(pd.Timestamp(date)+pd.Timedelta(days=1)),
+                's_kwh':float(risk_prefix(residual)),'x1':float((part.load_forecast_kwh-part.pv_forecast_kwh).mean()/1000),
+                'x2':float(part.pv_forecast_kwh.mean()/1000)})
+        self.risks=pd.DataFrame(risks);self.risks.to_csv(OUT/'risk_targets.csv',index=False)
+        self.feb_initial=json.loads((WORK/'results/q2/selection.json').read_text())['common_evaluation_initial_energy_kwh']
+        self.april_initial={'risk':float(self.days['2025-04-01'].energy_start_actual_kwh.iloc[0])}
+        q3=read(WORK/'results/q3/all_A/ledger.csv')
+        for group in ['pv','gate']:self.april_initial[group]=float(q3.loc[q3.date=='2025-04-01'].energy_start_actual_kwh.iloc[0])
+    def forecast(self,issue):return select_forecast(self.issues[issue],issue,issue.normalize()+pd.Timedelta(days=1))
+    def corrected(self,issue):
+        if issue not in self.bias_cache:
+            f=self.forecast(issue);cut=issue.normalize();h=self.pv_hist
+            h=h.loc[(h.hour==issue.hour)&(h.interval_end<=cut)&(h.interval_start>=cut-pd.Timedelta(days=28))]
+            bias=float(h.residual_kwh.mean()) if len(h) else 0.
+            raw=f.pv_forecast_kwh.to_numpy();pred=np.where(raw>0,np.maximum(0,raw+bias),0.)
+            meta={'issue_time':str(issue),'training_cutoff':str(cut),'training_rows':len(h),
+                'latest_target_end':str(h.interval_end.max()) if len(h) else None,'bias_kwh':bias,
+                'clipped_intervals':int(((raw>0)&(raw+bias<0)).sum()),'active_positive_intervals':int((raw>0).sum())}
+            self.bias_cache[issue]=(pred,meta)
+        return self.bias_cache[issue]
+    def risk(self,day):
+        if day not in self.risk_cache:
+            h=self.risks;avail=pd.to_datetime(h.available_time)
+            h=h.loc[(avail<=day)&(pd.to_datetime(h.date)>=day-pd.Timedelta(days=56))]
+            target=self.risks.loc[self.risks.date==str(day.date())].iloc[0]
+            x=[1.,target.x1,target.x2]
+            if len(h)<20:
+                pred=None;meta={'fallback':'fixed_2400','training_rows':len(h)}
+            else:
+                X=np.column_stack([np.ones(len(h)),h.x1,h.x2]);prediction,meta=quantile_fit_predict(X,h.s_kwh.to_numpy()/1000,np.array(x),alpha=.75)
+                pred=float(prediction*1000)
+            meta.update(issue_time=str(day),training_dates=h.date.tolist(),latest_available_time=str(pd.to_datetime(h.available_time).max()) if len(h) else None,
+                features=x,predicted_s_kwh=pred,realized_s_kwh=float(target.s_kwh))
+            self.risk_cache[day]=(pred,meta)
+        return self.risk_cache[day]
+
+def run_policy(data,policy,start,end,phase,history):
+    group=POLICIES[policy];energy=data.feb_initial if phase=='calibration' else data.april_initial[group]
+    all_rows=[];all_plans=[];statuses=[];decisions=[];candidate_rows=[]
+    for day in pd.date_range(start,end):
+        date=str(day.date());truth=data.actual[date];base=data.days[date];load=base.load_forecast_kwh.to_numpy()
+        initial=energy;original=None;current=None;events=[];day_history=[]
+        hours=[0] if group=='risk' or policy=='gate_frozen' else [0,6,12,18]
+        for slot in range(144):
+            if slot in [h*6 for h in hours]:
+                issue=day+pd.Timedelta(minutes=slot*10);hour=slot//6
+                if group=='risk':
+                    pv=base.pv_forecast_kwh.to_numpy();raw=pv.copy();metadata={'pv_source':'Q2_selected'}
+                else:
+                    f=data.forecast(issue);raw=f.pv_forecast_kwh.to_numpy();pv=raw.copy();metadata={'pv_source':'raw_appendix3'}
+                    if policy=='pv_bias':pv,bias=data.corrected(issue);metadata={'pv_source':'bias_corrected_appendix3','bias':bias}
+                reserve=None
+                if group=='risk' and policy!='risk_none':
+                    amount=2400.;risk_meta=None
+                    if policy.startswith('risk_g'):
+                        prediction,risk_meta=data.risk(day)
+                        if prediction is not None:amount=min(9600.,(.5 if policy=='risk_g05' else 1.)*prediction/data.ed)
+                    reserve={'index':72,'amount_kwh':float(amount),'penalty_yuan_per_kwh':data.penalty}
+                    metadata.update(reserve=reserve,risk_model=risk_meta)
+                soft=group=='gate';kwargs={'soft_terminal':soft}
+                if soft:kwargs['terminal_penalty']=data.penalty
+                accepted=True;decision=None
+                if policy in ['gate_frozen','gate_info_frozen'] and slot>0:
+                    # Information without control has no effect under the unchanged greedy executor.
+                    plan,status=solve(load[slot:],pv,data.price[slot:],energy,initial,data.physical,original=original[slot:],fixed_grid=current[slot:],**kwargs)
+                    accepted=False
+                else:
+                    plan,status=solve(load[slot:],pv,data.price[slot:],energy,initial,data.physical,original=None if slot==0 else original[slot:],reserve=reserve,**kwargs)
+                if soft and slot>0 and policy not in ['gate_frozen','gate_info_frozen']:
+                    hold,hold_status=solve(load[slot:],pv,data.price[slot:],energy,initial,data.physical,original=original[slot:],fixed_grid=current[slot:],**kwargs)
+                    vhat=float(hold_status['objective_yuan']-status['objective_yuan'])
+                    assert vhat>=-1e-5,'Free update must contain hold feasible set'
+                    alpha=.5 if policy=='gate_q50' else .75
+                    tau,threshold=gate_threshold(history,issue,hour,alpha=alpha,window_days=56,min_samples=20)
+                    enabled=policy!='gate_paid' and threshold['active']
+                    accepted=not enabled or vhat>tau+1e-7
+                    for label,choice,st in [('hold',hold,hold_status),('update',plan,status)]:
+                        frame=pd.DataFrame({'date':date,'issue_hour':hour,'alternative':label,'slot_id':np.arange(slot+1,145),
+                            'load_forecast_kwh':load[slot:],'pv_forecast_kwh':pv,'price_yuan_per_kwh':data.price[slot:],
+                            'grid_original_kwh':original[slot:]})
+                        for key,value in choice.items():frame[key]=value
+                        candidate_rows.append(frame)
+                    hold_actual=replay(hold['grid_kwh'],truth.iloc[slot:],energy,original[slot:],data.price[slot:],data.ec,data.ed,initial,data.penalty)
+                    update_actual=replay(plan['grid_kwh'],truth.iloc[slot:],energy,original[slot:],data.price[slot:],data.ec,data.ed,initial,data.penalty)
+                    vreplay=hold_actual['cost_with_terminal_proxy_yuan']-update_actual['cost_with_terminal_proxy_yuan']
+                    decision={'date':date,'issue_time':str(issue),'issue_hour':hour,'available_time':str(day+pd.Timedelta(days=1)),
+                        'initial_energy_kwh':float(energy),'terminal_target_kwh':float(initial),'vhat_yuan':vhat,'vreplay_yuan':float(vreplay),
+                        'zeta_yuan':float(vhat-vreplay),'tau_yuan':float(tau),'threshold_enabled':bool(enabled),'accepted':bool(accepted),
+                        'threshold_model':threshold,'hold_solver':hold_status,'update_solver':status,
+                        'hold_replay':hold_actual,'update_replay':update_actual,
+                        'proposed_change_kwh':float(np.abs(plan['grid_kwh']-current[slot:]).sum())}
+                    decisions.append(decision);day_history.append(decision)
+                    if not accepted:plan,status=hold,hold_status
+                if slot==0:
+                    original=np.maximum(0.,plan['grid_kwh']);current=original.copy()
+                else:current[slot:]=np.maximum(0.,plan['grid_kwh'])
+                version=pd.DataFrame({'date':date,'issue_hour':hour,'issue_time':str(issue),'slot_id':np.arange(slot+1,145),
+                    'interval_start':truth.interval_start.iloc[slot:].to_numpy(),'interval_end':truth.interval_end.iloc[slot:].to_numpy(),
+                    'load_forecast_kwh':load[slot:],'pv_forecast_kwh':pv,'pv_raw_forecast_kwh':raw,
+                    'grid_original_kwh':original[slot:],'accepted':accepted})
+                for key,value in plan.items():version[key]=value
+                all_plans.append(version)
+                statuses.append({'date':date,'issue_hour':hour,'issue_time':str(issue),'initial_energy_kwh':float(energy),
+                    'terminal_target_kwh':float(initial),'metadata':metadata,'solver':status})
+                active_slot=slot;active_hour=hour;active_pv=pv
+            row=truth.iloc[slot];q=max(0.,float(current[slot]))
+            event=execute_interval(q,row.load_actual_kwh,row.pv_actual_kwh,energy,data.ec,data.ed);energy=event['energy_end_actual_kwh']
+            # gate_frozen still uses the last accepted forecast only for reporting; execution sees actuals.
+            event.update(date=date,slot_id=slot+1,interval_start=str(row.interval_start),interval_end=str(row.interval_end),
+                active_issue_hour=active_hour,load_actual_kwh=row.load_actual_kwh,pv_actual_kwh=row.pv_actual_kwh,
+                load_forecast_kwh=float(load[slot]),pv_forecast_kwh=float(active_pv[slot-active_slot]),
+                grid_original_kwh=float(original[slot]),grid_effective_kwh=q)
+            events.append(event)
+        # Paired future truth was used only for diagnostics; it becomes eligible now, after the day.
+        history.extend(day_history)
+        all_rows.append(bill(pd.DataFrame(events),data.price))
+        if day.day==1:print(phase,policy,date,'SOC',round(energy,2),flush=True)
+    folder=OUT/phase/policy
+    total=export_policy(folder,pd.concat(all_rows,ignore_index=True),pd.concat(all_plans,ignore_index=True),statuses,'A')
+    write(folder/'decisions.json',decisions)
+    if candidate_rows:pd.concat(candidate_rows,ignore_index=True).to_csv(folder/'candidate_versions.csv',index=False)
+    total['policy']=policy;total['group']=group;total['inventory_adjusted_cost_yuan']=total['total_cost_yuan']-data.penalty*(energy-total['initial_energy_kwh'])
+    total['gate_decisions']=len(decisions);total['accepted_updates']=sum(d['accepted'] for d in decisions)
+    total['accepted_change_kwh']=sum(d['proposed_change_kwh'] for d in decisions if d['accepted'])
+    write(folder/'innovation_summary.json',total)
+    print(phase,policy,'cost',round(total['total_cost_yuan'],2),flush=True)
+    return total
+
+def main():
+    if (OUT/'run_status.json').exists():raise FileExistsError('Use a new version; preserve completed innovation results')
+    paths=['configs/model_baseline.json','scripts/run_innovation.py','scripts/innovation_core.py','scripts/run_q3.py','scripts/run_q2.py','scripts/solve_q1.py',
+        'data/processed/actual_10min.csv','data/processed/fixed_price.csv','data/processed/pv_forecast_10min.csv',
+        'results/q2/selected/ledger.csv','results/q2/selection.json','results/q3/all_A/ledger.csv','reports/innovation/execution_plan.md']
+    hashes={p:sha(WORK/p) for p in paths};write(OUT/'input_code_hashes.json',hashes)
+    data=Inputs();write(OUT/'config_snapshot.json',{'policies':POLICIES,'calibration_start':'2025-02-01','selection_start':'2025-03-01','selection_end':'2025-03-31',
+        'evaluation_start':'2025-04-01','evaluation_end':'2025-12-31','feb_initial':data.feb_initial,'april_initial':data.april_initial,
+        'proxy_penalty_yuan_per_kwh':data.penalty,'risk_alpha':.75,'fixed_reserve_kwh':2400.,'risk_window':[72,108],
+        'retrospective':True,'formal_submission':False})
+    histories={p:[] for p in POLICIES};cal=[];evaluation=[]
+    for policy in POLICIES:cal.append(run_policy(data,policy,'2025-02-01','2025-03-31','calibration',histories[policy]))
+    scores=[]
+    for policy,group in POLICIES.items():
+        d=read(OUT/'calibration'/policy/'daily.csv');score=float(d.loc[d.date>='2025-03-01','total_cost_yuan'].sum())
+        scores.append({'policy':policy,'group':group,'march_cost_yuan':score})
+    scores=pd.DataFrame(scores);scores.to_csv(OUT/'calibration_scores.csv',index=False)
+    eligible={'pv':['pv_raw','pv_bias'],'risk':['risk_none','risk_fixed','risk_g05','risk_g10'],'gate':['gate_paid','gate_q50','gate_q75']}
+    selected={g:min(names,key=lambda p:(float(scores.set_index('policy').loc[p,'march_cost_yuan']),names.index(p))) for g,names in eligible.items()}
+    selection={'selected':selected,'eligible':eligible,'available_time':'2025-04-01 00:00:00','criterion':'Minimum March actual bill; ordered simpler candidate breaks exact ties',
+        'scores_sha256':sha(OUT/'calibration_scores.csv'),'selected_before_evaluation':True}
+    write(OUT/'selection.json',selection);selection_hash=sha(OUT/'selection.json')
+    for policy in POLICIES:evaluation.append(run_policy(data,policy,'2025-04-01','2025-12-31','evaluation',histories[policy]))
+    pd.DataFrame(cal).to_csv(OUT/'calibration_comparison.csv',index=False);pd.DataFrame(evaluation).to_csv(OUT/'comparison.csv',index=False)
+    write(OUT/'pv_bias_models.json',[v[1] for _,v in sorted(data.bias_cache.items())]);write(OUT/'risk_models.json',[v[1] for _,v in sorted(data.risk_cache.items())])
+    assert hashes=={p:sha(WORK/p) for p in paths};assert sha(OUT/'selection.json')==selection_hash
+    write(OUT/'run_status.json',{'completed':True,'inputs_unchanged':True,'selection_unchanged':True,'policies':list(POLICIES),'evaluation_days':275,'formal_excel_exported':False})
+    print(pd.DataFrame(evaluation)[['policy','total_cost_yuan','emergency_kwh','accepted_updates']].to_string(index=False),flush=True)
+
+if __name__=='__main__':main()
+
+NEW FILE tests/test_innovation_core.py
+import json
+from pathlib import Path
+import sys
+import unittest
+
+import numpy as np
+import pandas as pd
+
+WORK = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(WORK / "scripts"))
+
+import innovation_core as core
+from run_q3 import solve_horizon
+
+
+def physical():
+    cfg = json.loads((WORK / "configs/model_baseline.json").read_text())
+    cfg["battery"].update(
+        min_energy_kwh=0.0,
+        max_energy_kwh=10.0,
+        max_charge_kw=30.0,
+        max_discharge_kw=30.0,
+    )
+    return cfg
+
+
+class SolverTests(unittest.TestCase):
+    def test_zero_reserve_matches_q3_hard_terminal(self):
+        load = np.array([2.0, 4.0, 1.0])
+        pv = np.array([0.0, 1.0, 0.0])
+        price = np.array([1.0, 2.0, 1.0])
+        expected, expected_status = solve_horizon(
+            load, pv, price, 5.0, 5.0, physical(), relaxed=True
+        )
+        actual, status = core.solve(
+            load, pv, price, 5.0, 5.0, physical(),
+            reserve={"index": 1, "amount_kwh": 0.0, "penalty_yuan_per_kwh": 1.0},
+            relaxed=True,
+        )
+        for key in expected:
+            np.testing.assert_allclose(actual[key], expected[key], atol=1e-7)
+        self.assertAlmostEqual(status["objective_yuan"], expected_status["objective_yuan"], places=7)
+        self.assertAlmostEqual(status["reserve_shortfall_kwh"], 0.0, places=7)
+
+    def test_unreachable_reserve_uses_shortfall_instead_of_becoming_infeasible(self):
+        plan, status = core.solve(
+            [0.0], [0.0], [1.0], 0.0, 0.0, physical(),
+            reserve={"index": 1, "amount_kwh": 20.0, "penalty_yuan_per_kwh": 2.0},
+            relaxed=True,
+        )
+        self.assertEqual(status["status"], "Optimal")
+        self.assertAlmostEqual(status["reserve_shortfall_kwh"], 20.0, places=7)
+        self.assertAlmostEqual(status["reserve_proxy_yuan"], 40.0, places=7)
+        self.assertAlmostEqual(plan["energy_end_kwh"][-1], 0.0, places=7)
+
+    def test_frozen_grid_shortage_is_feasible_without_emergency_charging(self):
+        plan, status = core.solve(
+            [5.0], [0.0], [1.0], 0.0, 0.0, physical(),
+            fixed_grid=[0.0], soft_terminal=True, terminal_penalty=0.9,
+        )
+        self.assertAlmostEqual(plan["grid_kwh"][0], 0.0, places=7)
+        self.assertAlmostEqual(plan["emergency_plan_kwh"][0], 5.0, places=7)
+        self.assertAlmostEqual(plan["charge_kwh"][0], 0.0, places=7)
+        self.assertAlmostEqual(status["emergency_plan_kwh"], 5.0, places=7)
+
+    def test_free_update_cannot_cost_more_than_holding_same_plan(self):
+        args = ([5.0], [0.0], [1.0], 0.0, 0.0, physical())
+        _, hold = core.solve(
+            *args, original=[0.0], fixed_grid=[0.0],
+            soft_terminal=True, terminal_penalty=0.9,
+        )
+        _, update = core.solve(
+            *args, original=[0.0], soft_terminal=True, terminal_penalty=0.9,
+        )
+        self.assertLessEqual(update["objective_yuan"], hold["objective_yuan"] + 1e-7)
+        for status in (hold, update):
+            self.assertAlmostEqual(
+                status["objective_yuan"],
+                status["contract_cost_yuan"] + status["emergency_cost_yuan"]
+                + status["reserve_proxy_yuan"] + status["terminal_proxy_yuan"],
+                places=7,
+            )
+
+    def test_soft_terminal_requires_explicit_penalty(self):
+        with self.assertRaises(ValueError):
+            core.solve([0.0], [0.0], [1.0], 0.0, 0.0, physical(), soft_terminal=True)
+
+
+class StatisticalKernelTests(unittest.TestCase):
+    def test_quantile_lp_fits_analytical_intercept_and_clips_prediction(self):
+        pred, meta = core.quantile_fit_predict(
+            np.ones((5, 1)), np.array([1.0, 2.0, 3.0, 100.0, 101.0]), np.array([1.0]), alpha=0.75
+        )
+        self.assertAlmostEqual(pred, 100.0, places=7)
+        self.assertEqual(meta["source"], "pinball_lp")
+        self.assertEqual(meta["rank"], 1)
+        self.assertGreaterEqual(meta["objective"], 0.0)
+        negative, _ = core.quantile_fit_predict(np.ones((3, 1)), [-4.0, -3.0, -2.0], [1.0], 0.75)
+        self.assertEqual(negative, 0.0)
+
+    def test_rank_deficiency_falls_back_to_empirical_quantile(self):
+        pred, meta = core.quantile_fit_predict(
+            np.ones((4, 2)), [1.0, 2.0, 3.0, 4.0], [1.0, 1.0], 0.75
+        )
+        self.assertEqual(meta["source"], "empirical_quantile")
+        self.assertEqual(meta["rank"], 1)
+        self.assertGreaterEqual(pred, 0.0)
+
+    def test_risk_prefix_allows_deficit_cancellation(self):
+        self.assertAlmostEqual(core.risk_prefix([-2.0, 5.0, -4.0]), 3.0)
+        self.assertEqual(core.risk_prefix([-2.0, -1.0]), 0.0)
+
+    def test_gate_excludes_future_wrong_hour_and_expired_records(self):
+        issue = pd.Timestamp("2025-04-01 12:00")
+        records = [
+            {"id": "valid", "available_time": "2025-03-31 00:00", "issue_time": "2025-03-30 12:00", "issue_hour": 12, "zeta_yuan": 4.0},
+            {"id": "future", "available_time": "2025-04-01 12:01", "issue_time": "2025-03-31 12:00", "issue_hour": 12, "zeta_yuan": 999.0},
+            {"id": "wrong-hour", "available_time": "2025-03-31 00:00", "issue_time": "2025-03-31 06:00", "issue_hour": 6, "zeta_yuan": 999.0},
+            {"id": "old", "available_time": "2025-01-01 00:00", "issue_time": "2025-01-01 12:00", "issue_hour": 12, "zeta_yuan": 999.0},
+        ]
+        tau, meta = core.gate_threshold(records, issue, 12, 0.75, min_samples=1)
+        self.assertAlmostEqual(tau, 4.0)
+        self.assertEqual(meta["n"], 1)
+        self.assertEqual(meta["record_ids"], ["valid"])
+        self.assertEqual(meta["latest_available_time"], "2025-03-31 00:00:00")
+        self.assertTrue(meta["active"])
+
+
+if __name__ == "__main__":
+    unittest.main()

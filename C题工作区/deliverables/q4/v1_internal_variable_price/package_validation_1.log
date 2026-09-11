@@ -1,0 +1,11 @@
+q42_fixed PASS 8722 checks []
+q42_ols PASS 8820 checks []
+q42_perfect PASS 8935 checks []
+q43_no_update_ols PASS 8818 checks []
+q43_all_A_ols PASS 32682 checks []
+q43_all_B_ols PASS 33662 checks []
+q43_all_A_hold0 PASS 32682 checks []
+q43_all_A_fixed PASS 32683 checks []
+q43_all_A_perfect PASS 32717 checks []
+Price models 1336 PASS
+Q4 audit True 211834 checks

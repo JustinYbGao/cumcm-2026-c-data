@@ -1,0 +1,4 @@
+-r requirements.txt
+scipy==1.18.1
+PyYAML==6.0.3
+langchain-core==1.6.2

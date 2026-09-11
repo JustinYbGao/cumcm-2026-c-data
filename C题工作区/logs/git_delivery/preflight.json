@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "robustness_manifest_files_unchanged": 269,
+  "archive_hashes_match": 2,
+  "credential_pattern_matches": [],
+  "tests_passed": 54,
+  "reading_copy_relative_links_verified": true
+}

@@ -1,0 +1,147 @@
+{
+  "file_name": "data.csv",
+  "file_type": "csv",
+  "sheet_name": null,
+  "row_count": 9,
+  "column_count": 5,
+  "column_names": [
+    "month",
+    "raw_total_cost_yuan",
+    "corrected_total_cost_yuan",
+    "cash_gain_yuan",
+    "cumulative_cash_gain_yuan"
+  ],
+  "sample_records": [
+    {
+      "month": "2025-04",
+      "raw_total_cost_yuan": 946012.2817225718,
+      "corrected_total_cost_yuan": 936487.4225477868,
+      "cash_gain_yuan": 9524.859174784991,
+      "cumulative_cash_gain_yuan": 9524.859174784991
+    },
+    {
+      "month": "2025-05",
+      "raw_total_cost_yuan": 994586.3103484086,
+      "corrected_total_cost_yuan": 981556.4520547373,
+      "cash_gain_yuan": 13029.85829367136,
+      "cumulative_cash_gain_yuan": 22554.71746845635
+    },
+    {
+      "month": "2025-06",
+      "raw_total_cost_yuan": 1338015.2695482797,
+      "corrected_total_cost_yuan": 1337383.94173044,
+      "cash_gain_yuan": 631.3278178396868,
+      "cumulative_cash_gain_yuan": 23186.04528629604
+    },
+    {
+      "month": "2025-07",
+      "raw_total_cost_yuan": 1557842.5706928202,
+      "corrected_total_cost_yuan": 1559252.2952464265,
+      "cash_gain_yuan": -1409.724553606335,
+      "cumulative_cash_gain_yuan": 21776.320732689703
+    },
+    {
+      "month": "2025-08",
+      "raw_total_cost_yuan": 1279843.038711614,
+      "corrected_total_cost_yuan": 1269817.2126957197,
+      "cash_gain_yuan": 10025.826015894349,
+      "cumulative_cash_gain_yuan": 31802.146748584055
+    },
+    {
+      "month": "2025-09",
+      "raw_total_cost_yuan": 1189914.415953396,
+      "corrected_total_cost_yuan": 1187792.9668983067,
+      "cash_gain_yuan": 2121.449055089357,
+      "cumulative_cash_gain_yuan": 33923.59580367341
+    },
+    {
+      "month": "2025-10",
+      "raw_total_cost_yuan": 1164409.6408745858,
+      "corrected_total_cost_yuan": 1157148.1726609373,
+      "cash_gain_yuan": 7261.468213648455,
+      "cumulative_cash_gain_yuan": 41185.06401732186
+    },
+    {
+      "month": "2025-11",
+      "raw_total_cost_yuan": 1261958.0603212656,
+      "corrected_total_cost_yuan": 1256493.7027476048,
+      "cash_gain_yuan": 5464.3575736608545,
+      "cumulative_cash_gain_yuan": 46649.42159098272
+    },
+    {
+      "month": "2025-12",
+      "raw_total_cost_yuan": 1705553.653944076,
+      "corrected_total_cost_yuan": 1706056.5892798728,
+      "cash_gain_yuan": -502.9353357968285,
+      "cumulative_cash_gain_yuan": 46146.48625518589
+    }
+  ],
+  "head_records": [
+    {
+      "month": "2025-04",
+      "raw_total_cost_yuan": 946012.2817225718,
+      "corrected_total_cost_yuan": 936487.4225477868,
+      "cash_gain_yuan": 9524.859174784991,
+      "cumulative_cash_gain_yuan": 9524.859174784991
+    },
+    {
+      "month": "2025-05",
+      "raw_total_cost_yuan": 994586.3103484086,
+      "corrected_total_cost_yuan": 981556.4520547373,
+      "cash_gain_yuan": 13029.85829367136,
+      "cumulative_cash_gain_yuan": 22554.71746845635
+    },
+    {
+      "month": "2025-06",
+      "raw_total_cost_yuan": 1338015.2695482797,
+      "corrected_total_cost_yuan": 1337383.94173044,
+      "cash_gain_yuan": 631.3278178396868,
+      "cumulative_cash_gain_yuan": 23186.04528629604
+    },
+    {
+      "month": "2025-07",
+      "raw_total_cost_yuan": 1557842.5706928202,
+      "corrected_total_cost_yuan": 1559252.2952464265,
+      "cash_gain_yuan": -1409.724553606335,
+      "cumulative_cash_gain_yuan": 21776.320732689703
+    },
+    {
+      "month": "2025-08",
+      "raw_total_cost_yuan": 1279843.038711614,
+      "corrected_total_cost_yuan": 1269817.2126957197,
+      "cash_gain_yuan": 10025.826015894349,
+      "cumulative_cash_gain_yuan": 31802.146748584055
+    },
+    {
+      "month": "2025-09",
+      "raw_total_cost_yuan": 1189914.415953396,
+      "corrected_total_cost_yuan": 1187792.9668983067,
+      "cash_gain_yuan": 2121.449055089357,
+      "cumulative_cash_gain_yuan": 33923.59580367341
+    },
+    {
+      "month": "2025-10",
+      "raw_total_cost_yuan": 1164409.6408745858,
+      "corrected_total_cost_yuan": 1157148.1726609373,
+      "cash_gain_yuan": 7261.468213648455,
+      "cumulative_cash_gain_yuan": 41185.06401732186
+    },
+    {
+      "month": "2025-11",
+      "raw_total_cost_yuan": 1261958.0603212656,
+      "corrected_total_cost_yuan": 1256493.7027476048,
+      "cash_gain_yuan": 5464.3575736608545,
+      "cumulative_cash_gain_yuan": 46649.42159098272
+    },
+    {
+      "month": "2025-12",
+      "raw_total_cost_yuan": 1705553.653944076,
+      "corrected_total_cost_yuan": 1706056.5892798728,
+      "cash_gain_yuan": -502.9353357968285,
+      "cumulative_cash_gain_yuan": 46146.48625518589
+    }
+  ],
+  "sampled": false,
+  "sample_strategy": "数据行数 9 未超过阈值，提供前 9 行作为样例。",
+  "warnings": []
+}

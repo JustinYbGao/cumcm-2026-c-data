@@ -1,0 +1,28 @@
+{
+  "status": "internal_retrospective_assumption_robustness",
+  "evaluation_start": "2025-02-01",
+  "evaluation_end": "2025-12-31",
+  "correction_start": "2025-04-01",
+  "initial_energy_kwh": 7268.4231640740745,
+  "update_hours": [0, 6, 12, 18],
+  "settlement_rule": "A",
+  "pv_correction": "Same issue hour mean(actual minus raw forecast) over positive raw-PV targets in the trailing window; only targets completed by issue-day midnight; apply only where current raw PV is positive and clip at zero.",
+  "inventory_reference": "0.9 times mean Appendix 1 fixed price; diagnostic only, never cash cost",
+  "comparison_period": "Paired April 1 through December 31 cash costs after each policy's own continuous February-March state",
+  "policies": {
+    "fixed_raw": {"planning_price": "fixed", "settlement_price": "fixed", "eta_charge": 0.9, "eta_discharge": 0.9, "terminal": "hard", "pv_window_days": null},
+    "fixed_w28": {"planning_price": "fixed", "settlement_price": "fixed", "eta_charge": 0.9, "eta_discharge": 0.9, "terminal": "hard", "pv_window_days": 28},
+    "fixed_w14": {"planning_price": "fixed", "settlement_price": "fixed", "eta_charge": 0.9, "eta_discharge": 0.9, "terminal": "hard", "pv_window_days": 14},
+    "fixed_w56": {"planning_price": "fixed", "settlement_price": "fixed", "eta_charge": 0.9, "eta_discharge": 0.9, "terminal": "hard", "pv_window_days": 56},
+    "efficiency_raw": {"planning_price": "fixed", "settlement_price": "fixed", "eta_charge": 0.9486832980505138, "eta_discharge": 0.9486832980505138, "terminal": "hard", "pv_window_days": null},
+    "efficiency_w28": {"planning_price": "fixed", "settlement_price": "fixed", "eta_charge": 0.9486832980505138, "eta_discharge": 0.9486832980505138, "terminal": "hard", "pv_window_days": 28},
+    "soft_raw": {"planning_price": "fixed", "settlement_price": "fixed", "eta_charge": 0.9, "eta_discharge": 0.9, "terminal": "soft", "pv_window_days": null},
+    "soft_w28": {"planning_price": "fixed", "settlement_price": "fixed", "eta_charge": 0.9, "eta_discharge": 0.9, "terminal": "soft", "pv_window_days": 28},
+    "variable_raw": {"planning_price": "q4_causal_ols", "settlement_price": "actual_variable", "eta_charge": 0.9, "eta_discharge": 0.9, "terminal": "hard", "pv_window_days": null},
+    "variable_w28": {"planning_price": "q4_causal_ols", "settlement_price": "actual_variable", "eta_charge": 0.9, "eta_discharge": 0.9, "terminal": "hard", "pv_window_days": 28}
+  },
+  "expected_fixed_raw_total_cost_yuan": 13772880.061223056,
+  "baseline_tolerance_yuan": 0.000001,
+  "retrospective": true,
+  "formal_excel_exported": false
+}

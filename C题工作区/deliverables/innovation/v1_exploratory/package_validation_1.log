@@ -1,0 +1,23 @@
+calibration_pv_raw PASS
+calibration_pv_bias PASS
+calibration_risk_none PASS
+calibration_risk_fixed PASS
+calibration_risk_g05 PASS
+calibration_risk_g10 PASS
+calibration_gate_paid PASS
+calibration_gate_q50 PASS
+calibration_gate_q75 PASS
+calibration_gate_frozen PASS
+calibration_gate_info_frozen PASS
+evaluation_pv_raw PASS
+evaluation_pv_bias PASS
+evaluation_risk_none PASS
+evaluation_risk_fixed PASS
+evaluation_risk_g05 PASS
+evaluation_risk_g10 PASS
+evaluation_gate_paid PASS
+evaluation_gate_q50 PASS
+evaluation_gate_q75 PASS
+evaluation_gate_frozen PASS
+evaluation_gate_info_frozen PASS
+Innovation audit True 308491 checks []

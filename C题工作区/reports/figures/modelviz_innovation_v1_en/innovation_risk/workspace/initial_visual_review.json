@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "reviewer": "Codex assistant actual PNG inspection",
+  "issues": [
+    "Automatic x margins show a January tick outside the 2025 evaluation span; constrain axis to observed dates."
+  ],
+  "inspected_png_sha256": "512fbc90649a5bbda54d11aed5210f980aeec39c8251ccbfe6ed2e12862fb65c"
+}

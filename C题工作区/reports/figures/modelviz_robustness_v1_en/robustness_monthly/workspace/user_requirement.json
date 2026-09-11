@@ -1,0 +1,24 @@
+{
+  "original_request": "新的敏感性鲁棒性测试也要；modelviz-skill；全部英文标注。",
+  "goal": "主方案每月实际成本及正负省费时间序列",
+  "functional_keywords": [
+    "趋势",
+    "比较",
+    "复合时间序列",
+    "多指标时间序列"
+  ],
+  "chart_types": [],
+  "style_keywords": [
+    "English labels",
+    "serif typography"
+  ],
+  "use_case": "论文正文",
+  "negative_requirements": [
+    "No Chinese text in figures",
+    "No significance stars",
+    "No three-dimensional view"
+  ],
+  "explicit_template": false,
+  "is_ambiguous": false,
+  "clarification_question": ""
+}

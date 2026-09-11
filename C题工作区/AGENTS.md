@@ -9,3 +9,7 @@
 
 当前Q1/Q2图：`reports/figures/modelviz_v3_en/`；可复现命令见 `reports/modelviz_v3_en_revision.md`。
 当前Q3图：`reports/figures/modelviz_q3_v1_en/`；命令和实际视觉检查证据见 `reports/q3_model_and_results.md` 及各图 `workspace/`。
+
+当前Q4图：`reports/figures/modelviz_q4_v1_en/`；命令、数据来源及实际视觉检查见 `reports/q4_model_and_results.md` 及各图 `workspace/`。
+
+当前创新实验图：`reports/figures/modelviz_innovation_v1_en/`；保留初图修复记录，见 `reports/innovation/model_and_results.md`。

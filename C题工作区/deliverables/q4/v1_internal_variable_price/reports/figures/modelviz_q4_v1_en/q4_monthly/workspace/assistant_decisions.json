@@ -1,0 +1,207 @@
+{
+  "selection": {
+    "dataset_summary": "11 months of actual costs under the same variable tariff; fixed versus OLS planning inputs in two branches",
+    "relevant_columns": [
+      "month",
+      "q42_fixed_cost_yuan",
+      "q42_ols_cost_yuan",
+      "q43_all_A_fixed_cost_yuan",
+      "q43_all_A_ols_cost_yuan",
+      "q42_saving_yuan",
+      "q43_saving_yuan"
+    ],
+    "candidate_comparisons": [
+      {
+        "template_id": "cmp_3d_ribbon_chart",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Extra dimensions, percentage normalization, correlation or smoothing do not express this direct price/cost comparison."
+        ],
+        "data_compatibility": "Not selected"
+      },
+      {
+        "template_id": "trd_dual_axis_bar_line",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Extra dimensions, percentage normalization, correlation or smoothing do not express this direct price/cost comparison."
+        ],
+        "data_compatibility": "Not selected"
+      },
+      {
+        "template_id": "trd_lag_correlation_analysis",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Extra dimensions, percentage normalization, correlation or smoothing do not express this direct price/cost comparison."
+        ],
+        "data_compatibility": "Not selected"
+      },
+      {
+        "template_id": "mpn_scatter_matrix_timeseries_regression",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Extra dimensions, percentage normalization, correlation or smoothing do not express this direct price/cost comparison."
+        ],
+        "data_compatibility": "Not selected"
+      },
+      {
+        "template_id": "cmp_flowing_percentage_stack",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Extra dimensions, percentage normalization, correlation or smoothing do not express this direct price/cost comparison."
+        ],
+        "data_compatibility": "Not selected"
+      },
+      {
+        "template_id": "cmp_3d_waterfall_distribution",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Extra dimensions, percentage normalization, correlation or smoothing do not express this direct price/cost comparison."
+        ],
+        "data_compatibility": "Not selected"
+      },
+      {
+        "template_id": "trd_smoothed_trend_curves",
+        "suitable": false,
+        "advantages": [],
+        "limitations": [
+          "Extra dimensions, percentage normalization, correlation or smoothing do not express this direct price/cost comparison."
+        ],
+        "data_compatibility": "Not selected"
+      },
+      {
+        "template_id": "trd_composite_line_bar_dual_axis",
+        "suitable": true,
+        "advantages": [
+          "TRD_004 provides a shared time axis, distinct line series and auxiliary bars. Preserve serif typography and blue/orange/gray colors; omit unsupported trend regressions. Use a lower savings panel for monthly costs or repeated daily panels with a separate error scale for prices."
+        ],
+        "limitations": [],
+        "data_compatibility": "Exact time-series field mapping"
+      }
+    ],
+    "selected_template_id": "trd_composite_line_bar_dual_axis",
+    "selected_template_name": "折线图、条形图和双Y轴的复合时间序列图",
+    "selection_reason": "TRD_004 provides a shared time axis, distinct line series and auxiliary bars. Preserve serif typography and blue/orange/gray colors; omit unsupported trend regressions. Use a lower savings panel for monthly costs or repeated daily panels with a separate error scale for prices.",
+    "data_support_reason": "Real columns and declared units; no fabricated observations, smoothing or time shifts.",
+    "confidence": 0.97
+  },
+  "plan": {
+    "template_id": "trd_composite_line_bar_dual_axis",
+    "template_name": "折线图、条形图和双Y轴的复合时间序列图",
+    "plot_goal": "11 months of actual costs under the same variable tariff; fixed versus OLS planning inputs in two branches",
+    "selected_columns": [
+      "month",
+      "q42_fixed_cost_yuan",
+      "q42_ols_cost_yuan",
+      "q43_all_A_fixed_cost_yuan",
+      "q43_all_A_ols_cost_yuan",
+      "q42_saving_yuan",
+      "q43_saving_yuan"
+    ],
+    "column_mappings": [
+      {
+        "data_column": "month",
+        "template_role": "Calendar-month x-axis"
+      },
+      {
+        "data_column": "q42_fixed_cost_yuan",
+        "template_role": "Day-ahead fixed-input dashed line"
+      },
+      {
+        "data_column": "q42_ols_cost_yuan",
+        "template_role": "Day-ahead OLS-input solid line"
+      },
+      {
+        "data_column": "q43_all_A_fixed_cost_yuan",
+        "template_role": "All-update A fixed-input dashed line"
+      },
+      {
+        "data_column": "q43_all_A_ols_cost_yuan",
+        "template_role": "All-update A OLS-input solid line"
+      },
+      {
+        "data_column": "q42_saving_yuan",
+        "template_role": "Day-ahead savings bars"
+      },
+      {
+        "data_column": "q43_saving_yuan",
+        "template_role": "All-update A savings bars"
+      }
+    ],
+    "required_preprocessing": [
+      "Read fixed plotting copy; divide CNY by 1e6/1000 only for display; derive signed errors from observed columns"
+    ],
+    "required_dependencies": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "layout_elements_to_preserve": [
+      "Matplotlib line-bar composition",
+      "Shared time axes",
+      "Serif labels and panel letters"
+    ],
+    "style_elements_to_preserve": [
+      "Blue, orange and gray palette",
+      "Muted bars and clear foreground lines"
+    ],
+    "elements_allowed_to_change": [
+      "Replace demo series with real cost or price series",
+      "Repeat panels over prescribed dates",
+      "Remove fitted trends and significance claims",
+      "Use English-only visible strings"
+    ],
+    "title_plan": "English problem and scenario titles",
+    "axis_plan": "Calendar months or original hour boundaries; currency and price units",
+    "legend_plan": "Distinct policy names, line styles and a separate upper legend band where needed",
+    "annotation_plan": "Same realized tariff; causal inputs and internal assumptions",
+    "output_formats": [
+      "png",
+      "svg"
+    ],
+    "warnings": [
+      "Internal assumptions; perfect-price policies omitted from plots of implementable policies."
+    ]
+  },
+  "adaptation": {
+    "changes_summary": [
+      "TRD_004 provides a shared time axis, distinct line series and auxiliary bars. Preserve serif typography and blue/orange/gray colors; omit unsupported trend regressions. Use a lower savings panel for monthly costs or repeated daily panels with a separate error scale for prices."
+    ],
+    "preserved_style_elements": [
+      "Matplotlib line-bar composition",
+      "Shared time axes",
+      "Serif labels and panel letters",
+      "Blue, orange and gray palette",
+      "Muted bars and clear foreground lines"
+    ],
+    "changed_elements": [
+      "Replace demo series with real cost or price series",
+      "Repeat panels over prescribed dates",
+      "Remove fitted trends and significance claims",
+      "Use English-only visible strings"
+    ],
+    "data_columns_used": [
+      "month",
+      "q42_fixed_cost_yuan",
+      "q42_ols_cost_yuan",
+      "q43_all_A_fixed_cost_yuan",
+      "q43_all_A_ols_cost_yuan",
+      "q42_saving_yuan",
+      "q43_saving_yuan"
+    ],
+    "dependencies_used": [
+      "matplotlib",
+      "numpy",
+      "pandas"
+    ],
+    "additional_dependencies_requested": [],
+    "assumptions": [
+      "All actual prices are for settlement or retrospective evaluation, not future information in causal fits."
+    ]
+  }
+}

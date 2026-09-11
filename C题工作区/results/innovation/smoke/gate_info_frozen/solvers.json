@@ -1,0 +1,250 @@
+[
+  {
+    "date": "2025-04-01",
+    "issue_hour": 0,
+    "issue_time": "2025-04-01 00:00:00",
+    "initial_energy_kwh": 7465.440572772747,
+    "terminal_target_kwh": 7465.440572772747,
+    "metadata": {
+      "pv_source": "raw_appendix3"
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 40455.5805267657,
+      "total_objective_yuan": 40455.5805267657,
+      "solver_objective_yuan": 40455.5805267657,
+      "contract_cost_yuan": 40455.5805267657,
+      "emergency_cost_yuan": 0.0,
+      "reserve_proxy_yuan": 0.0,
+      "terminal_proxy_yuan": 0.0,
+      "proxy_cost_yuan": 0.0,
+      "emergency_plan_kwh": 0.0,
+      "reserve_shortfall_kwh": 0.0,
+      "terminal_deviation_kwh": 0.0,
+      "lower_bound_yuan": 40455.5805267657,
+      "mip_gap": 0.0,
+      "runtime_seconds": 0.020887457998469472,
+      "max_primal_infeasibility": 9.094947017729282e-13,
+      "relaxed": false,
+      "variables": 1155,
+      "constraints": 866
+    }
+  },
+  {
+    "date": "2025-04-01",
+    "issue_hour": 6,
+    "issue_time": "2025-04-01 06:00:00",
+    "initial_energy_kwh": 9240.329029946968,
+    "terminal_target_kwh": 7465.440572772747,
+    "metadata": {
+      "pv_source": "raw_appendix3"
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 32055.642862598386,
+      "total_objective_yuan": 32055.642862598386,
+      "solver_objective_yuan": 32055.642862598386,
+      "contract_cost_yuan": 29941.788795287997,
+      "emergency_cost_yuan": 2113.8540673103907,
+      "reserve_proxy_yuan": 0.0,
+      "terminal_proxy_yuan": 0.0,
+      "proxy_cost_yuan": 0.0,
+      "emergency_plan_kwh": 560.2125882213729,
+      "reserve_shortfall_kwh": 0.0,
+      "terminal_deviation_kwh": 0.0,
+      "lower_bound_yuan": 32055.642862598386,
+      "mip_gap": 0.0,
+      "runtime_seconds": 0.0375256250044913,
+      "max_primal_infeasibility": 1.2505552149377763e-12,
+      "relaxed": false,
+      "variables": 975,
+      "constraints": 866
+    }
+  },
+  {
+    "date": "2025-04-01",
+    "issue_hour": 12,
+    "issue_time": "2025-04-01 12:00:00",
+    "initial_energy_kwh": 8924.371362758928,
+    "terminal_target_kwh": 7465.440572772747,
+    "metadata": {
+      "pv_source": "raw_appendix3"
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 26289.618594077823,
+      "total_objective_yuan": 26289.618594077823,
+      "solver_objective_yuan": 26289.618594077823,
+      "contract_cost_yuan": 25535.952106402612,
+      "emergency_cost_yuan": 753.6664876752102,
+      "reserve_proxy_yuan": 0.0,
+      "terminal_proxy_yuan": 0.0,
+      "proxy_cost_yuan": 0.0,
+      "emergency_plan_kwh": 199.22660822221928,
+      "reserve_shortfall_kwh": 0.0,
+      "terminal_deviation_kwh": 0.0,
+      "lower_bound_yuan": 26289.61859407782,
+      "mip_gap": 1.3838081347864165e-16,
+      "runtime_seconds": 0.02836150000075577,
+      "max_primal_infeasibility": 1.2505552149377763e-12,
+      "relaxed": false,
+      "variables": 651,
+      "constraints": 578
+    }
+  },
+  {
+    "date": "2025-04-01",
+    "issue_hour": 18,
+    "issue_time": "2025-04-01 18:00:00",
+    "initial_energy_kwh": 9865.845370416988,
+    "terminal_target_kwh": 7465.440572772747,
+    "metadata": {
+      "pv_source": "raw_appendix3"
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 19711.004128794713,
+      "total_objective_yuan": 19711.004128794713,
+      "solver_objective_yuan": 19711.004128794713,
+      "contract_cost_yuan": 14336.199832177059,
+      "emergency_cost_yuan": 5374.804296617657,
+      "reserve_proxy_yuan": 0.0,
+      "terminal_proxy_yuan": 0.0,
+      "proxy_cost_yuan": 0.0,
+      "emergency_plan_kwh": 827.0888730691556,
+      "reserve_shortfall_kwh": 0.0,
+      "terminal_deviation_kwh": 0.0,
+      "lower_bound_yuan": 19711.004128794713,
+      "mip_gap": 0.0,
+      "runtime_seconds": 0.00851308400160633,
+      "max_primal_infeasibility": 9.094947017729282e-13,
+      "relaxed": false,
+      "variables": 327,
+      "constraints": 290
+    }
+  },
+  {
+    "date": "2025-04-02",
+    "issue_hour": 0,
+    "issue_time": "2025-04-02 00:00:00",
+    "initial_energy_kwh": 7481.31987714873,
+    "terminal_target_kwh": 7481.31987714873,
+    "metadata": {
+      "pv_source": "raw_appendix3"
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 38426.633555458684,
+      "total_objective_yuan": 38426.633555458684,
+      "solver_objective_yuan": 38426.633555458684,
+      "contract_cost_yuan": 38426.633555458684,
+      "emergency_cost_yuan": 0.0,
+      "reserve_proxy_yuan": 0.0,
+      "terminal_proxy_yuan": 0.0,
+      "proxy_cost_yuan": 0.0,
+      "emergency_plan_kwh": 0.0,
+      "reserve_shortfall_kwh": 0.0,
+      "terminal_deviation_kwh": 0.0,
+      "lower_bound_yuan": 38426.633555458684,
+      "mip_gap": 0.0,
+      "runtime_seconds": 0.021931750001385808,
+      "max_primal_infeasibility": 9.094947017729282e-13,
+      "relaxed": false,
+      "variables": 1155,
+      "constraints": 866
+    }
+  },
+  {
+    "date": "2025-04-02",
+    "issue_hour": 6,
+    "issue_time": "2025-04-02 06:00:00",
+    "initial_energy_kwh": 9331.783868457169,
+    "terminal_target_kwh": 7481.31987714873,
+    "metadata": {
+      "pv_source": "raw_appendix3"
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 35069.413926233174,
+      "total_objective_yuan": 35069.413926233174,
+      "solver_objective_yuan": 35069.413926233174,
+      "contract_cost_yuan": 27906.543613710306,
+      "emergency_cost_yuan": 7162.870312522867,
+      "reserve_proxy_yuan": 0.0,
+      "terminal_proxy_yuan": 0.0,
+      "proxy_cost_yuan": 0.0,
+      "emergency_plan_kwh": 1710.4867856157286,
+      "reserve_shortfall_kwh": 0.0,
+      "terminal_deviation_kwh": 0.0,
+      "lower_bound_yuan": 35069.413926233174,
+      "mip_gap": 0.0,
+      "runtime_seconds": 0.026297124997654464,
+      "max_primal_infeasibility": 1.6626700016786344e-12,
+      "relaxed": false,
+      "variables": 975,
+      "constraints": 866
+    }
+  },
+  {
+    "date": "2025-04-02",
+    "issue_hour": 12,
+    "issue_time": "2025-04-02 12:00:00",
+    "initial_energy_kwh": 7095.080862133739,
+    "terminal_target_kwh": 7481.31987714873,
+    "metadata": {
+      "pv_source": "raw_appendix3"
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 23537.970599452718,
+      "total_objective_yuan": 23537.970599452718,
+      "solver_objective_yuan": 23537.970599452718,
+      "contract_cost_yuan": 23048.979623298816,
+      "emergency_cost_yuan": 488.99097615390457,
+      "reserve_proxy_yuan": 0.0,
+      "terminal_proxy_yuan": 0.0,
+      "proxy_cost_yuan": 0.0,
+      "emergency_plan_kwh": 138.9188593739055,
+      "reserve_shortfall_kwh": 0.0,
+      "terminal_deviation_kwh": 0.0,
+      "lower_bound_yuan": 23537.97059945271,
+      "mip_gap": 3.091157575986011e-16,
+      "runtime_seconds": 0.03686533300060546,
+      "max_primal_infeasibility": 3.3082869776990265e-11,
+      "relaxed": false,
+      "variables": 651,
+      "constraints": 578
+    }
+  },
+  {
+    "date": "2025-04-02",
+    "issue_hour": 18,
+    "issue_time": "2025-04-02 18:00:00",
+    "initial_energy_kwh": 9896.388496659343,
+    "terminal_target_kwh": 7481.31987714873,
+    "metadata": {
+      "pv_source": "raw_appendix3"
+    },
+    "solver": {
+      "status": "Optimal",
+      "objective_yuan": 19405.846004803232,
+      "total_objective_yuan": 19405.846004803232,
+      "solver_objective_yuan": 19405.846004803232,
+      "contract_cost_yuan": 14122.561440682282,
+      "emergency_cost_yuan": 5283.28456412095,
+      "reserve_proxy_yuan": 0.0,
+      "terminal_proxy_yuan": 0.0,
+      "proxy_cost_yuan": 0.0,
+      "emergency_plan_kwh": 815.2256030065905,
+      "reserve_shortfall_kwh": 0.0,
+      "terminal_deviation_kwh": 0.0,
+      "lower_bound_yuan": 19405.846004803232,
+      "mip_gap": 0.0,
+      "runtime_seconds": 0.008362667002074886,
+      "max_primal_infeasibility": 9.094947017729282e-13,
+      "relaxed": false,
+      "variables": 327,
+      "constraints": 290
+    }
+  }
+]

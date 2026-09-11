@@ -1,0 +1,43 @@
+{
+  "originals_unchanged": true,
+  "source_sha256": {
+    "q1_draft.md": "2de26b58f165764361cd4d4f31cb80b5fad9bae94139e4df9f4a7cbe6acd22b3",
+    "q2_draft.md": "c2770b28f1a3c2b34314fee6f9b1eddb7561e0641cb4e376f0de9aeb7fcb7455",
+    "q3_draft.md": "eb3a8d123dc58165a0a35894267dd0b3755dda13af0f6e2755e36752f7c4b971",
+    "q4_draft.md": "43e85434c932ad969eeff7b5e4417333394484a2c462170264cd9f8175dd11d3",
+    "innovation_draft.md": "5c77e37ea3030b7c5ddafde3f32ce560fb8dc72e5a13c9e42d79398dce7e61de",
+    "robustness_draft.md": "b165856a26bf2ab6e11376a2d049572396d807e358c2c1f6451dbbb4d9b201a6"
+  },
+  "mapping": [
+    {
+      "file": "q1_draft.md",
+      "parts": "1→Part04.1；2→Part02；3→Part03；4—5→Part04；6—7→Part08.2；8→Part09/问题2衔接；证据说明→Part10",
+      "action": "正文主材料，移出重复假设；指定表保留Part04"
+    },
+    {
+      "file": "q2_draft.md",
+      "parts": "1—4→Part05；5→Part08.3与Part09",
+      "action": "保留1月选型失败；不换全年胜出策略；指定表由附录A排回Part05"
+    },
+    {
+      "file": "q3_draft.md",
+      "parts": "1→Part06.1与Part02；2→Part03/06.2；3—4→Part06.3—4；5→Part08.3；6→Part09；7→Part06.6；8及运行→附录A/Part10",
+      "action": "删掉历史“尚未做Q4”等过时状态；新增校正放Part06.5，不整篇创新另挂正文"
+    },
+    {
+      "file": "q4_draft.md",
+      "parts": "1—5→Part07.1—4；6→Part08.3；7→Part09；8→Part07.6；9及运行→附录A/Part10",
+      "action": "新增迁移放Part07.5；旧结果保留同核基线；验证集中"
+    },
+    {
+      "file": "innovation_draft.md",
+      "parts": "1→Part06.5/08.4实验边界；2的PV公式→Part06.5，风险/门槛公式→附录B；3—4的主PV结论→Part06/08，失败结论→Part05.5/09.2；5→Part08/09；6—7→附录B/Part10；全文历史快照→附录B",
+      "action": "成功改进、无效消融分别说明；旧分阶段结果不冒充连续334日"
+    },
+    {
+      "file": "robustness_draft.md",
+      "parts": "全文→Part08.4；其中固定28天最终策略→Part06.5；变价迁移→Part07.5；限界→Part09",
+      "action": "本轮新增连续回放/敏感性/分块稳定性；主方案仍28天，不事后选窗口"
+    }
+  ]
+}

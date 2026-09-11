@@ -1,0 +1,9 @@
+{
+  "results/innovation/comparison.csv": "836a7dd64368a59b2a7ade76a3778e183e345a3da079d825a569644e4060bafd",
+  "results/innovation/calibration_scores.csv": "c7145017124d26457fe8a938ddd9ecd8b9675045db0b77eb047ac4f0cd9610da",
+  "results/innovation/selection.json": "b3ea1e96e76678ed68a1392417a865a09d524af1eb28a267bd3a9c4b4eab0c20",
+  "results/innovation/validation.json": "f58ceb261e06dbb6236ba930ea1ae843a0f18209f78a4c38bc6e792d6278a7ab",
+  "results/innovation/independent_lp_audit.json": "53e6579aeb1f478ae62cb7b16a34ea0b3968d4db6706a1da95b61831044622ef",
+  "results/innovation/risk_models.json": "03b62111de2d9427fb11939f885c4578ed69fd3790a5fc5aa1cf5a1eb65741ad",
+  "scripts/report_innovation.py": "cd92a05f166c1b04ea223ba8e74709edabb21a448a3f1c581250b112dc737bcf"
+}

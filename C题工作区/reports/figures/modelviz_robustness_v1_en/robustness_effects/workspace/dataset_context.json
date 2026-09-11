@@ -1,0 +1,118 @@
+{
+  "file_name": "data.csv",
+  "file_type": "csv",
+  "sheet_name": null,
+  "row_count": 6,
+  "column_count": 6,
+  "column_names": [
+    "comparison_id",
+    "comparison_label",
+    "cash_gain_yuan",
+    "inventory_adjusted_gain_yuan",
+    "lower_95_yuan",
+    "upper_95_yuan"
+  ],
+  "sample_records": [
+    {
+      "comparison_id": "fixed_w14_vs_raw",
+      "comparison_label": "Fixed price: 14-day correction vs raw PV",
+      "cash_gain_yuan": 36667.066298633814,
+      "inventory_adjusted_gain_yuan": 36613.711987469345,
+      "lower_95_yuan": 13081.375779154836,
+      "upper_95_yuan": 76921.76338267411
+    },
+    {
+      "comparison_id": "fixed_w28_vs_raw",
+      "comparison_label": "Fixed price: 28-day correction vs raw PV",
+      "cash_gain_yuan": 46146.486255183816,
+      "inventory_adjusted_gain_yuan": 46106.3510656897,
+      "lower_95_yuan": 23728.63208104759,
+      "upper_95_yuan": 78185.25517146838
+    },
+    {
+      "comparison_id": "fixed_w56_vs_raw",
+      "comparison_label": "Fixed price: 56-day correction vs raw PV",
+      "cash_gain_yuan": 48792.97060432471,
+      "inventory_adjusted_gain_yuan": 48752.48846086487,
+      "lower_95_yuan": 26750.280065483003,
+      "upper_95_yuan": 77635.1300197765
+    },
+    {
+      "comparison_id": "efficiency_w28_vs_raw",
+      "comparison_label": "Higher efficiency: 28-day correction vs raw PV",
+      "cash_gain_yuan": 50928.62721674889,
+      "inventory_adjusted_gain_yuan": 50857.899053247645,
+      "lower_95_yuan": 27239.9492960434,
+      "upper_95_yuan": 82231.29477441713
+    },
+    {
+      "comparison_id": "soft_w28_vs_raw",
+      "comparison_label": "Soft terminal: 28-day correction vs raw PV",
+      "cash_gain_yuan": 46188.423594674096,
+      "inventory_adjusted_gain_yuan": 46192.07538295351,
+      "lower_95_yuan": 23765.66978042466,
+      "upper_95_yuan": 78236.18434412575
+    },
+    {
+      "comparison_id": "variable_w28_vs_raw",
+      "comparison_label": "Variable price: 28-day correction vs raw PV",
+      "cash_gain_yuan": 41783.09596783295,
+      "inventory_adjusted_gain_yuan": 41783.134452680126,
+      "lower_95_yuan": 17826.920692778294,
+      "upper_95_yuan": 71039.97215781029
+    }
+  ],
+  "head_records": [
+    {
+      "comparison_id": "fixed_w14_vs_raw",
+      "comparison_label": "Fixed price: 14-day correction vs raw PV",
+      "cash_gain_yuan": 36667.066298633814,
+      "inventory_adjusted_gain_yuan": 36613.711987469345,
+      "lower_95_yuan": 13081.375779154836,
+      "upper_95_yuan": 76921.76338267411
+    },
+    {
+      "comparison_id": "fixed_w28_vs_raw",
+      "comparison_label": "Fixed price: 28-day correction vs raw PV",
+      "cash_gain_yuan": 46146.486255183816,
+      "inventory_adjusted_gain_yuan": 46106.3510656897,
+      "lower_95_yuan": 23728.63208104759,
+      "upper_95_yuan": 78185.25517146838
+    },
+    {
+      "comparison_id": "fixed_w56_vs_raw",
+      "comparison_label": "Fixed price: 56-day correction vs raw PV",
+      "cash_gain_yuan": 48792.97060432471,
+      "inventory_adjusted_gain_yuan": 48752.48846086487,
+      "lower_95_yuan": 26750.280065483003,
+      "upper_95_yuan": 77635.1300197765
+    },
+    {
+      "comparison_id": "efficiency_w28_vs_raw",
+      "comparison_label": "Higher efficiency: 28-day correction vs raw PV",
+      "cash_gain_yuan": 50928.62721674889,
+      "inventory_adjusted_gain_yuan": 50857.899053247645,
+      "lower_95_yuan": 27239.9492960434,
+      "upper_95_yuan": 82231.29477441713
+    },
+    {
+      "comparison_id": "soft_w28_vs_raw",
+      "comparison_label": "Soft terminal: 28-day correction vs raw PV",
+      "cash_gain_yuan": 46188.423594674096,
+      "inventory_adjusted_gain_yuan": 46192.07538295351,
+      "lower_95_yuan": 23765.66978042466,
+      "upper_95_yuan": 78236.18434412575
+    },
+    {
+      "comparison_id": "variable_w28_vs_raw",
+      "comparison_label": "Variable price: 28-day correction vs raw PV",
+      "cash_gain_yuan": 41783.09596783295,
+      "inventory_adjusted_gain_yuan": 41783.134452680126,
+      "lower_95_yuan": 17826.920692778294,
+      "upper_95_yuan": 71039.97215781029
+    }
+  ],
+  "sampled": false,
+  "sample_strategy": "数据行数 6 未超过阈值，提供前 6 行作为样例。",
+  "warnings": []
+}

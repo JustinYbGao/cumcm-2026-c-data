@@ -1,0 +1,103 @@
+{
+  "dataset_summary": "Nine monthly costs of raw and corrected PV, with signed savings",
+  "observed_data_features": [],
+  "relevant_columns": [
+    "month",
+    "raw_total_cost_yuan",
+    "corrected_total_cost_yuan",
+    "cash_gain_yuan"
+  ],
+  "candidate_comparisons": [
+    {
+      "template_id": "cmp_3d_ribbon_chart",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+      ],
+      "data_compatibility": "Does not represent the required direct paired effects",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_dual_axis_bar_line",
+      "suitable": true,
+      "advantages": [
+        "Supports time-aligned lines and bars"
+      ],
+      "limitations": [
+        "Single-series line/bar variant offers less direct support for two costs"
+      ],
+      "data_compatibility": "Exact mapped columns",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_lag_correlation_analysis",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+      ],
+      "data_compatibility": "Does not represent the required direct paired effects",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "mpn_scatter_matrix_timeseries_regression",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+      ],
+      "data_compatibility": "Does not represent the required direct paired effects",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_flowing_percentage_stack",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+      ],
+      "data_compatibility": "Does not represent the required direct paired effects",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "cmp_3d_waterfall_distribution",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+      ],
+      "data_compatibility": "Does not represent the required direct paired effects",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_smoothed_trend_curves",
+      "suitable": false,
+      "advantages": [],
+      "limitations": [
+        "Radial, compositional, fitted or correlation encodings do not match the saved direct monetary comparisons"
+      ],
+      "data_compatibility": "Does not represent the required direct paired effects",
+      "requirement_compatibility": ""
+    },
+    {
+      "template_id": "trd_composite_line_bar_dual_axis",
+      "suitable": true,
+      "advantages": [
+        "TRD_004 encodes two actual monthly-cost lines and a signed-savings bar on an explicitly labeled secondary axis; no smoothing or data shifting."
+      ],
+      "limitations": [],
+      "data_compatibility": "Exact mapped columns",
+      "requirement_compatibility": ""
+    }
+  ],
+  "selected_template_id": "trd_composite_line_bar_dual_axis",
+  "selected_template_name": "折线图、条形图和双Y轴的复合时间序列图",
+  "alternative_template_ids": [],
+  "selection_reason": "TRD_004 encodes two actual monthly-cost lines and a signed-savings bar on an explicitly labeled secondary axis; no smoothing or data shifting.",
+  "data_support_reason": "Actual 6-row paired table and 9-row monthly table, no invented measurements or fitted distribution",
+  "data_warnings": [],
+  "confidence": 0.97,
+  "needs_clarification": false,
+  "clarification_question": ""
+}
