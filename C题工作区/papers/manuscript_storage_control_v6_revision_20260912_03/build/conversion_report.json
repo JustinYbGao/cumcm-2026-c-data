@@ -1,0 +1,1947 @@
+{
+  "source": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/manuscript_EN.md",
+  "source_sha256": "7962dfef9fe6364a0a9cb638bdf41c99f7c8e493061d67abc3e8182725c0d402",
+  "immutable_copy_sha256": "7962dfef9fe6364a0a9cb638bdf41c99f7c8e493061d67abc3e8182725c0d402",
+  "source_unchanged": true,
+  "pandoc_version": "pandoc 3.11",
+  "pandoc_path": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/tools/pandoc-3.11-arm64/bin/pandoc",
+  "reader": "markdown+pipe_tables+tex_math_dollars+raw_tex-implicit_figures-smart-blank_before_header",
+  "counts": {
+    "tables": 37,
+    "markdown_tables": 36,
+    "external_inventory_tables": 1,
+    "figures": 11,
+    "table_cells_including_headers": 1815,
+    "table_body_rows": 336,
+    "tagged_equations": 11,
+    "all_math_nodes": 243,
+    "inline_code_occurrences": 108,
+    "ordinary_body_blocks_text_verified": 173
+  },
+  "all_table_cells_preserved": true,
+  "all_math_payloads_preserved": true,
+  "ordinary_body_text_preserved": true,
+  "all_caption_text_preserved_except_automatic_number_prefix": true,
+  "short_math_introducers_protected": [
+    "Within a forecast hour, let a and b denote consecutive forecast target times, with power values \\widehat P_a and \\widehat P_b. For any ten-minute interval I_t within that hour, the generation input is",
+    "Let q_t be the effective normal purchase in interval t. At the AC bus, normal purchases, PV, discharge b_t, and emergency purchases u_t meet load and charging c_t; residual surplus w_t is disposed of without revenue. The common balance and battery recursion are",
+    "For Q2-Q4, let v_t=q_t+G_t-L_t be the realized pre-storage surplus. Along with purchases, choose a discharge reserve threshold R_t\\in[1200,10800] kWh before executing the interval. Surplus charging remains limited by current surplus, power, and capacity. During a deficit, only energy above the threshold may be discharged:",
+    "The joint objective must anticipate how errors deplete or refill storage over successive intervals. Let H_{d,k} contain eligible completed days in the preceding W calendar days with their contemporaneous forecast records. For historical day s, define",
+    "For known scenario net loads from (4), the complete remaining-day program is given below. The free decisions q,R are common to all scenarios; each scenario has its own forward-recursive storage and emergency quantities. Previously executed intervals are fixed.",
+    "For an intraday revision, the normal term is the final rule-A contract cost relative to the midnight commitment:",
+    "Only the final effective quantity for each interval is billed, once. Earlier versions are not cumulatively added, and executed intervals are frozen. The realized bills are therefore",
+    "The initializer uses a separate 28-day residual pool. For each clock hour, \\delta_t is the linear-interpolated empirical quantile of all available residuals within that hour, with levels 0.85 for 09:00-11:00, 0.65 for 11:00-18:00, 0.95 for 18:00-22:00, and 0.80 otherwise. Let \\widetilde L_t=(\\widehat L_{d,t,00}+\\delta_t)_+ and \\widetilde G_t=\\widehat G_{d,t,k}+(-\\widehat L_{d,t,00}-\\delta_t)_+. These preserve the risk-adjusted net load, including negative net values. With tildes denoting nominal rather than executed variables, solve",
+    "The supplied Q1 day fixes load, PV, and price, allowing joint optimization without a forecast-error model. We use linear energy accounting and a binary charging mode. Let z_t=1 allow charging and z_t=0 allow discharging. The deterministic MILP is",
+    "The causal forecast uses ordinary least squares with a trailing 28-calendar-day window. Its predictors are an intercept, two daily Fourier harmonics, one-day and seven-day price lags, and six weekday indicators. Writing \\phi_t for the fraction of the day elapsed at interval t, the planning price is",
+    "Table 11 uses the same four pairs to show endpoint energy and an auxiliary inventory adjustment:"
+  ],
+  "breakable_doi_labels": [
+    {
+      "label": "doi:10.3390/en14196212",
+      "target": "https://doi.org/10.3390/en14196212"
+    },
+    {
+      "label": "doi:10.1016/j.jprocont.2016.04.008",
+      "target": "https://doi.org/10.1016/j.jprocont.2016.04.008"
+    },
+    {
+      "label": "doi:10.1137/S1052623499363220",
+      "target": "https://doi.org/10.1137/S1052623499363220"
+    },
+    {
+      "label": "doi:10.1137/0916069",
+      "target": "https://doi.org/10.1137/0916069"
+    }
+  ],
+  "algorithm_introducers_protected": [
+    "Algorithm 1. Joint purchase/reserve decision at an authorized stage."
+  ],
+  "figure_related_paragraphs_kept_unbroken": [
+    "We retain the causal forecasting structure selected during January as the common input to the procurement comparisons. This structure, denoted B0, combines a load regression with one-day and seven-day lags, weekday indicators and two daily harmonics, with a PV model using three daily harmonics and a bounded first-order residual adjustment. Load parameters use the preceding 28 eligible training days and PV parameters the preceding seven days; the residual coefficient is clipped to [-0.99,0.99]. The January 15-31 shadow comparison selected this structure using realized cost with an auxiliary terminal-inventory adjustment. Its structure was frozen on February 1, although parameters were subsequently re-estimated from available history. The seasonal comparator B1 uses the previous week's load and previous day's PV at the same time of day.",
+    "Problem 3 adds forecasts released at 00:00, 06:00, 12:00 and 18:00 and permits paid procurement revisions after midnight. We retain Q2's shared purchase/reserve objective, execution rule, and fixed parameters, using the current Attachment 3 forecast and the final-contract cost from Section 3. The load forecast is formed at midnight and remains fixed throughout the day. A PV release is interpolated onto the ten-minute grid and truncated at the current day's midnight boundary. Although each release extends 24 hours ahead, this inherited optimization horizon ends at 24:00 of the present day.",
+    "The first difference combines observed-state feedback and revision permission. The second isolates the policy effect of later PV releases under the same permissions, including subsequent state changes. Neither estimates a universal price for information or the contribution of one particular release. Table 15 retains greedy controls so these effects are not inferred by comparing different storage rules.",
+    "Independent verification rebuilt the source inputs and refitted historical forecasts at their own information cutoffs, using implementations separate from the production forecast, execution, billing, and objective functions. It replayed all twenty-two annual paths and checked candidate scores and saved workbooks. Table 9 reports the numerical discrepancies and tolerances; Appendix A records the coverage and reproduction details.",
+    "Figure 9 compares midnight forecasts with the latest release permitted by the 00:00/06:00/12:00/18:00 protocol on the selected raw-PV/OLS Q4-3 reserve path. The PV panels share 26,880 intervals with positive actual generation. This subset is chosen retrospectively for evaluation and excludes 21,216 zero-generation intervals, including 1,280 positive forecasts in each version. It leaves forecast-time inputs unchanged. PV MAE falls from 60.77 to 31.83 kWh per ten-minute interval on the subset and from 34.44 to 18.27 kWh over all 48,096 intervals. Price MAE changes from 0.04270 to 0.04240 CNY/kWh. These error summaries cover one retained historical path; Table 15 gives the matched policy comparisons used to assess operating costs.",
+    "For candidate a and reference b, daily saving is S_d=B_d^b-B_d^a. Positive values favor the candidate; monthly and annual savings sum these same matched daily differences. The denominator of a saving percentage is the named reference's total cash bill. Each selected reserve policy is paired below with the same input configuration in the four-search greedy arm.",
+    "Figure 10 shows why winning on many days need not reduce the annual bill: the selected Q3 reserve policy saves money on 188 of 334 days but costs CNY 6,206.07 more over the full period. The plotted observations retain both tails; Table 10 gives the annual block intervals.",
+    "Figure 11 extends the monthly comparison to all eleven matched configurations. Color is the monthly cash saving as a percentage of that configuration's greedy bill, so it is not an absolute-cost ranking. Rows are ordered by average-linkage Euclidean clustering of their standardized monthly percentage profiles; the displayed colors remain unstandardized and months remain chronological. The side tracks show annual cash saving and additional emergency energy, making the cost and emergency-use tradeoff visible. These are comparisons of the complete procurement-and-storage procedures, not isolated effects of changing a reserve threshold while holding procurement fixed.",
+    "Against the frozen two-search v5 selections, the new selected reserve policies have signed cash savings of CNY 68,439.49 (Q2), -12,628.36 (Q3), 60,020.48 (Q4-2), and 8,221.27 (Q4-3). Negative saving denotes increased expenditure. These combine controller, search-budget, and any input-selection changes, so they are not substituted for the matched controller comparisons.",
+    "Circular block resampling retains neighboring daily differences and wraps at the endpoints [9]. Both block lengths use 2,000 resamples with seed 20260915. The procedure resamples fixed historical cost differences: it neither reruns the battery on new weather nor refits forecasts, and it leaves repeated 2025 selection uncorrected. Its intervals therefore provide no selection-adjusted inference for unseen years or causal effects. The density displays and descriptive clustering summarize observed variation without significance tests. Scenario ordering was preserved; a shuffled-scenario comparison was not performed."
+  ],
+  "longtables_with_equal_footer_heights_and_protected_final_row": 36,
+  "external_inventory": {
+    "table": 37,
+    "source": "appendix_programs.tex",
+    "title": "Complete supporting-file inventory"
+  },
+  "all_source_headings_recognized": true,
+  "source_heading_count": 45,
+  "parsed_heading_count": 45,
+  "numbered_main_sections": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "equation_tags": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11"
+  ],
+  "tables": [
+    {
+      "number": 1,
+      "columns": 4,
+      "header_rows": 1,
+      "body_rows": 4,
+      "cell_count": 20,
+      "headers": [
+        "Task structure",
+        "Limitation requiring attention",
+        "Component and purpose",
+        "Evidence in this paper"
+      ],
+      "width_fractions": [
+        0.24950991966526279,
+        0.2525904246264682,
+        0.2525904246264682,
+        0.24530923108180086
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "font_pt": 9.0,
+      "leading_pt": 10.8,
+      "needspace_pt": 201.8,
+      "keep_all_rows": false,
+      "keep_final_rows": 0,
+      "caption": "Task structure, model choice, and planned verification.",
+      "original_caption": "Table 1. Task structure, model choice, and planned verification."
+    },
+    {
+      "number": 2,
+      "columns": 5,
+      "header_rows": 1,
+      "body_rows": 5,
+      "cell_count": 30,
+      "headers": [
+        "Branch",
+        "Midnight load/PV input",
+        "06:00, 12:00, 18:00",
+        "Planning price",
+        "Actual settlement"
+      ],
+      "width_fractions": [
+        0.08,
+        0.285,
+        0.265,
+        0.175,
+        0.195
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "font_pt": 8.6,
+      "leading_pt": 10.32,
+      "needspace_pt": 121.8,
+      "keep_all_rows": false,
+      "keep_final_rows": 0,
+      "caption": "Available information and adopted purchase/reserve update schedule.",
+      "original_caption": "Table 2. Available information and adopted purchase/reserve update schedule."
+    },
+    {
+      "number": 3,
+      "columns": 3,
+      "header_rows": 1,
+      "body_rows": 9,
+      "cell_count": 30,
+      "headers": [
+        "Item",
+        "Adopted convention and source",
+        "Where it matters"
+      ],
+      "width_fractions": [
+        0.1838269680436477,
+        0.4481683554169914,
+        0.36800467653936086
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        false
+      ],
+      "font_pt": 9.0,
+      "leading_pt": 10.8,
+      "needspace_pt": 127.4,
+      "keep_all_rows": false,
+      "keep_final_rows": 0,
+      "caption": "Physical and accounting conventions used in the calculations.",
+      "original_caption": "Table 3. Physical and accounting conventions used in the calculations."
+    },
+    {
+      "number": 4,
+      "columns": 3,
+      "header_rows": 1,
+      "body_rows": 25,
+      "cell_count": 78,
+      "headers": [
+        "Symbol",
+        "Meaning",
+        "Unit"
+      ],
+      "width_fractions": [
+        0.25,
+        0.59,
+        0.16
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        false
+      ],
+      "font_pt": 9.0,
+      "leading_pt": 10.8,
+      "needspace_pt": 116.8,
+      "keep_all_rows": false,
+      "keep_final_rows": 0,
+      "caption": "Main notation.",
+      "original_caption": "Table 4. Main notation."
+    },
+    {
+      "number": 5,
+      "columns": 6,
+      "header_rows": 1,
+      "body_rows": 2,
+      "cell_count": 18,
+      "headers": [
+        "Configuration",
+        "Cost (CNY)",
+        "Purchase (kWh)",
+        "Charge (kWh)",
+        "Discharge (kWh)",
+        "Curtailed PV (kWh)"
+      ],
+      "width_fractions": [
+        0.2336508528083483,
+        0.1315385627219713,
+        0.16154579734292102,
+        0.16154579734292102,
+        0.16154579734292102,
+        0.15017319244091726
+      ],
+      "numeric_columns": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.3,
+      "leading_pt": 9.96,
+      "needspace_pt": 88.1,
+      "keep_all_rows": true,
+      "keep_final_rows": 0,
+      "caption": "Q1 daily storage comparison; bus-side energy quantities.",
+      "original_caption": "Table 5. Q1 daily storage comparison; bus-side energy quantities."
+    },
+    {
+      "number": 6,
+      "columns": 3,
+      "header_rows": 1,
+      "body_rows": 4,
+      "cell_count": 15,
+      "headers": [
+        "Efficiency convention",
+        "Power rating applies at",
+        "Cost (CNY)"
+      ],
+      "width_fractions": [
+        0.5125639516457645,
+        0.2701136415085797,
+        0.21732240684565582
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true
+      ],
+      "font_pt": 9.0,
+      "leading_pt": 10.8,
+      "needspace_pt": 95.6,
+      "keep_all_rows": true,
+      "keep_final_rows": 0,
+      "caption": "Q1 efficiency-by-power-side sensitivity.",
+      "original_caption": "Table 6. Q1 efficiency-by-power-side sensitivity."
+    },
+    {
+      "number": 7,
+      "columns": 4,
+      "header_rows": 1,
+      "body_rows": 4,
+      "cell_count": 20,
+      "headers": [
+        "Policy / controller",
+        "Contract cost",
+        "Emergency cost",
+        "Total cost"
+      ],
+      "width_fractions": [
+        0.37188381624940114,
+        0.22534111676928262,
+        0.17743395021203356,
+        0.22534111676928262
+      ],
+      "numeric_columns": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 9.0,
+      "leading_pt": 10.8,
+      "needspace_pt": 95.6,
+      "keep_all_rows": true,
+      "keep_final_rows": 0,
+      "caption": "Q2 matched controllers and frozen historical references, February-December 2025 (CNY).",
+      "original_caption": "Table 7. Q2 matched controllers and frozen historical references, February-December 2025 (CNY)."
+    },
+    {
+      "number": 8,
+      "columns": 4,
+      "header_rows": 1,
+      "body_rows": 2,
+      "cell_count": 12,
+      "headers": [
+        "Controller",
+        "Raw PV",
+        "Correction from April 1",
+        "Saving from correction"
+      ],
+      "width_fractions": [
+        0.2391304347826087,
+        0.27608695652173915,
+        0.27608695652173915,
+        0.20869565217391303
+      ],
+      "numeric_columns": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 9.0,
+      "leading_pt": 10.8,
+      "needspace_pt": 85.0,
+      "keep_all_rows": true,
+      "keep_final_rows": 0,
+      "caption": "Q3 PV correction in each matched controller, 334 days (CNY).",
+      "original_caption": "Table 8. Q3 PV correction in each matched controller, 334 days (CNY)."
+    },
+    {
+      "number": 9,
+      "columns": 4,
+      "header_rows": 1,
+      "body_rows": 5,
+      "cell_count": 24,
+      "headers": [
+        "Object",
+        "Scope of comparison",
+        "Maximum absolute discrepancy",
+        "Threshold"
+      ],
+      "width_fractions": [
+        0.21234822211672313,
+        0.46267611867038955,
+        0.20003701408949365,
+        0.12493864512339371
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "font_pt": 9.0,
+      "leading_pt": 10.8,
+      "needspace_pt": 169.9,
+      "keep_all_rows": true,
+      "keep_final_rows": 0,
+      "caption": "Recorded v6 verification evidence and tolerances.",
+      "original_caption": "Table 9. Recorded v6 verification evidence and tolerances."
+    },
+    {
+      "number": 10,
+      "columns": 5,
+      "header_rows": 1,
+      "body_rows": 4,
+      "cell_count": 25,
+      "headers": [
+        "Branch",
+        "Matched greedy reference",
+        "Cash saving",
+        "7-day interval",
+        "14-day interval"
+      ],
+      "width_fractions": [
+        0.08594625289684914,
+        0.2009730343631536,
+        0.14733643353745568,
+        0.28175023405006366,
+        0.28399404515247784
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "font_pt": 8.6,
+      "leading_pt": 10.32,
+      "needspace_pt": 101.5,
+      "keep_all_rows": true,
+      "keep_final_rows": 0,
+      "caption": "Selected reserve policies versus same-configuration greedy controls, 334 days; CNY. Descriptive 95% intervals use 2,000 circular-block resamples.",
+      "original_caption": "Table 10. Selected reserve policies versus same-configuration greedy controls, 334 days; CNY. Descriptive 95% intervals use 2,000 circular-block resamples."
+    },
+    {
+      "number": 11,
+      "columns": 5,
+      "header_rows": 1,
+      "body_rows": 4,
+      "cell_count": 25,
+      "headers": [
+        "Branch",
+        "Reserve final E",
+        "Greedy final E",
+        "Cash saving",
+        "Inventory-adjusted"
+      ],
+      "width_fractions": [
+        0.11804384485666106,
+        0.23861720067453623,
+        0.23861720067453623,
+        0.20236087689713322,
+        0.20236087689713322
+      ],
+      "numeric_columns": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.6,
+      "leading_pt": 10.32,
+      "needspace_pt": 91.3,
+      "keep_all_rows": true,
+      "keep_final_rows": 0,
+      "caption": "Terminal-inventory audit for the same matched comparisons; energy in kWh and savings in CNY.",
+      "original_caption": "Table 11. Terminal-inventory audit for the same matched comparisons; energy in kWh and savings in CNY."
+    },
+    {
+      "number": 12,
+      "columns": 6,
+      "header_rows": 1,
+      "body_rows": 5,
+      "cell_count": 36,
+      "headers": [
+        "Branch",
+        "Decision / PV input",
+        "Planning price",
+        "Total fee",
+        "Emergency fee",
+        "Final energy"
+      ],
+      "width_fractions": [
+        0.07845607412529883,
+        0.3084881626596161,
+        0.1598318350091177,
+        0.16517805606022737,
+        0.13449612707194086,
+        0.15354974507379915
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.3,
+      "leading_pt": 9.96,
+      "needspace_pt": 107.7,
+      "keep_all_rows": true,
+      "keep_final_rows": 0,
+      "caption": "Five final policies: cash fees in CNY and final stored energy in kWh. Q1 is one day; annual branches cover 334 days.",
+      "original_caption": "Table 12. Five final policies: cash fees in CNY and final stored energy in kWh. Q1 is one day; annual branches cover 334 days."
+    },
+    {
+      "number": 13,
+      "columns": 3,
+      "header_rows": 1,
+      "body_rows": 12,
+      "cell_count": 39,
+      "headers": [
+        "Model or evidence",
+        "Relative entry",
+        "Role"
+      ],
+      "width_fractions": [
+        0.1960712350792569,
+        0.4019643824603715,
+        0.4019643824603715
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        false
+      ],
+      "font_pt": 9.0,
+      "leading_pt": 10.8,
+      "needspace_pt": 127.4,
+      "keep_all_rows": false,
+      "keep_final_rows": 0,
+      "caption": "Scientific program, saved-result, and provenance interfaces.",
+      "original_caption": "Table 13. Scientific program, saved-result, and provenance interfaces."
+    },
+    {
+      "number": 14,
+      "columns": 5,
+      "header_rows": 1,
+      "body_rows": 12,
+      "cell_count": 65,
+      "headers": [
+        "Policy ID",
+        "Ordinary (CNY)",
+        "Emergency (CNY)",
+        "Total (CNY)",
+        "Final E (kWh)"
+      ],
+      "width_fractions": [
+        0.21029878624276466,
+        0.20097285381452415,
+        0.18678265231366284,
+        0.20097285381452415,
+        0.20097285381452415
+      ],
+      "numeric_columns": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.6,
+      "leading_pt": 10.32,
+      "needspace_pt": 81.2,
+      "keep_all_rows": false,
+      "keep_final_rows": 0,
+      "caption": "Complete Q2 historical comparison, 1 February-31 December 2025.",
+      "original_caption": "Table 14. Complete Q2 historical comparison, 1 February-31 December 2025."
+    },
+    {
+      "number": 15,
+      "columns": 5,
+      "header_rows": 1,
+      "body_rows": 22,
+      "cell_count": 115,
+      "headers": [
+        "Policy ID",
+        "Contract",
+        "Emergency",
+        "Total",
+        "Non-success starts"
+      ],
+      "width_fractions": [
+        0.2521851065038483,
+        0.20909975672137573,
+        0.1648076900267001,
+        0.20909975672137573,
+        0.1648076900267001
+      ],
+      "numeric_columns": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.6,
+      "leading_pt": 10.32,
+      "needspace_pt": 91.3,
+      "keep_all_rows": false,
+      "keep_final_rows": 0,
+      "caption": "All 22 matched v6 policies, 1 February-31 December 2025; CNY. Suffixes identify the controller.",
+      "original_caption": "Table 15. All 22 matched v6 policies, 1 February-31 December 2025; CNY. Suffixes identify the controller."
+    },
+    {
+      "number": 16,
+      "columns": 5,
+      "header_rows": 1,
+      "body_rows": 11,
+      "cell_count": 60,
+      "headers": [
+        "Policy ID",
+        "Group reference",
+        "Total (CNY)",
+        "Saving (CNY)",
+        "Emergency (kWh)"
+      ],
+      "width_fractions": [
+        0.18518518518518517,
+        0.18518518518518517,
+        0.20505050505050504,
+        0.20505050505050504,
+        0.2195286195286195
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.6,
+      "leading_pt": 10.32,
+      "needspace_pt": 81.2,
+      "keep_all_rows": false,
+      "keep_final_rows": 0,
+      "caption": "Earlier candidate outcomes, 1 April-31 December 2025; saving = within-group reference minus candidate.",
+      "original_caption": "Table 16. Earlier candidate outcomes, 1 April-31 December 2025; saving = within-group reference minus candidate."
+    },
+    {
+      "number": 17,
+      "columns": 5,
+      "header_rows": 1,
+      "body_rows": 6,
+      "cell_count": 35,
+      "headers": [
+        "Raw / corrected pair",
+        "Raw cost",
+        "Corrected cost",
+        "Cash saving",
+        "Inventory-adjusted"
+      ],
+      "width_fractions": [
+        0.30198273651824636,
+        0.19517562601487054,
+        0.19517562601487054,
+        0.15383300572600633,
+        0.15383300572600633
+      ],
+      "numeric_columns": [
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.6,
+      "leading_pt": 10.32,
+      "needspace_pt": 121.8,
+      "keep_all_rows": true,
+      "keep_final_rows": 0,
+      "caption": "Earlier correction sensitivity, 1 April-31 December 2025; CNY.",
+      "original_caption": "Table 17. Earlier correction sensitivity, 1 April-31 December 2025; CNY."
+    },
+    {
+      "number": 18,
+      "columns": 4,
+      "header_rows": 1,
+      "body_rows": 5,
+      "cell_count": 24,
+      "headers": [
+        "Workbook",
+        "Actual policy identifier",
+        "Saved record directory",
+        "Required response"
+      ],
+      "width_fractions": [
+        0.17156155555321548,
+        0.17556837926350263,
+        0.32341543548539964,
+        0.3294546296978823
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "font_pt": 9.0,
+      "leading_pt": 10.8,
+      "needspace_pt": 116.8,
+      "keep_all_rows": false,
+      "keep_final_rows": 0,
+      "caption": "Final workbooks and original statement requirements.",
+      "original_caption": "Table 18. Final workbooks and original statement requirements."
+    },
+    {
+      "number": 19,
+      "columns": 3,
+      "header_rows": 1,
+      "body_rows": 8,
+      "cell_count": 27,
+      "headers": [
+        "Interval / scope",
+        "Quantity",
+        "single day"
+      ],
+      "width_fractions": [
+        0.3058546088383062,
+        0.36860453193889064,
+        0.32554085922280324
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true
+      ],
+      "font_pt": 9.0,
+      "leading_pt": 10.8,
+      "needspace_pt": 85.0,
+      "keep_all_rows": false,
+      "keep_final_rows": 2,
+      "caption": "Specified purchases, daily purchase and fee.",
+      "original_caption": "Table 19. Specified purchases, daily purchase and fee."
+    },
+    {
+      "number": 20,
+      "columns": 3,
+      "header_rows": 1,
+      "body_rows": 14,
+      "cell_count": 45,
+      "headers": [
+        "Period / instant",
+        "Quantity",
+        "single day"
+      ],
+      "width_fractions": [
+        0.3070616645901589,
+        0.37530955347392064,
+        0.31762878193592053
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true
+      ],
+      "font_pt": 9.0,
+      "leading_pt": 10.8,
+      "needspace_pt": 85.0,
+      "keep_all_rows": false,
+      "keep_final_rows": 4,
+      "caption": "Six four-hour storage blocks and start/end stored energy.",
+      "original_caption": "Table 20. Six four-hour storage blocks and start/end stored energy."
+    },
+    {
+      "number": 21,
+      "columns": 6,
+      "header_rows": 1,
+      "body_rows": 14,
+      "cell_count": 90,
+      "headers": [
+        "Interval / scope",
+        "Quantity",
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "width_fractions": [
+        0.14236298292902066,
+        0.26913746630727764,
+        0.14712488769092544,
+        0.14712488769092544,
+        0.14712488769092544,
+        0.14712488769092544
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.3,
+      "leading_pt": 9.96,
+      "needspace_pt": 107.7,
+      "keep_all_rows": false,
+      "keep_final_rows": 2,
+      "caption": "Q2 specified purchases and daily energy totals; selected reserve policy.",
+      "original_caption": "Table 21. Q2 specified purchases and daily energy totals; selected reserve policy."
+    },
+    {
+      "number": 22,
+      "columns": 6,
+      "header_rows": 1,
+      "body_rows": 4,
+      "cell_count": 30,
+      "headers": [
+        "Interval / scope",
+        "Fee component",
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "width_fractions": [
+        0.15142835146923359,
+        0.2225977121953421,
+        0.1564934840838561,
+        0.1564934840838561,
+        0.1564934840838561,
+        0.1564934840838561
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.3,
+      "leading_pt": 9.96,
+      "needspace_pt": 107.7,
+      "keep_all_rows": true,
+      "keep_final_rows": 0,
+      "caption": "Q2 daily fees (CNY), independently recomputed from final quantities.",
+      "original_caption": "Table 22. Q2 daily fees (CNY), independently recomputed from final quantities."
+    },
+    {
+      "number": 23,
+      "columns": 6,
+      "header_rows": 1,
+      "body_rows": 14,
+      "cell_count": 90,
+      "headers": [
+        "Period / instant",
+        "Quantity",
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "width_fractions": [
+        0.1615203893270683,
+        0.1947474408457795,
+        0.16093304245678805,
+        0.16093304245678805,
+        0.16093304245678805,
+        0.16093304245678805
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.3,
+      "leading_pt": 9.96,
+      "needspace_pt": 78.4,
+      "keep_all_rows": false,
+      "keep_final_rows": 4,
+      "caption": "Q2 six four-hour storage blocks and boundary energies.",
+      "original_caption": "Table 23. Q2 six four-hour storage blocks and boundary energies."
+    },
+    {
+      "number": 24,
+      "columns": 4,
+      "header_rows": 1,
+      "body_rows": 9,
+      "cell_count": 40,
+      "headers": [
+        "Date",
+        "Event status",
+        "Interval",
+        "Emergency energy (kWh)"
+      ],
+      "width_fractions": [
+        0.22883480229643405,
+        0.327807875798496,
+        0.2412064364841918,
+        0.2021508854208781
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "font_pt": 9.0,
+      "leading_pt": 10.8,
+      "needspace_pt": 95.6,
+      "keep_all_rows": false,
+      "keep_final_rows": 0,
+      "caption": "Q2 complete emergency-event listing for the four specified dates.",
+      "original_caption": "Table 24. Q2 complete emergency-event listing for the four specified dates."
+    },
+    {
+      "number": 25,
+      "columns": 6,
+      "header_rows": 1,
+      "body_rows": 21,
+      "cell_count": 132,
+      "headers": [
+        "Interval / scope",
+        "Quantity",
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "width_fractions": [
+        0.1407112609464293,
+        0.2776170702627143,
+        0.14541791719771407,
+        0.14541791719771407,
+        0.14541791719771407,
+        0.14541791719771407
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.3,
+      "leading_pt": 9.96,
+      "needspace_pt": 97.9,
+      "keep_all_rows": false,
+      "keep_final_rows": 3,
+      "caption": "Q3 specified purchases and daily energy totals; selected reserve policy.",
+      "original_caption": "Table 25. Q3 specified purchases and daily energy totals; selected reserve policy."
+    },
+    {
+      "number": 26,
+      "columns": 6,
+      "header_rows": 1,
+      "body_rows": 6,
+      "cell_count": 42,
+      "headers": [
+        "Interval / scope",
+        "Fee component",
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "width_fractions": [
+        0.15711741158323847,
+        0.1933912372837783,
+        0.16237283778324582,
+        0.16237283778324582,
+        0.16237283778324582,
+        0.16237283778324582
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.3,
+      "leading_pt": 9.96,
+      "needspace_pt": 117.5,
+      "keep_all_rows": true,
+      "keep_final_rows": 0,
+      "caption": "Q3 daily fees (CNY), independently recomputed from final quantities.",
+      "original_caption": "Table 26. Q3 daily fees (CNY), independently recomputed from final quantities."
+    },
+    {
+      "number": 27,
+      "columns": 6,
+      "header_rows": 1,
+      "body_rows": 14,
+      "cell_count": 90,
+      "headers": [
+        "Period / instant",
+        "Quantity",
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "width_fractions": [
+        0.1615203893270683,
+        0.1947474408457795,
+        0.16093304245678805,
+        0.16093304245678805,
+        0.16093304245678805,
+        0.16093304245678805
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.3,
+      "leading_pt": 9.96,
+      "needspace_pt": 78.4,
+      "keep_all_rows": false,
+      "keep_final_rows": 4,
+      "caption": "Q3 six four-hour storage blocks and boundary energies.",
+      "original_caption": "Table 27. Q3 six four-hour storage blocks and boundary energies."
+    },
+    {
+      "number": 28,
+      "columns": 4,
+      "header_rows": 1,
+      "body_rows": 5,
+      "cell_count": 24,
+      "headers": [
+        "Date",
+        "Event status",
+        "Interval",
+        "Emergency energy (kWh)"
+      ],
+      "width_fractions": [
+        0.22883480229643405,
+        0.327807875798496,
+        0.2412064364841918,
+        0.2021508854208781
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "font_pt": 9.0,
+      "leading_pt": 10.8,
+      "needspace_pt": 116.8,
+      "keep_all_rows": true,
+      "keep_final_rows": 0,
+      "caption": "Q3 complete emergency-event listing for the four specified dates.",
+      "original_caption": "Table 28. Q3 complete emergency-event listing for the four specified dates."
+    },
+    {
+      "number": 29,
+      "columns": 6,
+      "header_rows": 1,
+      "body_rows": 14,
+      "cell_count": 90,
+      "headers": [
+        "Interval / scope",
+        "Quantity",
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "width_fractions": [
+        0.14236298292902066,
+        0.26913746630727764,
+        0.14712488769092544,
+        0.14712488769092544,
+        0.14712488769092544,
+        0.14712488769092544
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.3,
+      "leading_pt": 9.96,
+      "needspace_pt": 107.7,
+      "keep_all_rows": false,
+      "keep_final_rows": 2,
+      "caption": "Q4-2 specified purchases and daily energy totals; selected reserve policy.",
+      "original_caption": "Table 29. Q4-2 specified purchases and daily energy totals; selected reserve policy."
+    },
+    {
+      "number": 30,
+      "columns": 6,
+      "header_rows": 1,
+      "body_rows": 4,
+      "cell_count": 30,
+      "headers": [
+        "Interval / scope",
+        "Fee component",
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "width_fractions": [
+        0.15142835146923359,
+        0.2225977121953421,
+        0.1564934840838561,
+        0.1564934840838561,
+        0.1564934840838561,
+        0.1564934840838561
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.3,
+      "leading_pt": 9.96,
+      "needspace_pt": 107.7,
+      "keep_all_rows": true,
+      "keep_final_rows": 0,
+      "caption": "Q4-2 daily fees (CNY), independently recomputed from final quantities.",
+      "original_caption": "Table 30. Q4-2 daily fees (CNY), independently recomputed from final quantities."
+    },
+    {
+      "number": 31,
+      "columns": 6,
+      "header_rows": 1,
+      "body_rows": 14,
+      "cell_count": 90,
+      "headers": [
+        "Period / instant",
+        "Quantity",
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "width_fractions": [
+        0.1615203893270683,
+        0.1947474408457795,
+        0.16093304245678805,
+        0.16093304245678805,
+        0.16093304245678805,
+        0.16093304245678805
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.3,
+      "leading_pt": 9.96,
+      "needspace_pt": 78.4,
+      "keep_all_rows": false,
+      "keep_final_rows": 4,
+      "caption": "Q4-2 six four-hour storage blocks and boundary energies.",
+      "original_caption": "Table 31. Q4-2 six four-hour storage blocks and boundary energies."
+    },
+    {
+      "number": 32,
+      "columns": 4,
+      "header_rows": 1,
+      "body_rows": 7,
+      "cell_count": 32,
+      "headers": [
+        "Date",
+        "Event status",
+        "Interval",
+        "Emergency energy (kWh)"
+      ],
+      "width_fractions": [
+        0.22883480229643405,
+        0.327807875798496,
+        0.2412064364841918,
+        0.2021508854208781
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "font_pt": 9.0,
+      "leading_pt": 10.8,
+      "needspace_pt": 95.6,
+      "keep_all_rows": false,
+      "keep_final_rows": 0,
+      "caption": "Q4-2 complete emergency-event listing for the four specified dates.",
+      "original_caption": "Table 32. Q4-2 complete emergency-event listing for the four specified dates."
+    },
+    {
+      "number": 33,
+      "columns": 6,
+      "header_rows": 1,
+      "body_rows": 21,
+      "cell_count": 132,
+      "headers": [
+        "Interval / scope",
+        "Quantity",
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "width_fractions": [
+        0.1407112609464293,
+        0.2776170702627143,
+        0.14541791719771407,
+        0.14541791719771407,
+        0.14541791719771407,
+        0.14541791719771407
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.3,
+      "leading_pt": 9.96,
+      "needspace_pt": 97.9,
+      "keep_all_rows": false,
+      "keep_final_rows": 3,
+      "caption": "Q4-3 specified purchases and daily energy totals; selected reserve policy.",
+      "original_caption": "Table 33. Q4-3 specified purchases and daily energy totals; selected reserve policy."
+    },
+    {
+      "number": 34,
+      "columns": 6,
+      "header_rows": 1,
+      "body_rows": 6,
+      "cell_count": 42,
+      "headers": [
+        "Interval / scope",
+        "Fee component",
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "width_fractions": [
+        0.15711741158323847,
+        0.1933912372837783,
+        0.16237283778324582,
+        0.16237283778324582,
+        0.16237283778324582,
+        0.16237283778324582
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.3,
+      "leading_pt": 9.96,
+      "needspace_pt": 117.5,
+      "keep_all_rows": true,
+      "keep_final_rows": 0,
+      "caption": "Q4-3 daily fees (CNY), independently recomputed from final quantities.",
+      "original_caption": "Table 34. Q4-3 daily fees (CNY), independently recomputed from final quantities."
+    },
+    {
+      "number": 35,
+      "columns": 6,
+      "header_rows": 1,
+      "body_rows": 14,
+      "cell_count": 90,
+      "headers": [
+        "Period / instant",
+        "Quantity",
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "width_fractions": [
+        0.1615203893270683,
+        0.1947474408457795,
+        0.16093304245678805,
+        0.16093304245678805,
+        0.16093304245678805,
+        0.16093304245678805
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        true,
+        true,
+        true,
+        true
+      ],
+      "font_pt": 8.3,
+      "leading_pt": 9.96,
+      "needspace_pt": 78.4,
+      "keep_all_rows": false,
+      "keep_final_rows": 4,
+      "caption": "Q4-3 six four-hour storage blocks and boundary energies.",
+      "original_caption": "Table 35. Q4-3 six four-hour storage blocks and boundary energies."
+    },
+    {
+      "number": 36,
+      "columns": 4,
+      "header_rows": 1,
+      "body_rows": 6,
+      "cell_count": 28,
+      "headers": [
+        "Date",
+        "Event status",
+        "Interval",
+        "Emergency energy (kWh)"
+      ],
+      "width_fractions": [
+        0.23070025271052413,
+        0.330480149995924,
+        0.24317273987119914,
+        0.19564685742235263
+      ],
+      "numeric_columns": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "font_pt": 9.0,
+      "leading_pt": 10.8,
+      "needspace_pt": 127.4,
+      "keep_all_rows": true,
+      "keep_final_rows": 0,
+      "caption": "Q4-3 complete emergency-event listing for the four specified dates.",
+      "original_caption": "Table 36. Q4-3 complete emergency-event listing for the four specified dates."
+    }
+  ],
+  "figures": [
+    {
+      "number": 1,
+      "source": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/figures/scene/outputs/chart.png",
+      "copy": "build/figure-01.png",
+      "source_sha256": "75660938a6da07bb9817c00120920e832eadc54a83eac61ea0ee627e160e7598",
+      "copy_sha256": "75660938a6da07bb9817c00120920e832eadc54a83eac61ea0ee627e160e7598",
+      "original_alt_text": "Figure 1: Microgrid configuration and energy flows",
+      "original_caption": "Figure 1. Microgrid configuration and energy flows. In Q2-Q4, emergency purchases cover demand left after discharge under the preissued storage reserve rule; they cannot charge storage. Unused surplus earns no export revenue. Arrows represent modeled energy flows, not detailed electrical wiring.",
+      "caption": "Microgrid configuration and energy flows. In Q2-Q4, emergency purchases cover demand left after discharge under the preissued storage reserve rule; they cannot charge storage. Unused surplus earns no export revenue. Arrows represent modeled energy flows, not detailed electrical wiring.",
+      "source_pixels": [
+        2055,
+        1370
+      ],
+      "width_limit_mm": 160.0,
+      "height_limit_mm": 150.0,
+      "height_limited": false,
+      "rendered_width_mm": 160.0,
+      "rendered_height_mm": 106.66666666666667,
+      "caption_font_pt": 9.0,
+      "automatic_figure_label_bold": true
+    },
+    {
+      "number": 2,
+      "source": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/figures/storage_v6/outputs/F2_architecture.png",
+      "copy": "build/figure-02.png",
+      "source_sha256": "0f33bfe11fe2d973c6ccc3adf4d4d02ee3ace90f64cb4125ae721790c249803f",
+      "copy_sha256": "0f33bfe11fe2d973c6ccc3adf4d4d02ee3ace90f64cb4125ae721790c249803f",
+      "original_alt_text": "Figure 2: Architecture of the five final policies",
+      "original_caption": "Figure 2. Common data and physical constraints feed an independent Q1 MILP and a shared historical-scenario purchase/reserve model for Q2-Q4. Historical-PV midnight policies and released-PV rolling policies have different information permissions. Q1 starts and ends at 6,000 kWh; annual policies carry their own actual state continuously without a daily terminal equality. Planning prices and billed prices remain distinct.",
+      "caption": "Common data and physical constraints feed an independent Q1 MILP and a shared historical-scenario purchase/reserve model for Q2-Q4. Historical-PV midnight policies and released-PV rolling policies have different information permissions. Q1 starts and ends at 6,000 kWh; annual policies carry their own actual state continuously without a daily terminal equality. Planning prices and billed prices remain distinct.",
+      "source_pixels": [
+        1942,
+        1755
+      ],
+      "width_limit_mm": 160.0,
+      "height_limit_mm": 150.0,
+      "height_limited": false,
+      "rendered_width_mm": 160.0,
+      "rendered_height_mm": 144.59320288362514,
+      "caption_font_pt": 9.0,
+      "automatic_figure_label_bold": true
+    },
+    {
+      "number": 3,
+      "source": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/figures/front/F3_annual_ridges.png",
+      "copy": "build/figure-03.png",
+      "source_sha256": "b2e9511fa996a21e3eed7054b581583f8d0ec1901b478344baa79440bc920330",
+      "copy_sha256": "b2e9511fa996a21e3eed7054b581583f8d0ec1901b478344baa79440bc920330",
+      "original_alt_text": "Figure 3: Monthly distributions of daily demand, PV generation, and mean actual tariff",
+      "original_caption": "Figure 3. Monthly distributions across all 365 supplied days of 2025. Daily demand and PV energy use all ten-minute observations (MWh/day); mean actual tariff is the daily arithmetic mean (CNY/kWh). Original daily observations and sample counts accompany each density curve; vertical marks are monthly medians. A Scott bandwidth computed from all 365 daily values is held fixed across months within each column, with a shared density-height scale. Months stay in calendar order, and zero-PV intervals remain in daily totals. Panel scales differ by physical quantity.",
+      "caption": "Monthly distributions across all 365 supplied days of 2025. Daily demand and PV energy use all ten-minute observations (MWh/day); mean actual tariff is the daily arithmetic mean (CNY/kWh). Original daily observations and sample counts accompany each density curve; vertical marks are monthly medians. A Scott bandwidth computed from all 365 daily values is held fixed across months within each column, with a shared density-height scale. Months stay in calendar order, and zero-PV intervals remain in daily totals. Panel scales differ by physical quantity.",
+      "source_pixels": [
+        2244,
+        1887
+      ],
+      "width_limit_mm": 160.0,
+      "height_limit_mm": 150.0,
+      "height_limited": false,
+      "rendered_width_mm": 160.0,
+      "rendered_height_mm": 134.54545454545453,
+      "caption_font_pt": 9.0,
+      "automatic_figure_label_bold": true
+    },
+    {
+      "number": 4,
+      "source": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/figures/front/F4_q1_clock.png",
+      "copy": "build/figure-04.png",
+      "source_sha256": "47ba1d23caada9bbf6a146e9bcfb38e4da92c1270463266024af475d0c26cbec",
+      "copy_sha256": "47ba1d23caada9bbf6a146e9bcfb38e4da92c1270463266024af475d0c26cbec",
+      "original_alt_text": "Figure 4: Q1 daily dispatch clock with original step trajectories",
+      "original_caption": "Figure 4. The saved Q1 schedule as a 24-hour circular matrix with linear step views. Each sector is one original ten-minute interval. Net load is load minus PV; battery exchange is bus-side discharge minus charge, positive for discharge. Independent scales distinguish price, interval energy, and stored energy. The storage ring uses interval-end energy; the linear trace retains all 145 boundaries from 00:00 to 24:00. Hatching marks negative values in the net-load and battery-flow rings.",
+      "caption": "The saved Q1 schedule as a 24-hour circular matrix with linear step views. Each sector is one original ten-minute interval. Net load is load minus PV; battery exchange is bus-side discharge minus charge, positive for discharge. Independent scales distinguish price, interval energy, and stored energy. The storage ring uses interval-end energy; the linear trace retains all 145 boundaries from 00:00 to 24:00. Hatching marks negative values in the net-load and battery-flow rings.",
+      "source_pixels": [
+        2244,
+        2007
+      ],
+      "width_limit_mm": 160.0,
+      "height_limit_mm": 150.0,
+      "height_limited": false,
+      "rendered_width_mm": 160.0,
+      "rendered_height_mm": 143.10160427807486,
+      "caption_font_pt": 9.0,
+      "automatic_figure_label_bold": true
+    },
+    {
+      "number": 5,
+      "source": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/figures/storage_v6/outputs/F5_q2_monthly.png",
+      "copy": "build/figure-05.png",
+      "source_sha256": "1c6345a02b1027553d9d2a416abe91b2e58ed4eea4edfb3e5bd43d97bbc924fe",
+      "copy_sha256": "1c6345a02b1027553d9d2a416abe91b2e58ed4eea4edfb3e5bd43d97bbc924fe",
+      "original_alt_text": "Figure 5: Q2 reserve-policy monthly savings and 7/14-day descriptive circular-block intervals against matched greedy and frozen D112 references",
+      "original_caption": "Figure 5. Q2 reserve-policy monthly savings and 7/14-day descriptive circular-block intervals against matched greedy and frozen D112 references. Negative months and any intervals crossing zero remain visible; the two references answer different comparison questions.",
+      "caption": "Q2 reserve-policy monthly savings and 7/14-day descriptive circular-block intervals against matched greedy and frozen D112 references. Negative months and any intervals crossing zero remain visible; the two references answer different comparison questions.",
+      "source_pixels": [
+        1942,
+        1440
+      ],
+      "width_limit_mm": 160.0,
+      "height_limit_mm": 150.0,
+      "height_limited": false,
+      "rendered_width_mm": 160.0,
+      "rendered_height_mm": 118.64057672502575,
+      "caption_font_pt": 9.0,
+      "automatic_figure_label_bold": true
+    },
+    {
+      "number": 6,
+      "source": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/figures/storage_v6/outputs/F6_q3_information.png",
+      "copy": "build/figure-06.png",
+      "source_sha256": "ea0c10c465ea3050ae6d20e41dc6451a5fec07fdd05465a73cced31dbdd610c6",
+      "copy_sha256": "ea0c10c465ea3050ae6d20e41dc6451a5fec07fdd05465a73cced31dbdd610c6",
+      "original_alt_text": "Figure 6: Q3 information comparisons within each storage-controller family",
+      "original_caption": "Figure 6. Q3 information comparisons within each storage-controller family. Signed contract and emergency savings distinguish state feedback with revisions from the additional effect of later raw PV releases. Each comparison uses 334 matched dates.",
+      "caption": "Q3 information comparisons within each storage-controller family. Signed contract and emergency savings distinguish state feedback with revisions from the additional effect of later raw PV releases. Each comparison uses 334 matched dates.",
+      "source_pixels": [
+        1942,
+        1440
+      ],
+      "width_limit_mm": 160.0,
+      "height_limit_mm": 150.0,
+      "height_limited": false,
+      "rendered_width_mm": 160.0,
+      "rendered_height_mm": 118.64057672502575,
+      "caption_font_pt": 9.0,
+      "automatic_figure_label_bold": true
+    },
+    {
+      "number": 7,
+      "source": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/figures/storage_v6/outputs/F8_q4_comparisons.png",
+      "copy": "build/figure-07.png",
+      "source_sha256": "f72e5dcfc9a3a825b3b945f1f3eea058e0a54a105e17f34fc1d350b697395a30",
+      "copy_sha256": "f72e5dcfc9a3a825b3b945f1f3eea058e0a54a105e17f34fc1d350b697395a30",
+      "original_alt_text": "Figure 7: Q4 planning-price and PV-correction comparisons under matched storage controllers",
+      "original_caption": "Figure 7. Q4 planning-price and PV-correction comparisons under matched storage controllers. Q4-2 retains historical PV; Q4-3 uses the permitted forecast releases. Every cost is billed at actual variable prices, regardless of its planning-price input.",
+      "caption": "Q4 planning-price and PV-correction comparisons under matched storage controllers. Q4-2 retains historical PV; Q4-3 uses the permitted forecast releases. Every cost is billed at actual variable prices, regardless of its planning-price input.",
+      "source_pixels": [
+        1942,
+        1680
+      ],
+      "width_limit_mm": 160.0,
+      "height_limit_mm": 150.0,
+      "height_limited": false,
+      "rendered_width_mm": 160.0,
+      "rendered_height_mm": 138.41400617919672,
+      "caption_font_pt": 9.0,
+      "automatic_figure_label_bold": true
+    },
+    {
+      "number": 8,
+      "source": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/figures/storage_v6/outputs/F9_q43_causal_trace.png",
+      "copy": "build/figure-08.png",
+      "source_sha256": "6922767bb78d4109d1963bf0483c4e9e9f82bd0bff25aacc6823d867131bc432",
+      "copy_sha256": "6922767bb78d4109d1963bf0483c4e9e9f82bd0bff25aacc6823d867131bc432",
+      "original_alt_text": "Figure 8: Selected Q4-3 policy on 14 July 2025: released planning prices, purchase versions, and storage energy with executed reserve thresholds",
+      "original_caption": "Figure 8. Selected Q4-3 policy on 14 July 2025: released planning prices, purchase versions, and storage energy with executed reserve thresholds. Future versions begin only at 00:00, 06:00, 12:00, or 18:00. Actual prices are retrospective settlement data, and final normal purchases exclude emergencies.",
+      "caption": "Selected Q4-3 policy on 14 July 2025: released planning prices, purchase versions, and storage energy with executed reserve thresholds. Future versions begin only at 00:00, 06:00, 12:00, or 18:00. Actual prices are retrospective settlement data, and final normal purchases exclude emergencies.",
+      "source_pixels": [
+        1942,
+        1755
+      ],
+      "width_limit_mm": 160.0,
+      "height_limit_mm": 150.0,
+      "height_limited": false,
+      "rendered_width_mm": 160.0,
+      "rendered_height_mm": 144.59320288362514,
+      "caption_font_pt": 9.0,
+      "automatic_figure_label_bold": true
+    },
+    {
+      "number": 9,
+      "source": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/figures/advanced/F10_forecast_joint.png",
+      "copy": "build/figure-09.png",
+      "source_sha256": "0732dffaf52c36780e9e37e0c2760caaabc082bd5c111396da6761e91afacacc",
+      "copy_sha256": "0732dffaf52c36780e9e37e0c2760caaabc082bd5c111396da6761e91afacacc",
+      "original_alt_text": "Figure 9: Midnight and latest available forecast distributions against actual PV energy and electricity prices",
+      "original_caption": "Figure 9. Forecast-actual distributions for the selected raw-PV/OLS Q4-3 reserve policy, February-December 2025. PV panels use the same actual-positive subset (26,880 intervals); price panels use all 48,096 intervals. Forecast versions are aligned by date, interval, and permitted issue time. Hexagons show counts on a shared logarithmic scale within each row; marginals show counts, dashed lines show equality, and circles mark the 30 largest absolute errors per panel. Bias is forecast minus actual. Actual values are retrospective evaluation outcomes.",
+      "caption": "Forecast-actual distributions for the selected raw-PV/OLS Q4-3 reserve policy, February-December 2025. PV panels use the same actual-positive subset (26,880 intervals); price panels use all 48,096 intervals. Forecast versions are aligned by date, interval, and permitted issue time. Hexagons show counts on a shared logarithmic scale within each row; marginals show counts, dashed lines show equality, and circles mark the 30 largest absolute errors per panel. Bias is forecast minus actual. Actual values are retrospective evaluation outcomes.",
+      "source_pixels": [
+        2244,
+        2007
+      ],
+      "width_limit_mm": 160.0,
+      "height_limit_mm": 150.0,
+      "height_limited": false,
+      "rendered_width_mm": 160.0,
+      "rendered_height_mm": 143.10160427807486,
+      "caption_font_pt": 9.0,
+      "automatic_figure_label_bold": true
+    },
+    {
+      "number": 10,
+      "source": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/figures/advanced/F11_daily_savings_raincloud.png",
+      "copy": "build/figure-10.png",
+      "source_sha256": "f96e558aa7b49d58dc1bc21cf513de2a5a5cb2882f0e804ea1f2c6804450cdff",
+      "copy_sha256": "f96e558aa7b49d58dc1bc21cf513de2a5a5cb2882f0e804ea1f2c6804450cdff",
+      "original_alt_text": "Figure 10: Matched daily savings distributions for the four selected reserve policies",
+      "original_caption": "Figure 10. Daily cash savings relative to each selected policy's same-configuration four-search greedy control, February-December 2025. Each row contains all 334 days. Positive values favor reserve. Three adjoining horizontal ranges retain both tails while enlarging the center; their scales differ. Half-violins use Scott-bandwidth density estimates normalized to each row's peak and show shape only; plotted areas and heights are not probability comparisons. Boxes show the median and interquartile range, with 1.5-IQR whiskers; dots are original daily values with vertical jitter. Annual net savings and winning-day counts use the full rows.",
+      "caption": "Daily cash savings relative to each selected policy's same-configuration four-search greedy control, February-December 2025. Each row contains all 334 days. Positive values favor reserve. Three adjoining horizontal ranges retain both tails while enlarging the center; their scales differ. Half-violins use Scott-bandwidth density estimates normalized to each row's peak and show shape only; plotted areas and heights are not probability comparisons. Boxes show the median and interquartile range, with 1.5-IQR whiskers; dots are original daily values with vertical jitter. Annual net savings and winning-day counts use the full rows.",
+      "source_pixels": [
+        2244,
+        1889
+      ],
+      "width_limit_mm": 160.0,
+      "height_limit_mm": 150.0,
+      "height_limited": false,
+      "rendered_width_mm": 160.0,
+      "rendered_height_mm": 134.68805704099822,
+      "caption_font_pt": 9.0,
+      "automatic_figure_label_bold": true
+    },
+    {
+      "number": 11,
+      "source": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/figures/advanced/F12_seasonal_fingerprint.png",
+      "copy": "build/figure-11.png",
+      "source_sha256": "f0c7d3cbb440425b2aeefc578f8e8d497f3240ea825cd64372fc1856faa3a27f",
+      "copy_sha256": "f0c7d3cbb440425b2aeefc578f8e8d497f3240ea825cd64372fc1856faa3a27f",
+      "original_alt_text": "Figure 11: Monthly savings profiles, annual net savings, and additional emergency energy across all eleven matched configurations",
+      "original_caption": "Figure 11. Seasonal savings profiles across all eleven reserve/greedy pairs, February-December 2025. Heatmap values are 100 times the monthly greedy-minus-reserve cash difference divided by the matched greedy monthly bill. Standardization affects the descriptive tree and row order only. Side tracks show annual net saving (thousand CNY) and reserve-minus-greedy emergency energy (MWh); diamonds mark the four selected reserve policies. Q4 fixed/OLS labels identify planning prices, while bills use actual prices. Hatching marks negative monthly savings.",
+      "caption": "Seasonal savings profiles across all eleven reserve/greedy pairs, February-December 2025. Heatmap values are 100 times the monthly greedy-minus-reserve cash difference divided by the matched greedy monthly bill. Standardization affects the descriptive tree and row order only. Side tracks show annual net saving (thousand CNY) and reserve-minus-greedy emergency energy (MWh); diamonds mark the four selected reserve policies. Q4 fixed/OLS labels identify planning prices, while bills use actual prices. Hatching marks negative monthly savings.",
+      "source_pixels": [
+        2244,
+        1842
+      ],
+      "width_limit_mm": 160.0,
+      "height_limit_mm": 150.0,
+      "height_limited": false,
+      "rendered_width_mm": 160.0,
+      "rendered_height_mm": 131.33689839572193,
+      "caption_font_pt": 9.0,
+      "automatic_figure_label_bold": true
+    }
+  ],
+  "heading_transformations": [
+    {
+      "before": "1 Problem statement and modeling rationale",
+      "after": "Problem statement and modeling rationale",
+      "automatic_numbering": true
+    },
+    {
+      "before": "1.1 Decisions, costs, and required outputs",
+      "after": "Decisions, costs, and required outputs",
+      "automatic_numbering": true
+    },
+    {
+      "before": "1.2 Why these model components belong together",
+      "after": "Why these model components belong together",
+      "automatic_numbering": true
+    },
+    {
+      "before": "2 Data, working interpretations, and notation",
+      "after": "Data, working interpretations, and notation",
+      "automatic_numbering": true
+    },
+    {
+      "before": "2.1 Data interfaces and information cutoffs",
+      "after": "Data interfaces and information cutoffs",
+      "automatic_numbering": true
+    },
+    {
+      "before": "2.2 Working interpretations and their consequences",
+      "after": "Working interpretations and their consequences",
+      "automatic_numbering": true
+    },
+    {
+      "before": "2.3 Symbols and units",
+      "after": "Symbols and units",
+      "automatic_numbering": true
+    },
+    {
+      "before": "3 Common execution model and joint purchase/reserve objective",
+      "after": "Common execution model and joint purchase/reserve objective",
+      "automatic_numbering": true
+    },
+    {
+      "before": "3.1 Physical execution and historical scenarios",
+      "after": "Physical execution and historical scenarios",
+      "automatic_numbering": true
+    },
+    {
+      "before": "3.2 Complete empirical program and settlement",
+      "after": "Complete empirical program and settlement",
+      "automatic_numbering": true
+    },
+    {
+      "before": "3.3 Nominal initialization and candidate search",
+      "after": "Nominal initialization and candidate search",
+      "automatic_numbering": true
+    },
+    {
+      "before": "4 Q1: Deterministic daily storage scheduling",
+      "after": "Q1: Deterministic daily storage scheduling",
+      "automatic_numbering": true
+    },
+    {
+      "before": "4.1 Deterministic formulation and results",
+      "after": "Deterministic formulation and results",
+      "automatic_numbering": true
+    },
+    {
+      "before": "4.2 Physical interpretation sensitivity and checks",
+      "after": "Physical interpretation sensitivity and checks",
+      "automatic_numbering": true
+    },
+    {
+      "before": "5 Problem 2: History-Based Direct Procurement",
+      "after": "Problem 2: History-Based Direct Procurement",
+      "automatic_numbering": true
+    },
+    {
+      "before": "5.1 Forecast inputs and historical scenarios",
+      "after": "Forecast inputs and historical scenarios",
+      "automatic_numbering": true
+    },
+    {
+      "before": "5.2 Matched costs, selection, and historical variability",
+      "after": "Matched costs, selection, and historical variability",
+      "automatic_numbering": true
+    },
+    {
+      "before": "6 Problem 3: Paid Rolling Procurement with Updated PV Forecasts",
+      "after": "Problem 3: Paid Rolling Procurement with Updated PV Forecasts",
+      "automatic_numbering": true
+    },
+    {
+      "before": "6.1 Rolling decisions and information comparisons",
+      "after": "Rolling decisions and information comparisons",
+      "automatic_numbering": true
+    },
+    {
+      "before": "6.2 Correction and the selected policy's negative result",
+      "after": "Correction and the selected policy's negative result",
+      "automatic_numbering": true
+    },
+    {
+      "before": "7 Problem 4: Planning Prices and Realized Variable-Price Settlement",
+      "after": "Problem 4: Planning Prices and Realized Variable-Price Settlement",
+      "automatic_numbering": true
+    },
+    {
+      "before": "7.1 Price information without advance knowledge of actual tariffs",
+      "after": "Price information without advance knowledge of actual tariffs",
+      "automatic_numbering": true
+    },
+    {
+      "before": "7.2 Price comparisons and selected policies",
+      "after": "Price comparisons and selected policies",
+      "automatic_numbering": true
+    },
+    {
+      "before": "8 Correctness, sensitivity, and historical uncertainty",
+      "after": "Correctness, sensitivity, and historical uncertainty",
+      "automatic_numbering": true
+    },
+    {
+      "before": "8.1 Implementation, information cutoffs, and reproduction",
+      "after": "Implementation, information cutoffs, and reproduction",
+      "automatic_numbering": true
+    },
+    {
+      "before": "8.2 Paired savings, losing periods, and terminal inventory",
+      "after": "Paired savings, losing periods, and terminal inventory",
+      "automatic_numbering": true
+    },
+    {
+      "before": "9 Evaluation and final operating policies",
+      "after": "Evaluation and final operating policies",
+      "automatic_numbering": true
+    },
+    {
+      "before": "AI tool usage declaration",
+      "after": "AI tool usage declaration",
+      "automatic_numbering": false
+    },
+    {
+      "before": "References",
+      "after": "References",
+      "automatic_numbering": false
+    },
+    {
+      "before": "Appendix A. Implementation and reproducibility specification",
+      "after": "Appendix A. Implementation and reproducibility specification",
+      "automatic_numbering": false
+    },
+    {
+      "before": "Appendix B. Full comparisons and retained negative findings",
+      "after": "Appendix B. Full comparisons and retained negative findings",
+      "automatic_numbering": false
+    },
+    {
+      "before": "B.1 Frozen Q2 development matrix",
+      "after": "B.1 Frozen Q2 development matrix",
+      "automatic_numbering": false
+    },
+    {
+      "before": "B.2 Complete current matched matrix",
+      "after": "B.2 Complete current matched matrix",
+      "automatic_numbering": false
+    },
+    {
+      "before": "B.3 Earlier reserve and update-gate experiments",
+      "after": "B.3 Earlier reserve and update-gate experiments",
+      "automatic_numbering": false
+    },
+    {
+      "before": "B.4 Earlier correction sensitivity",
+      "after": "B.4 Earlier correction sensitivity",
+      "automatic_numbering": false
+    },
+    {
+      "before": "Appendix C. Workbook, table, and audit mapping",
+      "after": "Appendix C. Workbook, table, and audit mapping",
+      "automatic_numbering": false
+    },
+    {
+      "before": "Appendix D. Complete prescribed outputs",
+      "after": "Appendix D. Complete prescribed outputs",
+      "automatic_numbering": false
+    },
+    {
+      "before": "D.1 Q1 prescribed results",
+      "after": "D.1 Q1 prescribed results",
+      "automatic_numbering": false
+    },
+    {
+      "before": "D.2 Q2 prescribed results",
+      "after": "D.2 Q2 prescribed results",
+      "automatic_numbering": false
+    },
+    {
+      "before": "D.3 Q3 prescribed results",
+      "after": "D.3 Q3 prescribed results",
+      "automatic_numbering": false
+    },
+    {
+      "before": "D.4 Q4-2 prescribed results",
+      "after": "D.4 Q4-2 prescribed results",
+      "automatic_numbering": false
+    },
+    {
+      "before": "D.5 Q4-3 prescribed results",
+      "after": "D.5 Q4-3 prescribed results",
+      "automatic_numbering": false
+    },
+    {
+      "before": "Appendix E. Complete scientific programs",
+      "after": "Appendix E. Complete scientific programs",
+      "automatic_numbering": false
+    }
+  ],
+  "code_literals_preserved_as_nolinkurl": [
+    "result1.xlsx",
+    "result2.xlsx",
+    "result3.xlsx",
+    "result4-2.xlsx",
+    "result4-3.xlsx",
+    "maxiter=180",
+    "maxfun=1600",
+    "maxls=30",
+    "maxcor=10",
+    "ftol=1e-10",
+    "gtol=1e-5",
+    "result1.xlsx",
+    "result2.xlsx",
+    "q3_w28_reserve",
+    "result3.xlsx",
+    "q42_ols_reserve",
+    "result4-2.xlsx",
+    "q43_raw_ols_reserve",
+    "result4-3.xlsx",
+    "README.md",
+    "MANIFEST.csv",
+    "scripts/solve_q1.py",
+    "scripts/storage_control_v6/run.py",
+    "raw/required_files.json",
+    "raw/README.md",
+    "SOURCE_PROVENANCE.json",
+    "source_changes.diff",
+    "raw/README.md",
+    "raw/required_files.json",
+    "scripts/prepare_data.py",
+    "scripts/prepare_inputs.py",
+    "configs/data_processing.json",
+    "scripts/solve_q1.py",
+    "saved/q1/",
+    "scripts/run_q2.py",
+    "scripts/storage_control_v6/compat.py",
+    "saved/warmup/",
+    "scripts/storage_control_v6/",
+    "inputs.py",
+    "policy.py",
+    "control.py",
+    "kernel.py",
+    "kernel.c",
+    "run.py",
+    "compat.py",
+    "configs/storage_control_v6/experiments.json",
+    "scripts/storage_control_v6/analyze.py",
+    "saved/comparisons/",
+    "saved/selected/<policy>/",
+    "execution_plans.npz",
+    "plan_versions.npz",
+    "ledger_four_dates.csv",
+    "plan_versions_four_dates.csv",
+    "saved/all_policies/",
+    "saved/historical_references/",
+    "results/q2_direct_v4/runs/D112/",
+    "results/unified_direct_v5/runs/",
+    "results/q2_direct_v4/analysis_all/comparison_all.csv",
+    "results/innovation/evaluation/",
+    "results/robustness/",
+    "scripts/check_saved.py",
+    "scripts/smoke_test.py",
+    "workbooks/",
+    "result1.xlsx",
+    "result2.xlsx",
+    "result3.xlsx",
+    "result4-2.xlsx",
+    "result4-3.xlsx",
+    "policy_mapping.json",
+    "requirements.txt",
+    "MANIFEST.csv",
+    "SOURCE_PROVENANCE.json",
+    "source_changes.diff",
+    "keep_current",
+    "check_saved.py",
+    "configs/storage_control_v6/experiments.json",
+    "workbooks/",
+    "outputs/storage_control_v6_english_20260912/",
+    "outputs/storage_control_v6/",
+    "result1.xlsx",
+    "baseline",
+    "saved/q1/baseline/",
+    "result2.xlsx",
+    "q2_reserve",
+    "saved/selected/q2_reserve/",
+    "result3.xlsx",
+    "q3_w28_reserve",
+    "saved/selected/q3_w28_reserve/",
+    "result4-2.xlsx",
+    "q42_ols_reserve",
+    "saved/selected/q42_ols_reserve/",
+    "result4-3.xlsx",
+    "q43_raw_ols_reserve",
+    "saved/selected/q43_raw_ols_reserve/",
+    "ledger_four_dates.csv",
+    "plan_versions_four_dates.csv",
+    "plan_versions.npz",
+    "execution_plans.npz",
+    "baseline",
+    "result1.xlsx",
+    "q2_reserve",
+    "result2.xlsx",
+    "q3_w28_reserve",
+    "result3.xlsx",
+    "q42_ols_reserve",
+    "result4-2.xlsx",
+    "q43_raw_ols_reserve",
+    "result4-3.xlsx"
+  ],
+  "unicode_characters_in_source": {},
+  "required_preamble_packages": [
+    "graphicx",
+    "longtable",
+    "booktabs",
+    "array",
+    "calc",
+    "needspace",
+    "amsmath",
+    "amssymb",
+    "hyperref",
+    "xurl"
+  ],
+  "required_class_macros": [
+    "bibfont (provided by elsarticle)"
+  ],
+  "possible_pandoc_helper_macros": [
+    "tightlist"
+  ],
+  "transformations": [
+    "Split title, abstract and keyword content into separate fragments; keyword semicolons become Elsevier sep delimiters.",
+    "Strip existing numeric heading prefixes and enable automatic section numbering; other headings remain unnumbered.",
+    "Disable blank-before-header parsing so every source ATX heading is retained, verified against the source line list.",
+    "Balance the unchanged title with an explicit line break before with Forecast Errors and Paid Revisions; protect the Algorithm 1 introduction with Needspace.",
+    "Replace each standalone image and following caption with a numbered LaTeX floating figure and byte-identical local PNG copy.",
+    "Pair table captions with native Pandoc longtables, set content-sensitive proportional widths and local 8.3–9 pt fonts.",
+    "Keep longtables left anchored with stretchable right glue to absorb sub-point column-width rounding residue without suppressing TeX warnings.",
+    "Repeat captions and column headers; Needspace estimates protect the start, and starred first two data row breaks keep the first three rows together.",
+    "Keep numeric tables of at most six data rows together; retain the last four rows of storage-block tables as one boundary-energy group.",
+    "Keep the final midnight/final/emergency daily-total rows together in specified-purchase tables 10, 16, 21 and 26.",
+    "Reserve identical ordinary and final bottom-rule footers, and star the final data-row break, to prevent header-only final continuations.",
+    "Bold column headers; protect short equation-introducing paragraphs with five baselines of Needspace.",
+    "Use the official elsarticle bibfont in a local ragged-right, hanging-indent reference group; retain DOI link targets and visible labels while allowing labels to break.",
+    "Preserve all inline code literal text using nolinkurl for breakable paths/identifiers; original hyperlinks remain hyperlinks.",
+    "No changes to data values, mathematical payloads, original prose or source files; document rendering is verified separately."
+  ],
+  "outputs": {
+    "title.tex": "134b121ba166db965028075cfa1fe95c56e94acdc464dfbeadaedc15cc051085",
+    "abstract.tex": "e7b0a845bd2cbd260ddcef22421129e03ff34b45d51af1ebd6ff556074b141ce",
+    "keywords.tex": "d26a07e89938c98456f1b877e0a63be90172be281b798d7dd4a005357e62ce23",
+    "body.tex": "6bd0de9244a623ea5642cb2d8b4baf2e55b23121d4403d393e58b921af33cbf8"
+  }
+}

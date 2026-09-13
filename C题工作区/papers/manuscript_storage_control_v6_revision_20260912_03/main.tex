@@ -1,0 +1,68 @@
+% Anonymous A4 competition manuscript; references and appendices are separate.
+\documentclass[final,3p,times,nopreprintline,number]{elsarticle}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\geometry{reset,a4paper,left=25mm,right=25mm,top=26mm,bottom=26mm,includefoot,footskip=8mm}
+\usepackage{listings}
+\usepackage[font=small,labelfont=bf,justification=centering,singlelinecheck=false]{caption}
+\DeclareCaptionFont{ninept}{\fontsize{9}{11}\selectfont}
+\captionsetup[figure]{font=ninept,skip=6pt}
+\captionsetup[table]{font={small},skip=5pt}
+\usepackage{longtable,booktabs,array,calc}
+\usepackage{microtype}
+\microtypesetup{protrusion=false}
+\usepackage{etoolbox}
+\usepackage{needspace}
+\usepackage{xurl}
+\usepackage[hidelinks,unicode]{hyperref}
+\hypersetup{pdftitle={A Study of Microgrid Power Scheduling Based on Mixed-Integer Programming and Historical Scenario Optimization},pdfauthor={}}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\passthrough}[1]{#1}
+\providecommand{\pandocbounded}[1]{#1}
+\setcounter{secnumdepth}{3}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.85}
+\setlength{\textfloatsep}{14pt plus 3pt minus 3pt}
+\setlength{\intextsep}{12pt plus 3pt minus 3pt}
+\setlength{\LTpre}{9pt}
+\setlength{\LTpost}{9pt}
+\setlength{\LTcapwidth}{\textwidth}
+\setlength{\emergencystretch}{1.5em}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\raggedbottom
+% The retained review manuscript has no author block. Remove only its empty
+% placeholders; the official class still controls title and heading styles.
+\makeatletter
+% Figure-only override: bold automatic label and exact 9 pt caption text.
+% Keep the class caption implementation and all longtable styling unchanged.
+\newcommand{\reviewfigurecaptionfont}{\fontsize{9}{11}\selectfont}
+\AtBeginEnvironment{figure}{\let\footnotesize\reviewfigurecaptionfont}
+\renewcommand{\fnum@figure}{\textbf{\figurename\nobreakspace\thefigure}}
+\patchcmd{\MaketitleBox}
+  {\normalsize\elsauthors\par\vskip10pt
+   \footnotesize\itshape\elsaddress\par\vskip36pt}
+  {}{}{\PackageError{review-layout}{Author placeholder patch failed}{Check the retained elsarticle version.}}
+\makeatother
+\begin{document}
+\begin{frontmatter}
+\title{\input{build/title.tex}}
+\begin{abstract}
+\let\textbf\textnormal
+\input{build/abstract.tex}
+\end{abstract}
+\begin{keyword}
+\input{build/keywords.tex}
+\end{keyword}
+\end{frontmatter}
+\thispagestyle{plain}
+\clearpage
+\pagestyle{plain}
+\input{build/body.tex}
+\end{document}

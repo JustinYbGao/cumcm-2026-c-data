@@ -1,0 +1,7 @@
+{
+  "cost_cap_yuan": 35126.948589389634,
+  "alternate_cost_yuan": 35126.94858938963,
+  "cost_difference_yuan": 9.999348549172282e-08,
+  "max_plan_difference_kwh": 333.3333333333335,
+  "interpretation": "cost-face witness within numerical tolerance; no claim of unique dispatch"
+}

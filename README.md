@@ -1,5 +1,15 @@
 # CUMCM 2026 C题建模工作区
 
+## Current English paper: revision 03, 12 September 2026
+
+- [Reviewed paper PDF](C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/manuscript.pdf)
+- [English manuscript source](C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/manuscript_EN.md)
+- [Scientific support ZIP](C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/support_materials.zip)
+- [Portable LaTeX source ZIP](C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/outputs/latex_source.zip)
+- [Revision records and repository build instructions](C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/GIT_DELIVERY.md)
+
+The paper now uses the requested English title. Its abstract and keywords are unchanged by revision 03. The PDF has 76 pages, including 24 body pages and complete program appendices. The scientific support archive contains the five English result workbooks and corresponding model programs. Historical entries below describe earlier development stages.
+
 本仓库保存C题原题、复核数据及问题1—4内部模型、实际求解、独立验证、英文图表、论文初稿和冻结结果包。包含朋友在`111`中的原始工作及核验报告。问题2和问题4的负结果保留；正式模板时间与部分结算解释尚未确认，未填写正式提交Excel。
 
 - [创新实验初稿](C题工作区/papers/innovation_draft.md)

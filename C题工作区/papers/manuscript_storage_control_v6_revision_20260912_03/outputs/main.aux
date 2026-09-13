@@ -1,0 +1,397 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand*\HyPL@Entry[1]{}
+\HyPL@Entry{0<</S/D>>}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Problem statement and modeling rationale}{2}{section.1}\protected@file@percent }
+\newlabel{problem-statement-and-modeling-rationale}{{1}{2}{Problem statement and modeling rationale}{section.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Decisions, costs, and required outputs}{2}{subsection.1.1}\protected@file@percent }
+\newlabel{decisions-costs-and-required-outputs}{{1.1}{2}{Decisions, costs, and required outputs}{subsection.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Microgrid configuration and energy flows. In Q2-Q4, emergency purchases cover demand left after discharge under the preissued storage reserve rule; they cannot charge storage. Unused surplus earns no export revenue. Arrows represent modeled energy flows, not detailed electrical wiring.\relax }}{2}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:1}{{1}{2}{Microgrid configuration and energy flows. In Q2-Q4, emergency purchases cover demand left after discharge under the preissued storage reserve rule; they cannot charge storage. Unused surplus earns no export revenue. Arrows represent modeled energy flows, not detailed electrical wiring.\relax }{figure.caption.1}{}}
+\gdef \LT@i {\LT@entry 
+    {1}{111.99146pt}\LT@entry 
+    {1}{116.54211pt}\LT@entry 
+    {1}{116.54211pt}\LT@entry 
+    {1}{110.16174pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Why these model components belong together}{3}{subsection.1.2}\protected@file@percent }
+\newlabel{why-these-model-components-belong-together}{{1.2}{3}{Why these model components belong together}{subsection.1.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Task structure, model choice, and planned verification.\relax }}{3}{table.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Common data and physical constraints feed an independent Q1 MILP and a shared historical-scenario purchase/reserve model for Q2-Q4. Historical-PV midnight policies and released-PV rolling policies have different information permissions. Q1 starts and ends at 6,000 kWh; annual policies carry their own actual state continuously without a daily terminal equality. Planning prices and billed prices remain distinct.\relax }}{4}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:2}{{2}{4}{Common data and physical constraints feed an independent Q1 MILP and a shared historical-scenario purchase/reserve model for Q2-Q4. Historical-PV midnight policies and released-PV rolling policies have different information permissions. Q1 starts and ends at 6,000 kWh; annual policies carry their own actual state continuously without a daily terminal equality. Planning prices and billed prices remain distinct.\relax }{figure.caption.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Data, working interpretations, and notation}{4}{section.2}\protected@file@percent }
+\newlabel{data-working-interpretations-and-notation}{{2}{4}{Data, working interpretations, and notation}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Data interfaces and information cutoffs}{4}{subsection.2.1}\protected@file@percent }
+\newlabel{data-interfaces-and-information-cutoffs}{{2.1}{4}{Data interfaces and information cutoffs}{subsection.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Monthly distributions across all 365 supplied days of 2025. Daily demand and PV energy use all ten-minute observations (MWh/day); mean actual tariff is the daily arithmetic mean (CNY/kWh). Original daily observations and sample counts accompany each density curve; vertical marks are monthly medians. A Scott bandwidth computed from all 365 daily values is held fixed across months within each column, with a shared density-height scale. Months stay in calendar order, and zero-PV intervals remain in daily totals. Panel scales differ by physical quantity.\relax }}{5}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:3}{{3}{5}{Monthly distributions across all 365 supplied days of 2025. Daily demand and PV energy use all ten-minute observations (MWh/day); mean actual tariff is the daily arithmetic mean (CNY/kWh). Original daily observations and sample counts accompany each density curve; vertical marks are monthly medians. A Scott bandwidth computed from all 365 daily values is held fixed across months within each column, with a shared density-height scale. Months stay in calendar order, and zero-PV intervals remain in daily totals. Panel scales differ by physical quantity.\relax }{figure.caption.3}{}}
+\gdef \LT@ii {\LT@entry 
+    {1}{37.57231pt}\LT@entry 
+    {1}{128.85014pt}\LT@entry 
+    {1}{120.25542pt}\LT@entry 
+    {1}{81.58902pt}\LT@entry 
+    {1}{86.98375pt}}
+\gdef \LT@iii {\LT@entry 
+    {1}{84.52448pt}\LT@entry 
+    {1}{204.70186pt}\LT@entry 
+    {1}{166.01775pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Available information and adopted purchase/reserve update schedule.\relax }}{6}{table.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Working interpretations and their consequences}{6}{subsection.2.2}\protected@file@percent }
+\newlabel{working-interpretations-and-their-consequences}{{2.2}{6}{Working interpretations and their consequences}{subsection.2.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Physical and accounting conventions used in the calculations.\relax }}{6}{table.3}\protected@file@percent }
+\gdef \LT@iv {\LT@entry 
+    {1}{113.81102pt}\LT@entry 
+    {1}{267.4404pt}\LT@entry 
+    {1}{73.99268pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Symbols and units}{7}{subsection.2.3}\protected@file@percent }
+\newlabel{symbols-and-units}{{2.3}{7}{Symbols and units}{subsection.2.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Main notation.\relax }}{7}{table.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Common execution model and joint purchase/reserve objective}{8}{section.3}\protected@file@percent }
+\newlabel{common-execution-model-and-joint-purchasereserve-objective}{{3}{8}{Common execution model and joint purchase/reserve objective}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Physical execution and historical scenarios}{8}{subsection.3.1}\protected@file@percent }
+\newlabel{physical-execution-and-historical-scenarios}{{3.1}{8}{Physical execution and historical scenarios}{subsection.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Complete empirical program and settlement}{9}{subsection.3.2}\protected@file@percent }
+\newlabel{complete-empirical-program-and-settlement}{{3.2}{9}{Complete empirical program and settlement}{subsection.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Nominal initialization and candidate search}{10}{subsection.3.3}\protected@file@percent }
+\newlabel{nominal-initialization-and-candidate-search}{{3.3}{10}{Nominal initialization and candidate search}{subsection.3.3}{}}
+\gdef \LT@v {\LT@entry 
+    {1}{102.11368pt}\LT@entry 
+    {1}{62.0567pt}\LT@entry 
+    {1}{74.7535pt}\LT@entry 
+    {1}{74.7535pt}\LT@entry 
+    {1}{74.7535pt}\LT@entry 
+    {1}{66.77444pt}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Q1: Deterministic daily storage scheduling}{11}{section.4}\protected@file@percent }
+\newlabel{q1-deterministic-daily-storage-scheduling}{{4}{11}{Q1: Deterministic daily storage scheduling}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Deterministic formulation and results}{11}{subsection.4.1}\protected@file@percent }
+\newlabel{deterministic-formulation-and-results}{{4.1}{11}{Deterministic formulation and results}{subsection.4.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Q1 daily storage comparison; bus-side energy quantities.\relax }}{11}{table.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The saved Q1 schedule as a 24-hour circular matrix with linear step views. Each sector is one original ten-minute interval. Net load is load minus PV; battery exchange is bus-side discharge minus charge, positive for discharge. Independent scales distinguish price, interval energy, and stored energy. The storage ring uses interval-end energy; the linear trace retains all 145 boundaries from 00:00 to 24:00. Hatching marks negative values in the net-load and battery-flow rings.\relax }}{12}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:4}{{4}{12}{The saved Q1 schedule as a 24-hour circular matrix with linear step views. Each sector is one original ten-minute interval. Net load is load minus PV; battery exchange is bus-side discharge minus charge, positive for discharge. Independent scales distinguish price, interval energy, and stored energy. The storage ring uses interval-end energy; the linear trace retains all 145 boundaries from 00:00 to 24:00. Hatching marks negative values in the net-load and battery-flow rings.\relax }{figure.caption.13}{}}
+\gdef \LT@vi {\LT@entry 
+    {1}{229.9985pt}\LT@entry 
+    {1}{125.9023pt}\LT@entry 
+    {1}{99.34328pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Physical interpretation sensitivity and checks}{13}{subsection.4.2}\protected@file@percent }
+\newlabel{physical-interpretation-sensitivity-and-checks}{{4.2}{13}{Physical interpretation sensitivity and checks}{subsection.4.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Q1 efficiency-by-power-side sensitivity.\relax }}{13}{table.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Problem 2: History-Based Direct Procurement}{13}{section.5}\protected@file@percent }
+\newlabel{problem-2-history-based-direct-procurement}{{5}{13}{Problem 2: History-Based Direct Procurement}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Forecast inputs and historical scenarios}{13}{subsection.5.1}\protected@file@percent }
+\newlabel{forecast-inputs-and-historical-scenarios}{{5.1}{13}{Forecast inputs and historical scenarios}{subsection.5.1}{}}
+\gdef \LT@vii {\LT@entry 
+    {1}{165.36588pt}\LT@entry 
+    {1}{104.63899pt}\LT@entry 
+    {1}{83.75365pt}\LT@entry 
+    {1}{101.439pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Matched costs, selection, and historical variability}{14}{subsection.5.2}\protected@file@percent }
+\newlabel{matched-costs-selection-and-historical-variability}{{5.2}{14}{Matched costs, selection, and historical variability}{subsection.5.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Q2 matched controllers and frozen historical references, February-December 2025 (CNY).\relax }}{14}{table.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Q2 reserve-policy monthly savings and 7/14-day descriptive circular-block intervals against matched greedy and frozen D112 references. Negative months and any intervals crossing zero remain visible; the two references answer different comparison questions.\relax }}{14}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:5}{{5}{14}{Q2 reserve-policy monthly savings and 7/14-day descriptive circular-block intervals against matched greedy and frozen D112 references. Negative months and any intervals crossing zero remain visible; the two references answer different comparison questions.\relax }{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Problem 3: Paid Rolling Procurement with Updated PV Forecasts}{15}{section.6}\protected@file@percent }
+\newlabel{problem-3-paid-rolling-procurement-with-updated-pv-forecasts}{{6}{15}{Problem 3: Paid Rolling Procurement with Updated PV Forecasts}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Rolling decisions and information comparisons}{15}{subsection.6.1}\protected@file@percent }
+\newlabel{rolling-decisions-and-information-comparisons}{{6.1}{15}{Rolling decisions and information comparisons}{subsection.6.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Q3 information comparisons within each storage-controller family. Signed contract and emergency savings distinguish state feedback with revisions from the additional effect of later raw PV releases. Each comparison uses 334 matched dates.\relax }}{16}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:6}{{6}{16}{Q3 information comparisons within each storage-controller family. Signed contract and emergency savings distinguish state feedback with revisions from the additional effect of later raw PV releases. Each comparison uses 334 matched dates.\relax }{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Correction and the selected policy\textquotesingle s negative result}{16}{subsection.6.2}\protected@file@percent }
+\newlabel{correction-and-the-selected-policys-negative-result}{{6.2}{16}{Correction and the selected policy\textquotesingle s negative result}{subsection.6.2}{}}
+\gdef \LT@viii {\LT@entry 
+    {1}{107.46042pt}\LT@entry 
+    {1}{126.78851pt}\LT@entry 
+    {1}{126.78851pt}\LT@entry 
+    {1}{94.19998pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Q3 PV correction in each matched controller, 334 days (CNY).\relax }}{17}{table.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Problem 4: Planning Prices and Realized Variable-Price Settlement}{17}{section.7}\protected@file@percent }
+\newlabel{problem-4-planning-prices-and-realized-variable-price-settlement}{{7}{17}{Problem 4: Planning Prices and Realized Variable-Price Settlement}{section.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Price information without advance knowledge of actual tariffs}{17}{subsection.7.1}\protected@file@percent }
+\newlabel{price-information-without-advance-knowledge-of-actual-tariffs}{{7.1}{17}{Price information without advance knowledge of actual tariffs}{subsection.7.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Price comparisons and selected policies}{18}{subsection.7.2}\protected@file@percent }
+\newlabel{price-comparisons-and-selected-policies}{{7.2}{18}{Price comparisons and selected policies}{subsection.7.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Q4 planning-price and PV-correction comparisons under matched storage controllers. Q4-2 retains historical PV; Q4-3 uses the permitted forecast releases. Every cost is billed at actual variable prices, regardless of its planning-price input.\relax }}{19}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:7}{{7}{19}{Q4 planning-price and PV-correction comparisons under matched storage controllers. Q4-2 retains historical PV; Q4-3 uses the permitted forecast releases. Every cost is billed at actual variable prices, regardless of its planning-price input.\relax }{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Correctness, sensitivity, and historical uncertainty}{19}{section.8}\protected@file@percent }
+\newlabel{correctness-sensitivity-and-historical-uncertainty}{{8}{19}{Correctness, sensitivity, and historical uncertainty}{section.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Implementation, information cutoffs, and reproduction}{19}{subsection.8.1}\protected@file@percent }
+\newlabel{implementation-information-cutoffs-and-reproduction}{{8.1}{19}{Implementation, information cutoffs, and reproduction}{subsection.8.1}{}}
+\gdef \LT@ix {\LT@entry 
+    {1}{95.7702pt}\LT@entry 
+    {1}{208.16089pt}\LT@entry 
+    {1}{93.60748pt}\LT@entry 
+    {1}{57.65894pt}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Selected Q4-3 policy on 14 July 2025: released planning prices, purchase versions, and storage energy with executed reserve thresholds. Future versions begin only at 00:00, 06:00, 12:00, or 18:00. Actual prices are retrospective settlement data, and final normal purchases exclude emergencies.\relax }}{20}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:8}{{8}{20}{Selected Q4-3 policy on 14 July 2025: released planning prices, purchase versions, and storage energy with executed reserve thresholds. Future versions begin only at 00:00, 06:00, 12:00, or 18:00. Actual prices are retrospective settlement data, and final normal purchases exclude emergencies.\relax }{figure.caption.18}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Recorded v6 verification evidence and tolerances.\relax }}{20}{table.9}\protected@file@percent }
+\gdef \LT@x {\LT@entry 
+    {1}{40.10942pt}\LT@entry 
+    {1}{92.7602pt}\LT@entry 
+    {1}{69.6836pt}\LT@entry 
+    {1}{127.4734pt}\LT@entry 
+    {1}{125.21745pt}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Paired savings, losing periods, and terminal inventory}{21}{subsection.8.2}\protected@file@percent }
+\newlabel{paired-savings-losing-periods-and-terminal-inventory}{{8.2}{21}{Paired savings, losing periods, and terminal inventory}{subsection.8.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Selected reserve policies versus same-configuration greedy controls, 334 days; CNY. Descriptive 95\% intervals use 2,000 circular-block resamples.\relax }}{21}{table.10}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Forecast-actual distributions for the selected raw-PV/OLS Q4-3 reserve policy, February-December 2025. PV panels use the same actual-positive subset (26,880 intervals); price panels use all 48,096 intervals. Forecast versions are aligned by date, interval, and permitted issue time. Hexagons show counts on a shared logarithmic scale within each row; marginals show counts, dashed lines show equality, and circles mark the 30 largest absolute errors per panel. Bias is forecast minus actual. Actual values are retrospective evaluation outcomes.\relax }}{22}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:9}{{9}{22}{Forecast-actual distributions for the selected raw-PV/OLS Q4-3 reserve policy, February-December 2025. PV panels use the same actual-positive subset (26,880 intervals); price panels use all 48,096 intervals. Forecast versions are aligned by date, interval, and permitted issue time. Hexagons show counts on a shared logarithmic scale within each row; marginals show counts, dashed lines show equality, and circles mark the 30 largest absolute errors per panel. Bias is forecast minus actual. Actual values are retrospective evaluation outcomes.\relax }{figure.caption.19}{}}
+\gdef \LT@xi {\LT@entry 
+    {1}{53.89638pt}\LT@entry 
+    {1}{108.9138pt}\LT@entry 
+    {1}{108.9138pt}\LT@entry 
+    {1}{93.35677pt}\LT@entry 
+    {1}{90.15677pt}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Daily cash savings relative to each selected policy\textquotesingle s same-configuration four-search greedy control, February-December 2025. Each row contains all 334 days. Positive values favor reserve. Three adjoining horizontal ranges retain both tails while enlarging the center; their scales differ. Half-violins use Scott-bandwidth density estimates normalized to each row\textquotesingle s peak and show shape only; plotted areas and heights are not probability comparisons. Boxes show the median and interquartile range, with 1.5-IQR whiskers; dots are original daily values with vertical jitter. Annual net savings and winning-day counts use the full rows.\relax }}{23}{figure.caption.20}\protected@file@percent }
+\newlabel{fig:10}{{10}{23}{Daily cash savings relative to each selected policy\textquotesingle s same-configuration four-search greedy control, February-December 2025. Each row contains all 334 days. Positive values favor reserve. Three adjoining horizontal ranges retain both tails while enlarging the center; their scales differ. Half-violins use Scott-bandwidth density estimates normalized to each row\textquotesingle s peak and show shape only; plotted areas and heights are not probability comparisons. Boxes show the median and interquartile range, with 1.5-IQR whiskers; dots are original daily values with vertical jitter. Annual net savings and winning-day counts use the full rows.\relax }{figure.caption.20}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Terminal-inventory audit for the same matched comparisons; energy in kWh and savings in CNY.\relax }}{23}{table.11}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Seasonal savings profiles across all eleven reserve/greedy pairs, February-December 2025. Heatmap values are 100 times the monthly greedy-minus-reserve cash difference divided by the matched greedy monthly bill. Standardization affects the descriptive tree and row order only. Side tracks show annual net saving (thousand CNY) and reserve-minus-greedy emergency energy (MWh); diamonds mark the four selected reserve policies. Q4 fixed/OLS labels identify planning prices, while bills use actual prices. Hatching marks negative monthly savings.\relax }}{24}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:11}{{11}{24}{Seasonal savings profiles across all eleven reserve/greedy pairs, February-December 2025. Heatmap values are 100 times the monthly greedy-minus-reserve cash difference divided by the matched greedy monthly bill. Standardization affects the descriptive tree and row order only. Side tracks show annual net saving (thousand CNY) and reserve-minus-greedy emergency energy (MWh); diamonds mark the four selected reserve policies. Q4 fixed/OLS labels identify planning prices, while bills use actual prices. Hatching marks negative monthly savings.\relax }{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Evaluation and final operating policies}{24}{section.9}\protected@file@percent }
+\newlabel{evaluation-and-final-operating-policies}{{9}{24}{Evaluation and final operating policies}{section.9}{}}
+\gdef \LT@xii {\LT@entry 
+    {1}{36.4274pt}\LT@entry 
+    {1}{136.97174pt}\LT@entry 
+    {1}{74.03664pt}\LT@entry 
+    {1}{76.32285pt}\LT@entry 
+    {1}{63.32896pt}\LT@entry 
+    {1}{68.16942pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Five final policies: cash fees in CNY and final stored energy in kWh. Q1 is one day; annual branches cover 334 days.\relax }}{25}{table.12}\protected@file@percent }
+\newlabel{ai-tool-usage-declaration}{{9}{25}{AI tool usage declaration}{section*.23}{}}
+\@writefile{toc}{\contentsline {section}{AI tool usage declaration}{25}{section*.23}\protected@file@percent }
+\newlabel{references}{{9}{26}{References}{section*.24}{}}
+\@writefile{toc}{\contentsline {section}{References}{26}{section*.24}\protected@file@percent }
+\gdef \LT@xiii {\LT@entry 
+    {1}{89.96591pt}\LT@entry 
+    {1}{184.25934pt}\LT@entry 
+    {1}{181.05934pt}}
+\newlabel{appendix-a.-implementation-and-reproducibility-specification}{{9}{27}{Appendix A. Implementation and reproducibility specification}{section*.25}{}}
+\@writefile{toc}{\contentsline {section}{Appendix A. Implementation and reproducibility specification}{27}{section*.25}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Scientific program, saved-result, and provenance interfaces.\relax }}{27}{table.13}\protected@file@percent }
+\gdef \LT@xiv {\LT@entry 
+    {1}{93.5527pt}\LT@entry 
+    {1}{92.7602pt}\LT@entry 
+    {1}{86.6567pt}\LT@entry 
+    {1}{92.7602pt}\LT@entry 
+    {1}{89.5602pt}}
+\gdef \LT@xv {\LT@entry 
+    {1}{111.55507pt}\LT@entry 
+    {1}{96.24135pt}\LT@entry 
+    {1}{77.20316pt}\LT@entry 
+    {1}{96.24135pt}\LT@entry 
+    {1}{74.00316pt}}
+\newlabel{appendix-b.-full-comparisons-and-retained-negative-findings}{{9}{29}{Appendix B. Full comparisons and retained negative findings}{section*.26}{}}
+\@writefile{toc}{\contentsline {section}{Appendix B. Full comparisons and retained negative findings}{29}{section*.26}\protected@file@percent }
+\newlabel{b.1-frozen-q2-development-matrix}{{9}{29}{B.1 Frozen Q2 development matrix}{section*.27}{}}
+\@writefile{toc}{\contentsline {subsection}{B.1 Frozen Q2 development matrix}{29}{section*.27}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {14}{\ignorespaces Complete Q2 historical comparison, 1 February-31 December 2025.\relax }}{29}{table.14}\protected@file@percent }
+\newlabel{b.2-complete-current-matched-matrix}{{9}{29}{B.2 Complete current matched matrix}{section*.28}{}}
+\@writefile{toc}{\contentsline {subsection}{B.2 Complete current matched matrix}{29}{section*.28}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {15}{\ignorespaces All 22 matched v6 policies, 1 February-31 December 2025; CNY. Suffixes identify the controller.\relax }}{29}{table.15}\protected@file@percent }
+\gdef \LT@xvi {\LT@entry 
+    {1}{82.76833pt}\LT@entry 
+    {1}{85.96832pt}\LT@entry 
+    {1}{94.51715pt}\LT@entry 
+    {1}{94.51715pt}\LT@entry 
+    {1}{97.50587pt}}
+\gdef \LT@xvii {\LT@entry 
+    {1}{132.95335pt}\LT@entry 
+    {1}{90.26897pt}\LT@entry 
+    {1}{90.26897pt}\LT@entry 
+    {1}{72.4764pt}\LT@entry 
+    {1}{69.2764pt}}
+\newlabel{b.3-earlier-reserve-and-update-gate-experiments}{{9}{30}{B.3 Earlier reserve and update-gate experiments}{section*.29}{}}
+\@writefile{toc}{\contentsline {subsection}{B.3 Earlier reserve and update-gate experiments}{30}{section*.29}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {16}{\ignorespaces Earlier candidate outcomes, 1 April-31 December 2025; saving = within-group reference minus candidate.\relax }}{30}{table.16}\protected@file@percent }
+\newlabel{b.4-earlier-correction-sensitivity}{{9}{30}{B.4 Earlier correction sensitivity}{section*.30}{}}
+\@writefile{toc}{\contentsline {subsection}{B.4 Earlier correction sensitivity}{30}{section*.30}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {17}{\ignorespaces Earlier correction sensitivity, 1 April-31 December 2025; CNY.\relax }}{30}{table.17}\protected@file@percent }
+\gdef \LT@xviii {\LT@entry 
+    {1}{78.02531pt}\LT@entry 
+    {1}{82.96852pt}\LT@entry 
+    {1}{147.41438pt}\LT@entry 
+    {1}{146.87578pt}}
+\newlabel{appendix-c.-workbook-table-and-audit-mapping}{{9}{31}{Appendix C. Workbook, table, and audit mapping}{section*.31}{}}
+\@writefile{toc}{\contentsline {section}{Appendix C. Workbook, table, and audit mapping}{31}{section*.31}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {18}{\ignorespaces Final workbooks and original statement requirements.\relax }}{31}{table.18}\protected@file@percent }
+\gdef \LT@xix {\LT@entry 
+    {1}{138.54053pt}\LT@entry 
+    {1}{169.4878pt}\LT@entry 
+    {1}{147.21577pt}}
+\gdef \LT@xx {\LT@entry 
+    {1}{139.07387pt}\LT@entry 
+    {1}{172.45155pt}\LT@entry 
+    {1}{143.71866pt}}
+\newlabel{appendix-d.-complete-prescribed-outputs}{{9}{32}{Appendix D. Complete prescribed outputs}{section*.32}{}}
+\@writefile{toc}{\contentsline {section}{Appendix D. Complete prescribed outputs}{32}{section*.32}\protected@file@percent }
+\newlabel{d.1-q1-prescribed-results}{{9}{32}{D.1 Q1 prescribed results}{section*.33}{}}
+\@writefile{toc}{\contentsline {subsection}{D.1 Q1 prescribed results}{32}{section*.33}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {19}{\ignorespaces Specified purchases, daily purchase and fee.\relax }}{32}{table.19}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {20}{\ignorespaces Six four-hour storage blocks and start/end stored energy.\relax }}{32}{table.20}\protected@file@percent }
+\newlabel{d.2-q2-prescribed-results}{{9}{32}{D.2 Q2 prescribed results}{section*.34}{}}
+\@writefile{toc}{\contentsline {subsection}{D.2 Q2 prescribed results}{32}{section*.34}\protected@file@percent }
+\gdef \LT@xxi {\LT@entry 
+    {1}{63.46785pt}\LT@entry 
+    {1}{120.29668pt}\LT@entry 
+    {1}{68.65697pt}\LT@entry 
+    {1}{68.65697pt}\LT@entry 
+    {1}{68.65697pt}\LT@entry 
+    {1}{65.45697pt}}
+\gdef \LT@xxii {\LT@entry 
+    {1}{67.27818pt}\LT@entry 
+    {1}{100.6121pt}\LT@entry 
+    {1}{72.63521pt}\LT@entry 
+    {1}{72.63521pt}\LT@entry 
+    {1}{72.63521pt}\LT@entry 
+    {1}{69.43521pt}}
+\gdef \LT@xxiii {\LT@entry 
+    {1}{71.5535pt}\LT@entry 
+    {1}{88.80653pt}\LT@entry 
+    {1}{74.50163pt}\LT@entry 
+    {1}{74.50163pt}\LT@entry 
+    {1}{74.50163pt}\LT@entry 
+    {1}{71.30164pt}}
+\gdef \LT@xxiv {\LT@entry 
+    {1}{102.9693pt}\LT@entry 
+    {1}{149.33725pt}\LT@entry 
+    {1}{111.57195pt}\LT@entry 
+    {1}{91.36559pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {21}{\ignorespaces Q2 specified purchases and daily energy totals; selected reserve policy.\relax }}{33}{table.21}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {22}{\ignorespaces Q2 daily fees (CNY), independently recomputed from final quantities.\relax }}{33}{table.22}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {23}{\ignorespaces Q2 six four-hour storage blocks and boundary energies.\relax }}{33}{table.23}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {24}{\ignorespaces Q2 complete emergency-event listing for the four specified dates.\relax }}{33}{table.24}\protected@file@percent }
+\gdef \LT@xxv {\LT@entry 
+    {1}{62.75099pt}\LT@entry 
+    {1}{123.89389pt}\LT@entry 
+    {1}{67.94011pt}\LT@entry 
+    {1}{67.94011pt}\LT@entry 
+    {1}{67.94011pt}\LT@entry 
+    {1}{64.74011pt}}
+\gdef \LT@xxvi {\LT@entry 
+    {1}{69.69354pt}\LT@entry 
+    {1}{88.25758pt}\LT@entry 
+    {1}{75.13454pt}\LT@entry 
+    {1}{75.13454pt}\LT@entry 
+    {1}{75.13454pt}\LT@entry 
+    {1}{71.93454pt}}
+\gdef \LT@xxvii {\LT@entry 
+    {1}{71.5535pt}\LT@entry 
+    {1}{88.80653pt}\LT@entry 
+    {1}{74.50163pt}\LT@entry 
+    {1}{74.50163pt}\LT@entry 
+    {1}{74.50163pt}\LT@entry 
+    {1}{71.30164pt}}
+\newlabel{d.3-q3-prescribed-results}{{9}{34}{D.3 Q3 prescribed results}{section*.35}{}}
+\@writefile{toc}{\contentsline {subsection}{D.3 Q3 prescribed results}{34}{section*.35}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {25}{\ignorespaces Q3 specified purchases and daily energy totals; selected reserve policy.\relax }}{34}{table.25}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {26}{\ignorespaces Q3 daily fees (CNY), independently recomputed from final quantities.\relax }}{34}{table.26}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {27}{\ignorespaces Q3 six four-hour storage blocks and boundary energies.\relax }}{34}{table.27}\protected@file@percent }
+\gdef \LT@xxviii {\LT@entry 
+    {1}{102.9693pt}\LT@entry 
+    {1}{149.33725pt}\LT@entry 
+    {1}{111.57195pt}\LT@entry 
+    {1}{91.36559pt}}
+\gdef \LT@xxix {\LT@entry 
+    {1}{63.46785pt}\LT@entry 
+    {1}{120.29668pt}\LT@entry 
+    {1}{68.65697pt}\LT@entry 
+    {1}{68.65697pt}\LT@entry 
+    {1}{68.65697pt}\LT@entry 
+    {1}{65.45697pt}}
+\gdef \LT@xxx {\LT@entry 
+    {1}{67.27818pt}\LT@entry 
+    {1}{100.6121pt}\LT@entry 
+    {1}{72.63521pt}\LT@entry 
+    {1}{72.63521pt}\LT@entry 
+    {1}{72.63521pt}\LT@entry 
+    {1}{69.43521pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {28}{\ignorespaces Q3 complete emergency-event listing for the four specified dates.\relax }}{35}{table.28}\protected@file@percent }
+\newlabel{d.4-q4-2-prescribed-results}{{9}{35}{D.4 Q4-2 prescribed results}{section*.36}{}}
+\@writefile{toc}{\contentsline {subsection}{D.4 Q4-2 prescribed results}{35}{section*.36}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {29}{\ignorespaces Q4-2 specified purchases and daily energy totals; selected reserve policy.\relax }}{35}{table.29}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {30}{\ignorespaces Q4-2 daily fees (CNY), independently recomputed from final quantities.\relax }}{35}{table.30}\protected@file@percent }
+\gdef \LT@xxxi {\LT@entry 
+    {1}{71.5535pt}\LT@entry 
+    {1}{88.80653pt}\LT@entry 
+    {1}{74.50163pt}\LT@entry 
+    {1}{74.50163pt}\LT@entry 
+    {1}{74.50163pt}\LT@entry 
+    {1}{71.30164pt}}
+\gdef \LT@xxxii {\LT@entry 
+    {1}{102.9693pt}\LT@entry 
+    {1}{149.33725pt}\LT@entry 
+    {1}{111.57195pt}\LT@entry 
+    {1}{91.36559pt}}
+\gdef \LT@xxxiii {\LT@entry 
+    {1}{62.75099pt}\LT@entry 
+    {1}{123.89389pt}\LT@entry 
+    {1}{67.94011pt}\LT@entry 
+    {1}{67.94011pt}\LT@entry 
+    {1}{67.94011pt}\LT@entry 
+    {1}{64.74011pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {31}{\ignorespaces Q4-2 six four-hour storage blocks and boundary energies.\relax }}{36}{table.31}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {32}{\ignorespaces Q4-2 complete emergency-event listing for the four specified dates.\relax }}{36}{table.32}\protected@file@percent }
+\newlabel{d.5-q4-3-prescribed-results}{{9}{36}{D.5 Q4-3 prescribed results}{section*.37}{}}
+\@writefile{toc}{\contentsline {subsection}{D.5 Q4-3 prescribed results}{36}{section*.37}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {33}{\ignorespaces Q4-3 specified purchases and daily energy totals; selected reserve policy.\relax }}{36}{table.33}\protected@file@percent }
+\gdef \LT@xxxiv {\LT@entry 
+    {1}{69.69354pt}\LT@entry 
+    {1}{88.25758pt}\LT@entry 
+    {1}{75.13454pt}\LT@entry 
+    {1}{75.13454pt}\LT@entry 
+    {1}{75.13454pt}\LT@entry 
+    {1}{71.93454pt}}
+\gdef \LT@xxxv {\LT@entry 
+    {1}{71.5535pt}\LT@entry 
+    {1}{88.80653pt}\LT@entry 
+    {1}{74.50163pt}\LT@entry 
+    {1}{74.50163pt}\LT@entry 
+    {1}{74.50163pt}\LT@entry 
+    {1}{71.30164pt}}
+\gdef \LT@xxxvi {\LT@entry 
+    {1}{103.79434pt}\LT@entry 
+    {1}{150.51491pt}\LT@entry 
+    {1}{112.44356pt}\LT@entry 
+    {1}{88.49127pt}}
+\@writefile{lot}{\contentsline {table}{\numberline {34}{\ignorespaces Q4-3 daily fees (CNY), independently recomputed from final quantities.\relax }}{37}{table.34}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {35}{\ignorespaces Q4-3 six four-hour storage blocks and boundary energies.\relax }}{37}{table.35}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {36}{\ignorespaces Q4-3 complete emergency-event listing for the four specified dates.\relax }}{37}{table.36}\protected@file@percent }
+\gdef \LT@xxxvii {\LT@entry 
+    {1}{439.93057pt}}
+\newlabel{appendix-e.-complete-scientific-programs}{{9}{38}{Appendix E. Complete scientific programs}{section*.38}{}}
+\@writefile{toc}{\contentsline {section}{Appendix E. Complete scientific programs}{38}{section*.38}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {37}{\ignorespaces Complete supporting-file inventory.\relax }}{38}{table.37}\protected@file@percent }
+\newlabel{tab:37}{{37}{38}{Complete supporting-file inventory.\relax }{table.37}{}}
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/scripts/prepare\textunderscore data.py}{40}{lstlisting.-1}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/scripts/prepare\textunderscore inputs.py}{44}{lstlisting.-2}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/scripts/solve\textunderscore q1.py}{45}{lstlisting.-3}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/scripts/run\textunderscore q2.py}{48}{lstlisting.-4}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/scripts/storage\textunderscore control\textunderscore v6/compat.py}{52}{lstlisting.-5}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/scripts/storage\textunderscore control\textunderscore v6/inputs.py}{55}{lstlisting.-6}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/scripts/storage\textunderscore control\textunderscore v6/control.py}{57}{lstlisting.-7}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/scripts/storage\textunderscore control\textunderscore v6/kernel.py}{57}{lstlisting.-8}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/scripts/storage\textunderscore control\textunderscore v6/kernel.c}{58}{lstlisting.-9}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/scripts/storage\textunderscore control\textunderscore v6/policy.py}{60}{lstlisting.-10}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/scripts/storage\textunderscore control\textunderscore v6/run.py}{63}{lstlisting.-11}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/scripts/storage\textunderscore control\textunderscore v6/analyze.py}{65}{lstlisting.-12}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/scripts/check\textunderscore saved.py}{67}{lstlisting.-13}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/scripts/smoke\textunderscore test.py}{70}{lstlisting.-14}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/configs/data\textunderscore processing.json}{70}{lstlisting.-15}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/configs/model\textunderscore baseline.json}{71}{lstlisting.-16}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/configs/q2\textunderscore baseline.json}{71}{lstlisting.-17}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/configs/q4\textunderscore baseline.json}{72}{lstlisting.-18}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/configs/storage\textunderscore control\textunderscore v6/experiments.json}{72}{lstlisting.-19}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{support\textunderscore materials/requirements.txt}{76}{lstlisting.-20}\protected@file@percent }
+\gdef \@abspage@last{76}

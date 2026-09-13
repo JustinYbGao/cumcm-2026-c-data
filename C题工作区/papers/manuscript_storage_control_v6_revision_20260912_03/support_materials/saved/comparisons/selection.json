@@ -1,0 +1,11 @@
+{
+  "rule": "minimum unrounded reserve-arm historical total, emergency fee, then frozen matrix order; greedy benchmarks retained separately",
+  "selected": {
+    "q1": "baseline",
+    "q2": "q2_reserve",
+    "q3": "q3_w28_reserve",
+    "q42": "q42_ols_reserve",
+    "q43": "q43_raw_ols_reserve"
+  },
+  "historical_exploration": true
+}

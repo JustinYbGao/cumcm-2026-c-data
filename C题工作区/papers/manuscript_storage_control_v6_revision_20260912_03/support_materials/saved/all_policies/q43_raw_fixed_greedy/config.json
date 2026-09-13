@@ -1,0 +1,34 @@
+{
+  "policy": "q43_raw_fixed_greedy",
+  "branch": "q43",
+  "price": "fixed",
+  "updates": true,
+  "pv_update": true,
+  "corrected": false,
+  "with_pv": true,
+  "billing": "actual",
+  "control": "greedy",
+  "start": "2025-02-01",
+  "end": "2025-12-31",
+  "initial_energy_kwh": 7268.4231640740745,
+  "scenario_window": 112,
+  "kappa": 5,
+  "mu": 0.38232,
+  "optimizer": {
+    "maxiter": 180,
+    "maxfun": 1600,
+    "maxls": 30,
+    "maxcor": 10,
+    "ftol": 1e-10,
+    "gtol": 1e-05
+  },
+  "searches_per_issue": 4,
+  "protocol": "causal_q_reserve_v6",
+  "reserve_bounds_kwh": [
+    1200.0,
+    10800.0
+  ],
+  "settlement": "A",
+  "time_horizon": "remaining current day",
+  "prefix_freeze": "both q and reserve"
+}

@@ -1,0 +1,13 @@
+{
+  "eta_baseline": 0.9,
+  "eta_alternative": 0.9486832980505138,
+  "cost_change_yuan": -1325.4530470676182,
+  "grid_kwh_l1_change": 1956.4555174703992,
+  "grid_kwh_max_change": 591.1401999999999,
+  "charge_kwh_l1_change": 897.9556561854674,
+  "charge_kwh_max_change": 273.6890770639264,
+  "discharge_kwh_l1_change": 1058.4998612849315,
+  "discharge_kwh_max_change": 591.1401999999999,
+  "energy_end_kwh_l1_change": 19571.780098637264,
+  "energy_end_kwh_max_change": 623.1164828291567
+}

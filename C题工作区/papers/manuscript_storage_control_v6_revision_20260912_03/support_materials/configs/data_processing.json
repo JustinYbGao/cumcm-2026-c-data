@@ -1,0 +1,14 @@
+{
+  "source_directory": "raw",
+  "time_zone": "naive_problem_local_calendar",
+  "raw_time_label": "interval_end_assumption",
+  "power_interpretation": "interval_average_assumption",
+  "interval_minutes": 10,
+  "actual_available_at": "interval_end_inclusive_assumption",
+  "forecast_conversion": "piecewise_linear_point_power_trapezoid",
+  "first_hour_endpoint": "latest_strictly_earlier_issue_forecast_targeting_current_issue",
+  "missing_endpoint": "omit_first_hour_record_gap_no_zero_fill",
+  "future_actual_price_known": false,
+  "forecast_evaluation": "complete_hour_energy_six_10min_intervals",
+  "assumption_status": "pending_team_confirmation"
+}

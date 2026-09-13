@@ -1,0 +1,104 @@
+[
+  {
+    "source_line_before": 242,
+    "reason": "Settlement wording",
+    "before": "Thus $C_{t,k}(q_t)=F_A(q_t;q_t^0,p^{\\mathrm{plan}}_{t\\mid k})$ at a paid update. The negative term implements the adopted net reduction adjustment. Reducing a one-kWh midnight commitment to zero leaves a half-price charge; increasing it to two kWh yields $2.5p_t$. These charges follow from the working interpretation and were not chosen to obtain a favorable cost.",
+    "after": "Thus $C_{t,k}(q_t)=F_A(q_t;q_t^0,p^{\\mathrm{plan}}_{t\\mid k})$ at a paid update. The negative term implements the adopted net reduction adjustment. Reducing a one-kWh midnight commitment to zero leaves a half-price charge; increasing it to two kWh yields $2.5p_t$. These charges implement the working settlement interpretation in Table 3."
+  },
+  {
+    "source_line_before": 429,
+    "reason": "Correction result",
+    "before": "Q3 correction saves CNY 535.62 in the reserve arm and costs an additional CNY 8,925.36 in the greedy arm. These effects depend on the complete procedures and do not establish whether preprocessing will help in other settings. The retained earlier nominal-MILP correction study belongs to a different purchasing method (Appendix B).",
+    "after": "Q3 correction saves CNY 535.62 in the reserve arm and costs an additional CNY 8,925.36 in the greedy arm. This reversal ties the correction's value to the full purchasing and storage procedure. The earlier nominal-MILP correction study uses a different purchasing method (Appendix B)."
+  },
+  {
+    "source_line_before": 469,
+    "reason": "Repeated price qualification",
+    "before": "OLS saves CNY 3,079.27 in the reserve family and costs an additional CNY 6,786.91 in the matched greedy family. The selected reserve policy is `q42_ols_reserve`. Its total CNY 14,618,518.98 comprises CNY 13,704,872.50 of ordinary fees and CNY 913,646.48 of emergencies, all at actual variable prices. The selected policy saves CNY 68,043.65 relative to its same-input greedy control. Small historical rankings and their block intervals do not establish a stable future advantage for either price forecast.",
+    "after": "OLS saves CNY 3,079.27 in the reserve family and costs an additional CNY 6,786.91 in the matched greedy family. The selected reserve policy is `q42_ols_reserve`. Its total CNY 14,618,518.98 comprises CNY 13,704,872.50 of ordinary fees and CNY 913,646.48 of emergencies, all at actual variable prices. The selected policy saves CNY 68,043.65 relative to its same-input greedy control."
+  },
+  {
+    "source_line_before": 483,
+    "reason": "Resampling scope reference",
+    "before": "The raw-PV OLS-versus-fixed comparison has positive descriptive intervals: [14,140.65, 44,563.84] CNY with 7-day blocks and [11,797.92, 46,451.05] CNY with 14-day blocks. In contrast, both block lengths cross zero for each reserve-family PV-correction comparison, under fixed and OLS planning prices. This distinction supports reporting the observed price effect while qualifying the smaller correction rankings; none is selection-adjusted evidence from unseen data.",
+    "after": "The raw-PV OLS-versus-fixed comparison has positive descriptive intervals: [14,140.65, 44,563.84] CNY with 7-day blocks and [11,797.92, 46,451.05] CNY with 14-day blocks. In contrast, both block lengths cross zero for each reserve-family PV-correction comparison, under fixed and OLS planning prices. These intervals distinguish the observed price effect from the smaller correction rankings; Section 8 defines their resampling scope."
+  },
+  {
+    "source_line_before": 487,
+    "reason": "Diagnostic figure introduction",
+    "before": "Figure 8 follows the prespecified diagnostic date, 14 July 2025, showing the released planning-price and procurement versions and the actual energy/reserve trace. Each version begins at its release; completed intervals cannot change. Actual prices supply retrospective billing context, not future information for choosing the threshold. This date explains timing and is not selected to demonstrate a favorable daily saving.",
+    "after": "Figure 8 uses the prespecified diagnostic date, 14 July 2025, to show how released planning prices and procurement versions lead to the executed energy and reserve trace. Each version starts at its release and leaves completed intervals fixed. The actual-price trace provides retrospective settlement context."
+  },
+  {
+    "source_line_before": 501,
+    "reason": "Verification methods; counts relocated",
+    "before": "Implementation consistency, historical savings, and optimality are separate claims. Independent verification reconstructed original input workbooks, 364 historical B0 forecast days, 1,460 raw PV releases, and 1,336 causal price releases. It refitted historical parameters at their own information cutoffs using separate forecast, execution, billing, and objective implementations. Table 9 summarizes the criteria. The study covered all twenty-two annual paths: 1,058,112 actual intervals, 21,376 decisions, 270,540 retained candidate pairs, and 27,544,050 candidate-scenario forward paths. A separate saved-result check replayed the 22 realized trajectories and reread the five workbooks. Appendix A distinguishes these checks from the full production-code reproduction.",
+    "after": "Independent verification rebuilt the source inputs and refitted historical forecasts at their own information cutoffs, using implementations separate from the production forecast, execution, billing, and objective functions. It replayed all twenty-two annual paths and checked candidate scores and saved workbooks. Table 9 reports the numerical discrepancies and tolerances; Appendix A records the coverage and reproduction details."
+  },
+  {
+    "source_line_before": 513,
+    "reason": "Workbook verification; counts relocated",
+    "before": "Workbook verification completed 5,317,739 checks and 2,654,345 numerical comparisons, including 288,720 purchase cells, 1,008 time mappings, and 50 specified-day CSV/Markdown pairs. It read the saved XLSX files directly. Each variable-price emergency event is reconciled to its separately checked ten-minute ledger allocation. These checks assess accounting and output consistency.",
+    "after": "The workbook checks read the saved XLSX files directly and reconciled each variable-price emergency event with its independently checked ten-minute ledger allocation. Table 9 reports the energy and fee discrepancies for these saved quantities."
+  },
+  {
+    "source_line_before": 517,
+    "reason": "Numerical tie result",
+    "before": "Independent score accumulation changed the first qualifying index in 2 decisions at a numerical tie boundary. Each saved choice satisfies the original $10^{-8}$ CNY first-index rule on its saved scores. Separately recomputed scores satisfy the cash tolerance, and accepted index differences have purchase and reserve vectors agreeing within $10^{-6}$ kWh. The verification record itemizes the score gaps and discrepancies between implementations.",
+    "after": "Independent score accumulation gave a different first qualifying index in 2 numerically tied decisions. Each saved choice obeyed the original $10^{-8}$ CNY first-index rule on its saved scores. Recomputed scores stayed within the cash tolerance, and accepted index differences corresponded to purchase and reserve vectors agreeing within $10^{-6}$ kWh. The verification record lists the score gaps."
+  },
+  {
+    "source_line_before": 519,
+    "reason": "Information-test methods and outcomes",
+    "before": "Twenty-nine bounded information tests cover six preselected decision fixtures on 15 May: eighteen interventions on unavailable information, nine positive controls using permitted information, and two PV-access guards. Future demand/PV, unreleased PV forecasts, and future actual prices leave available inputs, full purchase/reserve candidates, scores, and selected pairs unchanged. Permitted PV, completed price history, and actual-energy changes produce the expected responses. Price caches are disabled in the intervention tests. The B0 archive is independently reconstructed in the source audit; it is not retrained by these intervention fixtures. Q4-2's Attachment 3 guard tests the adopted interpretation, not a claimed official ban.",
+    "after": "Twenty-nine information tests used six preselected decision fixtures on 15 May: eighteen interventions on unavailable information, nine positive controls using permitted inputs, and two PV-access guards. Changing future demand/PV, unreleased PV forecasts, or future actual prices left the available inputs, full purchase/reserve candidates, scores, and selected pairs unchanged. Permitted PV, completed price history, and actual-energy changes produced the expected responses. The tests disabled price caches and kept the B0 archive fixed; its historical reconstruction was checked separately. The Q4-2 guard enforced the working interpretation in Table 3."
+  },
+  {
+    "source_line_before": 521,
+    "reason": "Reproduction summary; details relocated",
+    "before": "A separate reproduction reran all four selected reserve policies for the full 334 days from an isolated copy of the source and inputs, with a newly compiled kernel. Ledger, daily-summary, and purchase/reserve-version CSVs were byte-identical, and every numerical candidate/input array agreed exactly. Comparisons excluded solver wall-clock metadata and used the same host and dependency versions. A three-day legacy-mode check also reproduced the earlier Q2 and raw-PV Q3 paths exactly, distinguishing the matched four-search controls from the frozen two-search references.",
+    "after": "An isolated reproduction of the selected reserve policies rebuilt the kernel and reproduced the saved trajectories and candidate/input arrays exactly. It used the same host and dependency versions; Appendix A specifies the comparisons and exclusions."
+  },
+  {
+    "source_line_before": 523,
+    "reason": "Optimizer stopping and independent billing",
+    "before": "Across the twenty-two annual policies, 85,504 local searches include 46,365 non-success stopping records, 0 recorded solver exceptions, 0 initializer fallbacks, and 0 invalid-return fallbacks. Starting candidates are selected 12 times, and the complete keep-current pair 3,047 times. All finite retained pairs are rescored before selection and executed through the hard physical rule. The independent analysis also recomputes all twenty-two summaries and twenty-nine named paired comparisons from separately validated price inputs and saved ledgers.",
+    "after": "Of 85,504 local searches across twenty-two annual policies, 46,365 ended with non-success stopping records. The logs contain 0 solver exceptions, 0 initializer fallbacks, and 0 invalid-return fallbacks. Selection retained a starting candidate 12 times and the complete keep-current pair 3,047 times. Every finite retained pair was rescored before selection and executed through the hard physical rule. Independent rebilling of the saved ledgers, using separately validated prices, also recomputed all twenty-two summaries and twenty-nine named paired comparisons."
+  },
+  {
+    "source_line_before": 525,
+    "reason": "Forecast-error results and scope",
+    "before": "Figure 9 compares the midnight forecast with the latest release available at each interval under the adopted 00:00/06:00/12:00/18:00 protocol, using the selected raw-PV/OLS Q4-3 reserve path. Both PV panels use the same 26,880 intervals with positive actual generation. This retrospective evaluation subset excludes 21,216 zero-generation intervals, including 1,280 positive forecasts in each compared version; it does not determine forecast-time inputs. On the displayed subset, PV MAE falls from 60.77 to 31.83 kWh per ten-minute interval. Over all 48,096 intervals, the corresponding MAEs are 34.44 and 18.27 kWh. Price MAE changes only slightly, from 0.04270 to 0.04240 CNY/kWh. These diagnostics describe forecast errors on one retained historical path; they do not isolate the cash value of information or establish performance on unseen years.",
+    "after": "Figure 9 compares midnight forecasts with the latest release permitted by the 00:00/06:00/12:00/18:00 protocol on the selected raw-PV/OLS Q4-3 reserve path. The PV panels share 26,880 intervals with positive actual generation. This subset is chosen retrospectively for evaluation and excludes 21,216 zero-generation intervals, including 1,280 positive forecasts in each version. It leaves forecast-time inputs unchanged. PV MAE falls from 60.77 to 31.83 kWh per ten-minute interval on the subset and from 34.44 to 18.27 kWh over all 48,096 intervals. Price MAE changes from 0.04270 to 0.04240 CNY/kWh. These error summaries cover one retained historical path; Table 15 gives the matched policy comparisons used to assess operating costs."
+  },
+  {
+    "source_line_before": 535,
+    "reason": "Daily-distribution introduction",
+    "before": "Figure 10 shows why winning on many days need not reduce the annual bill: the selected Q3 reserve policy saves money on 188 of 334 days but costs CNY 6,206.07 more over the full period. All daily observations, including both tails, are retained. The annual block intervals remain in Table 10; the distribution display does not replace their uncertainty qualifications.",
+    "after": "Figure 10 shows why winning on many days need not reduce the annual bill: the selected Q3 reserve policy saves money on 188 of 334 days but costs CNY 6,206.07 more over the full period. The plotted observations retain both tails; Table 10 gives the annual block intervals."
+  },
+  {
+    "source_line_before": 578,
+    "reason": "Consolidated resampling limitations",
+    "before": "Circular block resampling retains neighboring daily differences and wraps at the endpoints [9]. Both block lengths use 2,000 resamples with seed 20260915. The battery is not rerun on resampled weather, forecast parameters are not retrained in each sample, and repeated 2025 selection is not corrected. The intervals describe uncertainty in fixed historical cost differences under this scheme. They do not provide selection-adjusted inference for unseen years or establish causal effects. The density displays and descriptive clustering likewise summarize the observed data rather than test significance. Scenario ordering was preserved throughout; a shuffled-scenario comparison was not performed.",
+    "after": "Circular block resampling retains neighboring daily differences and wraps at the endpoints [9]. Both block lengths use 2,000 resamples with seed 20260915. The procedure resamples fixed historical cost differences: it neither reruns the battery on new weather nor refits forecasts, and it leaves repeated 2025 selection uncorrected. Its intervals therefore provide no selection-adjusted inference for unseen years or causal effects. The density displays and descriptive clustering summarize observed variation without significance tests. Scenario ordering was preserved; a shuffled-scenario comparison was not performed."
+  },
+  {
+    "source_line_before": 598,
+    "reason": "Concrete limitations and next steps",
+    "before": "Four limitations delimit the evidence and suggest concrete next steps. First, interval labels, efficiency and power measurement, interpolation, balancing, and rule-A settlement remain working interpretations; official clarification or metering specifications should precede any recalculation under different conventions. In particular, Q4-2 excludes Attachment 3 by an author interpretation, not an official prohibition. Second, surplus charging and issue-time reserve thresholds restrict the policy class, and the finite nonsmooth search has no global certificate; a subsequent study should compare richer causal control laws and independently bounded solutions on the same information set. Third, the fixed terminal proxy omits degradation and network dynamics; measured battery aging and network data would be needed to estimate those costs and test a longer horizon. Fourth, selection repeatedly used one historical year; genuinely untouched periods, prespecified comparisons, and matched tests of history windows, weights, capacity, and sustained forecast bias are needed before claiming robust future savings. None of these tests was performed for the current reserve controller.",
+    "after": "Interval labels, efficiency and power measurement, interpolation, balancing, and rule-A settlement follow working conventions; official clarification or metering specifications would be needed before recalculating under different conventions. Q4-2's exclusion of Attachment 3 is also an author interpretation. Surplus charging and preissued reserve thresholds restrict the control law, and finite nonsmooth search supplies no global certificate. Richer causal controllers and independently bounded solutions should therefore be compared on the same information set. The fixed terminal proxy omits degradation and network dynamics; estimating these costs and testing a longer horizon require measured battery-aging and network data. Repeated selection on one historical year limits evidence for future savings. Untouched periods, prespecified comparisons, and matched tests of history windows, weights, capacity, and sustained forecast bias remain necessary. None of these additional tests has been performed for the current reserve controller."
+  },
+  {
+    "source_line_before": 1,
+    "reason": "User-requested English title pattern",
+    "before": "# Procurement and Causal Battery Reserve Scheduling under Forecast Errors and Paid Revisions",
+    "after": "# A Study of Microgrid Power Scheduling Based on Mixed-Integer Programming and Historical Scenario Optimization"
+  },
+  {
+    "source_line_before": 651,
+    "reason": "Coverage and reproduction details relocated to Appendix A",
+    "before": "The independent checker in Section 8 rebuilds raw inputs, historical forecast parameters, and scenario scores from saved candidates using implementations separate from the production forecast, execution, billing, and objective functions. The isolated reproduction reruns the production code in a separate source/data tree and recompiles the kernel. Both studies predate this editorial revision. The bundled `check_saved.py` supports saved-result checks, with default and optional full-input replay modes documented in the support README.",
+    "after": "The independent checker in Section 8 rebuilds raw inputs, historical forecast parameters, and scenario scores from saved candidates using implementations separate from the production forecast, execution, billing, and objective functions. The isolated reproduction reruns the production code in a separate source/data tree and recompiles the kernel. Both studies predate this editorial revision. The bundled `check_saved.py` supports saved-result checks, with default and optional full-input replay modes documented in the support README.\n\nVerification coverage comprised the original input workbooks, 364 historical B0 forecast days, 1,460 raw PV releases, and 1,336 causal price releases. Across all annual paths, the checks covered 1,058,112 actual intervals, 21,376 decisions, 270,540 retained candidate pairs, and 27,544,050 candidate-scenario forward paths. A separate saved-result check replayed the 22 realized trajectories and reread the five workbooks.\n\nWorkbook verification completed 5,317,739 checks and 2,654,345 numerical comparisons, including 288,720 purchase cells, 1,008 time mappings, and 50 specified-day CSV/Markdown pairs.\n\nA separate reproduction reran all four selected reserve policies for the full 334 days from an isolated copy of the source and inputs, with a newly compiled kernel. Ledger, daily-summary, and purchase/reserve-version CSVs were byte-identical, and every numerical candidate/input array agreed exactly. Comparisons excluded solver wall-clock metadata and used the same host and dependency versions. A three-day legacy-mode check also reproduced the earlier Q2 and raw-PV Q3 paths exactly, distinguishing the matched four-search controls from the frozen two-search references."
+  }
+]

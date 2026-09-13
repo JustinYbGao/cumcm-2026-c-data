@@ -1,0 +1,263 @@
+{
+  "policies": {
+    "q2_greedy": {
+      "branch": "q2",
+      "price": "fixed",
+      "updates": false,
+      "pv_update": false,
+      "corrected": false,
+      "with_pv": false,
+      "billing": "fixed",
+      "control": "greedy"
+    },
+    "q2_reserve": {
+      "branch": "q2",
+      "price": "fixed",
+      "updates": false,
+      "pv_update": false,
+      "corrected": false,
+      "with_pv": false,
+      "billing": "fixed",
+      "control": "reserve"
+    },
+    "q3_no_update_greedy": {
+      "branch": "q3",
+      "price": "fixed",
+      "updates": false,
+      "pv_update": false,
+      "corrected": false,
+      "with_pv": true,
+      "billing": "fixed",
+      "control": "greedy"
+    },
+    "q3_no_update_reserve": {
+      "branch": "q3",
+      "price": "fixed",
+      "updates": false,
+      "pv_update": false,
+      "corrected": false,
+      "with_pv": true,
+      "billing": "fixed",
+      "control": "reserve"
+    },
+    "q3_soc_greedy": {
+      "branch": "q3",
+      "price": "fixed",
+      "updates": true,
+      "pv_update": false,
+      "corrected": false,
+      "with_pv": true,
+      "billing": "fixed",
+      "control": "greedy"
+    },
+    "q3_soc_reserve": {
+      "branch": "q3",
+      "price": "fixed",
+      "updates": true,
+      "pv_update": false,
+      "corrected": false,
+      "with_pv": true,
+      "billing": "fixed",
+      "control": "reserve"
+    },
+    "q3_raw_greedy": {
+      "branch": "q3",
+      "price": "fixed",
+      "updates": true,
+      "pv_update": true,
+      "corrected": false,
+      "with_pv": true,
+      "billing": "fixed",
+      "control": "greedy"
+    },
+    "q3_raw_reserve": {
+      "branch": "q3",
+      "price": "fixed",
+      "updates": true,
+      "pv_update": true,
+      "corrected": false,
+      "with_pv": true,
+      "billing": "fixed",
+      "control": "reserve"
+    },
+    "q3_w28_greedy": {
+      "branch": "q3",
+      "price": "fixed",
+      "updates": true,
+      "pv_update": true,
+      "corrected": true,
+      "with_pv": true,
+      "billing": "fixed",
+      "control": "greedy"
+    },
+    "q3_w28_reserve": {
+      "branch": "q3",
+      "price": "fixed",
+      "updates": true,
+      "pv_update": true,
+      "corrected": true,
+      "with_pv": true,
+      "billing": "fixed",
+      "control": "reserve"
+    },
+    "q42_ols_greedy": {
+      "branch": "q42",
+      "price": "ols",
+      "updates": false,
+      "pv_update": false,
+      "corrected": false,
+      "with_pv": false,
+      "billing": "actual",
+      "control": "greedy"
+    },
+    "q42_ols_reserve": {
+      "branch": "q42",
+      "price": "ols",
+      "updates": false,
+      "pv_update": false,
+      "corrected": false,
+      "with_pv": false,
+      "billing": "actual",
+      "control": "reserve"
+    },
+    "q42_fixed_greedy": {
+      "branch": "q42",
+      "price": "fixed",
+      "updates": false,
+      "pv_update": false,
+      "corrected": false,
+      "with_pv": false,
+      "billing": "actual",
+      "control": "greedy"
+    },
+    "q42_fixed_reserve": {
+      "branch": "q42",
+      "price": "fixed",
+      "updates": false,
+      "pv_update": false,
+      "corrected": false,
+      "with_pv": false,
+      "billing": "actual",
+      "control": "reserve"
+    },
+    "q43_raw_ols_greedy": {
+      "branch": "q43",
+      "price": "ols",
+      "updates": true,
+      "pv_update": true,
+      "corrected": false,
+      "with_pv": true,
+      "billing": "actual",
+      "control": "greedy"
+    },
+    "q43_raw_ols_reserve": {
+      "branch": "q43",
+      "price": "ols",
+      "updates": true,
+      "pv_update": true,
+      "corrected": false,
+      "with_pv": true,
+      "billing": "actual",
+      "control": "reserve"
+    },
+    "q43_w28_ols_greedy": {
+      "branch": "q43",
+      "price": "ols",
+      "updates": true,
+      "pv_update": true,
+      "corrected": true,
+      "with_pv": true,
+      "billing": "actual",
+      "control": "greedy"
+    },
+    "q43_w28_ols_reserve": {
+      "branch": "q43",
+      "price": "ols",
+      "updates": true,
+      "pv_update": true,
+      "corrected": true,
+      "with_pv": true,
+      "billing": "actual",
+      "control": "reserve"
+    },
+    "q43_raw_fixed_greedy": {
+      "branch": "q43",
+      "price": "fixed",
+      "updates": true,
+      "pv_update": true,
+      "corrected": false,
+      "with_pv": true,
+      "billing": "actual",
+      "control": "greedy"
+    },
+    "q43_raw_fixed_reserve": {
+      "branch": "q43",
+      "price": "fixed",
+      "updates": true,
+      "pv_update": true,
+      "corrected": false,
+      "with_pv": true,
+      "billing": "actual",
+      "control": "reserve"
+    },
+    "q43_w28_fixed_greedy": {
+      "branch": "q43",
+      "price": "fixed",
+      "updates": true,
+      "pv_update": true,
+      "corrected": true,
+      "with_pv": true,
+      "billing": "actual",
+      "control": "greedy"
+    },
+    "q43_w28_fixed_reserve": {
+      "branch": "q43",
+      "price": "fixed",
+      "updates": true,
+      "pv_update": true,
+      "corrected": true,
+      "with_pv": true,
+      "billing": "actual",
+      "control": "reserve"
+    }
+  },
+  "optimizer": {
+    "maxiter": 180,
+    "maxfun": 1600,
+    "maxls": 30,
+    "maxcor": 10,
+    "ftol": 1e-10,
+    "gtol": 1e-05
+  },
+  "scenario_window": 112,
+  "kappa": 5,
+  "mu": 0.38232,
+  "initial_energy_kwh": 7268.4231640740745,
+  "protocol": "causal_q_reserve_v6",
+  "control_bounds_kwh": [
+    1200,
+    10800
+  ],
+  "searches_per_issue": 4,
+  "midnight_candidate_count": 12,
+  "paid_update_candidate_count": 13,
+  "legacy_regression_searches_per_issue": 2,
+  "procurement_variable_scale": 1000,
+  "reserve_variable_scale": 1000,
+  "objective_scale": 10000,
+  "stable_selection_tolerance_yuan": 1e-08,
+  "candidate_retention": [
+    "start",
+    "best_evaluated",
+    "returned"
+  ],
+  "reserve_seed": [
+    "nominal_MILP_energy_end",
+    "constant_1200"
+  ],
+  "selection": "minimum unrounded actual cash per reserve branch; emergency fee then declared order breaks exact ties",
+  "billing_rule": "A",
+  "warmup": "shared frozen January seasonal baseline; separate continuous state from February 1",
+  "actual_price_access": "realized billing only; planning as declared price input",
+  "q1": "unchanged frozen verified MILP"
+}

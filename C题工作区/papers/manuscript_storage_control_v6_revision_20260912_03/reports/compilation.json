@@ -1,0 +1,18 @@
+{
+  "pdf": "/Users/justingao/Documents/CUMCM/C\u9898\u5de5\u4f5c\u533a/papers/manuscript_storage_control_v6_revision_20260912_03/outputs/manuscript_review.pdf",
+  "pdf_sha256": "bbd51c94fbb0ab485e3b1d68444782bfb4e2eb1d7bd9912c4e816e323cf5dfe6",
+  "engine": "Tectonic 0.17.0",
+  "class_sha256": "01addb492c5d075b320636ac3a30d8a5762fa937220dea07a5e107042d25384d",
+  "package_downloads_allowed": false,
+  "command": [
+    "/Users/justingao/Documents/CUMCM/C\u9898\u5de5\u4f5c\u533a/papers/manuscript_storage_control_v6_revision_20260912_03/tools/tectonic",
+    "main.tex",
+    "--outdir",
+    "outputs",
+    "--keep-logs",
+    "--keep-intermediates",
+    "--synctex",
+    "--only-cached"
+  ],
+  "source_date_epoch": "1789171200"
+}

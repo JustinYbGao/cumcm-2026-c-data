@@ -1,0 +1,92 @@
+--- original/scripts/storage_control_v6/compat.py
++++ scripts/storage_control_v6/compat.py
+@@ -1,4 +1,4 @@
+-"""Frozen function bodies; source provenance in extracted_sources.json."""
++"""Frozen function bodies; source provenance in SOURCE_PROVENANCE.json."""
+ 
+ import highspy
+ import numpy as np
+--- original/scripts/solve_q1.py
++++ scripts/solve_q1.py
+@@ -134,11 +134,10 @@
+         raise ValueError('Nonfinite or negative input')
+     if cfg['interval_minutes'] != 10:
+         raise ValueError('The reviewed Q1 CSV uses 10 minute intervals')
+-    preserved = sorted((WORK / 'data/processed').glob('*.csv')) + sorted((WORK.parent / 'CUMCM2026Problems/C题').rglob('*.xlsx'))
+-    preserved += [WORK.parent / 'CUMCM2026Problems/C题/C题.pdf']
+-    before = {str(p.relative_to(WORK.parent)): digest(p) for p in preserved}
++    preserved = sorted((WORK / 'data/processed').glob('*.csv')) + sorted((WORK / 'raw').glob('*.xlsx'))
++    before = {str(p.relative_to(WORK)): digest(p) for p in preserved}
+     save_json(WORK / 'logs/q1/input_hashes_before.json', before)
+-    save_json(WORK / 'logs/q1/environment.json', {'python':sys.version, 'executable':sys.executable,
++    save_json(WORK / 'logs/q1/environment.json', {'python':sys.version, 'executable':Path(sys.executable).name,
+               'platform':platform.platform(), 'highs':highspy.Highs().version(),
+               'packages':{n:importlib.metadata.version(n) for n in ['numpy','pandas','highspy','matplotlib','openpyxl']}})
+     summaries, frames = {}, {}
+@@ -181,7 +180,7 @@
+         sensitivity[key+'_l1_change'] = float(delta.abs().sum())
+         sensitivity[key+'_max_change'] = float(delta.abs().max())
+     save_json(WORK / 'results/q1/efficiency_sensitivity.json', sensitivity)
+-    after = {str(p.relative_to(WORK.parent)): digest(p) for p in preserved}
++    after = {str(p.relative_to(WORK)): digest(p) for p in preserved}
+     save_json(WORK / 'logs/q1/input_hashes_after.json', after)
+     if before != after:
+         raise RuntimeError('A protected input changed during this run')
+--- original/scripts/prepare_data.py
++++ scripts/prepare_data.py
+@@ -10,7 +10,7 @@
+ from openpyxl.utils import get_column_letter
+ 
+ WORK = Path(__file__).resolve().parents[1]
+-ROOT = WORK.parent
++ROOT = WORK
+ CONFIG = json.loads((WORK / 'configs/data_processing.json').read_text())
+ SOURCE = ROOT / CONFIG['source_directory']
+ OUT = WORK / 'data/processed'
+@@ -82,8 +82,8 @@
+ 
+ 
+ def prepare_q1():
+-    rows = rows_of('附件1.xlsx', 'Sheet1')
+-    if rows[0] != ('时间', '电价', '小区负载', '光伏发电预测功率'):
++    rows = rows_of('attachment_1.xlsx', 'Sheet1')
++    if rows[0] != ('\u65f6\u95f4', '\u7535\u4ef7', '\u5c0f\u533a\u8d1f\u8f7d', '\u5149\u4f0f\u53d1\u7535\u9884\u6d4b\u529f\u7387'):
+         raise ValueError('Unexpected attachment 1 header')
+     labels = [r[0] for r in rows[1:]]
+     minutes = slots(labels)
+@@ -126,9 +126,9 @@
+ 
+ 
+ def prepare_actual(fixed):
+-    load = annual_long('附件2.xlsx', '小区负载', 'load_actual_kw', 'load')
+-    pv = annual_long('附件2.xlsx', '光伏发电实际功率', 'pv_actual_kw', 'pv')
+-    price = annual_long('附件4.xlsx', 'Sheet1', 'actual_price_yuan_per_kwh', 'price')
++    load = annual_long('attachment_2.xlsx', '\u5c0f\u533a\u8d1f\u8f7d', 'load_actual_kw', 'load')
++    pv = annual_long('attachment_2.xlsx', '\u5149\u4f0f\u53d1\u7535\u5b9e\u9645\u529f\u7387', 'pv_actual_kw', 'pv')
++    price = annual_long('attachment_4.xlsx', 'Sheet1', 'actual_price_yuan_per_kwh', 'price')
+     keys = ['date','slot_id','interval_start','interval_end']
+     actual = load.merge(pv, on=keys, how='outer', validate='one_to_one').merge(
+         price, on=keys, how='outer', validate='one_to_one')
+@@ -148,8 +148,8 @@
+ 
+ 
+ def prepare_hourly():
+-    rows = rows_of('附件3.xlsx', 'Sheet1')
+-    if list(rows[0][2:]) != [f'预报{h}小时' for h in range(1,25)]:
++    rows = rows_of('attachment_3.xlsx', 'Sheet1')
++    if list(rows[0][2:]) != [f'\u9884\u62a5{h}\u5c0f\u65f6' for h in range(1,25)]:
+         raise ValueError('Unexpected horizon headers')
+     raw_dates = pd.Series([r[0] for r in rows[1:]], dtype=object)
+     clean_dates = raw_dates.replace(r'^\s*$', np.nan, regex=True).ffill()
+@@ -168,9 +168,9 @@
+     records['raw_issue_label'] = np.repeat([str(r[1]) for r in rows[1:]],24)
+     records['date_was_filled'] = np.repeat((raw_dates.isna() | raw_dates.astype(str).str.strip().eq('')).to_numpy(),24)
+     write(records, 'pv_forecast_hourly')
+-    changes = [{'source_file':'附件3.xlsx','source_sheet':'Sheet1','source_cell':f'A{i+2}',
++    changes = [{'source_file':'attachment_3.xlsx','source_sheet':'Sheet1','source_cell':f'A{i+2}',
+                 'original_value':json.dumps(raw_dates.iloc[i],ensure_ascii=False),
+-                'new_value':clean_dates.iloc[i], 'reason':'同日后续发布行空日期按原行序向下填充；未修改功率'}
++                'new_value':clean_dates.iloc[i], 'reason':'Forward-filled blank date labels within the existing issue order; no power value changed'}
+                for i in range(len(raw_dates)) if records.date_was_filled.iloc[i*24]]
+     pd.DataFrame(changes).to_csv(WORK/'data/interim/transformation_log.csv',index=False)
+     return records

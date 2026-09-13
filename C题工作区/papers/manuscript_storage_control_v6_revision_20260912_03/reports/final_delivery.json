@@ -1,0 +1,33 @@
+{
+  "title": "A Study of Microgrid Power Scheduling Based on Mixed-Integer Programming and Historical Scenario Optimization",
+  "artifacts": {
+    "manuscript.pdf": {
+      "path": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/manuscript.pdf",
+      "sha256": "bbd51c94fbb0ab485e3b1d68444782bfb4e2eb1d7bd9912c4e816e323cf5dfe6",
+      "bytes": 3998967
+    },
+    "manuscript_EN.md": {
+      "path": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/manuscript_EN.md",
+      "sha256": "7962dfef9fe6364a0a9cb638bdf41c99f7c8e493061d67abc3e8182725c0d402",
+      "bytes": 124044
+    },
+    "support_materials.zip": {
+      "path": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/support_materials.zip",
+      "sha256": "798d07a4abb265eb7545089476a944d51d2d98a0d8e95ce2a355e3cdae2501c8",
+      "bytes": 17578623
+    },
+    "outputs/latex_source.zip": {
+      "path": "/Users/justingao/Documents/CUMCM/C题工作区/papers/manuscript_storage_control_v6_revision_20260912_03/outputs/latex_source.zip",
+      "sha256": "d9c2e9ff0bc83489e131c7bda125fb8a2aadd46c884b19ba51e073c1fc2c6b03",
+      "bytes": 3623171
+    }
+  },
+  "page_count": 76,
+  "body_pages": 24,
+  "abstract_and_keywords_unchanged": true,
+  "models_results_and_workbooks_unchanged": true,
+  "visual_pages_recorded": 76,
+  "support_zip_byte_identical": true,
+  "portable_compile_pdf_byte_identical": true,
+  "scope": "Authorized English title change and selected body-prose refinement; abstract, keywords, scientific content and support files are frozen. Coverage details move to Appendix A. No model or annual experiment is run."
+}

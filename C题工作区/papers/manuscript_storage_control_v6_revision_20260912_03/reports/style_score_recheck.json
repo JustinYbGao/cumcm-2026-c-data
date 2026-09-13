@@ -1,0 +1,34 @@
+{
+  "method": "Same corrected two-layer offline rubric as the preceding focused review; higher quality is better and higher risk is worse. Scores are agent editorial judgments, not detector measurements.",
+  "scope": "Edited prose and structure only; no new scientific or reference audit and no credit for the unchanged abstract.",
+  "source_sha256": "7962dfef9fe6364a0a9cb638bdf41c99f7c8e493061d67abc3e8182725c0d402",
+  "pdf_sha256": "bbd51c94fbb0ab485e3b1d68444782bfb4e2eb1d7bd9912c4e816e323cf5dfe6",
+  "before_risk": 20.05,
+  "layer1_quality": {
+    "language": 76,
+    "structure": 84,
+    "specificity": 94,
+    "validation": 84,
+    "sources": 92
+  },
+  "layer2_quality": {
+    "model_appropriateness": 94,
+    "complexity_benefit": 64,
+    "hollow_sophistication": 88,
+    "three_questions": 80
+  },
+  "layer1_total": 81.0,
+  "layer2_total": 81.5,
+  "after_risk": 18.75,
+  "display_risk": "Approximately 19/100; a modest subjective change from approximately 20/100",
+  "basis": [
+    "Fewer repeated defensive qualifications; adverse evidence remains explicit.",
+    "Verification counts are concentrated in Appendix A; prose links methods, findings and limitations directly.",
+    "All scientific assessment dimensions retain their previous values."
+  ],
+  "limitations": [
+    "Some main-text word reduction is relocation, not removal from the document.",
+    "A five-point change in language judgment changes the combined risk by 1.5 points; the apparent improvement is not a calibrated effect.",
+    "No external AI detector was run; this score cannot identify authorship or guarantee a detector outcome."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "before": {
+    "paragraphs": 128,
+    "words": 8090,
+    "sentences_heuristic": 553,
+    "negative_marker_sentences": 125,
+    "qualification_pattern_sentences": 62
+  },
+  "after": {
+    "paragraphs": 128,
+    "words": 7874,
+    "sentences_heuristic": 542,
+    "negative_marker_sentences": 114,
+    "qualification_pattern_sentences": 53
+  },
+  "scope": "Same 128 main-prose paragraphs; some detailed coverage text moved to Appendix A. Counts describe editing, not authorship."
+}

@@ -1,0 +1,1430 @@
+{
+  "description": "Project-relative original source identities and precise package changes. All scalar/model parameters and decision function bodies are unchanged.",
+  "path_and_metadata_changes": {
+    "scripts/prepare_data.py": "Input root/file names adapted to raw/attachment_N.xlsx; original schema literals use ASCII Unicode escapes; transformation-log explanation translated.",
+    "scripts/solve_q1.py": "Protected-input hashing uses package raw/ instead of the former parent workspace and omits the unused problem PDF; executable metadata records basename only.",
+    "configs/data_processing.json": "source_directory changed to raw.",
+    "scripts/storage_control_v6/compat.py": "Module docstring provenance filename extracted_sources.json -> SOURCE_PROVENANCE.json; no runtime model or function change."
+  },
+  "files": [
+    {
+      "source_path": "scripts/storage_control_v6/inputs.py",
+      "source_sha256": "3ee59d2ab2636b21b82fd4e7eb6018db66fd857fbca3f6abb78b15e9e484e4e7",
+      "package_path": "scripts/storage_control_v6/inputs.py",
+      "package_sha256": "3ee59d2ab2636b21b82fd4e7eb6018db66fd857fbca3f6abb78b15e9e484e4e7",
+      "role": "frozen scientific source",
+      "byte_identical": true
+    },
+    {
+      "source_path": "scripts/storage_control_v6/compat.py",
+      "source_sha256": "0e35e934929a4b992fc2059015bb24bbf559d2c36fda2036ca9992f52549792c",
+      "package_path": "scripts/storage_control_v6/compat.py",
+      "package_sha256": "0b48f8f77047636bfc773b744c719491f29eef87cc406819a156963fe47442f7",
+      "role": "scientific source; module provenance docstring path adapted only",
+      "byte_identical": false,
+      "changes": [
+        "Module docstring now points to SOURCE_PROVENANCE.json; every function and numeric parameter is unchanged."
+      ]
+    },
+    {
+      "source_path": "scripts/storage_control_v6/control.py",
+      "source_sha256": "4f997189bb8da07bc40e5a3cdcde41c0c30201e62f8b09a102b00b5c8a625724",
+      "package_path": "scripts/storage_control_v6/control.py",
+      "package_sha256": "4f997189bb8da07bc40e5a3cdcde41c0c30201e62f8b09a102b00b5c8a625724",
+      "role": "frozen scientific source",
+      "byte_identical": true
+    },
+    {
+      "source_path": "scripts/storage_control_v6/policy.py",
+      "source_sha256": "93ab877406486213c567068991d86fc7205e2cb3c1e6e43d964e393c71135a86",
+      "package_path": "scripts/storage_control_v6/policy.py",
+      "package_sha256": "93ab877406486213c567068991d86fc7205e2cb3c1e6e43d964e393c71135a86",
+      "role": "frozen scientific source",
+      "byte_identical": true
+    },
+    {
+      "source_path": "scripts/storage_control_v6/kernel.py",
+      "source_sha256": "b33209a48e856792ba5cd0d34a1007b80db3b55f7fd1c898bf2496f0d3500fc7",
+      "package_path": "scripts/storage_control_v6/kernel.py",
+      "package_sha256": "b33209a48e856792ba5cd0d34a1007b80db3b55f7fd1c898bf2496f0d3500fc7",
+      "role": "frozen scientific source",
+      "byte_identical": true
+    },
+    {
+      "source_path": "scripts/storage_control_v6/kernel.c",
+      "source_sha256": "c3401b49889e72f29b1885f3a10086085cbdc3daba1a472c7c5b317a44e3666f",
+      "package_path": "scripts/storage_control_v6/kernel.c",
+      "package_sha256": "c3401b49889e72f29b1885f3a10086085cbdc3daba1a472c7c5b317a44e3666f",
+      "role": "frozen scientific source",
+      "byte_identical": true
+    },
+    {
+      "source_path": "scripts/storage_control_v6/run.py",
+      "source_sha256": "71af932b294bb5506d71d23d3e01d8db5648a8d64c04a0bbaa094cbf82f0cdeb",
+      "package_path": "scripts/storage_control_v6/run.py",
+      "package_sha256": "71af932b294bb5506d71d23d3e01d8db5648a8d64c04a0bbaa094cbf82f0cdeb",
+      "role": "frozen scientific source",
+      "byte_identical": true
+    },
+    {
+      "source_path": "scripts/storage_control_v6/analyze.py",
+      "source_sha256": "d3b98f348454c5b5f8731d2a045946c3351011a125fa5bbe9164239500c83282",
+      "package_path": "scripts/storage_control_v6/analyze.py",
+      "package_sha256": "d3b98f348454c5b5f8731d2a045946c3351011a125fa5bbe9164239500c83282",
+      "role": "frozen scientific source",
+      "byte_identical": true
+    },
+    {
+      "source_path": "scripts/solve_q1.py",
+      "source_sha256": "fe351fb7fd979897b9958b2b01ceb75bdf8fcf7a633e04ba71c0c4ee9c2bef6e",
+      "package_path": "scripts/solve_q1.py",
+      "package_sha256": "183e43dbc01df2ced3e9ffb57ff1dd0911f19ce665627793941108cfcbfd638f",
+      "role": "frozen scientific source",
+      "byte_identical": false
+    },
+    {
+      "source_path": "scripts/prepare_data.py",
+      "source_sha256": "666ee68adc9375be384d60e1118e7d3fbda9f2f8d56ade405f90d07c8f8f497e",
+      "package_path": "scripts/prepare_data.py",
+      "package_sha256": "5afb49f795c6366f56dfd54b4d520b8a456d6808c29f8dadc432e75a30a7e4bd",
+      "role": "frozen scientific source",
+      "byte_identical": false
+    },
+    {
+      "source_path": "scripts/run_q2.py",
+      "source_sha256": "2fbe74adb5a3a39efe01ed1429016561360c6c58716a095c6ebb18870ca0ce0a",
+      "package_path": "scripts/run_q2.py",
+      "package_sha256": "2fbe74adb5a3a39efe01ed1429016561360c6c58716a095c6ebb18870ca0ce0a",
+      "role": "historical forecast and January warmup source; annual baseline is separate from v6",
+      "byte_identical": true
+    },
+    {
+      "source_path": "configs/model_baseline.json",
+      "source_sha256": "23603c8c223d40006607ea5c3dd31dec8ab2435776ff3a363f2eaca0aaf09019",
+      "package_path": "configs/model_baseline.json",
+      "package_sha256": "23603c8c223d40006607ea5c3dd31dec8ab2435776ff3a363f2eaca0aaf09019",
+      "role": "frozen scientific source",
+      "byte_identical": true
+    },
+    {
+      "source_path": "configs/q2_baseline.json",
+      "source_sha256": "b555611572b3c780b6d9caa1e3fd6f449b4787ae260031a0dc11a04514d6c56b",
+      "package_path": "configs/q2_baseline.json",
+      "package_sha256": "b555611572b3c780b6d9caa1e3fd6f449b4787ae260031a0dc11a04514d6c56b",
+      "role": "frozen scientific source",
+      "byte_identical": true
+    },
+    {
+      "source_path": "configs/q4_baseline.json",
+      "source_sha256": "1a4a5b1e03f96b2cd7d33471fbc1b080daf6740bd7e9058b49a6bc7f8fb74282",
+      "package_path": "configs/q4_baseline.json",
+      "package_sha256": "1a4a5b1e03f96b2cd7d33471fbc1b080daf6740bd7e9058b49a6bc7f8fb74282",
+      "role": "frozen scientific source",
+      "byte_identical": true
+    },
+    {
+      "source_path": "configs/storage_control_v6/experiments.json",
+      "source_sha256": "89233012745c5e3c3315f889b90bf83de20d84b75ac30ec94d1c0f0dd7ce176e",
+      "package_path": "configs/storage_control_v6/experiments.json",
+      "package_sha256": "89233012745c5e3c3315f889b90bf83de20d84b75ac30ec94d1c0f0dd7ce176e",
+      "role": "frozen scientific source",
+      "byte_identical": true
+    },
+    {
+      "source_path": "configs/data_processing.json",
+      "source_sha256": "5da1023bb82dff491582779abc0e86d57595a3a8910383cb7d5d245e94355354",
+      "package_path": "configs/data_processing.json",
+      "package_sha256": "08f9d5431f5352a3847cef785edc9911175b5fdc49b538615d00661d94b130fe",
+      "role": "frozen scientific source",
+      "byte_identical": false
+    },
+    {
+      "source_path": "results/q1/baseline/schedule.csv",
+      "source_sha256": "c18da8eab518b96ce1a26620e7456a818a3ff4e81155ccbe93de9ddd5d0dbd15",
+      "package_path": "saved/q1/baseline/schedule.csv",
+      "package_sha256": "c18da8eab518b96ce1a26620e7456a818a3ff4e81155ccbe93de9ddd5d0dbd15",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/baseline/states.csv",
+      "source_sha256": "14be84770e536dc441eda61177869ce2d0e72dc480e2b1530c255592757d1682",
+      "package_path": "saved/q1/baseline/states.csv",
+      "package_sha256": "14be84770e536dc441eda61177869ce2d0e72dc480e2b1530c255592757d1682",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/baseline/summary.json",
+      "source_sha256": "96d40bdc66f015866a746c3333112a8099d58975898c8144ee89d509286728c6",
+      "package_path": "saved/q1/baseline/summary.json",
+      "package_sha256": "96d40bdc66f015866a746c3333112a8099d58975898c8144ee89d509286728c6",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/baseline/solver_status.json",
+      "source_sha256": "60b6ae5827b3be9df852542adb07e339d6f8f966dd7ab6213c14732b79a929e2",
+      "package_path": "saved/q1/baseline/solver_status.json",
+      "package_sha256": "60b6ae5827b3be9df852542adb07e339d6f8f966dd7ab6213c14732b79a929e2",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/baseline/config_snapshot.json",
+      "source_sha256": "2d98df9b067545759fa5f9b9f1bc8142024ecd747e0eb00e0dc69cfa5c64784a",
+      "package_path": "saved/q1/baseline/config_snapshot.json",
+      "package_sha256": "2d98df9b067545759fa5f9b9f1bc8142024ecd747e0eb00e0dc69cfa5c64784a",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/baseline_lp/schedule.csv",
+      "source_sha256": "9244085eaf438a9f092459d99804cc9b6227464fc74cd89708a7b281ec92f53d",
+      "package_path": "saved/q1/baseline_lp/schedule.csv",
+      "package_sha256": "9244085eaf438a9f092459d99804cc9b6227464fc74cd89708a7b281ec92f53d",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/baseline_lp/states.csv",
+      "source_sha256": "14be84770e536dc441eda61177869ce2d0e72dc480e2b1530c255592757d1682",
+      "package_path": "saved/q1/baseline_lp/states.csv",
+      "package_sha256": "14be84770e536dc441eda61177869ce2d0e72dc480e2b1530c255592757d1682",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/baseline_lp/summary.json",
+      "source_sha256": "fe80bce72ed3ef97ae5ee91b95ac8e38d6620025bef40def1dd58a01b11c24b8",
+      "package_path": "saved/q1/baseline_lp/summary.json",
+      "package_sha256": "fe80bce72ed3ef97ae5ee91b95ac8e38d6620025bef40def1dd58a01b11c24b8",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/baseline_lp/solver_status.json",
+      "source_sha256": "292db506cac6b1768741cff72957530e646a6060774e5a46c1ea81d190f3f6bc",
+      "package_path": "saved/q1/baseline_lp/solver_status.json",
+      "package_sha256": "292db506cac6b1768741cff72957530e646a6060774e5a46c1ea81d190f3f6bc",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/baseline_lp/config_snapshot.json",
+      "source_sha256": "2d98df9b067545759fa5f9b9f1bc8142024ecd747e0eb00e0dc69cfa5c64784a",
+      "package_path": "saved/q1/baseline_lp/config_snapshot.json",
+      "package_sha256": "2d98df9b067545759fa5f9b9f1bc8142024ecd747e0eb00e0dc69cfa5c64784a",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/roundtrip_90/schedule.csv",
+      "source_sha256": "25654255fc759012c26d97492b7ba1329ef6446da789adc6087f73bfb1155418",
+      "package_path": "saved/q1/roundtrip_90/schedule.csv",
+      "package_sha256": "25654255fc759012c26d97492b7ba1329ef6446da789adc6087f73bfb1155418",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/roundtrip_90/states.csv",
+      "source_sha256": "1abc8364cbce63e556c940cb915b69ec9a5af68704e1668bb2cd66998589be2e",
+      "package_path": "saved/q1/roundtrip_90/states.csv",
+      "package_sha256": "1abc8364cbce63e556c940cb915b69ec9a5af68704e1668bb2cd66998589be2e",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/roundtrip_90/summary.json",
+      "source_sha256": "35f71856cfdd9ab18c5ba85c3a46534766f9933d236bc6b66e8dbdb33f289d76",
+      "package_path": "saved/q1/roundtrip_90/summary.json",
+      "package_sha256": "35f71856cfdd9ab18c5ba85c3a46534766f9933d236bc6b66e8dbdb33f289d76",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/roundtrip_90/solver_status.json",
+      "source_sha256": "923bf66c4ae4e86d4e046842b4d1308785b3a86164eb54cec2d7a10a66ef405a",
+      "package_path": "saved/q1/roundtrip_90/solver_status.json",
+      "package_sha256": "923bf66c4ae4e86d4e046842b4d1308785b3a86164eb54cec2d7a10a66ef405a",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/roundtrip_90/config_snapshot.json",
+      "source_sha256": "008106dd6d557dc91dd92276accc06ebf442ed6e877cafd2f86dfffc1425b8bd",
+      "package_path": "saved/q1/roundtrip_90/config_snapshot.json",
+      "package_sha256": "008106dd6d557dc91dd92276accc06ebf442ed6e877cafd2f86dfffc1425b8bd",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/roundtrip_90_lp/schedule.csv",
+      "source_sha256": "5360030921ee636cdf5aa5f95863a02f242b64906b4544bc84852ea0eeebca15",
+      "package_path": "saved/q1/roundtrip_90_lp/schedule.csv",
+      "package_sha256": "5360030921ee636cdf5aa5f95863a02f242b64906b4544bc84852ea0eeebca15",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/roundtrip_90_lp/states.csv",
+      "source_sha256": "b77bff6cc292fc88793b5a1cc5cc45fdaebb1dc0d52e21c247fb1bef676ec692",
+      "package_path": "saved/q1/roundtrip_90_lp/states.csv",
+      "package_sha256": "b77bff6cc292fc88793b5a1cc5cc45fdaebb1dc0d52e21c247fb1bef676ec692",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/roundtrip_90_lp/summary.json",
+      "source_sha256": "3cb03391d909651f5193f963d20b7750a1adffd76485df9c48faf6f955e7b78e",
+      "package_path": "saved/q1/roundtrip_90_lp/summary.json",
+      "package_sha256": "3cb03391d909651f5193f963d20b7750a1adffd76485df9c48faf6f955e7b78e",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/roundtrip_90_lp/solver_status.json",
+      "source_sha256": "a794d34410a77444010dfaaf0e5aafcc64d57d9b195b73dbde5e59b86cffeb7e",
+      "package_path": "saved/q1/roundtrip_90_lp/solver_status.json",
+      "package_sha256": "a794d34410a77444010dfaaf0e5aafcc64d57d9b195b73dbde5e59b86cffeb7e",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/roundtrip_90_lp/config_snapshot.json",
+      "source_sha256": "008106dd6d557dc91dd92276accc06ebf442ed6e877cafd2f86dfffc1425b8bd",
+      "package_path": "saved/q1/roundtrip_90_lp/config_snapshot.json",
+      "package_sha256": "008106dd6d557dc91dd92276accc06ebf442ed6e877cafd2f86dfffc1425b8bd",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/alternate/schedule.csv",
+      "source_sha256": "d59f007044b30c37fe1db4e271a9e653fc736b3f704af9cb053943105d599083",
+      "package_path": "saved/q1/alternate/schedule.csv",
+      "package_sha256": "d59f007044b30c37fe1db4e271a9e653fc736b3f704af9cb053943105d599083",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/alternate/states.csv",
+      "source_sha256": "d02c925c641f4c69146cc438b1ab267ff490943b80af75bef6e6ddc7fc2e3c99",
+      "package_path": "saved/q1/alternate/states.csv",
+      "package_sha256": "d02c925c641f4c69146cc438b1ab267ff490943b80af75bef6e6ddc7fc2e3c99",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/alternate/summary.json",
+      "source_sha256": "b0d8bd1a1e66666169a31cf98b362fe28193fbee977e7f5ac9847351fdeaaea6",
+      "package_path": "saved/q1/alternate/summary.json",
+      "package_sha256": "b0d8bd1a1e66666169a31cf98b362fe28193fbee977e7f5ac9847351fdeaaea6",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/alternate/solver_status.json",
+      "source_sha256": "7a1498ff3ce03659d017ba90409f5c790cbb70c0c1c54767cc5960cbd180a018",
+      "package_path": "saved/q1/alternate/solver_status.json",
+      "package_sha256": "7a1498ff3ce03659d017ba90409f5c790cbb70c0c1c54767cc5960cbd180a018",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/alternate/config_snapshot.json",
+      "source_sha256": "2d98df9b067545759fa5f9b9f1bc8142024ecd747e0eb00e0dc69cfa5c64784a",
+      "package_path": "saved/q1/alternate/config_snapshot.json",
+      "package_sha256": "2d98df9b067545759fa5f9b9f1bc8142024ecd747e0eb00e0dc69cfa5c64784a",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/no_storage/schedule.csv",
+      "source_sha256": "758c8d098cfe0cd860bb1034f9c3f568c7f4c36985b42a76d974e086c9496d1f",
+      "package_path": "saved/q1/no_storage/schedule.csv",
+      "package_sha256": "758c8d098cfe0cd860bb1034f9c3f568c7f4c36985b42a76d974e086c9496d1f",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/no_storage/states.csv",
+      "source_sha256": "1a904e2ccb9228f58a8c6684cb270657903eaa4fcb7fc5fef9cb267a4381dd7a",
+      "package_path": "saved/q1/no_storage/states.csv",
+      "package_sha256": "1a904e2ccb9228f58a8c6684cb270657903eaa4fcb7fc5fef9cb267a4381dd7a",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/no_storage/summary.json",
+      "source_sha256": "1b1468692b01b10154fb049caaa2739361c01b47bc72433cd0024891de0555b3",
+      "package_path": "saved/q1/no_storage/summary.json",
+      "package_sha256": "1b1468692b01b10154fb049caaa2739361c01b47bc72433cd0024891de0555b3",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/no_storage/solver_status.json",
+      "source_sha256": "2f212175166c794d6addd4a3411eec1dcf2dd58cdbe0726a290db3cba2bacf2d",
+      "package_path": "saved/q1/no_storage/solver_status.json",
+      "package_sha256": "2f212175166c794d6addd4a3411eec1dcf2dd58cdbe0726a290db3cba2bacf2d",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/no_storage/config_snapshot.json",
+      "source_sha256": "2d98df9b067545759fa5f9b9f1bc8142024ecd747e0eb00e0dc69cfa5c64784a",
+      "package_path": "saved/q1/no_storage/config_snapshot.json",
+      "package_sha256": "2d98df9b067545759fa5f9b9f1bc8142024ecd747e0eb00e0dc69cfa5c64784a",
+      "role": "saved Q1 solution or named diagnostic, not a new run",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/comparison.csv",
+      "source_sha256": "ea0a24c6fdb80453aaea87cfd6fa282b9d4810e1e0c6672535bd0a92da2aaf89",
+      "package_path": "saved/q1/comparison.csv",
+      "package_sha256": "ea0a24c6fdb80453aaea87cfd6fa282b9d4810e1e0c6672535bd0a92da2aaf89",
+      "role": "saved Q1 comparison",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/efficiency_sensitivity.json",
+      "source_sha256": "cb3210c9373da65f1eae32ba0b02e456a5774323f9bd7ad429f69fe076ffe262",
+      "package_path": "saved/q1/efficiency_sensitivity.json",
+      "package_sha256": "cb3210c9373da65f1eae32ba0b02e456a5774323f9bd7ad429f69fe076ffe262",
+      "role": "saved Q1 comparison",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q1/nonuniqueness.json",
+      "source_sha256": "2d6b8eb5da35416d86607e274844007f6c75c19cc888b286d71d0aa67d6bfeb8",
+      "package_path": "saved/q1/nonuniqueness.json",
+      "package_sha256": "2d6b8eb5da35416d86607e274844007f6c75c19cc888b286d71d0aa67d6bfeb8",
+      "role": "saved Q1 comparison",
+      "byte_identical": true
+    },
+    {
+      "source_path": "data/processed/q1_day.csv",
+      "source_sha256": "cf306e67d092cfe335dafda003a3a7c8dca8ab58468a412e47854f72a6ecb73e",
+      "package_path": "saved/q1/input_day.csv",
+      "package_sha256": "cf306e67d092cfe335dafda003a3a7c8dca8ab58468a412e47854f72a6ecb73e",
+      "role": "small supplied-day derived input for lightweight verification",
+      "byte_identical": true
+    },
+    {
+      "source_path": "data/processed/fixed_price.csv",
+      "source_sha256": "6a2d48f1d678ce0399a10719dcf34e81403a2c133dfb871c35cd3cc0eb76d4f2",
+      "package_path": "saved/fixed_price.csv",
+      "package_sha256": "6a2d48f1d678ce0399a10719dcf34e81403a2c133dfb871c35cd3cc0eb76d4f2",
+      "role": "derived known 144-slot tariff; no annual actual series included",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q2/warmup/ledger.csv",
+      "source_sha256": "014e3764bf09e3b09904de97b0935d3788e178f2a81d7c115cf43884dc16f081",
+      "package_path": "saved/warmup/ledger.csv",
+      "package_sha256": "014e3764bf09e3b09904de97b0935d3788e178f2a81d7c115cf43884dc16f081",
+      "role": "January seasonal warmup; establishes common February initial state",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q2/warmup/daily.csv",
+      "source_sha256": "53e26da539883eb42223816756346df6912523039ddd5a7ae159a366f7687097",
+      "package_path": "saved/warmup/daily.csv",
+      "package_sha256": "53e26da539883eb42223816756346df6912523039ddd5a7ae159a366f7687097",
+      "role": "January seasonal warmup; establishes common February initial state",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q2/warmup/summary.json",
+      "source_sha256": "17dc92a7cb1e07ce2c86556e13b269a8d4ab33ac919f2e17877456d128fcdcfb",
+      "package_path": "saved/warmup/summary.json",
+      "package_sha256": "17dc92a7cb1e07ce2c86556e13b269a8d4ab33ac919f2e17877456d128fcdcfb",
+      "role": "January seasonal warmup; establishes common February initial state",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/q2/selection.json",
+      "source_sha256": "77faa01e698ebc3130bae8672c862337820a33a582af5b5372040bf78bf6cc77",
+      "package_path": "saved/warmup/forecast_selection.json",
+      "package_sha256": "77faa01e698ebc3130bae8672c862337820a33a582af5b5372040bf78bf6cc77",
+      "role": "historical January forecast choice; not v6 policy selection",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q2_greedy/daily.csv",
+      "source_sha256": "a7004cbd67521c774937eecdfed83b3ca6c38120d7aa9cf90dbe729cda0ed67d",
+      "package_path": "saved/all_policies/q2_greedy/daily.csv",
+      "package_sha256": "a7004cbd67521c774937eecdfed83b3ca6c38120d7aa9cf90dbe729cda0ed67d",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q2_greedy/summary.json",
+      "source_sha256": "c1711f13f9595117e47f145d1551f5d2b40d5371a473521bdf52f30290a0556e",
+      "package_path": "saved/all_policies/q2_greedy/summary.json",
+      "package_sha256": "c1711f13f9595117e47f145d1551f5d2b40d5371a473521bdf52f30290a0556e",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q2_greedy/config.json",
+      "source_sha256": "86c58ea05d3915a1c5c0afeface6009f65dcf3fcdd0943b55efa39f23a373c5f",
+      "package_path": "saved/all_policies/q2_greedy/config.json",
+      "package_sha256": "86c58ea05d3915a1c5c0afeface6009f65dcf3fcdd0943b55efa39f23a373c5f",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q2_reserve/daily.csv",
+      "source_sha256": "bcf9bdec255867234a94cedf27f8bd6fdd2f4524be72807a66092d49515dd282",
+      "package_path": "saved/all_policies/q2_reserve/daily.csv",
+      "package_sha256": "bcf9bdec255867234a94cedf27f8bd6fdd2f4524be72807a66092d49515dd282",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q2_reserve/summary.json",
+      "source_sha256": "6cc664f3ccdcf75bce494fd44db504e7a951bd875f45ce0db36280c8f30cca57",
+      "package_path": "saved/all_policies/q2_reserve/summary.json",
+      "package_sha256": "6cc664f3ccdcf75bce494fd44db504e7a951bd875f45ce0db36280c8f30cca57",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q2_reserve/config.json",
+      "source_sha256": "1c7fc7e3330a66c476e2b4498209ce17b80053c87ffed7cb536fbab9a919912b",
+      "package_path": "saved/all_policies/q2_reserve/config.json",
+      "package_sha256": "1c7fc7e3330a66c476e2b4498209ce17b80053c87ffed7cb536fbab9a919912b",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_no_update_greedy/daily.csv",
+      "source_sha256": "efa567316d6e92a26042d8707884a0b3aa28d2895a8d7f608bbeb052dcb1050e",
+      "package_path": "saved/all_policies/q3_no_update_greedy/daily.csv",
+      "package_sha256": "efa567316d6e92a26042d8707884a0b3aa28d2895a8d7f608bbeb052dcb1050e",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_no_update_greedy/summary.json",
+      "source_sha256": "6b3f304d513ee0444c9a8b3825bf1f83cac58f4bed157c8fd9cf4fcbfe4bd768",
+      "package_path": "saved/all_policies/q3_no_update_greedy/summary.json",
+      "package_sha256": "6b3f304d513ee0444c9a8b3825bf1f83cac58f4bed157c8fd9cf4fcbfe4bd768",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_no_update_greedy/config.json",
+      "source_sha256": "b7cf31e36a595306ba1da7682dc08808686042db402220fb4f2bfb951da9e657",
+      "package_path": "saved/all_policies/q3_no_update_greedy/config.json",
+      "package_sha256": "b7cf31e36a595306ba1da7682dc08808686042db402220fb4f2bfb951da9e657",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_no_update_reserve/daily.csv",
+      "source_sha256": "6ad80e02bf5b29cc06a3340d129f2827e0a6e5d01e635651dc998cad4eb39c0e",
+      "package_path": "saved/all_policies/q3_no_update_reserve/daily.csv",
+      "package_sha256": "6ad80e02bf5b29cc06a3340d129f2827e0a6e5d01e635651dc998cad4eb39c0e",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_no_update_reserve/summary.json",
+      "source_sha256": "4bd3ecf56da4cb17c7de625f13fa7a13ff1039120da396104789fee3340fec52",
+      "package_path": "saved/all_policies/q3_no_update_reserve/summary.json",
+      "package_sha256": "4bd3ecf56da4cb17c7de625f13fa7a13ff1039120da396104789fee3340fec52",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_no_update_reserve/config.json",
+      "source_sha256": "b864668d1676afb163c4f63fd3a588b1d2c670bf5d7b700c6fa626569ca18984",
+      "package_path": "saved/all_policies/q3_no_update_reserve/config.json",
+      "package_sha256": "b864668d1676afb163c4f63fd3a588b1d2c670bf5d7b700c6fa626569ca18984",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_soc_greedy/daily.csv",
+      "source_sha256": "bf5c78ecd67f47fca081ea9ddb96914606828a572dee2ebc145916fb6eec9444",
+      "package_path": "saved/all_policies/q3_soc_greedy/daily.csv",
+      "package_sha256": "bf5c78ecd67f47fca081ea9ddb96914606828a572dee2ebc145916fb6eec9444",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_soc_greedy/summary.json",
+      "source_sha256": "862944992b5eebc4b396b64b87895cd64db991f6b4138e9db8d805e840c1c675",
+      "package_path": "saved/all_policies/q3_soc_greedy/summary.json",
+      "package_sha256": "862944992b5eebc4b396b64b87895cd64db991f6b4138e9db8d805e840c1c675",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_soc_greedy/config.json",
+      "source_sha256": "777072f30e5936eb2ae0b7186bb21b6fa12c67f15e468387a8f5a0b37bfe1699",
+      "package_path": "saved/all_policies/q3_soc_greedy/config.json",
+      "package_sha256": "777072f30e5936eb2ae0b7186bb21b6fa12c67f15e468387a8f5a0b37bfe1699",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_soc_reserve/daily.csv",
+      "source_sha256": "e505deabc6ca9551df941933da1a43333f656e63af3fba2f56d0be7ea30b2dea",
+      "package_path": "saved/all_policies/q3_soc_reserve/daily.csv",
+      "package_sha256": "e505deabc6ca9551df941933da1a43333f656e63af3fba2f56d0be7ea30b2dea",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_soc_reserve/summary.json",
+      "source_sha256": "128fc745c25b95445d39f0bf11f289668c2f2b9d970695eccd4050930296164f",
+      "package_path": "saved/all_policies/q3_soc_reserve/summary.json",
+      "package_sha256": "128fc745c25b95445d39f0bf11f289668c2f2b9d970695eccd4050930296164f",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_soc_reserve/config.json",
+      "source_sha256": "98f3abb69b013fc42262cc38bad75d14e2ba5dc3b6164ac0527104d7dc3fadde",
+      "package_path": "saved/all_policies/q3_soc_reserve/config.json",
+      "package_sha256": "98f3abb69b013fc42262cc38bad75d14e2ba5dc3b6164ac0527104d7dc3fadde",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_raw_greedy/daily.csv",
+      "source_sha256": "cb3363d7eb1af93b6f8ea2f72d1c1558482734c7ec0048c8d31b2686a0951698",
+      "package_path": "saved/all_policies/q3_raw_greedy/daily.csv",
+      "package_sha256": "cb3363d7eb1af93b6f8ea2f72d1c1558482734c7ec0048c8d31b2686a0951698",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_raw_greedy/summary.json",
+      "source_sha256": "898e853ac99a86704d589d062245858d6b3c2e4ab0f882f9a2fb1f0dd989d050",
+      "package_path": "saved/all_policies/q3_raw_greedy/summary.json",
+      "package_sha256": "898e853ac99a86704d589d062245858d6b3c2e4ab0f882f9a2fb1f0dd989d050",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_raw_greedy/config.json",
+      "source_sha256": "e1854139d56c9f50a679ed7095b595d9e24e8f2849c8776dbfaf3ce5490a768f",
+      "package_path": "saved/all_policies/q3_raw_greedy/config.json",
+      "package_sha256": "e1854139d56c9f50a679ed7095b595d9e24e8f2849c8776dbfaf3ce5490a768f",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_raw_reserve/daily.csv",
+      "source_sha256": "9fb7439eccf574edc3f3eb115a82dc6cbfac21f4d57e43b694e6c08cffc449c4",
+      "package_path": "saved/all_policies/q3_raw_reserve/daily.csv",
+      "package_sha256": "9fb7439eccf574edc3f3eb115a82dc6cbfac21f4d57e43b694e6c08cffc449c4",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_raw_reserve/summary.json",
+      "source_sha256": "a890e532dd5a16dca1ac69d6ad5cc782fbe550da9b77c3b1aa8c8636fe773d2b",
+      "package_path": "saved/all_policies/q3_raw_reserve/summary.json",
+      "package_sha256": "a890e532dd5a16dca1ac69d6ad5cc782fbe550da9b77c3b1aa8c8636fe773d2b",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_raw_reserve/config.json",
+      "source_sha256": "19a3f5b04082e31848d14f2c347303c2ad4fbf34f4989da30e28adeebd073c1d",
+      "package_path": "saved/all_policies/q3_raw_reserve/config.json",
+      "package_sha256": "19a3f5b04082e31848d14f2c347303c2ad4fbf34f4989da30e28adeebd073c1d",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_w28_greedy/daily.csv",
+      "source_sha256": "045e96ce45bb2154d29a66fe68282fb7d08b0415444121cb481b15ffb60d8fa1",
+      "package_path": "saved/all_policies/q3_w28_greedy/daily.csv",
+      "package_sha256": "045e96ce45bb2154d29a66fe68282fb7d08b0415444121cb481b15ffb60d8fa1",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_w28_greedy/summary.json",
+      "source_sha256": "11218ade19f86948ad485814427ba5a0322047741e8ea5a7222c090698a96ccd",
+      "package_path": "saved/all_policies/q3_w28_greedy/summary.json",
+      "package_sha256": "11218ade19f86948ad485814427ba5a0322047741e8ea5a7222c090698a96ccd",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_w28_greedy/config.json",
+      "source_sha256": "4ae2e0b190a645cf9f94d79a8dc3e402407b9e174df75e255171e5eeee39eec1",
+      "package_path": "saved/all_policies/q3_w28_greedy/config.json",
+      "package_sha256": "4ae2e0b190a645cf9f94d79a8dc3e402407b9e174df75e255171e5eeee39eec1",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_w28_reserve/daily.csv",
+      "source_sha256": "63b840b1c85f64069a4d65292226883eb28f405ee36b038060f7e4389035d314",
+      "package_path": "saved/all_policies/q3_w28_reserve/daily.csv",
+      "package_sha256": "63b840b1c85f64069a4d65292226883eb28f405ee36b038060f7e4389035d314",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_w28_reserve/summary.json",
+      "source_sha256": "1a424249ccb13e75634987c73a3e973d681a9848035a9c11238efe70ef8daf88",
+      "package_path": "saved/all_policies/q3_w28_reserve/summary.json",
+      "package_sha256": "1a424249ccb13e75634987c73a3e973d681a9848035a9c11238efe70ef8daf88",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_w28_reserve/config.json",
+      "source_sha256": "78534aa97c50b5e1d88ef9d66a1fdadf799bdc1fbab9d5ecb700243e533b80b7",
+      "package_path": "saved/all_policies/q3_w28_reserve/config.json",
+      "package_sha256": "78534aa97c50b5e1d88ef9d66a1fdadf799bdc1fbab9d5ecb700243e533b80b7",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_ols_greedy/daily.csv",
+      "source_sha256": "a17602be7d711f037d840a4b74e9faba6e865e7c389db3787711650e25680334",
+      "package_path": "saved/all_policies/q42_ols_greedy/daily.csv",
+      "package_sha256": "a17602be7d711f037d840a4b74e9faba6e865e7c389db3787711650e25680334",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_ols_greedy/summary.json",
+      "source_sha256": "dfe27a48cf8e8666db5ff1aebda436003e7471080d3038235f016fb7d5aa0973",
+      "package_path": "saved/all_policies/q42_ols_greedy/summary.json",
+      "package_sha256": "dfe27a48cf8e8666db5ff1aebda436003e7471080d3038235f016fb7d5aa0973",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_ols_greedy/config.json",
+      "source_sha256": "cdc33b2aa371bb71da9ae4fe51e087d1dc9c76aef6c98db1108289e04c72fd83",
+      "package_path": "saved/all_policies/q42_ols_greedy/config.json",
+      "package_sha256": "cdc33b2aa371bb71da9ae4fe51e087d1dc9c76aef6c98db1108289e04c72fd83",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_ols_reserve/daily.csv",
+      "source_sha256": "1fcd52fdae1aa595f3eb5e7ce07fab195de92822c4f709520fefde8240a4eb6e",
+      "package_path": "saved/all_policies/q42_ols_reserve/daily.csv",
+      "package_sha256": "1fcd52fdae1aa595f3eb5e7ce07fab195de92822c4f709520fefde8240a4eb6e",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_ols_reserve/summary.json",
+      "source_sha256": "fa7da686d5e9c18d473923dbbf4c21ba817190ce62f289e288bf63e8183fceed",
+      "package_path": "saved/all_policies/q42_ols_reserve/summary.json",
+      "package_sha256": "fa7da686d5e9c18d473923dbbf4c21ba817190ce62f289e288bf63e8183fceed",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_ols_reserve/config.json",
+      "source_sha256": "84f0c7eced46ee2606ce3591aea2fff188a9bb17885721a4035b5d38bf763552",
+      "package_path": "saved/all_policies/q42_ols_reserve/config.json",
+      "package_sha256": "84f0c7eced46ee2606ce3591aea2fff188a9bb17885721a4035b5d38bf763552",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_fixed_greedy/daily.csv",
+      "source_sha256": "409a06641661057a53a34ac29902e884a72a9f805da673534b1b25a824dfab26",
+      "package_path": "saved/all_policies/q42_fixed_greedy/daily.csv",
+      "package_sha256": "409a06641661057a53a34ac29902e884a72a9f805da673534b1b25a824dfab26",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_fixed_greedy/summary.json",
+      "source_sha256": "33693619092852bf719dd56afea22cae774861edb276f959caf20ad97e1eb7e2",
+      "package_path": "saved/all_policies/q42_fixed_greedy/summary.json",
+      "package_sha256": "33693619092852bf719dd56afea22cae774861edb276f959caf20ad97e1eb7e2",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_fixed_greedy/config.json",
+      "source_sha256": "2f0a77e13708ba90605b767170329ed1e54e3aa90c5b258f5ed6a0082b72932d",
+      "package_path": "saved/all_policies/q42_fixed_greedy/config.json",
+      "package_sha256": "2f0a77e13708ba90605b767170329ed1e54e3aa90c5b258f5ed6a0082b72932d",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_fixed_reserve/daily.csv",
+      "source_sha256": "481723c3f881eb16fa56c44e5fb4e72b43c35f830f5514cf7b213e4bdb3cb0c8",
+      "package_path": "saved/all_policies/q42_fixed_reserve/daily.csv",
+      "package_sha256": "481723c3f881eb16fa56c44e5fb4e72b43c35f830f5514cf7b213e4bdb3cb0c8",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_fixed_reserve/summary.json",
+      "source_sha256": "c36895cfd7031b822ed2e0ae665185735dc36428171bf39eab8a77fae75591ba",
+      "package_path": "saved/all_policies/q42_fixed_reserve/summary.json",
+      "package_sha256": "c36895cfd7031b822ed2e0ae665185735dc36428171bf39eab8a77fae75591ba",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_fixed_reserve/config.json",
+      "source_sha256": "72cdbb3465f67be3eb96c8f66eea5ddf95da9e6d28f3b839436e257fa3207765",
+      "package_path": "saved/all_policies/q42_fixed_reserve/config.json",
+      "package_sha256": "72cdbb3465f67be3eb96c8f66eea5ddf95da9e6d28f3b839436e257fa3207765",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_ols_greedy/daily.csv",
+      "source_sha256": "b88ba97cbf32373b2b09e956ba25743f4df9b92325c8979c52bad8fa615cd176",
+      "package_path": "saved/all_policies/q43_raw_ols_greedy/daily.csv",
+      "package_sha256": "b88ba97cbf32373b2b09e956ba25743f4df9b92325c8979c52bad8fa615cd176",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_ols_greedy/summary.json",
+      "source_sha256": "dcfa57f24d417d6581e7556fde4b7dfcd3de23f96e94887adcccf6e3920792b2",
+      "package_path": "saved/all_policies/q43_raw_ols_greedy/summary.json",
+      "package_sha256": "dcfa57f24d417d6581e7556fde4b7dfcd3de23f96e94887adcccf6e3920792b2",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_ols_greedy/config.json",
+      "source_sha256": "ed080becec0ffffca3399411c0c25b2bd87e97d82610f07c8e056522367b6b3a",
+      "package_path": "saved/all_policies/q43_raw_ols_greedy/config.json",
+      "package_sha256": "ed080becec0ffffca3399411c0c25b2bd87e97d82610f07c8e056522367b6b3a",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_ols_reserve/daily.csv",
+      "source_sha256": "5854412053a61aa3d9f92c30f30c88d064da201f179c39e1137685f38fd659e7",
+      "package_path": "saved/all_policies/q43_raw_ols_reserve/daily.csv",
+      "package_sha256": "5854412053a61aa3d9f92c30f30c88d064da201f179c39e1137685f38fd659e7",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_ols_reserve/summary.json",
+      "source_sha256": "0fec436841914a7f09075b30a25f0aada872f0c3e40c86480a4f3bdac0ac19b7",
+      "package_path": "saved/all_policies/q43_raw_ols_reserve/summary.json",
+      "package_sha256": "0fec436841914a7f09075b30a25f0aada872f0c3e40c86480a4f3bdac0ac19b7",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_ols_reserve/config.json",
+      "source_sha256": "82b8ec6667a488ec03c174d5be812d3a1c50ed35afdd58897bf652be83edbb4f",
+      "package_path": "saved/all_policies/q43_raw_ols_reserve/config.json",
+      "package_sha256": "82b8ec6667a488ec03c174d5be812d3a1c50ed35afdd58897bf652be83edbb4f",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_w28_ols_greedy/daily.csv",
+      "source_sha256": "2ec7e23c5e991e7cdf1e1f3dac04b8d9e3185c82ec9d197c2672a5026ac7da84",
+      "package_path": "saved/all_policies/q43_w28_ols_greedy/daily.csv",
+      "package_sha256": "2ec7e23c5e991e7cdf1e1f3dac04b8d9e3185c82ec9d197c2672a5026ac7da84",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_w28_ols_greedy/summary.json",
+      "source_sha256": "f1ebbdfab5f4832a3c137ed2f483b0aa9ab1fcfc3bc5a886b3a20d4bd517cb19",
+      "package_path": "saved/all_policies/q43_w28_ols_greedy/summary.json",
+      "package_sha256": "f1ebbdfab5f4832a3c137ed2f483b0aa9ab1fcfc3bc5a886b3a20d4bd517cb19",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_w28_ols_greedy/config.json",
+      "source_sha256": "e50e23766943213ff4c17eea7dbd10223fbd98de25f75e196aa62690047a8886",
+      "package_path": "saved/all_policies/q43_w28_ols_greedy/config.json",
+      "package_sha256": "e50e23766943213ff4c17eea7dbd10223fbd98de25f75e196aa62690047a8886",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_w28_ols_reserve/daily.csv",
+      "source_sha256": "0e7c9015f225d320acb82b46348e3192f7727ce11e2817f0ef1c054c67879680",
+      "package_path": "saved/all_policies/q43_w28_ols_reserve/daily.csv",
+      "package_sha256": "0e7c9015f225d320acb82b46348e3192f7727ce11e2817f0ef1c054c67879680",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_w28_ols_reserve/summary.json",
+      "source_sha256": "49129d3a9deb4438c3d7a0a49fc728411fc7e5f7859f139bbc66d6d6cba7e044",
+      "package_path": "saved/all_policies/q43_w28_ols_reserve/summary.json",
+      "package_sha256": "49129d3a9deb4438c3d7a0a49fc728411fc7e5f7859f139bbc66d6d6cba7e044",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_w28_ols_reserve/config.json",
+      "source_sha256": "5fbd60ef092e914623b7271fcb888eaa104fd40522d924c80937b697630fd3c9",
+      "package_path": "saved/all_policies/q43_w28_ols_reserve/config.json",
+      "package_sha256": "5fbd60ef092e914623b7271fcb888eaa104fd40522d924c80937b697630fd3c9",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_fixed_greedy/daily.csv",
+      "source_sha256": "587334def76a4cb5f94c825f1531c15a02bc16c1a70120b28196fb116d9f6f95",
+      "package_path": "saved/all_policies/q43_raw_fixed_greedy/daily.csv",
+      "package_sha256": "587334def76a4cb5f94c825f1531c15a02bc16c1a70120b28196fb116d9f6f95",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_fixed_greedy/summary.json",
+      "source_sha256": "0b1bc95a1902c4d68bd84e610cf9ed8fc52b33d804a97cc8cb928039cf9d705e",
+      "package_path": "saved/all_policies/q43_raw_fixed_greedy/summary.json",
+      "package_sha256": "0b1bc95a1902c4d68bd84e610cf9ed8fc52b33d804a97cc8cb928039cf9d705e",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_fixed_greedy/config.json",
+      "source_sha256": "553256016e868c065be30f751d6268a1e3263576075ead6396d5bb2d0cd35087",
+      "package_path": "saved/all_policies/q43_raw_fixed_greedy/config.json",
+      "package_sha256": "553256016e868c065be30f751d6268a1e3263576075ead6396d5bb2d0cd35087",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_fixed_reserve/daily.csv",
+      "source_sha256": "d864cff2e10ca16d8b061dd6c74385253a50c163dba1ba443512990b04870960",
+      "package_path": "saved/all_policies/q43_raw_fixed_reserve/daily.csv",
+      "package_sha256": "d864cff2e10ca16d8b061dd6c74385253a50c163dba1ba443512990b04870960",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_fixed_reserve/summary.json",
+      "source_sha256": "c3c7ac99960b39e8aea89f449bcb7c578fc0469ea7279bc034c1ab09cd764c45",
+      "package_path": "saved/all_policies/q43_raw_fixed_reserve/summary.json",
+      "package_sha256": "c3c7ac99960b39e8aea89f449bcb7c578fc0469ea7279bc034c1ab09cd764c45",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_fixed_reserve/config.json",
+      "source_sha256": "46d8ec664574b1e962621433d0602d5f245c4d5454e2d673c35e0d646e28c8ad",
+      "package_path": "saved/all_policies/q43_raw_fixed_reserve/config.json",
+      "package_sha256": "46d8ec664574b1e962621433d0602d5f245c4d5454e2d673c35e0d646e28c8ad",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_w28_fixed_greedy/daily.csv",
+      "source_sha256": "998ea742e18dfe119127383795a612629683e7edfb256feef04eac5b6ed87b90",
+      "package_path": "saved/all_policies/q43_w28_fixed_greedy/daily.csv",
+      "package_sha256": "998ea742e18dfe119127383795a612629683e7edfb256feef04eac5b6ed87b90",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_w28_fixed_greedy/summary.json",
+      "source_sha256": "80227ecf137acacf0b7d4522b5b843b51f8e59a353e12f1bc9c09ccf7786a13b",
+      "package_path": "saved/all_policies/q43_w28_fixed_greedy/summary.json",
+      "package_sha256": "80227ecf137acacf0b7d4522b5b843b51f8e59a353e12f1bc9c09ccf7786a13b",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_w28_fixed_greedy/config.json",
+      "source_sha256": "75b0ee4d5586ba27479029288f105b4dfe4a26a397b21eccc07d65059cbffd62",
+      "package_path": "saved/all_policies/q43_w28_fixed_greedy/config.json",
+      "package_sha256": "75b0ee4d5586ba27479029288f105b4dfe4a26a397b21eccc07d65059cbffd62",
+      "role": "current matched v6 run: greedy",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_w28_fixed_reserve/daily.csv",
+      "source_sha256": "0627d93e4f4d0031b2233d7bfcd62de6bfb56c51dcae568ae8988cebe21d6cb3",
+      "package_path": "saved/all_policies/q43_w28_fixed_reserve/daily.csv",
+      "package_sha256": "0627d93e4f4d0031b2233d7bfcd62de6bfb56c51dcae568ae8988cebe21d6cb3",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_w28_fixed_reserve/summary.json",
+      "source_sha256": "df9e7e21b5f107a54811a0c2ff4cde55760120f8c8dfbfa16e7a50b14df91e0a",
+      "package_path": "saved/all_policies/q43_w28_fixed_reserve/summary.json",
+      "package_sha256": "df9e7e21b5f107a54811a0c2ff4cde55760120f8c8dfbfa16e7a50b14df91e0a",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_w28_fixed_reserve/config.json",
+      "source_sha256": "fe87c6133bb618359c3b9a057b31f87ce93d3c6b0e68c1d741971d4b6c57b35b",
+      "package_path": "saved/all_policies/q43_w28_fixed_reserve/config.json",
+      "package_sha256": "fe87c6133bb618359c3b9a057b31f87ce93d3c6b0e68c1d741971d4b6c57b35b",
+      "role": "current matched v6 run: reserve",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/comparison_all.csv",
+      "source_sha256": "a99c2e7fdcc56ba12acb578687ba055cf9aced22d1cedc8564dee96a85d1a639",
+      "package_path": "saved/comparisons/comparison_all.csv",
+      "package_sha256": "a99c2e7fdcc56ba12acb578687ba055cf9aced22d1cedc8564dee96a85d1a639",
+      "role": "current v6 analysis; all adverse comparisons retained",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/selection.json",
+      "source_sha256": "d973102423c5aaee06d2737a7e3bbb9c7b2b67dfffc7e2cbde800e3cc88ee40f",
+      "package_path": "saved/comparisons/selection.json",
+      "package_sha256": "d973102423c5aaee06d2737a7e3bbb9c7b2b67dfffc7e2cbde800e3cc88ee40f",
+      "role": "current v6 analysis; all adverse comparisons retained",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/paired_summary.csv",
+      "source_sha256": "979bde55a9ccf1f3cb562c59b6fa419a3cf9adb4bd4c7dbed86eda3fd45988b3",
+      "package_path": "saved/comparisons/paired_summary.csv",
+      "package_sha256": "979bde55a9ccf1f3cb562c59b6fa419a3cf9adb4bd4c7dbed86eda3fd45988b3",
+      "role": "current v6 analysis; all adverse comparisons retained",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/paired_daily.csv",
+      "source_sha256": "ac88a70046fce7a901d90585b657b13cc571021656f7af2324a10a47b41a24d2",
+      "package_path": "saved/comparisons/paired_daily.csv",
+      "package_sha256": "ac88a70046fce7a901d90585b657b13cc571021656f7af2324a10a47b41a24d2",
+      "role": "current v6 analysis; all adverse comparisons retained",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/paired_monthly.csv",
+      "source_sha256": "a86acba7b253cd22bc3ac1a9bcfdedf4f6fabfc361715c52d8cbcee33cc8679a",
+      "package_path": "saved/comparisons/paired_monthly.csv",
+      "package_sha256": "a86acba7b253cd22bc3ac1a9bcfdedf4f6fabfc361715c52d8cbcee33cc8679a",
+      "role": "current v6 analysis; all adverse comparisons retained",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/monthly_all.csv",
+      "source_sha256": "320752b01518537c8524c54413935684908d8a80257520d1897dd51f0e390232",
+      "package_path": "saved/comparisons/monthly_all.csv",
+      "package_sha256": "320752b01518537c8524c54413935684908d8a80257520d1897dd51f0e390232",
+      "role": "current v6 analysis; all adverse comparisons retained",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q2_reserve/ledger.csv",
+      "source_sha256": "9558152d07169b9c55a799a7bb27fea5280df5077164dedac0015d52d4c3a243",
+      "package_path": "saved/selected/q2_reserve/execution_plans.npz",
+      "package_sha256": "cc7160794843067d83754f939b6276dfc5da9e9f6e57cbc8b95f2cfe2e43b29b",
+      "role": "lossless column projection; all annual rows retained",
+      "columns": [
+        "date",
+        "slot_id",
+        "grid_original_kwh",
+        "grid_effective_kwh",
+        "reserve_threshold_kwh"
+      ],
+      "rows": 48096,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q2_reserve/ledger.csv",
+      "source_sha256": "9558152d07169b9c55a799a7bb27fea5280df5077164dedac0015d52d4c3a243",
+      "package_path": "saved/selected/q2_reserve/ledger_four_dates.csv",
+      "package_sha256": "7a9448c667afc427a0f21fed003053922ad1be7a87bd16d3b6511b744c501b71",
+      "role": "complete saved rows for four required dates",
+      "dates": [
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "rows": 576,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q2_reserve/plan_versions.csv",
+      "source_sha256": "a231bdab4614de2c2c412085f14e9c62f9eb704e68f5a338d76b85fc90a33a42",
+      "package_path": "saved/selected/q2_reserve/plan_versions.npz",
+      "package_sha256": "7551dfb1ee5acb3e2da931faa33f94e8466c6080ffa04106f37cb430b5dfa577",
+      "role": "lossless column projection; all annual rows retained",
+      "columns": [
+        "date",
+        "issue_hour",
+        "slot_id",
+        "grid_original_kwh",
+        "grid_kwh",
+        "reserve_original_kwh",
+        "reserve_threshold_kwh",
+        "selected_index"
+      ],
+      "rows": 48096,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q2_reserve/plan_versions.csv",
+      "source_sha256": "a231bdab4614de2c2c412085f14e9c62f9eb704e68f5a338d76b85fc90a33a42",
+      "package_path": "saved/selected/q2_reserve/plan_versions_four_dates.csv",
+      "package_sha256": "0d9221cff0e263bdfadda2448586fec545845b34efd2d8e004bda7d1c62960ab",
+      "role": "complete saved rows for four required dates",
+      "dates": [
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "rows": 576,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_w28_reserve/ledger.csv",
+      "source_sha256": "69ed980925e251e28db6103b443dc1d591a3cd050438bbd01d5d66182b6d095e",
+      "package_path": "saved/selected/q3_w28_reserve/execution_plans.npz",
+      "package_sha256": "4b466753676944210ddc0e00c28691f151d4e07b648bc0443d95e44ac2b8a3e7",
+      "role": "lossless column projection; all annual rows retained",
+      "columns": [
+        "date",
+        "slot_id",
+        "grid_original_kwh",
+        "grid_effective_kwh",
+        "reserve_threshold_kwh"
+      ],
+      "rows": 48096,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_w28_reserve/ledger.csv",
+      "source_sha256": "69ed980925e251e28db6103b443dc1d591a3cd050438bbd01d5d66182b6d095e",
+      "package_path": "saved/selected/q3_w28_reserve/ledger_four_dates.csv",
+      "package_sha256": "59ab24f0e157aad381d6279bba9f0c47865f5dff49d20555e92204b8163645c6",
+      "role": "complete saved rows for four required dates",
+      "dates": [
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "rows": 576,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_w28_reserve/plan_versions.csv",
+      "source_sha256": "35592ab5be9b0e3c9fae44efaa95066552f3cadae0fa33bbb239998baa80bce3",
+      "package_path": "saved/selected/q3_w28_reserve/plan_versions.npz",
+      "package_sha256": "c870d88ca04f505420cee10c922d17f6eeeae9459886f3422b86a9893ae7a97b",
+      "role": "lossless column projection; all annual rows retained",
+      "columns": [
+        "date",
+        "issue_hour",
+        "slot_id",
+        "grid_original_kwh",
+        "grid_kwh",
+        "reserve_original_kwh",
+        "reserve_threshold_kwh",
+        "selected_index"
+      ],
+      "rows": 120240,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q3_w28_reserve/plan_versions.csv",
+      "source_sha256": "35592ab5be9b0e3c9fae44efaa95066552f3cadae0fa33bbb239998baa80bce3",
+      "package_path": "saved/selected/q3_w28_reserve/plan_versions_four_dates.csv",
+      "package_sha256": "2ff143bc1829776318acf5904bd5257f6caa41b73a7a8821115a46c20116de2d",
+      "role": "complete saved rows for four required dates",
+      "dates": [
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "rows": 1440,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_ols_reserve/ledger.csv",
+      "source_sha256": "4fc46e15ad16d564a73428aa79c79cecfe7b700aa5a0992d6c4030972e41f365",
+      "package_path": "saved/selected/q42_ols_reserve/execution_plans.npz",
+      "package_sha256": "e7133851a24ba681cd6b8c6a1ebdaac760d8b42a853a392e1d65b76749d3f107",
+      "role": "lossless column projection; all annual rows retained",
+      "columns": [
+        "date",
+        "slot_id",
+        "grid_original_kwh",
+        "grid_effective_kwh",
+        "reserve_threshold_kwh"
+      ],
+      "rows": 48096,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_ols_reserve/ledger.csv",
+      "source_sha256": "4fc46e15ad16d564a73428aa79c79cecfe7b700aa5a0992d6c4030972e41f365",
+      "package_path": "saved/selected/q42_ols_reserve/ledger_four_dates.csv",
+      "package_sha256": "aae266262a13a880661854e758aacab09cc6b86d61f19f1348efeb1dc870a17a",
+      "role": "complete saved rows for four required dates",
+      "dates": [
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "rows": 576,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_ols_reserve/plan_versions.csv",
+      "source_sha256": "6337e187cd27e5320ac1ee4490513598cded601170a5ede92cc1be9ac3ca2ce2",
+      "package_path": "saved/selected/q42_ols_reserve/plan_versions.npz",
+      "package_sha256": "e0dc38c1cd76e95da6854545034830d4e3c40aa38608c8943055ab0c4afb881f",
+      "role": "lossless column projection; all annual rows retained",
+      "columns": [
+        "date",
+        "issue_hour",
+        "slot_id",
+        "grid_original_kwh",
+        "grid_kwh",
+        "reserve_original_kwh",
+        "reserve_threshold_kwh",
+        "selected_index"
+      ],
+      "rows": 48096,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q42_ols_reserve/plan_versions.csv",
+      "source_sha256": "6337e187cd27e5320ac1ee4490513598cded601170a5ede92cc1be9ac3ca2ce2",
+      "package_path": "saved/selected/q42_ols_reserve/plan_versions_four_dates.csv",
+      "package_sha256": "7edda233e5a04612afa228879b32da1c280f3f89cfc93780b135dcd54692cefd",
+      "role": "complete saved rows for four required dates",
+      "dates": [
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "rows": 576,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_ols_reserve/ledger.csv",
+      "source_sha256": "440d639e836e08e1e01fee599eba4ada2a6dc24573d5466e992350685ace5d67",
+      "package_path": "saved/selected/q43_raw_ols_reserve/execution_plans.npz",
+      "package_sha256": "299a1e473d859b29e91c9a77499ab427fdec0feb845d8d2765f9431610cf02f3",
+      "role": "lossless column projection; all annual rows retained",
+      "columns": [
+        "date",
+        "slot_id",
+        "grid_original_kwh",
+        "grid_effective_kwh",
+        "reserve_threshold_kwh"
+      ],
+      "rows": 48096,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_ols_reserve/ledger.csv",
+      "source_sha256": "440d639e836e08e1e01fee599eba4ada2a6dc24573d5466e992350685ace5d67",
+      "package_path": "saved/selected/q43_raw_ols_reserve/ledger_four_dates.csv",
+      "package_sha256": "2321dc3827d616130b7ee311f7b3c890a1571bc05b2e135a4166df78533f047d",
+      "role": "complete saved rows for four required dates",
+      "dates": [
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "rows": 576,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_ols_reserve/plan_versions.csv",
+      "source_sha256": "da5e04e4ff165c61734be5f80f57d05fd7112e5fb870ef11f009bbfeff5b1686",
+      "package_path": "saved/selected/q43_raw_ols_reserve/plan_versions.npz",
+      "package_sha256": "11059bad2438215f56152a7f2bdaa3b9fcc192e8d37cc34ccfa1a467efd45318",
+      "role": "lossless column projection; all annual rows retained",
+      "columns": [
+        "date",
+        "issue_hour",
+        "slot_id",
+        "grid_original_kwh",
+        "grid_kwh",
+        "reserve_original_kwh",
+        "reserve_threshold_kwh",
+        "selected_index"
+      ],
+      "rows": 120240,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/storage_control_v6/runs/q43_raw_ols_reserve/plan_versions.csv",
+      "source_sha256": "da5e04e4ff165c61734be5f80f57d05fd7112e5fb870ef11f009bbfeff5b1686",
+      "package_path": "saved/selected/q43_raw_ols_reserve/plan_versions_four_dates.csv",
+      "package_sha256": "15169d4bcf3de6b172aa2e75de7d1780b3db01f6672a34c3c337310dbbc5bd80",
+      "role": "complete saved rows for four required dates",
+      "dates": [
+        "2025-03-20",
+        "2025-06-21",
+        "2025-09-23",
+        "2025-12-21"
+      ],
+      "rows": 1440,
+      "array_values_exactly_equal": true
+    },
+    {
+      "source_path": "results/q2_direct_v4/runs/D112/ledger.csv",
+      "source_sha256": "2c4b8806402a16a19fff3b95b9156108a0a3acd88534b455c096507e6ae44cfb",
+      "package_path": "results/q2_direct_v4/runs/D112/ledger.csv",
+      "package_sha256": "9b3bb43deee7a5d5e7b8122a2fd8a891bc2c4088bd2cae1ee26476795f69c329",
+      "role": "frozen two-search historical reference; cost/state columns only; not the current selected strategy",
+      "columns": [
+        "date",
+        "total_cost_yuan",
+        "emergency_cost_yuan",
+        "energy_end_actual_kwh",
+        "planned_cost_yuan"
+      ],
+      "rows": 48096
+    },
+    {
+      "source_path": "results/q2_direct_v4/runs/D112/summary.json",
+      "source_sha256": "176686522fdcc93c8bd548ac259c6d999a820b5a05b22fe510927dd67e8c5064",
+      "package_path": "saved/historical_references/frozen_v5_q2_summary.json",
+      "package_sha256": "176686522fdcc93c8bd548ac259c6d999a820b5a05b22fe510927dd67e8c5064",
+      "role": "frozen two-search historical reference",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/unified_direct_v5/runs/q3_raw/ledger.csv",
+      "source_sha256": "69a9c906c4895d11708fafd6c04c7ef3b0f68206d45b925d6af0cb67e59957a3",
+      "package_path": "results/unified_direct_v5/runs/q3_raw/ledger.csv",
+      "package_sha256": "174e257b7c166eb0a6415e6e5056f536c9c7411cd1313015a9e73476c83096b9",
+      "role": "frozen two-search historical reference; cost/state columns only; not the current selected strategy",
+      "columns": [
+        "date",
+        "total_cost_yuan",
+        "emergency_cost_yuan",
+        "energy_end_actual_kwh",
+        "contract_cost_yuan"
+      ],
+      "rows": 48096
+    },
+    {
+      "source_path": "results/unified_direct_v5/runs/q3_raw/summary.json",
+      "source_sha256": "2cd3b1d7da0194609d9774b977ee9ceef9d6e336e2f874d97be8377926837d02",
+      "package_path": "saved/historical_references/frozen_v5_q3_summary.json",
+      "package_sha256": "2cd3b1d7da0194609d9774b977ee9ceef9d6e336e2f874d97be8377926837d02",
+      "role": "frozen two-search historical reference",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/unified_direct_v5/runs/q42_fixed/ledger.csv",
+      "source_sha256": "7d2f985be3d06ea41f0b90eb42cd3d99f6dfe61d56e9642df66f4d6dc64f0d36",
+      "package_path": "results/unified_direct_v5/runs/q42_fixed/ledger.csv",
+      "package_sha256": "712cb95ba36f7244d267dd4b71b5dd327f8c09422c0f79094b1d8901d3cbd6a6",
+      "role": "frozen two-search historical reference; cost/state columns only; not the current selected strategy",
+      "columns": [
+        "date",
+        "total_cost_yuan",
+        "emergency_cost_yuan",
+        "energy_end_actual_kwh",
+        "contract_cost_yuan"
+      ],
+      "rows": 48096
+    },
+    {
+      "source_path": "results/unified_direct_v5/runs/q42_fixed/summary.json",
+      "source_sha256": "259e3aad3a2eaf0afd5e5ef2b58e1b9a4307ec262b3d2833e63587ede6b55695",
+      "package_path": "saved/historical_references/frozen_v5_q42_summary.json",
+      "package_sha256": "259e3aad3a2eaf0afd5e5ef2b58e1b9a4307ec262b3d2833e63587ede6b55695",
+      "role": "frozen two-search historical reference",
+      "byte_identical": true
+    },
+    {
+      "source_path": "results/unified_direct_v5/runs/q43_raw_ols/ledger.csv",
+      "source_sha256": "b3d4ddd7b810db1266471f40ba84133508c7a7ce8007ddbc5878001f601402e7",
+      "package_path": "results/unified_direct_v5/runs/q43_raw_ols/ledger.csv",
+      "package_sha256": "f70064f0a8b365fe29ae7dabd06c4cec913bf4700f40cc57bd092bd99861e267",
+      "role": "frozen two-search historical reference; cost/state columns only; not the current selected strategy",
+      "columns": [
+        "date",
+        "total_cost_yuan",
+        "emergency_cost_yuan",
+        "energy_end_actual_kwh",
+        "contract_cost_yuan"
+      ],
+      "rows": 48096
+    },
+    {
+      "source_path": "results/unified_direct_v5/runs/q43_raw_ols/summary.json",
+      "source_sha256": "063805a0bbf7864c1c3611018a44290d7a4fe1b52b47fbe5baed2d95002b07b2",
+      "package_path": "saved/historical_references/frozen_v5_q43_summary.json",
+      "package_sha256": "063805a0bbf7864c1c3611018a44290d7a4fe1b52b47fbe5baed2d95002b07b2",
+      "role": "frozen two-search historical reference",
+      "byte_identical": true
+    },
+    {
+      "source_path": "outputs/storage_control_v6_english_20260912/result1.xlsx",
+      "source_sha256": "77c6dff36b431dd9f89cc2f54c8788e1fb15f75c3c6be81842d8a0b9b6259128",
+      "package_path": "workbooks/result1.xlsx",
+      "package_sha256": "77c6dff36b431dd9f89cc2f54c8788e1fb15f75c3c6be81842d8a0b9b6259128",
+      "role": "unchanged final English result attachment",
+      "byte_identical": true
+    },
+    {
+      "source_path": "outputs/storage_control_v6_english_20260912/result2.xlsx",
+      "source_sha256": "b3374210e6e6195f321eac32968c8ee923e40a072ebaa60d33bf1676a4f67f9c",
+      "package_path": "workbooks/result2.xlsx",
+      "package_sha256": "b3374210e6e6195f321eac32968c8ee923e40a072ebaa60d33bf1676a4f67f9c",
+      "role": "unchanged final English result attachment",
+      "byte_identical": true
+    },
+    {
+      "source_path": "outputs/storage_control_v6_english_20260912/result3.xlsx",
+      "source_sha256": "4343987e267001867d4d8e4ae6784b470af8f7bd2496e374a858324caafb99cf",
+      "package_path": "workbooks/result3.xlsx",
+      "package_sha256": "4343987e267001867d4d8e4ae6784b470af8f7bd2496e374a858324caafb99cf",
+      "role": "unchanged final English result attachment",
+      "byte_identical": true
+    },
+    {
+      "source_path": "outputs/storage_control_v6_english_20260912/result4-2.xlsx",
+      "source_sha256": "f12d6cb41ddd84b40ef4efdf28c2526cfbb68de34ef01788ea097bc17a262175",
+      "package_path": "workbooks/result4-2.xlsx",
+      "package_sha256": "f12d6cb41ddd84b40ef4efdf28c2526cfbb68de34ef01788ea097bc17a262175",
+      "role": "unchanged final English result attachment",
+      "byte_identical": true
+    },
+    {
+      "source_path": "outputs/storage_control_v6_english_20260912/result4-3.xlsx",
+      "source_sha256": "76e05464f924b4cefd2624f1fd4372c29f56dfa743ddf3154b9324b993493ef2",
+      "package_path": "workbooks/result4-3.xlsx",
+      "package_sha256": "76e05464f924b4cefd2624f1fd4372c29f56dfa743ddf3154b9324b993493ef2",
+      "role": "unchanged final English result attachment",
+      "byte_identical": true
+    },
+    {
+      "source_path": "outputs/storage_control_v6_english_20260912/policy_mapping.json",
+      "source_sha256": "fc61d83da536e493adfe99d7c84d26630734f284a712cb1bbafbf874d9eb108c",
+      "package_path": "workbooks/policy_mapping.json",
+      "package_sha256": "fc61d83da536e493adfe99d7c84d26630734f284a712cb1bbafbf874d9eb108c",
+      "role": "unchanged final English result attachment",
+      "byte_identical": true
+    }
+  ]
+}

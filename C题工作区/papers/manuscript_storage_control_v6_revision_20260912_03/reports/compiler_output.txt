@@ -1,0 +1,10 @@
+note: using only cached resource files
+note: Running TeX ...
+note: Rerunning TeX because "main.out" changed ...
+note: Running xdvipdfmx ...
+note: Writing `outputs/main.out` (11.482421875 KiB)
+note: Writing `outputs/main.pdf` (3.8137121200561523 MiB)
+note: Writing `outputs/main.aux` (38.40234375 KiB)
+note: Writing `outputs/main.log` (41.8681640625 KiB)
+note: Not writing `main.spl`: it would be empty.
+note: Writing `outputs/main.synctex.gz` (1.4682254791259766 MiB)

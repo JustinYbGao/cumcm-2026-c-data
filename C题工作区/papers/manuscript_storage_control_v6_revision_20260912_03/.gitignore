@@ -1,0 +1,7 @@
+# Retained locally; not source or reviewed delivery artifacts.
+/tools/
+/build_history/
+/checks/portable_source/
+/outputs/*.log
+/outputs/*.synctex.gz
+/outputs/*.xdv

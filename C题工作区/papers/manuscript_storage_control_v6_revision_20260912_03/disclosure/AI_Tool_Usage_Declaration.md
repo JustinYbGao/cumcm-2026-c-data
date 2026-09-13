@@ -1,0 +1,3 @@
+# AI Tool Usage Declaration
+
+The team used AI tools to help interpret the problem and its ambiguities, discuss model formulation and implementation, generate and debug code, execute computational experiments, check and analyze results, produce figures, organize and draft the manuscript, edit the language, and check references. The team selected the initial models and reported reviewing the first MILP experiment and each subsequent task, including manual changes to an initially conservative Q2 implementation. Final adoption and required manual verification remain the team's responsibility. Detailed use is reported in the supplementary Details of AI Tool Usage PDF.
